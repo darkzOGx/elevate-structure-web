@@ -70,47 +70,41 @@ export default function BlogPage() {
                 </div>
               </FadeInSection>
 
-              <div className="grid gap-8 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2">
                 {featuredPosts.map((post, index) => {
                   const categoryColor = getCategoryColor(post.category)
                   return (
                   <FadeInSection key={post.id} delay={index * 200}>
-                    <Card className="h-full border-2 hover:border-primary/50 transition-all hover:shadow-lg group overflow-hidden">
-                      <div className="relative overflow-hidden rounded-t-xl h-64 bg-gradient-to-br from-slate-100 to-slate-200">
-                        <img
-                          src={post.image}
-                          alt={post.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
-                        <Badge className="absolute top-4 left-4" style={{backgroundColor: categoryColor}}>
-                          {post.category}
-                        </Badge>
-                      </div>
+                    <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
                       <CardHeader>
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-4 w-4" />
-                            <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="h-4 w-4" />
-                            <span>{post.readTime}</span>
-                          </div>
+                        <div className="flex items-center justify-between gap-2 mb-3">
+                          <Badge style={{backgroundColor: categoryColor}} className="text-xs">
+                            {post.category}
+                          </Badge>
+                          <span className="text-xs text-muted-foreground font-medium">Featured</span>
                         </div>
-                        <CardTitle className="text-2xl group-hover:text-primary transition-colors">
+                        <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
                           {post.title}
                         </CardTitle>
-                        <CardDescription className="text-base">
+                        <CardDescription className="text-sm mt-2 line-clamp-2">
                           {post.excerpt}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
+                        <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-3 w-3" />
+                            <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="h-3 w-3" />
+                            <span>{post.readTime}</span>
+                          </div>
+                        </div>
                         <Link href={`/blog/${post.id}`}>
-                          <Button variant="ghost" className="group/btn w-full justify-between">
+                          <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
                             Read Article
-                            <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                            <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
                           </Button>
                         </Link>
                       </CardContent>
