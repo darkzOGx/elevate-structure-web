@@ -1,0 +1,246 @@
+import { Metadata } from 'next'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Calendar, Clock, ArrowLeft, ArrowRight, BookOpen, Phone } from 'lucide-react'
+import { COMPANY_INFO } from '@/lib/constants'
+import { FadeInSection } from '@/components/FadeInSection'
+import { AnimatedBackground } from '@/components/AnimatedBackground'
+import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
+
+interface BlogPostPageProps {
+  params: Promise<{
+    slug: string
+  }>
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts()
+  return posts.map((post) => ({
+    slug: post.id,
+  }))
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const post = getPostById(slug)
+
+  if (!post) {
+    return {
+      title: 'Post Not Found | AAA Engineering Design',
+    }
+  }
+
+  return {
+    title: `${post.title} | AAA Engineering Design Blog`,
+    description: post.excerpt,
+    keywords: `${post.category}, structural engineering, ${post.title}`,
+  }
+}
+
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = getPostById(slug)
+
+  if (!post) {
+    notFound()
+  }
+
+  const recentPosts = getRecentPosts(3).filter(p => p.id !== post.id)
+
+  return (
+    <div className="min-h-screen bg-background relative">
+      <AnimatedBackground />
+      <Header />
+
+      <main>
+        {/* Article Header */}
+        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-16 lg:py-24">
+          <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+            <FadeInSection>
+              {/* Back to Blog */}
+              <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8">
+                <ArrowLeft className="h-4 w-4" />
+                Back to Blog
+              </Link>
+
+              {/* Category Badge */}
+              <Badge className="mb-4">
+                {post.category}
+              </Badge>
+
+              {/* Title */}
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+                {post.title}
+              </h1>
+
+              {/* Meta Information */}
+              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      month: 'long',
+                      day: 'numeric',
+                      year: 'numeric',
+                    })}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="h-4 w-4" />
+                  <span>{post.readTime}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>By {post.author}</span>
+                </div>
+              </div>
+
+              {/* Featured Image Placeholder */}
+              <div className="relative overflow-hidden rounded-xl h-96 bg-muted mb-12">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                  <BookOpen className="h-32 w-32 text-primary/30" />
+                </div>
+              </div>
+            </FadeInSection>
+          </div>
+        </section>
+
+        {/* Article Content */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+            <FadeInSection>
+              <article className="prose prose-lg max-w-none">
+                {post.content ? (
+                  <div
+                    className="space-y-6 text-muted-foreground leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
+                  />
+                ) : (
+                  <div className="space-y-6 text-muted-foreground leading-relaxed">
+                    <p>{post.excerpt}</p>
+                    <p>
+                      This article provides comprehensive insights into {post.title.toLowerCase()}.
+                      Our licensed Professional Engineers have compiled expert knowledge to help you
+                      understand this important topic.
+                    </p>
+                  </div>
+                )}
+              </article>
+            </FadeInSection>
+
+            {/* Article CTA */}
+            <FadeInSection delay={200}>
+              <Card className="mt-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-background">
+                <CardContent className="p-8 text-center">
+                  <h3 className="text-2xl font-bold mb-4">
+                    Need Professional Engineering Services?
+                  </h3>
+                  <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                    Our licensed Professional Engineers are ready to help with your project.
+                    Get a free consultation to discuss your structural engineering needs.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link href="/#contact">
+                      <Button size="lg" className="text-base px-8 py-6 h-auto">
+                        Get Free Consultation
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                    <a href={`tel:${COMPANY_INFO.phone}`}>
+                      <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
+                        <Phone className="mr-2 h-4 w-4" />
+                        {COMPANY_INFO.phone}
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </FadeInSection>
+          </div>
+        </section>
+
+        {/* Related Posts */}
+        {recentPosts.length > 0 && (
+          <section className="py-16 bg-muted/30">
+            <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+              <FadeInSection>
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                    Related Articles
+                  </h2>
+                  <p className="text-lg text-muted-foreground">
+                    Continue exploring our engineering insights
+                  </p>
+                </div>
+              </FadeInSection>
+
+              <div className="grid gap-6 md:grid-cols-3">
+                {recentPosts.map((relatedPost, index) => (
+                  <FadeInSection key={relatedPost.id} delay={index * 100}>
+                    <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
+                      <div className="relative overflow-hidden rounded-t-xl h-48 bg-muted">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                          <BookOpen className="h-16 w-16 text-primary/20" />
+                        </div>
+                        <Badge className="absolute top-3 left-3 text-xs">
+                          {relatedPost.category}
+                        </Badge>
+                      </div>
+                      <CardContent className="p-6">
+                        <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-3 w-3" />
+                            <span>
+                              {new Date(relatedPost.date).toLocaleDateString('en-US', {
+                                month: 'short',
+                                day: 'numeric',
+                              })}
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="h-3 w-3" />
+                            <span>{relatedPost.readTime}</span>
+                          </div>
+                        </div>
+                        <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                          {relatedPost.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                          {relatedPost.excerpt}
+                        </p>
+                        <Link href={`/blog/${relatedPost.id}`}>
+                          <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
+                            Read Article
+                            <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  </FadeInSection>
+                ))}
+              </div>
+
+              {/* View All Posts */}
+              <FadeInSection delay={400}>
+                <div className="text-center mt-12">
+                  <Link href="/blog">
+                    <Button variant="outline" size="lg">
+                      View All Articles
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </FadeInSection>
+            </div>
+          </section>
+        )}
+      </main>
+
+      <Footer />
+    </div>
+  )
+}

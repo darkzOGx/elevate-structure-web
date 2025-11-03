@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Services', href: '#services' },
   { name: 'Process', href: '#process' },
   { name: 'About', href: '#about' },
-  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Blog', href: '/blog' },
   { name: 'FAQ', href: '#faq' },
   { name: 'Contact', href: '#contact' },
 ]
@@ -57,13 +57,23 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4">
           {navigation.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => scrollToSection(item.href)}
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              {item.name}
-            </button>
+            item.href.startsWith('#') ? (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
+                {item.name}
+              </button>
+            ) : (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
+                {item.name}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -101,13 +111,24 @@ export function Header() {
                 {/* Mobile Navigation Links */}
                 <nav className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <button
-                      key={item.name}
-                      onClick={() => scrollToSection(item.href)}
-                      className="text-left text-base font-medium transition-colors hover:text-primary"
-                    >
-                      {item.name}
-                    </button>
+                    item.href.startsWith('#') ? (
+                      <button
+                        key={item.name}
+                        onClick={() => scrollToSection(item.href)}
+                        className="text-left text-base font-medium transition-colors hover:text-primary"
+                      >
+                        {item.name}
+                      </button>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className="text-left text-base font-medium transition-colors hover:text-primary"
+                      >
+                        {item.name}
+                      </Link>
+                    )
                   ))}
                 </nav>
 
