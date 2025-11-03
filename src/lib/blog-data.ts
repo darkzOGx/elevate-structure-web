@@ -32,7 +32,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2025-11-02',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
     featured: true,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'adu-structural-requirements'],
     content: `
@@ -99,19 +99,19 @@ Contact us for a free consultation to discuss your seismic safety needs.
   },
   {
     id: 'building-code-compliance-2024',
-    title: '2024 California Building Code Updates: What You Need to Know',
+    title: '2025 California Building Code Updates: What You Need to Know',
     excerpt: 'Stay informed about the latest building code changes in California and how they affect your residential or commercial project.',
     category: 'Building Codes',
     date: '2025-11-01',
     readTime: '6 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1586957697882-2f556cc12d06?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/3532542/pexels-photo-3532542.jpeg?w=800&h=400&fit=crop',
     featured: true,
     relatedArticles: ['understanding-seismic-retrofitting', 'adu-structural-requirements', 'commercial-building-inspections'],
     content: `
-The 2024 California Building Code brings important updates that affect both residential and commercial construction. Understanding these changes is crucial for successful project completion.
+The 2025 California Building Code brings important updates that affect both residential and commercial construction. Understanding these changes is crucial for successful project completion.
 
-## Key Updates for 2024
+## Key Updates for 2025
 
 ### Energy Efficiency Standards
 The new code includes more stringent energy efficiency requirements, particularly for HVAC systems and building envelope performance. These standards apply to all new construction and major renovations.
@@ -147,7 +147,7 @@ Contact us to discuss how these code updates affect your specific project. Wheth
     date: '2025-10-31',
     readTime: '10 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/3584919/pexels-photo-3584919.jpeg?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['building-code-compliance-2024', 'foundation-repair-warning-signs', 'adu-structural-requirements'],
     content: `
@@ -213,7 +213,7 @@ Ready to expand your home? Contact us for a free consultation to discuss your ad
     date: '2025-10-30',
     readTime: '7 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/207129/pexels-photo-207129.jpeg?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['understanding-seismic-retrofitting', 'structural-engineering-home-additions', 'commercial-building-inspections'],
     content: `
@@ -310,7 +310,7 @@ If you're seeing any of these warning signs, don't wait. Contact us for a profes
     date: '2025-10-29',
     readTime: '9 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['building-code-compliance-2024', 'structural-engineering-home-additions', 'understanding-seismic-retrofitting'],
     content: `
@@ -443,7 +443,7 @@ Our team has extensive experience with ADU structural design throughout Californ
     date: '2025-10-28',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=400&fit=crop',
+    image: 'https://images.pexels.com/photos/3945657/pexels-photo-3945657.jpeg?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'understanding-seismic-retrofitting'],
     content: `
