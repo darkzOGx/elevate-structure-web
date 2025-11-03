@@ -11,6 +11,7 @@ import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { getFeaturedPosts, getAllPosts, BLOG_CATEGORIES } from '@/lib/blog-data'
 import { getCategoryColor } from '@/lib/generate-placeholder-images'
+import BlogFilterClient from '@/components/BlogFilterClient'
 
 export const metadata: Metadata = {
   title: 'Engineering Insights & Industry News | AAA Engineering Design Blog',
@@ -135,70 +136,11 @@ export default function BlogPage() {
                   Browse our complete collection of engineering insights and industry knowledge
                 </p>
 
-                {/* Category Filter */}
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {BLOG_CATEGORIES.map((category) => (
-                    <Badge
-                      key={category}
-                      variant={category === 'All' ? 'default' : 'outline'}
-                      className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
-                    >
-                      {category}
-                    </Badge>
-                  ))}
-                </div>
               </div>
             </FadeInSection>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {allPosts.map((post, index) => {
-                const categoryColor = getCategoryColor(post.category)
-                return (
-                <FadeInSection key={post.id} delay={index * 100}>
-                  <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group overflow-hidden">
-                    <div className="relative overflow-hidden rounded-t-xl h-48 bg-gradient-to-br from-slate-100 to-slate-200">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors duration-300" />
-                      <Badge className="absolute top-3 left-3 text-xs" style={{backgroundColor: categoryColor}}>
-                        {post.category}
-                      </Badge>
-                    </div>
-                    <CardHeader className="pb-4">
-                      <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="h-3 w-3" />
-                          <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="h-3 w-3" />
-                          <span>{post.readTime}</span>
-                        </div>
-                      </div>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors line-clamp-2">
-                        {post.title}
-                      </CardTitle>
-                      <CardDescription className="text-sm line-clamp-2">
-                        {post.excerpt}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <Link href={`/blog/${post.id}`}>
-                        <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
-                          Read More
-                          <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
-                        </Button>
-                      </Link>
-                    </CardContent>
-                  </Card>
-                </FadeInSection>
-                )
-              })}
-            </div>
+            {/* Client-side filtering component */}
+            <BlogFilterClient categories={BLOG_CATEGORIES} posts={allPosts} />
           </div>
         </section>
 
