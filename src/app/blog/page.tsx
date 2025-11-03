@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, ArrowRight, BookOpen, ImageOff } from 'lucide-react'
+import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
@@ -76,22 +76,13 @@ export default function BlogPage() {
                   <FadeInSection key={post.id} delay={index * 200}>
                     <Card className="h-full border-2 hover:border-primary/50 transition-all hover:shadow-lg group overflow-hidden">
                       <div className="relative overflow-hidden rounded-t-xl h-64 bg-gradient-to-br from-slate-100 to-slate-200">
-                        <svg className="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient id={`grad-${post.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                              <stop offset="0%" style={{stopColor: categoryColor, stopOpacity: 0.3}} />
-                              <stop offset="100%" style={{stopColor: '#0ea5e9', stopOpacity: 0.2}} />
-                            </linearGradient>
-                          </defs>
-                          <rect width="800" height="400" fill={`url(#grad-${post.id})`}/>
-                        </svg>
-                        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-slate-100/80 flex flex-col items-center justify-center p-6">
-                          <div className="text-center space-y-3">
-                            <BookOpen className="h-16 w-16 text-slate-300 mx-auto" />
-                            <p className="text-sm font-medium text-slate-500">{post.category}</p>
-                            <p className="text-xs text-slate-400">Featured Article</p>
-                          </div>
-                        </div>
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
                         <Badge className="absolute top-4 left-4" style={{backgroundColor: categoryColor}}>
                           {post.category}
                         </Badge>
@@ -166,18 +157,13 @@ export default function BlogPage() {
                 <FadeInSection key={post.id} delay={index * 100}>
                   <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group overflow-hidden">
                     <div className="relative overflow-hidden rounded-t-xl h-48 bg-gradient-to-br from-slate-100 to-slate-200">
-                      <svg className="absolute inset-0 w-full h-full opacity-5" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <linearGradient id={`small-grad-${post.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style={{stopColor: categoryColor, stopOpacity: 0.2}} />
-                            <stop offset="100%" style={{stopColor: '#0ea5e9', stopOpacity: 0.1}} />
-                          </linearGradient>
-                        </defs>
-                        <rect width="600" height="300" fill={`url(#small-grad-${post.id})`}/>
-                      </svg>
-                      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/85 to-slate-100/85 flex items-center justify-center p-4">
-                        <BookOpen className="h-12 w-12 text-slate-300" />
-                      </div>
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors duration-300" />
                       <Badge className="absolute top-3 left-3 text-xs" style={{backgroundColor: categoryColor}}>
                         {post.category}
                       </Badge>

@@ -32,7 +32,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2025-11-02',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/seismic-retrofitting.jpg',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=400&fit=crop',
     featured: true,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'adu-structural-requirements'],
     content: `
@@ -105,7 +105,7 @@ Contact us for a free consultation to discuss your seismic safety needs.
     date: '2025-11-01',
     readTime: '6 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/building-codes.jpg',
+    image: 'https://images.unsplash.com/photo-1586957697882-2f556cc12d06?w=800&h=400&fit=crop',
     featured: true,
     relatedArticles: ['understanding-seismic-retrofitting', 'adu-structural-requirements', 'commercial-building-inspections'],
     content: `
@@ -147,7 +147,7 @@ Contact us to discuss how these code updates affect your specific project. Wheth
     date: '2025-10-31',
     readTime: '10 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/home-additions.jpg',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['building-code-compliance-2024', 'foundation-repair-warning-signs', 'adu-structural-requirements'],
     content: `
@@ -213,7 +213,7 @@ Ready to expand your home? Contact us for a free consultation to discuss your ad
     date: '2025-10-30',
     readTime: '7 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/foundation-repair.jpg',
+    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['understanding-seismic-retrofitting', 'structural-engineering-home-additions', 'commercial-building-inspections'],
     content: `
@@ -310,7 +310,7 @@ If you're seeing any of these warning signs, don't wait. Contact us for a profes
     date: '2025-10-29',
     readTime: '9 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/adu-construction.jpg',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['building-code-compliance-2024', 'structural-engineering-home-additions', 'understanding-seismic-retrofitting'],
     content: `
@@ -443,7 +443,7 @@ Our team has extensive experience with ADU structural design throughout Californ
     date: '2025-10-28',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
-    image: '/blog/commercial-inspections.jpg',
+    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=400&fit=crop',
     featured: false,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'understanding-seismic-retrofitting'],
     content: `
