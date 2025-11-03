@@ -11,6 +11,7 @@ export interface BlogPost {
   author: string
   image: string
   featured: boolean
+  relatedArticles?: string[] // IDs of related articles
 }
 
 export const BLOG_CATEGORIES = [
@@ -28,11 +29,12 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Understanding Seismic Retrofitting for California Homes',
     excerpt: 'Learn how seismic retrofitting can protect your home from earthquake damage and why it\'s essential for older structures in California.',
     category: 'Structural Engineering',
-    date: '2024-01-15',
+    date: '2025-11-02',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
     image: '/blog/seismic-retrofitting.jpg',
     featured: true,
+    relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'adu-structural-requirements'],
     content: `
 California is earthquake country, and protecting your home from seismic activity is not just smart—it's essential. Seismic retrofitting strengthens your home's structure to better withstand the ground motion that occurs during an earthquake.
 
@@ -43,13 +45,13 @@ Seismic retrofitting involves modifying existing structures to make them more re
 ## Common Retrofitting Techniques
 
 ### Foundation Bolting
-Foundation bolting secures your home's wooden frame (sill plate) to its concrete foundation. Without these bolts, the house can slide off the foundation during an earthquake.
+Foundation bolting secures your home's wooden frame (sill plate) to its concrete foundation. Without these bolts, the house can slide off the foundation during an earthquake. This is often the first step in retrofitting work and forms the foundation (pun intended) for other seismic improvements.
 
 ### Cripple Wall Bracing
-Cripple walls are short wood-framed walls between the foundation and first floor. These walls are particularly vulnerable during earthquakes and require bracing with structural panels.
+Cripple walls are short wood-framed walls between the foundation and first floor. These walls are particularly vulnerable during earthquakes and require bracing with structural panels. Learn more about comprehensive structural assessments in our [foundation repair warning signs article](/blog/foundation-repair-warning-signs).
 
 ### Soft Story Strengthening
-Multi-story buildings with large openings (like garages) on the ground floor need additional structural support to prevent collapse.
+Multi-story buildings with large openings (like garages) on the ground floor need additional structural support to prevent collapse. This is where the latest [2024 building codes](/blog/building-code-compliance-2024) play an important role in ensuring proper design standards.
 
 ## Why Retrofitting Matters
 
@@ -68,11 +70,13 @@ Homes built before 1980 typically lack modern seismic protections and are prime 
 - Features a soft-story configuration
 - Lacks foundation bolting
 
+If you notice any of these characteristics, see our guide on [warning signs your foundation needs assessment](/blog/foundation-repair-warning-signs).
+
 ## The Retrofitting Process
 
 1. **Structural Assessment**: A licensed structural engineer evaluates your home
 2. **Design Phase**: Custom retrofitting plans are developed
-3. **Permit Acquisition**: Necessary building permits are obtained
+3. **Permit Acquisition**: Necessary building permits are obtained in accordance with [current building codes](/blog/building-code-compliance-2024)
 4. **Construction**: Licensed contractors implement the retrofitting
 5. **Inspection**: Final inspections ensure code compliance
 
@@ -84,7 +88,7 @@ Seismic retrofitting costs vary based on:
 - Retrofitting techniques required
 - Local labor costs
 
-Typical retrofitting projects range from $5,000 to $15,000, though complex projects may cost more.
+Typical retrofitting projects range from $5,000 to $15,000, though complex projects may cost more. For those considering additions to their property, [structural engineering for home additions](/blog/structural-engineering-home-additions) may also be relevant to discuss retrofit opportunities.
 
 ## Getting Started
 
@@ -98,24 +102,25 @@ Contact us for a free consultation to discuss your seismic safety needs.
     title: '2024 California Building Code Updates: What You Need to Know',
     excerpt: 'Stay informed about the latest building code changes in California and how they affect your residential or commercial project.',
     category: 'Building Codes',
-    date: '2024-01-08',
+    date: '2025-11-01',
     readTime: '6 min read',
     author: 'AAA Engineering Team',
     image: '/blog/building-codes.jpg',
     featured: true,
+    relatedArticles: ['understanding-seismic-retrofitting', 'adu-structural-requirements', 'commercial-building-inspections'],
     content: `
 The 2024 California Building Code brings important updates that affect both residential and commercial construction. Understanding these changes is crucial for successful project completion.
 
 ## Key Updates for 2024
 
 ### Energy Efficiency Standards
-The new code includes more stringent energy efficiency requirements, particularly for HVAC systems and building envelope performance.
+The new code includes more stringent energy efficiency requirements, particularly for HVAC systems and building envelope performance. These standards apply to all new construction and major renovations.
 
 ### Structural Safety
-Enhanced seismic design requirements for certain building types and updated wind load calculations.
+Enhanced seismic design requirements for certain building types and updated wind load calculations. These align with best practices in [seismic retrofitting](/blog/understanding-seismic-retrofitting) to protect existing structures as well.
 
 ### Fire Safety
-New fire sprinkler requirements for multi-family residential buildings and updated fire-resistance ratings.
+New fire sprinkler requirements for multi-family residential buildings and updated fire-resistance ratings. This is particularly important for residential projects and affects [ADU construction](/blog/adu-structural-requirements) significantly.
 
 ## Impact on Your Project
 
@@ -125,11 +130,13 @@ These updates may affect:
 - Material selections
 - Design approaches
 
+For residential projects like [home additions](/blog/structural-engineering-home-additions) or [commercial inspections](/blog/commercial-building-inspections), ensure your engineer is familiar with these updates.
+
 ## Ensuring Compliance
 
 Work with licensed professionals who stay current with code changes. Our team tracks all updates to ensure your project meets current standards.
 
-Contact us to discuss how these code updates affect your specific project.
+Contact us to discuss how these code updates affect your specific project. Whether you're planning a [seismic retrofit](/blog/understanding-seismic-retrofitting), [home addition](/blog/structural-engineering-home-additions), or [commercial project](/blog/commercial-building-inspections), we can guide you through the latest requirements.
     `,
   },
   {
@@ -137,21 +144,22 @@ Contact us to discuss how these code updates affect your specific project.
     title: 'Structural Engineering for Home Additions: A Complete Guide',
     excerpt: 'Planning a home addition? Discover the structural engineering requirements, permit process, and design considerations.',
     category: 'Design & Planning',
-    date: '2024-01-01',
+    date: '2025-10-31',
     readTime: '10 min read',
     author: 'AAA Engineering Team',
     image: '/blog/home-additions.jpg',
     featured: false,
+    relatedArticles: ['building-code-compliance-2024', 'foundation-repair-warning-signs', 'adu-structural-requirements'],
     content: `
 Home additions are an excellent way to expand your living space without the hassle of moving. However, they require careful structural engineering to ensure safety and code compliance.
 
 ## Types of Home Additions
 
 ### Room Additions
-Adding square footage horizontally by extending your home's footprint.
+Adding square footage horizontally by extending your home's footprint. This is the most common type of home addition.
 
 ### Second Story Additions
-Building upward to maximize lot usage while preserving yard space.
+Building upward to maximize lot usage while preserving yard space. These require careful foundation analysis to ensure the existing structure can support additional loads.
 
 ### Bump-Outs
 Small extensions that don't require new foundation work.
@@ -159,20 +167,20 @@ Small extensions that don't require new foundation work.
 ## Structural Considerations
 
 ### Foundation Analysis
-The existing foundation must support additional loads, or new foundation elements must be designed.
+The existing foundation must support additional loads, or new foundation elements must be designed. See our article on [foundation repair warning signs](/blog/foundation-repair-warning-signs) to ensure your current foundation is ready for expansion.
 
 ### Load Path Design
 Ensuring forces from the addition transfer properly to the ground.
 
 ### Existing Structure Assessment
-Evaluating the current structure's capacity to support modifications.
+Evaluating the current structure's capacity to support modifications. This is similar to the assessment process in [seismic retrofitting](/blog/understanding-seismic-retrofitting), where understanding existing conditions is critical.
 
 ## The Engineering Process
 
 1. **Initial Consultation**: Discuss your goals and assess feasibility
 2. **Structural Analysis**: Evaluate existing conditions
 3. **Design Development**: Create detailed structural plans
-4. **Permit Preparation**: Prepare documentation for building department
+4. **Permit Preparation**: Prepare documentation per [2024 building code](/blog/building-code-compliance-2024) requirements
 5. **Construction Support**: Provide guidance during building phase
 
 ## Common Challenges
@@ -180,7 +188,7 @@ Evaluating the current structure's capacity to support modifications.
 - Matching existing structure
 - Foundation integration
 - Roof tie-ins
-- Code compliance for older homes
+- Code compliance for older homes (where [seismic retrofitting](/blog/understanding-seismic-retrofitting) may also be warranted)
 
 ## Cost Factors
 
@@ -190,6 +198,10 @@ Structural engineering for home additions typically costs 1-3% of total project 
 - Required structural upgrades
 - Local building department requirements
 
+## Special Consideration: ADU vs Traditional Addition
+
+If you're considering expanding your property for rental income, you may want to explore [ADU construction](/blog/adu-structural-requirements) as an alternative to traditional additions.
+
 Ready to expand your home? Contact us for a free consultation to discuss your addition project.
     `,
   },
@@ -198,11 +210,12 @@ Ready to expand your home? Contact us for a free consultation to discuss your ad
     title: '5 Warning Signs Your Foundation Needs Professional Assessment',
     excerpt: 'Identify the early warning signs of foundation problems and learn when to call a structural engineer for evaluation.',
     category: 'Structural Engineering',
-    date: '2023-12-20',
+    date: '2025-10-30',
     readTime: '7 min read',
     author: 'AAA Engineering Team',
     image: '/blog/foundation-repair.jpg',
     featured: false,
+    relatedArticles: ['understanding-seismic-retrofitting', 'structural-engineering-home-additions', 'commercial-building-inspections'],
     content: `
 Foundation issues can lead to serious structural problems if left unaddressed. Recognizing warning signs early can save you thousands in repair costs.
 
@@ -215,7 +228,7 @@ Foundation issues can lead to serious structural problems if left unaddressed. R
 - Floor cracks that are growing
 
 ### When to Worry
-Not all cracks indicate serious problems, but widening cracks or those accompanied by other symptoms warrant professional evaluation.
+Not all cracks indicate serious problems, but widening cracks or those accompanied by other symptoms warrant professional evaluation. If you're also considering [seismic retrofitting](/blog/understanding-seismic-retrofitting), foundation cracks should definitely be addressed as part of that project.
 
 ## Warning Sign #2: Doors and Windows That Stick
 
@@ -223,7 +236,7 @@ Doors and windows that suddenly don't open or close properly may indicate founda
 
 ## Warning Sign #3: Sloping or Uneven Floors
 
-Use a level to check floors in different rooms. Significant slopes or visible unevenness suggest foundation movement.
+Use a level to check floors in different rooms. Significant slopes or visible unevenness suggest foundation movement. This is particularly important before undertaking [home additions](/blog/structural-engineering-home-additions), as the new structure will rely on a stable foundation.
 
 ## Warning Sign #4: Gaps and Separations
 
@@ -244,7 +257,7 @@ Common causes include:
 - Poor drainage
 - Tree roots
 - Plumbing leaks
-- Seismic activity
+- Seismic activity (see [seismic retrofitting](/blog/understanding-seismic-retrofitting) for protection)
 - Poor initial construction
 
 ## When to Call a Structural Engineer
@@ -282,6 +295,10 @@ Regular maintenance can prevent many foundation issues:
 - Control tree root growth near foundation
 - Monitor and address small cracks early
 
+## Next Steps for Your Project
+
+If you're planning a [home addition](/blog/structural-engineering-home-additions) or [commercial inspection](/blog/commercial-building-inspections), addressing foundation issues first is essential.
+
 If you're seeing any of these warning signs, don't wait. Contact us for a professional foundation assessment.
     `,
   },
@@ -290,11 +307,12 @@ If you're seeing any of these warning signs, don't wait. Contact us for a profes
     title: 'ADU Construction: Structural Requirements and Design Tips',
     excerpt: 'Everything you need to know about the structural engineering aspects of building an Accessory Dwelling Unit in California.',
     category: 'Design & Planning',
-    date: '2023-12-15',
+    date: '2025-10-29',
     readTime: '9 min read',
     author: 'AAA Engineering Team',
     image: '/blog/adu-construction.jpg',
     featured: false,
+    relatedArticles: ['building-code-compliance-2024', 'structural-engineering-home-additions', 'understanding-seismic-retrofitting'],
     content: `
 Accessory Dwelling Units (ADUs) have become increasingly popular in California as a way to add housing and property value. Understanding the structural requirements is essential for successful ADU construction.
 
@@ -321,7 +339,7 @@ Most ADUs use wood framing, though steel framing may be appropriate in some case
 - Connection details for lateral forces
 
 ### Seismic Design
-California's seismic requirements are stringent. ADUs must include:
+California's seismic requirements are stringent. Learn more about what this means for existing structures in our [seismic retrofitting guide](/blog/understanding-seismic-retrofitting). ADUs must include:
 - Proper foundation anchorage
 - Shear wall design
 - Diaphragm connections
@@ -330,7 +348,7 @@ California's seismic requirements are stringent. ADUs must include:
 ## Code Requirements
 
 ### Building Code Compliance
-ADUs must meet current California Building Code, including:
+ADUs must meet current [California Building Code requirements](/blog/building-code-compliance-2024), including:
 - Structural safety
 - Fire safety
 - Energy efficiency
@@ -340,7 +358,7 @@ ADUs must meet current California Building Code, including:
 Most jurisdictions allow reduced setbacks for ADUs, but structural design must account for property line restrictions.
 
 ### Height Limitations
-ADUs are typically limited to 16 feet for detached units, affecting structural design options.
+ADUs are typically limited to 16 feet for detached units, affecting structural design options. Similar considerations apply when planning [home additions](/blog/structural-engineering-home-additions).
 
 ## The Design Process
 
@@ -349,7 +367,7 @@ Evaluate property for:
 - Available space
 - Access
 - Utilities
-- Soil conditions
+- Soil conditions (important for any new construction, as discussed in [foundation assessment](/blog/foundation-repair-warning-signs))
 
 ### Step 2: Structural Engineering
 Licensed engineer designs:
@@ -381,7 +399,7 @@ Working around existing water, sewer, and electrical lines.
 Limited access for construction equipment and materials.
 
 ### Soil Conditions
-Poor soil may require special foundation design or improvement.
+Poor soil may require special foundation design or improvement. This is where professional assessment—similar to what's done in [commercial building inspections](/blog/commercial-building-inspections)—becomes critical.
 
 ### Matching Existing Architecture
 Designing structure that complements the main house.
@@ -402,6 +420,10 @@ Despite upfront costs, ADUs offer:
 - Increased property value
 - Flexible use space
 
+## Comparison with Home Additions
+
+While [home additions](/blog/structural-engineering-home-additions) expand your existing structure, ADUs are separate units. Each has advantages depending on your goals and property layout.
+
 ## Getting Started
 
 Before starting your ADU project:
@@ -418,11 +440,12 @@ Our team has extensive experience with ADU structural design throughout Californ
     title: 'Commercial Building Inspections: What to Expect',
     excerpt: 'A comprehensive guide to commercial structural inspections, including timelines, requirements, and common findings.',
     category: 'Commercial Projects',
-    date: '2023-12-08',
+    date: '2025-10-28',
     readTime: '8 min read',
     author: 'AAA Engineering Team',
     image: '/blog/commercial-inspections.jpg',
     featured: false,
+    relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'understanding-seismic-retrofitting'],
     content: `
 Commercial building inspections are critical for ensuring structural safety, code compliance, and long-term building performance. Whether you're buying, selling, or maintaining commercial property, understanding the inspection process is essential.
 
@@ -436,16 +459,16 @@ Before acquiring commercial property, a thorough structural inspection identifie
 - Potential future problems
 
 ### Periodic Structural Assessments
-Regular inspections help maintain building integrity and prevent costly repairs through early detection of issues.
+Regular inspections help maintain building integrity and prevent costly repairs through early detection of issues. These inspections may uncover foundation problems similar to those discussed in our [foundation warning signs article](/blog/foundation-repair-warning-signs).
 
 ### Pre-Renovation Inspections
 Before major renovations, assess:
 - Existing structural capacity
-- Required upgrades
+- Required upgrades per [2024 building codes](/blog/building-code-compliance-2024)
 - Integration points for new construction
 
 ### Post-Damage Assessments
-After fires, earthquakes, or other events, evaluate structural safety and required repairs.
+After fires, earthquakes, or other events, evaluate structural safety and required repairs. Seismic events may necessitate [seismic retrofitting](/blog/understanding-seismic-retrofitting) upgrades.
 
 ## The Inspection Process
 
@@ -480,8 +503,10 @@ Comprehensive reports include:
 - Wood rot or insect damage
 - Masonry cracking
 
+These issues may require repairs similar to those discussed in [foundation repair assessments](/blog/foundation-repair-warning-signs).
+
 ### Code Compliance
-- Seismic deficiencies
+- Seismic deficiencies (see [seismic retrofitting](/blog/understanding-seismic-retrofitting))
 - Fire safety issues
 - Accessibility requirements
 - Load capacity concerns
@@ -557,7 +582,7 @@ Address any critical safety issues immediately.
 Develop plans for major repairs, typically within 1-2 years.
 
 ### Long-Term Maintenance
-Create maintenance schedule for minor items and ongoing monitoring.
+Create maintenance schedule for minor items and ongoing monitoring. This is where staying current with [2024 building codes](/blog/building-code-compliance-2024) is important.
 
 ### Budgeting
 Use cost estimates to plan capital improvements and maintenance budgets.
@@ -578,14 +603,14 @@ Look for:
 Some jurisdictions require periodic structural inspections for:
 - Buildings over certain age
 - Specific occupancy types
-- Seismic risk areas
+- Seismic risk areas (consider [seismic retrofitting](/blog/understanding-seismic-retrofitting))
 - Historical structures
 
 ### Triggering Renovations
 Inspection findings may require upgrades when:
 - Changing building use
 - Expanding occupancy
-- Performing major alterations
+- Performing major alterations per [current codes](/blog/building-code-compliance-2024)
 - Modernizing systems
 
 ## Value of Professional Inspections
@@ -632,4 +657,14 @@ export function getPostsByCategory(category: string): BlogPost[] {
 
 export function getRecentPosts(limit: number = 3): BlogPost[] {
   return getAllPosts().slice(0, limit)
+}
+
+export function getRelatedPosts(postId: string, limit: number = 3): BlogPost[] {
+  const post = getPostById(postId)
+  if (!post || !post.relatedArticles) return []
+
+  return post.relatedArticles
+    .map(id => getPostById(id))
+    .filter((p): p is BlogPost => p !== undefined)
+    .slice(0, limit)
 }
