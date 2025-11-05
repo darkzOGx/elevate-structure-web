@@ -30,7 +30,7 @@ export default function BlogPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-16 lg:py-24">
+        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 pt-16 pb-8 lg:pt-24 lg:pb-12">
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="text-center space-y-8 max-w-4xl mx-auto">
               <FadeInSection>
@@ -57,7 +57,7 @@ export default function BlogPage() {
 
         {/* Featured Posts Section */}
         {featuredPosts.length > 0 && (
-          <section className="py-16 lg:py-24 bg-muted/30">
+          <section className="pt-8 pb-16 lg:pt-12 lg:pb-24 bg-muted/30">
             <div className="container mx-auto px-4 md:px-6 max-w-7xl">
               <FadeInSection>
                 <div className="text-center mb-12">

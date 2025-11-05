@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { useForm as useReactHookForm } from 'react-hook-form'
+import { useForm as useFormspree } from '@formspree/react'
 import * as z from 'zod'
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -42,10 +42,9 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>
 
 export function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [formspreeState, handleFormspreeSubmit, resetFormspree] = useFormspree('mdkprqjp')
 
-  const form = useForm<FormData>({
+  const form = useReactHookForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
@@ -61,45 +60,28 @@ export function ContactForm() {
   })
 
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true)
+    // Submit to Formspree
+    const submissionData = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      company: data.company || 'N/A',
+      service: data.service,
+      budget: data.budget,
+      timeline: data.timeline,
+      message: data.projectDescription,
+      consent: data.consent,
+      _subject: `New Consultation Request from ${data.name}`,
+    }
 
-    try {
-      // Submit to Formspree
-      const response = await fetch('https://formspree.io/f/mldoyqwy', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          phone: data.phone,
-          company: data.company || 'N/A',
-          service: data.service,
-          budget: data.budget,
-          timeline: data.timeline,
-          projectDescription: data.projectDescription,
-          consent: data.consent,
-          _subject: `New Consultation Request from ${data.name}`,
-        }),
-      })
+    const response = await handleFormspreeSubmit(submissionData)
 
-      if (!response.ok) {
-        throw new Error('Form submission failed')
-      }
-
-      console.log('Form submitted successfully:', data)
-      setIsSubmitted(true)
+    if (response && !formspreeState.errors?.length) {
       form.reset()
-    } catch (error) {
-      console.error('Error submitting form:', error)
-      alert('There was an error submitting your form. Please try again or contact us directly.')
-    } finally {
-      setIsSubmitting(false)
     }
   }
 
-  if (isSubmitted) {
+  if (formspreeState.succeeded) {
     return (
       <section id="contact" className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4 md:px-6 max-w-7xl">
@@ -124,7 +106,10 @@ export function ContactForm() {
                   <p>✓ We&apos;ll include a preliminary assessment and next steps</p>
                 </div>
                 <Button
-                  onClick={() => setIsSubmitted(false)}
+                  onClick={() => {
+                    resetFormspree()
+                    form.reset()
+                  }}
                   variant="outline"
                   className="mt-4"
                 >
@@ -158,76 +143,68 @@ export function ContactForm() {
         <div className="grid gap-12 lg:grid-cols-3">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Have questions about your project? Want to discuss your engineering
-                needs? We&apos;re here to help. Contact us today for a free consultation.
-              </p>
-            </div>
-
             {/* Contact Cards */}
             <div className="space-y-4">
               <Card>
-                <CardContent className="p-4 flex items-center gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="h-5 w-5 text-primary" />
+                <CardContent className="p-3 space-y-3">
+                  {/* Phone */}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Phone</p>
+                      <a
+                        href={`tel:${COMPANY_INFO.phone}`}
+                        className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                      >
+                        {COMPANY_INFO.phone}
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <a
-                      href={`tel:${COMPANY_INFO.phone}`}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {COMPANY_INFO.phone}
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
 
-              <Card>
-                <CardContent className="p-4 flex items-center gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-primary" />
+                  {/* Email */}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Email</p>
+                      <a
+                        href={`mailto:${COMPANY_INFO.email}`}
+                        className="text-muted-foreground hover:text-primary transition-colors text-sm break-all"
+                      >
+                        {COMPANY_INFO.email}
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <a
-                      href={`mailto:${COMPANY_INFO.email}`}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {COMPANY_INFO.email}
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
 
-              <Card>
-                <CardContent className="p-4 flex items-center gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-5 w-5 text-primary" />
+                  {/* Office */}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Office</p>
+                      <p className="text-muted-foreground text-sm">
+                        {COMPANY_INFO.address.streetAddress}<br />
+                        {COMPANY_INFO.address.addressLocality}, {COMPANY_INFO.address.addressRegion} {COMPANY_INFO.address.postalCode}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">Office</p>
-                    <p className="text-muted-foreground">
-                      {COMPANY_INFO.address.streetAddress}<br />
-                      {COMPANY_INFO.address.addressLocality}, {COMPANY_INFO.address.addressRegion} {COMPANY_INFO.address.postalCode}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
 
-              <Card>
-                <CardContent className="p-4 flex items-center gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Clock className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Business Hours</p>
-                    <div className="text-muted-foreground text-sm">
-                      {COMPANY_INFO.businessHours.map((hours, index) => (
-                        <p key={index}>{hours}</p>
-                      ))}
+                  {/* Business Hours */}
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Business Hours</p>
+                      <div className="text-muted-foreground text-sm">
+                        {COMPANY_INFO.businessHours.map((hours, index) => (
+                          <p key={index}>{hours}</p>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -255,6 +232,14 @@ export function ContactForm() {
                   <span>100% satisfaction guarantee</span>
                 </div>
               </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Have questions about your project? Want to discuss your engineering
+                needs? We&apos;re here to help. Contact us today for a free consultation.
+              </p>
             </div>
           </div>
 
@@ -461,9 +446,9 @@ export function ContactForm() {
                       type="submit"
                       size="lg"
                       className="w-full"
-                      disabled={isSubmitting}
+                      disabled={formspreeState.submitting}
                     >
-                      {isSubmitting ? (
+                      {formspreeState.submitting ? (
                         <>
                           <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
                           Sending...
