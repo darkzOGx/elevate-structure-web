@@ -74,9 +74,9 @@ export function ContactForm() {
       _subject: `New Consultation Request from ${data.name}`,
     }
 
-    const response = await handleFormspreeSubmit(submissionData)
+    await handleFormspreeSubmit(submissionData)
 
-    if (response && !formspreeState.errors?.length) {
+    if (formspreeState.succeeded) {
       form.reset()
     }
   }

@@ -16,9 +16,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = generateMetadata({
-  title: `${KEYWORDS.primary.charAt(0).toUpperCase() + KEYWORDS.primary.slice(1)} in ${KEYWORDS.location[0]} | ${COMPANY_INFO.name}`,
-  description: COMPANY_INFO.description,
-  keywords: [KEYWORDS.primary, ...KEYWORDS.secondary, ...KEYWORDS.location],
+  title: `Structural Engineer Orange County CA | Licensed PE | ${COMPANY_INFO.name}`,
+  description: `Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans. 20+ years experience. Call ${COMPANY_INFO.phone} for free consultation.`,
+  keywords: [
+    'structural engineer Orange County',
+    'structural engineer California',
+    'ADU engineering',
+    'seismic retrofitting',
+    'foundation engineering',
+    'structural engineering Irvine',
+    'structural engineering Anaheim',
+    'structural engineering Newport Beach',
+    ...KEYWORDS.secondary,
+    ...KEYWORDS.location
+  ],
   url: COMPANY_INFO.website,
   siteName: COMPANY_INFO.name,
 });
@@ -54,14 +65,11 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         <meta name="format-detection" content="address=yes" />
 
-        {/* Google site verification (replace with actual) */}
-        <meta name="google-site-verification" content="your-google-verification-code" />
+        {/* Google site verification - ADD YOUR CODE FROM SEARCH CONSOLE */}
+        {/* <meta name="google-site-verification" content="your-google-verification-code" /> */}
 
-        {/* Bing site verification (replace with actual) */}
-        <meta name="msvalidate.01" content="your-bing-verification-code" />
-
-        {/* Yandex site verification (replace with actual) */}
-        <meta name="yandex-verification" content="your-yandex-verification-code" />
+        {/* Bing site verification - ADD YOUR CODE FROM BING WEBMASTER */}
+        {/* <meta name="msvalidate.01" content="your-bing-verification-code" /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}

@@ -10,12 +10,18 @@ import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 import { Footer } from '@/components/Footer'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
+import { homepageSchema } from '@/lib/schema-data'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
-      <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
+      <div className="min-h-screen bg-background relative">
+        <AnimatedBackground />
+        <Header />
       <main>
         <Hero />
         <Services />
@@ -28,6 +34,7 @@ export default function Home() {
         <ContactForm />
       </main>
       <Footer />
-    </div>
+      </div>
+    </>
   );
 }
