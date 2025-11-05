@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { generateMetadata } from '@/lib/seo'
 import { COMPANY_INFO, KEYWORDS } from '@/lib/constants'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,26 +67,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}
       >
         {children}
-
-        {/* Analytics scripts - uncomment and add your GA ID when ready */}
-        {/* {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-                `,
-              }}
-            />
-          </>
-        )} */}
+        <GoogleAnalytics />
       </body>
     </html>
   );

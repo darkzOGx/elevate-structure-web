@@ -6,10 +6,11 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, ArrowLeft, ArrowRight, BookOpen, Phone } from 'lucide-react'
+import { Calendar, Clock, ArrowLeft, ArrowRight, Phone } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
+import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
 
 interface BlogPostPageProps {
@@ -59,7 +60,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <main>
         {/* Article Header */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-16 lg:py-24">
+        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 pt-16 pb-8 lg:pt-24 lg:pb-12">
           <div className="container mx-auto px-4 md:px-6 max-w-4xl">
             <FadeInSection>
               {/* Back to Blog */}
@@ -79,7 +80,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </h1>
 
               {/* Meta Information */}
-              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
+              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-2">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   <span>
@@ -98,39 +99,27 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <span>By {post.author}</span>
                 </div>
               </div>
-
-              {/* Featured Image Placeholder */}
-              <div className="relative overflow-hidden rounded-xl h-96 bg-muted mb-12">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <BookOpen className="h-32 w-32 text-primary/30" />
-                </div>
-              </div>
             </FadeInSection>
           </div>
         </section>
 
         {/* Article Content */}
-        <section className="py-16">
+        <section className="pt-8 pb-16">
           <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-            <FadeInSection>
-              <article className="prose prose-lg max-w-none">
-                {post.content ? (
-                  <div
-                    className="space-y-6 text-muted-foreground leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
-                  />
-                ) : (
-                  <div className="space-y-6 text-muted-foreground leading-relaxed">
-                    <p>{post.excerpt}</p>
-                    <p>
-                      This article provides comprehensive insights into {post.title.toLowerCase()}.
-                      Our licensed Professional Engineers have compiled expert knowledge to help you
-                      understand this important topic.
-                    </p>
-                  </div>
-                )}
-              </article>
-            </FadeInSection>
+            <article className="max-w-none">
+              {post.content ? (
+                <RichBlogContent content={post.content} />
+              ) : (
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p className="text-lg">{post.excerpt}</p>
+                  <p className="text-lg">
+                    This article provides comprehensive insights into {post.title.toLowerCase()}.
+                    Our licensed Professional Engineers have compiled expert knowledge to help you
+                    understand this important topic.
+                  </p>
+                </div>
+              )}
+            </article>
 
             {/* Article CTA */}
             <FadeInSection delay={200}>
@@ -182,15 +171,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 {recentPosts.map((relatedPost, index) => (
                   <FadeInSection key={relatedPost.id} delay={index * 100}>
                     <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
-                      <div className="relative overflow-hidden rounded-t-xl h-48 bg-muted">
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                          <BookOpen className="h-16 w-16 text-primary/20" />
-                        </div>
-                        <Badge className="absolute top-3 left-3 text-xs">
+                      <CardContent className="p-6">
+                        <Badge className="mb-3 text-xs">
                           {relatedPost.category}
                         </Badge>
-                      </div>
-                      <CardContent className="p-6">
                         <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
                           <div className="flex items-center gap-1">
                             <Calendar className="h-3 w-3" />

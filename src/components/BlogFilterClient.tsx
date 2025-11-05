@@ -50,26 +50,17 @@ export default function BlogFilterClient({
       </div>
 
       {/* Filtered Posts Grid */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, index) => {
             const categoryColor = getCategoryColor(post.category)
             return (
               <FadeInSection key={post.id} delay={index * 100}>
-                <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group overflow-hidden">
-                  <div className="relative overflow-hidden rounded-t-xl h-48 bg-gradient-to-br from-slate-100 to-slate-200">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors duration-300" />
-                    <Badge className="absolute top-3 left-3 text-xs" style={{ backgroundColor: categoryColor }}>
+                <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
+                  <CardHeader className="pb-4">
+                    <Badge className="w-fit text-xs mb-2" style={{ backgroundColor: categoryColor }}>
                       {post.category}
                     </Badge>
-                  </div>
-                  <CardHeader className="pb-4">
                     <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />

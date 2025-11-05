@@ -63,16 +63,37 @@ export function ContactForm() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
 
-    // Simulate form submission
     try {
-      // In a real application, you would send the data to your backend
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/mldoyqwy', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          company: data.company || 'N/A',
+          service: data.service,
+          budget: data.budget,
+          timeline: data.timeline,
+          projectDescription: data.projectDescription,
+          consent: data.consent,
+          _subject: `New Consultation Request from ${data.name}`,
+        }),
+      })
 
-      console.log('Form data:', data)
+      if (!response.ok) {
+        throw new Error('Form submission failed')
+      }
+
+      console.log('Form submitted successfully:', data)
       setIsSubmitted(true)
       form.reset()
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('There was an error submitting your form. Please try again or contact us directly.')
     } finally {
       setIsSubmitting(false)
     }
@@ -289,7 +310,7 @@ export function ContactForm() {
                           <FormItem>
                             <FormLabel>Phone Number *</FormLabel>
                             <FormControl>
-                              <Input placeholder="(555) 123-4567" type="tel" {...field} />
+                              <Input placeholder="(949) 981-4448" type="tel" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

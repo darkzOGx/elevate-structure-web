@@ -15,7 +15,7 @@ export const COMPANY_INFO = {
     addressCountry: 'US',
   },
   businessHours: [
-    'Monday-Friday 11:00AM-3:00PM',
+    'Monday-Friday 9:00 AM - 5:00 PM',
     'Saturday Closed',
     'Sunday Closed',
   ],

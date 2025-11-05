@@ -50,7 +50,7 @@ export function Header() {
       </div>
 
       <header className="sticky top-8 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-center gap-8 px-4 md:px-6 max-w-5xl">
+      <div className="container mx-auto flex h-16 items-center justify-between gap-8 px-4 md:px-6 max-w-5xl">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 mr-8">
           <img

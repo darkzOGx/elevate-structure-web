@@ -90,10 +90,10 @@ export function FAQ() {
                 Phone
               </h4>
               <a
-                href="tel:+1 (555) 123-4567"
+                href="tel:+19499814448"
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
-                +1 (555) 123-4567
+                (949) 981-4448
               </a>
             </div>
             <div className="space-y-2">
@@ -101,10 +101,10 @@ export function FAQ() {
                 Email
               </h4>
               <a
-                href="mailto:contact@eliteengineering.com"
+                href="mailto:aws@aaaengineeringdesign.com"
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
-                contact@eliteengineering.com
+                aws@aaaengineeringdesign.com
               </a>
             </div>
             <div className="space-y-2">
