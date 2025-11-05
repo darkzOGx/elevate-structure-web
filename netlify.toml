@@ -7,3 +7,29 @@
 [build.environment]
   NETLIFY_USE_YARN = "false"
   NETLIFY_NEXT_PLUGIN_SKIP = "false"
+
+# Redirect all traffic to HTTPS and www
+[[redirects]]
+  from = "http://aaaengineeringdesign.com/*"
+  to = "https://www.aaaengineeringdesign.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.aaaengineeringdesign.com/*"
+  to = "https://www.aaaengineeringdesign.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://aaaengineeringdesign.com/*"
+  to = "https://www.aaaengineeringdesign.com/:splat"
+  status = 301
+  force = true
+
+# Remove trailing index.html
+[[redirects]]
+  from = "*/index.html"
+  to = "/:splat"
+  status = 301
+  force = true
