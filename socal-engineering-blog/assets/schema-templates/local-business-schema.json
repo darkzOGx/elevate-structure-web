@@ -1,0 +1,78 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AAA Engineering Design",
+  "image": "https://aaaengineeringdesign.com/logo.png",
+  "description": "Licensed Professional Engineering firm providing structural, civil, and MEP design services in {{CITY_NAME}}, California",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8031 Main Street",
+    "addressLocality": "Stanton",
+    "addressRegion": "CA",
+    "postalCode": "90680",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8025,
+    "longitude": -117.9931
+  },
+  "url": "https://aaaengineeringdesign.com",
+  "telephone": "(949) 981-4448",
+  "email": "aws@aaaengineeringdesign.com",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "City",
+    "name": "{{CITY_NAME}}",
+    "containedIn": {
+      "@type": "State",
+      "name": "California"
+    }
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/aaa-engineering-design",
+    "https://www.facebook.com/aaaengineeringdesign"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engineering Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Structural Engineering Design",
+          "description": "Professional structural engineering services for residential and commercial projects"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Civil Engineering Design",
+          "description": "Site development, grading, drainage, and utility design services"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "MEP Engineering Design",
+          "description": "Mechanical, electrical, and plumbing engineering design"
+        }
+      }
+    ]
+  }
+}

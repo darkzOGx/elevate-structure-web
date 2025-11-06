@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechnicalArticle",
+  "headline": "{{POST_TITLE}}",
+  "description": "{{META_DESCRIPTION}}",
+  "image": "{{FEATURED_IMAGE_URL}}",
+  "author": {
+    "@type": "Organization",
+    "name": "AAA Engineering Design",
+    "url": "https://aaaengineeringdesign.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AAA Engineering Design",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aaaengineeringdesign.com/logo.png",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "datePublished": "{{PUBLISH_DATE}}",
+  "dateModified": "{{MODIFIED_DATE}}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{POST_URL}}"
+  },
+  "keywords": "{{KEYWORDS_COMMA_SEPARATED}}",
+  "articleSection": "{{CATEGORY}}",
+  "wordCount": "{{WORD_COUNT}}",
+  "about": {
+    "@type": "Thing",
+    "name": "{{PRIMARY_TOPIC}}"
+  }
+}
