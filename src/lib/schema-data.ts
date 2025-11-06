@@ -183,6 +183,127 @@ export function generateBreadcrumbSchema(breadcrumbs: Array<{ name: string; url:
   }
 }
 
+// FAQPage Schema Generator (Critical for AI Overview/GEO)
+export function generateFAQPageSchema(faqs: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  }
+}
+
+// HowTo Schema Generator (for process sections - boosts AI citations)
+export function generateHowToSchema(config: {
+  name: string;
+  description: string;
+  totalTime?: string;
+  steps: Array<{ name: string; text: string }>;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": config.name,
+    "description": config.description,
+    ...(config.totalTime && { "totalTime": config.totalTime }),
+    "step": config.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": step.name,
+      "text": step.text
+    }))
+  }
+}
+
+// Enhanced LocalBusiness Schema with detailed areaServed (for multi-city local SEO)
+export function generateEnhancedLocalBusinessSchema(config: {
+  name: string;
+  city: string;
+  state: string;
+  description: string;
+  nearbyAreas?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": `${config.name} - ${config.city}`,
+    "description": config.description,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": `${COMPANY_INFO.website}/#organization`
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": config.city,
+        "@id": `https://en.wikipedia.org/wiki/${config.city.replace(' ', '_')},_California`,
+        "containedIn": {
+          "@type": "State",
+          "name": config.state
+        }
+      },
+      ...(config.nearbyAreas || []).map(area => ({
+        "@type": "City",
+        "name": area,
+        "containedIn": {
+          "@type": "State",
+          "name": config.state
+        }
+      }))
+    ],
+    "priceRange": COMPANY_INFO.priceRange,
+    "telephone": COMPANY_INFO.phone,
+    "email": COMPANY_INFO.email
+  }
+}
+
+// Article Schema for Blog Posts (critical for GEO/AIO)
+export function generateArticleSchema(config: {
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  author: string;
+  image?: string;
+  url: string;
+  category: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": config.headline,
+    "description": config.description,
+    "image": config.image || `${COMPANY_INFO.website}/og-image.jpg`,
+    "datePublished": config.datePublished,
+    "dateModified": config.dateModified || config.datePublished,
+    "author": {
+      "@type": "Organization",
+      "name": config.author,
+      "url": COMPANY_INFO.website
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": COMPANY_INFO.name,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${COMPANY_INFO.website}/AAA-Logo.png`
+      }
+    },
+    "articleSection": config.category,
+    "url": config.url,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": config.url
+    }
+  }
+}
+
 // Combined Schema for Homepage
 export const homepageSchema = {
   "@context": "https://schema.org",

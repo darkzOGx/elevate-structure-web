@@ -43,7 +43,7 @@ export interface Location {
 
 export const LOCATIONS: Location[] = [
   {
-    id: 'irvine-structural-engineering',
+    id: 'irvine',
     city: 'Irvine',
     county: 'Orange County',
     state: 'California',
@@ -154,7 +154,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'anaheim-structural-engineering',
+    id: 'anaheim',
     city: 'Anaheim',
     county: 'Orange County',
     state: 'California',
@@ -264,7 +264,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'newport-beach-structural-engineering',
+    id: 'newport-beach',
     city: 'Newport Beach',
     county: 'Orange County',
     state: 'California',
@@ -376,7 +376,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'huntington-beach-structural-engineering',
+    id: 'huntington-beach',
     city: 'Huntington Beach',
     county: 'Orange County',
     state: 'California',
@@ -483,7 +483,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'costa-mesa-structural-engineering',
+    id: 'costa-mesa',
     city: 'Costa Mesa',
     county: 'Orange County',
     state: 'California',
@@ -589,7 +589,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'santa-ana-structural-engineering',
+    id: 'santa-ana',
     city: 'Santa Ana',
     county: 'Orange County',
     state: 'California',
@@ -696,7 +696,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'fullerton-structural-engineering',
+    id: 'fullerton',
     city: 'Fullerton',
     county: 'Orange County',
     state: 'California',
@@ -802,7 +802,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'mission-viejo-structural-engineering',
+    id: 'mission-viejo',
     city: 'Mission Viejo',
     county: 'Orange County',
     state: 'California',
@@ -909,7 +909,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'laguna-beach-structural-engineering',
+    id: 'laguna-beach',
     city: 'Laguna Beach',
     county: 'Orange County',
     state: 'California',
@@ -1016,7 +1016,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'lake-forest-structural-engineering',
+    id: 'lake-forest',
     city: 'Lake Forest',
     county: 'Orange County',
     state: 'California',

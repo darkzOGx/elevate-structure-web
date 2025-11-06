@@ -525,6 +525,212 @@ export const SERVICES_DATA: Service[] = [
       headline: 'Protect Your Building from Earthquake Damage',
       description: 'Contact us for a free seismic assessment consultation. Our licensed structural engineers will evaluate your building, explain retrofit options, and provide transparent pricing for seismic improvements.'
     }
+  },
+  {
+    id: 'residential',
+    title: 'Residential Structural Engineering Services',
+    shortTitle: 'Residential Engineering',
+    metaDescription: 'Expert residential structural engineering for homes, additions, remodels & ADUs. Licensed PE engineers provide cost-effective structural designs. Call (949) 981-4448 for consultation.',
+    heroTitle: 'Residential Structural Engineering',
+    heroDescription: 'Specialized structural engineering services for single-family homes, multi-family residential, additions, remodels, and ADUs throughout California.',
+    icon: '🏠',
+    overview: 'Residential structural engineering focuses on the unique needs of homeowners and residential developers. From new custom homes to additions, remodels, and ADUs, our engineers provide cost-effective structural solutions that ensure safety while respecting your budget and aesthetic goals.',
+    keyBenefits: [
+      'Homeowner-friendly communication and transparent pricing',
+      'Fast turnaround for residential timelines',
+      'Experience with all California residential building codes',
+      'Value engineering to optimize costs without compromising safety',
+      'ADU and addition expertise for maximizing property value',
+      'Coordination with architects and contractors',
+      'PE-stamped plans accepted by all jurisdictions'
+    ],
+    whatWeProvide: [
+      { title: 'Foundation Design', description: 'Complete foundation engineering including slab-on-grade, raised foundations, and hillside foundations designed for local soil conditions.' },
+      { title: 'Framing Plans', description: 'Detailed wood or steel framing plans showing all structural members, connections, and load paths.' },
+      { title: 'Seismic Design', description: 'Lateral force-resisting systems designed to meet California seismic requirements and protect your investment.' },
+      { title: 'PE-Stamped Plans', description: 'All drawings stamped and signed by licensed Professional Engineer for building department submittal.' },
+      { title: 'Structural Calculations', description: 'Complete engineering calculations documenting our design for building department review.' },
+      { title: 'Plan Check Support', description: 'Response to building department corrections and support through the approval process.' }
+    ],
+    processSteps: [
+      { step: 1, title: 'Free Consultation', description: 'Discuss your project goals, review plans, and provide preliminary guidance and cost estimate.' },
+      { step: 2, title: 'Proposal & Agreement', description: 'Detailed proposal with scope, deliverables, fees, and timeline. No work starts until you approve.' },
+      { step: 3, title: 'Design Development', description: 'Structural engineering design based on architectural plans and site conditions.' },
+      { step: 4, title: 'Drawing Production', description: 'Creation of construction-ready structural plans and details.' },
+      { step: 5, title: 'Calculations & Review', description: 'Engineering calculations and quality control review of all work.' },
+      { step: 6, title: 'PE Stamping & Delivery', description: 'Professional Engineer stamp and signature. Plans delivered for permit submittal.' },
+      { step: 7, title: 'Plan Check Support', description: 'Response to building department comments and coordination for approval.' },
+      { step: 8, title: 'Construction Support', description: 'Available during construction for questions and clarifications.' }
+    ],
+    commonApplications: [
+      'New custom homes',
+      'Home additions',
+      'Kitchen and bathroom remodels',
+      'Second story additions',
+      'Accessory Dwelling Units (ADUs)',
+      'Garage conversions',
+      'Deck and patio covers',
+      'Load-bearing wall removal',
+      'Foundation retrofits',
+      'Hillside home construction'
+    ],
+    costRange: {
+      description: 'Residential structural engineering costs vary based on project size and complexity.',
+      typical: '$2,500 - $8,000 for most residential projects',
+      factors: ['Project size and square footage', 'Structural complexity', 'Foundation type and soil conditions', 'Number of floors', 'Custom vs. conventional design', 'Timeline requirements']
+    },
+    timeline: {
+      design: '1-2 weeks for typical residential projects',
+      permitting: '2-8 weeks depending on jurisdiction',
+      total: '3-10 weeks from start to permit'
+    },
+    faqs: [
+      { question: 'Do I need a structural engineer for my home remodel?', answer: 'Yes, if you are removing or modifying load-bearing walls, adding a second story, or making significant structural changes. Most building departments require PE-stamped structural plans for these types of projects.' },
+      { question: 'How much does residential structural engineering cost?', answer: 'Most residential projects range from $2,500-$8,000 depending on size and complexity. Simple projects like single wall removals may be $1,500-$2,500, while large additions or custom homes may be $8,000-$15,000+. We provide free consultations with pricing estimates.' },
+      { question: 'What is the timeline for residential structural plans?', answer: 'Most residential projects take 1-2 weeks for design and drawing production. Add 2-8 weeks for building department plan review. Total timeline from start to approved permits is typically 3-10 weeks.' },
+      { question: 'Can you work with my architect?', answer: 'Yes! We regularly coordinate with architects, designers, and contractors. We can work from architectural plans or help develop structural solutions alongside your design team.' }
+    ],
+    cta: {
+      headline: 'Ready to Start Your Residential Project?',
+      description: 'Get a free consultation and detailed quote for your home project. Our residential structural engineers are ready to help bring your vision to life with safe, cost-effective structural design.'
+    }
+  },
+  {
+    id: 'commercial',
+    title: 'Commercial Structural Engineering Services',
+    shortTitle: 'Commercial Engineering',
+    metaDescription: 'Commercial structural engineering for office buildings, retail, industrial, and tenant improvements. Licensed PE engineers deliver code-compliant designs. Call (949) 981-4448.',
+    heroTitle: 'Commercial Structural Engineering',
+    heroDescription: 'Comprehensive structural engineering services for commercial buildings, tenant improvements, industrial facilities, and multi-use developments throughout California.',
+    icon: '🏢',
+    overview: 'Commercial structural engineering requires understanding of complex building codes, accessibility requirements, fire-life safety, and business operational needs. Our engineers deliver efficient, cost-effective structural solutions for commercial projects of all scales.',
+    keyBenefits: [
+      'Experience with Type I-V construction and occupancy groups',
+      'Fast-track scheduling to meet business timelines',
+      'Value engineering for budget-conscious projects',
+      'Tenant improvement and renovation expertise',
+      'Coordination with architects, MEP, and civil engineers',
+      'Building department experience across California',
+      'PE-stamped plans and structural calculations'
+    ],
+    whatWeProvide: [
+      { title: 'Structural Analysis & Design', description: 'Complete structural engineering for commercial buildings using steel, concrete, masonry, and wood systems.' },
+      { title: 'Construction Documents', description: 'Comprehensive structural drawings including foundation plans, framing plans, details, schedules, and specifications.' },
+      { title: 'Code Compliance Analysis', description: 'California Building Code compliance including accessibility, fire-life safety, and jurisdiction-specific requirements.' },
+      { title: 'Tenant Improvement Engineering', description: 'Structural engineering for commercial TI projects including demising walls, mezzanines, and equipment support.' },
+      { title: 'Seismic Evaluation', description: 'Seismic assessment of existing buildings and retrofit design to meet current standards.' },
+      { title: 'Construction Administration', description: 'Shop drawing review, RFI response, site observations, and coordination during construction.' }
+    ],
+    processSteps: [
+      { step: 1, title: 'Project Kickoff', description: 'Review project goals, schedule, budget, and coordination requirements with full project team.' },
+      { step: 2, title: 'Proposal Development', description: 'Detailed scope of work, fee proposal, and schedule tailored to your project needs.' },
+      { step: 3, title: 'Structural Design', description: 'Engineering analysis and design of structural systems optimized for constructability and cost.' },
+      { step: 4, title: 'Construction Documents', description: 'Production of construction-ready structural plans, details, and specifications.' },
+      { step: 5, title: 'Quality Control', description: 'Internal review and coordination with architectural and MEP disciplines.' },
+      { step: 6, title: 'Permit Submittal', description: 'PE-stamped drawings and calculations prepared for building department submittal.' },
+      { step: 7, title: 'Plan Check Response', description: 'Response to building department corrections and coordination for approval.' },
+      { step: 8, title: 'Construction Phase', description: 'Shop drawing review, RFI response, and site visits as needed during construction.' }
+    ],
+    commonApplications: [
+      'Office buildings',
+      'Retail centers and stores',
+      'Restaurants and hospitality',
+      'Warehouse and industrial',
+      'Tenant improvements',
+      'Medical and dental offices',
+      'Mixed-use developments',
+      'Parking structures',
+      'Mezzanines and platforms',
+      'Building additions and expansions'
+    ],
+    costRange: {
+      description: 'Commercial structural engineering fees are typically based on percentage of construction cost or hourly basis.',
+      typical: '0.5% - 2.0% of construction cost, or $5,000 - $50,000+ fixed fee',
+      factors: ['Building size and complexity', 'Construction type (Type I-V)', 'Structural system selection', 'Number of floors', 'Seismic design category', 'Schedule requirements', 'Construction administration scope']
+    },
+    timeline: {
+      design: '2-6 weeks for design development',
+      permitting: '4-12 weeks for plan review',
+      total: '6-18 weeks from start to permit approval'
+    },
+    faqs: [
+      { question: 'What building types do you design?', answer: 'We design all commercial building types including office, retail, industrial, medical, hospitality, mixed-use, and special-use structures. Our experience covers Type I through Type V construction and all occupancy classifications.' },
+      { question: 'How much does commercial structural engineering cost?', answer: 'Fees typically range from 0.5%-2.0% of construction cost, or $5,000-$50,000+ for fixed-fee projects. Tenant improvements may be $3,000-$15,000. We provide detailed fee proposals after understanding your project scope.' },
+      { question: 'Can you handle fast-track schedules?', answer: 'Yes, we regularly work on fast-track projects with aggressive schedules. We can provide accelerated services, phased deliverables, and extended hours when needed to meet your timeline.' },
+      { question: 'Do you provide construction administration?', answer: 'Yes, we offer construction phase services including shop drawing review, RFI response, site visits, and coordination with contractors. These services can be included in our initial agreement or added as needed.' }
+    ],
+    cta: {
+      headline: 'Start Your Commercial Project',
+      description: 'Contact us for a consultation on your commercial structural engineering needs. Our team has the experience and resources to deliver your project on time and on budget.'
+    }
+  },
+  {
+    id: 'adu-engineering',
+    title: 'ADU Structural Engineering Services',
+    shortTitle: 'ADU Engineering',
+    metaDescription: 'ADU structural engineering services for accessory dwelling units. Licensed PE engineers design detached ADUs, garage conversions, and ADU additions. Call (949) 981-4448.',
+    heroTitle: 'ADU Structural Engineering',
+    heroDescription: 'Specialized structural engineering for Accessory Dwelling Units (ADUs) including detached units, garage conversions, and attached ADUs throughout California.',
+    icon: '🏡',
+    overview: 'ADU structural engineering requires expertise in California ADU regulations, residential construction, and creative design within constrained spaces. Our engineers maximize your ADU investment with efficient, cost-effective structural solutions.',
+    keyBenefits: [
+      'ADU regulatory expertise across California jurisdictions',
+      'Fast-track processing for streamlined ADU approvals',
+      'Cost-effective designs optimized for ADU budgets',
+      'Garage conversion and detached ADU specialization',
+      'Coordination with ADU-experienced architects',
+      'Foundation solutions for challenging sites',
+      'PE-stamped plans ready for permit submittal'
+    ],
+    whatWeProvide: [
+      { title: 'ADU Structural Design', description: 'Complete structural engineering for new detached ADUs, garage conversions, and attached ADU additions.' },
+      { title: 'Foundation Engineering', description: 'Foundation design for ADUs including slab-on-grade, raised foundations, and pier foundations.' },
+      { title: 'Framing Plans', description: 'Wood-frame structural plans optimized for ADU construction and budget constraints.' },
+      { title: 'Seismic Design', description: 'Lateral force-resisting system design meeting California seismic requirements for residential structures.' },
+      { title: 'Garage Conversion Plans', description: 'Structural modifications for converting existing garages to ADUs including new openings and improvements.' },
+      { title: 'Permit-Ready Documents', description: 'PE-stamped structural plans and calculations prepared specifically for ADU permit requirements.' }
+    ],
+    processSteps: [
+      { step: 1, title: 'ADU Consultation', description: 'Free consultation to discuss ADU type, review site, and provide guidance on structural approach and costs.' },
+      { step: 2, title: 'Proposal & Agreement', description: 'Clear proposal with ADU-specific scope, deliverables, fees, and realistic timeline.' },
+      { step: 3, title: 'Site Analysis', description: 'Review of site conditions, setbacks, utilities, and structural constraints for ADU placement.' },
+      { step: 4, title: 'Structural Design', description: 'Engineering design of ADU structure optimized for cost and constructability.' },
+      { step: 5, title: 'Drawing Preparation', description: 'Production of ADU structural plans, details, and schedules.' },
+      { step: 6, title: 'PE Stamping', description: 'Professional Engineer review, calculations, and stamping for permit submittal.' },
+      { step: 7, title: 'ADU Permit Support', description: 'Support through ADU expedited review process and response to any corrections.' },
+      { step: 8, title: 'Construction Guidance', description: 'Available for questions and clarifications during ADU construction.' }
+    ],
+    commonApplications: [
+      'Detached ADUs (new construction)',
+      'Garage conversions to ADUs',
+      'Attached ADUs and additions',
+      'Junior ADUs (JADUs)',
+      'Above-garage ADUs',
+      'ADU second story additions',
+      'Prefab and modular ADU support',
+      'ADU foundation design',
+      'ADU structural modifications'
+    ],
+    costRange: {
+      description: 'ADU structural engineering is typically priced as fixed-fee based on ADU size and complexity.',
+      typical: '$2,000 - $5,000 for most ADUs',
+      factors: ['ADU size (under 750 sq ft vs. larger)', 'New construction vs. conversion', 'Foundation type and site conditions', 'Number of floors', 'Structural complexity', 'Timeline requirements']
+    },
+    timeline: {
+      design: '1-2 weeks for typical ADUs',
+      permitting: '2-4 weeks (ADUs get expedited review)',
+      total: '3-6 weeks from start to permit'
+    },
+    faqs: [
+      { question: 'Do I need structural engineering for my ADU?', answer: 'Yes, all ADUs require PE-stamped structural plans for permit approval. This includes new detached ADUs, garage conversions, and attached ADUs. Structural plans ensure your ADU is safe and meets building codes.' },
+      { question: 'How much does ADU structural engineering cost?', answer: 'Most ADUs cost $2,000-$5,000 for structural engineering. Small ADUs under 500 sq ft may be $2,000-$3,000, while larger or complex ADUs may be $4,000-$6,000. Garage conversions are typically $2,500-$4,000.' },
+      { question: 'How long does ADU structural design take?', answer: 'Most ADUs take 1-2 weeks for design and drawing production. ADUs benefit from expedited plan review, typically 2-4 weeks. Total timeline from start to approved permits is usually 3-6 weeks.' },
+      { question: 'Can you work with ADU builders and prefab companies?', answer: 'Yes! We regularly work with ADU-specialized builders, general contractors, and prefab ADU companies. We can adapt our designs to work with prefab systems or provide custom engineering for site-built ADUs.' }
+    ],
+    cta: {
+      headline: 'Ready to Build Your ADU?',
+      description: 'Get a free consultation for your ADU project. Our ADU-specialized structural engineers will help you navigate the process and provide cost-effective structural design for your accessory dwelling unit.'
+    }
   }
 ]
 

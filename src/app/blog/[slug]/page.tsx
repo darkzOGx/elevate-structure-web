@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { ContactForm } from '@/components/ContactForm'
+import { ScrollToContactButton } from '@/components/ScrollToContactButton'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -12,6 +14,7 @@ import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -40,6 +43,21 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: `${post.title} | AAA Engineering Design Blog`,
     description: post.excerpt,
     keywords: `${post.category}, structural engineering, ${post.title}`,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `${COMPANY_INFO.website}/blog/${slug}`,
+      siteName: COMPANY_INFO.name,
+      type: 'article',
+      images: [{ url: post.image || `${COMPANY_INFO.website}/og-image.jpg`, width: 1200, height: 630 }],
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image || `${COMPANY_INFO.website}/og-image.jpg`],
+    },
   }
 }
 
@@ -53,10 +71,39 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const recentPosts = getRecentPosts(3).filter(p => p.id !== post.id)
 
+  // Article Schema for GEO/AIO optimization (critical for AI citations)
+  const articleSchema = generateArticleSchema({
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date, // Update this when articles are updated
+    author: post.author,
+    image: post.image,
+    url: `${COMPANY_INFO.website}/blog/${slug}`,
+    category: post.category
+  })
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'Blog', url: `${COMPANY_INFO.website}/blog` },
+    { name: post.title, url: `${COMPANY_INFO.website}/blog/${slug}` }
+  ])
+
   return (
-    <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
-      <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      <div className="min-h-screen bg-background relative">
+        <AnimatedBackground />
+        <Header />
 
       <main>
         {/* Article Header */}
@@ -133,12 +180,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     Get a free consultation to discuss your structural engineering needs.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link href="/#contact">
-                      <Button size="lg" className="text-base px-8 py-6 h-auto">
-                        Get Free Consultation
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </Link>
+                    <ScrollToContactButton />
                     <a href={`tel:${COMPANY_INFO.phone}`}>
                       <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
                         <Phone className="mr-2 h-4 w-4" />
@@ -222,9 +264,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </section>
         )}
+
+        {/* Contact Form Section */}
+        <ContactForm />
       </main>
 
       <Footer />
     </div>
+  </>
   )
 }

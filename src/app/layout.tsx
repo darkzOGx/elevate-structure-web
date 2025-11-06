@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { generateMetadata } from '@/lib/seo'
-import { COMPANY_INFO, KEYWORDS } from '@/lib/constants'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,24 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = generateMetadata({
-  title: `Structural Engineer Orange County CA | Licensed PE | ${COMPANY_INFO.name}`,
-  description: `Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans. 20+ years experience. Call ${COMPANY_INFO.phone} for free consultation.`,
-  keywords: [
-    'structural engineer Orange County',
-    'structural engineer California',
-    'ADU engineering',
-    'seismic retrofitting',
-    'foundation engineering',
-    'structural engineering Irvine',
-    'structural engineering Anaheim',
-    'structural engineering Newport Beach',
-    ...KEYWORDS.secondary,
-    ...KEYWORDS.location
-  ],
-  url: COMPANY_INFO.website,
-  siteName: COMPANY_INFO.name,
-});
+export const metadata: Metadata = {
+  title: 'Structural Engineer Orange County CA | Licensed PE | AAA Engineering Design',
+  description: 'Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans.',
+}
 
 export default function RootLayout({
   children,
@@ -75,7 +58,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}
       >
         {children}
-        <GoogleAnalytics />
       </body>
     </html>
   );

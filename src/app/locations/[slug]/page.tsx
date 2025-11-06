@@ -26,8 +26,10 @@ import {
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
+import { ContactForm } from '@/components/ContactForm'
+import { ScrollToContactButton } from '@/components/ScrollToContactButton'
 import { getLocationById, getAllLocations } from '@/lib/locations-data'
-import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
+import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema, generateEnhancedLocalBusinessSchema } from '@/lib/schema-data'
 
 interface LocationPageProps {
   params: Promise<{
@@ -107,6 +109,18 @@ export default async function LocationPage({ params }: LocationPageProps) {
     { name: location.city, url: `${COMPANY_INFO.website}/locations/${slug}` }
   ])
 
+  // FAQ Schema for AI Overview optimization (critical for local SEO)
+  const faqSchema = generateFAQPageSchema(location.faqs)
+
+  // Enhanced LocalBusiness Schema with multi-city areaServed (avoids duplicate content penalties)
+  const enhancedLocalBusinessSchema = generateEnhancedLocalBusinessSchema({
+    name: COMPANY_INFO.name,
+    city: location.city,
+    state: location.state,
+    description: location.metaDescription,
+    nearbyAreas: location.nearbyAreas
+  })
+
   return (
     <>
       <script
@@ -116,6 +130,14 @@ export default async function LocationPage({ params }: LocationPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(enhancedLocalBusinessSchema) }}
       />
 
       <div className="min-h-screen bg-background relative">
@@ -154,12 +176,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/#contact">
-                    <Button size="lg" className="text-base px-8 py-6 h-auto">
-                      Get Free Consultation
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                  <ScrollToContactButton />
                   <a href={`tel:${COMPANY_INFO.phone}`}>
                     <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
                       <Phone className="mr-2 h-4 w-4" />
@@ -526,12 +543,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
                       Contact our licensed Professional Engineers for a free consultation about your structural engineering needs in {location.city}.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Link href="/#contact">
-                        <Button size="lg" className="text-base px-8 py-6 h-auto">
-                          Get Free Consultation
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
+                      <ScrollToContactButton />
                       <a href={`tel:${COMPANY_INFO.phone}`}>
                         <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
                           <Phone className="mr-2 h-4 w-4" />
@@ -544,6 +556,9 @@ export default async function LocationPage({ params }: LocationPageProps) {
               </FadeInSection>
             </div>
           </section>
+
+          {/* Contact Form Section */}
+          <ContactForm />
         </main>
 
         <Footer />

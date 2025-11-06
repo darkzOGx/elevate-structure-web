@@ -21,7 +21,7 @@ import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { getServiceById, getAllServices } from '@/lib/services-data'
-import { generateBreadcrumbSchema } from '@/lib/schema-data'
+import { generateBreadcrumbSchema, generateFAQPageSchema, generateHowToSchema } from '@/lib/schema-data'
 
 interface ServicePageProps {
   params: Promise<{
@@ -97,6 +97,20 @@ export default async function ServicePage({ params }: ServicePageProps) {
     { name: service.shortTitle, url: `${COMPANY_INFO.website}/services/${slug}` }
   ])
 
+  // FAQ Schema for AI Overview/GEO optimization
+  const faqSchema = generateFAQPageSchema(service.faqs)
+
+  // HowTo Schema for process steps (boosts AI citations by 5.42%)
+  const howToSchema = generateHowToSchema({
+    name: `How to Get ${service.shortTitle}`,
+    description: `Step-by-step process for obtaining ${service.shortTitle.toLowerCase()} from AAA Engineering Design`,
+    totalTime: service.timeline.total,
+    steps: service.processSteps.map(step => ({
+      name: step.title,
+      text: step.description
+    }))
+  })
+
   return (
     <>
       <script
@@ -106,6 +120,14 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
 
       <div className="min-h-screen bg-background relative">
