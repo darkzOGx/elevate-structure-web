@@ -2,21 +2,37 @@
 // Run with: node scripts/submit-indexnow.js
 
 const INDEXNOW_KEY = 'b53cf03137214ff0bb2e1ab0d3ebdb5c'
-const SITE_URL = 'https://www.aaaengineeringdesign.com'
+const SITE_URL = 'https://aaaengineeringdesign.com'
 
 const urls = [
   `${SITE_URL}`,
   `${SITE_URL}/blog`,
-  `${SITE_URL}/blog/residential-structural-engineer-near-me`,
-  `${SITE_URL}/blog/engineering-design-services-guide`,
-  `${SITE_URL}/blog/how-to-hire-structural-engineer`,
   `${SITE_URL}/blog/understanding-seismic-retrofitting`,
-  `${SITE_URL}/blog/foundation-repair-warning-signs`,
   `${SITE_URL}/blog/building-code-compliance-2024`,
-  `${SITE_URL}/blog/structural-inspection-checklist`,
-  `${SITE_URL}/blog/commercial-structural-engineering`,
+  `${SITE_URL}/blog/structural-engineering-home-additions`,
+  `${SITE_URL}/blog/foundation-repair-warning-signs`,
+  `${SITE_URL}/blog/adu-structural-requirements`,
+  `${SITE_URL}/blog/engineering-design-services-guide`,
+  `${SITE_URL}/blog/residential-structural-engineer-near-me`,
+  `${SITE_URL}/blog/commercial-building-inspections`,
+  `${SITE_URL}/blog/how-to-hire-structural-engineer`,
   `${SITE_URL}/blog/best-structural-engineering-firms-los-angeles`,
-  `${SITE_URL}/blog/adu-structural-engineering`,
+  `${SITE_URL}/blog/commercial-building-engineering-california`,
+  `${SITE_URL}/blog/engineering-design-principles-southern-california`,
+  `${SITE_URL}/blog/ultimate-guide-structural-engineering-design-california`,
+  `${SITE_URL}/blog/sustainable-design-engineering-orange-county`,
+  `${SITE_URL}/blog/how-to-choose-engineering-design-firm-socal`,
+  `${SITE_URL}/blog/structural-engineer-cost-orange-county-2025`,
+  `${SITE_URL}/blog/custom-house-engineering-design-long-beach`,
+  `${SITE_URL}/blog/stormwater-design-engineer-fullerton`,
+  `${SITE_URL}/blog/when-to-hire-residential-structural-engineer-mission-viejo`,
+  `${SITE_URL}/blog/septic-design-engineers-san-clemente`,
+  `${SITE_URL}/blog/types-engineering-design-services-garden-grove`,
+  `${SITE_URL}/blog/sustainable-engineering-design-services-irvine`,
+  `${SITE_URL}/blog/residential-structural-engineer-near-me-newport-beach`,
+  `${SITE_URL}/blog/commercial-building-engineering-design-california-anaheim`,
+  `${SITE_URL}/blog/when-to-hire-residential-structural-engineer-santa-ana`,
+  `${SITE_URL}/blog/how-to-hire-structural-engineer-huntington-beach`,
 ]
 
 async function submitToIndexNow() {
@@ -29,7 +45,7 @@ async function submitToIndexNow() {
         'Content-Type': 'application/json; charset=utf-8',
       },
       body: JSON.stringify({
-        host: 'www.aaaengineeringdesign.com',
+        host: 'aaaengineeringdesign.com',
         key: INDEXNOW_KEY,
         keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
         urlList: urls,

@@ -2,7 +2,7 @@
 // Documentation: https://www.indexnow.org/documentation
 
 const INDEXNOW_KEY = 'b53cf03137214ff0bb2e1ab0d3ebdb5c'
-const SITE_URL = 'https://www.aaaengineeringdesign.com'
+const SITE_URL = 'https://aaaengineeringdesign.com'
 
 /**
  * Submit a single URL to IndexNow
@@ -35,7 +35,7 @@ export async function submitUrlsToIndexNow(urls: string[]): Promise<boolean> {
         'Content-Type': 'application/json; charset=utf-8',
       },
       body: JSON.stringify({
-        host: 'www.aaaengineeringdesign.com',
+        host: 'aaaengineeringdesign.com',
         key: INDEXNOW_KEY,
         keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
         urlList: urls,

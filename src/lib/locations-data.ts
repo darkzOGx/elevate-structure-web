@@ -909,7 +909,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'laguna-beach',
+    id: 'laguna-beach-structural-engineering',
     city: 'Laguna Beach',
     county: 'Orange County',
     state: 'California',
