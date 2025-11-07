@@ -310,7 +310,7 @@ export const homepageSchema = {
   "@graph": [
     organizationSchema,
     websiteSchema,
-    faqSchema,
+    // faqSchema removed - FAQ component includes its own FAQPage schema
     ...reviewsSchema
   ]
 }
