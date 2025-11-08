@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react'
+import { ArrowRight, BookOpen } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { getFeaturedPosts, getAllPosts, BLOG_CATEGORIES } from '@/lib/blog-data'
-import { getCategoryColor } from '@/lib/generate-placeholder-images'
 import BlogFilterClient from '@/components/BlogFilterClient'
+import { FeaturedArticlesCarousel } from '@/components/FeaturedArticlesCarousel'
 
 export const metadata: Metadata = {
   title: 'Engineering Insights & Industry News | AAA Engineering Design Blog',
@@ -70,50 +70,7 @@ export default function BlogPage() {
                 </div>
               </FadeInSection>
 
-              <div className="grid gap-6 md:grid-cols-2">
-                {featuredPosts.map((post, index) => {
-                  const categoryColor = getCategoryColor(post.category)
-                  return (
-                  <FadeInSection key={post.id} delay={index * 200}>
-                    <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
-                      <CardHeader>
-                        <div className="flex items-center justify-between gap-2 mb-3">
-                          <Badge style={{backgroundColor: categoryColor}} className="text-xs">
-                            {post.category}
-                          </Badge>
-                          <span className="text-xs text-muted-foreground font-medium">Featured</span>
-                        </div>
-                        <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
-                          {post.title}
-                        </CardTitle>
-                        <CardDescription className="text-sm mt-2 line-clamp-2">
-                          {post.excerpt}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3" />
-                            <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="h-3 w-3" />
-                            <span>{post.readTime}</span>
-                          </div>
-                        </div>
-                        <Link href={`/blog/${post.id}`}>
-                          <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
-                            Read Article
-                            <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
-                          </Button>
-                        </Link>
-                      </CardContent>
-                    </Card>
-                  </FadeInSection>
-                )
-                })}
-
-              </div>
+              <FeaturedArticlesCarousel posts={featuredPosts} />
             </div>
           </section>
         )}

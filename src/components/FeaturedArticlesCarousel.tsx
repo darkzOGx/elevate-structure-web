@@ -1,0 +1,135 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
+import { FadeInSection } from '@/components/FadeInSection'
+import { getCategoryColor } from '@/lib/generate-placeholder-images'
+import { BlogPost } from '@/lib/blog-data'
+
+interface FeaturedArticlesCarouselProps {
+  posts: BlogPost[]
+}
+
+export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const postsPerPage = 3
+
+  // Calculate total pages
+  const totalPages = Math.ceil(posts.length / postsPerPage)
+
+  // Get current posts to display
+  const currentPosts = posts.slice(currentIndex * postsPerPage, (currentIndex + 1) * postsPerPage)
+
+  // Navigation handlers
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev === 0 ? totalPages - 1 : prev - 1))
+  }
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === totalPages - 1 ? 0 : prev + 1))
+  }
+
+  if (posts.length === 0) return null
+
+  return (
+    <div className="relative">
+      {/* Navigation Buttons */}
+      {totalPages > 1 && (
+        <>
+          <Button
+            variant="outline"
+            size="icon"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 h-12 w-12 rounded-full shadow-lg bg-background/95 backdrop-blur border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+            onClick={handlePrevious}
+            aria-label="Previous featured articles"
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="icon"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 h-12 w-12 rounded-full shadow-lg bg-background/95 backdrop-blur border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+            onClick={handleNext}
+            aria-label="Next featured articles"
+          >
+            <ChevronRight className="h-6 w-6" />
+          </Button>
+        </>
+      )}
+
+      {/* Posts Column */}
+      <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+        {currentPosts.map((post, index) => {
+          const categoryColor = getCategoryColor(post.category)
+          return (
+            <FadeInSection key={`${post.id}-${currentIndex}`} delay={index * 100}>
+              <Card className="border hover:border-primary/50 transition-all hover:shadow-md group">
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <Badge style={{ backgroundColor: categoryColor }} className="text-xs">
+                      {post.category}
+                    </Badge>
+                    <span className="text-xs text-muted-foreground font-medium">Featured</span>
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
+                    {post.title}
+                  </CardTitle>
+                  <CardDescription className="text-sm mt-2 line-clamp-2">
+                    {post.excerpt}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      <span>
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <Link href={`/blog/${post.id}`}>
+                    <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
+                      Read Article
+                      <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </FadeInSection>
+          )
+        })}
+      </div>
+
+      {/* Page Indicator Dots */}
+      {totalPages > 1 && (
+        <div className="flex justify-center gap-2 mt-8">
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-2 rounded-full transition-all ${
+                index === currentIndex
+                  ? 'w-8 bg-primary'
+                  : 'w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
+              }`}
+              aria-label={`Go to page ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
