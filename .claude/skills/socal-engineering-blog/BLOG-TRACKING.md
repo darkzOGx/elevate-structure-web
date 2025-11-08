@@ -8,6 +8,9 @@
 
 | Keyword/Topic | City | Status | Date |
 |---------------|------|--------|------|
+| Earthquake Retrofitting Services | San Juan Capistrano | ✅ Published | Nov 8, 2025 |
+| Professional Design Engineering Services | Seal Beach | ✅ Published | Nov 8, 2025 |
+| Expert Structural Design Services | Laguna Niguel | ✅ Published | Nov 8, 2025 |
 | What is Engineering Design | Dana Point | ✅ Published | Nov 8, 2025 |
 | Stormwater Design Engineer | Westminster | ✅ Published | Nov 8, 2025 |
 | Best Structural Engineering Firms | Orange | ✅ Published | Nov 8, 2025 |
@@ -73,13 +76,13 @@
 ### Tier 3 Cities (Expanding Markets - AVAILABLE)
 - ✅ **Lake Forest** - AVAILABLE (used 1x)
 - ✅ **Dana Point** - AVAILABLE (used 1x)
-- ✅ **San Juan Capistrano** - AVAILABLE
+- ✅ **San Juan Capistrano** - AVAILABLE (used 1x)
 - ✅ **Fountain Valley** - AVAILABLE (used 1x)
 - ✅ **Westminster** - AVAILABLE (used 1x)
 - ✅ **La Habra** - AVAILABLE
 - ✅ **Yorba Linda** - AVAILABLE (used 1x)
-- ✅ **Seal Beach** - AVAILABLE
-- ✅ **Laguna Niguel** - AVAILABLE
+- ✅ **Seal Beach** - AVAILABLE (used 1x)
+- ✅ **Laguna Niguel** - AVAILABLE (used 1x)
 - ✅ **Aliso Viejo** - AVAILABLE
 
 ### Major Cities (Outside Day 1-2 Rotation)
@@ -98,6 +101,9 @@
 - ✅ Septic Design Engineers → San Clemente
 - ✅ Custom House Engineering Design → Long Beach, Yorba Linda
 - ✅ Best Structural Engineering Firms → Los Angeles, Orange
+- ✅ Earthquake Retrofitting Services → San Juan Capistrano
+- ✅ Professional Design Engineering Services → Seal Beach
+- ✅ Expert Structural Design Services → Laguna Niguel
 
 ### PAA Keywords Used:
 - ✅ When to Hire Residential Structural Engineer → Mission Viejo, Santa Ana
@@ -141,11 +147,11 @@
 **Focus on remaining available cities and keyword reuse:**
 
 ### Recommended Next 5 City Selections:
-1. **San Juan Capistrano** (Tier 3, historic city, NOT YET USED)
-2. **Seal Beach** (Tier 3, coastal, NOT YET USED)
-3. **Laguna Niguel** (Tier 3, affluent South OC, NOT YET USED)
-4. **Aliso Viejo** (Tier 3, planned community, NOT YET USED)
-5. **La Habra** (Tier 3, North OC, NOT YET USED)
+1. **Aliso Viejo** (Tier 3, planned community, NOT YET USED)
+2. **La Habra** (Tier 3, North OC, NOT YET USED)
+3. **Orange** (Tier 2, used 3x - flexible for reuse)
+4. **Costa Mesa** (Tier 2, used 1x - can reuse)
+5. **Tustin** (Tier 2, used 1x - can reuse)
 
 ### Keyword Strategy for Next Batch:
 - Reuse high-performing PAA keywords with new cities
