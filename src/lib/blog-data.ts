@@ -33,7 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '8 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'adu-structural-requirements'],
     content: `
 California is earthquake country, and protecting your home from seismic activity is not just smart—it's essential. Seismic retrofitting strengthens your home's structure to better withstand the ground motion that occurs during an earthquake.
@@ -106,7 +106,7 @@ Contact us for a free consultation to discuss your seismic safety needs.
     readTime: '6 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3532542/pexels-photo-3532542.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['understanding-seismic-retrofitting', 'adu-structural-requirements', 'commercial-building-inspections'],
     content: `
 The 2025 California Building Code brings important updates that affect both residential and commercial construction. Understanding these changes is crucial for successful project completion.
@@ -148,7 +148,7 @@ Contact us to discuss how these code updates affect your specific project. Wheth
     readTime: '10 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3584919/pexels-photo-3584919.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['building-code-compliance-2024', 'foundation-repair-warning-signs', 'adu-structural-requirements'],
     content: `
 Home additions are an excellent way to expand your living space without the hassle of moving. However, they require careful structural engineering to ensure safety and code compliance.
@@ -214,7 +214,7 @@ Ready to expand your home? Contact us for a free consultation to discuss your ad
     readTime: '7 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/207129/pexels-photo-207129.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['understanding-seismic-retrofitting', 'structural-engineering-home-additions', 'commercial-building-inspections'],
     content: `
 Foundation issues can lead to serious structural problems if left unaddressed. Recognizing warning signs early can save you thousands in repair costs.
@@ -311,7 +311,7 @@ If you're seeing any of these warning signs, don't wait. Contact us for a profes
     readTime: '9 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['building-code-compliance-2024', 'structural-engineering-home-additions', 'understanding-seismic-retrofitting'],
     content: `
 Accessory Dwelling Units (ADUs) have become increasingly popular in California as a way to add housing and property value. Understanding the structural requirements is essential for successful ADU construction.
@@ -444,7 +444,7 @@ Our team has extensive experience with ADU structural design throughout Californ
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['how-to-hire-structural-engineer', 'residential-structural-engineer-near-me', 'commercial-building-engineering-california'],
     content: `
 Engineering design services form the backbone of successful construction projects throughout California. Whether you're in Orange County, Los Angeles, San Diego, or the Bay Area, understanding these services is essential for any residential or commercial project.
@@ -933,7 +933,7 @@ Contact us today for a free consultation on your engineering design project.
     readTime: '10 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['how-to-hire-structural-engineer', 'engineering-design-services-guide', 'best-structural-engineering-firms-los-angeles'],
     content: `
 When searching for "residential structural engineer near me" in California, you need a licensed professional who understands local codes, seismic requirements, and regional construction practices. This guide helps you find the perfect engineer for your Orange County, Los Angeles, or San Diego project.
@@ -1719,7 +1719,7 @@ Contact us today to discuss your residential structural engineering needs!
     readTime: '8 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3945657/pexels-photo-3945657.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['foundation-repair-warning-signs', 'building-code-compliance-2024', 'understanding-seismic-retrofitting'],
     content: `
 Commercial building inspections are critical for ensuring structural safety, code compliance, and long-term building performance. Whether you're buying, selling, or maintaining commercial property, understanding the inspection process is essential.
@@ -1919,7 +1919,7 @@ Contact us to schedule a commercial building inspection or to discuss your speci
     readTime: '11 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me', 'engineering-design-services-guide', 'best-structural-engineering-firms-los-angeles'],
     content: `
 Hiring a structural engineer is one of the most important decisions you'll make for your California construction project. Whether you're building in Orange County, Los Angeles, San Diego, or the Bay Area, finding the right engineer ensures safety, code compliance, and project success.
@@ -3010,7 +3010,7 @@ Contact AAA Engineering Design today for your free consultation!
     readTime: '18 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me', 'how-to-hire-structural-engineer', 'commercial-building-engineering-california'],
     content: `
 Los Angeles County's diverse construction landscape—from downtown high-rises to beach bungalows to hillside estates—demands specialized structural engineering expertise. Finding the right structural engineering firm for your LA project can mean the difference between a smooth approval process and costly delays.
@@ -3523,7 +3523,7 @@ Contact AAA Engineering Design today at (949) 981-4448 to discuss your Los Angel
     readTime: '20 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['engineering-design-services-guide', 'best-structural-engineering-firms-los-angeles', 'how-to-hire-structural-engineer'],
     content: `
 Commercial building engineering in California presents unique challenges—from strict seismic codes to complex zoning requirements. Whether you're developing in Los Angeles, Orange County, San Diego, or the Bay Area, understanding commercial structural engineering is essential for project success.
@@ -4324,7 +4324,7 @@ Contact AAA Engineering Design today at (949) 981-4448 to discuss your commercia
     readTime: '18 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['ultimate-guide-structural-engineering-design-california', 'sustainable-design-engineering-orange-county', 'how-to-choose-engineering-design-firm-socal'],
     content: `
 Engineering design principles form the foundation of every successful construction project in Southern California. Whether you're building a luxury home in [Newport Beach](/locations/newport-beach-structural-engineering), designing an [ADU in Irvine](/locations/irvine-structural-engineering), or planning a commercial development in [Anaheim](/locations/anaheim-structural-engineering), understanding these core principles ensures safety, efficiency, and long-term structural integrity.
@@ -5471,7 +5471,7 @@ AAA Engineering Design provides professional structural engineering services thr
     readTime: '16 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['engineering-design-principles-southern-california', 'sustainable-design-engineering-orange-county', 'how-to-choose-engineering-design-firm-socal', 'structural-engineer-cost-orange-county-2025'],
     content: `
 Structural engineering design is the critical process that ensures buildings are safe, functional, and code-compliant in California's demanding environment. Whether you're planning a home in [Irvine](/locations/irvine-structural-engineering), an [ADU in Newport Beach](/locations/newport-beach-structural-engineering), or a commercial building in [Anaheim](/locations/anaheim-structural-engineering), understanding structural engineering design is essential for project success.
@@ -6187,7 +6187,7 @@ For location-specific guidance, see our city guides for [Irvine](/locations/irvi
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862140/pexels-photo-3862140.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['engineering-design-principles-southern-california', 'ultimate-guide-structural-engineering-design-california', 'how-to-choose-engineering-design-firm-socal'],
     content: `
 Sustainable design engineering is transforming how we build in Orange County and throughout Southern California. From LEED-certified commercial buildings in [Irvine](/locations/irvine-structural-engineering) to net-zero homes in [Newport Beach](/locations/newport-beach-structural-engineering), green building practices are no longer optional—they're becoming the standard for forward-thinking property owners.
@@ -7048,7 +7048,7 @@ For location-specific sustainable design guidance, visit our city pages for [Irv
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862150/pexels-photo-3862150.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['engineering-design-principles-southern-california', 'ultimate-guide-structural-engineering-design-california', 'structural-engineer-cost-orange-county-2025'],
     content: `
 Choosing the right structural engineering firm can make the difference between a smooth, successful project and a costly, frustrating experience. Whether you're planning an [ADU in Irvine](/locations/irvine-structural-engineering), a [home addition in Newport Beach](/locations/newport-beach-structural-engineering), or a [commercial development in Anaheim](/locations/anaheim-structural-engineering), selecting a qualified, experienced engineering design firm is one of the most important decisions you'll make.
@@ -8277,7 +8277,7 @@ For location-specific guidance on choosing an engineer, visit our city pages for
     readTime: '10 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862160/pexels-photo-3862160.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['ultimate-guide-structural-engineering-design-california', 'how-to-choose-engineering-design-firm-socal', 'engineering-design-principles-southern-california'],
     content: `
 Understanding structural engineer costs helps you budget appropriately and make informed decisions for your construction project. Whether you're planning an [ADU in Irvine](/locations/irvine-structural-engineering), a [home addition in Newport Beach](/locations/newport-beach-structural-engineering), or a [commercial buildout in Anaheim](/locations/anaheim-structural-engineering), knowing what to expect for structural engineering fees is essential.
@@ -9220,7 +9220,7 @@ For location-specific cost information, visit our city pages for [Irvine](/locat
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['structural-engineer-cost-orange-county-2025', 'how-to-hire-structural-engineer', 'ultimate-guide-structural-engineering-design-california'],
     content: `
 Building a custom house in Long Beach requires specialized structural engineering expertise to address coastal conditions, seismic requirements, and California's stringent building codes. Whether you're planning a [modern coastal home near Belmont Shore](/locations/newport-beach-structural-engineering), a [craftsman renovation in Bixby Knolls](/locations/huntington-beach-structural-engineering), or a [contemporary design in Naples](/ locations/laguna-beach-structural-engineering), understanding custom house engineering is essential for your project's success.
@@ -9897,7 +9897,7 @@ For location-specific guidance, visit our city pages for [Irvine](/locations/irv
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['commercial-building-engineering-california', 'engineering-design-principles-southern-california', 'how-to-choose-engineering-design-firm-socal'],
     content: `
 Stormwater design engineering is a critical component of development projects in Fullerton, CA, where strict regulations protect water quality in the Santa Ana River watershed. Whether you're planning a [commercial development in downtown Fullerton](/locations/anaheim-structural-engineering), a [residential subdivision near the Fullerton Arboretum](/locations/irvine-structural-engineering), or an [industrial facility in the West Fullerton area](/services/commercial), understanding stormwater design requirements is essential for project approval and environmental compliance.
@@ -10598,7 +10598,7 @@ For location-specific engineering guidance, visit our city pages for [Irvine](/l
     readTime: '11 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me', 'how-to-hire-structural-engineer', 'structural-engineer-cost-orange-county-2025'],
     content: `
 Knowing when to hire a residential structural engineer can save you time, money, and costly mistakes on your Mission Viejo home project. Whether you're planning a [home addition in Casta del Sol](/locations/mission-viejo-structural-engineering), an [ADU near Lake Mission Viejo](/blog/adu-structural-requirements), or a [kitchen remodel in Alicia](/services/residential), understanding when engineering is required—and when it's simply smart—ensures your project goes smoothly from design through construction.
@@ -11205,7 +11205,7 @@ For location-specific guidance, visit our city pages for [Mission Viejo](/locati
     readTime: '10 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me', 'custom-house-engineering-design-long-beach', 'engineering-design-principles-southern-california'],
     content: `
 Septic system design engineering is essential for residential properties in San Clemente where municipal sewer connections aren't available. Whether you're building a [custom home in Talega](/locations/newport-beach-structural-engineering), adding an [ADU in Southwest San Clemente](/blog/adu-structural-requirements), or [replacing a failing system in Forster Ranch](/services/residential), understanding septic engineering requirements ensures your project meets Orange County Environmental Health standards and functions reliably for decades.
@@ -11755,7 +11755,7 @@ For location-specific engineering guidance, visit our city pages for [Newport Be
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['engineering-design-services-guide', 'engineering-design-principles-southern-california', 'commercial-building-engineering-california'],
     content: `
 Understanding the types of engineering design services available helps Garden Grove property owners and developers select the right professionals for their projects. Whether you're planning a [commercial development in West Garden Grove](/services/commercial), a [residential addition near the Village](/services/residential), or an [industrial facility near the 22 Freeway](/blog/commercial-building-engineering-california), knowing which engineering disciplines you need ensures project success and regulatory compliance.
@@ -12373,7 +12373,7 @@ For location-specific engineering guidance, visit our city pages for [Anaheim](/
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['custom-house-engineering-design-long-beach', 'structural-engineer-cost-orange-county-2025', 'types-engineering-design-services-garden-grove'],
     content: `
 Sustainable engineering design services represent the future of construction throughout Irvine, Orange County, and Southern California. As environmental consciousness grows and California's green building codes become increasingly stringent, sustainable engineering design has evolved from an optional upgrade to an essential component of modern construction projects. Whether you're planning a LEED-certified office building in Irvine's Business Complex, an energy-efficient custom home in Turtle Rock, or a net-zero commercial development in the Irvine Spectrum, understanding sustainable engineering design services is crucial for project success.
@@ -12581,7 +12581,7 @@ Contact us today for a free consultation on your sustainable engineering design 
     readTime: '15 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['sustainable-engineering-design-services-irvine', 'structural-engineer-cost-orange-county-2025', 'when-to-hire-residential-structural-engineer-mission-viejo'],
     content: `
 Finding the right residential structural engineer near you in Newport Beach is critical for the success of any luxury home project, whether you're building a custom oceanfront estate, adding to a historic home on the Peninsula, or renovating a property in Harbor Island. Newport Beach's unique coastal environment, stringent Coastal Commission requirements, and ultra-high-end construction standards demand specialized engineering expertise that goes far beyond basic code compliance. With median home values exceeding $2.1 million and many waterfront properties valued at $10 million or more, selecting the right structural engineer isn't just about meeting building codes—it's about protecting a substantial investment while creating homes that stand the test of time in one of California's most challenging coastal environments.
@@ -12784,7 +12784,7 @@ Contact us today for a free consultation on your residential structural engineer
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['sustainable-engineering-design-services-irvine', 'residential-structural-engineer-near-me-newport-beach', 'structural-engineer-cost-orange-county-2025'],
     content: `
 Commercial building engineering design in California demands specialized expertise navigating complex building codes, stringent seismic requirements, and progressive energy standards that set California apart from other states. Anaheim, as one of Southern California's premier commercial centers, exemplifies the sophisticated engineering challenges facing California's commercial development sector. From the hospitality and entertainment complexes surrounding Disneyland Resort to the office towers along Katella Avenue, warehouse facilities in the Platinum Triangle, and retail centers throughout the city, Anaheim's diverse commercial landscape requires engineering firms capable of delivering technically excellent, code-compliant designs on accelerated schedules demanded by commercial construction.
@@ -12990,7 +12990,7 @@ Contact us today for a free consultation on your commercial building engineering
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me-newport-beach', 'structural-engineer-cost-orange-county-2025', 'custom-house-engineering-design-long-beach'],
     content: `
 Understanding when to hire a residential structural engineer in Santa Ana can save thousands of dollars in avoided mistakes, prevent dangerous structural failures, and ensure your home improvement project proceeds smoothly through the building permit process. As Orange County's county seat with diverse residential neighborhoods ranging from historic Craftsman homes in Floral Park to modern developments in Park Santiago, Santa Ana presents unique structural engineering needs spanning the full spectrum of residential construction challenges. Whether you're planning a second-story addition to maximize your property value, repairing foundation issues common in older Santa Ana neighborhoods, or undertaking a complete home renovation, knowing when professional structural engineering is required—or simply recommended—helps you make informed decisions that protect both your investment and your family's safety.
@@ -13173,7 +13173,7 @@ Contact us today for a free consultation on your residential structural engineer
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ['residential-structural-engineer-near-me-newport-beach', 'when-to-hire-residential-structural-engineer-santa-ana', 'structural-engineer-cost-orange-county-2025'],
     content: `
 Hiring a structural engineer in Huntington Beach requires more than simply finding someone with the right license—it demands identifying professionals with specific coastal engineering expertise, proven local experience, and the technical capabilities your project requires. Huntington Beach's unique position as Orange County's premier coastal community creates engineering challenges not found in inland areas: salt-air corrosion threatening structural integrity, Coastal Commission approval processes adding regulatory complexity, marine soil conditions requiring specialized foundation solutions, and premium property values justifying investment in exceptional engineering. Whether you're building a custom beachfront home overlooking the Pacific, adding a second story to maximize ocean views, renovating a midcentury home in Sunset Beach, or repairing foundation settlement in downtown Huntington Beach, the structural engineer you select directly impacts project cost, timeline, quality, and long-term performance.
@@ -13414,7 +13414,7 @@ Contact us today for a free consultation about your structural engineering needs
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ["seismic-retrofitting-california-homes","how-to-hire-structural-engineer-california","structural-engineering-home-additions"],
     content: `
 ## What Is a Structural Engineer?
@@ -13914,7 +13914,7 @@ Planning a home addition in Costa Mesa? Learn about structural engineering requi
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ["structural-engineer-cost-orange-county","how-to-choose-engineering-design-firm-southern-california","structural-engineering-home-additions"],
     content: `
 ## Understanding Engineering Design Services Costs
@@ -14624,7 +14624,7 @@ Planning a home addition in Laguna Beach? Learn about structural engineering req
     readTime: '11 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ["how-to-choose-engineering-design-firm-southern-california","structural-engineering-home-additions","engineering-design-services-guide"],
     content: `
 ## Benefit #1: Ensures Safety and Structural Integrity
@@ -15275,7 +15275,7 @@ Comprehensive guide to engineering design services in California. Learn about se
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ["how-to-hire-structural-engineer-california","engineering-design-services-guide","benefits-engineering-design-services-tustin"],
     content: `
 ## What Is a Design Engineer?
@@ -15958,7 +15958,7 @@ Learn how professional engineering design services deliver value through cost sa
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416404/pexels-photo-416404.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     relatedArticles: ["how-to-hire-structural-engineer-california","what-do-structural-engineers-do-costa-mesa","benefits-engineering-design-services-tustin"],
     content: `
 ## Civil Engineering vs. Structural Engineering: Understanding the Disciplines
