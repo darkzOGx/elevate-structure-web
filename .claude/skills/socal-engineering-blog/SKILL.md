@@ -173,16 +173,22 @@ Save files to project root directory in format: `blog-posts-nov-[day]-2025/`
 **IMPORTANT: Use the automated script to add posts to blog-data.ts**
 
 The project includes `scripts/add-blog-posts.js` which automatically:
-1. Parses markdown files from `blog-posts-[DATE]/` directory
-2. Extracts frontmatter and content
-3. Converts to TypeScript BlogPost objects
-4. **CORRECTLY inserts posts into BLOG_POSTS array BEFORE helper functions**
-5. Preserves all existing posts and structure
+1. **Auto-detects the most recent `blog-posts-*` directory** (or accepts path as argument)
+2. Parses markdown files from that directory
+3. Extracts frontmatter and content
+4. Converts to TypeScript BlogPost objects
+5. **Automatically sets first 3 posts as `featured: true`** (appears in Featured Articles)
+6. **Uses date from frontmatter or today's date**
+7. **CORRECTLY inserts posts into BLOG_POSTS array BEFORE helper functions**
+8. Preserves all existing posts and structure
 
 **Deployment Commands:**
 ```bash
-# 1. Run the conversion script
+# 1. Run the conversion script (auto-detects most recent blog-posts directory)
 node scripts/add-blog-posts.js
+
+# OR specify a directory explicitly:
+# node scripts/add-blog-posts.js blog-posts-nov-8-2025
 
 # 2. Verify build succeeds
 npm run build
@@ -197,6 +203,12 @@ git push origin master
 # 5. Submit to search engines
 npm run indexnow
 ```
+
+**Script Features:**
+- ✅ **Auto-detects** most recent blog-posts directory
+- ✅ **First 3 posts automatically featured** (shows in Featured Articles section)
+- ✅ **Date auto-detected** from frontmatter publishDate or uses today's date
+- ✅ **Clear output** showing which posts are featured with ⭐ indicator
 
 **CRITICAL BUG FIX IMPLEMENTED:**
 The `add-blog-posts.js` script was updated to fix a bug where posts were incorrectly inserted into the `getRelatedPosts()` function instead of the `BLOG_POSTS` array. The script now:

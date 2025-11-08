@@ -65,7 +65,35 @@ function createExcerpt(content) {
 
 // Main function
 function addBlogPosts() {
-  const blogPostsDir = path.join(__dirname, '..', 'blog-posts-nov-8-2025');
+  // Auto-detect the most recent blog-posts directory or use command line arg
+  const rootDir = path.join(__dirname, '..');
+  let blogPostsDir;
+
+  if (process.argv[2]) {
+    // Use specified directory from command line
+    blogPostsDir = path.join(rootDir, process.argv[2]);
+  } else {
+    // Auto-detect: find the most recent blog-posts-* directory
+    const allDirs = fs.readdirSync(rootDir)
+      .filter(name => name.startsWith('blog-posts-') && fs.statSync(path.join(rootDir, name)).isDirectory())
+      .sort()
+      .reverse();
+
+    if (allDirs.length === 0) {
+      console.error('❌ No blog-posts-* directories found!');
+      console.log('💡 Usage: node scripts/add-blog-posts.js [blog-posts-directory]');
+      process.exit(1);
+    }
+
+    blogPostsDir = path.join(rootDir, allDirs[0]);
+    console.log(`📁 Auto-detected directory: ${allDirs[0]}`);
+  }
+
+  if (!fs.existsSync(blogPostsDir)) {
+    console.error(`❌ Directory not found: ${blogPostsDir}`);
+    process.exit(1);
+  }
+
   const blogDataPath = path.join(__dirname, '..', 'src', 'lib', 'blog-data.ts');
 
   // Read all markdown files
@@ -78,7 +106,8 @@ function addBlogPosts() {
   const newPosts = [];
 
   // Process each file
-  for (const file of files) {
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
     const filePath = path.join(blogPostsDir, file);
     console.log(`Processing ${file}...`);
 
@@ -90,22 +119,31 @@ function addBlogPosts() {
     const baseSlug = titleToSlug(frontmatter.title.split(':')[0]);
     const slug = city ? `${baseSlug}-${titleToSlug(city)}` : baseSlug;
 
+    // Automatically feature the first 3 posts (most recent batch)
+    const isFeatured = i < 3;
+
+    // Use date from frontmatter or today's date
+    const publishDate = frontmatter.publishDate
+      ? new Date(frontmatter.publishDate).toISOString().split('T')[0]
+      : new Date().toISOString().split('T')[0];
+
     // Create BlogPost object
     const blogPost = {
       id: slug,
       title: frontmatter.title,
       excerpt: frontmatter.metaDescription || createExcerpt(content),
       category: frontmatter.category,
-      date: '2025-11-08',
+      date: publishDate,
       readTime: frontmatter.readTime,
       author: frontmatter.author,
       image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-      featured: false,
+      featured: isFeatured,
       content: content
     };
 
     newPosts.push(blogPost);
-    console.log(`  → Created post: ${slug}`);
+    const featuredStatus = isFeatured ? '⭐ FEATURED' : '';
+    console.log(`  → Created post: ${slug} ${featuredStatus}`);
   }
 
   // Read existing blog-data.ts
@@ -153,10 +191,17 @@ function addBlogPosts() {
   fs.writeFileSync(blogDataPath, updatedContent, 'utf-8');
 
   console.log(`\n✅ Successfully added ${newPosts.length} blog posts to blog-data.ts`);
+
+  const featuredCount = newPosts.filter(p => p.featured).length;
+  console.log(`⭐ ${featuredCount} posts set as FEATURED (will appear in Featured Articles section)`);
+
   console.log('\nAdded posts:');
   newPosts.forEach((post, index) => {
-    console.log(`${index + 1}. ${post.title} (${post.id})`);
+    const star = post.featured ? '⭐' : '  ';
+    console.log(`${star} ${index + 1}. ${post.title} (${post.id})`);
   });
+
+  console.log('\n💡 Tip: The first 3 posts are automatically featured to appear on the homepage.');
 }
 
 // Run the script
