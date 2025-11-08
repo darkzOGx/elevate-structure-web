@@ -12,7 +12,7 @@ const crypto = require('crypto');
 
 // Configuration
 const CONFIG = {
-  host: 'www.aaaengineeringdesign.com',
+  host: 'aaaengineeringdesign.com',
   sitemapPath: path.join(__dirname, '../public/sitemap.xml'),
   envPath: path.join(__dirname, '../.env.local'),
   publicDir: path.join(__dirname, '../public'),

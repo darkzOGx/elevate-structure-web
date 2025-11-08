@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.aaaengineeringdesign.com',
+  siteUrl: 'https://aaaengineeringdesign.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   exclude: ['/server-sitemap.xml'],
@@ -13,7 +13,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://www.aaaengineeringdesign.com/sitemap.xml',
+      'https://aaaengineeringdesign.com/sitemap.xml',
     ],
   },
   transform: async (config, path) => {

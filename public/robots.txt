@@ -5,7 +5,7 @@ Disallow: /api/
 Disallow: /_next/
 
 # Host
-Host: https://www.aaaengineeringdesign.com
+Host: https://aaaengineeringdesign.com
 
 # Sitemaps
-Sitemap: https://www.aaaengineeringdesign.com/sitemap.xml
+Sitemap: https://aaaengineeringdesign.com/sitemap.xml
