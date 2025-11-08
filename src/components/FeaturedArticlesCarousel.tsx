@@ -62,13 +62,13 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
         </>
       )}
 
-      {/* Posts Column */}
-      <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+      {/* Posts Row - Horizontal Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-7xl">
         {currentPosts.map((post, index) => {
           const categoryColor = getCategoryColor(post.category)
           return (
             <FadeInSection key={`${post.id}-${currentIndex}`} delay={index * 100}>
-              <Card className="border hover:border-primary/50 transition-all hover:shadow-md group">
+              <Card className="border hover:border-primary/50 transition-all hover:shadow-md group h-full flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <Badge style={{ backgroundColor: categoryColor }} className="text-xs">
@@ -83,7 +83,7 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
                     {post.excerpt}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="mt-auto">
                   <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
