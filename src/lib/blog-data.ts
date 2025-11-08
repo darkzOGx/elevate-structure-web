@@ -16602,7 +16602,7 @@ Discover how professional engineering design services deliver value through cost
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Engineering design services form the foundation of successful construction projects throughout Dana Point, Laguna Beach, San Clemente, and the broader Orange County coastal region. Whether you're planning a custom oceanfront home in Dana Point Harbor, a commercial development near the historic district, or a residential renovation in the Lantern District, understanding what engineering design entails is essential for project success.
 
 For Dana Point property owners, engineering design takes on special significance due to the city's unique coastal environment, strict Coastal Commission requirements, and challenging building conditions. The combination of ocean proximity, hillside topography, and premium property values demands engineering expertise that goes beyond standard residential or commercial projects.
@@ -16937,7 +16937,7 @@ California's seismic requirements demand proper engineering for both new constru
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Stormwater design engineering plays a critical role in protecting property and meeting environmental regulations throughout Westminster, Fountain Valley, Garden Grove, and central Orange County. As California's stormwater requirements become increasingly stringent, property owners in Westminster face complex challenges managing runoff from residential developments, commercial projects, and municipal infrastructure.
 
 Westminster's location in central Orange County, with its flat topography and urbanized landscape, creates unique stormwater management needs. The city's extensive impervious surfaces, proximity to the Bolsa Chica wetlands, and connection to regional flood control systems demand sophisticated engineering approaches that balance flood protection, water quality, and regulatory compliance.
@@ -17298,7 +17298,7 @@ Comprehensive overview of engineering design services for California properties,
     readTime: '15 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Finding the best structural engineering firm in Orange, California requires understanding local expertise, professional credentials, and project-specific capabilities. Whether you're planning a historic home renovation in Old Towne Orange, a commercial development near Chapman University, or a residential addition in one of Orange's established neighborhoods, selecting the right engineering partner determines project success.
 
 Orange's unique character—from its preserved historic district to modern residential developments—creates diverse structural engineering needs. The city's strict design review requirements, seismic regulations specific to Seismic Zone 4, and blend of architectural styles from Victorian to contemporary demand engineering firms with both technical excellence and local knowledge.
@@ -17694,7 +17694,7 @@ Finding the right residential structural engineer for your Southern California h
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Custom house engineering design transforms architectural visions into structurally sound, buildable luxury homes throughout Yorba Linda, Anaheim Hills, Placentia, and northeastern Orange County. Whether you're planning an estate home on Yorba Linda's scenic hillsides, a contemporary residence near the historic Nixon Library, or a custom build in one of the city's prestigious gated communities, comprehensive engineering design ensures your dream home becomes reality.
 
 Yorba Linda's unique characteristics—premium property values exceeding \$1.2 million median, extensive hillside topography, stringent design standards, and affluent community expectations—demand engineering expertise that goes far beyond standard tract home design. Custom homes require integrated structural, civil, and MEP engineering that supports architectural distinction while meeting California's rigorous building codes and seismic requirements.
@@ -18148,7 +18148,7 @@ Sustainable engineering creates environmentally responsible, high-performance bu
     readTime: '14 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Engineering design encompasses multiple specialized disciplines, each addressing different aspects of construction projects throughout Fountain Valley, Westminster, Garden Grove, and central Orange County. Whether you're planning a residential development in Fountain Valley's established neighborhoods, a commercial building near the Santa Ana River, or an industrial facility in one of the city's business parks, understanding the different types of engineering design helps you engage the right professionals for project success.
 
 Fountain Valley's location in central Orange County—with its flat topography, mature infrastructure, diverse building stock, and mix of residential and commercial development—requires various engineering specialties depending on project type and scope. Knowing which type of engineering design your project needs ensures proper planning, accurate budgeting, and regulatory compliance.
@@ -18532,7 +18532,7 @@ Professional engineering design delivers value beyond code compliance, including
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Engineering design services form the foundation of successful construction projects throughout Dana Point, Laguna Beach, San Clemente, and the broader Orange County coastal region. Whether you're planning a custom oceanfront home in Dana Point Harbor, a commercial development near the historic district, or a residential renovation in the Lantern District, understanding what engineering design entails is essential for project success.
 
 For Dana Point property owners, engineering design takes on special significance due to the city's unique coastal environment, strict Coastal Commission requirements, and challenging building conditions. The combination of ocean proximity, hillside topography, and premium property values demands engineering expertise that goes beyond standard residential or commercial projects.
@@ -20810,7 +20810,7 @@ Comprehensive guide to foundation evaluation, common problems in California home
     readTime: '12 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: true,
+    featured: false,
     content: `Engineering design services form the foundation of successful construction projects throughout Dana Point, Laguna Beach, San Clemente, and the broader Orange County coastal region. Whether you're planning a custom oceanfront home in Dana Point Harbor, a commercial development near the historic district, or a residential renovation in the Lantern District, understanding what engineering design entails is essential for project success.
 
 For Dana Point property owners, engineering design takes on special significance due to the city's unique coastal environment, strict Coastal Commission requirements, and challenging building conditions. The combination of ocean proximity, hillside topography, and premium property values demands engineering expertise that goes beyond standard residential or commercial projects.
@@ -22395,7 +22395,7 @@ Finding the right residential structural engineer for your Southern California h
     readTime: '13 min read',
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?w=800&h=400&fit=crop',
-    featured: false,
+    featured: true,
     content: `Expert structural design services are essential for successful construction projects throughout Laguna Niguel, Laguna Beach, Mission Viejo, and South Orange County's premium communities. Finding qualified structural design experts becomes particularly critical for properties in these areas, where complex hillside conditions, luxury custom homes, and stringent local requirements demand sophisticated engineering solutions.
 
 Laguna Niguel's distinctive characteristics—rolling hillsides, planned community standards, proximity to coastal influences, and high property values—require structural design expertise that extends beyond basic code compliance to deliver exceptional performance, aesthetic integration, and long-term value. Whether planning a hillside custom home, commercial development, or major residential addition, partnering with experienced structural design experts ensures your project achieves optimal outcomes.
