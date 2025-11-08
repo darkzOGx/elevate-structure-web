@@ -3,7 +3,6 @@ import { Hero } from '@/components/Hero'
 import { Services } from '@/components/Services'
 import { Process } from '@/components/Process'
 import { Benefits } from '@/components/Benefits'
-import { CTA } from '@/components/CTA'
 import { Testimonials } from '@/components/Testimonials'
 import { RecentProjects } from '@/components/RecentProjects'
 import { FAQ } from '@/components/FAQ'
@@ -27,7 +26,6 @@ export default function Home() {
         <Services />
         <Process />
         <Benefits />
-        <CTA />
         <Testimonials />
         <RecentProjects />
         <FAQ />
