@@ -16593,33 +16593,7 @@ Discover how professional engineering design services deliver value through cost
 \`\`\`
     `,
   },
-]
-
-// Helper functions
-export function getFeaturedPosts(): BlogPost[] {
-  return BLOG_POSTS.filter(post => post.featured)
-}
-
-export function getAllPosts(): BlogPost[] {
-  return BLOG_POSTS.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-}
-
-export function getPostById(id: string): BlogPost | undefined {
-  return BLOG_POSTS.find(post => post.id === id)
-}
-
-export function getPostsByCategory(category: string): BlogPost[] {
-  if (category === 'All') return getAllPosts()
-  return BLOG_POSTS.filter(post => post.category === category)
-}
-
-export function getRecentPosts(limit: number = 3): BlogPost[] {
-  return getAllPosts().slice(0, limit)
-}
-
-export function getRelatedPosts(postId: string, limit: number = 3): BlogPost[] {
-  const post = getPostById(postId)
-  if (!post || !post.relatedArticles) return [  {
+  {
     id: 'what-is-engineering-design-in-dana-point-dana-point',
     title: `What is Engineering Design in Dana Point: Complete Guide 2025`,
     excerpt: `What is engineering design in Dana Point? Learn about engineering design services for coastal properties. Licensed CA Professional Engineers. Call (949) 981-4448 for consultation.`,
@@ -18550,6 +18524,32 @@ Professional engineering design delivers value beyond code compliance, including
 [View All Articles →](https://aaaengineeringdesign.com/blog)`,
   },
 ]
+
+// Helper functions
+export function getFeaturedPosts(): BlogPost[] {
+  return BLOG_POSTS.filter(post => post.featured)
+}
+
+export function getAllPosts(): BlogPost[] {
+  return BLOG_POSTS.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+}
+
+export function getPostById(id: string): BlogPost | undefined {
+  return BLOG_POSTS.find(post => post.id === id)
+}
+
+export function getPostsByCategory(category: string): BlogPost[] {
+  if (category === 'All') return getAllPosts()
+  return BLOG_POSTS.filter(post => post.category === category)
+}
+
+export function getRecentPosts(limit: number = 3): BlogPost[] {
+  return getAllPosts().slice(0, limit)
+}
+
+export function getRelatedPosts(postId: string, limit: number = 3): BlogPost[] {
+  const post = getPostById(postId)
+  if (!post || !post.relatedArticles) return []
 
   return post.relatedArticles
     .map(id => getPostById(id))

@@ -111,8 +111,16 @@ function addBlogPosts() {
   // Read existing blog-data.ts
   let blogDataContent = fs.readFileSync(blogDataPath, 'utf-8');
 
-  // Find the closing bracket of BLOG_POSTS array
-  const closingBracketIndex = blogDataContent.lastIndexOf(']');
+  // Find the closing bracket of BLOG_POSTS array (before helper functions)
+  const helperFunctionsIndex = blogDataContent.indexOf('// Helper functions');
+  if (helperFunctionsIndex === -1) {
+    console.error('Could not find helper functions comment');
+    return;
+  }
+
+  // Find the last closing bracket before helper functions
+  const blogPostsSection = blogDataContent.substring(0, helperFunctionsIndex);
+  const closingBracketIndex = blogPostsSection.lastIndexOf(']');
 
   if (closingBracketIndex === -1) {
     console.error('Could not find closing bracket for BLOG_POSTS array');
