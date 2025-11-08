@@ -13786,7 +13786,7 @@ Our licensed Professional Engineers are ready to help with your project. Get a f
 
 ### Seismic Retrofitting for California Homes
 **Category:** Structural Engineering
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 12 min
 
 Learn about seismic retrofitting requirements for older homes in Costa Mesa and throughout California. Understand retrofit methods, costs, and code requirements.
@@ -13797,7 +13797,7 @@ Learn about seismic retrofitting requirements for older homes in Costa Mesa and 
 
 ### How to Hire a Structural Engineer in California
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 14 min
 
 Complete guide to hiring structural engineers in Orange County. Learn about qualifications, costs, project timelines, and what to look for when selecting an engineering firm.
@@ -13808,7 +13808,7 @@ Complete guide to hiring structural engineers in Orange County. Learn about qual
 
 ### Structural Engineering for Home Additions
 **Category:** Structural Engineering
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 11 min
 
 Planning a home addition in Costa Mesa? Learn about structural engineering requirements, permit processes, and design considerations for successful addition projects.
@@ -14529,7 +14529,7 @@ Our licensed Professional Engineers are ready to provide a detailed cost proposa
 
 ### Structural Engineer Cost in Orange County
 **Category:** Cost Guides
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 13 min
 
 Comprehensive pricing guide for structural engineering services across Orange County. Compare costs between cities, understand fee structures, and budget effectively for your project.
@@ -14540,7 +14540,7 @@ Comprehensive pricing guide for structural engineering services across Orange Co
 
 ### How to Choose an Engineering Design Firm in Southern California
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 15 min
 
 Learn how to select the right engineering firm for your project. Understand qualifications, experience, pricing, and what to look for when hiring engineers in Orange County and beyond.
@@ -14551,7 +14551,7 @@ Learn how to select the right engineering firm for your project. Understand qual
 
 ### Structural Engineering for Home Additions
 **Category:** Structural Engineering
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 11 min
 
 Planning a home addition in Laguna Beach? Learn about structural engineering requirements, costs, permit processes, and design considerations for successful addition projects.
@@ -15180,7 +15180,7 @@ Our licensed Professional Engineers are ready to help you achieve project succes
 
 ### How to Choose an Engineering Design Firm in Southern California
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 15 min
 
 Learn how to select the right engineering firm for your Tustin project. Understand qualifications, experience, and what to look for when hiring professional engineers.
@@ -15191,7 +15191,7 @@ Learn how to select the right engineering firm for your Tustin project. Understa
 
 ### Structural Engineering for Home Additions
 **Category:** Structural Engineering
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 11 min
 
 Planning a home addition in Tustin? Learn about structural engineering requirements, benefits, costs, and design considerations for successful addition projects.
@@ -15202,7 +15202,7 @@ Planning a home addition in Tustin? Learn about structural engineering requireme
 
 ### Engineering Design Services Guide
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 18 min
 
 Comprehensive guide to engineering design services in California. Learn about service types, project processes, costs, and how engineering improves project outcomes.
@@ -15863,7 +15863,7 @@ Our licensed Professional Engineers are ready to help with your San Diego constr
 
 ### How to Hire a Structural Engineer in California
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 14 min
 
 Complete guide to hiring structural engineers in California. Learn about qualifications, costs, project timelines, and selecting the right engineering firm.
@@ -15874,7 +15874,7 @@ Complete guide to hiring structural engineers in California. Learn about qualifi
 
 ### Engineering Design Services Guide
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 18 min
 
 Comprehensive guide to engineering design services in California. Understand service types, project processes, costs, and how engineering improves project outcomes.
@@ -15885,7 +15885,7 @@ Comprehensive guide to engineering design services in California. Understand ser
 
 ### Benefits of Engineering Design Services
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 11 min
 
 Learn how professional engineering design services deliver value through cost savings, safety, regulatory compliance, and project success in California.
@@ -16474,7 +16474,7 @@ Our licensed Professional Engineers provide both civil and structural engineerin
 
 ### How to Hire a Structural Engineer in California
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 14 min
 
 Complete guide to hiring structural engineers in California. Learn about qualifications, licensing, costs, and what to look for when selecting an engineering firm.
@@ -16485,7 +16485,7 @@ Complete guide to hiring structural engineers in California. Learn about qualifi
 
 ### What Do Structural Engineers Do
 **Category:** Structural Engineering
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 12 min
 
 Learn about structural engineering services, responsibilities, qualifications, and when to hire structural engineers for your California construction project.
@@ -16496,7 +16496,7 @@ Learn about structural engineering services, responsibilities, qualifications, a
 
 ### Benefits of Engineering Design Services
 **Category:** Design & Planning
-**Date:** November 7, 2025
+**Date:** November 8, 2025
 **Read Time:** 11 min
 
 Discover how professional engineering design services deliver value through cost savings, safety, regulatory compliance, and project success.
@@ -20779,14 +20779,14 @@ Our licensed Professional Engineers are ready to help protect your property from
 Continue exploring our engineering insights:
 
 **Understanding Seismic Design Requirements in California**
-*Structural Engineering • November 7, 2025 • 10 min read*
+*Structural Engineering • November 8, 2025 • 10 min read*
 
 Learn about California's seismic design codes and how they protect buildings from earthquake damage. Essential reading for property owners planning retrofitting projects.
 
 [Read Article →](https://aaaengineeringdesign.com/blog/seismic-design-requirements)
 
 **When to Hire a Structural Engineer for Your Home**
-*Design & Planning • November 7, 2025 • 8 min read*
+*Design & Planning • November 8, 2025 • 8 min read*
 
 Discover the key scenarios when professional structural engineering services become essential for residential projects, including seismic retrofitting, additions, and remodels.
 
@@ -21621,7 +21621,7 @@ Explore the various engineering design specialties—structural, civil, MEP, and
 [Read Article →](https://aaaengineeringdesign.com/blog/types-of-engineering-design)
 
 **Engineering Design Services Cost: 2025 California Pricing Guide**
-*Cost Guides • November 7, 2025 • 11 min read*
+*Cost Guides • November 8, 2025 • 11 min read*
 
 Detailed breakdown of engineering design costs for residential and commercial projects throughout California, with regional pricing insights.
 
