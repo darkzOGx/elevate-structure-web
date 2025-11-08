@@ -13,6 +13,7 @@ import { getFeaturedPosts, getAllPosts, BLOG_CATEGORIES } from '@/lib/blog-data'
 import BlogFilterClient from '@/components/BlogFilterClient'
 import { FeaturedArticlesCarousel } from '@/components/FeaturedArticlesCarousel'
 
+// Blog page with featured articles carousel and NEW badges
 export const metadata: Metadata = {
   title: 'Engineering Insights & Industry News | AAA Engineering Design Blog',
   description: 'Expert insights on structural engineering, building codes, construction best practices, and industry trends from our licensed Professional Engineers.',
