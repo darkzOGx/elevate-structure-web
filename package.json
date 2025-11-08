@@ -7,7 +7,9 @@
     "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "eslint",
-    "indexnow": "node scripts/submit-indexnow.js"
+    "indexnow": "node scripts/submit-indexnow.js",
+    "indexnow:recent": "INDEXNOW_RECENT_DAYS=7 node scripts/submit-indexnow.js",
+    "deploy": "npm run build && npm run indexnow"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",

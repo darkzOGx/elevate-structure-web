@@ -1,75 +1,254 @@
-// Script to submit all site URLs to IndexNow
-// Run with: node scripts/submit-indexnow.js
+#!/usr/bin/env node
 
-const INDEXNOW_KEY = 'b53cf03137214ff0bb2e1ab0d3ebdb5c'
-const SITE_URL = 'https://aaaengineeringdesign.com'
+/**
+ * IndexNow URL Submission Script
+ * Automatically submits URLs from sitemap.xml to IndexNow API
+ * for instant search engine indexing (Bing, Yandex, etc.)
+ */
 
-const urls = [
-  `${SITE_URL}`,
-  `${SITE_URL}/blog`,
-  `${SITE_URL}/blog/understanding-seismic-retrofitting`,
-  `${SITE_URL}/blog/building-code-compliance-2024`,
-  `${SITE_URL}/blog/structural-engineering-home-additions`,
-  `${SITE_URL}/blog/foundation-repair-warning-signs`,
-  `${SITE_URL}/blog/adu-structural-requirements`,
-  `${SITE_URL}/blog/engineering-design-services-guide`,
-  `${SITE_URL}/blog/residential-structural-engineer-near-me`,
-  `${SITE_URL}/blog/commercial-building-inspections`,
-  `${SITE_URL}/blog/how-to-hire-structural-engineer`,
-  `${SITE_URL}/blog/best-structural-engineering-firms-los-angeles`,
-  `${SITE_URL}/blog/commercial-building-engineering-california`,
-  `${SITE_URL}/blog/engineering-design-principles-southern-california`,
-  `${SITE_URL}/blog/ultimate-guide-structural-engineering-design-california`,
-  `${SITE_URL}/blog/sustainable-design-engineering-orange-county`,
-  `${SITE_URL}/blog/how-to-choose-engineering-design-firm-socal`,
-  `${SITE_URL}/blog/structural-engineer-cost-orange-county-2025`,
-  `${SITE_URL}/blog/custom-house-engineering-design-long-beach`,
-  `${SITE_URL}/blog/stormwater-design-engineer-fullerton`,
-  `${SITE_URL}/blog/when-to-hire-residential-structural-engineer-mission-viejo`,
-  `${SITE_URL}/blog/septic-design-engineers-san-clemente`,
-  `${SITE_URL}/blog/types-engineering-design-services-garden-grove`,
-  `${SITE_URL}/blog/sustainable-engineering-design-services-irvine`,
-  `${SITE_URL}/blog/residential-structural-engineer-near-me-newport-beach`,
-  `${SITE_URL}/blog/commercial-building-engineering-design-california-anaheim`,
-  `${SITE_URL}/blog/when-to-hire-residential-structural-engineer-santa-ana`,
-  `${SITE_URL}/blog/how-to-hire-structural-engineer-huntington-beach`,
-]
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
 
-async function submitToIndexNow() {
-  console.log('🚀 Submitting URLs to IndexNow...\n')
+// Configuration
+const CONFIG = {
+  host: 'www.aaaengineeringdesign.com',
+  sitemapPath: path.join(__dirname, '../public/sitemap.xml'),
+  envPath: path.join(__dirname, '../.env.local'),
+  publicDir: path.join(__dirname, '../public'),
+  indexNowEndpoint: 'https://api.indexnow.org/indexnow',
+  batchSize: 1000, // Submit in batches of 1000 URLs
+  recentDays: null, // Set to number to only submit URLs modified in last N days
+};
+
+// ANSI color codes for terminal output
+const colors = {
+  reset: '\x1b[0m',
+  bright: '\x1b[1m',
+  green: '\x1b[32m',
+  yellow: '\x1b[33m',
+  blue: '\x1b[34m',
+  red: '\x1b[31m',
+  cyan: '\x1b[36m',
+};
+
+function log(message, color = 'reset') {
+  console.log(`${colors[color]}${message}${colors.reset}`);
+}
+
+function generateApiKey() {
+  return crypto.randomBytes(32).toString('hex');
+}
+
+function getOrCreateApiKey() {
+  let apiKey = process.env.INDEXNOW_API_KEY;
+
+  if (!apiKey) {
+    // Try to load from .env.local
+    if (fs.existsSync(CONFIG.envPath)) {
+      const envContent = fs.readFileSync(CONFIG.envPath, 'utf8');
+      const match = envContent.match(/INDEXNOW_API_KEY=(.+)/);
+      if (match) {
+        apiKey = match[1].trim();
+      }
+    }
+  }
+
+  if (!apiKey) {
+    log('📝 Generating new IndexNow API key...', 'yellow');
+    apiKey = generateApiKey();
+
+    // Save to .env.local
+    const envLine = `\nINDEXNOW_API_KEY=${apiKey}\n`;
+    fs.appendFileSync(CONFIG.envPath, envLine, 'utf8');
+    log(`✓ API key saved to ${path.basename(CONFIG.envPath)}`, 'green');
+  }
+
+  return apiKey;
+}
+
+function createKeyVerificationFile(apiKey) {
+  const keyFilePath = path.join(CONFIG.publicDir, `${apiKey}.txt`);
+
+  if (!fs.existsSync(keyFilePath)) {
+    fs.writeFileSync(keyFilePath, apiKey, 'utf8');
+    log(`✓ Created verification file: ${apiKey}.txt`, 'green');
+  }
+
+  return `https://${CONFIG.host}/${apiKey}.txt`;
+}
+
+function parseSitemap() {
+  if (!fs.existsSync(CONFIG.sitemapPath)) {
+    throw new Error(`Sitemap not found at ${CONFIG.sitemapPath}`);
+  }
+
+  const sitemapContent = fs.readFileSync(CONFIG.sitemapPath, 'utf8');
+  const urlMatches = [...sitemapContent.matchAll(/<loc>(.*?)<\/loc>/g)];
+  const urls = urlMatches.map(match => match[1].trim());
+
+  if (CONFIG.recentDays) {
+    const lastmodMatches = [...sitemapContent.matchAll(/<lastmod>(.*?)<\/lastmod>/g)];
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - CONFIG.recentDays);
+
+    const recentUrls = urls.filter((url, index) => {
+      if (lastmodMatches[index]) {
+        const lastmod = new Date(lastmodMatches[index][1]);
+        return lastmod >= cutoffDate;
+      }
+      return true; // Include URLs without lastmod
+    });
+
+    log(`📅 Filtered to ${recentUrls.length} URLs modified in last ${CONFIG.recentDays} days`, 'cyan');
+    return recentUrls;
+  }
+
+  return urls;
+}
+
+async function submitToIndexNow(apiKey, keyLocation, urls) {
+  const payload = {
+    host: CONFIG.host,
+    key: apiKey,
+    keyLocation: keyLocation,
+    urlList: urls,
+  };
 
   try {
-    const response = await fetch('https://api.indexnow.org/indexnow', {
+    const response = await fetch(CONFIG.indexNowEndpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
       },
-      body: JSON.stringify({
-        host: 'aaaengineeringdesign.com',
-        key: INDEXNOW_KEY,
-        keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
-        urlList: urls,
-      }),
-    })
+      body: JSON.stringify(payload),
+    });
 
-    console.log(`Status: ${response.status} ${response.statusText}\n`)
-
-    if (response.status === 200 || response.status === 202) {
-      console.log('✓ Successfully submitted all URLs to IndexNow!')
-      console.log(`✓ Total URLs submitted: ${urls.length}`)
-      console.log('\nURLs submitted:')
-      urls.forEach(url => console.log(`  - ${url}`))
-      console.log('\n✓ Search engines (Bing, Yandex, etc.) will now be notified of your content!')
-      console.log('\nℹ Note: Verify submissions at https://www.bing.com/webmasters')
-    } else {
-      console.error('✗ Failed to submit URLs to IndexNow')
-      console.error(`Status: ${response.status}`)
-      const text = await response.text()
-      console.error(`Response: ${text}`)
-    }
+    return {
+      ok: response.ok,
+      status: response.status,
+      statusText: response.statusText,
+      data: response.ok ? await response.text().catch(() => null) : null,
+    };
   } catch (error) {
-    console.error('✗ Error submitting to IndexNow:', error.message)
+    return {
+      ok: false,
+      status: 0,
+      statusText: error.message,
+      data: null,
+    };
   }
 }
 
-submitToIndexNow()
+async function submitInBatches(apiKey, keyLocation, urls) {
+  const batches = [];
+  for (let i = 0; i < urls.length; i += CONFIG.batchSize) {
+    batches.push(urls.slice(i, i + CONFIG.batchSize));
+  }
+
+  log(`📦 Submitting ${urls.length} URLs in ${batches.length} batch(es)...`, 'blue');
+
+  const results = [];
+  for (let i = 0; i < batches.length; i++) {
+    const batch = batches[i];
+    log(`   Batch ${i + 1}/${batches.length}: ${batch.length} URLs...`, 'cyan');
+
+    const result = await submitToIndexNow(apiKey, keyLocation, batch);
+    results.push(result);
+
+    if (result.ok) {
+      log(`   ✓ Success: ${result.status} ${result.statusText}`, 'green');
+    } else {
+      log(`   ✗ Failed: ${result.status} ${result.statusText}`, 'red');
+    }
+
+    // Rate limiting: wait 1 second between batches
+    if (i < batches.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+  }
+
+  return results;
+}
+
+function printReport(apiKey, keyLocation, urls, results) {
+  console.log('\n' + '═'.repeat(60));
+  log('🚀 IndexNow Submission Report', 'bright');
+  console.log('═'.repeat(60) + '\n');
+
+  log(`✓ API Key: ${apiKey.substring(0, 8)}...${apiKey.substring(apiKey.length - 8)}`, 'green');
+  log(`✓ Verification: ${keyLocation}`, 'green');
+  log(`✓ URLs Collected: ${urls.length} from sitemap.xml`, 'green');
+  console.log('');
+
+  const successful = results.filter(r => r.ok).length;
+  const failed = results.length - successful;
+
+  if (successful > 0) {
+    log(`✓ Successful submissions: ${successful}/${results.length}`, 'green');
+  }
+  if (failed > 0) {
+    log(`✗ Failed submissions: ${failed}/${results.length}`, 'red');
+  }
+
+  console.log('');
+  log('📊 Submission Details:', 'blue');
+  log(`   Host: ${CONFIG.host}`, 'cyan');
+  log(`   Timestamp: ${new Date().toISOString()}`, 'cyan');
+  log(`   Search Engines: Bing, Yandex, Naver, Seznam.cz`, 'cyan');
+
+  console.log('');
+  if (successful > 0) {
+    log('✓ Your URLs are now being processed for indexing!', 'green');
+    console.log('');
+    log('💡 Tip: Check Bing Webmaster Tools in 24-48 hours to verify indexing.', 'yellow');
+  } else {
+    log('⚠️  All submissions failed. Please check your API key and try again.', 'red');
+  }
+
+  console.log('\n' + '═'.repeat(60) + '\n');
+}
+
+async function main() {
+  try {
+    log('\n🔍 Starting IndexNow submission process...', 'bright');
+    console.log('');
+
+    // Step 1: Get or create API key
+    log('Step 1/4: Managing API key...', 'blue');
+    const apiKey = getOrCreateApiKey();
+
+    // Step 2: Create verification file
+    log('Step 2/4: Creating verification file...', 'blue');
+    const keyLocation = createKeyVerificationFile(apiKey);
+
+    // Step 3: Parse sitemap
+    log('Step 3/4: Parsing sitemap...', 'blue');
+    const urls = parseSitemap();
+    log(`✓ Found ${urls.length} URLs in sitemap`, 'green');
+
+    if (urls.length === 0) {
+      log('⚠️  No URLs found in sitemap. Exiting.', 'yellow');
+      return;
+    }
+
+    // Step 4: Submit to IndexNow
+    log('Step 4/4: Submitting to IndexNow API...', 'blue');
+    const results = await submitInBatches(apiKey, keyLocation, urls);
+
+    // Print final report
+    printReport(apiKey, keyLocation, urls, results);
+
+  } catch (error) {
+    log(`\n✗ Error: ${error.message}`, 'red');
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+// Run if called directly
+if (require.main === module) {
+  main();
+}
+
+module.exports = { main, submitToIndexNow, parseSitemap };

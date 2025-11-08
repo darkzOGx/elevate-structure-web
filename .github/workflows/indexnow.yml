@@ -1,0 +1,72 @@
+name: IndexNow Submission
+
+on:
+  # Run after successful deployment
+  deployment_status:
+
+  # Run manually from Actions tab
+  workflow_dispatch:
+
+  # Run after pushing to main (optional)
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/sitemap.xml'
+      - 'src/app/**'
+      - 'src/content/**'
+
+jobs:
+  submit-indexnow:
+    name: Submit URLs to IndexNow
+    runs-on: ubuntu-latest
+
+    # Only run on successful deployments
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'push' ||
+      (github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --only=production
+
+      - name: Create .env.local with API key
+        run: |
+          echo "INDEXNOW_API_KEY=${{ secrets.INDEXNOW_API_KEY }}" > .env.local
+
+      - name: Submit URLs to IndexNow
+        run: npm run indexnow
+        env:
+          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
+
+      - name: Upload submission report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-report-${{ github.run_number }}
+          path: |
+            .env.local
+            public/*.txt
+          retention-days: 7
+
+      - name: Comment on commit (if applicable)
+        if: github.event_name == 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: '✅ IndexNow submission completed! URLs have been submitted to Bing, Yandex, and other search engines.'
+            })
