@@ -25,6 +25,15 @@ export default function BlogFilterClient({
 }: BlogFilterClientProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
 
+  // Check if post is new (less than 7 days old)
+  const isNewPost = (dateString: string) => {
+    const postDate = new Date(dateString)
+    const today = new Date()
+    const diffTime = Math.abs(today.getTime() - postDate.getTime())
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    return diffDays <= 7
+  }
+
   // Filter posts based on selected category
   const filteredPosts = selectedCategory === 'All'
     ? posts
@@ -58,9 +67,16 @@ export default function BlogFilterClient({
               <FadeInSection key={post.id} delay={index * 100}>
                 <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
                   <CardHeader className="pb-4">
-                    <Badge className="w-fit text-xs mb-2" style={{ backgroundColor: categoryColor }}>
-                      {post.category}
-                    </Badge>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Badge className="w-fit text-xs" style={{ backgroundColor: categoryColor }}>
+                        {post.category}
+                      </Badge>
+                      {isNewPost(post.date) && (
+                        <Badge variant="destructive" className="text-xs font-bold animate-pulse">
+                          NEW
+                        </Badge>
+                      )}
+                    </div>
                     <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />

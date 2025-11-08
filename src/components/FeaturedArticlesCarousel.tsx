@@ -24,6 +24,15 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
   // Get current posts to display
   const currentPosts = posts.slice(currentIndex * postsPerPage, (currentIndex + 1) * postsPerPage)
 
+  // Check if post is new (less than 7 days old)
+  const isNewPost = (dateString: string) => {
+    const postDate = new Date(dateString)
+    const today = new Date()
+    const diffTime = Math.abs(today.getTime() - postDate.getTime())
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    return diffDays <= 7
+  }
+
   // Navigation handlers
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? totalPages - 1 : prev - 1))
@@ -71,9 +80,16 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
               <Card className="border hover:border-primary/50 transition-all hover:shadow-md group h-full flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <Badge style={{ backgroundColor: categoryColor }} className="text-xs">
-                      {post.category}
-                    </Badge>
+                    <div className="flex items-center gap-2">
+                      <Badge style={{ backgroundColor: categoryColor }} className="text-xs">
+                        {post.category}
+                      </Badge>
+                      {isNewPost(post.date) && (
+                        <Badge variant="destructive" className="text-xs font-bold animate-pulse">
+                          NEW
+                        </Badge>
+                      )}
+                    </div>
                     <span className="text-xs text-muted-foreground font-medium">Featured</span>
                   </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
