@@ -87,7 +87,7 @@ export default function BlogFilterClient({
                         <span>{post.readTime}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-[0.9rem] group-hover:text-primary transition-colors line-clamp-2">
+                    <CardTitle className="text-[0.8rem] leading-tight group-hover:text-primary transition-colors line-clamp-2">
                       {post.title}
                     </CardTitle>
                     <CardDescription className="text-sm line-clamp-2">
