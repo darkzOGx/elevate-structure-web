@@ -23768,7 +23768,9 @@ Professional engineering design delivers value beyond code compliance, including
 
 // Helper functions
 export function getFeaturedPosts(): BlogPost[] {
-  return BLOG_POSTS.filter(post => post.featured)
+  return BLOG_POSTS
+    .filter(post => post.featured)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export function getAllPosts(): BlogPost[] {
