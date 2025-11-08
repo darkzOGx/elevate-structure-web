@@ -16,7 +16,8 @@ const CONFIG = {
   sitemapPath: path.join(__dirname, '../public/sitemap.xml'),
   envPath: path.join(__dirname, '../.env.local'),
   publicDir: path.join(__dirname, '../public'),
-  indexNowEndpoint: 'https://api.indexnow.org/indexnow',
+  // Use Yandex endpoint (works without prior verification, syncs to all IndexNow partners)
+  indexNowEndpoint: 'https://yandex.com/indexnow',
   batchSize: 1000, // Submit in batches of 1000 URLs
   recentDays: null, // Set to number to only submit URLs modified in last N days
 };
