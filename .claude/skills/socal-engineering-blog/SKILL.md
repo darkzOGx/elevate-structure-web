@@ -158,7 +158,7 @@ Verify each post has:
 
 Create 5 separate markdown files:
 ```
-/home/claude/blog-posts-[DATE]/
+blog-posts-[DATE]/
 ├── 1-[keyword-slug]-[city-slug].md
 ├── 2-[keyword-slug]-[city-slug].md
 ├── 3-[keyword-slug]-[city-slug].md
@@ -166,9 +166,48 @@ Create 5 separate markdown files:
 └── 5-[keyword-slug]-[city-slug].md
 ```
 
-Then move to /mnt/user-data/outputs/ for user download.
+Save files to project root directory in format: `blog-posts-nov-[day]-2025/`
 
-### Step 6: Post-Generation Summary & Tracking Update
+### Step 6: Deploy to Website (CRITICAL - AUTOMATED PROCESS)
+
+**IMPORTANT: Use the automated script to add posts to blog-data.ts**
+
+The project includes `scripts/add-blog-posts.js` which automatically:
+1. Parses markdown files from `blog-posts-[DATE]/` directory
+2. Extracts frontmatter and content
+3. Converts to TypeScript BlogPost objects
+4. **CORRECTLY inserts posts into BLOG_POSTS array BEFORE helper functions**
+5. Preserves all existing posts and structure
+
+**Deployment Commands:**
+```bash
+# 1. Run the conversion script
+node scripts/add-blog-posts.js
+
+# 2. Verify build succeeds
+npm run build
+
+# 3. Commit changes
+git add src/lib/blog-data.ts blog-posts-[DATE]/ .claude/skills/socal-engineering-blog/BLOG-TRACKING.md
+git commit -m "Add 5 new SEO-optimized blog posts for [Date]"
+
+# 4. Push to trigger Netlify deployment
+git push origin master
+
+# 5. Submit to search engines
+npm run indexnow
+```
+
+**CRITICAL BUG FIX IMPLEMENTED:**
+The `add-blog-posts.js` script was updated to fix a bug where posts were incorrectly inserted into the `getRelatedPosts()` function instead of the `BLOG_POSTS` array. The script now:
+- Finds the `// Helper functions` comment
+- Locates the closing bracket `]` of BLOG_POSTS array BEFORE that comment
+- Inserts new posts at the correct location
+- Ensures posts appear in "All Articles" and are sorted by date
+
+**Never manually edit blog-data.ts** - always use the automated script to prevent insertion errors.
+
+### Step 7: Post-Generation Summary & Tracking Update
 
 **MANDATORY: Update BLOG-TRACKING.md immediately after generating posts**
 
@@ -229,4 +268,47 @@ Then provide summary:
 - `schema-templates/article-schema.json` - Article schema template
 - `schema-templates/local-business-schema.json` - LocalBusiness schema template
 - `schema-templates/faq-schema.json` - FAQ schema template
+
+---
+
+## Troubleshooting & Common Issues
+
+### Issue: Blog Posts Not Appearing on Website
+
+**Symptoms:**
+- Posts don't show in "All Articles" section
+- Posts missing from recent posts
+- Build succeeds but posts invisible
+
+**Cause:**
+Posts were inserted in wrong location in `blog-data.ts` file (inside helper functions instead of BLOG_POSTS array)
+
+**Solution:**
+1. Restore blog-data.ts: `git checkout HEAD~1 -- src/lib/blog-data.ts`
+2. Re-run the corrected script: `node scripts/add-blog-posts.js`
+3. Verify helper functions are AFTER posts: Check that `// Helper functions` comment comes after the closing `]` of BLOG_POSTS array
+4. Test build: `npm run build` should succeed with correct number of static pages
+5. Commit and redeploy
+
+**Prevention:**
+- Always use `scripts/add-blog-posts.js` - never manually edit blog-data.ts
+- The script is designed to find `// Helper functions` comment and insert posts before it
+- Verify script output shows "Successfully added X blog posts"
+
+### Verifying Correct Insertion
+
+After running the script, check these markers in `src/lib/blog-data.ts`:
+
+```typescript
+// Last post in BLOG_POSTS array
+  },
+]  // ← This closes BLOG_POSTS array
+
+// Helper functions  // ← This should come AFTER the ]
+export function getFeaturedPosts(): BlogPost[] {
+```
+
+If you see posts appearing inside function definitions, the script failed - restore and re-run.
+
+---
 
