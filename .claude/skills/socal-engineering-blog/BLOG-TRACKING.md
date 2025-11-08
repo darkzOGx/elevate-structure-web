@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 7, 2025
+## Last Updated: November 8, 2025
 
 ---
 
@@ -8,6 +8,11 @@
 
 | Keyword/Topic | City | Status | Date |
 |---------------|------|--------|------|
+| What is Engineering Design | Dana Point | ✅ Published | Nov 8, 2025 |
+| Stormwater Design Engineer | Westminster | ✅ Published | Nov 8, 2025 |
+| Best Structural Engineering Firms | Orange | ✅ Published | Nov 8, 2025 |
+| Custom House Engineering Design | Yorba Linda | ✅ Published | Nov 8, 2025 |
+| Types of Engineering Design | Fountain Valley | ✅ Published | Nov 8, 2025 |
 | What do Structural Engineers do | Costa Mesa | ✅ Published | Nov 7, 2025 |
 | Engineering Design Services Cost | Laguna Beach | ✅ Published | Nov 7, 2025 |
 | Benefits of Engineering Design Services | Tustin | ✅ Published | Nov 7, 2025 |
@@ -56,23 +61,23 @@
 - ❌ ~~Huntington Beach~~ (Used)
 
 ### Tier 2 Cities (Medium Volume - AVAILABLE)
-- ✅ **Costa Mesa** - AVAILABLE
+- ✅ **Costa Mesa** - AVAILABLE (used 1x)
 - ❌ ~~Fullerton~~ (Used)
 - ❌ ~~Garden Grove~~ (Used)
-- ✅ **Orange** - AVAILABLE (used 2x, but can reuse with different keyword)
-- ✅ **Tustin** - AVAILABLE
+- ✅ **Orange** - AVAILABLE (used 3x, can reuse with different keyword)
+- ✅ **Tustin** - AVAILABLE (used 1x)
 - ❌ ~~Mission Viejo~~ (Used)
-- ✅ **Laguna Beach** - AVAILABLE
+- ✅ **Laguna Beach** - AVAILABLE (used 1x)
 - ❌ ~~San Clemente~~ (Used)
 
-### Tier 3 Cities (Expanding Markets - ALL AVAILABLE)
-- ✅ **Lake Forest** - AVAILABLE
-- ✅ **Dana Point** - AVAILABLE
+### Tier 3 Cities (Expanding Markets - AVAILABLE)
+- ✅ **Lake Forest** - AVAILABLE (used 1x)
+- ✅ **Dana Point** - AVAILABLE (used 1x)
 - ✅ **San Juan Capistrano** - AVAILABLE
-- ✅ **Fountain Valley** - AVAILABLE
-- ✅ **Westminster** - AVAILABLE
+- ✅ **Fountain Valley** - AVAILABLE (used 1x)
+- ✅ **Westminster** - AVAILABLE (used 1x)
 - ✅ **La Habra** - AVAILABLE
-- ✅ **Yorba Linda** - AVAILABLE
+- ✅ **Yorba Linda** - AVAILABLE (used 1x)
 - ✅ **Seal Beach** - AVAILABLE
 - ✅ **Laguna Niguel** - AVAILABLE
 - ✅ **Aliso Viejo** - AVAILABLE
@@ -89,49 +94,71 @@
 - ✅ Sustainable Engineering Design Services → Irvine
 - ✅ Residential Structural Engineer Near Me → Newport Beach
 - ✅ Commercial Building Engineering Design → Anaheim
-- ✅ Stormwater Design Engineer → Fullerton
+- ✅ Stormwater Design Engineer → Fullerton, Westminster
 - ✅ Septic Design Engineers → San Clemente
-- ✅ Custom House Engineering Design → Long Beach
-- ✅ Best Structural Engineering Firms → Los Angeles
+- ✅ Custom House Engineering Design → Long Beach, Yorba Linda
+- ✅ Best Structural Engineering Firms → Los Angeles, Orange
 
 ### PAA Keywords Used:
 - ✅ When to Hire Residential Structural Engineer → Mission Viejo, Santa Ana
 - ✅ How to Hire a Structural Engineer → Huntington Beach
-- ✅ Types of Engineering Design → Garden Grove
+- ✅ Types of Engineering Design → Garden Grove, Fountain Valley
+- ✅ What is Engineering Design → Dana Point
+- ✅ What do Structural Engineers do → Costa Mesa
+- ✅ Engineering Design Services Cost → Laguna Beach
+- ✅ Benefits of Engineering Design Services → Tustin
+- ✅ Role of a Design Engineer → San Diego
+- ✅ Civil Engineer Structural Design Capability → Lake Forest
 
 ---
 
-## 🎯 Available Keywords (From keyword-list.md) NOT YET USED
+## 🎯 Available Keywords (From keyword-list.md) - Can Be Reused with Different Cities
 
-### High Priority Cluster Keywords (Not Yet Used with Cities):
-- ⏳ Benefits of Engineering Design Services
-- ⏳ Role of a Design Engineer
-- ⏳ Civil Engineer Structural Design Capability
+### Cluster Keywords (Can be reused with different cities):
+- ✅ Sustainable Engineering Design Services → used with Irvine
+- ✅ Residential Structural Engineer Near Me → used with Newport Beach
+- ✅ Commercial Building Engineering Design → used with Anaheim
+- ✅ Stormwater Design Engineer → used with Fullerton, Westminster
+- ✅ Septic Design Engineers → used with San Clemente
+- ✅ Custom House Engineering Design → used with Long Beach, Yorba Linda
+- ✅ Best Structural Engineering Firms → used with Los Angeles, Orange
 
-### High Priority PAA Keywords (Not Yet Used):
-- ⏳ What is Engineering Design
-- ⏳ What do Structural Engineers do
-- ⏳ Engineering Design Services Cost
+### PAA Keywords (Can be reused with different cities):
+- ✅ What is Engineering Design → used with Dana Point
+- ✅ What do Structural Engineers do → used with Costa Mesa
+- ✅ Engineering Design Services Cost → used with Laguna Beach
+- ✅ Benefits of Engineering Design Services → used with Tustin
+- ✅ Role of a Design Engineer → used with San Diego
+- ✅ Civil Engineer Structural Design Capability → used with Lake Forest
+- ✅ When to Hire Residential Structural Engineer → used with Mission Viejo, Santa Ana
+- ✅ How to Hire a Structural Engineer → used with Huntington Beach
+- ✅ Types of Engineering Design → used with Garden Grove, Fountain Valley
 
 ---
 
 ## 🔄 Rotation Strategy for Next 5 Posts
 
-**Use Day 2 & Day 3 Cities (not yet used):**
+**Focus on remaining available cities and keyword reuse:**
 
 ### Recommended Next 5 City Selections:
-1. **Costa Mesa** (Tier 2, high-value OC city)
-2. **Laguna Beach** (Tier 2, luxury coastal market)
-3. **Tustin** (Tier 2, growing OC city)
-4. **San Diego** (Major city, large market)
-5. **Lake Forest** (Tier 3, expanding market)
+1. **San Juan Capistrano** (Tier 3, historic city, NOT YET USED)
+2. **Seal Beach** (Tier 3, coastal, NOT YET USED)
+3. **Laguna Niguel** (Tier 3, affluent South OC, NOT YET USED)
+4. **Aliso Viejo** (Tier 3, planned community, NOT YET USED)
+5. **La Habra** (Tier 3, North OC, NOT YET USED)
 
-### Alternative Options:
-- Dana Point (coastal, high-value)
-- Yorba Linda (affluent, hillside)
-- Fountain Valley (central OC)
-- Seal Beach (coastal niche)
-- Westminster (diverse market)
+### Keyword Strategy for Next Batch:
+- Reuse high-performing PAA keywords with new cities
+- Reuse Cluster keywords with cities not yet paired
+- Mix commercial intent (Cluster) with informational (PAA)
+- Prioritize cities that haven't been used yet
+
+### Alternative Options (Cities used once - can reuse):
+- Orange (used 3x - very flexible)
+- Costa Mesa (used 1x)
+- Laguna Beach (used 1x)
+- Tustin (used 1x)
+- Dana Point (used 1x)
 
 ---
 
