@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 8, 2025
+## Last Updated: November 9, 2025
 
 ---
 
@@ -32,6 +32,11 @@
 | Commercial Building Engineering Design | Anaheim | ✅ Published | - |
 | When to Hire Residential Structural Engineer | Santa Ana | ✅ Published | - |
 | How to Hire a Structural Engineer | Huntington Beach | ✅ Published | - |
+| Septic Design Engineers | Aliso Viejo | ✅ Published | Nov 9, 2025 |
+| How to Hire a Structural Engineer | La Habra | ✅ Published | Nov 9, 2025 |
+| Residential Structural Engineer Near Me | Orange | ✅ Published | Nov 9, 2025 |
+| Engineering Design Services Cost | Costa Mesa | ✅ Published | Nov 9, 2025 |
+| Stormwater Design Engineer | Tustin | ✅ Published | Nov 9, 2025 |
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
@@ -64,11 +69,11 @@
 - ❌ ~~Huntington Beach~~ (Used)
 
 ### Tier 2 Cities (Medium Volume - AVAILABLE)
-- ✅ **Costa Mesa** - AVAILABLE (used 1x)
+- ✅ **Costa Mesa** - AVAILABLE (used 2x)
 - ❌ ~~Fullerton~~ (Used)
 - ❌ ~~Garden Grove~~ (Used)
-- ✅ **Orange** - AVAILABLE (used 3x, can reuse with different keyword)
-- ✅ **Tustin** - AVAILABLE (used 1x)
+- ✅ **Orange** - AVAILABLE (used 4x, can reuse with different keyword)
+- ✅ **Tustin** - AVAILABLE (used 2x)
 - ❌ ~~Mission Viejo~~ (Used)
 - ✅ **Laguna Beach** - AVAILABLE (used 1x)
 - ❌ ~~San Clemente~~ (Used)
@@ -79,11 +84,11 @@
 - ✅ **San Juan Capistrano** - AVAILABLE (used 1x)
 - ✅ **Fountain Valley** - AVAILABLE (used 1x)
 - ✅ **Westminster** - AVAILABLE (used 1x)
-- ✅ **La Habra** - AVAILABLE
+- ✅ **La Habra** - AVAILABLE (used 1x)
 - ✅ **Yorba Linda** - AVAILABLE (used 1x)
 - ✅ **Seal Beach** - AVAILABLE (used 1x)
 - ✅ **Laguna Niguel** - AVAILABLE (used 1x)
-- ✅ **Aliso Viejo** - AVAILABLE
+- ✅ **Aliso Viejo** - AVAILABLE (used 1x)
 
 ### Major Cities (Outside Day 1-2 Rotation)
 - ✅ **San Diego** - AVAILABLE
@@ -95,10 +100,10 @@
 
 ### Cluster Keywords Used:
 - ✅ Sustainable Engineering Design Services → Irvine
-- ✅ Residential Structural Engineer Near Me → Newport Beach
+- ✅ Residential Structural Engineer Near Me → Newport Beach, Orange
 - ✅ Commercial Building Engineering Design → Anaheim
-- ✅ Stormwater Design Engineer → Fullerton, Westminster
-- ✅ Septic Design Engineers → San Clemente
+- ✅ Stormwater Design Engineer → Fullerton, Westminster, Tustin
+- ✅ Septic Design Engineers → San Clemente, Aliso Viejo
 - ✅ Custom House Engineering Design → Long Beach, Yorba Linda
 - ✅ Best Structural Engineering Firms → Los Angeles, Orange
 - ✅ Earthquake Retrofitting Services → San Juan Capistrano
@@ -107,11 +112,11 @@
 
 ### PAA Keywords Used:
 - ✅ When to Hire Residential Structural Engineer → Mission Viejo, Santa Ana
-- ✅ How to Hire a Structural Engineer → Huntington Beach
+- ✅ How to Hire a Structural Engineer → Huntington Beach, La Habra
 - ✅ Types of Engineering Design → Garden Grove, Fountain Valley
 - ✅ What is Engineering Design → Dana Point
 - ✅ What do Structural Engineers do → Costa Mesa
-- ✅ Engineering Design Services Cost → Laguna Beach
+- ✅ Engineering Design Services Cost → Laguna Beach, Costa Mesa
 - ✅ Benefits of Engineering Design Services → Tustin
 - ✅ Role of a Design Engineer → San Diego
 - ✅ Civil Engineer Structural Design Capability → Lake Forest
