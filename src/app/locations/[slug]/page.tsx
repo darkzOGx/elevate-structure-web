@@ -54,14 +54,19 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     }
   }
 
+  const canonicalUrl = `${COMPANY_INFO.website}/locations/${slug}`
+
   return {
     title: `${location.title} | ${COMPANY_INFO.name}`,
     description: location.metaDescription,
     keywords: `structural engineer ${location.city}, ${location.city} structural engineering, structural engineer near me, ${location.city} building permits, ADU ${location.city}, seismic retrofit ${location.city}, ${location.county} structural engineer`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${location.title} | ${COMPANY_INFO.name}`,
       description: location.metaDescription,
-      url: `${COMPANY_INFO.website}/locations/${slug}`,
+      url: canonicalUrl,
       siteName: COMPANY_INFO.name,
       type: 'website',
     }

@@ -7,3 +7,10 @@
 [build.environment]
   NETLIFY_USE_YARN = "false"
   NETLIFY_NEXT_PLUGIN_SKIP = "false"
+
+# Redirect www to non-www (critical for SEO - prevents duplicate content)
+[[redirects]]
+  from = "https://www.aaaengineeringdesign.com/*"
+  to = "https://aaaengineeringdesign.com/:splat"
+  status = 301
+  force = true

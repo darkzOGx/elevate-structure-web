@@ -46,14 +46,19 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     }
   }
 
+  const canonicalUrl = `${COMPANY_INFO.website}/services/${slug}`
+
   return {
     title: `${service.title} | ${COMPANY_INFO.name}`,
     description: service.metaDescription,
     keywords: `${service.shortTitle}, California ${service.shortTitle}, structural engineering, PE stamped plans, ${service.shortTitle} cost, ${service.shortTitle} engineer`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${service.title} | ${COMPANY_INFO.name}`,
       description: service.metaDescription,
-      url: `${COMPANY_INFO.website}/services/${slug}`,
+      url: canonicalUrl,
       siteName: COMPANY_INFO.name,
       type: 'website',
     }

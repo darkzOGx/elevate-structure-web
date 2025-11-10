@@ -39,14 +39,19 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
+  const canonicalUrl = `${COMPANY_INFO.website}/blog/${slug}`
+
   return {
     title: `${post.title} | AAA Engineering Design Blog`,
     description: post.excerpt,
     keywords: `${post.category}, structural engineering, ${post.title}`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `${COMPANY_INFO.website}/blog/${slug}`,
+      url: canonicalUrl,
       siteName: COMPANY_INFO.name,
       type: 'article',
       images: [{ url: post.image || `${COMPANY_INFO.website}/og-image.jpg`, width: 1200, height: 630 }],
