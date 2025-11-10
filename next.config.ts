@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
   },
-  trailingSlash: true,
+  trailingSlash: false, // Consistent with sitemap.xml (no trailing slashes)
 
   // Optimize for production builds
   // Note: swcMinify is enabled by default in Next.js 15+
@@ -21,6 +21,52 @@ const nextConfig: NextConfig = {
       {
         source: '/index.html',
         destination: '/',
+        permanent: true,
+      },
+      // Location page redirects (old short URLs → new SEO-friendly URLs)
+      {
+        source: '/locations/irvine',
+        destination: '/locations/irvine-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/anaheim',
+        destination: '/locations/anaheim-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/newport-beach',
+        destination: '/locations/newport-beach-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/huntington-beach',
+        destination: '/locations/huntington-beach-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/costa-mesa',
+        destination: '/locations/costa-mesa-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/santa-ana',
+        destination: '/locations/santa-ana-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/fullerton',
+        destination: '/locations/fullerton-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/mission-viejo',
+        destination: '/locations/mission-viejo-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/lake-forest',
+        destination: '/locations/lake-forest-structural-engineering',
         permanent: true,
       },
     ]

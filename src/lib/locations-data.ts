@@ -43,7 +43,7 @@ export interface Location {
 
 export const LOCATIONS: Location[] = [
   {
-    id: 'irvine',
+    id: 'irvine-structural-engineering',
     city: 'Irvine',
     county: 'Orange County',
     state: 'California',
@@ -154,7 +154,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'anaheim',
+    id: 'anaheim-structural-engineering',
     city: 'Anaheim',
     county: 'Orange County',
     state: 'California',
@@ -264,7 +264,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'newport-beach',
+    id: 'newport-beach-structural-engineering',
     city: 'Newport Beach',
     county: 'Orange County',
     state: 'California',
@@ -376,7 +376,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'huntington-beach',
+    id: 'huntington-beach-structural-engineering',
     city: 'Huntington Beach',
     county: 'Orange County',
     state: 'California',
@@ -483,7 +483,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'costa-mesa',
+    id: 'costa-mesa-structural-engineering',
     city: 'Costa Mesa',
     county: 'Orange County',
     state: 'California',
@@ -589,7 +589,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'santa-ana',
+    id: 'santa-ana-structural-engineering',
     city: 'Santa Ana',
     county: 'Orange County',
     state: 'California',
@@ -696,7 +696,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'fullerton',
+    id: 'fullerton-structural-engineering',
     city: 'Fullerton',
     county: 'Orange County',
     state: 'California',
@@ -802,7 +802,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'mission-viejo',
+    id: 'mission-viejo-structural-engineering',
     city: 'Mission Viejo',
     county: 'Orange County',
     state: 'California',
@@ -1016,7 +1016,7 @@ export const LOCATIONS: Location[] = [
     }
   },
   {
-    id: 'lake-forest',
+    id: 'lake-forest-structural-engineering',
     city: 'Lake Forest',
     county: 'Orange County',
     state: 'California',
