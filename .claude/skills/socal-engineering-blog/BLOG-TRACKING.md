@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 9, 2025
+## Last Updated: November 10, 2025
 
 ---
 
@@ -37,6 +37,11 @@
 | Residential Structural Engineer Near Me | Orange | ✅ Published | Nov 9, 2025 |
 | Engineering Design Services Cost | Costa Mesa | ✅ Published | Nov 9, 2025 |
 | Stormwater Design Engineer | Tustin | ✅ Published | Nov 9, 2025 |
+| Sustainable Engineering Design Services | Lake Forest | ✅ Published | Nov 10, 2025 |
+| Benefits of Engineering Design Services | Seal Beach | ✅ Published | Nov 10, 2025 |
+| Custom House Engineering Design | Laguna Beach | ✅ Published | Nov 10, 2025 |
+| Role of a Design Engineer | Fountain Valley | ✅ Published | Nov 10, 2025 |
+| Septic Design Engineers | Westminster | ✅ Published | Nov 10, 2025 |
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
@@ -75,18 +80,18 @@
 - ✅ **Orange** - AVAILABLE (used 4x, can reuse with different keyword)
 - ✅ **Tustin** - AVAILABLE (used 2x)
 - ❌ ~~Mission Viejo~~ (Used)
-- ✅ **Laguna Beach** - AVAILABLE (used 1x)
+- ✅ **Laguna Beach** - AVAILABLE (used 2x)
 - ❌ ~~San Clemente~~ (Used)
 
 ### Tier 3 Cities (Expanding Markets - AVAILABLE)
-- ✅ **Lake Forest** - AVAILABLE (used 1x)
+- ✅ **Lake Forest** - AVAILABLE (used 2x)
 - ✅ **Dana Point** - AVAILABLE (used 1x)
 - ✅ **San Juan Capistrano** - AVAILABLE (used 1x)
-- ✅ **Fountain Valley** - AVAILABLE (used 1x)
-- ✅ **Westminster** - AVAILABLE (used 1x)
+- ✅ **Fountain Valley** - AVAILABLE (used 2x)
+- ✅ **Westminster** - AVAILABLE (used 2x)
 - ✅ **La Habra** - AVAILABLE (used 1x)
 - ✅ **Yorba Linda** - AVAILABLE (used 1x)
-- ✅ **Seal Beach** - AVAILABLE (used 1x)
+- ✅ **Seal Beach** - AVAILABLE (used 2x)
 - ✅ **Laguna Niguel** - AVAILABLE (used 1x)
 - ✅ **Aliso Viejo** - AVAILABLE (used 1x)
 
@@ -99,12 +104,12 @@
 ## 📋 Keywords Already Used with Cities
 
 ### Cluster Keywords Used:
-- ✅ Sustainable Engineering Design Services → Irvine
+- ✅ Sustainable Engineering Design Services → Irvine, Lake Forest
 - ✅ Residential Structural Engineer Near Me → Newport Beach, Orange
 - ✅ Commercial Building Engineering Design → Anaheim
 - ✅ Stormwater Design Engineer → Fullerton, Westminster, Tustin
-- ✅ Septic Design Engineers → San Clemente, Aliso Viejo
-- ✅ Custom House Engineering Design → Long Beach, Yorba Linda
+- ✅ Septic Design Engineers → San Clemente, Aliso Viejo, Westminster
+- ✅ Custom House Engineering Design → Long Beach, Yorba Linda, Laguna Beach
 - ✅ Best Structural Engineering Firms → Los Angeles, Orange
 - ✅ Earthquake Retrofitting Services → San Juan Capistrano
 - ✅ Professional Design Engineering Services → Seal Beach
@@ -117,8 +122,8 @@
 - ✅ What is Engineering Design → Dana Point
 - ✅ What do Structural Engineers do → Costa Mesa
 - ✅ Engineering Design Services Cost → Laguna Beach, Costa Mesa
-- ✅ Benefits of Engineering Design Services → Tustin
-- ✅ Role of a Design Engineer → San Diego
+- ✅ Benefits of Engineering Design Services → Tustin, Seal Beach
+- ✅ Role of a Design Engineer → San Diego, Fountain Valley
 - ✅ Civil Engineer Structural Design Capability → Lake Forest
 
 ---
