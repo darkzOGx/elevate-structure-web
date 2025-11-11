@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 10, 2025
+## Last Updated: November 11, 2025
 
 ---
 
@@ -8,6 +8,11 @@
 
 | Keyword/Topic | City | Status | Date |
 |---------------|------|--------|------|
+| Civil Engineer Structural Design Capability | San Diego | ✅ Published | Nov 11, 2025 |
+| Professional Design Engineering Services | Costa Mesa | ✅ Published | Nov 11, 2025 |
+| Earthquake Retrofitting Services | Dana Point | ✅ Published | Nov 11, 2025 |
+| Types of Engineering Design Services | La Habra | ✅ Published | Nov 11, 2025 |
+| Commercial Building Engineering Design | Yorba Linda | ✅ Published | Nov 11, 2025 |
 | Earthquake Retrofitting Services | San Juan Capistrano | ✅ Published | Nov 8, 2025 |
 | Professional Design Engineering Services | Seal Beach | ✅ Published | Nov 8, 2025 |
 | Expert Structural Design Services | Laguna Niguel | ✅ Published | Nov 8, 2025 |
@@ -106,25 +111,25 @@
 ### Cluster Keywords Used:
 - ✅ Sustainable Engineering Design Services → Irvine, Lake Forest
 - ✅ Residential Structural Engineer Near Me → Newport Beach, Orange
-- ✅ Commercial Building Engineering Design → Anaheim
+- ✅ Commercial Building Engineering Design → Anaheim, Yorba Linda
 - ✅ Stormwater Design Engineer → Fullerton, Westminster, Tustin
 - ✅ Septic Design Engineers → San Clemente, Aliso Viejo, Westminster
 - ✅ Custom House Engineering Design → Long Beach, Yorba Linda, Laguna Beach
 - ✅ Best Structural Engineering Firms → Los Angeles, Orange
-- ✅ Earthquake Retrofitting Services → San Juan Capistrano
-- ✅ Professional Design Engineering Services → Seal Beach
+- ✅ Earthquake Retrofitting Services → San Juan Capistrano, Dana Point
+- ✅ Professional Design Engineering Services → Seal Beach, Costa Mesa
 - ✅ Expert Structural Design Services → Laguna Niguel
 
 ### PAA Keywords Used:
 - ✅ When to Hire Residential Structural Engineer → Mission Viejo, Santa Ana
 - ✅ How to Hire a Structural Engineer → Huntington Beach, La Habra
-- ✅ Types of Engineering Design → Garden Grove, Fountain Valley
+- ✅ Types of Engineering Design Services → Garden Grove, Fountain Valley, La Habra
 - ✅ What is Engineering Design → Dana Point
 - ✅ What do Structural Engineers do → Costa Mesa
 - ✅ Engineering Design Services Cost → Laguna Beach, Costa Mesa
 - ✅ Benefits of Engineering Design Services → Tustin, Seal Beach
 - ✅ Role of a Design Engineer → San Diego, Fountain Valley
-- ✅ Civil Engineer Structural Design Capability → Lake Forest
+- ✅ Civil Engineer Structural Design Capability → Lake Forest, San Diego
 
 ---
 
