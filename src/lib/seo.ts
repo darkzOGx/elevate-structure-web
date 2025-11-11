@@ -148,7 +148,7 @@ export function generateFAQSchema(faqs: Array<{ question: string; answer: string
   }
 }
 
-// Website Schema with Sitelinks Searchbox
+// Website Schema (SearchAction removed - no search functionality)
 export function generateWebsiteSchema(config: {
   name: string
   url: string
@@ -158,14 +158,6 @@ export function generateWebsiteSchema(config: {
     '@type': 'WebSite',
     name: config.name,
     url: config.url,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${config.url}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   }
 }
 

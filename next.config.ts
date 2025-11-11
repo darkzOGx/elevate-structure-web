@@ -18,9 +18,41 @@ const nextConfig: NextConfig = {
   // Redirect optimization
   async redirects() {
     return [
+      // Old website redirects
       {
         source: '/index.html',
         destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/about-us.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/',
+        permanent: true,
+      },
+      // Trailing slash redirects (ensure no trailing slashes)
+      {
+        source: '/privacy/',
+        destination: '/privacy',
+        permanent: true,
+      },
+      {
+        source: '/terms/',
+        destination: '/terms',
+        permanent: true,
+      },
+      {
+        source: '/blog/',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/fire/',
+        destination: '/fire',
         permanent: true,
       },
       // Location page redirects (old short URLs → new SEO-friendly URLs)
