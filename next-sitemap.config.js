@@ -18,6 +18,11 @@ module.exports = {
     ],
   },
   transform: async (config, path) => {
+    // Explicitly exclude sitemap.xml itself (prevents duplicate canonical error)
+    if (path === '/sitemap.xml' || path === '/sitemap.xml/') {
+      return null
+    }
+
     // Enhanced URL transformation with proper priorities
     let priority = 0.7
     let changefreq = 'monthly'
