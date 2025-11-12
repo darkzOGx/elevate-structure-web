@@ -168,11 +168,26 @@ blog-posts-[DATE]/
 
 Save files to project root directory in format: `blog-posts-nov-[day]-2025/`
 
-### Step 6: Deploy to Website (CRITICAL - AUTOMATED PROCESS)
+### Step 6: Update Blog Tracking (MANDATORY)
 
-**IMPORTANT: Use the automated script to add posts to blog-data.ts**
+**CRITICAL: Update BLOG-TRACKING.md immediately after generating posts**
 
-The project includes `scripts/add-blog-posts.js` which automatically:
+Add each new post to the tracking file:
+```markdown
+| [Keyword/Topic] | [City] | ✅ Published | [Date] |
+```
+
+Update the following sections in BLOG-TRACKING.md:
+1. ✅ Add new keyword+city combinations to "Published Blog Posts" table
+2. ✅ Update city usage counts in "Available Cities" section
+3. ✅ Update "Keywords Already Used with Cities" section
+4. ✅ Update "Recommended Next 5 City Selections" for future batches
+
+### Step 7: Deploy to Website (CRITICAL - AUTOMATED EXECUTION)
+
+**⚠️ MANDATORY: Execute ALL deployment commands automatically after blog generation**
+
+**The project includes `scripts/add-blog-posts.js` which automatically:**
 1. **Auto-detects the most recent `blog-posts-*` directory** (or accepts path as argument)
 2. Parses markdown files from that directory
 3. Extracts frontmatter and content
@@ -182,29 +197,40 @@ The project includes `scripts/add-blog-posts.js` which automatically:
 7. **CORRECTLY inserts posts into BLOG_POSTS array BEFORE helper functions**
 8. Preserves all existing posts and structure
 
-**Deployment Commands:**
+**Execute these commands in sequence:**
+
 ```bash
 # 1. Run the conversion script (auto-detects most recent blog-posts directory)
 node scripts/add-blog-posts.js
 
-# OR specify a directory explicitly:
-# node scripts/add-blog-posts.js blog-posts-nov-8-2025
-
 # 2. Verify build succeeds
 npm run build
 
-# 3. Commit changes
-git add src/lib/blog-data.ts blog-posts-[DATE]/ .claude/skills/socal-engineering-blog/BLOG-TRACKING.md
-git commit -m "Add 5 new SEO-optimized blog posts for [Date]"
+# 3. Commit changes with detailed commit message
+git add src/lib/blog-data.ts blog-posts-nov-8-2025/ .claude/skills/socal-engineering-blog/BLOG-TRACKING.md
+git commit -m "$(cat <<'EOF'
+Add [NUMBER] new SEO-optimized blog posts for [Month Day, Year]
+
+- [Blog Post 1 Title]
+- [Blog Post 2 Title]
+- [Blog Post 3 Title]
+[- Blog Post 4 Title if 4+ posts]
+[- Blog Post 5 Title if 5 posts]
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)"
 
 # 4. Push to trigger Netlify deployment
 git push origin master
 
-# 5. Submit to search engines
+# 5. Submit to search engines (optional but recommended)
 npm run indexnow
 ```
 
-**Script Features:**
+**What the script does:**
 - ✅ **Auto-detects** most recent blog-posts directory
 - ✅ **First 3 posts automatically featured** (shows in Featured Articles section)
 - ✅ **Date auto-detected** from frontmatter publishDate or uses today's date
@@ -219,21 +245,39 @@ The `add-blog-posts.js` script was updated to fix a bug where posts were incorre
 
 **Never manually edit blog-data.ts** - always use the automated script to prevent insertion errors.
 
-### Step 7: Post-Generation Summary & Tracking Update
+**Deployment Execution Instructions:**
+- Run ALL 5 commands sequentially
+- Wait for each command to complete before running the next
+- Verify successful output from each step
+- Report any errors immediately
+- Confirm deployment success after git push completes
 
-**MANDATORY: Update BLOG-TRACKING.md immediately after generating posts**
+### Step 8: Post-Deployment Summary
 
-Add each new post to the tracking file:
-```markdown
-| [Keyword/Topic] | [City] | ✅ Published | [Date] |
-```
+After successful deployment, provide a comprehensive summary:
 
-Then provide summary:
-1. Keywords used with intent types
-2. Cities targeted
-3. Internal links created
-4. **Confirmation that BLOG-TRACKING.md has been updated**
-5. Recommendations for next batch
+1. **Blog Posts Generated:**
+   - List all post titles with keywords and cities
+   - Word count for each post
+   - Category and intent type
+
+2. **Deployment Status:**
+   - ✅ Conversion script executed
+   - ✅ Build verified successful
+   - ✅ Changes committed to git
+   - ✅ Pushed to master branch
+   - ✅ Search engines notified (if indexnow ran)
+
+3. **SEO & Tracking:**
+   - Keywords used with intent types
+   - Cities targeted with geographic distribution
+   - Internal links created per post
+   - **Confirmation that BLOG-TRACKING.md has been updated**
+
+4. **Next Steps Recommendations:**
+   - Suggested cities for next batch (from BLOG-TRACKING.md)
+   - Keyword strategies for upcoming posts
+   - Content mix recommendations
 
 ## Key Principles
 
@@ -251,6 +295,19 @@ Then provide summary:
 - Every link adds value
 - Service pages are priority
 - Distribute links throughout
+
+**AI Citation Optimization (NEW - 2025):**
+- **Direct Answers**: Start each major section with 40-60 word direct answer
+- **Question Headers**: Convert ALL H2 headers to question format
+  - ❌ "Structural Engineering Services"
+  - ✅ "What Structural Engineering Services Are Available in [City]?"
+- **Modular Content**: Structure for easy AI extraction (bullets, tables, clear sections)
+- **E-E-A-T Signals**: Include author credentials, PE license mentions, years of experience
+- **Freshness Indicators**: Add "Updated: [Month Year]" at top of post
+- **FAQ Schema**: Every post needs 5-8 FAQ questions with schema markup
+- **Semantic HTML**: Use proper tags (article, section, aside) for AI parsing
+
+*See `.claude/AI-OPTIMIZED-CONTENT-GUIDELINES.md` for complete details*
 
 ## Common Mistakes to Avoid
 

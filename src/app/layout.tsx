@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { WebVitals } from "@/components/WebVitals";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -48,15 +49,30 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         <meta name="format-detection" content="address=yes" />
 
-        {/* Google site verification - ADD YOUR CODE FROM SEARCH CONSOLE */}
-        {/* <meta name="google-site-verification" content="your-google-verification-code" /> */}
+        {/* Search Engine Verification - REPLACE WITH YOUR ACTUAL CODES */}
+        {/* Step 1: Get Google verification code from https://search.google.com/search-console */}
+        {/* Step 2: Get Bing verification code from https://www.bing.com/webmasters */}
+        <meta name="google-site-verification" content="REPLACE_WITH_YOUR_GOOGLE_VERIFICATION_CODE" />
+        <meta name="msvalidate.01" content="REPLACE_WITH_YOUR_BING_VERIFICATION_CODE" />
 
-        {/* Bing site verification - ADD YOUR CODE FROM BING WEBMASTER */}
-        {/* <meta name="msvalidate.01" content="your-bing-verification-code" /> */}
+        {/* Open Graph Meta Tags for Social Sharing */}
+        <meta property="og:site_name" content="AAA Engineering Design" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://aaaengineeringdesign.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="AAA Engineering Design - Licensed Structural Engineers in Orange County" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://aaaengineeringdesign.com/og-image.jpg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}
       >
+        <WebVitals />
         {children}
       </body>
     </html>

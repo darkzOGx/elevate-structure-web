@@ -15,6 +15,7 @@ import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
+import { getAuthorById, getDefaultAuthor, generatePersonSchema } from '@/lib/authors-data'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -76,6 +77,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const recentPosts = getRecentPosts(3).filter(p => p.id !== post.id)
 
+  // Get author data for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)
+  const author = post.authorId ? getAuthorById(post.authorId) : getDefaultAuthor()
+
   // Article Schema for GEO/AIO optimization (critical for AI citations)
   const articleSchema = generateArticleSchema({
     headline: post.title,
@@ -87,6 +91,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     url: `${COMPANY_INFO.website}/blog/${slug}`,
     category: post.category
   })
+
+  // Person Schema for author (E-E-A-T signals for AI systems)
+  const personSchema = author ? generatePersonSchema(author) : null
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -101,6 +108,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {personSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

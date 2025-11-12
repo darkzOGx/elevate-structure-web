@@ -9,6 +9,7 @@ export interface BlogPost {
   date: string
   readTime: string
   author: string
+  authorId?: string // Optional: Links to authors-data.ts for Person schema (E-E-A-T)
   image: string
   featured: boolean
   relatedArticles?: string[] // IDs of related articles

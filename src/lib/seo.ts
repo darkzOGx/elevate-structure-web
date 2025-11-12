@@ -20,28 +20,39 @@ export function generateMetadata(config: SEOConfig): Metadata {
     image = '/og-image.jpg',
     type = 'website',
     locale = 'en_US',
-    siteName = 'Professional Engineering Design Services'
+    siteName = 'AAA Engineering Design'
   } = config
+
+  // Ensure URL is absolute
+  const absoluteUrl = url.startsWith('http') ? url : `https://aaaengineeringdesign.com${url}`
+
+  // Ensure image is absolute
+  const absoluteImage = image.startsWith('http')
+    ? image
+    : image.startsWith('/')
+    ? `https://aaaengineeringdesign.com${image}`
+    : `https://aaaengineeringdesign.com/${image}`
 
   return {
     title,
     description,
     keywords: keywords.join(', '),
-    metadataBase: new URL(url),
+    metadataBase: new URL('https://aaaengineeringdesign.com'),
     alternates: {
-      canonical: url,
+      canonical: absoluteUrl,
     },
     openGraph: {
       title,
       description,
-      url,
+      url: absoluteUrl,
       siteName,
       images: [
         {
-          url: image,
+          url: absoluteImage,
           width: 1200,
           height: 630,
           alt: title,
+          type: 'image/jpeg',
         },
       ],
       locale,
@@ -51,7 +62,7 @@ export function generateMetadata(config: SEOConfig): Metadata {
       card: 'summary_large_image',
       title,
       description,
-      images: [image],
+      images: [absoluteImage],
     },
     robots: {
       index: true,
@@ -67,6 +78,11 @@ export function generateMetadata(config: SEOConfig): Metadata {
     other: {
       'format-detection': 'telephone=yes',
     },
+    // Add article metadata for blog posts
+    ...(type === 'article' && {
+      authors: [{ name: siteName }],
+      category: 'Engineering',
+    }),
   }
 }
 
