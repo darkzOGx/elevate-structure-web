@@ -9,6 +9,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import { FadeInSection } from '@/components/FadeInSection'
 import type { BlogPost } from '@/lib/blog-data'
 import { BLOG_COLOR_MAP } from '@/lib/generate-placeholder-images'
+import { formatBlogDate } from '@/lib/date-utils'
 
 interface BlogFilterClientProps {
   categories: string[]
@@ -80,7 +81,7 @@ export default function BlogFilterClient({
                     <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />
-                        <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                        <span>{formatBlogDate(post.date, { month: 'short', day: 'numeric' })}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />

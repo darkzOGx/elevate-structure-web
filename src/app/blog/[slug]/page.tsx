@@ -16,6 +16,7 @@ import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
 import { getAuthorById, getDefaultAuthor, generatePersonSchema } from '@/lib/authors-data'
+import { formatBlogDate } from '@/lib/date-utils'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -149,7 +150,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   <span>
-                    {new Date(post.date).toLocaleDateString('en-US', {
+                    {formatBlogDate(post.date, {
                       month: 'long',
                       day: 'numeric',
                       year: 'numeric',
@@ -239,7 +240,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                           <div className="flex items-center gap-1">
                             <Calendar className="h-3 w-3" />
                             <span>
-                              {new Date(relatedPost.date).toLocaleDateString('en-US', {
+                              {formatBlogDate(relatedPost.date, {
                                 month: 'short',
                                 day: 'numeric',
                               })}

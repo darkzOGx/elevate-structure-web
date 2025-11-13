@@ -9,6 +9,7 @@ import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-r
 import { FadeInSection } from '@/components/FadeInSection'
 import { getCategoryColor } from '@/lib/generate-placeholder-images'
 import { BlogPost } from '@/lib/blog-data'
+import { formatBlogDate } from '@/lib/date-utils'
 
 interface FeaturedArticlesCarouselProps {
   posts: BlogPost[]
@@ -104,7 +105,7 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
                     <div className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
                       <span>
-                        {new Date(post.date).toLocaleDateString('en-US', {
+                        {formatBlogDate(post.date, {
                           month: 'short',
                           day: 'numeric',
                           year: 'numeric',
