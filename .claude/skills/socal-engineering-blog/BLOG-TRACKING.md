@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 13, 2025
+## Last Updated: November 14, 2025
 
 ---
 
@@ -82,6 +82,14 @@
 | Title 24 Energy Compliance | La Palma | ✅ Published | Nov 13, 2025 | Cycle 1 |
 | ADU Structural Engineering | Los Alamitos | ✅ Published | Nov 13, 2025 | Cycle 1 |
 | Commercial Tenant Improvement Engineering | Stanton | ✅ Published | Nov 13, 2025 | Cycle 1 |
+| Structural Engineering for Home Additions | Villa Park | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| MEP Engineering Design | Manhattan Beach | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Grading and Drainage Plans | Hermosa Beach | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Foundation Assessment Guide | Glendale | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Seismic Retrofit Requirements | Del Mar | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Title 24 Energy Compliance | Carlsbad | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| ADU Structural Engineering | Riverside | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Commercial Tenant Improvement Engineering | Rancho Cucamonga | ✅ Published | Nov 14, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -149,7 +157,7 @@
 | **La Palma** | 16,000 | $720,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Los Alamitos** | 12,000 | $850,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Laguna Woods** | 16,000 | $380,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Villa Park** | 5,800 | $1,900,000 | NEW | ✅ AVAILABLE |
+| **Villa Park** | 5,800 | $1,900,000 | Used 1x | ❌ USED THIS CYCLE |
 
 ---
 
@@ -165,12 +173,12 @@
 
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
-| **Manhattan Beach** | 35,000 | $2,500,000 | NEW | ✅ AVAILABLE |
-| **Hermosa Beach** | 20,000 | $1,800,000 | NEW | ✅ AVAILABLE |
+| **Manhattan Beach** | 35,000 | $2,500,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Hermosa Beach** | 20,000 | $1,800,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Redondo Beach** | 71,000 | $1,100,000 | NEW | ✅ AVAILABLE |
 | **Torrance** | 147,000 | $780,000 | NEW | ✅ AVAILABLE |
 | **El Segundo** | 17,000 | $950,000 | NEW | ✅ AVAILABLE |
-| **Glendale** | 200,000 | $920,000 | NEW | ✅ AVAILABLE |
+| **Glendale** | 200,000 | $920,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Burbank** | 107,000 | $900,000 | NEW | ✅ AVAILABLE |
 | **Pasadena** | 138,000 | $950,000 | NEW | ✅ AVAILABLE |
 | **Downey** | 111,000 | $640,000 | NEW | ✅ AVAILABLE |
@@ -191,7 +199,7 @@
 
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
-| **Carlsbad** | 115,000 | $1,100,000 | NEW | ✅ AVAILABLE |
+| **Carlsbad** | 115,000 | $1,100,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Oceanside** | 176,000 | $710,000 | NEW | ✅ AVAILABLE |
 | **Encinitas** | 62,000 | $1,400,000 | NEW | ✅ AVAILABLE |
 | **Chula Vista** | 275,000 | $680,000 | NEW | ✅ AVAILABLE |
@@ -205,7 +213,7 @@
 | **National City** | 61,000 | $550,000 | NEW | ✅ AVAILABLE |
 | **Imperial Beach** | 27,000 | $670,000 | NEW | ✅ AVAILABLE |
 | **Coronado** | 24,000 | $2,100,000 | NEW | ✅ AVAILABLE |
-| **Del Mar** | 4,300 | $3,500,000 | NEW | ✅ AVAILABLE |
+| **Del Mar** | 4,300 | $3,500,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Solana Beach** | 13,000 | $1,800,000 | NEW | ✅ AVAILABLE |
 | **Lemon Grove** | 27,000 | $580,000 | NEW | ✅ AVAILABLE |
 | **Bonita** | 13,000 | $750,000 | NEW | ✅ AVAILABLE |
@@ -224,7 +232,7 @@
 
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
-| **Riverside** | 331,000 | $540,000 | NEW | ✅ AVAILABLE |
+| **Riverside** | 331,000 | $540,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Moreno Valley** | 213,000 | $480,000 | NEW | ✅ AVAILABLE |
 | **Corona** | 157,000 | $620,000 | NEW | ✅ AVAILABLE |
 | **Temecula** | 114,000 | $640,000 | NEW | ✅ AVAILABLE |
@@ -256,7 +264,7 @@
 |------|-----------|-------------|-------------|----------------|
 | **San Bernardino** | 222,000 | $380,000 | NEW | ✅ AVAILABLE |
 | **Fontana** | 214,000 | $520,000 | NEW | ✅ AVAILABLE |
-| **Rancho Cucamonga** | 178,000 | $680,000 | NEW | ✅ AVAILABLE |
+| **Rancho Cucamonga** | 178,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Ontario** | 178,000 | $550,000 | NEW | ✅ AVAILABLE |
 | **Chino** | 91,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **Chino Hills** | 83,000 | $880,000 | NEW | ✅ AVAILABLE |
@@ -271,18 +279,18 @@
 ## 📊 **CYCLE 1 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 25 cities
-**Remaining**: 78 cities
-**Completion**: 24.3%
+**Used This Cycle**: 41 cities
+**Remaining**: 62 cities
+**Completion**: 39.8%
 
 ### **City Distribution:**
-- **Orange County**: 34 cities (24 used, 10 available)
-- **Los Angeles County**: 12 cities (1 used, 11 available)
-- **San Diego County**: 25 cities (1 used, 24 available)
-- **Riverside County**: 21 cities (0 used, 21 available)
-- **San Bernardino County**: 11 cities (0 used, 11 available)
+- **Orange County**: 34 cities (25 used, 9 available)
+- **Los Angeles County**: 12 cities (4 used, 8 available)
+- **San Diego County**: 25 cities (3 used, 22 available)
+- **Riverside County**: 21 cities (1 used, 20 available)
+- **San Bernardino County**: 11 cities (1 used, 10 available)
 
-### **Cities Available for Next Batch (78 cities remaining):**
+### **Cities Available for Next Batch (62 cities remaining):**
 
 #### **Priority 1 - Orange County Near Office (9 cities)**:
 1. ✅ **Stanton** ⭐ (YOUR OFFICE LOCATION - MUST USE SOON!)
