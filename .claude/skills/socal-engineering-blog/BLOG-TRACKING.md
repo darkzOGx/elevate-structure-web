@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 14, 2025
+## Last Updated: November 15, 2025
 
 ---
 
@@ -25,9 +25,9 @@
 ### Tracking:
 - **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 33/103
-- **Cities Remaining**: 70/103
-- **Completion**: 32.0%
+- **Cities Used This Cycle**: 41/103
+- **Cities Remaining**: 62/103
+- **Completion**: 39.8%
 
 ---
 
@@ -90,6 +90,14 @@
 | Title 24 Energy Compliance | Carlsbad | ✅ Published | Nov 14, 2025 | Cycle 1 |
 | ADU Structural Engineering | Riverside | ✅ Published | Nov 14, 2025 | Cycle 1 |
 | Commercial Tenant Improvement Engineering | Rancho Cucamonga | ✅ Published | Nov 14, 2025 | Cycle 1 |
+| Commercial Building Engineering Design | Redondo Beach | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Sustainable Engineering Design Services | Torrance | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Expert Structural Design Services | El Segundo | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Professional Design Engineering Services | Burbank | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Residential Structural Engineer Near Me | Pasadena | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| What do Structural Engineers do | Oceanside | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| What is Engineering Design | Encinitas | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Engineering Design Services Cost | Chula Vista | ✅ Published | Nov 15, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -175,12 +183,12 @@
 |------|-----------|-------------|-------------|----------------|
 | **Manhattan Beach** | 35,000 | $2,500,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Hermosa Beach** | 20,000 | $1,800,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Redondo Beach** | 71,000 | $1,100,000 | NEW | ✅ AVAILABLE |
-| **Torrance** | 147,000 | $780,000 | NEW | ✅ AVAILABLE |
-| **El Segundo** | 17,000 | $950,000 | NEW | ✅ AVAILABLE |
+| **Redondo Beach** | 71,000 | $1,100,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Torrance** | 147,000 | $780,000 | Used 1x | ❌ USED THIS CYCLE |
+| **El Segundo** | 17,000 | $950,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Glendale** | 200,000 | $920,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Burbank** | 107,000 | $900,000 | NEW | ✅ AVAILABLE |
-| **Pasadena** | 138,000 | $950,000 | NEW | ✅ AVAILABLE |
+| **Burbank** | 107,000 | $900,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Pasadena** | 138,000 | $950,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Downey** | 111,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **Whittier** | 87,000 | $680,000 | NEW | ✅ AVAILABLE |
 | **Rancho Palos Verdes** | 42,000 | $1,600,000 | NEW | ✅ AVAILABLE |
@@ -200,9 +208,9 @@
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
 | **Carlsbad** | 115,000 | $1,100,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Oceanside** | 176,000 | $710,000 | NEW | ✅ AVAILABLE |
-| **Encinitas** | 62,000 | $1,400,000 | NEW | ✅ AVAILABLE |
-| **Chula Vista** | 275,000 | $680,000 | NEW | ✅ AVAILABLE |
+| **Oceanside** | 176,000 | $710,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Encinitas** | 62,000 | $1,400,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Chula Vista** | 275,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Escondido** | 151,000 | $650,000 | NEW | ✅ AVAILABLE |
 | **Vista** | 101,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **San Marcos** | 94,000 | $680,000 | NEW | ✅ AVAILABLE |
@@ -284,9 +292,9 @@
 **Completion**: 39.8%
 
 ### **City Distribution:**
-- **Orange County**: 34 cities (25 used, 9 available)
-- **Los Angeles County**: 12 cities (4 used, 8 available)
-- **San Diego County**: 25 cities (3 used, 22 available)
+- **Orange County**: 34 cities (33 used, 1 available)
+- **Los Angeles County**: 12 cities (8 used, 4 available)
+- **San Diego County**: 25 cities (6 used, 19 available)
 - **Riverside County**: 21 cities (1 used, 20 available)
 - **San Bernardino County**: 11 cities (1 used, 10 available)
 
