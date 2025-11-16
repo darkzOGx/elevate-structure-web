@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 15, 2025
+## Last Updated: November 16, 2025
 
 ---
 
@@ -25,9 +25,9 @@
 ### Tracking:
 - **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 41/103
-- **Cities Remaining**: 62/103
-- **Completion**: 39.8%
+- **Cities Used This Cycle**: 49/103
+- **Cities Remaining**: 54/103
+- **Completion**: 47.6%
 
 ---
 
@@ -98,6 +98,14 @@
 | What do Structural Engineers do | Oceanside | ✅ Published | Nov 15, 2025 | Cycle 1 |
 | What is Engineering Design | Encinitas | ✅ Published | Nov 15, 2025 | Cycle 1 |
 | Engineering Design Services Cost | Chula Vista | ✅ Published | Nov 15, 2025 | Cycle 1 |
+| Civil Engineering Design Southern California | Downey | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Mechanical Engineering Design Southern California | Whittier | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Structural Engineer Requirements | Rancho Palos Verdes | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| California Structural Engineer License Lookup | Coronado | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Mechanical Engineering Companies in San Diego | Escondido | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Structural Engineers Association of California | Temecula | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Civil Engineer Structural Design Capability | Chino Hills | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Structural Board California | Fontana | ✅ Published | Nov 16, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -189,9 +197,9 @@
 | **Glendale** | 200,000 | $920,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Burbank** | 107,000 | $900,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Pasadena** | 138,000 | $950,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Downey** | 111,000 | $640,000 | NEW | ✅ AVAILABLE |
-| **Whittier** | 87,000 | $680,000 | NEW | ✅ AVAILABLE |
-| **Rancho Palos Verdes** | 42,000 | $1,600,000 | NEW | ✅ AVAILABLE |
+| **Downey** | 111,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Whittier** | 87,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Rancho Palos Verdes** | 42,000 | $1,600,000 | Used 1x | ❌ USED THIS CYCLE |
 
 ---
 
@@ -211,7 +219,7 @@
 | **Oceanside** | 176,000 | $710,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Encinitas** | 62,000 | $1,400,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Chula Vista** | 275,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Escondido** | 151,000 | $650,000 | NEW | ✅ AVAILABLE |
+| **Escondido** | 151,000 | $650,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Vista** | 101,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **San Marcos** | 94,000 | $680,000 | NEW | ✅ AVAILABLE |
 | **El Cajon** | 103,000 | $580,000 | NEW | ✅ AVAILABLE |
@@ -220,7 +228,7 @@
 | **Santee** | 58,000 | $650,000 | NEW | ✅ AVAILABLE |
 | **National City** | 61,000 | $550,000 | NEW | ✅ AVAILABLE |
 | **Imperial Beach** | 27,000 | $670,000 | NEW | ✅ AVAILABLE |
-| **Coronado** | 24,000 | $2,100,000 | NEW | ✅ AVAILABLE |
+| **Coronado** | 24,000 | $2,100,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Del Mar** | 4,300 | $3,500,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Solana Beach** | 13,000 | $1,800,000 | NEW | ✅ AVAILABLE |
 | **Lemon Grove** | 27,000 | $580,000 | NEW | ✅ AVAILABLE |
@@ -243,7 +251,7 @@
 | **Riverside** | 331,000 | $540,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Moreno Valley** | 213,000 | $480,000 | NEW | ✅ AVAILABLE |
 | **Corona** | 157,000 | $620,000 | NEW | ✅ AVAILABLE |
-| **Temecula** | 114,000 | $640,000 | NEW | ✅ AVAILABLE |
+| **Temecula** | 114,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Murrieta** | 116,000 | $610,000 | NEW | ✅ AVAILABLE |
 | **Menifee** | 102,000 | $520,000 | NEW | ✅ AVAILABLE |
 | **Perris** | 79,000 | $450,000 | NEW | ✅ AVAILABLE |
@@ -271,11 +279,11 @@
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
 | **San Bernardino** | 222,000 | $380,000 | NEW | ✅ AVAILABLE |
-| **Fontana** | 214,000 | $520,000 | NEW | ✅ AVAILABLE |
+| **Fontana** | 214,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Rancho Cucamonga** | 178,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Ontario** | 178,000 | $550,000 | NEW | ✅ AVAILABLE |
 | **Chino** | 91,000 | $640,000 | NEW | ✅ AVAILABLE |
-| **Chino Hills** | 83,000 | $880,000 | NEW | ✅ AVAILABLE |
+| **Chino Hills** | 83,000 | $880,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Upland** | 79,000 | $630,000 | NEW | ✅ AVAILABLE |
 | **Redlands** | 72,000 | $580,000 | NEW | ✅ AVAILABLE |
 | **Rialto** | 104,000 | $450,000 | NEW | ✅ AVAILABLE |
@@ -287,16 +295,16 @@
 ## 📊 **CYCLE 1 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 41 cities
-**Remaining**: 62 cities
-**Completion**: 39.8%
+**Used This Cycle**: 49 cities
+**Remaining**: 54 cities
+**Completion**: 47.6%
 
 ### **City Distribution:**
 - **Orange County**: 34 cities (33 used, 1 available)
-- **Los Angeles County**: 12 cities (8 used, 4 available)
-- **San Diego County**: 25 cities (6 used, 19 available)
-- **Riverside County**: 21 cities (1 used, 20 available)
-- **San Bernardino County**: 11 cities (1 used, 10 available)
+- **Los Angeles County**: 12 cities (11 used, 1 available)
+- **San Diego County**: 25 cities (8 used, 17 available)
+- **Riverside County**: 21 cities (2 used, 19 available)
+- **San Bernardino County**: 11 cities (3 used, 8 available)
 
 ### **Cities Available for Next Batch (62 cities remaining):**
 
