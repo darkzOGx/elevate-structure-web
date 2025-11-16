@@ -19,6 +19,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -33,6 +34,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.local.example
+!.env.example
+
+# Google Search Console credentials (NEVER commit)
+gsc-credentials.json
+gsc-extracted-keywords.json
+.gsc-last-run.json
 
 # IndexNow verification files (MUST be committed and deployed)
 !public/*.txt
