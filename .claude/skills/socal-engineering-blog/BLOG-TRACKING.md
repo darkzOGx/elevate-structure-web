@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 16, 2025
+## Last Updated: November 17, 2025
 
 ---
 
@@ -25,9 +25,9 @@
 ### Tracking:
 - **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 49/103
-- **Cities Remaining**: 54/103
-- **Completion**: 47.6%
+- **Cities Used This Cycle**: 59/103
+- **Cities Remaining**: 44/103
+- **Completion**: 57.3%
 
 ---
 
@@ -106,6 +106,16 @@
 | Structural Engineers Association of California | Temecula | ✅ Published | Nov 16, 2025 | Cycle 1 |
 | Civil Engineer Structural Design Capability | Chino Hills | ✅ Published | Nov 16, 2025 | Cycle 1 |
 | Structural Board California | Fontana | ✅ Published | Nov 16, 2025 | Cycle 1 |
+| Residential Structural Engineer Near Me | Vista | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| MEP Engineering Design | San Marcos | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Grading and Drainage Plans | Poway | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Foundation Assessment Guide | Moreno Valley | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| ADU Structural Engineering | Corona | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Commercial Tenant Improvement Engineering | Murrieta | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Types of Engineering Design | Ontario | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Role of a Design Engineer | Chino | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Septic Design Engineers | Upland | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Stormwater Design Engineer | Redlands | ✅ Published | Nov 17, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -220,11 +230,11 @@
 | **Encinitas** | 62,000 | $1,400,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Chula Vista** | 275,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Escondido** | 151,000 | $650,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Vista** | 101,000 | $640,000 | NEW | ✅ AVAILABLE |
-| **San Marcos** | 94,000 | $680,000 | NEW | ✅ AVAILABLE |
+| **Vista** | 101,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
+| **San Marcos** | 94,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **El Cajon** | 103,000 | $580,000 | NEW | ✅ AVAILABLE |
 | **La Mesa** | 60,000 | $740,000 | NEW | ✅ AVAILABLE |
-| **Poway** | 50,000 | $920,000 | NEW | ✅ AVAILABLE |
+| **Poway** | 50,000 | $920,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Santee** | 58,000 | $650,000 | NEW | ✅ AVAILABLE |
 | **National City** | 61,000 | $550,000 | NEW | ✅ AVAILABLE |
 | **Imperial Beach** | 27,000 | $670,000 | NEW | ✅ AVAILABLE |
@@ -249,10 +259,10 @@
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
 | **Riverside** | 331,000 | $540,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Moreno Valley** | 213,000 | $480,000 | NEW | ✅ AVAILABLE |
-| **Corona** | 157,000 | $620,000 | NEW | ✅ AVAILABLE |
+| **Moreno Valley** | 213,000 | $480,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Corona** | 157,000 | $620,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Temecula** | 114,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Murrieta** | 116,000 | $610,000 | NEW | ✅ AVAILABLE |
+| **Murrieta** | 116,000 | $610,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Menifee** | 102,000 | $520,000 | NEW | ✅ AVAILABLE |
 | **Perris** | 79,000 | $450,000 | NEW | ✅ AVAILABLE |
 | **Lake Elsinore** | 70,000 | $510,000 | NEW | ✅ AVAILABLE |
@@ -281,11 +291,11 @@
 | **San Bernardino** | 222,000 | $380,000 | NEW | ✅ AVAILABLE |
 | **Fontana** | 214,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Rancho Cucamonga** | 178,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Ontario** | 178,000 | $550,000 | NEW | ✅ AVAILABLE |
-| **Chino** | 91,000 | $640,000 | NEW | ✅ AVAILABLE |
+| **Ontario** | 178,000 | $550,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Chino** | 91,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Chino Hills** | 83,000 | $880,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Upland** | 79,000 | $630,000 | NEW | ✅ AVAILABLE |
-| **Redlands** | 72,000 | $580,000 | NEW | ✅ AVAILABLE |
+| **Upland** | 79,000 | $630,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Redlands** | 72,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Rialto** | 104,000 | $450,000 | NEW | ✅ AVAILABLE |
 | **Yucaipa** | 54,000 | $520,000 | NEW | ✅ AVAILABLE |
 | **Highland** | 56,000 | $480,000 | NEW | ✅ AVAILABLE |
@@ -295,16 +305,16 @@
 ## 📊 **CYCLE 1 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 49 cities
-**Remaining**: 54 cities
-**Completion**: 47.6%
+**Used This Cycle**: 59 cities
+**Remaining**: 44 cities
+**Completion**: 57.3%
 
 ### **City Distribution:**
 - **Orange County**: 34 cities (33 used, 1 available)
 - **Los Angeles County**: 12 cities (11 used, 1 available)
-- **San Diego County**: 25 cities (8 used, 17 available)
-- **Riverside County**: 21 cities (2 used, 19 available)
-- **San Bernardino County**: 11 cities (3 used, 8 available)
+- **San Diego County**: 25 cities (11 used, 14 available)
+- **Riverside County**: 21 cities (5 used, 16 available)
+- **San Bernardino County**: 11 cities (7 used, 4 available)
 
 ### **Cities Available for Next Batch (62 cities remaining):**
 
