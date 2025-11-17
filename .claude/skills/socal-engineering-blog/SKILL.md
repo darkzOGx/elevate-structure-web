@@ -38,9 +38,127 @@ view BLOG-TRACKING.md
 
 ---
 
-### Step 1: Read Required References
+### Step 0.5: GSC Keyword Extraction (AUTOMATIC WEEKLY)
 
-**CRITICAL - Always read these files FIRST:**
+**🤖 AUTOMATIC: This runs automatically if last extraction was > 7 days ago**
+
+This automated process:
+1. **Auto-checks** when GSC extraction last ran
+2. **If > 7 days ago**: Automatically runs GSC extraction before generating blogs
+3. **If < 7 days ago**: Skips extraction and proceeds to blog generation
+4. Fetches actual search queries from Google Search Console
+5. Searches each query on Google to find "People Also Search For" keywords
+6. Automatically adds discovered keywords to `references/keyword-list.md`
+7. Identifies long-tail opportunities from real user searches
+
+**When it runs automatically:**
+- ✅ **First time**: Never run before
+- ✅ **Weekly refresh**: Last run was 7+ days ago
+- ✅ **After errors**: Last run file is missing or corrupted
+- ❌ **Skip**: Last run was less than 7 days ago
+
+**What you'll see:**
+
+If GSC extraction runs automatically:
+```
+🔍 Checking GSC extraction status...
+⏰ Last run was 8 days ago (threshold: 7 days)
+🚀 Running GSC extraction automatically...
+
+📊 Connecting to Google Search Console...
+✅ Connected to GSC
+📥 Fetching queries from last 30 days...
+✅ Found 150 queries
+...
+✅ Added 23 new keywords to keyword list
+```
+
+If GSC extraction is skipped:
+```
+🔍 Checking GSC extraction status...
+✅ Last run was 3 days ago (threshold: 7 days)
+⏭️  Skipping GSC extraction - using existing keywords
+```
+
+**Manual run (optional):**
+
+You can still manually run GSC extraction anytime:
+
+```bash
+# Manual run (ignores last-run check)
+node scripts/gsc-keyword-extractor.js
+
+# Weekly run with custom parameters
+GSC_DAYS_BACK=7 MAX_QUERIES=30 node scripts/gsc-keyword-extractor.js
+```
+
+**Configuration:**
+
+Customize the auto-run threshold in `.env`:
+```bash
+# Run GSC extraction if last run was > X days ago (default: 7)
+GSC_AUTO_RUN_DAYS=7
+```
+
+**Configuration options (via environment variables):**
+- `GSC_PROPERTY_URL` - Your website URL (default: https://aaaengineeringdesign.com)
+- `GSC_DAYS_BACK` - Days of data to fetch (default: 30)
+- `MIN_IMPRESSIONS` - Minimum impressions to include keyword (default: 10)
+- `MAX_QUERIES` - Maximum queries to process (default: 50)
+- `GSC_CREDENTIALS_PATH` - Path to GSC credentials JSON (default: ./gsc-credentials.json)
+- `SERPAPI_KEY` - SerpAPI key for "People Also Search For" extraction (optional)
+
+**Output:**
+- Updates `references/keyword-list.md` with new long-tail keywords
+- Creates `gsc-extracted-keywords.json` with full results and metrics
+- Shows keyword categorization (intent, volume, difficulty)
+- Displays GSC metrics (impressions, clicks, CTR, position)
+
+**Setup requirements (one-time):**
+1. Create Google Cloud project and enable Search Console API
+2. Download service account credentials JSON
+3. Save as `gsc-credentials.json` in project root
+4. (Optional) Get SerpAPI key for enhanced "People Also Search For" extraction
+
+See `scripts/GSC-SETUP-GUIDE.md` for detailed setup instructions.
+
+**After running:**
+- Review `gsc-extracted-keywords.json` for insights
+- Check `references/keyword-list.md` for newly added keywords
+- Use high-performing GSC keywords in next blog batch
+- Monitor which keywords are driving impressions vs. clicks
+
+---
+
+### Step 1: Auto-Check & Run GSC Extraction (If Needed)
+
+**AUTOMATIC - Check if GSC extraction should run:**
+
+Before reading references, automatically check if GSC extraction is needed:
+
+1. **Check last run status** by running:
+   ```bash
+   node -e "const gsc = require('./scripts/gsc-keyword-extractor.js'); const status = gsc.shouldRunGSCExtraction(); console.log(status.shouldRun ? '⏰ GSC extraction needed: ' + status.reason : '✅ GSC is fresh: ' + status.reason);"
+   ```
+
+2. **If GSC extraction is needed** (last run > 7 days ago):
+   ```bash
+   echo "🚀 Running GSC extraction automatically..."
+   node scripts/gsc-keyword-extractor.js
+   ```
+
+3. **If GSC is fresh** (last run < 7 days ago):
+   ```bash
+   echo "⏭️  Skipping GSC extraction - using existing keywords"
+   ```
+
+**This ensures keyword-list.md always has fresh, high-performing keywords!**
+
+---
+
+### Step 2: Read Required References
+
+**CRITICAL - Always read these files AFTER GSC check:**
 
 ```bash
 view references/keyword-list.md
@@ -82,6 +200,175 @@ These files contain:
 - Commercial keywords → Higher-value cities (Newport Beach, Irvine)
 - Informational keywords → Any city
 - Transactional keywords → Major metro areas (LA, Long Beach, San Diego)
+
+### Step 2.5: Topic Cluster Integration (CRITICAL FOR SEO)
+
+**🎯 NEW: All blog posts must be assigned to a topic cluster for maximum topical authority**
+
+#### What Are Topic Clusters?
+
+Topic clusters are groups of related content organized around a central "hub" page:
+- **Hub Page**: Comprehensive 3,000-5,000 word guide on a broad topic
+- **Cluster Pages**: Focused 1,500-2,500 word articles on specific subtopics
+- **Bidirectional Links**: All clusters link to hub, hub links to all clusters
+
+This structure signals to Google that we are THE authority on the topic.
+
+#### Current Hub Pages
+
+Refer to `.claude/skills/socal-engineering-blog/CLUSTER-MAPPING.md` for the complete cluster structure.
+
+**Active Hubs:**
+1. **Structural Engineering Services Guide** (`structural-engineering-services-guide`)
+   - Target keyword: "structural engineering services"
+   - Current clusters: 24+ posts
+   - Topics: Residential, ADU, seismic, foundation, home additions
+
+2. **Engineering Design Services Guide** (planned)
+   - Target keyword: "engineering design services"
+   - Current clusters: 28+ posts
+   - Topics: Design types, costs, professional services, sustainable design
+
+3. **Specialized Engineering Services** (planned)
+   - Topics: MEP, stormwater, septic, grading
+
+4. **Building Codes & Compliance** (planned)
+   - Topics: Title 24, licensing, associations
+
+5. **Commercial Engineering Services** (planned)
+   - Topics: Tenant improvements, commercial buildings
+
+#### How to Assign Posts to Clusters
+
+**For Each New Blog Post:**
+
+1. **Determine Hub Assignment** based on primary keyword:
+
+| Primary Keyword Contains... | Assign to Hub | Hub ID |
+|----------------------------|---------------|---------|
+| "structural engineer", "seismic", "foundation", "ADU", "home addition" | Structural Engineering | `structural-engineering-services-guide` |
+| "engineering design", "design services", "sustainable design", "custom design" | Engineering Design | `engineering-design-services-guide` (planned) |
+| "MEP", "mechanical engineering", "stormwater", "septic", "grading" | Specialized Services | `specialized-engineering-services-guide` (planned) |
+| "Title 24", "building code", "license", "compliance" | Building Compliance | `building-codes-compliance-guide` (planned) |
+| "commercial building", "tenant improvement", "commercial engineering" | Commercial Services | `commercial-engineering-services-guide` (planned) |
+
+2. **Add Cluster Metadata Fields** to the BlogPost object:
+
+```typescript
+{
+  id: 'your-post-id',
+  title: 'Your Post Title',
+  excerpt: '...',
+  category: 'Structural Engineering',
+  date: '2025-11-17',
+  readTime: '12 min read',
+  author: 'AAA Engineering Team',
+  image: 'https://...',
+  featured: false,
+  relatedArticles: ['related-post-1', 'related-post-2', 'hub-page-id'],  // ← ADD HUB TO RELATED ARTICLES
+
+  // Topic Cluster Metadata (REQUIRED for all new posts)
+  contentType: 'cluster',  // or 'hub' for hub pages, 'supporting' for general posts
+  hubPage: 'structural-engineering-services-guide',  // ID of parent hub
+  topicCluster: 'structural-engineering',  // Cluster name
+  primaryKeyword: 'adu structural engineering',  // Main keyword for this post
+  secondaryKeywords: ['accessory dwelling unit', 'adu design'],  // 2-3 related keywords
+  geoTarget: 'Los Alamitos',  // City/region targeted
+
+  content: `...`
+}
+```
+
+3. **Add Hub Reference in Content** (in first 500 words):
+
+```markdown
+This article is part of our comprehensive [Structural Engineering Services Guide](/blog/structural-engineering-services-guide), which covers everything you need to know about structural engineering in Southern California.
+```
+
+OR integrate naturally:
+
+```markdown
+For a complete overview of structural engineering services, see our [comprehensive structural engineering guide](/blog/structural-engineering-services-guide).
+```
+
+4. **Add Hub to Related Articles Section** at the bottom of content:
+
+```markdown
+## Related Resources
+
+**Comprehensive Guides:**
+- [Complete Structural Engineering Services Guide](/blog/structural-engineering-services-guide)
+
+**Related Topics:**
+- [ADU Structural Requirements](/blog/...)
+- [Foundation Design Guide](/blog/...)
+```
+
+#### Cluster Metadata Field Definitions
+
+| Field | Type | Required | Description | Example |
+|-------|------|----------|-------------|---------|
+| `contentType` | 'hub' \| 'cluster' \| 'supporting' | Yes | Content tier in cluster hierarchy | `'cluster'` |
+| `hubPage` | string | If cluster | ID of parent hub page | `'structural-engineering-services-guide'` |
+| `clusterPages` | string[] | If hub | Array of cluster post IDs | `['adu-post-1', 'foundation-post-2']` |
+| `topicCluster` | string | Yes | Cluster name | `'structural-engineering'` |
+| `primaryKeyword` | string | Yes | Main target keyword | `'adu structural engineering'` |
+| `secondaryKeywords` | string[] | Optional | 2-3 supporting keywords | `['adu design', 'accessory dwelling']` |
+| `geoTarget` | string | Optional | City or region | `'Los Alamitos'` or `'Southern California'` |
+
+#### Internal Linking Rules for Clusters
+
+**Every Cluster Post Must:**
+- ✅ Link to parent hub page (in content + relatedArticles)
+- ✅ Link to 2-3 sibling clusters (related topics in same hub)
+- ✅ Link to 2-3 service pages
+- ✅ Include hub reference in first 500 words
+
+**Hub Pages Must:**
+- ✅ Link to ALL cluster posts (18-25 links)
+- ✅ Group clusters by subtopic
+- ✅ Include contextual anchor text for each cluster link
+- ✅ Feature comprehensive FAQ section (8-10 questions)
+
+#### Example: Cluster Post Template
+
+```markdown
+# ADU Structural Engineering in Los Alamitos: Complete 2025 Guide
+
+**Updated: November 2025**
+
+[Opening paragraph with problem/solution...]
+
+As part of our [comprehensive structural engineering services](/blog/structural-engineering-services-guide) in Southern California, we specialize in ADU design and permitting throughout Orange County, including Los Alamitos, Seal Beach, and Cypress.
+
+## What is ADU Structural Engineering?
+
+[Content...]
+
+For related guidance, see our articles on [home addition engineering](/blog/structural-engineering-for-home-additions-brea) and [foundation assessment](/blog/foundation-assessment-guide-buena-park).
+
+[Rest of content...]
+
+## Related Resources
+
+**Comprehensive Guides:**
+- [Complete Structural Engineering Services Guide](/blog/structural-engineering-services-guide)
+
+**Related Services:**
+- [Foundation Design for ADUs](/blog/...)
+- [Seismic Requirements for ADUs](/blog/...)
+- [Title 24 Compliance for ADUs](/blog/...)
+```
+
+#### Benefits of Topic Cluster Strategy
+
+✅ **Topical Authority**: Google sees we comprehensively cover structural engineering
+✅ **Better Rankings**: Hub pages rank for high-volume head terms
+✅ **Cluster Rankings**: Each cluster ranks for specific long-tail keywords
+✅ **Featured Snippets**: Comprehensive content captures more featured snippets
+✅ **Internal Link Flow**: PageRank flows from hub to clusters and back
+✅ **User Experience**: Visitors find related content easily
+✅ **Content Organization**: Clear structure makes content management easier
 
 ### Step 3: Generate Each Blog Post
 
