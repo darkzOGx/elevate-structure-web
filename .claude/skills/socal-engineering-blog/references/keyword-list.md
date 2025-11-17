@@ -31,10 +31,13 @@
 | Sustainable Engineering Design Services | Commercial | Medium | Low | 🎯 | ⏳ |
 | Residential Structural Engineer Near Me | Transactional | High | High | 🎯 | ⏳ |
 | Commercial Building Engineering Design California | Transactional | High | High | 🎯 | ⏳ |
+| Civil Engineering Design Southern California | Commercial | High | High | 🎯 | ⏳ |
+| Mechanical Engineering Design Southern California | Commercial | High | Medium | 🎯 | ⏳ |
 | Stormwater Design Engineer Roles | Informational | Medium | Low | 🎯 | ⏳ |
 | Septic Design Engineers Residential | Commercial | Low | Low | 🎯 | ⏳ |
 | Custom House Engineering Design | Informational | Medium | Low | 🎯 | ⏳ |
 | Best Structural Engineering Firms Los Angeles | Navigational | High | Very High | 🎯 | ⏳ |
+| Mechanical Engineering Companies in San Diego | Navigational | Medium | High | 🎯 | ⏳ |
 | Benefits of Engineering Design Services | Informational | Medium | Low | - | ⏳ |
 
 **Cluster Strategy**: These are 1,500-2,500 word articles that should:
@@ -57,6 +60,11 @@
 | Role of a Design Engineer | Informational | Medium | Low | High | ⏳ |
 | Types of Engineering Design | Informational | High | Medium | Very High | 🎯 |
 | Civil Engineer Structural Design Capability | Informational | Low | Low | Medium | ⏳ |
+| Structural Engineer Requirements | Informational | Medium | Low | Very High | 🎯 |
+| California Structural Engineer License Lookup | Informational | Medium | Low | High | ⏳ |
+| Structural Engineers Association of California | Navigational | Medium | Low | Medium | ⏳ |
+| Structural Engineering Association of California | Navigational | Medium | Low | Medium | ⏳ |
+| Structural Board California | Informational | Low | Low | Medium | ⏳ |
 
 **PAA Strategy**: These are 1,200-1,800 word articles that should:
 - Directly answer the question in first paragraph
@@ -79,6 +87,9 @@
 - **septic design engineers near me** - Commercial, local
 - **residential structural engineer near me** - Transactional, local
 - **residential structural engineer los angeles** - Geo-specific, high intent
+- **best structural engineers orange county** - Geo + navigational, high intent
+- **orange county structural engineers** - Geo-specific, high intent
+- **structural engineer orange county ca** - Geo-specific, high intent
 
 ### Secondary GSC Keywords
 - engineering design consultants
@@ -90,6 +101,7 @@
 - custom design engineering near me
 - structural design engineer
 - design engineers near me
+- engineering design southern california jobs
 
 ### Long-Tail GSC Keywords
 - hire csla engineer
@@ -98,6 +110,14 @@
 - residential home engineering
 - house plan engineer near me
 - architectural and engineering services in los alamitos
+
+### Competitor Awareness Keywords
+- **RICK engineering** - Competitor brand awareness
+- **RICK Engineering San Diego** - Competitor geo-targeted
+- **Rick engineering Riverside** - Competitor geo-targeted
+- **Luxon Engineering** - Competitor brand awareness
+
+**Strategy**: Monitor these competitor keywords to understand market positioning and create comparison/alternative content when appropriate. These keywords help capture users researching multiple engineering firms.
 
 ---
 
