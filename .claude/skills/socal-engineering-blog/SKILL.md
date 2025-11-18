@@ -18,7 +18,22 @@ Use this skill when the user requests:
 - Local SEO optimized articles
 - AI Overview (AIO) optimized content
 
-## Workflow: Generating 5 Daily Blog Posts
+## Workflow: Generating Daily Blog Posts
+
+**IMPORTANT: Automatic +3 "Near Me" Posts**
+
+When user requests N blog posts, **ALWAYS generate N + 3 total posts:**
+- **N posts** = Requested topics with rotating cities
+- **+3 posts** = "Near Me" GEO-localized posts (automatic bonus)
+
+**Example:**
+- User says: "Generate 10 blog posts"
+- You generate: **13 posts** (10 regular + 3 "near me")
+
+**"Near Me" posts target high-intent local searches:**
+- Format: `[keyword] near me in [city]`
+- Example: "Residential Structural Engineer Near Me in Newport Beach"
+- Rotates through topics: residential engineer, structural engineer, foundation engineer, ADU engineer, seismic retrofit engineer, MEP engineer, civil engineer, etc.
 
 ### Step 0: Check Blog Tracking (MANDATORY - DO THIS FIRST!)
 
@@ -252,6 +267,7 @@ Before reading references, automatically check if GSC extraction is needed:
 ```bash
 view references/keyword-list.md
 view references/city-data.md
+view references/near-me-keywords.md  # NEW: For automatic +3 "near me" posts
 view references/blog-template.md
 view references/interlinking-strategy.md
 ```
@@ -259,19 +275,30 @@ view references/interlinking-strategy.md
 These files contain:
 - All available keywords with intent and priority
 - Complete city data (demographics, building codes, permit info)
+- **"Near me" keyword rotation for automatic +3 bonus posts**
 - Exact blog post structure matching aaaengineeringdesign.com format
 - Internal linking rules and anchor text strategy
 
 ### Step 2: Select Keywords and Cities
 
-**Keyword Selection:**
-1. Choose 5 keywords from `references/keyword-list.md`
+**Total Posts to Generate: N + 3**
+- **N posts** = User's requested number (e.g., 5, 10, etc.)
+- **+3 posts** = Automatic "near me" posts (ALWAYS added)
+
+**Regular Keyword Selection (N posts):**
+1. Choose N keywords from `references/keyword-list.md`
 2. Mix keyword types:
    - 1-2 Cluster articles (commercial/transactional intent)
    - 2-3 PAA/Informational articles
    - Occasionally include 1 Pillar article
 3. Prioritize keywords marked as 🎯 High Priority
 4. **CHECK BLOG-TRACKING.md** - Avoid keywords already used with target cities
+
+**"Near Me" Keyword Selection (+3 posts):**
+1. Use next 3 keywords in rotation from `references/near-me-keywords.md`
+2. Check BLOG-TRACKING.md for last "near me" keyword used
+3. Resume rotation from next keyword
+4. These are HIGH commercial intent (ready to hire)
 
 **City Selection:**
 1. **CHECK BLOG-TRACKING.md FIRST** - Use only available cities
