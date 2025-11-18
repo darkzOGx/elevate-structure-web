@@ -36,6 +36,40 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
 
       // Sub-headings (###)
       if (section.startsWith('### ')) {
+        // Check if this section has bullet points after the heading
+        if (section.includes('\n-')) {
+          const lines = section.split('\n')
+          const heading = lines[0].replace('### ', '').trim()
+          const items = lines.slice(1).filter(line => line.trim().startsWith('-'))
+
+          return (
+            <div key={index} className="my-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-1 w-12 bg-gradient-to-r from-primary to-primary/50 rounded-full" />
+                <h3 className="text-2xl font-semibold text-foreground">
+                  {heading}
+                </h3>
+              </div>
+              <ul className="space-y-3 mt-4">
+                {items.map((item, i) => {
+                  // Parse markdown links in bullet points
+                  const itemText = item.replace('-', '').trim()
+                  const withLinks = itemText.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+                    '<a href="$2" class="text-primary hover:underline font-medium">$1</a>')
+
+                  return (
+                    <li key={i} className="flex items-start gap-3 text-foreground">
+                      <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="flex-1" dangerouslySetInnerHTML={{ __html: withLinks }} />
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )
+        }
+
+        // Just a heading without bullet points
         const title = section.replace('### ', '').trim()
         return (
           <div key={index} className="my-8">
