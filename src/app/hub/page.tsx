@@ -73,6 +73,20 @@ const hubs: HubItem[] = [
     topics: ['MEP Engineering', 'Stormwater Design', 'Grading & Drainage', 'Septic Engineering', 'Civil Engineering', 'Title 24 Compliance'],
     status: 'live',
   },
+  {
+    id: 'residential-engineering',
+    title: 'Residential Structural Engineering in Southern California: Complete Homeowner\'s Guide',
+    shortTitle: 'Residential Structural Engineering',
+    description: 'Complete guide for homeowners covering home additions, ADUs, foundation repairs, seismic retrofitting, costs, permits, and how to find qualified residential structural engineers.',
+    icon: Building2,
+    url: '/blog/residential-structural-engineering-guide',
+    primaryKeyword: 'residential structural engineer california',
+    monthlySearches: '18,000+',
+    clusterCount: 28,
+    topics: ['Home Additions', 'ADU Engineering', 'Foundation Repair', 'Seismic Retrofitting', 'Residential Costs', 'Finding Engineers'],
+    status: 'live',
+    badge: 'For Homeowners'
+  },
 ]
 
 const comingSoonHubs: HubItem[] = [
