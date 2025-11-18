@@ -709,7 +709,7 @@ Contact us today for a free consultation.
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?w=800&h=400&fit=crop',
     featured: true,
-    relatedArticles: ['mep-engineering-design-in-placentia-placentia', 'stormwater-design-engineer-westminster', 'grading-and-drainage-plans-laguna-woods'],
+    relatedArticles: ['mep-engineering-design-in-placentia-placentia', 'stormwater-design-engineer-westminster', 'grading-and-drainage-plans-in-laguna-woods-laguna-woods'],
 
     // Topic Cluster Metadata
     contentType: 'hub',
@@ -721,17 +721,17 @@ Contact us today for a free consultation.
       'mep-engineering-design-in-placentia-placentia',
       'mep-engineering-design-manhattan-beach',
       'mep-engineering-design-san-marcos',
-      'mechanical-engineering-design-southern-california-whittier',
+      'mechanical-engineering-design-southern-california',
       'stormwater-design-engineer-westminster',
       'stormwater-design-engineer-fullerton',
       'stormwater-design-engineer-tustin',
       'stormwater-design-engineer-redlands',
-      'grading-and-drainage-plans-laguna-woods',
-      'grading-and-drainage-plans-hermosa-beach',
-      'grading-and-drainage-plans-poway',
+      'grading-and-drainage-plans-in-laguna-woods-laguna-woods',
+      'grading-and-drainage-plans-in-hermosa-beach-hermosa-beach',
+      'grading-and-drainage-plans-in-poway-poway',
       'septic-design-engineers-san-clemente',
-      'septic-design-engineers-aliso-viejo',
-      'septic-design-engineers-westminster',
+      'septic-design-engineers-in-aliso-viejo-aliso-viejo',
+      'septic-design-engineers-in-westminster-westminster',
       'septic-design-engineers-upland',
       'mechanical-engineering-companies-in-san-diego-escondido',
       'civil-engineering-design-southern-california',
@@ -746,7 +746,7 @@ MEP—Mechanical, Electrical, and Plumbing—engineering designs the systems tha
 
 ### Mechanical Engineering Design
 
-[Mechanical engineering design](/blog/mechanical-engineering-design-southern-california-whittier) encompasses HVAC systems that control temperature, humidity, and air quality. In Southern California, mechanical design must address high cooling loads, California Title 24 energy requirements, and climate-appropriate equipment selection.
+[Mechanical engineering design](/blog/mechanical-engineering-design-southern-california) encompasses HVAC systems that control temperature, humidity, and air quality. In Southern California, mechanical design must address high cooling loads, California Title 24 energy requirements, and climate-appropriate equipment selection.
 
 ### Electrical Engineering Design
 
@@ -768,13 +768,13 @@ Civil engineering encompasses site development and infrastructure systems outsid
 
 ### Grading and Drainage Plans
 
-[Grading and drainage plans](/blog/grading-and-drainage-plans-laguna-woods) ensure proper site drainage while meeting erosion control and environmental requirements. This includes finish grade elevations, cut and fill calculations, storm drain pipe sizing, and erosion control measures.
+[Grading and drainage plans](/blog/grading-and-drainage-plans-in-laguna-woods-laguna-woods) ensure proper site drainage while meeting erosion control and environmental requirements. This includes finish grade elevations, cut and fill calculations, storm drain pipe sizing, and erosion control measures.
 
 ### Septic System Engineering
 
 [Septic design engineers](/blog/septic-design-engineers-san-clemente) create on-site wastewater treatment systems for properties without sewer access. Design considerations include soil percolation rates, groundwater depth, lot size requirements, and health department regulations.
 
-[Septic engineering](/blog/septic-design-engineers-aliso-viejo) has become increasingly specialized as regulations tighten to protect groundwater.
+[Septic engineering](/blog/septic-design-engineers-in-aliso-viejo-aliso-viejo) has become increasingly specialized as regulations tighten to protect groundwater.
 
 ## When Do You Need Specialized Engineering Services?
 
@@ -802,7 +802,7 @@ Civil engineering encompasses site development and infrastructure systems outsid
 
 ### MEP Engineering
 - [MEP Engineering Design](/blog/mep-engineering-design-in-placentia-placentia)
-- [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california-whittier)
+- [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california)
 
 ### Stormwater Engineering
 - [Stormwater Design Engineer Services](/blog/stormwater-design-engineer-westminster)
@@ -810,14 +810,14 @@ Civil engineering encompasses site development and infrastructure systems outsid
 - [Stormwater Design in Tustin](/blog/stormwater-design-engineer-tustin)
 
 ### Grading & Drainage
-- [Grading and Drainage Plans](/blog/grading-and-drainage-plans-laguna-woods)
-- [Grading Engineering Hermosa Beach](/blog/grading-and-drainage-plans-hermosa-beach)
-- [Drainage Plans Poway](/blog/grading-and-drainage-plans-poway)
+- [Grading and Drainage Plans](/blog/grading-and-drainage-plans-in-laguna-woods-laguna-woods)
+- [Grading Engineering Hermosa Beach](/blog/grading-and-drainage-plans-in-hermosa-beach-hermosa-beach)
+- [Drainage Plans Poway](/blog/grading-and-drainage-plans-in-poway-poway)
 
 ### Septic Engineering
 - [Septic Design Engineers](/blog/septic-design-engineers-san-clemente)
-- [Septic Engineering Aliso Viejo](/blog/septic-design-engineers-aliso-viejo)
-- [Septic Systems Westminster](/blog/septic-design-engineers-westminster)
+- [Septic Engineering Aliso Viejo](/blog/septic-design-engineers-in-aliso-viejo-aliso-viejo)
+- [Septic Systems Westminster](/blog/septic-design-engineers-in-westminster-westminster)
 
 ## Next Steps
 
@@ -869,15 +869,15 @@ Stormwater engineering requires specialized expertise in hydrology, hydraulics, 
 
 ### Grading and Drainage Plans
 
-[Grading and drainage plans](/blog/grading-and-drainage-plans-laguna-woods) ensure proper site drainage while meeting erosion control and environmental requirements. This includes grading design, drainage design, and erosion control measures.
+[Grading and drainage plans](/blog/grading-and-drainage-plans-in-laguna-woods-laguna-woods) ensure proper site drainage while meeting erosion control and environmental requirements. This includes grading design, drainage design, and erosion control measures.
 
-Grading in Southern California's varied topography requires specialized civil engineering expertise for [challenging sites with steep slopes](/blog/grading-and-drainage-plans-hermosa-beach).
+Grading in Southern California's varied topography requires specialized civil engineering expertise for [challenging sites with steep slopes](/blog/grading-and-drainage-plans-in-hermosa-beach-hermosa-beach).
 
 ### Septic System Engineering
 
 [Septic design engineers](/blog/septic-design-engineers-san-clemente) create on-site wastewater treatment systems for properties without sewer access, including conventional systems, alternative treatment systems, and mound systems for poor soils.
 
-Septic engineering must address soil percolation rates, groundwater depth, health department regulations, and California-specific requirements. [Specialized septic engineers](/blog/septic-design-engineers-aliso-viejo) understand soils, hydrology, and evolving health department standards.
+Septic engineering must address soil percolation rates, groundwater depth, health department regulations, and California-specific requirements. [Specialized septic engineers](/blog/septic-design-engineers-in-aliso-viejo-aliso-viejo) understand soils, hydrology, and evolving health department standards.
 
 ## When Do You Need Specialized Engineering Services?
 
@@ -940,7 +940,7 @@ Our team includes specialized engineers across all disciplines: MEP design, civi
 
 ### MEP Engineering
 - [MEP Engineering Design](/blog/mep-engineering-design-in-placentia-placentia)
-- [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california-whittier)
+- [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california)
 - [Mechanical Engineering Companies](/blog/mechanical-engineering-companies-in-san-diego-escondido)
 
 ### Civil Engineering
@@ -953,14 +953,14 @@ Our team includes specialized engineers across all disciplines: MEP design, civi
 - [Stormwater Engineering Redlands](/blog/stormwater-design-engineer-redlands)
 
 ### Grading & Drainage
-- [Grading and Drainage Plans](/blog/grading-and-drainage-plans-laguna-woods)
-- [Grading Engineering Hermosa Beach](/blog/grading-and-drainage-plans-hermosa-beach)
-- [Drainage Plans Poway](/blog/grading-and-drainage-plans-poway)
+- [Grading and Drainage Plans](/blog/grading-and-drainage-plans-in-laguna-woods-laguna-woods)
+- [Grading Engineering Hermosa Beach](/blog/grading-and-drainage-plans-in-hermosa-beach-hermosa-beach)
+- [Drainage Plans Poway](/blog/grading-and-drainage-plans-in-poway-poway)
 
 ### Septic Engineering
 - [Septic Design Engineers](/blog/septic-design-engineers-san-clemente)
-- [Septic Engineering Aliso Viejo](/blog/septic-design-engineers-aliso-viejo)
-- [Septic Systems Westminster](/blog/septic-design-engineers-westminster)
+- [Septic Engineering Aliso Viejo](/blog/septic-design-engineers-in-aliso-viejo-aliso-viejo)
+- [Septic Systems Westminster](/blog/septic-design-engineers-in-westminster-westminster)
 - [Septic Design Upland](/blog/septic-design-engineers-upland)
 
 ### Related Guides
@@ -23760,7 +23760,7 @@ Licensed • Insured • Tustin Stormwater Experts
 
 Continue exploring our engineering insights:
 
-**[Septic Design Engineers in Aliso Viejo: Complete Guide 2025](https://aaaengineeringdesign.com/blog/septic-design-engineers-aliso-viejo)**
+**[Septic Design Engineers in Aliso Viejo: Complete Guide 2025](https://aaaengineeringdesign.com/blog/septic-design-engineers-in-aliso-viejo-aliso-viejo)**
 *Design & Planning • November 9, 2025 • 12 min read*
 Learn about septic system engineering for Orange County properties including design requirements, costs, and permitting processes.
 
