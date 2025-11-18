@@ -351,7 +351,7 @@ Contact us today for a free consultation to discuss your structural engineering 
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?w=800&h=400&fit=crop',
     featured: true,
-    relatedArticles: ['what-is-engineering-design-dana-point', 'professional-design-engineering-services-costa-mesa', 'sustainable-engineering-design-services-irvine'],
+    relatedArticles: ['what-is-engineering-design-in-dana-point-dana-point', 'professional-design-engineering-services-in-costa-mesa-costa-mesa', 'sustainable-engineering-design-services-irvine'],
 
     // Topic Cluster Metadata
     contentType: 'hub',
@@ -360,35 +360,35 @@ Contact us today for a free consultation to discuss your structural engineering 
     secondaryKeywords: ['professional design engineering', 'MEP engineering', 'civil engineering design', 'sustainable design'],
     geoTarget: 'Southern California',
     clusterPages: [
-      'what-is-engineering-design-dana-point',
+      'what-is-engineering-design-in-dana-point-dana-point',
       'what-is-engineering-design-encinitas',
-      'types-of-engineering-design-services-la-habra',
+      'types-of-engineering-design-services-in-la-habra-la-habra',
       'types-of-engineering-design-services-garden-grove',
       'types-of-engineering-design-services-fountain-valley',
       'types-of-engineering-design-ontario',
-      'benefits-of-engineering-design-services-tustin',
+      'benefits-engineering-design-services-tustin',
       'benefits-of-engineering-design-services-seal-beach',
       'engineering-design-services-cost-laguna-beach',
       'engineering-design-services-cost-costa-mesa',
       'engineering-design-services-cost-chula-vista',
-      'professional-design-engineering-services-costa-mesa',
+      'professional-design-engineering-services-in-costa-mesa-costa-mesa',
       'professional-design-engineering-services-seal-beach',
       'professional-design-engineering-services-burbank',
-      'expert-structural-design-services-laguna-niguel',
+      'expert-structural-design-services-in-el-segundo-el-segundo',
       'expert-structural-design-services-el-segundo',
       'sustainable-engineering-design-services-irvine',
       'sustainable-engineering-design-services-lake-forest',
       'sustainable-engineering-design-services-torrance',
-      'commercial-building-engineering-design-yorba-linda',
+      'commercial-building-engineering-design-in-yorba-linda-yorba-linda',
       'commercial-building-engineering-design-anaheim',
       'commercial-building-engineering-design-redondo-beach',
-      'role-of-a-design-engineer-san-diego',
+      'role-design-engineer-san-diego',
       'role-of-a-design-engineer-fountain-valley',
       'role-of-a-design-engineer-chino',
       'civil-engineer-structural-design-capability-san-diego',
       'civil-engineer-structural-design-capability-lake-forest',
       'civil-engineer-structural-design-capability-chino-hills',
-      'civil-engineering-design-southern-california-downey',
+      'civil-engineering-design-southern-california',
       'custom-house-engineering-design-yorba-linda',
       'custom-house-engineering-design-long-beach',
       'custom-house-engineering-design-laguna-beach',
@@ -399,7 +399,7 @@ Engineering design services transform architectural visions into safe, code-comp
 
 ## What is Engineering Design?
 
-[Engineering design](/blog/what-is-engineering-design-dana-point) is the systematic application of engineering principles to create detailed plans, specifications, and calculations for construction projects. Engineering designers bridge the gap between architectural concepts and physical construction, ensuring structures are safe, efficient, and compliant with all regulatory requirements.
+[Engineering design](/blog/what-is-engineering-design-in-dana-point-dana-point) is the systematic application of engineering principles to create detailed plans, specifications, and calculations for construction projects. Engineering designers bridge the gap between architectural concepts and physical construction, ensuring structures are safe, efficient, and compliant with all regulatory requirements.
 
 ## Types of Engineering Design Services
 
@@ -409,11 +409,11 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
 
 ### Civil Engineering Design
 
-[Civil engineering design](/blog/civil-engineering-design-southern-california-downey) addresses site development, grading, drainage, utilities, and infrastructure. Civil engineers design everything outside the building envelope, ensuring proper site preparation and utility connections.
+[Civil engineering design](/blog/civil-engineering-design-southern-california) addresses site development, grading, drainage, utilities, and infrastructure. Civil engineers design everything outside the building envelope, ensuring proper site preparation and utility connections.
 
 ### MEP Engineering Design
 
-[MEP engineering design](/blog/mep-engineering-design-placentia) encompasses three critical building systems:
+[MEP engineering design](/blog/mep-engineering-design-in-placentia-placentia) encompasses three critical building systems:
 
 - **Mechanical Engineering**: HVAC systems, ventilation, and temperature control
 - **Electrical Engineering**: Power distribution, lighting, and emergency systems
@@ -425,7 +425,7 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
 
 ## Benefits of Professional Engineering Design
 
-[Professional engineering design services](/blog/professional-design-engineering-services-costa-mesa) provide numerous advantages:
+[Professional engineering design services](/blog/professional-design-engineering-services-in-costa-mesa-costa-mesa) provide numerous advantages:
 
 - **Safety and Risk Mitigation**: Licensed engineers carry liability insurance and stamp plans
 - **Cost Optimization**: Value engineering during design can save 10-30% on construction costs
@@ -447,7 +447,7 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?w=800&h=400&fit=crop',
     featured: true,
-    relatedArticles: ['what-is-engineering-design-dana-point', 'professional-design-engineering-services-costa-mesa', 'sustainable-engineering-design-services-irvine'],
+    relatedArticles: ['what-is-engineering-design-in-dana-point-dana-point', 'professional-design-engineering-services-in-costa-mesa-costa-mesa', 'sustainable-engineering-design-services-irvine'],
 
     // Topic Cluster Metadata
     contentType: 'hub',
@@ -456,35 +456,35 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
     secondaryKeywords: ['professional design engineering', 'MEP engineering', 'civil engineering design', 'sustainable design'],
     geoTarget: 'Southern California',
     clusterPages: [
-      'what-is-engineering-design-dana-point',
+      'what-is-engineering-design-in-dana-point-dana-point',
       'what-is-engineering-design-encinitas',
-      'types-of-engineering-design-services-la-habra',
+      'types-of-engineering-design-services-in-la-habra-la-habra',
       'types-of-engineering-design-services-garden-grove',
       'types-of-engineering-design-services-fountain-valley',
       'types-of-engineering-design-ontario',
-      'benefits-of-engineering-design-services-tustin',
+      'benefits-engineering-design-services-tustin',
       'benefits-of-engineering-design-services-seal-beach',
       'engineering-design-services-cost-laguna-beach',
       'engineering-design-services-cost-costa-mesa',
       'engineering-design-services-cost-chula-vista',
-      'professional-design-engineering-services-costa-mesa',
+      'professional-design-engineering-services-in-costa-mesa-costa-mesa',
       'professional-design-engineering-services-seal-beach',
       'professional-design-engineering-services-burbank',
-      'expert-structural-design-services-laguna-niguel',
+      'expert-structural-design-services-in-el-segundo-el-segundo',
       'expert-structural-design-services-el-segundo',
       'sustainable-engineering-design-services-irvine',
       'sustainable-engineering-design-services-lake-forest',
       'sustainable-engineering-design-services-torrance',
-      'commercial-building-engineering-design-yorba-linda',
+      'commercial-building-engineering-design-in-yorba-linda-yorba-linda',
       'commercial-building-engineering-design-anaheim',
       'commercial-building-engineering-design-redondo-beach',
-      'role-of-a-design-engineer-san-diego',
+      'role-design-engineer-san-diego',
       'role-of-a-design-engineer-fountain-valley',
       'role-of-a-design-engineer-chino',
       'civil-engineer-structural-design-capability-san-diego',
       'civil-engineer-structural-design-capability-lake-forest',
       'civil-engineer-structural-design-capability-chino-hills',
-      'civil-engineering-design-southern-california-downey',
+      'civil-engineering-design-southern-california',
       'custom-house-engineering-design-yorba-linda',
       'custom-house-engineering-design-long-beach',
       'custom-house-engineering-design-laguna-beach',
@@ -494,20 +494,20 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
 ## Related Resources
 
 ### Understanding Engineering Design
-- [What is Engineering Design?](/blog/what-is-engineering-design-dana-point)
-- [Types of Engineering Design](/blog/types-of-engineering-design-services-la-habra)
-- [Role of a Design Engineer](/blog/role-of-a-design-engineer-san-diego)
+- [What is Engineering Design?](/blog/what-is-engineering-design-in-dana-point-dana-point)
+- [Types of Engineering Design](/blog/types-of-engineering-design-services-in-la-habra-la-habra)
+- [Role of a Design Engineer](/blog/role-design-engineer-san-diego)
 
 ### Professional Services
-- [Professional Design Engineering Services](/blog/professional-design-engineering-services-costa-mesa)
-- [Expert Structural Design Services](/blog/expert-structural-design-services-laguna-niguel)
-- [Benefits of Engineering Design Services](/blog/benefits-of-engineering-design-services-tustin)
+- [Professional Design Engineering Services](/blog/professional-design-engineering-services-in-costa-mesa-costa-mesa)
+- [Expert Structural Design Services](/blog/expert-structural-design-services-in-el-segundo-el-segundo)
+- [Benefits of Engineering Design Services](/blog/benefits-engineering-design-services-tustin)
 
 ### Specialized Design Services
 - [Sustainable Engineering Design](/blog/sustainable-engineering-design-services-irvine)
-- [Commercial Building Engineering Design](/blog/commercial-building-engineering-design-yorba-linda)
-- [MEP Engineering Design](/blog/mep-engineering-design-placentia)
-- [Civil Engineering Design](/blog/civil-engineering-design-southern-california-downey)
+- [Commercial Building Engineering Design](/blog/commercial-building-engineering-design-in-yorba-linda-yorba-linda)
+- [MEP Engineering Design](/blog/mep-engineering-design-in-placentia-placentia)
+- [Civil Engineering Design](/blog/civil-engineering-design-southern-california)
 
 ## Next Steps
 
@@ -520,7 +520,7 @@ This comprehensive guide covers everything you need to know about engineering de
 
 ## What is Engineering Design?
 
-[Engineering design](/blog/what-is-engineering-design-dana-point) is the systematic application of engineering principles to create detailed plans, specifications, and calculations for construction projects. Engineering designers bridge the gap between architectural concepts and physical construction, ensuring structures are safe, efficient, and compliant with all regulatory requirements.
+[Engineering design](/blog/what-is-engineering-design-in-dana-point-dana-point) is the systematic application of engineering principles to create detailed plans, specifications, and calculations for construction projects. Engineering designers bridge the gap between architectural concepts and physical construction, ensuring structures are safe, efficient, and compliant with all regulatory requirements.
 
 ## Types of Engineering Design Services
 
@@ -532,7 +532,7 @@ Structural engineering design focuses on creating safe, efficient load-bearing s
 
 ### Civil Engineering Design
 
-[Civil engineering design](/blog/civil-engineering-design-southern-california-downey) addresses site development, grading, drainage, utilities, and infrastructure. Civil engineers design everything outside the building envelope.
+[Civil engineering design](/blog/civil-engineering-design-southern-california) addresses site development, grading, drainage, utilities, and infrastructure. Civil engineers design everything outside the building envelope.
 
 ### MEP Engineering Design
 
@@ -550,7 +550,7 @@ MEP engineering design encompasses Mechanical, Electrical, and Plumbing systems 
 
 ### What Do Design Engineers Do?
 
-[The role of a design engineer](/blog/role-of-a-design-engineer-san-diego) includes analyzing requirements, performing calculations, creating detailed drawings, specifying materials, coordinating with other professionals, ensuring code compliance, and providing construction support.
+[The role of a design engineer](/blog/role-design-engineer-san-diego) includes analyzing requirements, performing calculations, creating detailed drawings, specifying materials, coordinating with other professionals, ensuring code compliance, and providing construction support.
 
 ### Civil Engineer Structural Design Capability
 
@@ -558,7 +558,7 @@ Many wonder about [civil engineer structural design capability](/blog/civil-engi
 
 ## Benefits of Professional Engineering Design Services
 
-[Professional engineering design services](/blog/professional-design-engineering-services-costa-mesa) provide numerous advantages:
+[Professional engineering design services](/blog/professional-design-engineering-services-in-costa-mesa-costa-mesa) provide numerous advantages:
 
 - **Safety and Risk Mitigation**: Professional engineers stamp plans and carry liability insurance
 - **Cost Optimization**: Value engineering can save 10-30% on construction costs
@@ -566,13 +566,13 @@ Many wonder about [civil engineer structural design capability](/blog/civil-engi
 - **Constructability**: Design details contractors can efficiently build
 - **Long-Term Performance**: Ensure buildings perform as intended
 
-For comprehensive benefits, see [benefits of engineering design services](/blog/benefits-of-engineering-design-services-tustin).
+For comprehensive benefits, see [benefits of engineering design services](/blog/benefits-engineering-design-services-tustin).
 
 ## Engineering Design for Different Project Types
 
 ### Commercial Building Engineering Design
 
-[Commercial building engineering design](/blog/commercial-building-engineering-design-yorba-linda) involves larger scale, more complex systems, higher occupancy loads, fire protection systems, and accessibility compliance.
+[Commercial building engineering design](/blog/commercial-building-engineering-design-in-yorba-linda-yorba-linda) involves larger scale, more complex systems, higher occupancy loads, fire protection systems, and accessibility compliance.
 
 ### Residential Engineering Design
 
@@ -604,7 +604,7 @@ Project complexity, jurisdictional requirements, schedule, project size, and coo
 
 ## Types of Engineering Design
 
-Understanding [types of engineering design](/blog/types-of-engineering-design-services-la-habra) helps you select the right services for your project needs.
+Understanding [types of engineering design](/blog/types-of-engineering-design-services-in-la-habra-la-habra) helps you select the right services for your project needs.
 
 ## Specialized Engineering Design Services
 
@@ -612,7 +612,7 @@ Beyond standard design services, specialized engineering addresses unique projec
 
 ### Expert Structural Design Services
 
-[Expert structural design services](/blog/expert-structural-design-services-laguna-niguel) provide advanced capabilities for complex projects requiring specialized analysis or unusual structural systems.
+[Expert structural design services](/blog/expert-structural-design-services-in-el-segundo-el-segundo) provide advanced capabilities for complex projects requiring specialized analysis or unusual structural systems.
 
 ## Engineering Design and California Building Codes
 
@@ -672,27 +672,27 @@ Contact us today for a free consultation.
 ## Related Resources
 
 ### Understanding Engineering Design
-- [What is Engineering Design?](/blog/what-is-engineering-design-dana-point)
-- [Types of Engineering Design](/blog/types-of-engineering-design-services-la-habra)
-- [Role of a Design Engineer](/blog/role-of-a-design-engineer-san-diego)
+- [What is Engineering Design?](/blog/what-is-engineering-design-in-dana-point-dana-point)
+- [Types of Engineering Design](/blog/types-of-engineering-design-services-in-la-habra-la-habra)
+- [Role of a Design Engineer](/blog/role-design-engineer-san-diego)
 
 ### Professional Services
-- [Professional Design Engineering Services](/blog/professional-design-engineering-services-costa-mesa)
-- [Expert Structural Design Services](/blog/expert-structural-design-services-laguna-niguel)
-- [Benefits of Engineering Design Services](/blog/benefits-of-engineering-design-services-tustin)
+- [Professional Design Engineering Services](/blog/professional-design-engineering-services-in-costa-mesa-costa-mesa)
+- [Expert Structural Design Services](/blog/expert-structural-design-services-in-el-segundo-el-segundo)
+- [Benefits of Engineering Design Services](/blog/benefits-engineering-design-services-tustin)
 
 ### Sustainable Design
 - [Sustainable Engineering Design](/blog/sustainable-engineering-design-services-irvine)
 
 ### Commercial & Custom Design
-- [Commercial Building Engineering](/blog/commercial-building-engineering-design-yorba-linda)
+- [Commercial Building Engineering](/blog/commercial-building-engineering-design-in-yorba-linda-yorba-linda)
 - [Custom House Engineering Design](/blog/custom-house-engineering-design-yorba-linda)
 
 ### Cost Information
 - [Engineering Design Services Cost](/blog/engineering-design-services-cost-laguna-beach)
 
 ### Civil Engineering
-- [Civil Engineering Design](/blog/civil-engineering-design-southern-california-downey)
+- [Civil Engineering Design](/blog/civil-engineering-design-southern-california)
 
 ### Related Guides
 - [Complete Structural Engineering Services Guide](/blog/structural-engineering-services-guide)
@@ -709,7 +709,7 @@ Contact us today for a free consultation.
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?w=800&h=400&fit=crop',
     featured: true,
-    relatedArticles: ['mep-engineering-design-placentia', 'stormwater-design-engineer-westminster', 'grading-and-drainage-plans-laguna-woods'],
+    relatedArticles: ['mep-engineering-design-in-placentia-placentia', 'stormwater-design-engineer-westminster', 'grading-and-drainage-plans-laguna-woods'],
 
     // Topic Cluster Metadata
     contentType: 'hub',
@@ -718,7 +718,7 @@ Contact us today for a free consultation.
     secondaryKeywords: ['MEP engineering', 'stormwater design', 'septic engineering', 'civil engineering services'],
     geoTarget: 'Southern California',
     clusterPages: [
-      'mep-engineering-design-placentia',
+      'mep-engineering-design-in-placentia-placentia',
       'mep-engineering-design-manhattan-beach',
       'mep-engineering-design-san-marcos',
       'mechanical-engineering-design-southern-california-whittier',
@@ -734,7 +734,7 @@ Contact us today for a free consultation.
       'septic-design-engineers-westminster',
       'septic-design-engineers-upland',
       'mechanical-engineering-companies-in-san-diego-escondido',
-      'civil-engineering-design-southern-california-downey',
+      'civil-engineering-design-southern-california',
     ],
     content: `# Specialized Engineering Services in Southern California: MEP, Civil & Environmental
 
@@ -801,7 +801,7 @@ Civil engineering encompasses site development and infrastructure systems outsid
 ## Related Resources
 
 ### MEP Engineering
-- [MEP Engineering Design](/blog/mep-engineering-design-placentia)
+- [MEP Engineering Design](/blog/mep-engineering-design-in-placentia-placentia)
 - [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california-whittier)
 
 ### Stormwater Engineering
@@ -836,7 +836,7 @@ MEP—Mechanical, Electrical, and Plumbing—engineering designs the systems tha
 
 ### Mechanical Engineering Design
 
-[Mechanical engineering design](/blog/mep-engineering-design-placentia) encompasses HVAC systems that control temperature, humidity, and air quality. In Southern California, mechanical design must address climate considerations, California Title 24 compliance, and various system types from split systems to VRF.
+[Mechanical engineering design](/blog/mep-engineering-design-in-placentia-placentia) encompasses HVAC systems that control temperature, humidity, and air quality. In Southern California, mechanical design must address climate considerations, California Title 24 compliance, and various system types from split systems to VRF.
 
 [Mechanical engineering companies in San Diego](/blog/mechanical-engineering-companies-in-san-diego-escondido) and throughout Southern California provide specialized expertise in climate-appropriate HVAC design.
 
@@ -854,7 +854,7 @@ Civil engineering encompasses site development and infrastructure systems outsid
 
 ### Civil Engineering Design Southern California
 
-[Civil engineering design in Southern California](/blog/civil-engineering-design-southern-california-downey) addresses unique regional challenges including seismic considerations, water scarcity, and complex regulatory requirements.
+[Civil engineering design in Southern California](/blog/civil-engineering-design-southern-california) addresses unique regional challenges including seismic considerations, water scarcity, and complex regulatory requirements.
 
 ### Stormwater Management Engineering
 
@@ -939,12 +939,12 @@ Our team includes specialized engineers across all disciplines: MEP design, civi
 ## Related Resources
 
 ### MEP Engineering
-- [MEP Engineering Design](/blog/mep-engineering-design-placentia)
+- [MEP Engineering Design](/blog/mep-engineering-design-in-placentia-placentia)
 - [Mechanical Engineering Design](/blog/mechanical-engineering-design-southern-california-whittier)
 - [Mechanical Engineering Companies](/blog/mechanical-engineering-companies-in-san-diego-escondido)
 
 ### Civil Engineering
-- [Civil Engineering Design](/blog/civil-engineering-design-southern-california-downey)
+- [Civil Engineering Design](/blog/civil-engineering-design-southern-california)
 
 ### Stormwater Engineering
 - [Stormwater Design Services](/blog/stormwater-design-engineer-westminster)
@@ -21677,7 +21677,7 @@ Rush projects requiring expedited turnaround often carry 25-50% premium fees. Fo
 
 **The Problem:** Vague contracts lead to disputes about what's included, surprise bills for "extras," misunderstood timelines, and fractured working relationships.
 
-**The Solution:** Insist on detailed written contracts specifying exact scope, deliverables, fees, payment terms, and revision policies. Discuss and clarify anything unclear before signing. **[Expert structural design services](https://aaaengineeringdesign.com/blog/expert-structural-design-services-laguna-niguel)** provide transparent, comprehensive contract terms.
+**The Solution:** Insist on detailed written contracts specifying exact scope, deliverables, fees, payment terms, and revision policies. Discuss and clarify anything unclear before signing. **[Expert structural design services](https://aaaengineeringdesign.com/blog/expert-structural-design-services-in-el-segundo-el-segundo)** provide transparent, comprehensive contract terms.
 
 ### Mistake 4: Ignoring Communication Red Flags
 
@@ -23246,7 +23246,7 @@ Find qualified residential structural engineers with guidance on credentials, se
 *Design & Planning • November 9, 2025 • 11 min read*
 Understand stormwater engineering requirements, WQMP compliance, and professional design services for Orange County development projects.
 
-**[Benefits of Engineering Design Services in Tustin](https://aaaengineeringdesign.com/blog/benefits-of-engineering-design-services-tustin)**
+**[Benefits of Engineering Design Services in Tustin](https://aaaengineeringdesign.com/blog/benefits-engineering-design-services-tustin)**
 *Design & Planning • November 7, 2025 • 10 min read*
 Discover the comprehensive advantages of professional engineering design services for residential and commercial projects throughout Orange County.
 
