@@ -996,6 +996,46 @@ Verify each post has:
 - [ ] Schema markup included
 - [ ] Related articles section populated
 
+### Step 6.5: Featured Post Selection (AUTOMATIC)
+
+**🌟 Featured Post Rule:**
+- For every 5 new blog posts generated, mark 1 as `featured: true`
+- **Maximum of 3 featured posts total** at any given time
+- When adding new featured post and already at 3, remove `featured: true` from oldest featured post
+
+**Calculation:**
+- Generating 5 posts → 1 featured
+- Generating 10 posts → 2 featured
+- Generating 15 posts → 3 featured
+- Generating 20 posts → 4 featured (but must remove 1 old featured to maintain max 3)
+
+**Example Batch (10 posts):**
+- Posts 1-4: `featured: false`
+- **Post 5**: `featured: true` ← First featured
+- Posts 6-9: `featured: false`
+- **Post 10**: `featured: true` ← Second featured
+- +3 "near me" posts: `featured: false` (never featured)
+
+**Featured Post Selection Strategy:**
+1. Choose posts with highest commercial intent keywords (hire, cost, find, best, top)
+2. Prefer posts targeting high-value cities (Newport Beach, Irvine, Los Angeles, San Diego)
+3. Ensure featured posts represent diverse topics (not all same keyword)
+4. Prioritize posts that will rank well (low competition, high search volume)
+
+**Maintaining 3-Post Maximum:**
+
+Before adding new featured posts, check current count:
+```bash
+grep -c "featured: true" src/lib/blog-data.ts
+```
+
+If count will exceed 3:
+1. Identify oldest featured posts (check dates)
+2. Remove `featured: true` from oldest posts
+3. Keep only the 3 most recent featured posts
+
+**Important:** Hub pages are marked `featured: true` but don't count toward the 3-post limit (they're permanent featured content).
+
 ### Step 7: Output Format
 
 Create 5 separate markdown files:
