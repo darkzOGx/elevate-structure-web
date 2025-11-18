@@ -76,12 +76,19 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
               <p className="font-semibold text-foreground mb-3">{title}</p>
             )}
             <ul className="space-y-3">
-              {items.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="flex-1">{item.replace('-', '').trim()}</span>
-                </li>
-              ))}
+              {items.map((item, i) => {
+                // Parse markdown links in bullet points
+                const itemText = item.replace('-', '').trim()
+                const withLinks = itemText.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+                  '<a href="$2" class="text-primary hover:underline font-medium">$1</a>')
+
+                return (
+                  <li key={i} className="flex items-start gap-3 text-foreground">
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="flex-1" dangerouslySetInnerHTML={{ __html: withLinks }} />
+                  </li>
+                )
+              })}
             </ul>
           </div>
         )
