@@ -42,14 +42,32 @@ view BLOG-TRACKING.md
 
 **🤖 AUTOMATIC: This runs automatically if last extraction was > 7 days ago**
 
-This automated process:
+This automated process provides **real-time, data-driven keyword intelligence** by combining:
+1. **Google Search Console API** - Real performance data from YOUR website
+2. **"People Also Search For" (PASF) Scraping** - Related keyword discovery
+3. **Automated Keyword List Updates** - Fresh, high-performing keywords
+
+**What the System Does Automatically:**
+
 1. **Auto-checks** when GSC extraction last ran
-2. **If > 7 days ago**: Automatically runs GSC extraction before generating blogs
-3. **If < 7 days ago**: Skips extraction and proceeds to blog generation
-4. Fetches actual search queries from Google Search Console
-5. Searches each query on Google to find "People Also Search For" keywords
-6. Automatically adds discovered keywords to `references/keyword-list.md`
-7. Identifies long-tail opportunities from real user searches
+2. **If > 7 days ago**: Automatically runs full GSC + PASF extraction before generating blogs
+3. **If < 7 days ago**: Skips extraction and uses existing keywords
+4. **Fetches GSC Performance Data** (last 30 days):
+   - 📊 **Impressions** - How many times your pages appeared in search
+   - 🖱️ **Clicks** - Actual clicks from search results
+   - 📈 **CTR (Click-Through Rate)** - Percentage of impressions that clicked
+   - 📍 **Average Position** - Your ranking for each keyword
+5. **Scrapes "People Also Search For" (PASF)** from Google:
+   - Takes each GSC query and searches Google
+   - Extracts related searches Google shows
+   - Finds hidden long-tail opportunities
+   - (Implementation: lines 193-246 in gsc-keyword-extractor.js)
+6. **Combines Data for Maximum Coverage**:
+   - GSC queries = proven keywords already driving traffic
+   - PASF = related keywords you should target
+   - Result = comprehensive keyword strategy
+7. **Automatically adds discovered keywords to `references/keyword-list.md`**
+8. **Creates `gsc-extracted-keywords.json`** with full metrics for analysis
 
 **When it runs automatically:**
 - ✅ **First time**: Never run before
@@ -108,11 +126,57 @@ GSC_AUTO_RUN_DAYS=7
 - `GSC_CREDENTIALS_PATH` - Path to GSC credentials JSON (default: ./gsc-credentials.json)
 - `SERPAPI_KEY` - SerpAPI key for "People Also Search For" extraction (optional)
 
-**Output:**
-- Updates `references/keyword-list.md` with new long-tail keywords
-- Creates `gsc-extracted-keywords.json` with full results and metrics
-- Shows keyword categorization (intent, volume, difficulty)
-- Displays GSC metrics (impressions, clicks, CTR, position)
+**Output Files Created:**
+
+1. **`references/keyword-list.md`** - Updated with new keywords
+   - Automatically categorized by topic
+   - Includes GSC performance notes
+   - Ready to use in blog generation
+
+2. **`gsc-extracted-keywords.json`** - Full analysis data
+   ```json
+   {
+     "query": "residential structural engineer orange county",
+     "impressions": 1450,
+     "clicks": 87,
+     "ctr": 0.06,
+     "position": 8.5,
+     "pasf_keywords": [
+       "structural engineer cost orange county",
+       "when to hire structural engineer",
+       "residential structural engineer near me"
+     ],
+     "category": "residential-engineering",
+     "search_intent": "local-service"
+   }
+   ```
+
+**Example: How GSC + PASF Data Improves Blog Selection:**
+
+**Without GSC (Old Way):**
+- Guess which keywords might work
+- No data on what's already performing
+- Miss related keyword opportunities
+
+**With GSC + PASF (New Way):**
+```
+📊 GSC Data Shows:
+"residential structural engineer orange county"
+- Impressions: 1,450
+- Clicks: 87
+- Position: 8.5
+- CTR: 6%
+
+💡 Insight: High impressions but position 8.5 = opportunity!
+🎯 Action: Create targeted blog post to rank higher
+
+🔍 PASF Discovers Related Keywords:
+- "structural engineer cost orange county" (high commercial intent)
+- "when to hire structural engineer" (informational, easy to rank)
+- "residential structural engineer near me" (local intent)
+
+✅ Result: Create 4 blog posts instead of 1, covering entire topic cluster!
+```
 
 **Setup requirements (one-time):**
 1. Create Google Cloud project and enable Search Console API
@@ -122,11 +186,36 @@ GSC_AUTO_RUN_DAYS=7
 
 See `scripts/GSC-SETUP-GUIDE.md` for detailed setup instructions.
 
-**After running:**
-- Review `gsc-extracted-keywords.json` for insights
-- Check `references/keyword-list.md` for newly added keywords
-- Use high-performing GSC keywords in next blog batch
-- Monitor which keywords are driving impressions vs. clicks
+**After GSC Extraction - How to Use the Data:**
+
+1. **Prioritize High-Opportunity Keywords:**
+   - High impressions + low CTR = need better content to capture clicks
+   - High impressions + position 5-15 = can rank #1 with targeted content
+   - PASF keywords = expand topic coverage
+
+2. **Review `gsc-extracted-keywords.json` for insights:**
+   ```bash
+   # See top performing keywords
+   cat gsc-extracted-keywords.json | jq '.[] | select(.impressions > 500)'
+
+   # Find high-impression, low-CTR opportunities
+   cat gsc-extracted-keywords.json | jq '.[] | select(.impressions > 100 and .ctr < 0.05)'
+   ```
+
+3. **Check `references/keyword-list.md` for newly added keywords:**
+   - Look for keywords marked with GSC metrics
+   - These are proven to drive traffic already
+
+4. **Use in Next Blog Batch:**
+   - Prioritize GSC keywords with high impressions
+   - Include PASF keywords to create topic clusters
+   - Target keywords in positions 5-15 (easiest to improve)
+
+**Keyword Selection Strategy:**
+- **Week 1**: GSC keywords with >500 impressions, position 5-15
+- **Week 2**: PASF keywords related to your best performers
+- **Week 3**: Low-competition long-tail from PASF
+- **Week 4**: High-impression, low-CTR (improve existing rankings)
 
 ---
 
