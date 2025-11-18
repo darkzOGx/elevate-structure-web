@@ -316,6 +316,252 @@ For a complete overview of structural engineering services, see our [comprehensi
 | `secondaryKeywords` | string[] | Optional | 2-3 supporting keywords | `['adu design', 'accessory dwelling']` |
 | `geoTarget` | string | Optional | City or region | `'Los Alamitos'` or `'Southern California'` |
 
+---
+
+### ⚠️ CRITICAL: Blog Post ID Format & Linking Rules
+
+**MUST READ BEFORE CREATING HUB PAGES OR LINKING TO BLOG POSTS**
+
+#### Blog Post ID Pattern
+
+**❌ WRONG - Will cause 404 errors:**
+```typescript
+'adu-structural-engineering-los-alamitos'
+'structural-engineering-for-home-additions-brea'
+'seismic-retrofit-requirements-cypress'
+```
+
+**✅ CORRECT - Actual ID format in blog-data.ts:**
+```typescript
+'adu-structural-engineering-in-los-alamitos-los-alamitos'  // City appears TWICE
+'structural-engineering-for-home-additions-in-brea-brea'  // City appears TWICE
+'seismic-retrofit-requirements-in-cypress-cypress'  // City appears TWICE
+```
+
+**Pattern Rule:**
+- Most geo-targeted blog posts follow: `{topic}-in-{city}-{city}`
+- The city name appears **TWICE** at the end
+- There's an `-in-` before the first city name
+- **ALWAYS verify IDs exist** before linking to them
+
+**Exceptions (no city duplication):**
+```typescript
+'structural-engineering-services-guide'  // Hub pages
+'engineering-design-services-guide'  // Hub pages
+'structural-engineer-requirements'  // Generic topics
+'building-code-compliance-2024'  // Year-based topics
+```
+
+#### How to Find Correct Blog Post IDs
+
+**BEFORE creating hub page links, run this command:**
+
+```bash
+# Get all blog post IDs sorted alphabetically
+grep -o "id: '[^']*'" src/lib/blog-data.ts | sed "s/id: '//" | sed "s/'//" | sort -u
+```
+
+**Or search for specific topics:**
+
+```bash
+# Find all ADU-related post IDs
+grep -o "id: '[^']*'" src/lib/blog-data.ts | sed "s/id: '//" | sed "s/'//" | grep adu
+
+# Find all seismic-related post IDs
+grep -o "id: '[^']*'" src/lib/blog-data.ts | sed "s/id: '//" | sed "s/'//" | grep -E "seismic|earthquake|retrofit"
+
+# Find all posts for a specific city
+grep -o "id: '[^']*'" src/lib/blog-data.ts | sed "s/id: '//" | sed "s/'//" | grep "newport-beach"
+```
+
+#### Hub Page Content Format (RichBlogContent Component)
+
+Hub page content is parsed by the `RichBlogContent` component which supports:
+
+**✅ Supported Markdown:**
+
+```markdown
+## Main Heading (H2)
+Creates a gradient card with large heading
+
+### Sub Heading (H3)
+Creates a styled H3 with decorative line
+
+### Sub Heading with Bullet Points
+- [Link Text](/blog/actual-post-id)
+- [Another Link](/blog/another-actual-post-id)
+
+**Bold Statement**
+Creates a highlighted card with icon
+
+Regular paragraph text with [inline links](/blog/post-id).
+
+Important: This is a callout box
+Note: Another callout style
+Tip: A helpful tip box
+Pro Tip: Expert advice box
+```
+
+**❌ Common Errors:**
+
+1. **Wrong: Using shortened IDs**
+   ```markdown
+   - [ADU Engineering](/blog/adu-structural-engineering-newport-beach)
+   ```
+   Should be:
+   ```markdown
+   - [ADU Engineering](/blog/adu-structural-engineering-in-newport-beach-newport-beach)
+   ```
+
+2. **Wrong: Forgetting `/blog/` prefix**
+   ```markdown
+   - [Link](adu-structural-engineering-in-newport-beach-newport-beach)
+   ```
+   Should be:
+   ```markdown
+   - [Link](/blog/adu-structural-engineering-in-newport-beach-newport-beach)
+   ```
+
+3. **Wrong: Using markdown in clusterPages array**
+   ```typescript
+   clusterPages: [
+     '[ADU Engineering](/blog/adu-post)'  // ❌ NO! Just IDs!
+   ]
+   ```
+   Should be:
+   ```typescript
+   clusterPages: [
+     'adu-structural-engineering-in-newport-beach-newport-beach'  // ✅ Just the ID
+   ]
+   ```
+
+#### Verification Checklist Before Committing Hub Page
+
+**Run these checks:**
+
+```bash
+# 1. Extract all blog post IDs from your hub content
+grep -o '/blog/[^)]*' src/lib/blog-data.ts | grep "your-hub-id" -A 200 | sed 's|/blog/||' | sort -u > hub-links.txt
+
+# 2. Get all actual blog post IDs
+grep -o "id: '[^']*'" src/lib/blog-data.ts | sed "s/id: '//" | sed "s/'//" | sort -u > actual-ids.txt
+
+# 3. Find broken links (IDs in hub that don't exist)
+comm -23 hub-links.txt actual-ids.txt
+
+# If this outputs anything, those are BROKEN LINKS - fix them!
+```
+
+**✅ All hub links verified = No 404 errors**
+
+---
+
+### 🔧 RichBlogContent Component (How Hub Content is Rendered)
+
+**Location:** `src/components/RichBlogContent.tsx`
+
+This component parses hub page content and converts markdown to rich HTML. Understanding how it works is critical for proper formatting.
+
+#### How Content is Parsed
+
+**1. Content is split by double newlines (`\n\n`)**
+
+```typescript
+const sections = content.split('\n\n')
+```
+
+Each section between blank lines is processed independently.
+
+**2. Processing Order (IMPORTANT - First match wins!)**
+
+The component checks each section in this order:
+1. ✅ Main headings (`## `)
+2. ✅ Sub-headings with bullet points (`### ` + `\n-`)
+3. ✅ Sub-headings alone (`### `)
+4. ✅ Bold text (`**text**`)
+5. ✅ Bullet point lists (`\n-`)
+6. ✅ Callout boxes (`Important:`, `Note:`, `Tip:`)
+7. ✅ Regular paragraphs
+
+**3. Markdown Link Parsing**
+
+Links are converted using regex:
+```typescript
+const withLinks = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+  '<a href="$2" class="text-primary hover:underline font-medium">$1</a>')
+```
+
+#### ✅ FIXED: Sub-headings with Bullet Points
+
+**Previously (BUG - caused raw markdown to show):**
+```typescript
+// Old code only extracted heading text, ignoring bullet points
+if (section.startsWith('### ')) {
+  const title = section.replace('### ', '').trim()  // Got ENTIRE section as title!
+  return <h3>{title}</h3>  // Rendered bullets as plain text in heading
+}
+```
+
+**Now (FIXED - properly handles headings + bullets):**
+```typescript
+// New code checks for bullet points after heading
+if (section.startsWith('### ')) {
+  if (section.includes('\n-')) {
+    // Extract heading from first line only
+    const lines = section.split('\n')
+    const heading = lines[0].replace('### ', '').trim()
+    const items = lines.slice(1).filter(line => line.trim().startsWith('-'))
+
+    // Render heading + parsed bullet list with clickable links
+    return (
+      <div>
+        <h3>{heading}</h3>
+        <ul>
+          {items.map(item => {
+            const withLinks = item.replace(/\[...\]\(...\)/g, '<a...>')
+            return <li dangerouslySetInnerHTML={{ __html: withLinks }} />
+          })}
+        </ul>
+      </div>
+    )
+  }
+}
+```
+
+**This fix resolved 114 broken links across 3 hub pages!**
+
+#### Best Practices for Hub Content
+
+**✅ DO:**
+```markdown
+## Related Resources
+
+### Residential Services
+- [When to Hire](/blog/when-to-hire-residential-structural-engineer-mission-viejo)
+- [What Engineers Do](/blog/what-do-structural-engineers-do-costa-mesa)
+
+### Commercial Services
+- [Commercial Engineering](/blog/commercial-building-engineering-design-california-anaheim)
+- [Tenant Improvements](/blog/commercial-tenant-improvement-engineering-in-murrieta-murrieta)
+```
+
+**❌ DON'T:**
+```markdown
+## Related Resources
+
+### Residential Services
+[When to Hire](/blog/...), [What Engineers Do](/blog/...)  // ❌ Comma-separated on same line
+
+### Commercial Services - [Commercial Engineering](/blog/...) - [Tenant Improvements](/blog/...)  // ❌ Links in heading
+```
+
+**Why?** The component expects:
+- Headings on their own line
+- Bullet points on separate lines
+- One link per bullet point (or space-separated is ok)
+
+---
+
 #### Internal Linking Rules for Clusters
 
 **Every Cluster Post Must:**
