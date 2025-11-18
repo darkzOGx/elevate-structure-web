@@ -20,12 +20,15 @@ Use this skill when the user requests:
 
 ## Workflow: Generating Daily Blog Posts
 
-**⚠️ TEMPORARY PRIORITY RULE: Complete Underpacked Clusters First!**
+**⚠️ PERMANENT PRIORITY RULE: Complete Underpacked Clusters First!**
 
-**Before generating random posts, check Step 2.5 to see if any topic clusters need completion:**
+**Before generating random posts, ALWAYS check Step 2.5 to see if ANY topic clusters need completion:**
+- Check ALL hubs (current + future) in blog-data.ts clusterPages arrays
+- Find the most underpacked cluster (lowest post count)
 - Currently: **Hub 3 (Specialized Services)** has only 17 posts - needs 8+ more to reach minimum 25
 - Generate ALL N posts for underpacked cluster ONLY until it reaches 25+ posts
-- Once all clusters are adequately packed (20+ posts each), this rule will be removed
+- This rule applies FOREVER to all clusters (including future hubs you create)
+- Only resume random rotation when ALL clusters have 25+ posts
 
 ---
 
@@ -288,17 +291,27 @@ These files contain:
 - Exact blog post structure matching aaaengineeringdesign.com format
 - Internal linking rules and anchor text strategy
 
-### Step 2.5: ⚠️ PRIORITY: Check Cluster Completion Status (TEMPORARY RULE)
+### Step 2.5: ⚠️ PRIORITY: Check Cluster Completion Status (DYNAMIC RULE)
 
 **🎯 CRITICAL: Complete underpacked clusters BEFORE generating random posts!**
 
-This is a **TEMPORARY RULE** that applies until all topic clusters reach minimum post count. Once all clusters are adequately packed, this step will be removed and keyword selection will return to normal rotation.
+This is a **PERMANENT RULE** that applies to ALL topic clusters (current + future). This step ensures every hub reaches minimum post count before spreading content thin across multiple topics.
 
 **Cluster Completion Thresholds:**
 - **Minimum**: 20 posts (adequate for hub page)
 - **Ideal**: 25+ posts (well-packed, strong topical authority)
 
-**Current Cluster Status (Check blog-data.ts clusterPages arrays):**
+**How This Rule Works:**
+
+1. **ALWAYS check src/lib/blog-data.ts** - Count posts in EVERY hub's `clusterPages` array
+2. **Find the most underpacked cluster** (lowest post count)
+3. **Priority order:**
+   - If ANY cluster has < 20 posts → Generate ALL N posts for that cluster ONLY
+   - If multiple clusters < 20 posts → Pick the one with FEWEST posts first
+   - If all clusters have 20+ posts but some < 25 → Fill to 25 before rotating
+   - If ALL clusters have 25+ posts → Resume normal rotation across all clusters
+
+**Current Cluster Status (As of 2025-11-17):**
 
 ```typescript
 // Hub 1: Structural Engineering Services Guide
@@ -309,7 +322,7 @@ Current: 25 posts ✅ ADEQUATE
 topicCluster: 'engineering-design'
 Current: 32 posts ✅ WELL-PACKED
 
-// Hub 3: Specialized Engineering Services Guide
+// Hub 3: Specialized Engineering Services Guide ⚠️ CURRENT PRIORITY
 topicCluster: 'specialized-services'
 Current: 17 posts ❌ UNDERPACKED (needs 8+ more posts to reach 25)
 
@@ -320,31 +333,48 @@ Current: 28 posts ✅ WELL-PACKED
 
 **Action Required:**
 
-1. **Check src/lib/blog-data.ts** - Count posts in each hub's `clusterPages` array
-2. **Identify underpacked clusters** (< 20 posts)
+1. **Check ALL hubs in src/lib/blog-data.ts** (including any new ones created since this was written)
+2. **Identify the most underpacked cluster** (< 20 posts, or lowest count if multiple)
 3. **If ANY cluster is underpacked:**
    - Generate ALL N posts for that cluster ONLY
    - Still add +3 "near me" posts (can be any cluster)
    - Focus keyword selection on topics that fit the underpacked cluster
-4. **If ALL clusters are adequately packed (20+ posts each):**
-   - Remove this Step 2.5 from the SKILL
-   - Return to normal keyword rotation across all clusters
+4. **If ALL clusters are 20+ posts:**
+   - Fill clusters with < 25 posts to reach 25 (pick lowest first)
+5. **ONLY if ALL clusters have 25+ posts:**
+   - Resume normal keyword rotation across all clusters
+   - You can still keep this Step 2.5 as a check, or remove it
 
 **Example - Current Priority:**
 
-Since **Hub 3 (Specialized Services)** only has **17 posts**, generate posts ONLY for this cluster until it reaches 25+ posts:
+Since **Hub 3 (Specialized Services)** only has **17 posts** (lowest of all hubs), generate posts ONLY for this cluster until it reaches 25+ posts:
 
 **Keywords to prioritize for Hub 3:**
-- MEP engineering topics
+- MEP engineering topics (mechanical, electrical, plumbing design)
 - Stormwater/drainage engineering
 - Septic system design
 - Grading plans
 - Environmental compliance
 - Civil site engineering
 - Mechanical systems design
+- HVAC engineering
+- Electrical engineering services
+- Plumbing engineering
 
-**How to know when this rule can be removed:**
-Once Hub 3 reaches 25 posts, check if any other hubs are underpacked. If all hubs have 20+ posts, delete this Step 2.5 entirely and resume normal rotation.
+**Important: This Rule Applies to Future Hubs Too!**
+
+When you create new hub pages (e.g., Commercial Engineering, Foundation Engineering, ADU Engineering), they will start with 0 cluster posts. This rule ensures you'll prioritize filling those NEW hubs to 25 posts before going back to random rotation.
+
+**Example Scenario:**
+- Today: Hub 3 has 17 posts → Fill to 25 → Done
+- Next week: Create new "Commercial Engineering" hub with 0 posts
+- Rule activates again: New hub has 0 posts → Fill to 25 first
+- Rule applies FOREVER until user explicitly decides all clusters are done
+
+**When to remove this rule:**
+- Only remove if you want to allow sparse clusters going forward
+- Keep this rule active to maintain high topical authority
+- Recommended: Keep this as a permanent check in the workflow
 
 ---
 
