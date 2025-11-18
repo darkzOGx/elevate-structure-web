@@ -20,15 +20,24 @@ Use this skill when the user requests:
 
 ## Workflow: Generating Daily Blog Posts
 
+**⚠️ TEMPORARY PRIORITY RULE: Complete Underpacked Clusters First!**
+
+**Before generating random posts, check Step 2.5 to see if any topic clusters need completion:**
+- Currently: **Hub 3 (Specialized Services)** has only 17 posts - needs 8+ more to reach minimum 25
+- Generate ALL N posts for underpacked cluster ONLY until it reaches 25+ posts
+- Once all clusters are adequately packed (20+ posts each), this rule will be removed
+
+---
+
 **IMPORTANT: Automatic +3 "Near Me" Posts**
 
 When user requests N blog posts, **ALWAYS generate N + 3 total posts:**
-- **N posts** = Requested topics with rotating cities
-- **+3 posts** = "Near Me" GEO-localized posts (automatic bonus)
+- **N posts** = Requested topics (currently: ALL for Hub 3 Specialized Services until packed)
+- **+3 posts** = "Near Me" GEO-localized posts (automatic bonus, any cluster)
 
 **Example:**
 - User says: "Generate 10 blog posts"
-- You generate: **13 posts** (10 regular + 3 "near me")
+- You generate: **13 posts** (10 for Hub 3 Specialized Services + 3 "near me")
 
 **"Near Me" posts target high-intent local searches:**
 - Format: `[keyword] near me in [city]`
@@ -279,20 +288,81 @@ These files contain:
 - Exact blog post structure matching aaaengineeringdesign.com format
 - Internal linking rules and anchor text strategy
 
-### Step 2: Select Keywords and Cities
+### Step 2.5: ⚠️ PRIORITY: Check Cluster Completion Status (TEMPORARY RULE)
+
+**🎯 CRITICAL: Complete underpacked clusters BEFORE generating random posts!**
+
+This is a **TEMPORARY RULE** that applies until all topic clusters reach minimum post count. Once all clusters are adequately packed, this step will be removed and keyword selection will return to normal rotation.
+
+**Cluster Completion Thresholds:**
+- **Minimum**: 20 posts (adequate for hub page)
+- **Ideal**: 25+ posts (well-packed, strong topical authority)
+
+**Current Cluster Status (Check blog-data.ts clusterPages arrays):**
+
+```typescript
+// Hub 1: Structural Engineering Services Guide
+topicCluster: 'structural-engineering'
+Current: 25 posts ✅ ADEQUATE
+
+// Hub 2: Engineering Design Services Guide
+topicCluster: 'engineering-design'
+Current: 32 posts ✅ WELL-PACKED
+
+// Hub 3: Specialized Engineering Services Guide
+topicCluster: 'specialized-services'
+Current: 17 posts ❌ UNDERPACKED (needs 8+ more posts to reach 25)
+
+// Hub 4: Residential Structural Engineering Guide
+topicCluster: 'residential-engineering'
+Current: 28 posts ✅ WELL-PACKED
+```
+
+**Action Required:**
+
+1. **Check src/lib/blog-data.ts** - Count posts in each hub's `clusterPages` array
+2. **Identify underpacked clusters** (< 20 posts)
+3. **If ANY cluster is underpacked:**
+   - Generate ALL N posts for that cluster ONLY
+   - Still add +3 "near me" posts (can be any cluster)
+   - Focus keyword selection on topics that fit the underpacked cluster
+4. **If ALL clusters are adequately packed (20+ posts each):**
+   - Remove this Step 2.5 from the SKILL
+   - Return to normal keyword rotation across all clusters
+
+**Example - Current Priority:**
+
+Since **Hub 3 (Specialized Services)** only has **17 posts**, generate posts ONLY for this cluster until it reaches 25+ posts:
+
+**Keywords to prioritize for Hub 3:**
+- MEP engineering topics
+- Stormwater/drainage engineering
+- Septic system design
+- Grading plans
+- Environmental compliance
+- Civil site engineering
+- Mechanical systems design
+
+**How to know when this rule can be removed:**
+Once Hub 3 reaches 25 posts, check if any other hubs are underpacked. If all hubs have 20+ posts, delete this Step 2.5 entirely and resume normal rotation.
+
+---
+
+### Step 3: Select Keywords and Cities
 
 **Total Posts to Generate: N + 3**
 - **N posts** = User's requested number (e.g., 5, 10, etc.)
 - **+3 posts** = Automatic "near me" posts (ALWAYS added)
 
 **Regular Keyword Selection (N posts):**
-1. Choose N keywords from `references/keyword-list.md`
-2. Mix keyword types:
+1. **⚠️ FIRST: Check Step 2.5 - If cluster completion is required, select keywords for underpacked cluster ONLY**
+2. Choose N keywords from `references/keyword-list.md`
+3. Mix keyword types:
    - 1-2 Cluster articles (commercial/transactional intent)
    - 2-3 PAA/Informational articles
    - Occasionally include 1 Pillar article
-3. Prioritize keywords marked as 🎯 High Priority
-4. **CHECK BLOG-TRACKING.md** - Avoid keywords already used with target cities
+4. Prioritize keywords marked as 🎯 High Priority
+5. **CHECK BLOG-TRACKING.md** - Avoid keywords already used with target cities
 
 **"Near Me" Keyword Selection (+3 posts):**
 1. Use next 3 keywords in rotation from `references/near-me-keywords.md`
@@ -317,9 +387,9 @@ These files contain:
 - Informational keywords → Any city
 - Transactional keywords → Major metro areas (LA, Long Beach, San Diego)
 
-### Step 2.5: Topic Cluster Integration (CRITICAL FOR SEO)
+### Step 4: Topic Cluster Integration (CRITICAL FOR SEO)
 
-**🎯 NEW: All blog posts must be assigned to a topic cluster for maximum topical authority**
+**🎯 All blog posts must be assigned to a topic cluster for maximum topical authority**
 
 #### What Are Topic Clusters?
 
@@ -334,22 +404,36 @@ This structure signals to Google that we are THE authority on the topic.
 
 Refer to `.claude/skills/socal-engineering-blog/CLUSTER-MAPPING.md` for the complete cluster structure.
 
-**Active Hubs:**
-1. **Structural Engineering Services Guide** (`structural-engineering-services-guide`)
+**Active Hubs (LIVE):**
+
+1. **Structural Engineering Services Guide** ✅ LIVE
+   - ID: `structural-engineering-services-guide`
    - Target keyword: "structural engineering services"
-   - Current clusters: 24+ posts
+   - Current clusters: 25 posts ✅ ADEQUATE
    - Topics: Residential, ADU, seismic, foundation, home additions
 
-2. **Engineering Design Services Guide** (planned)
+2. **Engineering Design Services Guide** ✅ LIVE
+   - ID: `engineering-design-services-guide`
    - Target keyword: "engineering design services"
-   - Current clusters: 28+ posts
+   - Current clusters: 32 posts ✅ WELL-PACKED
    - Topics: Design types, costs, professional services, sustainable design
 
-3. **Specialized Engineering Services** (planned)
-   - Topics: MEP, stormwater, septic, grading
+3. **Specialized Engineering Services Guide** ✅ LIVE
+   - ID: `specialized-engineering-services-guide`
+   - Target keyword: "specialized engineering services california"
+   - Current clusters: 17 posts ❌ UNDERPACKED (PRIORITY - needs 8+ more)
+   - Topics: MEP, stormwater, septic, grading, civil site engineering
 
-4. **Building Codes & Compliance** (planned)
-   - Topics: Title 24, licensing, associations
+4. **Residential Structural Engineering Guide** ✅ LIVE
+   - ID: `residential-structural-engineering-guide`
+   - Target keyword: "residential structural engineer california"
+   - Current clusters: 28 posts ✅ WELL-PACKED
+   - Topics: Home additions, ADUs, foundation repair, seismic retrofitting
+
+**Future Hubs (Not Yet Created):**
+
+5. **Building Codes & Compliance** (needs 16+ more posts before creating hub)
+   - Topics: Title 24, licensing, associations, permits
 
 5. **Commercial Engineering Services** (planned)
    - Topics: Tenant improvements, commercial buildings
@@ -755,7 +839,7 @@ For related guidance, see our articles on [home addition engineering](/blog/stru
 ✅ **User Experience**: Visitors find related content easily
 ✅ **Content Organization**: Clear structure makes content management easier
 
-### Step 3: Generate Each Blog Post
+### Step 5: Generate Each Blog Post
 
 For each of the 5 posts, follow this process:
 
@@ -842,7 +926,7 @@ Select 3 related articles:
 - One with similar keyword theme
 - One targeting different city/region
 
-### Step 4: Quality Control Checklist
+### Step 6: Quality Control Checklist
 
 Verify each post has:
 - [ ] **Keyword+City combination verified as NEW in BLOG-TRACKING.md**
@@ -854,7 +938,7 @@ Verify each post has:
 - [ ] Schema markup included
 - [ ] Related articles section populated
 
-### Step 5: Output Format
+### Step 7: Output Format
 
 Create 5 separate markdown files:
 ```
@@ -868,7 +952,7 @@ blog-posts-[DATE]/
 
 Save files to project root directory in format: `blog-posts-nov-[day]-2025/`
 
-### Step 6: Update Blog Tracking (MANDATORY)
+### Step 8: Update Blog Tracking (MANDATORY)
 
 **CRITICAL: Update BLOG-TRACKING.md immediately after generating posts**
 
@@ -883,7 +967,7 @@ Update the following sections in BLOG-TRACKING.md:
 3. ✅ Update "Keywords Already Used with Cities" section
 4. ✅ Update "Recommended Next 5 City Selections" for future batches
 
-### Step 7: Deploy to Website (CRITICAL - AUTOMATED EXECUTION)
+### Step 9: Deploy to Website (CRITICAL - AUTOMATED EXECUTION)
 
 **⚠️ MANDATORY: Execute ALL deployment commands automatically after blog generation**
 
@@ -952,7 +1036,7 @@ The `add-blog-posts.js` script was updated to fix a bug where posts were incorre
 - Report any errors immediately
 - Confirm deployment success after git push completes
 
-### Step 8: Post-Deployment Summary
+### Step 10: Post-Deployment Summary
 
 After successful deployment, provide a comprehensive summary:
 
