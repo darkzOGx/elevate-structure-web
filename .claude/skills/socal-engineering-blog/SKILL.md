@@ -324,33 +324,55 @@ For a complete overview of structural engineering services, see our [comprehensi
 
 #### Blog Post ID Pattern
 
-**❌ WRONG - Will cause 404 errors:**
+**🆕 NEW FORMAT (For All New Blog Posts - Use This!):**
+
+Generate IDs using this clean pattern:
 ```typescript
-'adu-structural-engineering-los-alamitos'
+// Format: {keyword-phrase}-{city}
+'adu-structural-engineering-newport-beach'
 'structural-engineering-for-home-additions-brea'
 'seismic-retrofit-requirements-cypress'
+'commercial-building-engineering-irvine'
 ```
 
-**✅ CORRECT - Actual ID format in blog-data.ts:**
+**ID Generation Rules:**
+1. Take the primary keyword phrase
+2. Convert to lowercase
+3. Replace spaces with hyphens
+4. Add hyphen + city name (single, no duplication)
+5. Use kebab-case throughout (all lowercase, hyphens only)
+
+**Examples:**
+- Keyword: "ADU Structural Engineering" + City: "Newport Beach"
+  → ID: `adu-structural-engineering-newport-beach`
+
+- Keyword: "Commercial Building Engineering" + City: "Irvine"
+  → ID: `commercial-building-engineering-irvine`
+
+- Keyword: "Seismic Retrofit Requirements" + City: "Cypress"
+  → ID: `seismic-retrofit-requirements-cypress`
+
+**Non-geo Posts (no city):**
+```typescript
+'structural-engineering-services-guide'  // Hub pages
+'building-code-compliance-2024'  // Year-based
+'structural-engineer-requirements'  // Generic topics
+```
+
+---
+
+**⚠️ LEGACY FORMAT (Existing Posts Only - DO NOT USE for new posts):**
+
+Most existing blog posts (106 total) use an OLD pattern with city duplication:
 ```typescript
 'adu-structural-engineering-in-los-alamitos-los-alamitos'  // City appears TWICE
 'structural-engineering-for-home-additions-in-brea-brea'  // City appears TWICE
 'seismic-retrofit-requirements-in-cypress-cypress'  // City appears TWICE
 ```
 
-**Pattern Rule:**
-- Most geo-targeted blog posts follow: `{topic}-in-{city}-{city}`
-- The city name appears **TWICE** at the end
-- There's an `-in-` before the first city name
-- **ALWAYS verify IDs exist** before linking to them
+**Why the duplication exists:** Legacy automated generation created this pattern. We're NOT changing existing posts (would break external links), but NEW posts should use the clean format above.
 
-**Exceptions (no city duplication):**
-```typescript
-'structural-engineering-services-guide'  // Hub pages
-'engineering-design-services-guide'  // Hub pages
-'structural-engineer-requirements'  // Generic topics
-'building-code-compliance-2024'  // Year-based topics
-```
+**When linking to existing posts:** Use the full duplicated ID as it appears in blog-data.ts
 
 #### How to Find Correct Blog Post IDs
 
@@ -620,7 +642,34 @@ For related guidance, see our articles on [home addition engineering](/blog/stru
 
 For each of the 5 posts, follow this process:
 
-**A. Create Post Structure**
+**A. Generate Blog Post ID**
+
+**CRITICAL - Use the NEW clean ID format (no city duplication):**
+
+```
+ID Format: {keyword-phrase}-{city-name}
+```
+
+**Example:**
+- Keyword: "Commercial Building Engineering"
+- City: "Newport Beach"
+- ID: `commercial-building-engineering-newport-beach`
+
+**Steps:**
+1. Take primary keyword phrase
+2. Convert to lowercase
+3. Replace spaces with hyphens
+4. Replace special characters with hyphens (e.g., "&" → "and")
+5. Add hyphen + city name (kebab-case)
+6. **Verify uniqueness** - check blog-data.ts to ensure ID doesn't already exist
+
+**Verification Command:**
+```bash
+grep "id: 'your-generated-id'" src/lib/blog-data.ts
+# Should return nothing if ID is unique
+```
+
+**B. Create Post Structure**
 
 Use the EXACT structure from `references/blog-template.md`:
 
