@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 17, 2025
+## Last Updated: November 17, 2025 (Batch 2)
 
 ---
 
@@ -25,9 +25,9 @@
 ### Tracking:
 - **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 59/103
-- **Cities Remaining**: 44/103
-- **Completion**: 57.3%
+- **Cities Used This Cycle**: 72/103
+- **Cities Remaining**: 31/103
+- **Completion**: 69.9%
 
 ---
 
@@ -116,6 +116,19 @@
 | Role of a Design Engineer | Chino | ✅ Published | Nov 17, 2025 | Cycle 1 |
 | Septic Design Engineers | Upland | ✅ Published | Nov 17, 2025 | Cycle 1 |
 | Stormwater Design Engineer | Redlands | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Office Building Structural Engineering | San Bernardino | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Warehouse Structural Engineering | Rialto | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Retail Structural Engineering | Menifee | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Industrial Facility Structural Engineering | El Cajon | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Tenant Improvement Structural Engineering | La Mesa | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Mixed-Use Development Structural Engineering | Santee | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Parking Structure Engineering | National City | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Commercial Foundation Design | Hemet | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Tilt-Up Construction Engineering | Indio | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Commercial Building Codes | Eastvale | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Structural Engineer Near Me | Imperial Beach | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Foundation Engineer Near Me | Solana Beach | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| ADU Structural Engineer Near Me | Lemon Grove | ✅ Published | Nov 17, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -232,16 +245,16 @@
 | **Escondido** | 151,000 | $650,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Vista** | 101,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
 | **San Marcos** | 94,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
-| **El Cajon** | 103,000 | $580,000 | NEW | ✅ AVAILABLE |
-| **La Mesa** | 60,000 | $740,000 | NEW | ✅ AVAILABLE |
+| **El Cajon** | 103,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
+| **La Mesa** | 60,000 | $740,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Poway** | 50,000 | $920,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Santee** | 58,000 | $650,000 | NEW | ✅ AVAILABLE |
-| **National City** | 61,000 | $550,000 | NEW | ✅ AVAILABLE |
-| **Imperial Beach** | 27,000 | $670,000 | NEW | ✅ AVAILABLE |
+| **Santee** | 58,000 | $650,000 | Used 1x | ❌ USED THIS CYCLE |
+| **National City** | 61,000 | $550,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Imperial Beach** | 27,000 | $670,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Coronado** | 24,000 | $2,100,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Del Mar** | 4,300 | $3,500,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Solana Beach** | 13,000 | $1,800,000 | NEW | ✅ AVAILABLE |
-| **Lemon Grove** | 27,000 | $580,000 | NEW | ✅ AVAILABLE |
+| **Solana Beach** | 13,000 | $1,800,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Lemon Grove** | 27,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Bonita** | 13,000 | $750,000 | NEW | ✅ AVAILABLE |
 | **Spring Valley** | 31,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **Rancho San Diego** | 22,000 | $780,000 | NEW | ✅ AVAILABLE |
@@ -263,21 +276,21 @@
 | **Corona** | 157,000 | $620,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Temecula** | 114,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Murrieta** | 116,000 | $610,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Menifee** | 102,000 | $520,000 | NEW | ✅ AVAILABLE |
+| **Menifee** | 102,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Perris** | 79,000 | $450,000 | NEW | ✅ AVAILABLE |
 | **Lake Elsinore** | 70,000 | $510,000 | NEW | ✅ AVAILABLE |
 | **Wildomar** | 37,000 | $560,000 | NEW | ✅ AVAILABLE |
-| **Hemet** | 90,000 | $380,000 | NEW | ✅ AVAILABLE |
+| **Hemet** | 90,000 | $380,000 | Used 1x | ❌ USED THIS CYCLE |
 | **San Jacinto** | 53,000 | $390,000 | NEW | ✅ AVAILABLE |
 | **Palm Desert** | 53,000 | $560,000 | NEW | ✅ AVAILABLE |
 | **Palm Springs** | 48,000 | $590,000 | NEW | ✅ AVAILABLE |
 | **Cathedral City** | 55,000 | $440,000 | NEW | ✅ AVAILABLE |
-| **Indio** | 92,000 | $420,000 | NEW | ✅ AVAILABLE |
+| **Indio** | 92,000 | $420,000 | Used 1x | ❌ USED THIS CYCLE |
 | **La Quinta** | 41,000 | $680,000 | NEW | ✅ AVAILABLE |
 | **Rancho Mirage** | 18,000 | $750,000 | NEW | ✅ AVAILABLE |
 | **Coachella** | 45,000 | $350,000 | NEW | ✅ AVAILABLE |
 | **Desert Hot Springs** | 29,000 | $320,000 | NEW | ✅ AVAILABLE |
-| **Eastvale** | 69,000 | $700,000 | NEW | ✅ AVAILABLE |
+| **Eastvale** | 69,000 | $700,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Jurupa Valley** | 112,000 | $520,000 | NEW | ✅ AVAILABLE |
 
 ---
@@ -288,7 +301,7 @@
 
 | City | Population | Median Home | Usage Count | Cycle 1 Status |
 |------|-----------|-------------|-------------|----------------|
-| **San Bernardino** | 222,000 | $380,000 | NEW | ✅ AVAILABLE |
+| **San Bernardino** | 222,000 | $380,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Fontana** | 214,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Rancho Cucamonga** | 178,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Ontario** | 178,000 | $550,000 | Used 1x | ❌ USED THIS CYCLE |
@@ -296,7 +309,7 @@
 | **Chino Hills** | 83,000 | $880,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Upland** | 79,000 | $630,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Redlands** | 72,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Rialto** | 104,000 | $450,000 | NEW | ✅ AVAILABLE |
+| **Rialto** | 104,000 | $450,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Yucaipa** | 54,000 | $520,000 | NEW | ✅ AVAILABLE |
 | **Highland** | 56,000 | $480,000 | NEW | ✅ AVAILABLE |
 
@@ -305,16 +318,16 @@
 ## 📊 **CYCLE 1 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 59 cities
-**Remaining**: 44 cities
-**Completion**: 57.3%
+**Used This Cycle**: 72 cities
+**Remaining**: 31 cities
+**Completion**: 69.9%
 
 ### **City Distribution:**
-- **Orange County**: 34 cities (33 used, 1 available)
-- **Los Angeles County**: 12 cities (11 used, 1 available)
-- **San Diego County**: 25 cities (11 used, 14 available)
-- **Riverside County**: 21 cities (5 used, 16 available)
-- **San Bernardino County**: 11 cities (7 used, 4 available)
+- **Orange County**: 34 cities (34 used, 0 available)
+- **Los Angeles County**: 12 cities (12 used, 0 available)
+- **San Diego County**: 25 cities (18 used, 7 available)
+- **Riverside County**: 21 cities (9 used, 12 available)
+- **San Bernardino County**: 11 cities (9 used, 2 available)
 
 ### **Cities Available for Next Batch (62 cities remaining):**
 
