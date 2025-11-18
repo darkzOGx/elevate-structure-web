@@ -328,29 +328,30 @@ For a complete overview of structural engineering services, see our [comprehensi
 
 Generate IDs using this clean pattern:
 ```typescript
-// Format: {keyword-phrase}-{city}
-'adu-structural-engineering-newport-beach'
-'structural-engineering-for-home-additions-brea'
-'seismic-retrofit-requirements-cypress'
-'commercial-building-engineering-irvine'
+// Format: {keyword-phrase}-in-{city}
+'adu-structural-engineering-in-newport-beach'
+'structural-engineering-for-home-additions-in-brea'
+'seismic-retrofit-requirements-in-cypress'
+'commercial-building-engineering-in-irvine'
 ```
 
 **ID Generation Rules:**
 1. Take the primary keyword phrase
 2. Convert to lowercase
 3. Replace spaces with hyphens
-4. Add hyphen + city name (single, no duplication)
-5. Use kebab-case throughout (all lowercase, hyphens only)
+4. Add `-in-` separator
+5. Add city name (kebab-case, single occurrence - NO duplication)
+6. Use kebab-case throughout (all lowercase, hyphens only)
 
 **Examples:**
 - Keyword: "ADU Structural Engineering" + City: "Newport Beach"
-  → ID: `adu-structural-engineering-newport-beach`
+  → ID: `adu-structural-engineering-in-newport-beach`
 
 - Keyword: "Commercial Building Engineering" + City: "Irvine"
-  → ID: `commercial-building-engineering-irvine`
+  → ID: `commercial-building-engineering-in-irvine`
 
 - Keyword: "Seismic Retrofit Requirements" + City: "Cypress"
-  → ID: `seismic-retrofit-requirements-cypress`
+  → ID: `seismic-retrofit-requirements-in-cypress`
 
 **Non-geo Posts (no city):**
 ```typescript
@@ -647,21 +648,22 @@ For each of the 5 posts, follow this process:
 **CRITICAL - Use the NEW clean ID format (no city duplication):**
 
 ```
-ID Format: {keyword-phrase}-{city-name}
+ID Format: {keyword-phrase}-in-{city-name}
 ```
 
 **Example:**
 - Keyword: "Commercial Building Engineering"
 - City: "Newport Beach"
-- ID: `commercial-building-engineering-newport-beach`
+- ID: `commercial-building-engineering-in-newport-beach`
 
 **Steps:**
 1. Take primary keyword phrase
 2. Convert to lowercase
 3. Replace spaces with hyphens
 4. Replace special characters with hyphens (e.g., "&" → "and")
-5. Add hyphen + city name (kebab-case)
-6. **Verify uniqueness** - check blog-data.ts to ensure ID doesn't already exist
+5. Add `-in-` separator
+6. Add city name (kebab-case) - **single occurrence, NO duplication**
+7. **Verify uniqueness** - check blog-data.ts to ensure ID doesn't already exist
 
 **Verification Command:**
 ```bash
