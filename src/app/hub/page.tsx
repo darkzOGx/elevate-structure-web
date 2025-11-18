@@ -87,6 +87,34 @@ const hubs: HubItem[] = [
     status: 'live',
     badge: 'For Homeowners'
   },
+  {
+    id: 'commercial-industrial',
+    title: 'Commercial & Industrial Structural Engineering in Southern California: Complete Development Guide',
+    shortTitle: 'Commercial & Industrial Engineering',
+    description: 'Comprehensive guide for developers and business owners covering office buildings, warehouses, retail centers, industrial facilities, tenant improvements, and commercial structural engineering.',
+    icon: Building2,
+    url: '/blog/commercial-industrial-structural-engineering-guide',
+    primaryKeyword: 'commercial structural engineer california',
+    monthlySearches: '22,000+',
+    clusterCount: 0,
+    topics: ['Office Buildings', 'Warehouses', 'Retail Centers', 'Industrial Facilities', 'Tenant Improvements', 'Mixed-Use'],
+    status: 'live',
+    badge: 'New'
+  },
+  {
+    id: 'foundation-engineering',
+    title: 'Foundation Engineering in Southern California: Complete Property Owner\'s Guide',
+    shortTitle: 'Foundation Engineering',
+    description: 'Complete guide to foundation engineering covering foundation types, common problems (settlement, expansive soils, cracks), repair solutions, costs, and finding qualified foundation engineers.',
+    icon: Building2,
+    url: '/blog/foundation-engineering-guide',
+    primaryKeyword: 'foundation engineer california',
+    monthlySearches: '18,000+',
+    clusterCount: 0,
+    topics: ['Foundation Types', 'Settlement & Cracks', 'Expansive Soils', 'Foundation Repair', 'Underpinning', 'Hillside Foundations'],
+    status: 'live',
+    badge: 'New'
+  },
 ]
 
 const comingSoonHubs: HubItem[] = [
@@ -99,23 +127,10 @@ const comingSoonHubs: HubItem[] = [
     url: '#coming-soon',
     primaryKeyword: 'ADU structural engineering california',
     monthlySearches: '15,000+',
-    clusterCount: 5,
+    clusterCount: 0,
     topics: ['ADU Foundation Design', 'Garage Conversions', 'Second Story Additions', 'ADU Permits', 'Cost Guides'],
     status: 'coming-soon',
     badge: 'Hot Market'
-  },
-  {
-    id: 'foundation-repair',
-    title: 'Foundation Engineering & Repair Guide',
-    shortTitle: 'Foundation Engineering',
-    description: 'Everything about foundation design, assessment, repair methods, and solving foundation problems in Southern California.',
-    icon: Building2,
-    url: '#coming-soon',
-    primaryKeyword: 'foundation repair california',
-    monthlySearches: '18,000+',
-    clusterCount: 3,
-    topics: ['Foundation Assessment', 'Crack Repair', 'Underpinning', 'Expansive Soils', 'Seismic Retrofitting'],
-    status: 'coming-soon',
   },
 ]
 
@@ -140,7 +155,7 @@ export default function HubPage() {
               </div>
               <div className="flex items-center gap-2">
                 <Building2 className="h-4 w-4" />
-                <span><strong>3</strong> comprehensive guides</span>
+                <span><strong>6</strong> comprehensive guides</span>
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />

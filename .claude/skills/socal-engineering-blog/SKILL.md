@@ -25,7 +25,9 @@ Use this skill when the user requests:
 **Before generating random posts, ALWAYS check Step 2.5 to see if ANY topic clusters need completion:**
 - Check ALL hubs (current + future) in blog-data.ts clusterPages arrays
 - Find the most underpacked cluster (lowest post count)
-- Currently: **Hub 3 (Specialized Services)** has only 17 posts - needs 8+ more to reach minimum 25
+- Currently: **Hub 5 (Commercial & Industrial)** has 0 posts - needs 25 posts ⚠️ HIGHEST PRIORITY
+- Next: **Hub 6 (Foundation Engineering)** has 0 posts - needs 25 posts
+- Then: **Hub 3 (Specialized Services)** has 17 posts - needs 8+ more to reach 25
 - Generate ALL N posts for underpacked cluster ONLY until it reaches 25+ posts
 - This rule applies FOREVER to all clusters (including future hubs you create)
 - Only resume random rotation when ALL clusters have 25+ posts
@@ -322,13 +324,21 @@ Current: 25 posts ✅ ADEQUATE
 topicCluster: 'engineering-design'
 Current: 32 posts ✅ WELL-PACKED
 
-// Hub 3: Specialized Engineering Services Guide ⚠️ CURRENT PRIORITY
+// Hub 3: Specialized Engineering Services Guide
 topicCluster: 'specialized-services'
-Current: 17 posts ❌ UNDERPACKED (needs 8+ more posts to reach 25)
+Current: 17 posts ⚠️ UNDERPACKED (needs 8+ more posts to reach 25)
 
 // Hub 4: Residential Structural Engineering Guide
 topicCluster: 'residential-engineering'
 Current: 28 posts ✅ WELL-PACKED
+
+// Hub 5: Commercial & Industrial Structural Engineering Guide 🆕 NEW
+topicCluster: 'commercial-industrial-engineering'
+Current: 0 posts ❌ EMPTY (needs 25+ posts) ⚠️⚠️ HIGHEST PRIORITY
+
+// Hub 6: Foundation Engineering Guide 🆕 NEW
+topicCluster: 'foundation-engineering'
+Current: 0 posts ❌ EMPTY (needs 25+ posts)
 ```
 
 **Action Required:**
@@ -347,19 +357,25 @@ Current: 28 posts ✅ WELL-PACKED
 
 **Example - Current Priority:**
 
-Since **Hub 3 (Specialized Services)** only has **17 posts** (lowest of all hubs), generate posts ONLY for this cluster until it reaches 25+ posts:
+Since **Hub 5 (Commercial & Industrial)** has **0 posts** (lowest of all hubs), generate posts ONLY for this cluster until it reaches 25+ posts:
 
-**Keywords to prioritize for Hub 3:**
-- MEP engineering topics (mechanical, electrical, plumbing design)
-- Stormwater/drainage engineering
-- Septic system design
-- Grading plans
-- Environmental compliance
-- Civil site engineering
-- Mechanical systems design
-- HVAC engineering
-- Electrical engineering services
-- Plumbing engineering
+**Keywords to prioritize for Hub 5:**
+- Commercial structural engineering topics
+- Office building structural engineering
+- Warehouse structural engineering
+- Retail center structural design
+- Industrial facility engineering
+- Manufacturing plant structural design
+- Tenant improvement engineering
+- Commercial building codes
+- Mixed-use development structural engineering
+- Parking structure design
+- Commercial foundation design
+- Tilt-up construction engineering
+
+**Next priority after Hub 5 reaches 25 posts:**
+- **Hub 6 (Foundation Engineering)** - 0 posts (foundation types, repair methods, expansive soils, etc.)
+- **Hub 3 (Specialized Services)** - 17 posts (MEP, stormwater, septic, grading topics)
 
 **Important: This Rule Applies to Future Hubs Too!**
 
@@ -460,13 +476,25 @@ Refer to `.claude/skills/socal-engineering-blog/CLUSTER-MAPPING.md` for the comp
    - Current clusters: 28 posts ✅ WELL-PACKED
    - Topics: Home additions, ADUs, foundation repair, seismic retrofitting
 
+5. **Commercial & Industrial Structural Engineering Guide** ✅ LIVE (NEW)
+   - ID: `commercial-industrial-structural-engineering-guide`
+   - Target keyword: "commercial structural engineer california"
+   - Current clusters: 0 posts ❌ EMPTY ⚠️ HIGHEST PRIORITY
+   - Topics: Office buildings, warehouses, retail centers, industrial facilities, tenant improvements, mixed-use
+
+6. **Foundation Engineering Guide** ✅ LIVE (NEW)
+   - ID: `foundation-engineering-guide`
+   - Target keyword: "foundation engineer california"
+   - Current clusters: 0 posts ❌ EMPTY
+   - Topics: Foundation types, settlement, expansive soils, foundation repair, underpinning, hillside foundations
+
 **Future Hubs (Not Yet Created):**
 
-5. **Building Codes & Compliance** (needs 16+ more posts before creating hub)
+7. **Building Codes & Compliance** (needs 20+ posts before creating hub)
    - Topics: Title 24, licensing, associations, permits
 
-5. **Commercial Engineering Services** (planned)
-   - Topics: Tenant improvements, commercial buildings
+8. **ADU Engineering Services** (planned)
+   - Topics: ADU requirements, garage conversions, detached ADUs, permitting
 
 #### How to Assign Posts to Clusters
 

@@ -1447,6 +1447,79 @@ Contact us today for a free consultation about your residential structural engin
 **Last Updated:** November 17, 2025
 `,
   },
+
+  // HUB PAGE: Commercial & Industrial Structural Engineering Guide
+  {
+    id: 'commercial-industrial-structural-engineering-guide',
+    title: 'Commercial & Industrial Structural Engineering in Southern California: Complete Development Guide',
+    excerpt: 'Comprehensive guide for developers and business owners covering office buildings, warehouses, retail centers, industrial facilities, tenant improvements, costs, and selecting the right commercial structural engineer.',
+    category: 'Commercial Projects',
+    date: '2025-11-17',
+    readTime: '18 min read',
+    author: 'AAA Engineering Team',
+    image: 'https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?w=800&h=400&fit=crop',
+    featured: true,
+    relatedArticles: [],
+
+    // Topic Cluster Metadata
+    contentType: 'hub',
+    topicCluster: 'commercial-industrial-engineering',
+    primaryKeyword: 'commercial structural engineer california',
+    secondaryKeywords: ['commercial structural engineering', 'warehouse structural engineer', 'office building structural engineering', 'industrial structural engineering', 'tenant improvement engineer'],
+    geoTarget: 'Southern California',
+    clusterPages: [
+      // Will be populated as blog posts are generated
+    ],
+    content: `# Commercial & Industrial Structural Engineering in Southern California: Complete Development Guide
+
+Commercial and industrial structural engineering requires specialized expertise to design safe, code-compliant, and economically viable buildings for business operations. Whether you're developing a warehouse, retail center, office building, manufacturing facility, or mixed-use project, understanding commercial structural engineering is essential for project success and long-term value.
+
+This comprehensive guide covers everything developers, business owners, and property managers need to know about commercial structural engineering in California, from project types and regulatory requirements to costs, timelines, and selecting the right engineering partner.
+
+[Full content from hub-content-commercial-engineering.md will be used when rendering]
+
+**Keywords:** commercial structural engineer, commercial structural engineering california, warehouse structural engineer, office building structural engineering, industrial structural engineering, retail building structural engineer, tenant improvement engineer
+
+**Last Updated:** November 17, 2025
+`,
+  },
+
+  // HUB PAGE: Foundation Engineering Guide
+  {
+    id: 'foundation-engineering-guide',
+    title: 'Foundation Engineering in Southern California: Complete Property Owner\'s Guide',
+    excerpt: 'Complete guide to foundation engineering covering foundation types, common problems (settlement, expansive soils, cracks), repair solutions, costs, and finding qualified foundation engineers in California.',
+    category: 'Structural Engineering',
+    date: '2025-11-17',
+    readTime: '17 min read',
+    author: 'AAA Engineering Team',
+    image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?w=800&h=400&fit=crop',
+    featured: true,
+    relatedArticles: [],
+
+    // Topic Cluster Metadata
+    contentType: 'hub',
+    topicCluster: 'foundation-engineering',
+    primaryKeyword: 'foundation engineer california',
+    secondaryKeywords: ['foundation engineering', 'foundation repair engineer', 'foundation inspection', 'foundation problems', 'expansive soil foundation', 'hillside foundation'],
+    geoTarget: 'Southern California',
+    clusterPages: [
+      // Will be populated as blog posts are generated
+    ],
+    content: `# Foundation Engineering in Southern California: Complete Property Owner's Guide
+
+Foundation engineering ensures your building has a safe, stable, and durable structural base designed for Southern California's unique soil conditions and seismic activity. Whether you're experiencing foundation problems, planning new construction, or evaluating a property for purchase, understanding foundation engineering is essential for protecting your investment.
+
+This comprehensive guide covers everything property owners need to know about foundation engineering in California, from foundation types and common problems to repair solutions, costs, and selecting the right foundation engineer for your needs.
+
+[Full content from hub-content-foundation-engineering.md will be used when rendering]
+
+**Keywords:** foundation engineer, foundation engineering california, foundation repair engineer, foundation inspection, foundation problems, helical piers, foundation underpinning, expansive soil foundation, hillside foundation
+
+**Last Updated:** November 17, 2025
+`,
+  },
+
   {
     id: 'understanding-seismic-retrofitting',
     title: 'Understanding Seismic Retrofitting for California Homes',
