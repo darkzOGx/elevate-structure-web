@@ -45,7 +45,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'AAA Engineering Team',
     image: 'https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?w=800&h=400&fit=crop',
     featured: true,
-    relatedArticles: ['residential-structural-engineer-near-me-newport-beach', 'adu-structural-engineering-los-alamitos', 'seismic-retrofit-requirements-cypress'],
+    relatedArticles: ['residential-structural-engineer-near-me-newport-beach', 'adu-structural-engineering-in-los-alamitos-los-alamitos', 'seismic-retrofit-requirements-in-cypress-cypress'],
 
     // Topic Cluster Metadata
     contentType: 'hub',
@@ -66,19 +66,19 @@ export const BLOG_POSTS: BlogPost[] = [
       'what-do-structural-engineers-do-oceanside',
       'best-structural-engineering-firms-los-angeles',
       'best-structural-engineering-firms-orange',
-      'seismic-retrofit-requirements-cypress',
+      'seismic-retrofit-requirements-in-cypress-cypress',
       'seismic-retrofit-requirements-del-mar',
-      'earthquake-retrofitting-services-san-juan-capistrano',
+      'earthquake-retrofitting-in-san-juan-capistrano-san-juan-capistrano',
       'earthquake-retrofitting-services-dana-point',
-      'foundation-assessment-guide-buena-park',
+      'foundation-assessment-guide-for-buena-park-homeowners',
       'foundation-assessment-guide-glendale',
       'foundation-assessment-guide-moreno-valley',
-      'structural-engineering-for-home-additions-brea',
+      'structural-engineering-for-home-additions-in-brea-brea',
       'structural-engineering-for-home-additions-villa-park',
-      'adu-structural-engineering-los-alamitos',
+      'adu-structural-engineering-in-los-alamitos-los-alamitos',
       'adu-structural-engineering-riverside',
       'adu-structural-engineering-corona',
-      'structural-engineer-requirements-rancho-palos-verdes',
+      'structural-engineer-requirements',
     ],
     content: `# Complete Guide to Structural Engineering Services in Southern California
 
@@ -115,15 +115,15 @@ Residential structural engineering focuses on single-family homes, townhomes, an
 
 ### Accessory Dwelling Unit (ADU) Engineering
 
-The ADU boom in California has created specialized demand for structural engineering services tailored to these secondary units. [ADU structural engineering](/blog/adu-structural-engineering-los-alamitos) involves foundation design for new ADU construction, structural analysis for garage conversions, load calculations for attached ADUs, and seismic bracing requirements.
+The ADU boom in California has created specialized demand for structural engineering services tailored to these secondary units. [ADU structural engineering](/blog/adu-structural-engineering-in-los-alamitos-los-alamitos) involves foundation design for new ADU construction, structural analysis for garage conversions, load calculations for attached ADUs, and seismic bracing requirements.
 
 ### Seismic and Earthquake Engineering
 
-California's seismic activity demands specialized engineering expertise. [Seismic retrofit requirements](/blog/seismic-retrofit-requirements-cypress) vary by building age, type, and location. Common retrofit work includes foundation bolting, cripple wall bracing, and soft-story strengthening.
+California's seismic activity demands specialized engineering expertise. [Seismic retrofit requirements](/blog/seismic-retrofit-requirements-in-cypress-cypress) vary by building age, type, and location. Common retrofit work includes foundation bolting, cripple wall bracing, and soft-story strengthening.
 
 ### Foundation Engineering
 
-Foundation issues are among the most serious structural concerns. [Foundation assessment](/blog/foundation-assessment-guide-buena-park) services include visual inspections, soil analysis, differential settlement evaluation, and foundation repair design.
+Foundation issues are among the most serious structural concerns. [Foundation assessment](/blog/foundation-assessment-guide-for-buena-park-homeowners) services include visual inspections, soil analysis, differential settlement evaluation, and foundation repair design.
 
 ## Finding the Right Structural Engineer
 
@@ -148,15 +148,15 @@ We serve engineering projects throughout Orange County, Los Angeles, San Diego, 
 - [What Do Structural Engineers Do?](/blog/what-do-structural-engineers-do-costa-mesa)
 
 ### Specialized Services
-- [ADU Structural Engineering](/blog/adu-structural-engineering-los-alamitos)
-- [Structural Engineering for Home Additions](/blog/structural-engineering-for-home-additions-brea)
-- [Seismic Retrofit Requirements](/blog/seismic-retrofit-requirements-cypress)
-- [Foundation Assessment Guide](/blog/foundation-assessment-guide-buena-park)
+- [ADU Structural Engineering](/blog/adu-structural-engineering-in-los-alamitos-los-alamitos)
+- [Structural Engineering for Home Additions](/blog/structural-engineering-for-home-additions-in-brea-brea)
+- [Seismic Retrofit Requirements](/blog/seismic-retrofit-requirements-in-cypress-cypress)
+- [Foundation Assessment Guide](/blog/foundation-assessment-guide-for-buena-park-homeowners)
 
 ### Professional Resources
-- [Structural Engineer Requirements](/blog/structural-engineer-requirements-rancho-palos-verdes)
+- [Structural Engineer Requirements](/blog/structural-engineer-requirements)
 - [Best Structural Engineering Firms](/blog/best-structural-engineering-firms-los-angeles)
-- [Earthquake Retrofitting Services](/blog/earthquake-retrofitting-services-san-juan-capistrano)
+- [Earthquake Retrofitting Services](/blog/earthquake-retrofitting-in-san-juan-capistrano-san-juan-capistrano)
 
 ## Next Steps
 
@@ -198,25 +198,25 @@ Our detailed guide on [how to hire a structural engineer](/blog/how-to-hire-stru
 
 **Professional Requirements:**
 
-California requires all structural engineering work to be performed by a licensed Professional Engineer (PE). Learn about [structural engineer requirements and licensing](/blog/structural-engineer-requirements-rancho-palos-verdes) in California.
+California requires all structural engineering work to be performed by a licensed Professional Engineer (PE). Learn about [structural engineer requirements and licensing](/blog/structural-engineer-requirements) in California.
 
 ### Accessory Dwelling Unit (ADU) Engineering
 
-The ADU boom in California has created specialized demand for structural engineering services. [ADU structural engineering](/blog/adu-structural-engineering-los-alamitos) involves foundation design for new ADU construction, structural analysis for garage conversions, load calculations for attached ADUs, seismic bracing requirements, and coordination with Title 24 energy compliance.
+The ADU boom in California has created specialized demand for structural engineering services. [ADU structural engineering](/blog/adu-structural-engineering-in-los-alamitos-los-alamitos) involves foundation design for new ADU construction, structural analysis for garage conversions, load calculations for attached ADUs, seismic bracing requirements, and coordination with Title 24 energy compliance.
 
 ### Home Addition Engineering
 
-Expanding your existing home requires careful structural analysis. [Structural engineering for home additions](/blog/structural-engineering-for-home-additions-brea) addresses foundation design compatible with existing foundations, load transfer from addition to existing structure, roof structure modifications, floor system design, and seismic considerations for mixed-age construction.
+Expanding your existing home requires careful structural analysis. [Structural engineering for home additions](/blog/structural-engineering-for-home-additions-in-brea-brea) addresses foundation design compatible with existing foundations, load transfer from addition to existing structure, roof structure modifications, floor system design, and seismic considerations for mixed-age construction.
 
 ### Seismic and Earthquake Engineering
 
-California's seismic activity demands specialized engineering expertise. [Seismic retrofit requirements](/blog/seismic-retrofit-requirements-cypress) vary by building age, type, and location. Common retrofit work includes foundation bolting, cripple wall bracing, and soft-story strengthening.
+California's seismic activity demands specialized engineering expertise. [Seismic retrofit requirements](/blog/seismic-retrofit-requirements-in-cypress-cypress) vary by building age, type, and location. Common retrofit work includes foundation bolting, cripple wall bracing, and soft-story strengthening.
 
-For detailed information on protecting existing structures, see our guide on [earthquake retrofitting services](/blog/earthquake-retrofitting-services-san-juan-capistrano).
+For detailed information on protecting existing structures, see our guide on [earthquake retrofitting services](/blog/earthquake-retrofitting-in-san-juan-capistrano-san-juan-capistrano).
 
 ### Foundation Engineering
 
-Foundation issues are among the most serious structural concerns. [Foundation assessment and repair](/blog/foundation-assessment-guide-buena-park) services include visual inspections for settlement and cracking, soil analysis and bearing capacity testing, foundation repair and underpinning design, and seismic foundation upgrades.
+Foundation issues are among the most serious structural concerns. [Foundation assessment and repair](/blog/foundation-assessment-guide-for-buena-park-homeowners) services include visual inspections for settlement and cracking, soil analysis and bearing capacity testing, foundation repair and underpinning design, and seismic foundation upgrades.
 
 ### Commercial Structural Engineering
 
@@ -329,15 +329,15 @@ Contact us today for a free consultation to discuss your structural engineering 
 - [What Do Structural Engineers Do?](/blog/what-do-structural-engineers-do-costa-mesa)
 
 ### Specialized Services
-- [ADU Structural Engineering](/blog/adu-structural-engineering-los-alamitos)
-- [Structural Engineering for Home Additions](/blog/structural-engineering-for-home-additions-brea)
-- [Seismic Retrofit Requirements](/blog/seismic-retrofit-requirements-cypress)
-- [Foundation Assessment Guide](/blog/foundation-assessment-guide-buena-park)
+- [ADU Structural Engineering](/blog/adu-structural-engineering-in-los-alamitos-los-alamitos)
+- [Structural Engineering for Home Additions](/blog/structural-engineering-for-home-additions-in-brea-brea)
+- [Seismic Retrofit Requirements](/blog/seismic-retrofit-requirements-in-cypress-cypress)
+- [Foundation Assessment Guide](/blog/foundation-assessment-guide-for-buena-park-homeowners)
 
 ### Professional Resources
-- [Structural Engineer Requirements](/blog/structural-engineer-requirements-rancho-palos-verdes)
+- [Structural Engineer Requirements](/blog/structural-engineer-requirements)
 - [Best Structural Engineering Firms](/blog/best-structural-engineering-firms-los-angeles)
-- [Earthquake Retrofitting Services](/blog/earthquake-retrofitting-services-san-juan-capistrano)
+- [Earthquake Retrofitting Services](/blog/earthquake-retrofitting-in-san-juan-capistrano-san-juan-capistrano)
     `,
   },
   // HUB PAGE 2: Engineering Design Services Guide
