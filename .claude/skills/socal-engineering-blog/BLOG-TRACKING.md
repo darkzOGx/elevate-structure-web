@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 17, 2025 (Batch 2)
+## Last Updated: November 19, 2025
 
 ---
 
@@ -25,9 +25,9 @@
 ### Tracking:
 - **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 72/103
-- **Cities Remaining**: 31/103
-- **Completion**: 69.9%
+- **Cities Used This Cycle**: 85/103
+- **Cities Remaining**: 18/103
+- **Completion**: 82.5%
 
 ---
 
@@ -129,6 +129,19 @@
 | Structural Engineer Near Me | Imperial Beach | ✅ Published | Nov 17, 2025 | Cycle 1 |
 | Foundation Engineer Near Me | Solana Beach | ✅ Published | Nov 17, 2025 | Cycle 1 |
 | ADU Structural Engineer Near Me | Lemon Grove | ✅ Published | Nov 17, 2025 | Cycle 1 |
+| Manufacturing Plant Structural Engineering | Bonita | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Commercial Renovation Structural Engineering | Spring Valley | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Shopping Center Structural Engineering | Rancho San Diego | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Distribution Center Structural Engineering | Perris | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Commercial High-Rise Structural Engineering | Lake Elsinore | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Restaurant Building Structural Engineering | Wildomar | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Medical Office Structural Engineering | San Jacinto | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Hotel Structural Engineering | Palm Desert | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Self-Storage Facility Structural Engineering | Palm Springs | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Auto Dealership Structural Engineering | Cathedral City | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Seismic Retrofit Engineer Near Me | La Quinta | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Commercial Structural Engineer Near Me | Rancho Mirage | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| MEP Engineer Near Me | Ramona | ✅ Published | Nov 19, 2025 | Cycle 1 |
 
 **NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
 
@@ -318,15 +331,15 @@
 ## 📊 **CYCLE 1 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 72 cities
-**Remaining**: 31 cities
-**Completion**: 69.9%
+**Used This Cycle**: 85 cities
+**Remaining**: 18 cities
+**Completion**: 82.5%
 
 ### **City Distribution:**
 - **Orange County**: 34 cities (34 used, 0 available)
 - **Los Angeles County**: 12 cities (12 used, 0 available)
-- **San Diego County**: 25 cities (18 used, 7 available)
-- **Riverside County**: 21 cities (9 used, 12 available)
+- **San Diego County**: 25 cities (22 used, 3 available)
+- **Riverside County**: 21 cities (15 used, 6 available)
 - **San Bernardino County**: 11 cities (9 used, 2 available)
 
 ### **Cities Available for Next Batch (62 cities remaining):**
