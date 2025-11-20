@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 19, 2025
+## Last Updated: November 20, 2025
 
 ---
 
@@ -23,11 +23,12 @@
 - ✅ Complete SoCal footprint (OC + LA + SD + Riverside + San Bernardino)
 
 ### Tracking:
-- **Current Cycle**: Cycle 1 (Started Nov 13, 2025)
+- **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
+- **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cities Used This Cycle**: 85/103
-- **Cities Remaining**: 18/103
-- **Completion**: 82.5%
+- **Cycle 2 Cities Used**: 5/103
+- **Cycle 2 Cities Remaining**: 98/103
+- **Cycle 2 Completion**: 4.9%
 
 ---
 
@@ -142,8 +143,21 @@
 | Seismic Retrofit Engineer Near Me | La Quinta | ✅ Published | Nov 19, 2025 | Cycle 1 |
 | Commercial Structural Engineer Near Me | Rancho Mirage | ✅ Published | Nov 19, 2025 | Cycle 1 |
 | MEP Engineer Near Me | Ramona | ✅ Published | Nov 19, 2025 | Cycle 1 |
+| Fitness Center Structural Engineering | Alpine | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Brewery/Winery Structural Engineering | Lakeside | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Cold Storage Facility Structural Engineering | Fallbrook | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Childcare Facility Structural Engineering | Coachella | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Bank Building Structural Engineering | Desert Hot Springs | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Veterinary Clinic Structural Engineering | Jurupa Valley | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Car Wash Structural Engineering | Yucaipa | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Gas Station Structural Engineering | Highland | ✅ Published | Nov 20, 2025 | Cycle 1 |
+| Laboratory Building Structural Engineering | Irvine | ✅ Published | Nov 20, 2025 | Cycle 2 |
+| Religious Building Structural Engineering | Newport Beach | ✅ Published | Nov 20, 2025 | Cycle 2 |
+| Civil Engineer Near Me | Long Beach | ✅ Published | Nov 20, 2025 | Cycle 2 |
+| Home Addition Structural Engineer Near Me | Santa Ana | ✅ Published | Nov 20, 2025 | Cycle 2 |
+| Foundation Repair Engineer Near Me | Anaheim | ✅ Published | Nov 20, 2025 | Cycle 2 |
 
-**NOTE**: Some cities appear multiple times above because this tracking started mid-cycle. Once Cycle 1 completes (all 103 cities used), Cycle 2 begins with fresh rotation.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
