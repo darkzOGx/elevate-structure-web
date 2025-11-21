@@ -34,15 +34,15 @@ Use this skill when the user requests:
 
 ---
 
-**IMPORTANT: Automatic +3 "Near Me" Posts**
+**IMPORTANT: Automatic +5 "Near Me" Posts**
 
-When user requests N blog posts, **ALWAYS generate N + 3 total posts:**
-- **N posts** = Requested topics (currently: ALL for Hub 3 Specialized Services until packed)
-- **+3 posts** = "Near Me" GEO-localized posts (automatic bonus, any cluster)
+When user requests N blog posts, **ALWAYS generate N + 5 total posts:**
+- **N posts** = Requested topics (currently: ALL for Hub 5 Commercial & Industrial until packed)
+- **+5 posts** = "Near Me" GEO-localized posts (automatic bonus, any cluster)
 
 **Example:**
 - User says: "Generate 10 blog posts"
-- You generate: **13 posts** (10 for Hub 3 Specialized Services + 3 "near me")
+- You generate: **15 posts** (10 for Hub 5 Commercial & Industrial + 5 "near me")
 
 **"Near Me" posts target high-intent local searches:**
 - Format: `[keyword] near me in [city]`
@@ -281,7 +281,7 @@ Before reading references, automatically check if GSC extraction is needed:
 ```bash
 view references/keyword-list.md
 view references/city-data.md
-view references/near-me-keywords.md  # NEW: For automatic +3 "near me" posts
+view references/near-me-keywords.md  # NEW: For automatic +5 "near me" posts
 view references/blog-template.md
 view references/interlinking-strategy.md
 ```
@@ -347,7 +347,7 @@ Current: 0 posts ❌ EMPTY (needs 25+ posts)
 2. **Identify the most underpacked cluster** (< 20 posts, or lowest count if multiple)
 3. **If ANY cluster is underpacked:**
    - Generate ALL N posts for that cluster ONLY
-   - Still add +3 "near me" posts (can be any cluster)
+   - Still add +5 "near me" posts (can be any cluster)
    - Focus keyword selection on topics that fit the underpacked cluster
 4. **If ALL clusters are 20+ posts:**
    - Fill clusters with < 25 posts to reach 25 (pick lowest first)
@@ -396,9 +396,9 @@ When you create new hub pages (e.g., Commercial Engineering, Foundation Engineer
 
 ### Step 3: Select Keywords and Cities
 
-**Total Posts to Generate: N + 3**
+**Total Posts to Generate: N + 5**
 - **N posts** = User's requested number (e.g., 5, 10, etc.)
-- **+3 posts** = Automatic "near me" posts (ALWAYS added)
+- **+5 posts** = Automatic "near me" posts (ALWAYS added)
 
 **Regular Keyword Selection (N posts):**
 1. **⚠️ FIRST: Check Step 2.5 - If cluster completion is required, select keywords for underpacked cluster ONLY**
@@ -410,8 +410,8 @@ When you create new hub pages (e.g., Commercial Engineering, Foundation Engineer
 4. Prioritize keywords marked as 🎯 High Priority
 5. **CHECK BLOG-TRACKING.md** - Avoid keywords already used with target cities
 
-**"Near Me" Keyword Selection (+3 posts):**
-1. Use next 3 keywords in rotation from `references/near-me-keywords.md`
+**"Near Me" Keyword Selection (+5 posts):**
+1. Use next 5 keywords in rotation from `references/near-me-keywords.md`
 2. Check BLOG-TRACKING.md for last "near me" keyword used
 3. Resume rotation from next keyword
 4. These are HIGH commercial intent (ready to hire)
@@ -1014,7 +1014,7 @@ Verify each post has:
 - **Post 5**: `featured: true` ← First featured
 - Posts 6-9: `featured: false`
 - **Post 10**: `featured: true` ← Second featured
-- +3 "near me" posts: `featured: false` (never featured)
+- +5 "near me" posts: `featured: false` (never featured)
 
 **Featured Post Selection Strategy:**
 1. Choose posts with highest commercial intent keywords (hire, cost, find, best, top)

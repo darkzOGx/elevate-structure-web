@@ -62,26 +62,25 @@ Use these keywords in rotation for the 3 automatic "near me" posts:
 
 **For Each Batch of N Posts:**
 - Generate N regular posts (as requested)
-- Generate 3 "near me" posts using next 3 keywords in rotation
+- Generate 5 "near me" posts using next 5 keywords in rotation
 - Track which keywords were used in BLOG-TRACKING.md
 - Resume from next keyword in next batch
 
-**Example for 3 batches:**
+**Example for 2 batches:**
 
-**Batch 1:** (User requests 5 posts = 5 + 3 = 8 total)
+**Batch 1:** (User requests 5 posts = 5 + 5 = 10 total)
 - Near me #1: residential structural engineer near me
 - Near me #2: structural engineer near me
 - Near me #3: foundation engineer near me
-
-**Batch 2:** (User requests 5 posts = 5 + 3 = 8 total)
 - Near me #4: adu structural engineer near me
 - Near me #5: seismic retrofit engineer near me
-- Near me #6: commercial structural engineer near me
 
-**Batch 3:** (User requests 5 posts = 5 + 3 = 8 total)
+**Batch 2:** (User requests 5 posts = 5 + 5 = 10 total)
+- Near me #6: commercial structural engineer near me
 - Near me #7: mep engineer near me
 - Near me #8: civil engineer near me
 - Near me #9: home addition structural engineer near me
+- Near me #10: foundation repair engineer near me
 
 **Then cycle back to #1**
 
