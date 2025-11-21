@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 20, 2025
+## Last Updated: November 21, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 5/103
-- **Cycle 2 Cities Remaining**: 98/103
-- **Cycle 2 Completion**: 4.9%
+- **Cycle 2 Cities Used**: 15/103
+- **Cycle 2 Cities Remaining**: 88/103
+- **Cycle 2 Completion**: 14.6%
 
 ---
 
@@ -156,6 +156,16 @@
 | Civil Engineer Near Me | Long Beach | ✅ Published | Nov 20, 2025 | Cycle 2 |
 | Home Addition Structural Engineer Near Me | Santa Ana | ✅ Published | Nov 20, 2025 | Cycle 2 |
 | Foundation Repair Engineer Near Me | Anaheim | ✅ Published | Nov 20, 2025 | Cycle 2 |
+| Convenience Store Structural Engineering | Huntington Beach | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Commercial Parking Garage Engineering | Fullerton | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Strip Mall Structural Engineering | Garden Grove | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Fast Food Restaurant Structural Engineering | Orange | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Commercial Structural Inspection Services | Tustin | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Residential Structural Engineer Near Me | Costa Mesa | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Structural Engineer Near Me | Mission Viejo | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Foundation Engineer Near Me | Laguna Beach | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| ADU Structural Engineer Near Me | San Diego | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Seismic Retrofit Engineer Near Me | Los Angeles | ✅ Published | Nov 21, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
