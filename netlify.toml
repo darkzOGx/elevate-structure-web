@@ -8,6 +8,20 @@
   NETLIFY_USE_YARN = "false"
   NETLIFY_NEXT_PLUGIN_SKIP = "false"
 
+# Ensure robots.txt and sitemap.xml are accessible (critical for SEO)
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain"
+    Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "none"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600"
+
 # Redirect www to non-www (critical for SEO - prevents duplicate content)
 [[redirects]]
   from = "https://www.aaaengineeringdesign.com/*"

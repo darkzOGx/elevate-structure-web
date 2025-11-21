@@ -36,9 +36,18 @@ export function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
-// Apply only to page routes (skip assets and API)
+// Apply only to page routes (skip assets, API, and SEO files)
 export const config = {
   matcher: [
-    '/((?!_next|_vercel|api|static|.*\\..*).*)',
+    /*
+     * Match all request paths except:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - _vercel (Vercel internals)
+     * - api (API routes)
+     * - static files (images, fonts, etc.)
+     * - robots.txt, sitemap.xml (SEO files - CRITICAL for Google indexing)
+     */
+    '/((?!_next|_vercel|api|static|robots\\.txt|sitemap.*\\.xml|.*\\..*).*)',
   ],
 }
