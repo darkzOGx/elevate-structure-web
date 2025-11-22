@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 21, 2025
+## Last Updated: November 22, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 15/103
-- **Cycle 2 Cities Remaining**: 88/103
-- **Cycle 2 Completion**: 14.6%
+- **Cycle 2 Cities Used**: 30/103
+- **Cycle 2 Cities Remaining**: 73/103
+- **Cycle 2 Completion**: 29.1%
 
 ---
 
@@ -166,6 +166,21 @@
 | Foundation Engineer Near Me | Laguna Beach | ✅ Published | Nov 21, 2025 | Cycle 2 |
 | ADU Structural Engineer Near Me | San Diego | ✅ Published | Nov 21, 2025 | Cycle 2 |
 | Seismic Retrofit Engineer Near Me | Los Angeles | ✅ Published | Nov 21, 2025 | Cycle 2 |
+| Commercial Building Structural Analysis | Seal Beach | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Retail Store Structural Design | Brea | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Commercial Building Seismic Retrofitting | Placentia | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Office Space Tenant Improvement Engineering | Buena Park | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Industrial Warehouse Design Engineering | Cypress | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Commercial Property Structural Assessment | La Palma | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Shopping Plaza Structural Engineering | Aliso Viejo | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Commercial Building Addition Engineering | Lake Forest | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Medical Building Structural Engineering | Dana Point | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Warehouse Expansion Structural Engineering | San Clemente | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Commercial Structural Engineer Near Me | Westminster | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| MEP Engineer Near Me | Yorba Linda | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Civil Engineer Near Me | Laguna Niguel | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Home Addition Structural Engineer Near Me | Fountain Valley | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| Foundation Repair Engineer Near Me | Stanton | ✅ Published | Nov 22, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
