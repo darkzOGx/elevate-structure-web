@@ -96,6 +96,30 @@ export const SERVICES = [
       'Performance optimization',
     ],
   },
+  {
+    id: 'adu-additions',
+    title: 'ADU & Additions',
+    description: 'Specialized structural design for Accessory Dwelling Units and home extensions. Tailored plans that maximize space while meeting strict local zoning codes.',
+    icon: '🏠',
+    features: [
+      'ADU structural plans',
+      'Second-story additions',
+      'Garage conversions',
+      'Load-bearing wall removal',
+    ],
+  },
+  {
+    id: 'seismic-retrofit',
+    title: 'Seismic Retrofit',
+    description: 'Protect your property with advanced earthquake strengthening solutions. Cost-effective retrofit plans to meet mandatory soft-story ordinances.',
+    icon: '🛡️',
+    features: [
+      'Soft-story analysis',
+      'Bolt & brace upgrades',
+      'Mandatory compliance',
+      'Foundation anchoring',
+    ],
+  },
 ]
 
 // Process Steps

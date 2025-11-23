@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { WebVitals } from "@/components/WebVitals";
+import { Preloader } from "@/components/ui/Preloader";
+import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import { FloatingCTA } from "@/components/ui/FloatingCTA";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aaaengineeringdesign.com'),
   title: 'Structural Engineer Orange County CA | Licensed PE | AAA Engineering Design',
   description: 'Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans.',
 }
@@ -50,8 +55,6 @@ export default function RootLayout({
         <meta name="format-detection" content="address=yes" />
 
         {/* Search Engine Verification - REPLACE WITH YOUR ACTUAL CODES */}
-        {/* Step 1: Get Google verification code from https://search.google.com/search-console */}
-        {/* Step 2: Get Bing verification code from https://www.bing.com/webmasters */}
         <meta name="google-site-verification" content="REPLACE_WITH_YOUR_GOOGLE_VERIFICATION_CODE" />
         <meta name="msvalidate.01" content="REPLACE_WITH_YOUR_BING_VERIFICATION_CODE" />
 
@@ -70,10 +73,14 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://aaaengineeringdesign.com/og-image.jpg" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans selection:bg-primary/20 selection:text-primary`}
       >
+        <Preloader />
         <WebVitals />
+        <NoiseOverlay />
+        <ScrollProgress />
         {children}
+        <FloatingCTA />
       </body>
     </html>
   );

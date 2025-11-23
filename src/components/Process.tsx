@@ -1,161 +1,113 @@
 'use client'
 
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, Clock, MessageSquare, ShieldCheck } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardContent } from '@/components/ui/card'
+import { PremiumCard } from '@/components/ui/PremiumCard'
+import { Section } from '@/components/ui/Section'
 import { PROCESS_STEPS } from '@/lib/constants'
 
 export function Process() {
   return (
-    <section id="process" className="py-16 lg:py-24 bg-muted/30">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        {/* Section Header */}
-        <div className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="mb-4">
+    <Section id="process" className="bg-background">
+      <div className="text-center space-y-4 mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
             Our Process
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            How Our Engineering Design Process Works
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
+            How Our <span className="text-gradient">Engineering Design</span> Process Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Our streamlined 4-step process ensures your project is completed efficiently,
-            on time, and to the highest professional standards. From initial consultation
-            to final implementation, we guide you through every phase.
+            on time, and to the highest professional standards.
           </p>
+        </motion.div>
+      </div>
+
+      <div className="relative">
+        {/* Connecting Line (Desktop) */}
+        <div className="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-secondary -translate-y-1/2 z-0">
+          <motion.div
+            className="h-full bg-primary origin-left"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          />
         </div>
 
-        {/* Process Steps */}
-        <div className="relative">
-          {/* Desktop Layout */}
-          <div className="hidden lg:block">
-            <div className="grid grid-cols-4 gap-8">
-              {PROCESS_STEPS.map((step, index) => (
-                <div key={step.step} className="relative">
-                  {/* Connecting Line */}
-                  {index < PROCESS_STEPS.length - 1 && (
-                    <div className="absolute top-12 left-full w-8 h-px bg-primary/30 z-10 translate-x-4" />
-                  )}
-
-                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                    <CardContent className="p-6 space-y-4">
-                      {/* Step Number */}
-                      <div className="flex items-center justify-between">
-                        <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
-                          {step.step}
-                        </div>
-                        <div className="text-3xl opacity-50">
-                          {step.icon}
-                        </div>
-                      </div>
-
-                      {/* Step Title */}
-                      <h3 className="text-xl font-bold">
-                        {step.title}
-                      </h3>
-
-                      {/* Step Description */}
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {step.description}
-                      </p>
-                    </CardContent>
-                  </Card>
+        <div className="grid gap-8 lg:grid-cols-4 relative z-10">
+          {PROCESS_STEPS.map((step, index) => (
+            <motion.div
+              key={step.step}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
+            >
+              <PremiumCard className="h-full flex flex-col items-center text-center relative bg-background/80 backdrop-blur-xl border-border/50">
+                <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-2xl mb-6 shadow-lg shadow-primary/30 relative z-10">
+                  {step.step}
                 </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Mobile/Tablet Layout */}
-          <div className="lg:hidden space-y-6">
-            {PROCESS_STEPS.map((step, index) => (
-              <div key={step.step} className="relative">
-                {/* Connecting Line */}
-                {index < PROCESS_STEPS.length - 1 && (
-                  <div className="absolute top-full left-6 w-px h-6 bg-primary/30 z-10" />
-                )}
+                <div className="text-4xl mb-4 opacity-80 text-primary">
+                  {step.icon}
+                </div>
 
-                <Card className="border-2 hover:border-primary/50 transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex gap-4">
-                      {/* Step Number */}
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                          {step.step}
-                        </div>
-                      </div>
+                <h3 className="text-xl font-bold mb-3">
+                  {step.title}
+                </h3>
 
-                      {/* Content */}
-                      <div className="space-y-3 flex-1">
-                        <div className="flex items-center justify-between">
-                          <h3 className="text-xl font-bold">
-                            {step.title}
-                          </h3>
-                          <div className="text-2xl opacity-50">
-                            {step.icon}
-                          </div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {step.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Bottom Content */}
-        <div className="mt-16 text-center space-y-8">
-          {/* Key Benefits */}
-          <div className="grid gap-6 md:grid-cols-3 max-w-4xl mx-auto">
-            <div className="space-y-2">
-              <CheckCircle className="h-8 w-8 text-green-500 mx-auto" />
-              <h4 className="font-semibold">Fast Turnaround</h4>
-              <p className="text-sm text-muted-foreground">
-                Most projects completed within 1-2 weeks
-              </p>
-            </div>
-            <div className="space-y-2">
-              <CheckCircle className="h-8 w-8 text-green-500 mx-auto" />
-              <h4 className="font-semibold">Clear Communication</h4>
-              <p className="text-sm text-muted-foreground">
-                Regular updates and transparent progress tracking
-              </p>
-            </div>
-            <div className="space-y-2">
-              <CheckCircle className="h-8 w-8 text-green-500 mx-auto" />
-              <h4 className="font-semibold">Quality Guarantee</h4>
-              <p className="text-sm text-muted-foreground">
-                100% satisfaction and code compliance guarantee
-              </p>
-            </div>
-          </div>
-
-          {/* Timeline Information */}
-          <div className="bg-primary/5 rounded-lg p-6 max-w-2xl mx-auto">
-            <h3 className="text-lg font-semibold mb-3">Typical Project Timeline</h3>
-            <div className="grid gap-4 md:grid-cols-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Consultation & Planning:</span>
-                <span className="font-medium">1-3 days</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Design Development:</span>
-                <span className="font-medium">1-2 weeks</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Review & Revisions:</span>
-                <span className="font-medium">3-5 days</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Final Delivery:</span>
-                <span className="font-medium">1-2 days</span>
-              </div>
-            </div>
-          </div>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {step.description}
+                </p>
+              </PremiumCard>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </section>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.6 }}
+        className="mt-12 grid gap-8 md:grid-cols-3 max-w-5xl mx-auto"
+      >
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-secondary/30 border border-border/50">
+          <div className="p-3 bg-green-500/10 rounded-full mb-4">
+            <Clock className="h-8 w-8 text-green-500" />
+          </div>
+          <h4 className="font-bold text-lg mb-2">Fast Turnaround</h4>
+          <p className="text-sm text-muted-foreground">
+            Most projects completed within 1-2 weeks with expedited options available.
+          </p>
+        </div>
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-secondary/30 border border-border/50">
+          <div className="p-3 bg-blue-500/10 rounded-full mb-4">
+            <MessageSquare className="h-8 w-8 text-blue-500" />
+          </div>
+          <h4 className="font-bold text-lg mb-2">Clear Communication</h4>
+          <p className="text-sm text-muted-foreground">
+            Regular updates and transparent progress tracking throughout the project.
+          </p>
+        </div>
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-secondary/30 border border-border/50">
+          <div className="p-3 bg-purple-500/10 rounded-full mb-4">
+            <ShieldCheck className="h-8 w-8 text-purple-500" />
+          </div>
+          <h4 className="font-bold text-lg mb-2">Quality Guarantee</h4>
+          <p className="text-sm text-muted-foreground">
+            100% satisfaction and code compliance guarantee on all deliverables.
+          </p>
+        </div>
+      </motion.div>
+    </Section>
   )
 }

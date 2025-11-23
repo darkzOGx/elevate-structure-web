@@ -1,9 +1,11 @@
 'use client'
 
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { PremiumCard } from '@/components/ui/PremiumCard'
+import { Section } from '@/components/ui/Section'
 import { SERVICES, KEYWORDS } from '@/lib/constants'
 
 export function Services() {
@@ -14,125 +16,125 @@ export function Services() {
     }
   }
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+  }
+
   return (
-    <section id="services" className="py-16 lg:py-24">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        {/* Section Header */}
-        <div className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="mb-4">
+    <Section id="services" className="bg-muted/10">
+      <div className="text-center space-y-4 mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
             Our Expertise
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Our {KEYWORDS.primary.charAt(0).toUpperCase() + KEYWORDS.primary.slice(1)}
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
+            Our <span className="text-gradient">{KEYWORDS.primary.charAt(0).toUpperCase() + KEYWORDS.primary.slice(1)}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Comprehensive engineering solutions for residential and commercial projects.
             Our licensed Professional Engineers deliver innovative designs that meet
             all building codes and exceed industry standards.
           </p>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid gap-8 md:grid-cols-2">
-          {SERVICES.map((service) => (
-            <Card
-              key={service.id}
-              className="group relative overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
-            >
-              <CardHeader className="space-y-4">
-                {/* Service Icon */}
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-2xl">
-                  {service.icon}
-                </div>
-
-                {/* Service Title */}
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {service.title}
-                </CardTitle>
-
-                {/* Service Description */}
-                <CardDescription className="text-base">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent className="space-y-6">
-                {/* Features List */}
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
-                    Key Features
-                  </h4>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-2 text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* CTA Button */}
-                <Button
-                  variant="ghost"
-                  className="w-full justify-between group-hover:bg-primary group-hover:text-primary-foreground transition-all"
-                  onClick={scrollToContact}
-                >
-                  Learn More
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </CardContent>
-
-              {/* Hover Effect Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            </Card>
-          ))}
-        </div>
-
-        {/* Bottom CTA Section */}
-        <div className="text-center mt-16 space-y-6">
-          <div className="space-y-2">
-            <h3 className="text-2xl font-bold">
-              Ready to Start Your Engineering Project?
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Get a free consultation and detailed quote for your project. Our licensed
-              engineers are ready to help bring your vision to life with professional
-              design solutions.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={scrollToContact} className="px-8">
-              Get Free Consultation
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              View Portfolio
-            </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              Free initial consultation
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              24-hour response guarantee
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              Licensed Professional Engineers
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              100% code compliance
-            </div>
-          </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+        className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+      >
+        {SERVICES.map((service) => (
+          <PremiumCard
+            key={service.id}
+            variants={item}
+            className="flex flex-col h-full"
+          >
+            <div className="mb-6">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-3xl text-primary mb-4 shadow-inner">
+                {service.icon}
+              </div>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground">
+                {service.description}
+              </p>
+            </div>
+
+            <div className="space-y-4 flex-grow">
+              <div className="space-y-2">
+                <h4 className="font-semibold text-sm text-foreground/80 uppercase tracking-wider">
+                  Key Features
+                </h4>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <Button
+              variant="ghost"
+              className="w-full justify-between mt-8 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+              onClick={scrollToContact}
+            >
+              Learn More
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </PremiumCard>
+        ))}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4 }}
+        className="text-center mt-12 space-y-8 bg-background/50 backdrop-blur-sm p-8 rounded-3xl border border-border/50"
+      >
+        <div className="space-y-2">
+          <h3 className="text-2xl font-bold">
+            Ready to Start Your Engineering Project?
+          </h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Get a free consultation and detailed quote for your project. Our licensed
+            engineers are ready to help bring your vision to life with professional
+            design solutions.
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" onClick={scrollToContact} className="px-8 shadow-lg shadow-primary/20">
+            Get Free Consultation
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+          <Button variant="outline" size="lg" className="px-8">
+            View Portfolio
+          </Button>
+        </div>
+      </motion.div>
+    </Section>
   )
 }

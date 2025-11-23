@@ -20,6 +20,8 @@ Use this skill when the user requests:
 
 ## Workflow: Generating 5 Daily Blog Posts
 
+**IMPORTANT: After generating blog posts, always submit them to Bing/IndexNow for instant indexing (see Step 6).**
+
 ### Step 1: Read Required References
 
 **CRITICAL - Always read these files FIRST:**
@@ -160,13 +162,48 @@ Create 5 separate markdown files:
 
 Then move to /mnt/user-data/outputs/ for user download.
 
-### Step 6: Post-Generation Summary
+### Step 6: Submit to Bing/IndexNow
+
+**After generating blog posts, submit them for instant indexing:**
+
+**Option 1: Submit Single Blog Post**
+```bash
+node scripts/submit-blog-to-indexnow.js [slug]
+```
+Example:
+```bash
+node scripts/submit-blog-to-indexnow.js "structural-engineer-long-beach"
+```
+
+**Option 2: Submit Multiple Blog Posts**
+```bash
+node scripts/submit-new-blogs-to-indexnow.js
+```
+This script submits the most recent batch of blog posts to IndexNow API, which automatically notifies:
+- Bing
+- Yandex
+- Seznam.cz
+- Naver
+
+**IndexNow Benefits:**
+- Instant search engine notification (vs waiting for crawl)
+- Typically indexed within 24-48 hours
+- Free service (no API costs)
+- Works across multiple search engines simultaneously
+
+**Verification:**
+- Check Bing Webmaster Tools in 24-48 hours to verify indexing
+- URLs will appear in "URL Inspection" tool
+- Indexed pages show in search results typically within 2-3 days
+
+### Step 7: Post-Generation Summary
 
 Provide:
 1. Keywords used with intent types
 2. Cities targeted
 3. Internal links created
 4. Recommendations for next batch
+5. IndexNow submission status and URLs submitted
 
 ## Key Principles
 
