@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { FadeInSection } from '@/components/FadeInSection'
 import type { BlogPost } from '@/lib/blog-data'
 import { BLOG_COLOR_MAP } from '@/lib/generate-placeholder-images'
@@ -16,6 +16,8 @@ interface BlogFilterClientProps {
   posts: BlogPost[]
 }
 
+const POSTS_PER_PAGE = 10
+
 function getCategoryColor(category: string): string {
   return BLOG_COLOR_MAP[category] || '#0ea5e9'
 }
@@ -25,6 +27,7 @@ export default function BlogFilterClient({
   posts,
 }: BlogFilterClientProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
+  const [currentPage, setCurrentPage] = useState<number>(1)
 
   // Check if post is new (less than 7 days old)
   const isNewPost = (dateString: string) => {
@@ -40,14 +43,34 @@ export default function BlogFilterClient({
     ? posts
     : posts.filter(post => post.category === selectedCategory)
 
+  // Pagination calculations
+  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE
+  const endIndex = startIndex + POSTS_PER_PAGE
+  const paginatedPosts = filteredPosts.slice(startIndex, endIndex)
+
+  // Handle category change - reset to page 1
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category)
+    setCurrentPage(1)
+  }
+
+  const goToPreviousPage = () => {
+    setCurrentPage(prev => Math.max(prev - 1, 1))
+  }
+
+  const goToNextPage = () => {
+    setCurrentPage(prev => Math.min(prev + 1, totalPages))
+  }
+
   return (
     <>
       {/* Category Filter */}
-      <div className="flex flex-wrap gap-2 justify-center mb-12">
+      <div className="flex flex-wrap gap-2 justify-center mb-8">
         {categories.map((category) => (
           <button
             key={category}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               selectedCategory === category
                 ? 'bg-primary text-primary-foreground shadow-md'
@@ -59,10 +82,43 @@ export default function BlogFilterClient({
         ))}
       </div>
 
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-4 mb-8">
+          <button
+            onClick={goToPreviousPage}
+            disabled={currentPage === 1}
+            className={`p-2 rounded-full transition-all ${
+              currentPage === 1
+                ? 'text-muted-foreground/40 cursor-not-allowed'
+                : 'text-primary hover:bg-primary/10 hover:text-primary'
+            }`}
+            aria-label="Previous page"
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </button>
+          <span className="text-sm text-muted-foreground">
+            Page {currentPage} of {totalPages}
+          </span>
+          <button
+            onClick={goToNextPage}
+            disabled={currentPage === totalPages}
+            className={`p-2 rounded-full transition-all ${
+              currentPage === totalPages
+                ? 'text-muted-foreground/40 cursor-not-allowed'
+                : 'text-primary hover:bg-primary/10 hover:text-primary'
+            }`}
+            aria-label="Next page"
+          >
+            <ChevronRight className="h-6 w-6" />
+          </button>
+        </div>
+      )}
+
       {/* Filtered Posts Grid */}
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        {filteredPosts.length > 0 ? (
-          filteredPosts.map((post, index) => {
+        {paginatedPosts.length > 0 ? (
+          paginatedPosts.map((post, index) => {
             const categoryColor = getCategoryColor(post.category)
             return (
               <FadeInSection key={post.id} delay={index * 100}>
