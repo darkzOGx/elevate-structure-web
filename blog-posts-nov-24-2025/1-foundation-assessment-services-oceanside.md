@@ -1,14 +1,21 @@
----
-title: "Foundation Assessment Services in Oceanside: Expert Evaluation Guide 2025"
-excerpt: "Need foundation assessment services in Oceanside? Learn what professional foundation engineers evaluate, costs, warning signs, and how to protect your San Diego County property."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["foundation assessment Oceanside", "foundation evaluation San Diego County", "foundation inspection services", "foundation engineer Oceanside"]
----
+{
+  "category": "Foundation Engineering",
+  "title": "Foundation Assessment Services in Oceanside: Expert Evaluation Guide 2025",
+  "publishDate": "November 24, 2025",
+  "readTime": "10 min read",
+  "author": "AAA Engineering Team",
+  "metaDescription": "Need foundation assessment services in Oceanside? Learn what professional foundation engineers evaluate, costs, warning signs, and how to protect your San Diego County property.",
+  "keywords": [
+    "foundation assessment Oceanside",
+    "foundation evaluation San Diego County",
+    "foundation inspection services",
+    "foundation engineer Oceanside"
+  ],
+  "topicCluster": "foundation-engineering",
+  "hubPage": "foundation-engineering-guide"
+}
 
-# Foundation Assessment Services in Oceanside: Expert Evaluation Guide 2025
+---
 
 **Updated: November 2025**
 

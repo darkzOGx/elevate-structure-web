@@ -1,11 +1,23 @@
----
-title: "Structural Inspection Near Me in Villa Park: Expert Building Evaluation 2025"
-excerpt: "Need structural inspection in Villa Park? Learn what structural inspectors check, when inspections are required, costs, and how to find qualified inspection services in Orange County."
-category: "Structural Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["structural inspection near me", "structural inspection Villa Park", "building inspection Orange County", "structural engineer inspection"]
+{
+  "title": "Structural Inspection Near Me in Villa Park: Expert Building Evaluation 2025",
+  "excerpt": "Need structural inspection in Villa Park? Learn what structural inspectors check, when inspections are required, costs, and how to find qualified inspection services in Orange County.",
+  "category": "Structural Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "structural inspection near me",
+    "structural inspection Villa Park",
+    "building inspection Orange County",
+    "structural engineer inspection"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Structural Inspection Near Me in Villa Park: Expert Building Evaluation 2025

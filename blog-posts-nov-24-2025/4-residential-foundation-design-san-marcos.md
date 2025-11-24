@@ -1,11 +1,23 @@
----
-title: "Residential Foundation Design in San Marcos: Complete Engineering Guide 2025"
-excerpt: "Planning new construction in San Marcos? Expert guide to residential foundation design types, engineering requirements, costs, and choosing the right foundation for San Diego County properties."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
-keywords: ["residential foundation design San Marcos", "foundation engineering", "home foundation San Diego", "foundation design services"]
+{
+  "title": "Residential Foundation Design in San Marcos: Complete Engineering Guide 2025",
+  "excerpt": "Planning new construction in San Marcos? Expert guide to residential foundation design types, engineering requirements, costs, and choosing the right foundation for San Diego County properties.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "residential foundation design San Marcos",
+    "foundation engineering",
+    "home foundation San Diego",
+    "foundation design services"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Residential Foundation Design in San Marcos: Complete Engineering Guide 2025

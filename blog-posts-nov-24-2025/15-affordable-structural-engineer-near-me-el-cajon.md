@@ -1,11 +1,23 @@
----
-title: "Affordable Structural Engineer Near Me in El Cajon: Quality Services Within Budget 2025"
-excerpt: "Need an affordable structural engineer in El Cajon? Learn how to find quality engineering services within your budget, what affects costs, and get competitive quotes in San Diego County."
-category: "Structural Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
-keywords: ["affordable structural engineer near me", "cheap structural engineer El Cajon", "budget structural engineering", "structural engineer cost San Diego"]
+{
+  "title": "Affordable Structural Engineer Near Me in El Cajon: Quality Services Within Budget 2025",
+  "excerpt": "Need an affordable structural engineer in El Cajon? Learn how to find quality engineering services within your budget, what affects costs, and get competitive quotes in San Diego County.",
+  "category": "Structural Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "affordable structural engineer near me",
+    "cheap structural engineer El Cajon",
+    "budget structural engineering",
+    "structural engineer cost San Diego"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Affordable Structural Engineer Near Me in El Cajon: Quality Services Within Budget 2025

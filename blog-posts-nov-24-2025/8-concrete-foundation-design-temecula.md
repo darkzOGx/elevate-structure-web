@@ -1,11 +1,23 @@
----
-title: "Concrete Foundation Design in Temecula: Engineering Guide 2025"
-excerpt: "Planning concrete foundation construction in Temecula? Expert guide to foundation types, concrete specifications, reinforcement requirements, and engineering for Riverside County wine country."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
-keywords: ["concrete foundation design Temecula", "foundation concrete Riverside", "concrete slab foundation", "foundation engineering Temecula"]
+{
+  "title": "Concrete Foundation Design in Temecula: Engineering Guide 2025",
+  "excerpt": "Planning concrete foundation construction in Temecula? Expert guide to foundation types, concrete specifications, reinforcement requirements, and engineering for Riverside County wine country.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "concrete foundation design Temecula",
+    "foundation concrete Riverside",
+    "concrete slab foundation",
+    "foundation engineering Temecula"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Concrete Foundation Design in Temecula: Engineering Guide 2025

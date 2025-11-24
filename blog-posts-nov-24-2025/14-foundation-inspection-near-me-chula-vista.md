@@ -1,11 +1,23 @@
----
-title: "Foundation Inspection Near Me in Chula Vista: Complete Expert Guide 2025"
-excerpt: "Looking for foundation inspection in Chula Vista? Learn what professional inspectors evaluate, when you need inspection, costs, and how to protect your San Diego County property."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["foundation inspection near me", "foundation inspection Chula Vista", "foundation engineer inspection", "home foundation inspection San Diego"]
+{
+  "title": "Foundation Inspection Near Me in Chula Vista: Complete Expert Guide 2025",
+  "excerpt": "Looking for foundation inspection in Chula Vista? Learn what professional inspectors evaluate, when you need inspection, costs, and how to protect your San Diego County property.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "foundation inspection near me",
+    "foundation inspection Chula Vista",
+    "foundation engineer inspection",
+    "home foundation inspection San Diego"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Foundation Inspection Near Me in Chula Vista: Complete Expert Guide 2025

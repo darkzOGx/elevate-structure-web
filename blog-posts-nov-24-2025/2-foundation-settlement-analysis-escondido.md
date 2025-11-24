@@ -1,11 +1,23 @@
----
-title: "Foundation Settlement Analysis in Escondido: Complete Engineering Guide 2025"
-excerpt: "Worried about foundation settlement in Escondido? Expert analysis of settlement types, causes, warning signs, and professional engineering solutions for San Diego County properties."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=800&q=80"
-keywords: ["foundation settlement Escondido", "foundation sinking analysis", "settlement engineering San Diego", "foundation settlement repair"]
+{
+  "title": "Foundation Settlement Analysis in Escondido: Complete Engineering Guide 2025",
+  "excerpt": "Worried about foundation settlement in Escondido? Expert analysis of settlement types, causes, warning signs, and professional engineering solutions for San Diego County properties.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "foundation settlement Escondido",
+    "foundation sinking analysis",
+    "settlement engineering San Diego",
+    "foundation settlement repair"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Foundation Settlement Analysis in Escondido: Complete Engineering Guide 2025

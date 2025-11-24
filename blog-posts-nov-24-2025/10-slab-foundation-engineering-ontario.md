@@ -1,11 +1,23 @@
----
-title: "Slab Foundation Engineering in Ontario: Complete Design Guide 2025"
-excerpt: "Planning slab foundation construction in Ontario, CA? Expert guide to slab types, engineering requirements, soil considerations, and costs for San Bernardino County properties."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
-keywords: ["slab foundation Ontario CA", "slab foundation engineering", "concrete slab design", "foundation design Ontario"]
+{
+  "title": "Slab Foundation Engineering in Ontario: Complete Design Guide 2025",
+  "excerpt": "Planning slab foundation construction in Ontario, CA? Expert guide to slab types, engineering requirements, soil considerations, and costs for San Bernardino County properties.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "slab foundation Ontario CA",
+    "slab foundation engineering",
+    "concrete slab design",
+    "foundation design Ontario"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Slab Foundation Engineering in Ontario: Complete Design Guide 2025

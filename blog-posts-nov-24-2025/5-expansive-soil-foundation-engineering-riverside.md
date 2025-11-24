@@ -1,11 +1,23 @@
----
-title: "Expansive Soil Foundation Engineering in Riverside: Expert Solutions 2025"
-excerpt: "Building on expansive clay soils in Riverside? Learn about foundation design for swelling soils, engineering solutions, costs, and how to protect your Inland Empire property."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
-keywords: ["expansive soil foundation Riverside", "clay soil foundation engineering", "swelling soil foundation", "Riverside foundation design"]
+{
+  "title": "Expansive Soil Foundation Engineering in Riverside: Expert Solutions 2025",
+  "excerpt": "Building on expansive clay soils in Riverside? Learn about foundation design for swelling soils, engineering solutions, costs, and how to protect your Inland Empire property.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "expansive soil foundation Riverside",
+    "clay soil foundation engineering",
+    "swelling soil foundation",
+    "Riverside foundation design"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Expansive Soil Foundation Engineering in Riverside: Expert Solutions 2025

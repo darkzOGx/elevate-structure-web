@@ -1,11 +1,23 @@
----
-title: "Hillside Foundation Engineering in Moreno Valley: Expert Guide 2025"
-excerpt: "Building on a hillside in Moreno Valley? Learn about slope stability, foundation types, retaining walls, and engineering requirements for safe hillside construction in Riverside County."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80"
-keywords: ["hillside foundation Moreno Valley", "slope foundation engineering", "hillside construction Riverside County", "foundation on slope"]
+{
+  "title": "Hillside Foundation Engineering in Moreno Valley: Expert Guide 2025",
+  "excerpt": "Building on a hillside in Moreno Valley? Learn about slope stability, foundation types, retaining walls, and engineering requirements for safe hillside construction in Riverside County.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "hillside foundation Moreno Valley",
+    "slope foundation engineering",
+    "hillside construction Riverside County",
+    "foundation on slope"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Hillside Foundation Engineering in Moreno Valley: Expert Guide 2025

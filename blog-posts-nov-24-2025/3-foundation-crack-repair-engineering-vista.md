@@ -1,11 +1,23 @@
----
-title: "Foundation Crack Repair Engineering in Vista: Expert Solutions 2025"
-excerpt: "Dealing with foundation cracks in Vista? Learn which cracks are serious, repair methods, engineering requirements, and costs for professional foundation crack repair in San Diego County."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["foundation crack repair Vista", "foundation crack engineer", "foundation cracks San Diego", "crack repair engineering"]
+{
+  "title": "Foundation Crack Repair Engineering in Vista: Expert Solutions 2025",
+  "excerpt": "Dealing with foundation cracks in Vista? Learn which cracks are serious, repair methods, engineering requirements, and costs for professional foundation crack repair in San Diego County.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "foundation crack repair Vista",
+    "foundation crack engineer",
+    "foundation cracks San Diego",
+    "crack repair engineering"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Foundation Crack Repair Engineering in Vista: Expert Solutions 2025

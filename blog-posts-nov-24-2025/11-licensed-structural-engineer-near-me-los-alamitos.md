@@ -1,11 +1,23 @@
----
-title: "Licensed Structural Engineer Near Me in Los Alamitos: Find Local PE Experts 2025"
-excerpt: "Looking for a licensed structural engineer near you in Los Alamitos? Learn how to verify PE credentials, what licensed engineers do, costs, and find qualified local structural engineering experts."
-category: "Structural Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["licensed structural engineer near me", "structural engineer Los Alamitos", "PE structural engineer", "licensed engineer Orange County"]
+{
+  "title": "Licensed Structural Engineer Near Me in Los Alamitos: Find Local PE Experts 2025",
+  "excerpt": "Looking for a licensed structural engineer near you in Los Alamitos? Learn how to verify PE credentials, what licensed engineers do, costs, and find qualified local structural engineering experts.",
+  "category": "Structural Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "licensed structural engineer near me",
+    "structural engineer Los Alamitos",
+    "PE structural engineer",
+    "licensed engineer Orange County"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Licensed Structural Engineer Near Me in Los Alamitos: Find Local PE Experts 2025

@@ -1,11 +1,23 @@
----
-title: "Foundation Underpinning Services in Corona: Expert Repair Solutions 2025"
-excerpt: "Need foundation underpinning in Corona? Learn about underpinning methods, when it's required, costs, and how to stabilize settling foundations in Riverside County."
-category: "Foundation Engineering"
-publishDate: "2025-11-24"
-author: "AAA Engineering Team"
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-keywords: ["foundation underpinning Corona", "foundation stabilization", "underpinning contractor Riverside", "foundation repair Corona"]
+{
+  "title": "Foundation Underpinning Services in Corona: Expert Repair Solutions 2025",
+  "excerpt": "Need foundation underpinning in Corona? Learn about underpinning methods, when it's required, costs, and how to stabilize settling foundations in Riverside County.",
+  "category": "Foundation Engineering",
+  "publishDate": "2025-11-24",
+  "author": "AAA Engineering Team",
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "keywords": [
+    "foundation underpinning Corona",
+    "foundation stabilization",
+    "underpinning contractor Riverside",
+    "foundation repair Corona"
+  ],
+  "schema": {
+    "articleType": "TechnicalArticle",
+    "professionalService": true,
+    "localBusiness": true
+  }
+}
+
 ---
 
 # Foundation Underpinning Services in Corona: Expert Repair Solutions 2025
