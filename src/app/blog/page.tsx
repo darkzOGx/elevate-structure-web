@@ -8,7 +8,6 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, BookOpen } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { getFeaturedPosts, getAllPosts, BLOG_CATEGORIES } from '@/lib/blog-data'
 import BlogFilterClient from '@/components/BlogFilterClient'
 import { FeaturedArticlesCarousel } from '@/components/FeaturedArticlesCarousel'
@@ -26,7 +25,6 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
       <Header />
 
       <main>

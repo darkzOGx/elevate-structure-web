@@ -19,7 +19,6 @@ import {
 } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { getServiceById, getAllServices } from '@/lib/services-data'
 import { generateBreadcrumbSchema, generateFAQPageSchema, generateHowToSchema } from '@/lib/schema-data'
 
@@ -136,7 +135,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
       />
 
       <div className="min-h-screen bg-background relative">
-        <AnimatedBackground />
         <Header />
 
         <main>

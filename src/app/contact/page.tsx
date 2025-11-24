@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ContactForm } from '@/components/ContactForm'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { FadeInSection } from '@/components/FadeInSection'
 import { COMPANY_INFO } from '@/lib/constants'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
@@ -25,7 +24,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
       <Header />
 
       <main>

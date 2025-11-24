@@ -1,0 +1,165 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "[SERVICE_NAME] in [CITY]",
+  "description": "[SERVICE_DESCRIPTION] serving [CITY] and surrounding [REGION] communities. Licensed California Professional Engineers providing [KEY_SERVICES].",
+  "serviceType": "[SERVICE_TYPE]",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://aaaengineeringdesign.com/#organization",
+    "name": "AAA Engineering Design",
+    "image": "https://aaaengineeringdesign.com/logo.png",
+    "telephone": "+1-949-981-4448",
+    "email": "info@aaaengineeringdesign.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[STREET_ADDRESS]",
+      "addressLocality": "Stanton",
+      "addressRegion": "CA",
+      "postalCode": "90680",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.8025",
+      "longitude": "-117.9931"
+    },
+    "priceRange": "$$-$$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ]
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "[PRIMARY_CITY]",
+      "sameAs": "https://en.wikipedia.org/wiki/[PRIMARY_CITY]"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "[COUNTY] County",
+      "sameAs": "https://en.wikipedia.org/wiki/[COUNTY]_County,_California"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engineering Services in [CITY]",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Free Initial Consultation",
+          "description": "Complimentary phone or in-person consultation to discuss your engineering needs"
+        },
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "[PRIMARY_SERVICE_1]",
+          "description": "[SERVICE_1_DESCRIPTION]"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "[PRICE_RANGE_1]",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "[PRIMARY_SERVICE_2]",
+          "description": "[SERVICE_2_DESCRIPTION]"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "[PRICE_RANGE_2]",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://aaaengineeringdesign.com/contact?service=[SERVICE_SLUG]&city=[CITY_SLUG]",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Free Consultation Booking"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "[REVIEW_COUNT]",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "[REVIEWER_NAME]"
+      },
+      "reviewBody": "[REVIEW_TEXT]"
+    }
+  ]
+}
+
+/**
+ * USAGE INSTRUCTIONS:
+ *
+ * Replace the following placeholders:
+ *
+ * [SERVICE_NAME] - e.g., "ADU Structural Engineering"
+ * [CITY] - e.g., "Newport Beach"
+ * [SERVICE_DESCRIPTION] - Brief description of the service
+ * [REGION] - e.g., "Orange County"
+ * [KEY_SERVICES] - e.g., "structural engineering, PE-stamped plans, permit coordination"
+ * [SERVICE_TYPE] - e.g., "StructuralEngineering", "CivilEngineering"
+ * [PRIMARY_CITY] - Same as [CITY]
+ * [COUNTY] - e.g., "Orange"
+ * [PRIMARY_SERVICE_1] - e.g., "ADU Structural Plans"
+ * [SERVICE_1_DESCRIPTION] - Description of first service
+ * [PRICE_RANGE_1] - e.g., "2500-5000"
+ * [PRIMARY_SERVICE_2] - e.g., "Foundation Engineering"
+ * [SERVICE_2_DESCRIPTION] - Description of second service
+ * [PRICE_RANGE_2] - e.g., "3000-6000"
+ * [SERVICE_SLUG] - e.g., "adu-engineering"
+ * [CITY_SLUG] - e.g., "newport-beach"
+ * [REVIEW_COUNT] - e.g., "127"
+ * [REVIEWER_NAME] - e.g., "John D."
+ * [REVIEW_TEXT] - Customer review text
+ *
+ * SERVICE_TYPE options:
+ * - StructuralEngineering
+ * - CivilEngineering
+ * - FoundationEngineering
+ * - SeismicRetrofitting
+ * - ADUEngineering
+ * - MEPEngineering
+ * - CommercialEngineering
+ * - ResidentialEngineering
+ */

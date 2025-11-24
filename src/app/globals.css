@@ -178,24 +178,105 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-600;
   }
 
-  .text-deep-engineering {
-    /* Logo Palette: Tan top, Olive bottom (U-shape distribution) */
-    background: radial-gradient(ellipse at top, #e6d2b5 20%, #556b2f 60%, #3b4a2a 100%); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: 
-      drop-shadow(2px 2px 0px #2f3a20)
-      drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  /* Hero Text - Specific sizing logic */
+  .hero-text-premium {
+    /* Fluid Typography using clamp() */
+    /* Scales from 3rem (mobile) to 5.5rem (desktop) */
+    font-size: clamp(3rem, 5vw + 1rem, 5.5rem);
+    line-height: 1.1;
   }
   
-  .dark .text-deep-engineering {
-    background: radial-gradient(ellipse at top, #e6d2b5 20%, #556b2f 60%, #3b4a2a 100%);
+  .hero-text-premium,
+  .premium-text-effect {
+    /* --- CSS Custom Properties for Theming --- */
+    
+    /* 
+     * Light Mode Palette: Forest Green & Cream (Premium, Organic, Professional)
+     * Inspired by: High-end Real Estate / Construction aesthetic
+     */
+    --ht-gradient-start: #2C3E34;  /* Deep Charcoal/Dark Forest Green */
+    --ht-gradient-mid:   #4A5D3A;  /* Muted Forest Green (Brand Primary) */
+    --ht-gradient-end:   #3B4A2A;  /* Dark Olive Green (Depth) */
+    
+    /* Metallic Accents for Emboss Effect */
+    --ht-shadow-highlight: rgba(255, 255, 255, 0.9); /* Crisp White Highlight */
+    --ht-shadow-depth:     rgba(30, 40, 35, 0.8);    /* Deep Dark Green Shadow */
+    --ht-shadow-ambient:   rgba(0, 0, 0, 0.5);       /* Strong Ambient Drop Shadow */
+    
+    /* Typography & Rendering */
+    font-weight: 900; /* UltraBold for maximum impact */
+    letter-spacing: -0.02em; /* Tight tracking for impact */
+    
+    /* --- The Magic: Gradient Body --- */
+    background-image: linear-gradient(
+      135deg,
+      var(--ht-gradient-start) 0%,
+      var(--ht-gradient-mid) 40%,
+      var(--ht-gradient-end) 100%
+    );
+    background-size: 200% auto; /* For subtle animation */
+    
+    /* Clip background to text */
     -webkit-background-clip: text;
     background-clip: text;
+    
+    /* Make text transparent so background shows through */
     color: transparent;
+    
+    /* --- The Emboss & Depth Effect --- */
     filter: 
-      drop-shadow(2px 2px 0px #1a2014)
-      drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+      /* 1. Top-left Highlight (Crisp Bevel Edge) */
+      drop-shadow(-2px -2px 0px var(--ht-shadow-highlight))
+      /* 2. Bottom-right Depth (Hard Bevel Edge) */
+      drop-shadow(2px 2px 1px var(--ht-shadow-depth))
+      /* 3. Strong Drop Shadow (Lift from background) */
+      drop-shadow(4px 4px 8px var(--ht-shadow-ambient));
+      
+    /* --- Performance & Optimization --- */
+    will-change: background-position, transform, filter;
+    transform: translateZ(0); /* Hardware accelerate */
+    -webkit-font-smoothing: antialiased;
+    
+    /* --- Animation --- */
+    animation: premium-shine 8s ease-in-out infinite;
+  }
+  
+  .premium-text-effect {
+     line-height: 1.2;
+  }
+
+  /* Dark Mode Overrides for Premium Text Effect */
+  .dark .premium-text-effect,
+  .dark .hero-text-premium {
+    /* 
+     * Dark Mode Palette: Metallic Champagne & Bronze
+     * Maintains the premium feel in dark mode with luxurious metallics
+     */
+    --ht-gradient-start: #F7E7CE;  /* Champagne (Light) */
+    --ht-gradient-mid:   #D4AF37;  /* Warm Gold/Brass (Mid) */
+    --ht-gradient-end:   #CD7F32;  /* Bronze (Depth) */
+    
+    --ht-shadow-highlight: rgba(255, 255, 255, 0.2); /* White/Silver Highlight */
+    --ht-shadow-depth:     rgba(0, 0, 0, 0.6);       /* Deep Shadow */
+    --ht-shadow-ambient:   rgba(212, 175, 55, 0.15); /* Gold Glow */
+  }
+
+  @keyframes premium-shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Support for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .premium-text-effect {
+      animation: none;
+    }
   }
 }

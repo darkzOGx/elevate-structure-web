@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, Phone, Mail, Flame, ChevronRight } from 'lucide-react'
-import { motion, useScroll } from 'framer-motion'
+import { useScroll } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { COMPANY_INFO } from '@/lib/constants'
@@ -49,21 +49,19 @@ export function Header() {
   return (
     <>
       {/* Wildfire Support Banner */}
-      <motion.div
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: 'auto', opacity: 1 }}
+      <div
         className="relative z-50 bg-gradient-to-r from-orange-600 to-red-600 text-white py-2 px-4 text-center text-sm font-medium shadow-md"
       >
         <div className="container mx-auto max-w-7xl flex items-center justify-center gap-2">
-          <Flame className="h-4 w-4 animate-pulse" />
+          <Flame className="h-4 w-4" />
           <span>We&apos;re providing dedicated support to homeowners affected by the LA wildfires.</span>
           <Link href="/fire" className="underline decoration-white/50 hover:decoration-white transition-all ml-2 flex items-center">
             Learn More <ChevronRight className="h-3 w-3 ml-0.5" />
           </Link>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.header
+      <header
         className={cn(
           "sticky top-0 z-40 w-full transition-all duration-300 border-b border-transparent",
           isScrolled ? "bg-background/80 backdrop-blur-xl border-border/50 shadow-sm py-2" : "bg-transparent py-4"
@@ -205,7 +203,7 @@ export function Header() {
             </Sheet>
           </div>
         </div>
-      </motion.header>
+      </header>
     </>
   )
 }

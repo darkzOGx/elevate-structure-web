@@ -89,10 +89,10 @@ export function RecentProjects() {
             Our Portfolio
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-            Recent <span className="text-gradient">Engineering Projects</span>
+            Recent Engineering Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Explore our diverse portfolio of structural engineering achievements, 
+            Explore our diverse portfolio of structural engineering achievements,
             from custom homes to complex commercial developments.
           </p>
         </motion.div>

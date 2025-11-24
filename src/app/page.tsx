@@ -8,7 +8,6 @@ import { RecentProjects } from '@/components/RecentProjects'
 import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 import { Footer } from '@/components/Footer'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { homepageSchema } from '@/lib/schema-data'
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
       />
       <div className="min-h-screen bg-background relative">
-        <AnimatedBackground />
         <Header />
       <main>
         <Hero />

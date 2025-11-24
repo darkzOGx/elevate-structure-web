@@ -18,6 +18,18 @@ Use this skill when the user requests:
 - Local SEO optimized articles
 - AI Overview (AIO) optimized content
 
+## ⚠️ SMART MODE IS NOW DEFAULT
+
+**When the user asks to "generate blogs" or "create blog posts", ALWAYS use Smart Mode automatically.**
+
+Smart Mode ensures:
+- Data-driven keyword selection (GSC + Bing Lead Gen Scores)
+- Optimal keyword+city pairing for maximum conversions
+- Automatic cluster prioritization
+- High-intent "near me" keywords included
+
+**You do NOT need the user to explicitly say "smart mode" - it's automatic.**
+
 ## Workflow: Generating Daily Blog Posts
 
 **⚠️ PERMANENT PRIORITY RULE: Complete Underpacked Clusters First!**
@@ -48,6 +60,82 @@ When user requests N blog posts, **ALWAYS generate N + 5 total posts:**
 - Format: `[keyword] near me in [city]`
 - Example: "Residential Structural Engineer Near Me in Newport Beach"
 - Rotates through topics: residential engineer, structural engineer, foundation engineer, ADU engineer, seismic retrofit engineer, MEP engineer, civil engineer, etc.
+
+### 🚀 SMART MODE: Data-Driven Auto-Generation (DEFAULT)
+
+**⚠️ SMART MODE IS NOW THE DEFAULT - Always use this workflow when generating blogs.**
+
+When generating blog posts, the system automatically:
+
+1. **Runs Opportunity Gap Analysis** (`node scripts/opportunity-gap-analyzer.js`)
+   - Identifies keywords at positions 11-30 (quick wins)
+   - Finds high-impression/low-CTR gaps to optimize
+   - Locates cities with insufficient coverage
+   - Checks cluster completion status
+
+2. **Fetches Fresh GSC + Bing Data** (if > 7 days old)
+   - Google Search Console keyword performance
+   - Bing Webmaster Tools data
+   - Combined lead generation scoring
+
+3. **Auto-Selects Optimal Keyword+City Pairs**
+   - Prioritizes Lead Gen Score 70+ keywords
+   - Matches high-value keywords to high-value cities
+   - Ensures underpacked clusters get filled first
+   - Avoids duplicate keyword+city combinations
+
+4. **Generates Optimized Batch**
+   - N posts for highest-priority opportunities
+   - +5 "near me" posts (always)
+   - All posts include conversion CTAs
+   - Schema markup auto-applied
+
+**Smart Mode Output:**
+```
+🧠 SMART MODE ANALYSIS
+═══════════════════════════════════════════════════════
+
+📊 Data Sources:
+   GSC: 150 keywords (updated 2 days ago)
+   Bing: 87 keywords (updated 5 days ago)
+   Gap Analysis: 23 high-priority opportunities
+
+🎯 Auto-Selected for This Batch:
+
+   CLUSTER PRIORITY: Commercial & Industrial (0/25 posts)
+
+   Keyword Selections (Lead Gen Score):
+   1. "commercial structural engineer orange county" (Score: 92)
+      → City: Irvine (high-value market)
+   2. "warehouse structural engineering california" (Score: 85)
+      → City: Ontario (logistics hub)
+   3. "tenant improvement engineer near me" (Score: 88)
+      → City: Costa Mesa (commercial center)
+   [...]
+
+   +5 Near Me Posts:
+   - emergency structural engineer near me → Newport Beach
+   - structural engineering quote near me → Anaheim
+   [...]
+
+   Total: 15 posts optimized for lead generation
+
+═══════════════════════════════════════════════════════
+```
+
+**Smart Mode is used automatically for:**
+- All blog generation requests
+- Weekly blog batches
+- Any request for "X blog posts"
+- Default behavior - no need to specify
+
+**Override Smart Mode only when user explicitly requests:**
+- Specific keywords they want to target
+- A specific event/season campaign
+- A very specific content gap to fill manually
+- User says "don't use smart mode" or "manual selection"
+
+---
 
 ### Step 0: Check Blog Tracking (MANDATORY - DO THIS FIRST!)
 
@@ -1260,6 +1348,183 @@ export function getFeaturedPosts(): BlogPost[] {
 ```
 
 If you see posts appearing inside function definitions, the script failed - restore and re-run.
+
+---
+
+## 📍 Local Pack & Google Maps Optimization (NEW)
+
+### Why Local Pack Matters for Lead Generation
+
+The Google Local Pack (3-pack map results) appears for 46% of all Google searches and has the highest click-through rates for local service queries. Capturing Local Pack positions for "near me" and city-specific searches is critical for lead generation.
+
+### Local Pack Optimization Checklist
+
+**For Every Geo-Targeted Blog Post:**
+
+1. **Include LocalBusiness Schema** (from `assets/schema-templates/local-business-schema.json`)
+   ```json
+   {
+     "@type": "LocalBusiness",
+     "name": "AAA Engineering Design",
+     "areaServed": {
+       "@type": "City",
+       "name": "[PRIMARY_CITY]"
+     }
+   }
+   ```
+
+2. **Add Service Schema** (from `assets/schema-templates/service-schema.json`)
+   - Links service to specific geographic area
+   - Includes pricing information where applicable
+   - Shows available offers (free consultation)
+
+3. **Include NAP Consistency**
+   - **N**ame: AAA Engineering Design
+   - **A**ddress: [Street], Stanton, CA 90680
+   - **P**hone: (949) 981-4448
+   - Must be identical across all posts and pages
+
+4. **Geographic Content Signals**
+   - City name in title (e.g., "Structural Engineer in Newport Beach")
+   - City name in H1 and at least 2 H2 headers
+   - City mentioned 15-20 times naturally throughout
+   - Nearby cities mentioned 5-8 times
+   - Local landmarks, neighborhoods referenced
+   - Building department URLs linked
+
+5. **Service Area Block** (add to every "near me" post)
+   ```markdown
+   ## Our [City] Service Area
+
+   AAA Engineering Design serves [City] and surrounding communities:
+
+   **Primary Service Area:**
+   - [City] - All neighborhoods
+   - [Nearby City 1] (X miles)
+   - [Nearby City 2] (X miles)
+   - [Nearby City 3] (X miles)
+
+   **Extended Service Area:**
+   - All of [County] County
+   - [Adjacent County] County
+
+   📍 **Office Location:** Stanton, CA (Central Orange County)
+   🚗 **Travel:** We provide on-site consultations throughout Southern California
+   ```
+
+### Google Business Profile Integration
+
+**For maximum Local Pack visibility, blog content should support GBP:**
+
+1. **Create GBP Posts** linking to blog articles
+   - Use blog excerpts as GBP post content
+   - Link to full article on website
+   - Target city-specific services
+
+2. **Q&A Content** from blogs should match GBP Q&A
+   - Extract FAQ questions from blog posts
+   - Add to Google Business Profile Q&A section
+   - Builds topical relevance
+
+3. **Review Keywords** - Encourage reviews mentioning:
+   - Service type (e.g., "ADU structural engineering")
+   - City name (e.g., "Newport Beach project")
+   - Helps GBP rank for those terms
+
+### City-Specific Landing Page Strategy
+
+**For highest-priority cities, consider dedicated landing pages:**
+
+| City | Priority | Reason |
+|------|----------|--------|
+| Newport Beach | Critical | Highest property values, most searches |
+| Irvine | Critical | Large population, tech hub |
+| San Diego | Critical | 2nd largest CA city |
+| Los Angeles | Critical | Largest market |
+| Anaheim | High | High volume, commercial hub |
+| Long Beach | High | Port city, industrial |
+| Pasadena | High | Historic homes, affluent |
+
+**Landing Page Structure:**
+```
+/locations/newport-beach/
+├── Main service overview for city
+├── Links to ALL Newport Beach blog posts
+├── City-specific testimonials
+├── Local building department info
+├── Service area map
+└── Prominent CTA
+```
+
+### Tracking Local Pack Performance
+
+**Monthly Check:**
+1. Search "[service] [city]" for top 10 cities
+2. Document Local Pack position (1, 2, 3, or not showing)
+3. Note organic position separately
+4. Track changes month-over-month
+
+**Example Tracking:**
+```
+| City | Service | Local Pack | Organic | Month |
+|------|---------|------------|---------|-------|
+| Newport Beach | structural engineer | #2 | #4 | Nov 2025 |
+| Irvine | ADU engineer | #1 | #2 | Nov 2025 |
+| Anaheim | foundation engineer | Not shown | #8 | Nov 2025 |
+```
+
+---
+
+## 📊 Lead Generation Scripts Reference
+
+### Available Scripts
+
+| Script | Purpose | Auto-Run |
+|--------|---------|----------|
+| `gsc-keyword-extractor.js` | Extract GSC keywords + Lead Gen Score | Weekly (7 days) |
+| `bing-webmaster-extractor.js` | Extract Bing keyword data | Weekly (7 days) |
+| `opportunity-gap-analyzer.js` | Find ranking/coverage gaps | On demand |
+| `submit-indexnow.js` | Submit URLs to search engines | Post-deploy |
+| `add-blog-posts.js` | Convert markdown to blog-data.ts | Post-generation |
+
+### Running Lead Gen Analysis
+
+**Full Analysis Pipeline:**
+```bash
+# 1. Extract fresh keyword data
+node scripts/gsc-keyword-extractor.js
+node scripts/bing-webmaster-extractor.js
+
+# 2. Analyze gaps and opportunities
+node scripts/opportunity-gap-analyzer.js
+
+# 3. Review output files
+cat gsc-extracted-keywords.json | jq '.summary'
+cat bing-extracted-keywords.json | jq '.summary'
+cat opportunity-gaps-report.json | jq '.priorityActions[:10]'
+```
+
+**Quick Priority Check:**
+```bash
+# See top lead gen opportunities
+cat gsc-extracted-keywords.json | jq '.prioritizedForBlogGen.immediate[:10]'
+
+# See underserved cities
+cat opportunity-gaps-report.json | jq '.gaps.coverageGaps[:10]'
+
+# See cluster status
+cat opportunity-gaps-report.json | jq '.gaps.clusterGaps'
+```
+
+### Output File Reference
+
+| File | Contents |
+|------|----------|
+| `gsc-extracted-keywords.json` | GSC keywords with Lead Gen Scores |
+| `bing-extracted-keywords.json` | Bing keywords with cross-platform data |
+| `opportunity-gaps-report.json` | Prioritized action items |
+| `.gsc-last-run.json` | Last GSC extraction timestamp |
+| `.bing-last-run.json` | Last Bing extraction timestamp |
 
 ---
 

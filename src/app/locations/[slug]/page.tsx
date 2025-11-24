@@ -25,7 +25,6 @@ import {
 } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { ContactForm } from '@/components/ContactForm'
 import { ScrollToContactButton } from '@/components/ScrollToContactButton'
 import { getLocationById, getAllLocations } from '@/lib/locations-data'
@@ -146,7 +145,6 @@ export default async function LocationPage({ params }: LocationPageProps) {
       />
 
       <div className="min-h-screen bg-background relative">
-        <AnimatedBackground />
         <Header />
 
         <main>

@@ -56,7 +56,7 @@ export function Testimonials() {
             Client Testimonials
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-            What Our <span className="text-gradient">Clients Say</span>
+            What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our clients have to say

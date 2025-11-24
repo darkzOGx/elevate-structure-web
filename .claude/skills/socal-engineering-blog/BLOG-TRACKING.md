@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 42/103
-- **Cycle 2 Cities Remaining**: 61/103
-- **Cycle 2 Completion**: 40.8%
+- **Cycle 2 Cities Used**: 57/103
+- **Cycle 2 Cities Remaining**: 46/103
+- **Cycle 2 Completion**: 55.3%
 
 ---
 
@@ -193,6 +193,21 @@
 | Foundation Engineer Near Me | Whittier | ✅ Published | Nov 24, 2025 | Cycle 2 |
 | ADU Structural Engineer Near Me | Rancho Palos Verdes | ✅ Published | Nov 24, 2025 | Cycle 2 |
 | Seismic Retrofit Engineer Near Me | Carlsbad | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Assessment Services | Oceanside | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Settlement Analysis | Escondido | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Crack Repair Engineering | Vista | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Residential Foundation Design | San Marcos | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Expansive Soil Foundation Engineering | Riverside | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Hillside Foundation Engineering | Moreno Valley | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Underpinning Services | Corona | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Concrete Foundation Design | Temecula | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Inspection Services | Rancho Cucamonga | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Slab Foundation Engineering | Ontario | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Licensed Structural Engineer Near Me | Los Alamitos | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Structural Engineering Quote Near Me | Laguna Woods | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Structural Inspection Near Me | Villa Park | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Inspection Near Me | Chula Vista | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Affordable Structural Engineer Near Me | El Cajon | ✅ Published | Nov 24, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 

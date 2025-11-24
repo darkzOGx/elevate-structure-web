@@ -222,6 +222,117 @@ async function extractRelatedSearches(query) {
 }
 
 /**
+ * Calculate Lead Generation Score for keyword prioritization
+ * Higher scores = better lead generation potential
+ * Scale: 0-100
+ */
+function calculateLeadGenScore(keyword, metrics) {
+  let score = 0;
+  const keywordLower = keyword.toLowerCase();
+
+  // === HIGH COMMERCIAL INTENT SIGNALS (+25 points each, max 75) ===
+  const highIntentWords = [
+    'cost', 'price', 'pricing', 'quote', 'estimate', 'free estimate',
+    'hire', 'hiring', 'find', 'looking for', 'need',
+    'near me', 'nearby', 'local', 'in my area',
+    'licensed', 'certified', 'professional',
+    'affordable', 'cheap', 'budget', 'reasonable',
+    'best', 'top', 'recommended', 'trusted',
+    'emergency', 'urgent', 'asap', 'same day',
+    'residential', 'commercial', 'industrial'
+  ];
+
+  let intentMatches = 0;
+  highIntentWords.forEach(word => {
+    if (keywordLower.includes(word) && intentMatches < 3) {
+      score += 25;
+      intentMatches++;
+    }
+  });
+
+  // === POSITION OPPORTUNITY SCORE (max 40 points) ===
+  // Position 5-15 = "striking distance" - easiest to improve to page 1
+  if (metrics.position >= 5 && metrics.position <= 10) {
+    score += 40; // Very close to top - high priority
+  } else if (metrics.position > 10 && metrics.position <= 15) {
+    score += 35; // Bottom of page 1 or top of page 2
+  } else if (metrics.position > 15 && metrics.position <= 20) {
+    score += 25; // Page 2 - moderate opportunity
+  } else if (metrics.position > 20 && metrics.position <= 30) {
+    score += 15; // Page 2-3 - needs more work
+  } else if (metrics.position <= 5) {
+    score += 20; // Already ranking well - maintain
+  }
+
+  // === CTR GAP OPPORTUNITY (max 25 points) ===
+  // High impressions + low CTR = content improvement opportunity
+  if (metrics.impressions > 1000 && metrics.ctr < 0.02) {
+    score += 25; // Major opportunity - lots of views, few clicks
+  } else if (metrics.impressions > 500 && metrics.ctr < 0.03) {
+    score += 20;
+  } else if (metrics.impressions > 200 && metrics.ctr < 0.04) {
+    score += 15;
+  } else if (metrics.impressions > 100 && metrics.ctr < 0.05) {
+    score += 10;
+  }
+
+  // === IMPRESSION VOLUME BONUS (max 20 points) ===
+  if (metrics.impressions > 2000) {
+    score += 20;
+  } else if (metrics.impressions > 1000) {
+    score += 15;
+  } else if (metrics.impressions > 500) {
+    score += 10;
+  } else if (metrics.impressions > 100) {
+    score += 5;
+  }
+
+  // === GEO/LOCAL SIGNALS (max 20 points) ===
+  const geoTerms = [
+    'orange county', 'los angeles', 'san diego', 'riverside', 'san bernardino',
+    'california', 'socal', 'southern california',
+    'irvine', 'newport beach', 'anaheim', 'santa ana', 'long beach',
+    'huntington beach', 'costa mesa', 'fullerton', 'garden grove'
+  ];
+
+  let geoMatches = 0;
+  geoTerms.forEach(term => {
+    if (keywordLower.includes(term) && geoMatches < 2) {
+      score += 10;
+      geoMatches++;
+    }
+  });
+
+  // === SERVICE-SPECIFIC KEYWORDS (max 15 points) ===
+  const serviceKeywords = [
+    'structural engineer', 'foundation', 'seismic', 'retrofit',
+    'adu', 'accessory dwelling', 'home addition', 'remodel',
+    'mep', 'civil engineer', 'permit', 'inspection',
+    'commercial', 'residential', 'industrial'
+  ];
+
+  let serviceMatches = 0;
+  serviceKeywords.forEach(term => {
+    if (keywordLower.includes(term) && serviceMatches < 3) {
+      score += 5;
+      serviceMatches++;
+    }
+  });
+
+  // === CONVERSION STAGE INDICATORS ===
+  // Bottom-of-funnel signals get bonus
+  if (keywordLower.includes('quote') || keywordLower.includes('estimate')) {
+    score += 10; // Ready to buy
+  }
+  if (keywordLower.includes('phone') || keywordLower.includes('contact') || keywordLower.includes('call')) {
+    score += 10; // Ready to reach out
+  }
+
+  // Cap at 100
+  return Math.min(score, 100);
+}
+
+/**
  * Categorize keyword based on intent and content
  */
 function categorizeKeyword(keyword, metrics) {
@@ -253,7 +364,10 @@ function categorizeKeyword(keyword, metrics) {
     difficulty = 'Medium';
   }
 
-  return { intent, volume, difficulty };
+  // Calculate lead generation score
+  const leadGenScore = calculateLeadGenScore(keyword, metrics);
+
+  return { intent, volume, difficulty, leadGenScore };
 }
 
 /**
@@ -383,13 +497,51 @@ async function main() {
 
     console.log(`\n✅ Extracted ${allKeywords.length} total keywords`);
 
-    // Step 4: Save results to JSON
+    // Step 4: Sort by Lead Gen Score (highest first) and save results
+    allKeywords.sort((a, b) => (b.leadGenScore || 0) - (a.leadGenScore || 0));
+
+    // Step 4.1: Generate prioritized keyword recommendations
+    const highPriorityKeywords = allKeywords.filter(k => k.leadGenScore >= 60);
+    const mediumPriorityKeywords = allKeywords.filter(k => k.leadGenScore >= 40 && k.leadGenScore < 60);
+    const opportunityGaps = allKeywords.filter(k =>
+      k.metrics && k.metrics.position > 10 && k.metrics.position <= 20 && k.metrics.impressions > 100
+    );
+
+    console.log(`\n📊 LEAD GENERATION PRIORITY ANALYSIS:`);
+    console.log(`   🔥 High Priority (Score 60+): ${highPriorityKeywords.length} keywords`);
+    console.log(`   ⚡ Medium Priority (Score 40-59): ${mediumPriorityKeywords.length} keywords`);
+    console.log(`   🎯 Position Opportunities (11-20, >100 imp): ${opportunityGaps.length} keywords`);
+
+    if (highPriorityKeywords.length > 0) {
+      console.log(`\n   Top 5 High-Priority Keywords for Lead Gen:`);
+      highPriorityKeywords.slice(0, 5).forEach((k, i) => {
+        console.log(`   ${i + 1}. "${k.keyword}" (Score: ${k.leadGenScore})`);
+      });
+    }
+
+    // Step 4.2: Save results to JSON with enhanced structure
     fs.writeFileSync(
       CONFIG.OUTPUT_PATH,
       JSON.stringify({
         generatedAt: new Date().toISOString(),
         totalKeywords: allKeywords.length,
-        keywords: allKeywords
+        summary: {
+          highPriority: highPriorityKeywords.length,
+          mediumPriority: mediumPriorityKeywords.length,
+          opportunityGaps: opportunityGaps.length,
+          topKeywords: highPriorityKeywords.slice(0, 10).map(k => ({
+            keyword: k.keyword,
+            leadGenScore: k.leadGenScore,
+            impressions: k.metrics?.impressions,
+            position: k.metrics?.position?.toFixed(1)
+          }))
+        },
+        keywords: allKeywords,
+        prioritizedForBlogGen: {
+          immediate: highPriorityKeywords.slice(0, 15).map(k => k.keyword),
+          secondary: mediumPriorityKeywords.slice(0, 15).map(k => k.keyword),
+          positionOpportunities: opportunityGaps.slice(0, 10).map(k => k.keyword)
+        }
       }, null, 2),
       'utf-8'
     );
@@ -427,4 +579,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { main, shouldRunGSCExtraction, fetchGSCQueries, extractRelatedSearches, addKeywordsToList };
+module.exports = { main, shouldRunGSCExtraction, fetchGSCQueries, extractRelatedSearches, addKeywordsToList, calculateLeadGenScore, categorizeKeyword };

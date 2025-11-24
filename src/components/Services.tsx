@@ -44,7 +44,7 @@ export function Services() {
             Our Expertise
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-            Our <span className="text-gradient">{KEYWORDS.primary.charAt(0).toUpperCase() + KEYWORDS.primary.slice(1)}</span>
+            Our Engineering Design Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Comprehensive engineering solutions for residential and commercial projects.

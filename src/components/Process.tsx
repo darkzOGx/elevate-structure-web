@@ -21,7 +21,7 @@ export function Process() {
             Our Process
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-            How Our <span className="text-gradient">Engineering Design</span> Process Works
+            How Our Engineering Design Process Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Our streamlined 4-step process ensures your project is completed efficiently,

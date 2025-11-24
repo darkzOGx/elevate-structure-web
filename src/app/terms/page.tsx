@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { FadeInSection } from '@/components/FadeInSection'
 import { COMPANY_INFO } from '@/lib/constants'
 
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
       <Header />
 
       <main className="py-16 lg:py-24">

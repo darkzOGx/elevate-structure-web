@@ -11,7 +11,6 @@ import { Badge } from '@/components/ui/badge'
 import { Calendar, Clock, ArrowLeft, ArrowRight, Phone, BookOpen } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
-import { AnimatedBackground } from '@/components/AnimatedBackground'
 import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
@@ -121,7 +120,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       <div className="min-h-screen bg-background relative">
-        <AnimatedBackground />
         <Header />
 
       <main>
