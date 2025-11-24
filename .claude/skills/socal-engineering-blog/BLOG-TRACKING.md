@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 22, 2025
+## Last Updated: November 24, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 30/103
-- **Cycle 2 Cities Remaining**: 73/103
-- **Cycle 2 Completion**: 29.1%
+- **Cycle 2 Cities Used**: 42/103
+- **Cycle 2 Cities Remaining**: 61/103
+- **Cycle 2 Completion**: 40.8%
 
 ---
 
@@ -181,6 +181,18 @@
 | Civil Engineer Near Me | Laguna Niguel | ✅ Published | Nov 22, 2025 | Cycle 2 |
 | Home Addition Structural Engineer Near Me | Fountain Valley | ✅ Published | Nov 22, 2025 | Cycle 2 |
 | Foundation Repair Engineer Near Me | Stanton | ✅ Published | Nov 22, 2025 | Cycle 2 |
+| MEP Engineering Design | Manhattan Beach | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Stormwater Design Engineer | Hermosa Beach | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Septic Design Engineers | Redondo Beach | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Grading and Drainage Plans | Torrance | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Civil Site Engineering | El Segundo | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Mechanical Engineering Design | Glendale | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Electrical Engineering Design | Burbank | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Residential Structural Engineer Near Me | Pasadena | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Structural Engineer Near Me | Downey | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Foundation Engineer Near Me | Whittier | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| ADU Structural Engineer Near Me | Rancho Palos Verdes | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Seismic Retrofit Engineer Near Me | Carlsbad | ✅ Published | Nov 24, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
