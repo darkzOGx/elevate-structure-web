@@ -7,6 +7,27 @@ description: Generate SEO-optimized, geo-targeted engineering design blog posts 
 
 Generate high-quality, SEO-optimized blog posts for AAA Engineering Design targeting Southern California cities with proper keyword integration, internal linking, and local SEO optimization.
 
+## ⛔ CRITICAL URL/SLUG RULE - READ FIRST
+
+**NEVER duplicate the city name in blog post IDs/slugs!**
+
+```
+❌ WRONG: adu-structural-engineering-in-newport-beach-newport-beach
+✅ CORRECT: adu-structural-engineering-in-newport-beach
+
+❌ WRONG: foundation-repair-in-irvine-irvine
+✅ CORRECT: foundation-repair-in-irvine
+```
+
+**The city should appear ONLY ONCE at the end of the slug after `-in-`**
+
+This rule applies to:
+- Blog post `id` field in blog-data.ts
+- Markdown filenames
+- All URL references
+
+---
+
 ## When to Use This Skill
 
 Use this skill when the user requests:
@@ -686,8 +707,14 @@ Generate IDs using this clean pattern:
 2. Convert to lowercase
 3. Replace spaces with hyphens
 4. Add `-in-` separator
-5. Add city name (kebab-case, single occurrence - NO duplication)
+5. Add city name (kebab-case) **⚠️ SINGLE OCCURRENCE ONLY - NEVER DUPLICATE THE CITY**
 6. Use kebab-case throughout (all lowercase, hyphens only)
+
+**⛔ STOP AND VERIFY: Does your ID end with the city name appearing TWICE?**
+```
+❌ BAD: deep-foundation-design-in-poway-poway     (poway appears twice!)
+✅ GOOD: deep-foundation-design-in-poway          (poway appears once)
+```
 
 **Examples:**
 - Keyword: "ADU Structural Engineering" + City: "Newport Beach"
@@ -1075,6 +1102,7 @@ Select 3 related articles:
 ### Step 6: Quality Control Checklist
 
 Verify each post has:
+- [ ] **⛔ SLUG/ID CHECK: City name appears ONLY ONCE (not duplicated like `city-city`)**
 - [ ] **Keyword+City combination verified as NEW in BLOG-TRACKING.md**
 - [ ] Primary keyword in title, H1, first paragraph, one H2
 - [ ] City name in title and 2+ H2 headers
@@ -1083,6 +1111,13 @@ Verify each post has:
 - [ ] Local building codes/regulations included
 - [ ] Schema markup included
 - [ ] Related articles section populated
+
+**⚠️ MANDATORY SLUG VERIFICATION:**
+Before proceeding, visually confirm EVERY blog post ID follows this pattern:
+```
+✅ keyword-phrase-in-city-name     (city appears ONCE)
+❌ keyword-phrase-in-city-name-city-name  (city appears TWICE - FIX THIS!)
+```
 
 ### Step 6.5: Featured Post Selection (AUTOMATIC)
 

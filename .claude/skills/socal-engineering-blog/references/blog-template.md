@@ -1,5 +1,25 @@
 # Blog Post Template - AAA Engineering Design
 
+## ⛔ CRITICAL: Blog Post ID/Slug Format
+
+**The city name must appear ONLY ONCE in the slug - NEVER duplicate it!**
+
+```
+✅ CORRECT FORMAT:
+   id: "adu-structural-engineering-in-newport-beach"
+   id: "foundation-repair-in-irvine"
+   id: "deck-structural-engineer-near-me-in-solana-beach"
+
+❌ WRONG FORMAT (NEVER DO THIS):
+   id: "adu-structural-engineering-in-newport-beach-newport-beach"
+   id: "foundation-repair-in-irvine-irvine"
+   id: "deck-structural-engineer-near-me-in-solana-beach-solana-beach"
+```
+
+**Pattern:** `{keyword-phrase}-in-{city-name}` → city appears ONCE at the end
+
+---
+
 ## Exact Structure (Based on Actual Blog Posts)
 
 ### File Metadata (JSON Front Matter)
