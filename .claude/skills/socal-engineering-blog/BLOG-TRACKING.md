@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 24, 2025
+## Last Updated: November 25, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 57/103
-- **Cycle 2 Cities Remaining**: 46/103
-- **Cycle 2 Completion**: 55.3%
+- **Cycle 2 Cities Used**: 72/103
+- **Cycle 2 Cities Remaining**: 31/103
+- **Cycle 2 Completion**: 69.9%
 
 ---
 
@@ -208,6 +208,21 @@
 | Structural Inspection Near Me | Villa Park | ✅ Published | Nov 24, 2025 | Cycle 2 |
 | Foundation Inspection Near Me | Chula Vista | ✅ Published | Nov 24, 2025 | Cycle 2 |
 | Affordable Structural Engineer Near Me | El Cajon | ✅ Published | Nov 24, 2025 | Cycle 2 |
+| Deep Foundation Design | Poway | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Caisson Foundation Engineering | La Mesa | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Pier and Beam Foundation Engineering | Santee | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Mat Foundation Engineering | Murrieta | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Drilled Shaft Foundation Design | Menifee | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Retaining Wall Foundation Engineering | San Bernardino | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Crawl Space Foundation Engineering | Fontana | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Post-Tension Foundation Design | Chino Hills | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Seismic Foundation Retrofit | Hemet | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Swimming Pool Foundation Engineering | Palm Desert | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Garage Conversion Engineer Near Me | Coronado | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Load Bearing Wall Engineer Near Me | Del Mar | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Deck Structural Engineer Near Me | Solana Beach | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Permit Engineer Near Me | National City | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| Building Permit Structural Engineer Near Me | Imperial Beach | ✅ Published | Nov 25, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
