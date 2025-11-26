@@ -115,9 +115,8 @@ function addBlogPosts() {
     if (!parsed) continue;
 
     const { frontmatter, content } = parsed;
-    const city = extractCity(frontmatter.title);
-    const baseSlug = titleToSlug(frontmatter.title.split(':')[0]);
-    const slug = city ? `${baseSlug}-${titleToSlug(city)}` : baseSlug;
+    // Just use the title before the colon - it already contains the city name
+    const slug = titleToSlug(frontmatter.title.split(':')[0]);
 
     // Automatically feature the first 3 posts (most recent batch)
     const isFeatured = i < 3;
