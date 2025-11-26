@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 25, 2025
+## Last Updated: November 26, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 72/103
-- **Cycle 2 Cities Remaining**: 31/103
-- **Cycle 2 Completion**: 69.9%
+- **Cycle 2 Cities Used**: 87/103
+- **Cycle 2 Cities Remaining**: 16/103
+- **Cycle 2 Completion**: 84.5%
 
 ---
 
@@ -223,6 +223,21 @@
 | Deck Structural Engineer Near Me | Solana Beach | ✅ Published | Nov 25, 2025 | Cycle 2 |
 | Permit Engineer Near Me | National City | ✅ Published | Nov 25, 2025 | Cycle 2 |
 | Building Permit Structural Engineer Near Me | Imperial Beach | ✅ Published | Nov 25, 2025 | Cycle 2 |
+| MEP Engineering Services | Bonita | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Stormwater Management Engineering | Spring Valley | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Grading Plan Engineering | Rancho San Diego | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Septic System Engineering | Perris | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Civil Site Development Engineering | Lake Elsinore | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| HVAC System Engineering | Wildomar | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Plumbing Engineering Design | San Jacinto | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Electrical Engineering Design | Palm Springs | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Fire Protection Engineering | Cathedral City | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Site Drainage Engineering | Indio | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Emergency Structural Engineer Near Me | La Quinta | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Same Day Structural Engineer Near Me | Rancho Mirage | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| 24 Hour Structural Engineer Near Me | Coachella | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Foundation Crack Engineer Near Me | Desert Hot Springs | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Earthquake Damage Engineer Near Me | Jurupa Valley | ✅ Published | Nov 26, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
