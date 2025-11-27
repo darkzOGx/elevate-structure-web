@@ -238,6 +238,21 @@
 | 24 Hour Structural Engineer Near Me | Coachella | ✅ Published | Nov 26, 2025 | Cycle 2 |
 | Foundation Crack Engineer Near Me | Desert Hot Springs | ✅ Published | Nov 26, 2025 | Cycle 2 |
 | Earthquake Damage Engineer Near Me | Jurupa Valley | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Residential Structural Engineering Services | Newport Beach | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Home Addition Structural Design | Irvine | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| ADU Engineering Requirements | Los Angeles | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Seismic Retrofit Engineering | San Diego | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Foundation Assessment Services | Long Beach | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Load-Bearing Wall Analysis | Anaheim | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Structural Engineering for Renovations | Pasadena | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Second Story Addition Engineering | Manhattan Beach | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Garage Conversion Structural Design | Del Mar | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Earthquake-Resistant Design | Carlsbad | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Pool House Engineer Near Me | Yorba Linda | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Room Addition Engineer Near Me | Fullerton | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Second Story Addition Engineer Near Me | Mission Viejo | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Basement Conversion Engineer Near Me | Lake Forest | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Retaining Wall Engineer Near Me | San Clemente | ✅ Published | Nov 26, 2025 | Cycle 2 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
 
