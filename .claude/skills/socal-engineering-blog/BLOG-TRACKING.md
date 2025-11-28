@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 26, 2025
+## Last Updated: November 28, 2025
 
 ---
 
@@ -26,9 +26,9 @@
 - **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 87/103
-- **Cycle 2 Cities Remaining**: 16/103
-- **Cycle 2 Completion**: 84.5%
+- **Cycle 2 Cities Used**: 93/103
+- **Cycle 2 Cities Remaining**: 10/103
+- **Cycle 2 Completion**: 90.3%
 
 ---
 
@@ -253,8 +253,18 @@
 | Second Story Addition Engineer Near Me | Mission Viejo | ✅ Published | Nov 26, 2025 | Cycle 2 |
 | Basement Conversion Engineer Near Me | Lake Forest | ✅ Published | Nov 26, 2025 | Cycle 2 |
 | Retaining Wall Engineer Near Me | San Clemente | ✅ Published | Nov 26, 2025 | Cycle 2 |
+| Kitchen Remodel Structural Engineering | Yucaipa | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Bathroom Addition Structural Engineering | Highland | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Master Suite Addition Engineering | Ramona | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Sunroom Structural Engineering | Alpine | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Living Space Extension Engineering | Lakeside | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Residential Structural Engineer Near Me | Fallbrook | ✅ Published | Nov 28, 2025 | Cycle 2 |
+| Structural Engineer Near Me | Encinitas | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Foundation Engineer Near Me | La Habra | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| ADU Structural Engineer Near Me | Garden Grove | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Seismic Retrofit Engineer Near Me | San Juan Capistrano | ✅ Published | Nov 28, 2025 | Cycle 3 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Once Cycle 2 completes (all 103 cities used), Cycle 3 begins with fresh rotation.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Cycle 3 began Nov 28, 2025 with 4 near-me posts for cities already used in Cycle 2.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
@@ -382,10 +392,10 @@
 | **Bonita** | 13,000 | $750,000 | NEW | ✅ AVAILABLE |
 | **Spring Valley** | 31,000 | $640,000 | NEW | ✅ AVAILABLE |
 | **Rancho San Diego** | 22,000 | $780,000 | NEW | ✅ AVAILABLE |
-| **Ramona** | 21,000 | $620,000 | NEW | ✅ AVAILABLE |
-| **Alpine** | 15,000 | $720,000 | NEW | ✅ AVAILABLE |
-| **Lakeside** | 21,000 | $580,000 | NEW | ✅ AVAILABLE |
-| **Fallbrook** | 31,000 | $650,000 | NEW | ✅ AVAILABLE |
+| **Ramona** | 21,000 | $620,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Alpine** | 15,000 | $720,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Lakeside** | 21,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Fallbrook** | 31,000 | $650,000 | Used 1x | ❌ USED THIS CYCLE |
 
 ---
 
@@ -434,26 +444,26 @@
 | **Upland** | 79,000 | $630,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Redlands** | 72,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Rialto** | 104,000 | $450,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Yucaipa** | 54,000 | $520,000 | NEW | ✅ AVAILABLE |
-| **Highland** | 56,000 | $480,000 | NEW | ✅ AVAILABLE |
+| **Yucaipa** | 54,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Highland** | 56,000 | $480,000 | Used 1x | ❌ USED THIS CYCLE |
 
 ---
 
-## 📊 **CYCLE 1 PROGRESS TRACKER**
+## 📊 **CYCLE 2 PROGRESS TRACKER**
 
 **Total Cities**: 103
-**Used This Cycle**: 85 cities
-**Remaining**: 18 cities
-**Completion**: 82.5%
+**Used This Cycle**: 93 cities
+**Remaining**: 10 cities
+**Completion**: 90.3%
 
 ### **City Distribution:**
 - **Orange County**: 34 cities (34 used, 0 available)
 - **Los Angeles County**: 12 cities (12 used, 0 available)
-- **San Diego County**: 25 cities (22 used, 3 available)
-- **Riverside County**: 21 cities (15 used, 6 available)
-- **San Bernardino County**: 11 cities (9 used, 2 available)
+- **San Diego County**: 25 cities (25 used, 0 available)
+- **Riverside County**: 21 cities (13 used, 8 available)
+- **San Bernardino County**: 11 cities (11 used, 0 available)
 
-### **Cities Available for Next Batch (62 cities remaining):**
+### **Cities Available for Next Batch (10 cities remaining - Cycle 2):**
 
 #### **Priority 1 - Orange County Near Office (9 cities)**:
 1. ✅ **Stanton** ⭐ (YOUR OFFICE LOCATION - MUST USE SOON!)
@@ -491,7 +501,7 @@
 27. ✅ **La Mesa** ($740K median)
 28. ✅ **Rancho San Diego** ($780K median)
 29. ✅ **Bonita** ($750K median)
-30. ✅ **Alpine** ($720K median - mountain)
+30. ❌ **Alpine** ($720K median - mountain) - USED Nov 28
 
 #### **Priority 5 - San Diego Volume Markets (14 cities)**:
 31. ✅ **Chula Vista** (275K population - 2nd largest SD city)
@@ -503,11 +513,11 @@
 37. ✅ **National City** (61K - redevelopment)
 38. ✅ **Santee** (58K)
 39. ✅ **Spring Valley** (31K)
-40. ✅ **Fallbrook** (31K - wine country)
+40. ❌ **Fallbrook** (31K - wine country) - USED Nov 28
 41. ✅ **Imperial Beach** (27K - beach)
 42. ✅ **Lemon Grove** (27K)
-43. ✅ **Ramona** (21K - rural)
-44. ✅ **Lakeside** (21K)
+43. ❌ **Ramona** (21K - rural) - USED Nov 28
+44. ❌ **Lakeside** (21K) - USED Nov 28
 
 #### **Priority 6 - Riverside County Major Cities (11 cities)**:
 45. ✅ **Riverside** (331K population - county seat)
@@ -544,10 +554,10 @@
 72. ✅ **Chino Hills** (83K, $880K - luxury)
 73. ✅ **Upland** (79K - foothills)
 74. ✅ **Redlands** (72K - historic)
-75. ✅ **Highland** (56K)
-76. ✅ **Yucaipa** (54K - foothills)
+75. ❌ **Highland** (56K) - USED Nov 28
+76. ❌ **Yucaipa** (54K - foothills) - USED Nov 28
 
-**Total Available: 78 cities across 5 counties!**
+**Total Available for Cycle 2: 10 cities remaining (all in Riverside County)**
 
 ---
 
