@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 28, 2025
+## Last Updated: November 28, 2025 (Batch 2)
 
 ---
 
@@ -263,8 +263,18 @@
 | Foundation Engineer Near Me | La Habra | ✅ Published | Nov 28, 2025 | Cycle 3 |
 | ADU Structural Engineer Near Me | Garden Grove | ✅ Published | Nov 28, 2025 | Cycle 3 |
 | Seismic Retrofit Engineer Near Me | San Juan Capistrano | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Bedroom Addition Structural Engineering | Seal Beach | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Open Floor Plan Structural Engineering | Brea | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Patio Cover Structural Engineering | Placentia | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Chimney Removal Structural Engineering | Buena Park | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Basement Structural Engineering | Cypress | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Commercial Structural Engineer Near Me | La Palma | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| MEP Engineer Near Me | Los Alamitos | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Civil Engineer Near Me | Laguna Woods | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Home Addition Structural Engineer Near Me | Villa Park | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Foundation Repair Engineer Near Me | Stanton | ✅ Published | Nov 28, 2025 | Cycle 3 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch (8 cities). Cycle 2 STARTED with 5 posts reusing priority cities. Cycle 3 began Nov 28, 2025 with 4 near-me posts for cities already used in Cycle 2.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with OC cities for residential engineering and near-me posts.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
