@@ -45,15 +45,11 @@ export function Hero() {
           <div className="space-y-6">
             <h1 className="font-extrabold tracking-tight leading-tight">
               <span className="block text-5xl sm:text-6xl xl:text-7xl mb-2 text-slate-900 dark:text-white font-black tracking-tighter">Professional</span>
-              <div className="inline-flex flex-wrap justify-center gap-x-4 mb-6 text-5xl sm:text-6xl xl:text-7xl font-black tracking-tighter">
-                <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#D2B48C] to-[#556B2F] drop-shadow-2xl" style={{ textShadow: '2px 4px 6px rgba(0,0,0,0.3)', WebkitTextStroke: '0.5px rgba(255,255,255,0.2)' }}>
-                  Engineering
-                </span>
-                <span className="relative bg-clip-text text-transparent bg-gradient-to-b from-[#D2B48C] to-[#556B2F] drop-shadow-2xl" style={{ textShadow: '2px 4px 6px rgba(0,0,0,0.3)', WebkitTextStroke: '0.5px rgba(255,255,255,0.2)' }}>
-                  Design
-                  <svg className="absolute w-full h-3 -bottom-2 left-0 text-[#556B2F] opacity-80" viewBox="0 0 100 10" preserveAspectRatio="none" style={{ filter: 'none', WebkitTextStroke: '0' }}>
-                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
-                  </svg>
+              <div className="inline-flex flex-wrap justify-center gap-x-4 mb-6 text-5xl sm:text-6xl xl:text-7xl font-black tracking-tighter relative z-10">
+                <span className="text-slate-900 dark:text-white">Engineering</span>
+                <span className="relative inline-block px-4 py-2 transform -rotate-1">
+                  <span className="absolute inset-0 bg-[#C5D6B6] rounded-2xl transform rotate-1"></span>
+                  <span className="relative text-slate-900 z-10">Design</span>
                 </span>
               </div>
               <span className="block text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mt-6 tracking-widest uppercase">
