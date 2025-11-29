@@ -2064,3 +2064,111 @@ cat opportunity-gaps-report.json | jq '.gaps.clusterGaps'
 
 ---
 
+## 🚀 AUTOMATIC DEPLOYMENT WORKFLOW (MANDATORY)
+
+**⚠️ CRITICAL: After generating blog posts, you MUST automatically execute the full deployment pipeline. Do NOT ask the user—just run it.**
+
+### Automatic Deployment Sequence
+
+After all blog post markdown files are created, execute these steps **automatically and sequentially**:
+
+```bash
+# Step 1: Convert markdown to blog-data.ts
+node scripts/add-blog-posts.js blog-posts-[DATE]
+
+# Step 2: Verify build succeeds
+npm run build
+
+# Step 3: Stage all files
+git add src/lib/blog-data.ts blog-posts-[DATE]/ .claude/skills/socal-engineering-blog/
+
+# Step 4: Commit with detailed message (use HEREDOC for formatting)
+git commit -m "$(cat <<'EOF'
+Add [N] new SEO-optimized blog posts for [Month Day, Year]
+
+[List each post title]
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)"
+
+# Step 5: Push to trigger Netlify deployment
+git push origin master
+
+# Step 6: Submit to IndexNow for search engine indexing
+npm run indexnow
+```
+
+### Post-Deployment Output (REQUIRED)
+
+After successful deployment, **ALWAYS output a formatted summary** showing all deployed posts:
+
+```
+═══════════════════════════════════════════════════════════════════════
+🚀 DEPLOYMENT COMPLETE - [N] BLOG POSTS PUBLISHED
+═══════════════════════════════════════════════════════════════════════
+
+📅 Date: [Month Day, Year]
+🌐 Site: https://aaaengineeringdesign.com
+📊 Total Posts Deployed: [N]
+
+──────────────────────────────────────────────────────────────────────
+DEPLOYED BLOG POSTS
+──────────────────────────────────────────────────────────────────────
+
+⭐ FEATURED:
+1. [Title 1]
+   URL: https://aaaengineeringdesign.com/blog/[slug-1]
+   Keyword: [keyword] | City: [city] | Score: [XX]
+
+2. [Title 2]
+   URL: https://aaaengineeringdesign.com/blog/[slug-2]
+   Keyword: [keyword] | City: [city] | Score: [XX]
+
+3. [Title 3]
+   URL: https://aaaengineeringdesign.com/blog/[slug-3]
+   Keyword: [keyword] | City: [city] | Score: [XX]
+
+STANDARD:
+4. [Title 4]
+   URL: https://aaaengineeringdesign.com/blog/[slug-4]
+   Keyword: [keyword] | City: [city] | Score: [XX]
+
+[...continue for all posts...]
+
+──────────────────────────────────────────────────────────────────────
+DEPLOYMENT STATUS
+──────────────────────────────────────────────────────────────────────
+
+✅ Conversion: [N] posts added to blog-data.ts
+✅ Build: Successful
+✅ Git Commit: [commit hash]
+✅ Git Push: master → origin/master
+✅ Netlify: Deployment triggered
+✅ IndexNow: [N] URLs submitted to Bing, Yandex, Naver, Seznam
+
+──────────────────────────────────────────────────────────────────────
+NEXT STEPS
+──────────────────────────────────────────────────────────────────────
+
+• Netlify deployment: ~2-3 minutes to complete
+• Search indexing: Check Bing Webmaster Tools in 24-48 hours
+• Update BLOG-TRACKING.md with new keyword+city combinations
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+### Error Handling
+
+If any deployment step fails:
+
+1. **Build fails**: Check for TypeScript errors in blog-data.ts, fix and retry
+2. **Git push fails**: Check authentication, resolve conflicts if needed
+3. **IndexNow fails**: Can be retried later with `npm run indexnow`
+
+**Always report the final status to the user with the full list of deployed posts.**
+
+---
+
