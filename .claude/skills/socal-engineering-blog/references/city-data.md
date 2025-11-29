@@ -1,10 +1,53 @@
 # Southern California Cities - Engineering Market Data
 
+---
+
+## 🌴 WEALTH CORRIDOR PRIORITY TARGETING
+
+**CRITICAL: Prioritize these high-value markets for maximum revenue per lead.**
+
+### CRITICAL Priority (Median Home $3M+) - Generate Content First
+| City | Region | Median Home | Key Services |
+|------|--------|-------------|--------------|
+| Atherton | Silicon Valley | $7.5M+ | Estate renovations, guest houses |
+| Bel Air | LA Core | $5.5M+ | Ultra-luxury custom, hillside |
+| Beverly Hills | LA Core | $4.8M+ | Luxury estates, hillside homes |
+| Malibu | Coastal LA | $4.5M+ | Hillside, coastal erosion, fire rebuild |
+| Pacific Palisades | LA Core | $4.2M | Hillside, fire reconstruction |
+| Los Altos | Silicon Valley | $4.2M | Hillside construction, pools |
+| Palo Alto | Silicon Valley | $3.8M | Tech exec homes, ADUs |
+| Menlo Park | Silicon Valley | $3.5M | Seismic retrofits, additions |
+| Corona del Mar | Coastal OC | $3.5M | Coastal luxury, remodels |
+| Manhattan Beach | Coastal LA | $3.2M | Beach community, seismic retrofit |
+| Brentwood | LA Core | $3.2M | Luxury residential, additions |
+
+### HIGH Priority (Median Home $1.5M-$3M) - Regular Content Rotation
+| City | Region | Median Home | Key Services |
+|------|--------|-------------|--------------|
+| Laguna Beach | Coastal OC | $2.8M | Hillside, coastal bluff engineering |
+| Santa Monica | Coastal LA | $2.3M | Historic preservation, soft story |
+| Newport Beach | Coastal OC | $2.1M | Coastal Commission, luxury custom |
+| Sunnyvale | Silicon Valley | $2.1M | ADU boom, garage conversions |
+| West Hollywood | LA Core | $1.8M | Soft story mandatory retrofit |
+| Fremont | Silicon Valley | $1.5M | Growing market, new construction |
+
+### VOLUME Markets (High Search Volume, Moderate Home Values)
+| City | Region | Median Home | Key Services |
+|------|--------|-------------|--------------|
+| San Jose | Silicon Valley | $1.4M | Volume market, mixed residential |
+| Pasadena | LA Core | $1.1M | Historic homes, seismic upgrade |
+| Irvine | OC | $950K | Master-planned, commercial, ADU |
+| Long Beach | LA County | $685K | ADU, soft story, historic |
+| Anaheim | OC | $750K | Commercial, residential volume |
+| San Diego | San Diego | $900K | Largest SD market |
+
+---
+
 ## Quick Reference: Top 25 Target Cities
 
 ### Tier 1 - High Volume, High Priority (Publish First)
 1. Los Angeles
-2. Long Beach  
+2. Long Beach
 3. Irvine
 4. Santa Ana
 5. Anaheim

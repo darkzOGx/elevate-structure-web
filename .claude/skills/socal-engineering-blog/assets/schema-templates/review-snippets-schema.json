@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{SERVICE_NAME}} in {{CITY}}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://aaaengineeringdesign.com/#organization",
+    "name": "AAA Engineering Design"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{AVG_RATING}}",
+    "reviewCount": "{{REVIEW_COUNT}}",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_1_NAME}}"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "{{REVIEWER_1_RATING}}",
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "{{REVIEWER_1_TEXT}}",
+      "datePublished": "{{REVIEWER_1_DATE}}"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_2_NAME}}"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "{{REVIEWER_2_RATING}}",
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "{{REVIEWER_2_TEXT}}",
+      "datePublished": "{{REVIEWER_2_DATE}}"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_3_NAME}}"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "{{REVIEWER_3_RATING}}",
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "{{REVIEWER_3_TEXT}}",
+      "datePublished": "{{REVIEWER_3_DATE}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://aaaengineeringdesign.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://aaaengineeringdesign.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{CATEGORY}}",
+      "item": "https://aaaengineeringdesign.com/blog?category={{CATEGORY_SLUG}}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{POST_TITLE}}",
+      "item": "{{POST_URL}}"
+    }
+  ]
+}

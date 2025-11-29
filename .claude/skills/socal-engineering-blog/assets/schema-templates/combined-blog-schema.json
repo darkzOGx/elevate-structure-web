@@ -1,0 +1,368 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aaaengineeringdesign.com/#organization",
+      "name": "AAA Engineering Design",
+      "url": "https://aaaengineeringdesign.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aaaengineeringdesign.com/logo.png",
+        "width": 600,
+        "height": 60
+      },
+      "description": "Licensed Professional Engineering firm providing structural, civil, and MEP design services throughout Southern California.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8031 Main Street",
+        "addressLocality": "Stanton",
+        "addressRegion": "CA",
+        "postalCode": "90680",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-949-981-4448",
+      "email": "info@aaaengineeringdesign.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/aaa-engineering-design",
+        "https://www.facebook.com/aaaengineeringdesign"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://aaaengineeringdesign.com/#localbusiness",
+      "name": "AAA Engineering Design",
+      "image": "https://aaaengineeringdesign.com/logo.png",
+      "description": "Licensed Professional Engineering firm providing {{SERVICE_TYPE}} services in {{CITY_NAME}}, California",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8031 Main Street",
+        "addressLocality": "Stanton",
+        "addressRegion": "CA",
+        "postalCode": "90680",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.8025,
+        "longitude": -117.9931
+      },
+      "url": "https://aaaengineeringdesign.com",
+      "telephone": "+1-949-981-4448",
+      "priceRange": "$$-$$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "{{CITY_NAME}}",
+        "containedIn": {
+          "@type": "AdministrativeArea",
+          "name": "{{COUNTY}} County, California"
+        }
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Engineering Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{{PRIMARY_SERVICE}}",
+              "description": "{{SERVICE_DESCRIPTION}}"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "{{PRICE_RANGE}}",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Free Initial Consultation"
+            },
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aaaengineeringdesign.com/services/{{SERVICE_SLUG}}#service",
+      "name": "{{SERVICE_NAME}} in {{CITY_NAME}}",
+      "description": "{{SERVICE_DESCRIPTION}} serving {{CITY_NAME}} and surrounding {{COUNTY}} County communities.",
+      "serviceType": "{{SERVICE_TYPE}}",
+      "provider": {
+        "@id": "https://aaaengineeringdesign.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "{{CITY_NAME}}"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "{{PRICE_RANGE}}",
+          "priceCurrency": "USD"
+        },
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "TechnicalArticle",
+      "@id": "{{POST_URL}}#article",
+      "headline": "{{POST_TITLE}}",
+      "description": "{{META_DESCRIPTION}}",
+      "image": "{{FEATURED_IMAGE_URL}}",
+      "author": {
+        "@id": "https://aaaengineeringdesign.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://aaaengineeringdesign.com/#organization"
+      },
+      "datePublished": "{{PUBLISH_DATE}}",
+      "dateModified": "{{MODIFIED_DATE}}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{POST_URL}}"
+      },
+      "keywords": "{{KEYWORDS_COMMA_SEPARATED}}",
+      "articleSection": "{{CATEGORY}}",
+      "wordCount": {{WORD_COUNT}},
+      "about": {
+        "@type": "Thing",
+        "name": "{{PRIMARY_TOPIC}}"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-summary", ".faq-section"]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{POST_URL}}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aaaengineeringdesign.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://aaaengineeringdesign.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{CATEGORY}}",
+          "item": "https://aaaengineeringdesign.com/blog?category={{CATEGORY_SLUG}}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "{{POST_TITLE}}",
+          "item": "{{POST_URL}}"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{POST_URL}}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{{FAQ_QUESTION_1}}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{FAQ_ANSWER_1}}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{{FAQ_QUESTION_2}}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{FAQ_ANSWER_2}}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{{FAQ_QUESTION_3}}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{FAQ_ANSWER_3}}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{{FAQ_QUESTION_4}}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{FAQ_ANSWER_4}}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{{FAQ_QUESTION_5}}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{FAQ_ANSWER_5}}"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Review",
+      "@id": "{{POST_URL}}#review1",
+      "itemReviewed": {
+        "@id": "https://aaaengineeringdesign.com/#organization"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_1_NAME}}"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "{{REVIEWER_1_TEXT}}",
+      "datePublished": "{{REVIEWER_1_DATE}}"
+    },
+    {
+      "@type": "Review",
+      "@id": "{{POST_URL}}#review2",
+      "itemReviewed": {
+        "@id": "https://aaaengineeringdesign.com/#organization"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_2_NAME}}"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "{{REVIEWER_2_TEXT}}",
+      "datePublished": "{{REVIEWER_2_DATE}}"
+    }
+  ]
+}
+
+/**
+ * ============================================================================
+ * COMBINED BLOG SCHEMA - IMPLEMENTATION GUIDE
+ * ============================================================================
+ *
+ * This template shows how to combine ALL schemas into a single @graph array
+ * for maximum rich snippet coverage. Include this complete schema in every
+ * blog post's frontmatter under a "schema" field.
+ *
+ * REQUIRED PLACEHOLDERS TO REPLACE:
+ * ---------------------------------
+ *
+ * POST INFO:
+ * - {{POST_URL}} - Full URL (e.g., "https://aaaengineeringdesign.com/blog/adu-engineering-in-newport-beach")
+ * - {{POST_TITLE}} - Blog post title
+ * - {{META_DESCRIPTION}} - 150-160 character description
+ * - {{FEATURED_IMAGE_URL}} - Full URL to featured image
+ * - {{PUBLISH_DATE}} - ISO 8601 date (e.g., "2025-11-28")
+ * - {{MODIFIED_DATE}} - ISO 8601 date (same as publish for new posts)
+ * - {{CATEGORY}} - Category name (e.g., "Structural Engineering")
+ * - {{CATEGORY_SLUG}} - URL-friendly category (e.g., "structural-engineering")
+ * - {{KEYWORDS_COMMA_SEPARATED}} - Primary + secondary keywords
+ * - {{WORD_COUNT}} - Numeric word count
+ * - {{PRIMARY_TOPIC}} - Main topic (e.g., "ADU Structural Engineering")
+ *
+ * LOCATION INFO:
+ * - {{CITY_NAME}} - Target city (e.g., "Newport Beach")
+ * - {{COUNTY}} - County name (e.g., "Orange")
+ *
+ * SERVICE INFO:
+ * - {{SERVICE_NAME}} - Service name (e.g., "ADU Structural Engineering")
+ * - {{SERVICE_SLUG}} - URL slug (e.g., "adu-design-engineering")
+ * - {{SERVICE_TYPE}} - Schema service type (e.g., "StructuralEngineering")
+ * - {{SERVICE_DESCRIPTION}} - Brief service description
+ * - {{PRIMARY_SERVICE}} - Main service offered
+ * - {{PRICE_RANGE}} - Price range (e.g., "2500-5000")
+ *
+ * FAQ QUESTIONS (5 minimum):
+ * - {{FAQ_QUESTION_1}} through {{FAQ_QUESTION_5}}
+ * - {{FAQ_ANSWER_1}} through {{FAQ_ANSWER_5}}
+ *
+ * REVIEWS (2 minimum):
+ * - {{REVIEWER_1_NAME}}, {{REVIEWER_1_TEXT}}, {{REVIEWER_1_DATE}}
+ * - {{REVIEWER_2_NAME}}, {{REVIEWER_2_TEXT}}, {{REVIEWER_2_DATE}}
+ *
+ * ============================================================================
+ * SCHEMA TYPES INCLUDED & THEIR BENEFITS:
+ * ============================================================================
+ *
+ * 1. ORGANIZATION (HIGH PRIORITY)
+ *    - Establishes brand in Knowledge Panels
+ *    - Shows logo, contact info, social profiles
+ *    - E-E-A-T signal for Google
+ *
+ * 2. LOCAL BUSINESS (HIGH PRIORITY)
+ *    - Critical for "near me" searches
+ *    - Shows in Local Pack / Maps
+ *    - Displays hours, phone, address
+ *
+ * 3. SERVICE (HIGH PRIORITY)
+ *    - Lists specific services offered
+ *    - Shows availability and pricing
+ *    - Helps match service queries
+ *
+ * 4. FAQ (HIGH PRIORITY)
+ *    - Expands search footprint
+ *    - Shows FAQ dropdowns in SERPs
+ *    - Captures PAA (People Also Ask) positions
+ *
+ * 5. BREADCRUMB (MEDIUM PRIORITY)
+ *    - Shows site hierarchy in results
+ *    - Improves click-through rate
+ *    - Better user navigation understanding
+ *
+ * 6. REVIEW (MEDIUM PRIORITY)
+ *    - Star ratings in search results
+ *    - Social proof / trust signal
+ *    - Improves CTR significantly
+ *
+ * 7. ARTICLE (MEDIUM PRIORITY)
+ *    - Article info in search results
+ *    - Date freshness signals
+ *    - Author/publisher attribution
+ *
+ * ============================================================================
+ * VALIDATION:
+ * ============================================================================
+ *
+ * Always validate schema at:
+ * - https://validator.schema.org/
+ * - https://search.google.com/test/rich-results
+ *
+ * Common errors to avoid:
+ * - Missing required fields
+ * - Invalid date formats (use ISO 8601)
+ * - Broken @id references
+ * - Missing @type declarations
+ * - Invalid URLs
+ */

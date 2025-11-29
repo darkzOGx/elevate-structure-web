@@ -5,6 +5,53 @@
 - 🔄 In Progress
 - ⏳ Planned
 - 🎯 High Priority
+- 🚨 Urgent/High-Conversion
+
+---
+
+## 🚨 HIGH-CONVERSION NICHE KEYWORDS (PRIORITY QUEUE)
+
+**These keywords represent distressed clients with urgent needs - highest conversion rates and premium pricing potential.**
+
+### Red Tag & Compliance (Lead Gen Score: 94-98)
+| Keyword | Intent | Lead Gen Score | Status |
+|---------|--------|---------------|--------|
+| red tag removal structural engineer | Urgent/Transactional | 98 | 🎯 |
+| red tag house engineer California | Urgent/Transactional | 97 | 🎯 |
+| condemned house structural engineer | Urgent/Transactional | 96 | 🎯 |
+| unpermitted work legalization engineer | Urgent/Transactional | 95 | 🎯 |
+| permit violation structural engineer | Urgent/Transactional | 94 | 🎯 |
+| as-built drawings structural engineer | Commercial | 88 | 🎯 |
+
+### Emergency Structural (Lead Gen Score: 95-98)
+| Keyword | Intent | Lead Gen Score | Status |
+|---------|--------|---------------|--------|
+| emergency structural assessment | Urgent | 97 | 🎯 |
+| fire damage structural engineer | Urgent | 96 | 🎯 |
+| post-earthquake inspection engineer | Urgent | 96 | 🎯 |
+| car hit house structural inspection | Urgent | 95 | 🎯 |
+| foundation failure emergency | Urgent | 95 | 🎯 |
+| structural collapse assessment | Urgent | 94 | 🎯 |
+
+### Soft Story Retrofit (Lead Gen Score: 90-94)
+| Keyword | Intent | Lead Gen Score | Status |
+|---------|--------|---------------|--------|
+| soft story retrofit Los Angeles | Compliance/Transactional | 94 | 🎯 |
+| soft story ordinance 183893 compliance | Compliance | 93 | 🎯 |
+| soft story retrofit San Francisco | Compliance/Transactional | 93 | 🎯 |
+| soft story retrofit engineer | Compliance/Transactional | 92 | 🎯 |
+| mandatory retrofit ordinance engineer | Compliance | 91 | 🎯 |
+| soft story seismic retrofit cost | Commercial | 90 | 🎯 |
+
+### B2B Professional Services (Lead Gen Score: 85-92)
+| Keyword | Intent | Lead Gen Score | Status |
+|---------|--------|---------------|--------|
+| engineer of record California | B2B/Commercial | 92 | 🎯 |
+| structural consultant for architects | B2B/Commercial | 90 | 🎯 |
+| PE stamp structural plans | B2B/Commercial | 89 | 🎯 |
+| plan check support engineer | B2B/Commercial | 88 | 🎯 |
+| construction engineering support | B2B/Commercial | 87 | 🎯 |
+| tenant improvement structural engineer | B2B/Commercial | 86 | 🎯 |
 
 ---
 

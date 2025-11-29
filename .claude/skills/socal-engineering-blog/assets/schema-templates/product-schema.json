@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{SERVICE_NAME}} in {{CITY}}",
+  "description": "{{SERVICE_DESCRIPTION}}",
+  "category": "{{CATEGORY}}",
+  "brand": {
+    "@type": "Organization",
+    "name": "AAA Engineering Design",
+    "@id": "https://aaaengineeringdesign.com/#organization"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "{{MIN_PRICE}}",
+    "highPrice": "{{MAX_PRICE}}",
+    "offerCount": "1",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "AAA Engineering Design"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "{{REVIEW_COUNT}}",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "{{CITY}}",
+    "containedIn": {
+      "@type": "State",
+      "name": "California"
+    }
+  }
+}

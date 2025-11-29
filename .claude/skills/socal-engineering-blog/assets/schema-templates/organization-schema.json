@@ -1,0 +1,137 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aaaengineeringdesign.com/#organization",
+  "name": "AAA Engineering Design",
+  "alternateName": "AAA Engineering",
+  "url": "https://aaaengineeringdesign.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://aaaengineeringdesign.com/logo.png",
+    "width": 600,
+    "height": 60
+  },
+  "image": "https://aaaengineeringdesign.com/og-image.jpg",
+  "description": "Licensed Professional Engineering firm providing structural, civil, and MEP design services throughout Southern California. Over 20 years of combined experience with 500+ completed projects.",
+  "foundingDate": "2005",
+  "founder": {
+    "@type": "Person",
+    "name": "AAA Engineering Design Team"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8031 Main Street",
+    "addressLocality": "Stanton",
+    "addressRegion": "CA",
+    "postalCode": "90680",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8025,
+    "longitude": -117.9931
+  },
+  "telephone": "+1-949-981-4448",
+  "email": "info@aaaengineeringdesign.com",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-949-981-4448",
+      "contactType": "customer service",
+      "areaServed": ["US"],
+      "availableLanguage": ["English", "Spanish"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-949-981-4448",
+      "contactType": "sales",
+      "areaServed": ["US"],
+      "availableLanguage": ["English"]
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "California",
+      "sameAs": "https://en.wikipedia.org/wiki/California"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Orange County",
+      "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Los Angeles County",
+      "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "San Diego County",
+      "sameAs": "https://en.wikipedia.org/wiki/San_Diego_County,_California"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Riverside County",
+      "sameAs": "https://en.wikipedia.org/wiki/Riverside_County,_California"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "San Bernardino County",
+      "sameAs": "https://en.wikipedia.org/wiki/San_Bernardino_County,_California"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/aaa-engineering-design",
+    "https://www.facebook.com/aaaengineeringdesign",
+    "https://www.google.com/maps/place/AAA+Engineering+Design"
+  ],
+  "knowsAbout": [
+    "Structural Engineering",
+    "Civil Engineering",
+    "MEP Engineering",
+    "Seismic Retrofitting",
+    "ADU Design",
+    "Foundation Engineering",
+    "Commercial Building Design",
+    "Residential Engineering",
+    "California Building Codes",
+    "Title 24 Compliance"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional License",
+      "name": "California Professional Engineer (PE) License"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "slogan": "Excellence in Engineering Design"
+}
+
+/**
+ * ORGANIZATION SCHEMA USAGE:
+ *
+ * This schema establishes brand identity in Google Knowledge Panels.
+ * Include this schema on:
+ * - Homepage
+ * - About page
+ * - Contact page
+ * - All blog posts (as part of @graph)
+ *
+ * Benefits:
+ * - Displays company info in Knowledge Panel
+ * - Shows logo in search results
+ * - Establishes E-E-A-T signals
+ * - Links social profiles
+ * - Shows service areas
+ *
+ * The @id field creates a unique identifier that can be referenced
+ * by other schemas using "@id": "https://aaaengineeringdesign.com/#organization"
+ */

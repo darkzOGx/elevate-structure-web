@@ -27,18 +27,34 @@
 {
   "category": "Design & Planning" | "Structural Engineering" | "Building Codes" | "Cost Guides",
   "title": "[Keyword] in [City]: [Complete/Comprehensive/Expert] Guide [Year]",
-  "publishDate": "November 6, 2025",
+  "publishDate": "November 27, 2025",
   "readTime": "10-15 min read",
   "author": "AAA Engineering Team",
   "metaDescription": "[Service/Topic] in [City]. Learn about [key points]. Licensed CA Professional Engineers. Call (949) 981-4448 for consultation.",
   "keywords": ["primary keyword", "city + keyword", "secondary keywords"],
+  "primaryCity": "[City Name]",
+  "serviceName": "[Primary Service Name]",
+  "priceRange": {
+    "min": 2500,
+    "max": 6000
+  },
   "schema": {
     "articleType": "TechnicalArticle",
     "professionalService": true,
-    "localBusiness": true
+    "localBusiness": true,
+    "includeFAQ": true,
+    "includeBreadcrumbs": true,
+    "includeProduct": true,
+    "includeReviews": true
   }
 }
 ```
+
+**Schema Field Requirements:**
+- `primaryCity`: Required for LocalBusiness and geographic targeting
+- `serviceName`: Required for Product and Review schemas
+- `priceRange`: Required for Product schema (use standard ranges from table below)
+- All schema flags should be `true` for maximum rich snippet coverage
 
 ---
 
@@ -485,6 +501,181 @@ From residential ADUs to commercial tenant improvements, we handle all structura
 
 ---
 
+### Mid-Market Positioning Block (NEW - Add to "Why Choose AAA" Section)
+
+**CRITICAL: Position AAA as the ideal solution for mid-market projects**
+
+```markdown
+### The Right Fit for Your Project
+
+**Not too big. Not too small. Just right.**
+
+Many homeowners face a frustrating choice: hire a large engineering firm that
+treats your project as an afterthought, or work with a solo practitioner who
+may lack capacity for complex designs.
+
+**AAA Engineering Design offers the best of both worlds:**
+
+| Challenge | Large Firms | Solo Practitioners | AAA Engineering |
+|-----------|-------------|-------------------|-----------------|
+| Attention to your project | ❌ Junior staff assigned | ✅ Personal | ✅ PE on every project |
+| Complex project capability | ✅ Full resources | ❌ Limited capacity | ✅ Full team available |
+| Response time | ❌ Days to weeks | ⚠️ Variable | ✅ Same-day response |
+| Pricing | ❌ Premium rates | ✅ Lower | ✅ Competitive |
+| Local expertise | ⚠️ Regional offices | ✅ Local | ✅ 20+ years in [Region] |
+
+**Ideal project size:** $2,500 - $50,000 engineering fees
+```
+
+---
+
+### Satisfaction Guarantee Block (NEW - For Distressed Client Posts)
+
+**Use for red tag, unpermitted work, compliance, and emergency content:**
+
+```markdown
+### Our No-Risk Consultation Guarantee
+
+We understand you're dealing with a stressful situation. That's why we offer:
+
+> 🛡️ **Assessment Guarantee**: If our initial consultation doesn't identify
+> a clear path forward for resolving your [red tag/permit issue/structural
+> concern], you pay nothing for the consultation.
+
+**What you get in your free initial consultation:**
+- ✅ Licensed PE review of your situation
+- ✅ Preliminary assessment of remediation options
+- ✅ Estimated timeline and cost range
+- ✅ Clear next steps—no obligation to proceed
+
+**📞 [Call (949) 981-4448](tel:9499814448)** for your free consultation
+```
+
+---
+
+### Emergency Response Block (NEW - For Urgent/Emergency Posts)
+
+**Use for fire damage, earthquake, foundation emergency, red tag posts:**
+
+```markdown
+### 🚨 Emergency Structural Engineering Response
+
+**When every hour counts, we respond fast.**
+
+| Service Level | Response Time | Availability |
+|--------------|---------------|--------------|
+| Emergency Assessment | Same-day | 7 days/week |
+| Rush Engineering Plans | 48-72 hours | Priority scheduling |
+| Standard Projects | 2-4 weeks | Normal queue |
+
+**Emergency situations we handle:**
+- 🔴 Red-tagged properties
+- 🔥 Fire/smoke damage assessment
+- 🚗 Vehicle impact damage
+- 🌊 Flood/water damage evaluation
+- 🏚️ Foundation failure/settlement
+- 🌋 Post-earthquake structural inspection
+
+> **Call our emergency line: [(949) 981-4448](tel:9499814448)**
+> *Available 7 days a week for urgent structural assessments*
+```
+
+---
+
+### B2B Professional Block (NEW - For Architect/Contractor-Targeted Posts)
+
+**Use for "engineer of record", "structural consultant", and professional service posts:**
+
+```markdown
+### Partner Services for Design Professionals
+
+**Architects, contractors, and developers: we're your structural engineering partner.**
+
+**Engineer of Record (EOR) Services:**
+- PE-stamped structural plans for your projects
+- Seamless integration with your design workflow
+- Responsive turnaround for plan check corrections
+- Direct communication—no account managers
+
+**Why design professionals choose AAA Engineering:**
+- ⏱️ **Fast turnaround**: 2-3 week typical for residential
+- 📞 **Direct PE access**: Talk to the engineer, not a coordinator
+- 💰 **Transparent pricing**: Fixed quotes, no scope creep
+- 🔄 **Revision support**: Plan check corrections included
+
+**Current capacity:** Accepting new professional partnerships
+
+**[Contact us for professional rate sheet →](/contact?source=professional)**
+```
+
+---
+
+### Property Type Targeting Blocks (NEW - For Specific Home Types)
+
+**Victorian/Historic Homes (Pasadena, San Francisco, etc.):**
+```markdown
+### Structural Engineering for Historic [City] Homes
+
+**Preserving character while ensuring safety.**
+
+Historic homes in [City] present unique structural challenges. Original
+construction methods, unreinforced masonry, and decades of settling require
+specialized engineering knowledge.
+
+**Our approach to historic homes:**
+- **Non-invasive assessment**: Minimize impact to original materials
+- **Sympathetic retrofits**: Maintain architectural character
+- **Code compliance**: Meet modern seismic requirements
+- **Preservation expertise**: Work within historic district guidelines
+
+*We've engineered 50+ historic homes in [Region], including [specific
+neighborhood] Victorians, [era] Craftsmans, and [style] bungalows.*
+```
+
+**Hillside/Canyon Homes (Malibu, Laguna, Pacific Palisades):**
+```markdown
+### Hillside Structural Engineering for [City] Properties
+
+**Expertise where the land meets the sky.**
+
+Hillside construction in [City] demands specialized structural engineering.
+Slope stability, retaining walls, cantilevered foundations, and fire-resistant
+design are standard requirements—not afterthoughts.
+
+**Hillside engineering challenges we solve:**
+- 🏔️ **Slope stability analysis**: Geotechnical coordination
+- 🧱 **Retaining wall design**: Grade beam, caisson, and soldier pile systems
+- 🏗️ **Cantilevered construction**: Maximizing views and usable space
+- 🔥 **Fire reconstruction**: Post-fire rebuilding expertise
+- 🌧️ **Drainage engineering**: Managing water on slopes
+
+*[City] hillside projects require permits from both the city and often the
+Coastal Commission. We navigate both.*
+```
+
+**Coastal/Waterfront (Newport Beach, Malibu, Manhattan Beach):**
+```markdown
+### Coastal Structural Engineering for [City] Waterfront Properties
+
+**Engineered to withstand salt, wind, and waves.**
+
+Waterfront properties in [City] face unique environmental stresses that inland
+structures never encounter. Corrosive salt air, high wind loads, flood zone
+requirements, and Coastal Commission approval add complexity to every project.
+
+**Coastal engineering expertise:**
+- 🌊 **Flood zone compliance**: FEMA VE and AE zone requirements
+- 🧂 **Corrosion resistance**: Marine-grade materials specification
+- 💨 **Wind load design**: Coastal exposure category analysis
+- 📋 **Coastal Commission navigation**: CDP application support
+- 🏖️ **Beach-level construction**: Pile and pier foundation systems
+
+*We've completed 75+ coastal projects from [City 1] to [City 2], including
+Balboa Peninsula, Corona del Mar, and Laguna Beach properties.*
+```
+
+---
+
 ### Local Social Proof Section (NEW - Add Before "Why Choose AAA")
 
 **Add city-specific testimonials and stats for trust building**
@@ -733,7 +924,18 @@ View All Articles button
 
 ## Schema Markup Requirements
 
-### Article Schema (All Posts)
+**IMPORTANT: Every blog post MUST include ALL of the following schemas:**
+1. Article Schema (required for all posts)
+2. Breadcrumb Schema (required for all posts)
+3. FAQ Schema (required - 5-8 questions minimum)
+4. Product Schema (required for service-related posts)
+5. Review Snippets Schema (required for posts with testimonials)
+6. Local Business Schema (required for city-specific posts)
+7. Person Schema (when authorId specified)
+
+---
+
+### Article Schema (All Posts - REQUIRED)
 ```json
 {
   "@context": "https://schema.org",
@@ -757,27 +959,361 @@ View All Articles button
 }
 ```
 
-### Local Business Schema (When City-Specific)
+---
+
+### Breadcrumb Schema (All Posts - REQUIRED) ✨ NEW
+**Purpose:** Enables breadcrumb rich snippets in Google search results, improves navigation UX, helps search engines understand site structure.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://aaaengineeringdesign.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://aaaengineeringdesign.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "[Category Name]",
+      "item": "https://aaaengineeringdesign.com/blog?category=[category-slug]"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "[Post Title]",
+      "item": "[Full Post URL]"
+    }
+  ]
+}
+```
+
+**Template file:** `assets/schema-templates/breadcrumb-schema.json`
+
+---
+
+### FAQ Schema (All Posts - REQUIRED) ✨
+**Purpose:** Enables FAQ rich snippets, critical for AI Overview optimization, targets "People Also Ask" boxes.
+
+**EVERY blog post MUST include 5-8 FAQ questions** derived from the content.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is [Primary Service] in [City]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[40-60 word direct answer from the content]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does [Service] cost in [City]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Pricing information from the post]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does [Process] take in [City]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Timeline information]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a [Professional Type] for [Project]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Requirements explanation]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the [Topic] requirements in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Code/regulation requirements]"
+      }
+    }
+  ]
+}
+```
+
+**FAQ Question Types to Include:**
+- What is [topic]? (definitional)
+- How much does [service] cost? (pricing - high intent)
+- How long does [process] take? (timeline)
+- Do I need [professional/permit]? (requirements)
+- What are the [regulations/codes]? (compliance)
+- How do I choose [professional]? (selection criteria)
+- What are common [challenges/mistakes]? (pain points)
+- Why choose [company] for [service]? (differentiators)
+
+**Template file:** `assets/schema-templates/faq-schema.json`
+
+---
+
+### Product Schema (Service Posts - REQUIRED) ✨ NEW
+**Purpose:** Enables Product rich snippets showing price range, availability, and ratings in search results.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "[Service Name] in [City]",
+  "description": "[Service description from post]",
+  "category": "[Engineering Service Category]",
+  "brand": {
+    "@type": "Organization",
+    "name": "AAA Engineering Design",
+    "@id": "https://aaaengineeringdesign.com/#organization"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "[Min Price from post]",
+    "highPrice": "[Max Price from post]",
+    "offerCount": "1",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "AAA Engineering Design"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "[Number of reviews]",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "[City]",
+    "containedIn": {
+      "@type": "State",
+      "name": "California"
+    }
+  }
+}
+```
+
+**Standard Price Ranges by Service:**
+| Service | Low Price | High Price |
+|---------|-----------|------------|
+| ADU Structural Engineering | $2,500 | $6,000 |
+| Residential Structural Plans | $2,000 | $5,000 |
+| Commercial Engineering | $5,000 | $25,000 |
+| Foundation Design | $1,500 | $4,000 |
+| Seismic Retrofit | $3,000 | $8,000 |
+| Room Addition Plans | $2,000 | $4,500 |
+| Deck/Patio Engineering | $800 | $2,000 |
+
+**Template file:** `assets/schema-templates/product-schema.json`
+
+---
+
+### Review Snippets Schema (Posts with Testimonials - REQUIRED) ✨ NEW
+**Purpose:** Enables Review rich snippets showing star ratings and review count in search results.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "[Service Name] in [City]",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://aaaengineeringdesign.com/#organization",
+    "name": "AAA Engineering Design"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "[Reviewer Name], [City] Homeowner"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "[Testimonial text from Local Social Proof section]",
+      "datePublished": "2025-10-15"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "[Reviewer Name], [City] Property Owner"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "[Second testimonial]",
+      "datePublished": "2025-09-20"
+    }
+  ]
+}
+```
+
+**Review Guidelines:**
+- Include 2-3 reviews per post minimum
+- Use testimonials from the "Local Social Proof" section
+- Reviews should mention the city/service for relevance
+- Date reviews within past 6 months for freshness signals
+- Rating should always be 5 stars (only use positive reviews)
+
+**Template file:** `assets/schema-templates/review-snippets-schema.json`
+
+---
+
+### Organization Schema (ALL Posts - REQUIRED) ✨ NEW
+**Purpose:** Establishes brand identity in Knowledge Panels, provides E-E-A-T signals, links social profiles.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aaaengineeringdesign.com/#organization",
+  "name": "AAA Engineering Design",
+  "url": "https://aaaengineeringdesign.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://aaaengineeringdesign.com/logo.png",
+    "width": 600,
+    "height": 60
+  },
+  "description": "Licensed Professional Engineering firm providing structural, civil, and MEP design services throughout Southern California.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8031 Main Street",
+    "addressLocality": "Stanton",
+    "addressRegion": "CA",
+    "postalCode": "90680",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-949-981-4448",
+  "email": "info@aaaengineeringdesign.com",
+  "sameAs": [
+    "https://www.linkedin.com/company/aaa-engineering-design",
+    "https://www.facebook.com/aaaengineeringdesign"
+  ],
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Orange County, California"},
+    {"@type": "AdministrativeArea", "name": "Los Angeles County, California"},
+    {"@type": "AdministrativeArea", "name": "San Diego County, California"},
+    {"@type": "AdministrativeArea", "name": "Riverside County, California"},
+    {"@type": "AdministrativeArea", "name": "San Bernardino County, California"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional License",
+    "name": "California Professional Engineer (PE) License"
+  }
+}
+```
+
+**Template file:** `assets/schema-templates/organization-schema.json`
+
+---
+
+### Local Business Schema (City-Specific Posts - REQUIRED)
+**Purpose:** Critical for Local Pack rankings and "near me" searches. Shows in Google Maps.
+
 ```json
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://aaaengineeringdesign.com/#localbusiness",
   "name": "AAA Engineering Design",
+  "image": "https://aaaengineeringdesign.com/logo.png",
+  "description": "Licensed Professional Engineering firm providing [SERVICE_TYPE] services in [CITY], California",
   "areaServed": {
     "@type": "City",
-    "name": "[Primary City]"
+    "name": "[Primary City]",
+    "containedIn": {
+      "@type": "AdministrativeArea",
+      "name": "[County] County, California"
+    }
   },
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "8031 Main Street",
     "addressLocality": "Stanton",
     "addressRegion": "CA",
-    "postalCode": "90680"
+    "postalCode": "90680",
+    "addressCountry": "US"
   },
-  "telephone": "(949) 981-4448"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8025,
+    "longitude": -117.9931
+  },
+  "telephone": "+1-949-981-4448",
+  "priceRange": "$$-$$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engineering Services in [City]",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Free Initial Consultation"
+        },
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    ]
+  }
 }
 ```
 
-### Person Schema (For E-E-A-T) - NEW 2025 ✨
+**Template file:** `assets/schema-templates/local-business-schema.json`
+
+---
+
+### Person Schema (For E-E-A-T)
 ```json
 {
   "@context": "https://schema.org",
@@ -817,8 +1353,54 @@ View All Articles button
 - Automatically generated by `generatePersonSchema()` function
 - Provides E-E-A-T signals for AI systems
 
-### FAQ Schema (For PAA-Style Posts)
-Include when post has clear Q&A structure (5-8 questions recommended)
+---
+
+### Combined Schema Block (Include at End of Each Post)
+
+**IMPORTANT:** All schemas should be combined into a single `@graph` array for optimal parsing. Use `assets/schema-templates/combined-blog-schema.json` as your template.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": ".../#organization", ... },
+    { "@type": "LocalBusiness", "@id": ".../#localbusiness", "areaServed": {...}, ... },
+    { "@type": "Service", "name": "{{SERVICE}} in {{CITY}}", "provider": {"@id": ".../#organization"}, ... },
+    { "@type": "TechnicalArticle", "headline": "...", "author": {"@id": ".../#organization"}, ... },
+    { "@type": "BreadcrumbList", "itemListElement": [...] },
+    { "@type": "FAQPage", "mainEntity": [...] },
+    { "@type": "Review", "itemReviewed": {"@id": ".../#organization"}, ... }
+  ]
+}
+```
+
+**Template file:** `assets/schema-templates/combined-blog-schema.json`
+
+---
+
+### Schema Checklist (Verify Before Publishing)
+
+**HIGH PRIORITY:**
+- [ ] **Organization Schema** - company identity, logo, social links, credentials (ALL posts)
+- [ ] **LocalBusiness Schema** - city-specific areaServed, hours, service catalog (ALL geo posts)
+- [ ] **Service Schema** - service name + city, pricing, provider reference
+- [ ] **FAQ Schema** - 5-8 questions extracted from H2 headers with direct answers
+
+**MEDIUM PRIORITY:**
+- [ ] **Breadcrumb Schema** - Home > Blog > Category > Post
+- [ ] **Review Snippets** - 2-3 testimonials with 5-star ratings and dates
+- [ ] **Article Schema** - headline, description, dates, author/publisher
+
+**WHEN APPLICABLE:**
+- [ ] **HowTo Schema** - for step-by-step process posts
+- [ ] **Product Schema** - service name, price range, rating
+- [ ] **Person Schema** - if authorId specified
+
+**FINAL VALIDATION:**
+- [ ] All schemas combined in single `@graph` array
+- [ ] All `@id` references properly linked between schemas
+- [ ] Validated at https://validator.schema.org/
+- [ ] Rich results tested at https://search.google.com/test/rich-results
 
 ---
 
@@ -847,14 +1429,22 @@ Before publishing, verify:
 - [ ] **ALL H2 headers in question format** (no declarative headers)
 - [ ] **Direct answers (40-60 words)** at start of each major section
 - [ ] **FAQ section** with 5-8 questions included
-- [ ] **FAQ schema** properly implemented
-- [ ] **HowTo schema** if process/steps described
-- [ ] **Person schema** if authorId specified
 - [ ] **Modular content** with bullets, tables, clear sections
 - [ ] **E-E-A-T signals** throughout (licenses, certifications, projects completed)
 - [ ] First paragraph provides extractable direct answer
 - [ ] Geographic specificity in all examples
-- [ ] Schema markup validated at schema.org validator
+
+### Rich Snippets & Schema (REQUIRED): ✨
+- [ ] **Article Schema** - headline, description, dates, author
+- [ ] **Breadcrumb Schema** - Home > Blog > Category > Post title
+- [ ] **FAQ Schema** - 5-8 questions with direct answers from content
+- [ ] **Product Schema** - service name, price range, availability, rating
+- [ ] **Review Snippets Schema** - 2-3 testimonials with star ratings
+- [ ] **LocalBusiness Schema** - city, address, phone for city-specific posts
+- [ ] **HowTo Schema** - if process/steps described in post
+- [ ] **Person Schema** - if authorId specified in frontmatter
+- [ ] All schemas combined in single `@graph` array
+- [ ] Schema markup validated at https://validator.schema.org/
 
 ---
 
@@ -895,9 +1485,12 @@ Before publishing, verify:
 - Forget freshness indicators ("Updated: [Month Year]")
 - Write long, unstructured paragraphs (AI can't extract clean blocks)
 - Omit FAQ sections (missed AI Overview opportunities)
-- Skip schema markup (Person, FAQ, HowTo)
+- Skip schema markup (losing rich snippet opportunities)
 - Use vague language ("we offer quality service")
 - Write without clear section boundaries
+- Forget to include testimonials/reviews for Review Snippets
+- Omit price ranges (missing Product Snippet opportunities)
+- Skip breadcrumb schema (losing site navigation display)
 
 ✅ **Do:**
 - Convert ALL H2s to question format matching user queries
@@ -905,9 +1498,12 @@ Before publishing, verify:
 - Include author credentials in first paragraph
 - Add "Updated: November 2025" at top
 - Use bullets, tables, and clear modular blocks
-- Include 5-8 FAQ questions with schema
-- Implement all relevant schema types (Person, FAQ, HowTo)
+- Include 5-8 FAQ questions with FAQ schema
+- Include 2-3 testimonials with Review Snippets schema
+- Add Product schema with price ranges for service posts
+- Include Breadcrumb schema for all posts
+- Combine all schemas in `@graph` array
 - Use specific numbers, timelines, and credentials
 - Structure content for easy AI extraction
-- Validate schema at schema.org validator before publishing
+- Validate schema at https://validator.schema.org/ before publishing
 
