@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: November 28, 2025 (Batch 2)
+## Last Updated: November 30, 2025
 
 ---
 
@@ -23,12 +23,13 @@
 - ✅ Complete SoCal footprint (OC + LA + SD + Riverside + San Bernardino)
 
 ### Tracking:
-- **Current Cycle**: Cycle 2 (Started Nov 20, 2025)
+- **Current Cycle**: Cycle 3 (Started Nov 28, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
+- **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 2 Cities Used**: 93/103
-- **Cycle 2 Cities Remaining**: 10/103
-- **Cycle 2 Completion**: 90.3%
+- **Cycle 3 Cities Used**: 24/103
+- **Cycle 3 Cities Remaining**: 79/103
+- **Cycle 3 Completion**: 23.3%
 
 ---
 
@@ -273,6 +274,16 @@
 | Civil Engineer Near Me | Laguna Woods | ✅ Published | Nov 28, 2025 | Cycle 3 |
 | Home Addition Structural Engineer Near Me | Villa Park | ✅ Published | Nov 28, 2025 | Cycle 3 |
 | Foundation Repair Engineer Near Me | Stanton | ✅ Published | Nov 28, 2025 | Cycle 3 |
+| Attic Conversion Structural Engineering | Irvine | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Balcony Structural Engineering | Newport Beach | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Carport to Garage Conversion Engineering | Long Beach | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Home Elevator Structural Engineering | Santa Ana | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Skylight Structural Engineering | Anaheim | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Licensed Structural Engineer Near Me | Huntington Beach | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Structural Engineering Quote Near Me | Costa Mesa | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Structural Inspection Near Me | Fullerton | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Foundation Inspection Near Me | Orange | ✅ Published | Nov 30, 2025 | Cycle 3 |
+| Affordable Structural Engineer Near Me | Tustin | ✅ Published | Nov 30, 2025 | Cycle 3 |
 
 **NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with OC cities for residential engineering and near-me posts.
 
