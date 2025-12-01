@@ -20,19 +20,16 @@ const INDEXNOW_KEY = process.env.INDEXNOW_KEY || 'e8b5a9c2f7d4e3a1b6c8d9e0f1a2b3
 // UPDATE THIS ARRAY WITH YOUR NEWLY GENERATED BLOG POST SLUGS
 // Example format: 'structural-engineer-long-beach'
 const blogSlugs = [
-  'sustainable-engineering-design-services-in-buena-park-buena-park',
-  'benefits-of-engineering-design-services-in-glendale-glendale',
-  'structural-engineer-near-me-in-downey-downey',
-  'design-engineer-near-me-in-carson-carson',
-  'residential-structural-engineer-near-me-in-inglewood-inglewood',
-  'what-is-engineering-design-in-torrance-torrance',
-  'residential-structural-engineer-near-me-in-pasadena-pasadena',
-  'role-of-a-design-engineer-in-pomona-pomona',
-  'commercial-building-engineering-design-in-california-california',
-  'engineering-design-services-cost-in-baldwin-park-baldwin-park',
-  'types-of-engineering-design-in-montebello-montebello',
-  'how-to-hire-a-structural-engineer-in-whittier-whittier',
-  'what-do-structural-engineers-do-in-alhambra-alhambra',
+  'outdoor-kitchen-structural-engineering-in-laguna-beach',
+  'wine-cellar-structural-engineering-in-yorba-linda',
+  'home-theater-room-structural-engineering-in-mission-viejo',
+  'indoor-pool-structural-engineering-in-dana-point',
+  'guest-house-structural-engineering-in-laguna-niguel',
+  'garage-conversion-engineer-near-me-in-san-clemente',
+  'load-bearing-wall-engineer-near-me-in-lake-forest',
+  'deck-structural-engineer-near-me-in-westminster',
+  'permit-engineer-near-me-in-aliso-viejo',
+  'building-permit-structural-engineer-near-me-in-torrance',
 ];
 
 // Validate input
