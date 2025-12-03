@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react'
+import { Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 import { COMPANY_INFO, SERVICES } from '@/lib/constants'
 
 export function Footer() {
@@ -171,25 +171,28 @@ export function Footer() {
               <h4 className="font-semibold">Follow Us</h4>
               <div className="flex gap-3">
                 <a
-                  href={COMPANY_INFO.socialProfiles[0]}
-                  className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-4 w-4" />
-                </a>
-                <a
-                  href={COMPANY_INFO.socialProfiles[1]}
+                  href="https://www.linkedin.com/company/aaa-engineering-design?trk=public_post_feed-actor-name"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-4 w-4" />
                 </a>
                 <a
-                  href={COMPANY_INFO.socialProfiles[2]}
+                  href="https://www.yelp.com/biz/aaa-engineering-design-stanton-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                  aria-label="Twitter"
+                  aria-label="Yelp"
                 >
-                  <Twitter className="h-4 w-4" />
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.686 1.459z"/>
+                    <path d="M14.205 16.052l2.905 4.308c.564.83-.216 1.906-1.176 1.63l-4.995-1.433a1.073 1.073 0 0 1-.686-1.459 9.194 9.194 0 0 1 2.364-3.252 1.072 1.072 0 0 1 1.596.206z"/>
+                    <path d="M8.293 15.257l-4.307 2.905c-.83.564-1.906-.216-1.63-1.176l1.433-4.995a1.073 1.073 0 0 1 1.459-.686 9.194 9.194 0 0 1 3.252 2.364 1.072 1.072 0 0 1-.206 1.596z"/>
+                    <path d="M9.076 11.016l-4.995-1.433c-.96-.276-1.176-1.63-.346-2.035a9.194 9.194 0 0 1 3.252-2.364 1.073 1.073 0 0 1 1.459.686l1.433 4.995c.276.96-.8 1.74-1.63 1.176z"/>
+                    <path d="M10.634 2.107v5.268c0 1.003-1.327 1.403-1.947.587L5.089 3.22c-.476-.628-.14-1.543.618-1.683a9.194 9.194 0 0 1 3.98.008c.52.104.947.55.947 1.082z"/>
+                  </svg>
                 </a>
               </div>
             </div>
