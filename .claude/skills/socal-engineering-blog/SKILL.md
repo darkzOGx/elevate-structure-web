@@ -9,6 +9,83 @@ Generate high-quality, SEO-optimized blog posts for AAA Engineering Design targe
 
 ---
 
+## 🚨 MANDATORY FRAMEWORK - NO EXCEPTIONS 🚨
+
+**⛔ STOP! Before generating ANY blog post, you MUST follow the HIGH-CONVERSION TARGETING FRAMEWORK below.**
+
+**This is NOT optional. This is NOT a suggestion. This is the ONLY way to generate blog posts.**
+
+| Rule | Requirement |
+|------|-------------|
+| **City Selection** | ONLY from Platinum/Gold/Growth tier lists below |
+| **Keyword Selection** | MUST match city's archetype (Subterranean/Coastal/Compliance) |
+| **Content Allocation** | 40% Platinum, 35% Gold, 25% Growth |
+| **Generic Content** | ❌ PROHIBITED - No generic residential posts for random cities |
+| **Old 103-City Rotation** | ❌ DEPRECATED - Do NOT use |
+
+**If a blog post request doesn't specify high-conversion targeting, APPLY IT AUTOMATICALLY.**
+
+---
+
+## ⚠️ HIGH-CONVERSION TARGETING FRAMEWORK (MANDATORY DEFAULT)
+
+**Effective: December 2025**
+
+This skill uses an **archetype-based, tiered market strategy** for maximum conversion and appointment setting. The old 103-city equal rotation is DEPRECATED and must NOT be used.
+
+### ⚡ THREE MARKET ARCHETYPES (Match Content to Buyer Psychology)
+
+| Archetype | Markets | Buyer Psychology | Fee Potential |
+|-----------|---------|------------------|---------------|
+| **SUBTERRANEAN & VERTICAL** | Atherton, Palo Alto, Beverly Hills, Manhattan Beach | Extreme land constraints → build underground/up. Working with starchitects. | $25K-$150K+ |
+| **COASTAL FORTIFICATION** | Malibu, Laguna Beach, Newport Beach, La Jolla, Montecito | Defending $3M-$30M+ coastal properties. Complex permitting. Fire/erosion damage. | $20K-$100K+ |
+| **RESILIENCE & COMPLIANCE** | Santa Monica, West Hollywood, Pasadena, Long Beach | MANDATORY retrofit deadlines. Legal/financial pressure. Time-sensitive. | $15K-$75K |
+
+### 🏆 MARKET TIERS (Content Allocation)
+
+| Tier | Markets | Content % | Why |
+|------|---------|-----------|-----|
+| **PLATINUM** | Atherton, Malibu, Beverly Hills, Newport Beach, Palo Alto, Los Altos Hills, Santa Monica, Laguna Beach, Montecito | **40%** | $3M-$7M+ homes, highest fees, complex projects |
+| **GOLD** | Manhattan Beach, Pacific Palisades, La Jolla, Del Mar, West Hollywood, Pasadena, Bel Air, Brentwood, Coronado | **35%** | High volume, active ordinances, specific hazards |
+| **GROWTH** | Long Beach, San Diego, San Jose, Irvine, Anaheim, Huntington Beach, Calabasas, Glendale, Burbank | **25%** | ADU scaling, standard renovations, volume |
+
+### 🎯 CONTENT GENERATION RULES
+
+**Before generating ANY blog post:**
+
+1. **Identify the city's TIER** (Platinum/Gold/Growth)
+2. **Identify the city's ARCHETYPE** (Subterranean/Coastal/Compliance)
+3. **Select keywords from matching archetype cluster** in `references/keyword-list.md`
+4. **Use archetype-specific CTAs** from `references/HIGH-CONVERSION-TARGETING.md`
+5. **Include archetype-specific engineering content** (not generic)
+
+**Archetype-Matched Keywords (Examples):**
+
+| Archetype | ✅ USE These Keywords | ❌ NEVER Use For This City |
+|-----------|----------------------|---------------------------|
+| Subterranean | basement engineering, deep foundation, shoring, underpinning, vertical addition | coastal bluff, soft-story retrofit |
+| Coastal | bluff stabilization, Coastal Commission, fire damage, erosion, wave force | basement, deep excavation |
+| Compliance | soft-story retrofit, mandatory ordinance, seismic retrofit deadline, penalty | subterranean, coastal bluff |
+
+### 📍 PRIORITY TRIGGERS (Override Normal Rotation)
+
+Check these FIRST before selecting cities:
+
+1. **Active Compliance Deadline?** → Prioritize that city with compliance keywords
+   - Santa Monica soft-story deadlines
+   - West Hollywood mandatory retrofit
+   - LA Ordinance 183893 compliance
+
+2. **Recent Disaster?** → Prioritize affected Platinum/Gold cities
+   - Fire season → Malibu, Pacific Palisades, Montecito
+   - Post-earthquake → All Platinum coastal cities
+
+3. **Content Gap in Platinum?** → Fill before generating Growth content
+
+**See `references/HIGH-CONVERSION-TARGETING.md` for complete framework.**
+
+---
+
 ## 🎯 STRATEGIC KEYWORD PRIORITY HIERARCHY
 
 **CRITICAL: Apply this keyword strategy to ALL blog generation. These are the highest-converting keywords for AAA Engineering Design.**
@@ -555,9 +632,34 @@ When generating blog posts, the system automatically:
 
 ---
 
-### Step 0: Check Blog Tracking (MANDATORY - DO THIS FIRST!)
+### Step 0: HIGH-CONVERSION TARGETING (MANDATORY FIRST STEP!)
 
-**⚠️ CRITICAL - MUST CHECK BEFORE GENERATING ANY POSTS:**
+**🚨 BEFORE ANYTHING ELSE - Apply the High-Conversion Framework:**
+
+**For a batch of N posts, allocate cities by tier:**
+
+| Tier | Allocation | Cities to Use |
+|------|------------|---------------|
+| **PLATINUM (40%)** | 2 posts (of 5) | Atherton, Malibu, Beverly Hills, Newport Beach, Palo Alto, Los Altos Hills, Santa Monica, Laguna Beach, Montecito |
+| **GOLD (35%)** | 2 posts (of 5) | Manhattan Beach, Pacific Palisades, La Jolla, Del Mar, West Hollywood, Pasadena, Bel Air, Brentwood, Coronado |
+| **GROWTH (25%)** | 1 post (of 5) | Long Beach, San Diego, Irvine, Anaheim, Huntington Beach, Calabasas, Glendale, Burbank |
+
+**Then match keywords to city archetype:**
+
+| City Archetype | Use These Keywords |
+|----------------|-------------------|
+| **Subterranean** (Beverly Hills, Atherton, Palo Alto, Manhattan Beach, Bel Air) | basement engineering, deep foundation, shoring, underpinning, vertical addition, hillside excavation |
+| **Coastal** (Malibu, Laguna Beach, Newport Beach, La Jolla, Montecito, Del Mar, Coronado) | coastal bluff stabilization, Coastal Commission, fire damage, oceanfront foundation, wave force, erosion |
+| **Compliance** (Santa Monica, West Hollywood, Pasadena, Long Beach, Glendale) | soft-story retrofit, mandatory seismic retrofit, ordinance compliance, apartment building retrofit |
+
+**❌ WRONG:** Generic "ADU engineering" post for Beverly Hills (doesn't match Subterranean archetype)
+**✅ RIGHT:** "Basement Structural Engineering" post for Beverly Hills (matches Subterranean archetype)
+
+---
+
+### Step 0.5: Check Blog Tracking
+
+**⚠️ After selecting tier-appropriate cities, verify no duplicates:**
 
 ```bash
 view BLOG-TRACKING.md
@@ -566,7 +668,7 @@ view BLOG-TRACKING.md
 **This file tracks ALL keyword+city combinations already used. You MUST:**
 1. ✅ Read BLOG-TRACKING.md to see which keyword+city pairs are already published
 2. ✅ Verify your selected keyword+city combination is NOT already used
-3. ✅ Choose cities from "Available Cities" section
+3. ✅ Choose cities from Platinum/Gold/Growth tiers ONLY
 4. ✅ Update BLOG-TRACKING.md after generating new posts
 
 **NEVER create duplicate keyword+city combinations!**
