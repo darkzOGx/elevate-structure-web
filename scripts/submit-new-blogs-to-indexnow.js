@@ -19,18 +19,18 @@ const INDEXNOW_KEY = process.env.INDEXNOW_KEY || 'e8b5a9c2f7d4e3a1b6c8d9e0f1a2b3
 
 // UPDATE THIS ARRAY WITH YOUR NEWLY GENERATED BLOG POST SLUGS
 // Example format: 'structural-engineer-long-beach'
-// Updated: December 2, 2025
+// Updated: December 5, 2025
 const blogSlugs = [
-  'sunroom-addition-structural-engineering-in-san-diego',
-  'home-office-conversion-structural-engineering-in-los-angeles',
-  'rooftop-deck-structural-engineering-in-manhattan-beach',
-  'historic-home-structural-engineering-in-pasadena',
-  'coastal-home-addition-structural-engineering-in-carlsbad',
-  'emergency-structural-engineer-near-me-in-fountain-valley',
-  'same-day-structural-engineer-near-me-in-hermosa-beach',
-  '24-hour-structural-engineer-near-me-in-redondo-beach',
-  'foundation-crack-engineer-near-me-in-el-segundo',
-  'earthquake-damage-engineer-near-me-in-glendale',
+  'fire-damage-structural-assessment-in-montecito',
+  'deep-foundation-engineering-in-palo-alto',
+  'underground-parking-structure-engineering-in-bel-air',
+  'bluff-erosion-structural-engineering-in-corona-del-mar',
+  'multi-family-seismic-retrofit-in-long-beach',
+  'deep-foundation-engineer-near-me-in-atherton',
+  'coastal-commission-engineer-near-me-in-newport-beach',
+  'beach-house-foundation-engineer-near-me-in-coronado',
+  'apartment-building-structural-engineer-near-me-in-pasadena',
+  'foundation-repair-engineer-near-me-in-huntington-beach',
 ];
 
 // Validate input
