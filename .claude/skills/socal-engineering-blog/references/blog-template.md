@@ -1,5 +1,40 @@
 # Blog Post Template - AAA Engineering Design
 
+## 🚨🚨🚨 MANDATORY: JSON FRONTMATTER FORMAT 🚨🚨🚨
+
+**DO NOT USE YAML FRONTMATTER (---). The add-blog-posts.js script ONLY parses JSON!**
+
+```
+❌ WRONG - YAML FORMAT (WILL FAIL):
+---
+category: "Structural Engineering"
+title: "Some Title"
+---
+
+✅ CORRECT - JSON FORMAT (REQUIRED):
+{
+  "category": "Structural Engineering",
+  "title": "Some Title",
+  "publishDate": "December 6, 2025",
+  "readTime": "12 min read",
+  "author": "AAA Engineering Team",
+  "metaDescription": "Description here",
+  "keywords": ["keyword1", "keyword2"],
+  "primaryCity": "City Name",
+  "serviceName": "Service Name"
+}
+
+---
+
+**Updated: December 2025**
+
+Content starts here...
+```
+
+**The file MUST start with `{` on line 1, NOT with `---`!**
+
+---
+
 ## ⛔ CRITICAL: Blog Post ID/Slug Format
 
 **The city name must appear ONLY ONCE in the slug - NEVER duplicate it!**
