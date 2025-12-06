@@ -1,235 +1,214 @@
-# Engineering Design Keywords for Blog Posts
+# High-Conversion Keyword Strategy
 
-## Keyword Tracking Legend
-- ✅ Published
-- 🔄 In Progress
-- ⏳ Planned
-- 🎯 High Priority
-- 🚨 Urgent/High-Conversion
+**Last Updated:** December 2025
 
 ---
 
-## 🚨 HIGH-CONVERSION NICHE KEYWORDS (PRIORITY QUEUE)
+## ⚠️ ARCHETYPE-BASED KEYWORD STRATEGY
 
-**These keywords represent distressed clients with urgent needs - highest conversion rates and premium pricing potential.**
-
-### Red Tag & Compliance (Lead Gen Score: 94-98)
-| Keyword | Intent | Lead Gen Score | Status |
-|---------|--------|---------------|--------|
-| red tag removal structural engineer | Urgent/Transactional | 98 | 🎯 |
-| red tag house engineer California | Urgent/Transactional | 97 | 🎯 |
-| condemned house structural engineer | Urgent/Transactional | 96 | 🎯 |
-| unpermitted work legalization engineer | Urgent/Transactional | 95 | 🎯 |
-| permit violation structural engineer | Urgent/Transactional | 94 | 🎯 |
-| as-built drawings structural engineer | Commercial | 88 | 🎯 |
-
-### Emergency Structural (Lead Gen Score: 95-98)
-| Keyword | Intent | Lead Gen Score | Status |
-|---------|--------|---------------|--------|
-| emergency structural assessment | Urgent | 97 | 🎯 |
-| fire damage structural engineer | Urgent | 96 | 🎯 |
-| post-earthquake inspection engineer | Urgent | 96 | 🎯 |
-| car hit house structural inspection | Urgent | 95 | 🎯 |
-| foundation failure emergency | Urgent | 95 | 🎯 |
-| structural collapse assessment | Urgent | 94 | 🎯 |
-
-### Soft Story Retrofit (Lead Gen Score: 90-94)
-| Keyword | Intent | Lead Gen Score | Status |
-|---------|--------|---------------|--------|
-| soft story retrofit Los Angeles | Compliance/Transactional | 94 | 🎯 |
-| soft story ordinance 183893 compliance | Compliance | 93 | 🎯 |
-| soft story retrofit San Francisco | Compliance/Transactional | 93 | 🎯 |
-| soft story retrofit engineer | Compliance/Transactional | 92 | 🎯 |
-| mandatory retrofit ordinance engineer | Compliance | 91 | 🎯 |
-| soft story seismic retrofit cost | Commercial | 90 | 🎯 |
-
-### B2B Professional Services (Lead Gen Score: 85-92)
-| Keyword | Intent | Lead Gen Score | Status |
-|---------|--------|---------------|--------|
-| engineer of record California | B2B/Commercial | 92 | 🎯 |
-| structural consultant for architects | B2B/Commercial | 90 | 🎯 |
-| PE stamp structural plans | B2B/Commercial | 89 | 🎯 |
-| plan check support engineer | B2B/Commercial | 88 | 🎯 |
-| construction engineering support | B2B/Commercial | 87 | 🎯 |
-| tenant improvement structural engineer | B2B/Commercial | 86 | 🎯 |
+This keyword list is organized by **Market Archetype** to match buyer psychology. Keywords must be paired with cities from the matching archetype.
 
 ---
 
-## Pillar Articles (High-Value, Comprehensive Guides)
+## 🏠 ARCHETYPE 1: RESIDENTIAL (Score 82-95)
 
-| Keyword | Intent | Volume | Difficulty | Status | Cities Covered |
-|---------|--------|--------|------------|--------|----------------|
-| Engineering Design Services Guide | Informational | High | Medium | ⏳ | - |
-| Structural Engineering Comprehensive Guide | Informational | High | High | ⏳ | - |
-| Choosing Engineering Design Consultants | Commercial | Medium | Medium | ⏳ | - |
+**Target Cities:** San Diego, Irvine, Anaheim, Huntington Beach, Calabasas, Pasadena, Long Beach
 
-**Pillar Strategy**: These are 3,000-5,000 word cornerstone content pieces that should:
-- Link to 10+ cluster articles
-- Be updated quarterly with new information
-- Include comprehensive regional data for all SoCal
-- Feature comparison tables, infographics, and rich media
+**Buyer Psychology:** Homeowners planning additions, renovations, ADUs, and custom homes. Mix of DIY researchers and ready-to-hire clients.
 
----
+### Primary Keywords
 
-## Cluster Articles (Focused Topic Exploration)
+| Keyword | Score | Priority |
+|---------|-------|----------|
+| ADU structural engineer California | 95 | 🎯 CRITICAL |
+| two story addition structural engineer | 94 | 🎯 CRITICAL |
+| second story addition engineer | 93 | 🎯 CRITICAL |
+| residential structural engineer near me | 92 | 🎯 |
+| home addition structural engineer | 90 | 🎯 |
+| one story addition structural plans | 89 | HIGH |
+| new construction structural engineer | 88 | HIGH |
+| load bearing wall removal engineer | 86 | HIGH |
+| house remodel structural engineer | 85 | HIGH |
+| room addition structural engineer | 84 | HIGH |
+| custom home structural engineer | 83 | HIGH |
+| garage conversion structural engineer | 82 | HIGH |
 
-| Keyword | Intent | Volume | Difficulty | Priority | Status |
-|---------|--------|--------|------------|----------|--------|
-| Sustainable Engineering Design Services | Commercial | Medium | Low | 🎯 | ⏳ |
-| Residential Structural Engineer Near Me | Transactional | High | High | 🎯 | ⏳ |
-| Commercial Building Engineering Design California | Transactional | High | High | 🎯 | ⏳ |
-| Civil Engineering Design Southern California | Commercial | High | High | 🎯 | ⏳ |
-| Mechanical Engineering Design Southern California | Commercial | High | Medium | 🎯 | ⏳ |
-| Stormwater Design Engineer Roles | Informational | Medium | Low | 🎯 | ⏳ |
-| Septic Design Engineers Residential | Commercial | Low | Low | 🎯 | ⏳ |
-| Custom House Engineering Design | Informational | Medium | Low | 🎯 | ⏳ |
-| Best Structural Engineering Firms Los Angeles | Navigational | High | Very High | 🎯 | ⏳ |
-| Mechanical Engineering Companies in San Diego | Navigational | Medium | High | 🎯 | ⏳ |
-| Benefits of Engineering Design Services | Informational | Medium | Low | - | ⏳ |
-
-**Cluster Strategy**: These are 1,500-2,500 word articles that should:
-- Link back to relevant pillar article
-- Link to 3-5 related cluster articles
-- Be geo-targeted to specific city
-- Include local case studies or examples
+### Content Themes for Residential Archetype:
+- "ADU Structural Engineering in [City]: Complete 2025 Guide"
+- "Second Story Addition Structural Requirements in [City]"
+- "How Much Does a Residential Structural Engineer Cost in [City]?"
+- "Load Bearing Wall Removal: What [City] Homeowners Need to Know"
+- "Garage Conversion Structural Engineering in [City]"
+- "Custom Home Structural Engineering in [City]"
 
 ---
 
-## People Also Ask / AI Overview Questions (FAQ-Style Content)
+## 🏢 ARCHETYPE 2: COMMERCIAL NEW CONSTRUCTION (Score 85-96)
 
-| Keyword | Intent | Volume | Difficulty | AIO Potential | Status |
-|---------|--------|--------|------------|---------------|--------|
-| What is Engineering Design | Informational | High | Low | Very High | ⏳ |
-| How to Hire a Structural Engineer | Informational | High | Medium | Very High | ⏳ |
-| What do Structural Engineers do | Informational | High | Low | Very High | ⏳ |
-| Engineering Design Services Cost | Commercial | High | Medium | High | ⏳ |
-| When to Hire Residential Structural Engineer | Informational | High | Low | Very High | 🎯 |
-| Role of a Design Engineer | Informational | Medium | Low | High | ⏳ |
-| Types of Engineering Design | Informational | High | Medium | Very High | 🎯 |
-| Civil Engineer Structural Design Capability | Informational | Low | Low | Medium | ⏳ |
-| Structural Engineer Requirements | Informational | Medium | Low | Very High | 🎯 |
-| California Structural Engineer License Lookup | Informational | Medium | Low | High | ⏳ |
-| Structural Engineers Association of California | Navigational | Medium | Low | Medium | ⏳ |
-| Structural Engineering Association of California | Navigational | Medium | Low | Medium | ⏳ |
-| Structural Board California | Informational | Low | Low | Medium | ⏳ |
+**Target Cities:** Los Angeles, San Diego, Orange County, Inland Empire
 
-**PAA Strategy**: These are 1,200-1,800 word articles that should:
-- Directly answer the question in first paragraph
-- Include FAQ schema markup
-- Feature step-by-step processes or numbered lists
-- Optimize for featured snippets and AI overviews
-- Use conversational, easy-to-understand language
+**Buyer Psychology:** Developers, general contractors, architects seeking PE-stamped plans for commercial projects. B2B focus, larger project values.
 
----
+### Primary Keywords
 
-## Google Search Console Keywords (Actual User Queries)
+| Keyword | Score | Priority |
+|---------|-------|----------|
+| concrete tilt up structural engineer | 96 | 🎯 CRITICAL |
+| CMU building structural engineer | 95 | 🎯 CRITICAL |
+| parking structure engineer California | 94 | 🎯 CRITICAL |
+| steel building structural engineer | 93 | 🎯 CRITICAL |
+| commercial structural engineer near me | 92 | 🎯 |
+| concrete building structural design | 91 | 🎯 |
+| apartment building structural engineer | 90 | 🎯 |
+| multi-family structural engineer | 89 | HIGH |
+| commercial tenant improvement engineer | 87 | HIGH |
+| warehouse structural engineer | 86 | HIGH |
+| retail building structural engineer | 85 | HIGH |
 
-### High-Priority GSC Keywords
-- **aaa engineering** - Brand search, high intent
-- **structural engineer near me** - Local, transactional
-- **structural engineer long beach** - Geo + service, very high intent
-- **structural engineer los angeles** - Geo + service, very high intent
-- **sustainable design engineering services near me** - Commercial, local
-- **stormwater design engineer** - Service-specific
-- **septic design engineers near me** - Commercial, local
-- **residential structural engineer near me** - Transactional, local
-- **residential structural engineer los angeles** - Geo-specific, high intent
-- **best structural engineers orange county** - Geo + navigational, high intent
-- **orange county structural engineers** - Geo-specific, high intent
-- **structural engineer orange county ca** - Geo-specific, high intent
-
-### Secondary GSC Keywords
-- engineering design consultants
-- engineering design services
-- structural engineering design
-- design engineering services
-- commercial buildings engineering design california
-- apartments engineering design california
-- custom design engineering near me
-- structural design engineer
-- design engineers near me
-- engineering design southern california jobs
-
-### Long-Tail GSC Keywords
-- hire csla engineer
-- licensed engineer near me
-- building engineers near me
-- residential home engineering
-- house plan engineer near me
-- architectural and engineering services in los alamitos
-
-### Competitor Awareness Keywords
-- **RICK engineering** - Competitor brand awareness
-- **RICK Engineering San Diego** - Competitor geo-targeted
-- **Rick engineering Riverside** - Competitor geo-targeted
-- **Luxon Engineering** - Competitor brand awareness
-
-**Strategy**: Monitor these competitor keywords to understand market positioning and create comparison/alternative content when appropriate. These keywords help capture users researching multiple engineering firms.
+### Content Themes for Commercial Archetype:
+- "Tilt-Up Construction Structural Engineering in [City]"
+- "CMU Building Structural Design: Complete Guide for [Region]"
+- "Parking Structure Engineering in California: Requirements & Costs"
+- "Steel Building Structural Engineer in [City]"
+- "Multi-Family Apartment Structural Engineering in [City]"
+- "Warehouse Structural Engineering in [Region]"
+- "Commercial Tenant Improvement Engineering in [City]"
 
 ---
 
-## Content Calendar Planning
+## ⚠️ ARCHETYPE 3: SEISMIC COMPLIANCE (Score 94-98)
 
-### Month 1 - Foundation Building
-**Week 1**: 5 geo-targeted cluster articles (Long Beach, Irvine, Santa Ana, Anaheim, Newport Beach)
-**Week 2**: 5 PAA articles optimized for AI Overviews
-**Week 3**: 1 pillar article (Engineering Design Services Guide)
-**Week 4**: 5 more geo-targeted articles (Huntington Beach, Costa Mesa, Fullerton, Garden Grove, Mission Viejo)
+**Target Cities:** Santa Monica, West Hollywood, Pasadena, Long Beach, Los Angeles
 
-### Month 2 - Expansion
-**Week 1**: Update Month 1 articles with internal links to new content
-**Week 2**: 5 commercial intent articles
-**Week 3**: 1 pillar article (Structural Engineering Comprehensive Guide)
-**Week 4**: 5 navigational/local articles
+**Buyer Psychology:** MANDATORY compliance deadlines create non-discretionary demand. Legal/financial pressure to retrofit. Time-sensitive, urgent need. Multi-family building owners facing penalties.
+
+### Primary Keywords
+
+| Keyword | Score | Priority |
+|---------|-------|----------|
+| mandatory seismic retrofit deadline | 98 | 🎯 CRITICAL |
+| LA ordinance 183893 engineer | 97 | 🎯 CRITICAL |
+| soft-story retrofit Los Angeles | 96 | 🎯 CRITICAL |
+| Santa Monica soft-story compliance | 96 | 🎯 CRITICAL |
+| soft-story retrofit engineer near me | 95 | 🎯 CRITICAL |
+| West Hollywood retrofit engineer | 95 | 🎯 CRITICAL |
+| apartment building seismic retrofit | 94 | 🎯 CRITICAL |
+| soft-story retrofit cost California | 94 | 🎯 CRITICAL |
+
+### Compliance-Specific Keywords by City
+
+**Santa Monica:**
+- "soft-story retrofit Santa Monica" (Score: 97)
+- "Santa Monica seismic retrofit deadline" (Score: 98)
+- "mandatory retrofit engineer Santa Monica" (Score: 96)
+
+**West Hollywood:**
+- "soft-story retrofit West Hollywood" (Score: 96)
+- "WeHo seismic retrofit engineer" (Score: 95)
+- "mandatory retrofit West Hollywood" (Score: 97)
+
+**Los Angeles:**
+- "LA ordinance 183893 compliance" (Score: 97)
+- "Los Angeles soft-story retrofit" (Score: 95)
+- "mandatory seismic retrofit LA" (Score: 96)
+
+### Content Themes for Compliance Archetype:
+- "⚠️ [City] Soft-Story Retrofit Deadline: What Building Owners Need to Know"
+- "LA Ordinance 183893 Compliance Guide for Property Owners"
+- "Avoiding $1,000+/Day Penalties: [City] Mandatory Retrofit Requirements"
+- "Soft-Story Retrofit Cost in [City]: Complete 2025 Guide"
+- "Apartment Building Seismic Retrofit in [City]"
 
 ---
 
-## Keyword Assignment Rules
+## 📍 LOCAL INTENT MODIFIERS
 
-### For Each Blog Post:
-1. **Primary Keyword**: The main focus keyword (from table above)
-2. **Secondary Keywords** (2-3): Related keywords to weave naturally
-3. **Local Keyword Variant**: City + primary keyword (e.g., "structural engineer Long Beach")
-4. **Long-Tail Variations** (3-5): Natural language queries from GSC
+**Add these modifiers to any keyword to create geo-targeted variations:**
 
-### Example for "When to Hire Residential Structural Engineer":
-- **Primary**: When to Hire Residential Structural Engineer
-- **Secondary**: residential structural engineer near me, cost of structural engineer, residential home engineering
-- **Local**: When to Hire Structural Engineer in Long Beach
-- **Long-Tail**: 
-  - do i need a structural engineer for a remodel
-  - when is a structural engineer required in california
-  - structural engineer requirements for home addition
-  - hiring structural engineer for foundation problems
+| Modifier | Example |
+|----------|---------|
+| near me | "structural engineer near me" |
+| [City name] | "structural engineer San Diego" |
+| California | "ADU structural engineer California" |
+| Southern California | "commercial structural engineer Southern California" |
+| cost / pricing | "structural engineer cost California" |
 
----
+### High-Value "Near Me" Combinations
 
-## Keyword Density Guidelines
-- Primary keyword: 1-1.5% density
-- Include primary keyword in: Title, H1, First paragraph, One H2, Meta description, URL slug
-- Secondary keywords: 0.5-1% density each
-- Natural language: Prioritize readability over keyword stuffing
-- LSI Keywords: Use related terms naturally (e.g., "structural engineering" → "load-bearing," "foundation design," "seismic analysis")
+| Base Keyword + "near me" | Score |
+|--------------------------|-------|
+| structural engineer near me | 90 |
+| residential structural engineer near me | 92 |
+| commercial structural engineer near me | 92 |
+| soft-story retrofit engineer near me | 95 |
+| ADU structural engineer near me | 88 |
+| foundation engineer near me | 87 |
+| seismic retrofit engineer near me | 89 |
 
 ---
 
-## Internal Linking Keyword Anchors
+## 🚨 HIGH-URGENCY KEYWORDS (ALL ARCHETYPES)
 
-### Service Page Links
-- "structural engineering services" → /services/structural-engineering
-- "civil engineering design" → /services/civil-engineering
-- "MEP engineering" → /services/mep-engineering
-- "residential engineering" → /services/residential
-- "commercial engineering" → /services/commercial
+These keywords capture emergency/urgent situations with premium pricing potential:
 
-### Blog Links
-- Use descriptive, keyword-rich anchors
-- Vary anchor text (don't use same anchor for same target)
-- Mix exact match, partial match, and branded anchors
+| Keyword | Score | Use With |
+|---------|-------|----------|
+| emergency structural engineer | 98 | Any city |
+| red tag removal structural engineer | 98 | Any city |
+| fire damage structural assessment | 97 | Coastal cities |
+| earthquake damage structural engineer | 97 | Any city |
+| condemned house structural engineer | 97 | Any city |
+| foundation failure emergency | 96 | Any city |
+| post-earthquake inspection engineer | 96 | Any city |
+| car hit house structural inspection | 95 | Any city |
+| same day structural engineer | 94 | Any city |
+| 24 hour structural engineer | 93 | Any city |
 
-### External Links (Authority Building)
-- California Building Code → link to official DSA/BSC resources
-- Local building departments → link to city government sites
-- Professional organizations → ASCE, SEAOC, APEGBC
-- Code references → ICC, Title 24, CBC
+---
 
+## 🔗 KEYWORD + CITY PAIRING RULES
+
+### Mandatory Matching:
+
+1. **Residential keywords** → Residential archetype cities (San Diego, Irvine, Anaheim, etc.)
+2. **Commercial keywords** → Commercial archetype regions (LA, SD, OC, Inland Empire)
+3. **Compliance keywords** → Compliance archetype cities (Santa Monica, West Hollywood, Pasadena, Long Beach, LA)
+4. **Emergency keywords** → Any city
+
+### Examples of CORRECT Pairing:
+
+✅ "ADU structural engineer" + Irvine
+✅ "second story addition engineer" + San Diego
+✅ "tilt up structural engineer" + Los Angeles
+✅ "soft-story retrofit" + Santa Monica
+✅ "commercial structural engineer" + Orange County
+
+### Examples of WRONG Pairing:
+
+❌ "soft-story retrofit" + Irvine (not a compliance city)
+❌ "tilt up structural engineer" + residential-only city
+❌ "ADU structural engineer" + commercial-only context
+
+---
+
+## 📊 CONTENT GENERATION PRIORITY
+
+When selecting keywords for a batch:
+
+1. **Check Compliance Deadlines** → Prioritize compliance keywords for cities with active deadlines
+2. **Balance Archetypes** → Mix residential, commercial, and compliance content
+3. **Local Intent** → Add "near me" and city modifiers for local SEO
+4. **Never Mix Archetypes** → Each post targets ONE archetype
+
+---
+
+## 📋 KEYWORD STATUS TRACKING
+
+### Legend:
+- 🎯 = Critical Priority (generate immediately)
+- HIGH = High priority (next batch)
+- MEDIUM = Standard priority
+- ✅ = Published
+- ⏳ = In queue
+
+Update this section as keywords are published to track coverage.
