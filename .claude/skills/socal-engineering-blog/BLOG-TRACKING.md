@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 1, 2025
+## Last Updated: December 9, 2025
 
 ---
 
@@ -27,9 +27,9 @@
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 3 Cities Used**: 34/103
-- **Cycle 3 Cities Remaining**: 69/103
-- **Cycle 3 Completion**: 33.0%
+- **Cycle 3 Cities Used**: 49/103
+- **Cycle 3 Cities Remaining**: 54/103
+- **Cycle 3 Completion**: 47.6%
 
 ---
 
@@ -294,8 +294,23 @@
 | Deck Structural Engineer Near Me | Westminster | ✅ Published | Dec 1, 2025 | Cycle 3 |
 | Permit Engineer Near Me | Aliso Viejo | ✅ Published | Dec 1, 2025 | Cycle 3 |
 | Building Permit Structural Engineer Near Me | Torrance | ✅ Published | Dec 1, 2025 | Cycle 3 |
+| Fireplace Structural Engineering | San Diego | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Staircase Structural Engineering | Riverside | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Covered Patio Structural Engineering | Temecula | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Bonus Room Structural Engineering | Murrieta | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Home Office Addition Structural Engineering | Rancho Cucamonga | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Multi-Story Addition Structural Engineering | Ontario | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Whole House Renovation Structural Engineering | Fontana | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Seismic Foundation Retrofit | Chino | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Residential Beam Design Engineering | San Bernardino | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Crawl Space Structural Engineering | Rialto | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Residential Structural Engineer Near Me | San Diego | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Home Addition Structural Engineer Near Me | Chino Hills | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Foundation Engineer Near Me | Upland | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| ADU Structural Engineer Near Me | Redlands | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Seismic Retrofit Engineer Near Me | Riverside | ✅ Published | Dec 9, 2025 | Cycle 3 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with OC cities for residential engineering and near-me posts.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with residential engineering cluster and near-me posts across Riverside and San Bernardino Counties.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
