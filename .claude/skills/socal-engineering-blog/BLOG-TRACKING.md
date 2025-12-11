@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 9, 2025
+## Last Updated: December 11, 2025
 
 ---
 
@@ -27,9 +27,9 @@
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Total Cities**: 103
-- **Cycle 3 Cities Used**: 49/103
-- **Cycle 3 Cities Remaining**: 54/103
-- **Cycle 3 Completion**: 47.6%
+- **Cycle 3 Cities Used**: 69/103
+- **Cycle 3 Cities Remaining**: 34/103
+- **Cycle 3 Completion**: 67.0%
 
 ---
 
@@ -309,8 +309,33 @@
 | Foundation Engineer Near Me | Upland | ✅ Published | Dec 9, 2025 | Cycle 3 |
 | ADU Structural Engineer Near Me | Redlands | ✅ Published | Dec 9, 2025 | Cycle 3 |
 | Seismic Retrofit Engineer Near Me | Riverside | ✅ Published | Dec 9, 2025 | Cycle 3 |
+| Subterranean Living Space Engineering | Beverly Hills | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Coastal Bluff Stabilization | Malibu | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Soft-Story Retrofit Deadline | Santa Monica | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Deep Foundation Engineering | Atherton | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Oceanfront Foundation Design | Laguna Beach | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Mandatory Seismic Retrofit | West Hollywood | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Hillside Excavation Engineering | Palo Alto | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Fire Damage Structural Assessment | Montecito | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Beach Basement Engineering | Manhattan Beach | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Coastal Foundation Engineering | La Jolla | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Historic Home Seismic Retrofit | Pasadena | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Bluff Home Structural Engineering | Del Mar | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Ultra-Luxury Estate Engineering | Bel Air | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Coastal Erosion Structural Solutions | Corona del Mar | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Luxury Addition Engineering | Brentwood | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Seismic Retrofit Engineering | Long Beach | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Foundation Repair Engineering | Torrance | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Residential Structural Engineering | Fullerton | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Home Addition Structural Design | Glendale | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Commercial Tenant Improvement Engineering | Costa Mesa | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me - Basement Additions | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me - Coastal Foundations | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me - Seismic Retrofit | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me - Hillside Construction | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me - Home Additions | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with residential engineering cluster and near-me posts across Riverside and San Bernardino Counties.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with residential engineering cluster and near-me posts across Riverside and San Bernardino Counties. Dec 11, 2025 batch: 25 posts (8 Platinum + 7 Gold + 5 Growth + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
