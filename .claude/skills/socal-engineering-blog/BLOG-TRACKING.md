@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 11, 2025
+## Last Updated: December 11, 2025 (Batch 2)
 
 ---
 
@@ -26,10 +26,10 @@
 - **Current Cycle**: Cycle 3 (Started Nov 28, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
-- **Total Cities**: 103
-- **Cycle 3 Cities Used**: 69/103
-- **Cycle 3 Cities Remaining**: 34/103
-- **Cycle 3 Completion**: 67.0%
+- **Total Cities**: 105 (added Banning, Beaumont)
+- **Cycle 3 Cities Used**: 84/105
+- **Cycle 3 Cities Remaining**: 21/105
+- **Cycle 3 Completion**: 80.0%
 
 ---
 
@@ -334,8 +334,28 @@
 | Structural Engineer Near Me - Seismic Retrofit | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
 | Structural Engineer Near Me - Hillside Construction | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
 | Structural Engineer Near Me - Home Additions | (Near Me Regional) | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Office Building Structural Engineering | Jurupa Valley | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Warehouse Structural Engineering | Perris | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Retail Center Structural Engineering | Lake Elsinore | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Industrial Facility Structural Engineering | Wildomar | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Commercial Tenant Improvement Engineering | Cathedral City | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Mixed-Use Development Structural Engineering | Palm Springs | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Parking Structure Engineering | La Quinta | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Manufacturing Plant Structural Engineering | Rancho Mirage | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Distribution Center Structural Engineering | Coachella | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Commercial Building Code Compliance | Desert Hot Springs | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Deep Foundation Design | San Jacinto | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Foundation Settlement Analysis | Palm Desert | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Expansive Soil Foundation Engineering | Bonita | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Hillside Foundation Engineering | Spring Valley | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Foundation Repair Engineering | Rancho San Diego | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Residential Structural Engineer Near Me | Banning | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Foundation Engineer Near Me | Beaumont | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Seismic Retrofit Engineer Near Me | Highland | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Structural Engineer Near Me | Yucaipa | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Commercial Structural Engineer Near Me | Lemon Grove | ✅ Published | Dec 11, 2025 | Cycle 3 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025 - continuing with residential engineering cluster and near-me posts across Riverside and San Bernardino Counties. Dec 11, 2025 batch: 25 posts (8 Platinum + 7 Gold + 5 Growth + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025. Dec 11, 2025 Batch 2: 20 posts (10 Commercial & Industrial Hub + 5 Foundation Engineering Hub + 5 Near Me). Added Banning and Beaumont as new cities to roster.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
@@ -460,9 +480,9 @@
 | **Del Mar** | 4,300 | $3,500,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Solana Beach** | 13,000 | $1,800,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Lemon Grove** | 27,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Bonita** | 13,000 | $750,000 | NEW | ✅ AVAILABLE |
-| **Spring Valley** | 31,000 | $640,000 | NEW | ✅ AVAILABLE |
-| **Rancho San Diego** | 22,000 | $780,000 | NEW | ✅ AVAILABLE |
+| **Bonita** | 13,000 | $750,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Spring Valley** | 31,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Rancho San Diego** | 22,000 | $780,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Ramona** | 21,000 | $620,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Alpine** | 15,000 | $720,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Lakeside** | 21,000 | $580,000 | Used 1x | ❌ USED THIS CYCLE |
@@ -482,21 +502,23 @@
 | **Temecula** | 114,000 | $640,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Murrieta** | 116,000 | $610,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Menifee** | 102,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Perris** | 79,000 | $450,000 | NEW | ✅ AVAILABLE |
-| **Lake Elsinore** | 70,000 | $510,000 | NEW | ✅ AVAILABLE |
-| **Wildomar** | 37,000 | $560,000 | NEW | ✅ AVAILABLE |
+| **Perris** | 79,000 | $450,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Lake Elsinore** | 70,000 | $510,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Wildomar** | 37,000 | $560,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Hemet** | 90,000 | $380,000 | Used 1x | ❌ USED THIS CYCLE |
-| **San Jacinto** | 53,000 | $390,000 | NEW | ✅ AVAILABLE |
-| **Palm Desert** | 53,000 | $560,000 | NEW | ✅ AVAILABLE |
-| **Palm Springs** | 48,000 | $590,000 | NEW | ✅ AVAILABLE |
-| **Cathedral City** | 55,000 | $440,000 | NEW | ✅ AVAILABLE |
+| **San Jacinto** | 53,000 | $390,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Palm Desert** | 53,000 | $560,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Palm Springs** | 48,000 | $590,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Cathedral City** | 55,000 | $440,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Indio** | 92,000 | $420,000 | Used 1x | ❌ USED THIS CYCLE |
-| **La Quinta** | 41,000 | $680,000 | NEW | ✅ AVAILABLE |
-| **Rancho Mirage** | 18,000 | $750,000 | NEW | ✅ AVAILABLE |
-| **Coachella** | 45,000 | $350,000 | NEW | ✅ AVAILABLE |
-| **Desert Hot Springs** | 29,000 | $320,000 | NEW | ✅ AVAILABLE |
+| **La Quinta** | 41,000 | $680,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Rancho Mirage** | 18,000 | $750,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Coachella** | 45,000 | $350,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Desert Hot Springs** | 29,000 | $320,000 | Used 1x | ❌ USED THIS CYCLE |
 | **Eastvale** | 69,000 | $700,000 | Used 1x | ❌ USED THIS CYCLE |
-| **Jurupa Valley** | 112,000 | $520,000 | NEW | ✅ AVAILABLE |
+| **Jurupa Valley** | 112,000 | $520,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Banning** | 31,000 | $380,000 | Used 1x | ❌ USED THIS CYCLE |
+| **Beaumont** | 54,000 | $480,000 | Used 1x | ❌ USED THIS CYCLE |
 
 ---
 
