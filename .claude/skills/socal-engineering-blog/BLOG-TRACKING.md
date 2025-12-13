@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 11, 2025 (Batch 2)
+## Last Updated: December 13, 2025
 
 ---
 
@@ -23,13 +23,14 @@
 - ✅ Complete SoCal footprint (OC + LA + SD + Riverside + San Bernardino)
 
 ### Tracking:
-- **Current Cycle**: Cycle 3 (Started Nov 28, 2025)
+- **Current Cycle**: Cycle 4 (Started Dec 13, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
+- **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
 - **Total Cities**: 105 (added Banning, Beaumont)
-- **Cycle 3 Cities Used**: 84/105
-- **Cycle 3 Cities Remaining**: 21/105
-- **Cycle 3 Completion**: 80.0%
+- **Cycle 4 Cities Used**: 4/105
+- **Cycle 4 Cities Remaining**: 101/105
+- **Cycle 4 Completion**: 3.8%
 
 ---
 
@@ -354,8 +355,33 @@
 | Seismic Retrofit Engineer Near Me | Highland | ✅ Published | Dec 11, 2025 | Cycle 3 |
 | Structural Engineer Near Me | Yucaipa | ✅ Published | Dec 11, 2025 | Cycle 3 |
 | Commercial Structural Engineer Near Me | Lemon Grove | ✅ Published | Dec 11, 2025 | Cycle 3 |
+| Office Building Structural Engineering | Oceanside | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Warehouse Structural Engineering | Carlsbad | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Retail Center Structural Engineering | Escondido | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Industrial Facility Structural Engineering | Vista | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Commercial Tenant Improvement Engineering | San Marcos | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Mixed-Use Development Structural Engineering | Chula Vista | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Manufacturing Plant Structural Engineering | El Cajon | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Distribution Center Structural Engineering | Poway | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Commercial Building Renovation Engineering | Santee | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Parking Structure Engineering | Corona | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Foundation Repair Engineering | National City | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Coastal Foundation Design | Coronado | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Hillside Foundation Engineering | Solana Beach | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Expansive Soil Foundation Engineering | Moreno Valley | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Residential Foundation Design | Menifee | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| ADU Structural Engineering | Imperial Beach | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Home Addition Structural Engineering | Eastvale | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Seismic Retrofit Engineering | Hemet | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Pool House Structural Engineering | Indio | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Custom Home Structural Engineering | Ramona | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Structural Engineer Near Me | Alpine | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Residential Structural Engineer Near Me | Lakeside | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Commercial Structural Engineer Near Me | El Segundo | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Seismic Retrofit Engineer Near Me | Fallbrook | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Home Structural Engineer Near Me | Redondo Beach | ✅ Published | Dec 13, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 began Nov 28, 2025. Dec 11, 2025 Batch 2: 20 posts (10 Commercial & Industrial Hub + 5 Foundation Engineering Hub + 5 Near Me). Added Banning and Beaumont as new cities to roster.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 13, 2025 Batch: 25 posts (10 Commercial & Industrial Hub + 5 Foundation Engineering Hub + 5 Residential Engineering + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
