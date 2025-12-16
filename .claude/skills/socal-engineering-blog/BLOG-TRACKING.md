@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 13, 2025
+## Last Updated: December 15, 2025 (Batch 2)
 
 ---
 
@@ -28,9 +28,9 @@
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
 - **Total Cities**: 105 (added Banning, Beaumont)
-- **Cycle 4 Cities Used**: 4/105
-- **Cycle 4 Cities Remaining**: 101/105
-- **Cycle 4 Completion**: 3.8%
+- **Cycle 4 Cities Used**: 54/105
+- **Cycle 4 Cities Remaining**: 51/105
+- **Cycle 4 Completion**: 51.4%
 
 ---
 
@@ -380,8 +380,58 @@
 | Commercial Structural Engineer Near Me | El Segundo | ✅ Published | Dec 13, 2025 | Cycle 4 |
 | Seismic Retrofit Engineer Near Me | Fallbrook | ✅ Published | Dec 13, 2025 | Cycle 4 |
 | Home Structural Engineer Near Me | Redondo Beach | ✅ Published | Dec 13, 2025 | Cycle 4 |
+| Coastal Foundation Design | Newport Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Hillside Foundation Engineering | Laguna Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Deep Foundation Engineering | Manhattan Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Historic Foundation Repair | Pasadena | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Residential Foundation Design | Irvine | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Foundation Settlement Solutions | Long Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Expansive Soil Foundation Engineering | Torrance | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Caisson Foundation Design | San Diego | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Foundation Design | Rancho Cucamonga | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Pool Foundation Engineering | Temecula | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Office Building Structural Engineering | Los Angeles | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Warehouse Structural Engineering | Anaheim | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Retail Center Structural Engineering | Santa Ana | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Industrial Facility Structural Engineering | Ontario | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Tenant Improvement Engineering | Costa Mesa | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Mixed-Use Development Structural Engineering | Huntington Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Manufacturing Plant Structural Engineering | Fontana | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Distribution Center Structural Engineering | Riverside | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Parking Structure Engineering | Burbank | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Building Renovation Engineering | Glendale | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Foundation Engineer Near Me | Mission Viejo | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Structural Engineer Near Me | Fullerton | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Structural Engineer Near Me | La Mesa | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Home Addition Structural Engineer Near Me | Murrieta | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Coastal Structural Engineer Near Me | Rancho Palos Verdes | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Mechanical Equipment Attachment Engineer | Chino Hills | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Steel Storage Rack Anchorage Engineer | Chino | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Seismic Retrofit | Garden Grove | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Tilt-Up Construction Engineering | Upland | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Medical Office Building Structural Engineering | Tustin | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Cold Storage Facility Structural Engineering | Rialto | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Data Center Structural Engineering | Orange | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Auto Service Facility Structural Engineering | Redlands | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Foundation Underpinning Services | Laguna Niguel | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Pile Foundation Engineering | Dana Point | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Liquefaction Mitigation Engineering | Seal Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Expansive Soil Foundation Solutions | Wildomar | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| ADU Structural Engineering | Brea | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Second Story Addition Engineering | Placentia | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Load Bearing Wall Removal | Buena Park | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Garage Conversion Structural Engineering | Cypress | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| MEP Engineering Design | La Palma | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Grading and Drainage Plans | Stanton | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Seismic Retrofit Engineering | Hermosa Beach | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Earthquake-Resistant Design | Westminster | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Deep Foundation Engineer Near Me | Del Mar | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Coastal Foundation Engineer Near Me | San Juan Capistrano | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Load Bearing Wall Engineer Near Me | Downey | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Structural Engineer Near Me | San Bernardino | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Home Addition Structural Engineer Near Me | Whittier | ✅ Published | Dec 15, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 13, 2025 Batch: 25 posts (10 Commercial & Industrial Hub + 5 Foundation Engineering Hub + 5 Residential Engineering + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 15, 2025 Batch 2: 25 posts (8 Commercial & Industrial + 4 Foundation Engineering + 4 Residential + 2 Specialized + 2 Seismic/Compliance + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
