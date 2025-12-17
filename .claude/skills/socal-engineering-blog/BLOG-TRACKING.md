@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 15, 2025 (Batch 2)
+## Last Updated: December 16, 2025
 
 ---
 
@@ -28,9 +28,9 @@
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
 - **Total Cities**: 105 (added Banning, Beaumont)
-- **Cycle 4 Cities Used**: 54/105
-- **Cycle 4 Cities Remaining**: 51/105
-- **Cycle 4 Completion**: 51.4%
+- **Cycle 4 Cities Used**: 74/105
+- **Cycle 4 Cities Remaining**: 31/105
+- **Cycle 4 Completion**: 70.5%
 
 ---
 
@@ -430,8 +430,28 @@
 | Load Bearing Wall Engineer Near Me | Downey | ✅ Published | Dec 15, 2025 | Cycle 4 |
 | Commercial Structural Engineer Near Me | San Bernardino | ✅ Published | Dec 15, 2025 | Cycle 4 |
 | Home Addition Structural Engineer Near Me | Whittier | ✅ Published | Dec 15, 2025 | Cycle 4 |
+| Commercial Mezzanine Structural Engineering | Perris | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Food Processing Facility Structural Engineering | La Quinta | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Multi-Tenant Industrial Building Structural Engineering | Jurupa Valley | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Sports Facility Structural Engineering | Palm Springs | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Commercial Cold Storage Expansion Engineering | Rancho Mirage | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Pier and Grade Beam Foundation Design | Cathedral City | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Foundation Waterproofing Engineering | Coachella | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Raised Foundation Engineering | Desert Hot Springs | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Seismic Foundation Upgrade Engineering | Banning | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Crawl Space to Slab Conversion Engineering | Beaumont | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Second Story Addition Structural Engineering | Encinitas | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Kitchen Remodel Structural Engineering | Bonita | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Master Suite Addition Structural Engineering | Spring Valley | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Stormwater Management Engineering | Rancho San Diego | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Grading and Drainage Engineering | San Jacinto | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Structural Engineer Near Me | Lemon Grove | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Foundation Engineer Near Me | Lake Elsinore | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| ADU Structural Engineer Near Me | Palm Desert | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Commercial Structural Engineer Near Me | Wildomar | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Residential Structural Engineer Near Me | Imperial Beach | ✅ Published | Dec 16, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 15, 2025 Batch 2: 25 posts (8 Commercial & Industrial + 4 Foundation Engineering + 4 Residential + 2 Specialized + 2 Seismic/Compliance + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 16, 2025: 20 posts (5 Commercial & Industrial + 5 Foundation Engineering + 3 Residential + 2 Specialized Services + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
