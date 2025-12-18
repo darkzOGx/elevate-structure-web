@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'ui-avatars.com',
+      },
     ],
   },
   trailingSlash: false, // Consistent with sitemap.xml (no trailing slashes)
@@ -41,6 +45,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Trailing slash redirects (ensure no trailing slashes)
+      // Static pages
       {
         source: '/privacy/',
         destination: '/privacy',
@@ -61,7 +66,61 @@ const nextConfig: NextConfig = {
         destination: '/fire',
         permanent: true,
       },
+      {
+        source: '/locations/',
+        destination: '/locations',
+        permanent: true,
+      },
+      {
+        source: '/contact/',
+        destination: '/contact',
+        permanent: true,
+      },
+      // Dynamic route trailing slashes (critical for SEO)
+      {
+        source: '/blog/:slug/',
+        destination: '/blog/:slug',
+        permanent: true,
+      },
+      {
+        source: '/locations/:slug/',
+        destination: '/locations/:slug',
+        permanent: true,
+      },
+      {
+        source: '/services/:slug/',
+        destination: '/services/:slug',
+        permanent: true,
+      },
+      {
+        source: '/projects/:slug/',
+        destination: '/projects/:slug',
+        permanent: true,
+      },
+      // Sitemap and XML files (prevent trailing slash crawls)
+      {
+        source: '/sitemap.xml/',
+        destination: '/sitemap.xml',
+        permanent: true,
+      },
+      {
+        source: '/robots.txt/',
+        destination: '/robots.txt',
+        permanent: true,
+      },
+      // Old service URL redirects
+      {
+        source: '/services/adu-engineering',
+        destination: '/services/adu-design-engineering',
+        permanent: true,
+      },
+      {
+        source: '/services/adu-engineering/',
+        destination: '/services/adu-design-engineering',
+        permanent: true,
+      },
       // Location page redirects (old short URLs → new SEO-friendly URLs)
+      // Without trailing slash
       {
         source: '/locations/irvine',
         destination: '/locations/irvine-structural-engineering',
@@ -104,6 +163,52 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/locations/lake-forest',
+        destination: '/locations/lake-forest-structural-engineering',
+        permanent: true,
+      },
+      // With trailing slash (Google crawls these too)
+      {
+        source: '/locations/irvine/',
+        destination: '/locations/irvine-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/anaheim/',
+        destination: '/locations/anaheim-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/newport-beach/',
+        destination: '/locations/newport-beach-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/huntington-beach/',
+        destination: '/locations/huntington-beach-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/costa-mesa/',
+        destination: '/locations/costa-mesa-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/santa-ana/',
+        destination: '/locations/santa-ana-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/fullerton/',
+        destination: '/locations/fullerton-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/mission-viejo/',
+        destination: '/locations/mission-viejo-structural-engineering',
+        permanent: true,
+      },
+      {
+        source: '/locations/lake-forest/',
         destination: '/locations/lake-forest-structural-engineering',
         permanent: true,
       },
