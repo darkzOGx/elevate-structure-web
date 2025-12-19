@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 16, 2025
+## Last Updated: December 19, 2025
 
 ---
 
@@ -28,9 +28,9 @@
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
 - **Total Cities**: 105 (added Banning, Beaumont)
-- **Cycle 4 Cities Used**: 74/105
-- **Cycle 4 Cities Remaining**: 31/105
-- **Cycle 4 Completion**: 70.5%
+- **Cycle 4 Cities Used**: 99/105
+- **Cycle 4 Cities Remaining**: 6/105
+- **Cycle 4 Completion**: 94.3%
 
 ---
 
@@ -450,8 +450,33 @@
 | ADU Structural Engineer Near Me | Palm Desert | ✅ Published | Dec 16, 2025 | Cycle 4 |
 | Commercial Structural Engineer Near Me | Wildomar | ✅ Published | Dec 16, 2025 | Cycle 4 |
 | Residential Structural Engineer Near Me | Imperial Beach | ✅ Published | Dec 16, 2025 | Cycle 4 |
+| Office Building Structural Engineering | Aliso Viejo | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Warehouse Structural Engineering | Lake Forest | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Retail Center Structural Engineering | Laguna Woods | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Industrial Facility Structural Engineering | Villa Park | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Commercial Tenant Improvement Engineering | Los Alamitos | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Mixed-Use Development Structural Engineering | Yorba Linda | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Manufacturing Plant Structural Engineering | Fountain Valley | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Distribution Center Structural Engineering | San Clemente | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Parking Structure Engineering | La Habra | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Commercial Building Renovation Engineering | San Juan Capistrano | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Shopping Center Structural Engineering | Seal Beach | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Hotel Structural Engineering | Laguna Niguel | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Self-Storage Facility Structural Engineering | Dana Point | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Medical Office Building Structural Engineering | Mission Viejo | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Commercial Cold Storage Structural Engineering | Westminster | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Data Center Structural Engineering | Garden Grove | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Steel Storage Rack Anchorage Engineer | Orange | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Mechanical Equipment Attachment Engineer | Tustin | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Commercial Seismic Retrofit Engineering | Santa Ana | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Tilt-Up Construction Engineering | Cypress | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Commercial Structural Engineer Near Me | Buena Park | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Warehouse Structural Engineer Near Me | Placentia | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Industrial Structural Engineer Near Me | Stanton | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Foundation Engineer Near Me | Laguna Hills | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Structural Engineer Near Me | Costa Mesa | ✅ Published | Dec 19, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 16, 2025: 20 posts (5 Commercial & Industrial + 5 Foundation Engineering + 3 Residential + 2 Specialized Services + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
