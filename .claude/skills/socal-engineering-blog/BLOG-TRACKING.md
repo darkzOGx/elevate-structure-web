@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 19, 2025
+## Last Updated: December 20, 2025
 
 ---
 
@@ -27,10 +27,10 @@
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
-- **Total Cities**: 105 (added Banning, Beaumont)
-- **Cycle 4 Cities Used**: 99/105
-- **Cycle 4 Cities Remaining**: 6/105
-- **Cycle 4 Completion**: 94.3%
+- **Total Cities**: 115+ (added Platinum/Gold tier cities: La Jolla, Calabasas, Pacific Palisades, Bel Air, Atherton, Menlo Park, Studio City, Sunnyvale, West Hollywood, Los Altos Hills, Santa Monica)
+- **Cycle 4 Cities Used**: 105+/115+
+- **Cycle 4 Status**: COMPLETING - Extended roster with Platinum/Gold cities
+- **Dec 20, 2025**: 25 posts (12 Foundation Hub 6 + 8 Residential + 5 Near Me)
 
 ---
 
@@ -475,8 +475,33 @@
 | Industrial Structural Engineer Near Me | Stanton | ✅ Published | Dec 19, 2025 | Cycle 4 |
 | Foundation Engineer Near Me | Laguna Hills | ✅ Published | Dec 19, 2025 | Cycle 4 |
 | Structural Engineer Near Me | Costa Mesa | ✅ Published | Dec 19, 2025 | Cycle 4 |
+| Deep Foundation Design | La Jolla | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Settlement Analysis | Calabasas | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Expansive Soil Foundation Engineering | Temecula | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Hillside Foundation Engineering | Pacific Palisades | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Repair Engineering | San Marcos | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Residential Foundation Design | Bel Air | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Commercial Foundation Design | Atherton | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Pool Foundation Engineering | Huntington Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Retaining Wall Foundation Design | Chula Vista | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Slab Foundation Engineering | Ontario | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Pier and Beam Foundation Design | Escondido | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Underpinning Services | Corona | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Custom Home Structural Engineering | Menlo Park | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Second Story Addition Engineering | Studio City | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| ADU Structural Engineering | Sunnyvale | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Load Bearing Wall Removal Engineering | San Bernardino | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Soft-Story Retrofit Engineering | West Hollywood | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Hillside Home Structural Engineering | Los Altos Hills | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Room Addition Structural Engineering | Glendale | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Garage Conversion Structural Engineering | Anaheim | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Deep Foundation Engineer Near Me | Manhattan Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Coastal Bluff Engineer Near Me | Laguna Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Soft-Story Retrofit Engineer Near Me | Santa Monica | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Residential Structural Engineer Near Me | Long Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Repair Engineer Near Me | Moreno Valley | ✅ Published | Dec 20, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
