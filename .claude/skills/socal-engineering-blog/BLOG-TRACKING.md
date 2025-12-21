@@ -500,8 +500,33 @@
 | Soft-Story Retrofit Engineer Near Me | Santa Monica | ✅ Published | Dec 20, 2025 | Cycle 4 |
 | Residential Structural Engineer Near Me | Long Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
 | Foundation Repair Engineer Near Me | Moreno Valley | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Inspection Engineering | Newport Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Basement Foundation Engineering | Beverly Hills | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Stem Wall Foundation Design | Irvine | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Grade Beam Foundation Engineering | Pasadena | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Drainage Engineering | Carlsbad | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Mudsill Foundation Repair | Oceanside | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Cripple Wall Foundation Retrofit | Vista | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Bolting Services | El Cajon | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Split-Level Foundation Engineering | Poway | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Slab-on-Grade Foundation Engineering | La Mesa | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Raised Foundation Repair | Santee | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Foundation Waterproofing Engineering | National City | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Open Floor Plan Structural Engineering | Malibu | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Patio Cover Structural Engineering | Brentwood | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Deck Addition Structural Engineering | Torrance | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Covered Walkway Structural Engineering | El Segundo | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Home Renovation Structural Engineering | Hermosa Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Sunroom Structural Design | Redondo Beach | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Bay Window Structural Engineering | Downey | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Dormer Addition Structural Engineering | Whittier | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Hillside Structural Engineer Near Me | Rancho Palos Verdes | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Pool Structure Engineer Near Me | San Diego | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Balcony Structural Engineer Near Me | Mission Viejo | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Fireplace Removal Engineer Near Me | Costa Mesa | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Wall Removal Engineer Near Me | Fullerton | ✅ Published | Dec 20, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025 Batch 1: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me). Dec 20, 2025 Batch 2: 25 posts (12 Foundation Engineering + 8 Residential + 5 Near Me).
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
