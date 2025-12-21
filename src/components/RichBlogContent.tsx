@@ -32,6 +32,18 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
         )
       }
 
+      // Sub-sub-headings (####)
+      if (section.startsWith('#### ')) {
+        const title = section.replace('#### ', '').trim()
+        return (
+          <div key={index} className="my-6">
+            <h4 className="text-xl font-semibold text-foreground border-b border-primary/20 pb-2 inline-block">
+              {title}
+            </h4>
+          </div>
+        )
+      }
+
       // Sub-headings (###)
       if (section.startsWith('### ')) {
         // Check if this section has bullet points after the heading
@@ -92,6 +104,33 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
                 {text}
               </p>
             </Card>
+          </div>
+        )
+      }
+
+      // Ordered Lists (1., 2.)
+      if (/^\s*\d+\./.test(section)) {
+        const lines = section.split('\n')
+        return (
+          <div key={index} className="my-6">
+            <ol className="space-y-3 list-decimal list-outside pl-6 text-foreground text-lg">
+              {lines.map((line, i) => {
+                const itemText = line.replace(/^\s*\d+\.\s*/, '').trim()
+                const withLinks = itemText.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+                  '<a href="$2" class="text-primary hover:underline font-medium">$1</a>')
+                return <li key={i} dangerouslySetInnerHTML={{ __html: withLinks }} />
+              })}
+            </ol>
+          </div>
+        )
+      }
+
+      // Blockquotes (> )
+      if (section.startsWith('> ')) {
+        const text = section.replace(/^> \s*/gm, '').trim()
+        return (
+          <div key={index} className="my-6 pl-6 border-l-4 border-primary/50 italic text-lg text-muted-foreground">
+            {text}
           </div>
         )
       }
@@ -157,7 +196,7 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
 
         return (
           <p key={index} className="my-4 text-foreground leading-relaxed text-lg"
-             dangerouslySetInnerHTML={{ __html: withLinks }} />
+            dangerouslySetInnerHTML={{ __html: withLinks }} />
         )
       }
 

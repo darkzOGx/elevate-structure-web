@@ -20,9 +20,9 @@ export const COMPANY_INFO = {
     'Sunday Closed',
   ],
   socialProfiles: [
-    'https://www.facebook.com/aaaengineeringdesign',
-    'https://www.linkedin.com/company/aaaengineeringdesign',
-    'https://twitter.com/aaaengineeringdesign',
+    // 'https://www.facebook.com/aaaengineeringdesign',
+    // 'https://www.linkedin.com/company/aaaengineeringdesign',
+    // 'https://twitter.com/aaaengineeringdesign',
   ],
   priceRange: '$$-$$$',
 }

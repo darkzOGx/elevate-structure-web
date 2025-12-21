@@ -45,13 +45,13 @@ export function Hero() {
           <div className="space-y-6">
             <h1 className="font-extrabold tracking-tight leading-tight">
               <span className="block text-5xl sm:text-6xl xl:text-7xl mb-2 text-slate-900 dark:text-white font-black tracking-tighter">Professional</span>
-              <div className="inline-flex flex-wrap justify-center gap-x-4 mb-6 text-5xl sm:text-6xl xl:text-7xl font-black tracking-tighter relative z-10">
+              <span className="inline-flex flex-wrap justify-center gap-x-4 mb-6 text-5xl sm:text-6xl xl:text-7xl font-black tracking-tighter relative z-10">
                 <span className="text-slate-900 dark:text-white">Engineering</span>
                 <span className="relative inline-block px-4 py-2 transform -rotate-1">
                   <span className="absolute inset-0 bg-[#C5D6B6] rounded-2xl transform rotate-1"></span>
                   <span className="relative text-slate-900 z-10">Design</span>
                 </span>
-              </div>
+              </span>
               <span className="block text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mt-6 tracking-widest uppercase">
                 Services in Orange County and Greater California
               </span>

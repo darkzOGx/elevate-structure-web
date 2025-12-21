@@ -251,3 +251,68 @@ export function generateBreadcrumbSchema(breadcrumbs: Array<{
     })),
   }
 }
+
+// Speakable Schema - For voice search and AI assistants
+// Marks sections of content that are especially suited for text-to-speech
+export function generateSpeakableSchema(config: {
+  url: string
+  cssSelectors?: string[]
+  xpaths?: string[]
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': config.url,
+    'speakable': {
+      '@type': 'SpeakableSpecification',
+      // Default to common content selectors if not specified
+      'cssSelector': config.cssSelectors || [
+        'article h1',
+        'article h2',
+        'article p:first-of-type',
+        '.direct-answer',
+        '.faq-answer',
+      ],
+      ...(config.xpaths && { 'xpath': config.xpaths }),
+    },
+    'url': config.url,
+  }
+}
+
+// WebPage Schema - For individual page identification
+export function generateWebPageSchema(config: {
+  name: string
+  description: string
+  url: string
+  datePublished?: string
+  dateModified?: string
+  breadcrumb?: Array<{ name: string; url: string }>
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': config.url,
+    'name': config.name,
+    'description': config.description,
+    'url': config.url,
+    ...(config.datePublished && { 'datePublished': config.datePublished }),
+    ...(config.dateModified && { 'dateModified': config.dateModified }),
+    'isPartOf': {
+      '@id': 'https://aaaengineeringdesign.com/#website',
+    },
+    'about': {
+      '@id': 'https://aaaengineeringdesign.com/#organization',
+    },
+    ...(config.breadcrumb && {
+      'breadcrumb': {
+        '@type': 'BreadcrumbList',
+        'itemListElement': config.breadcrumb.map((crumb, index) => ({
+          '@type': 'ListItem',
+          'position': index + 1,
+          'name': crumb.name,
+          'item': crumb.url,
+        })),
+      },
+    }),
+  }
+}

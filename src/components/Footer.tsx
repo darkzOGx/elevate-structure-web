@@ -89,8 +89,10 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <nav className="space-y-2">
-              <button
-                onClick={() => {
+              <Link
+                href="#services"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#services')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -99,9 +101,11 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 Services
-              </button>
-              <button
-                onClick={() => {
+              </Link>
+              <Link
+                href="#process"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#process')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -110,9 +114,11 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 Our Process
-              </button>
-              <button
-                onClick={() => {
+              </Link>
+              <Link
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#about')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -121,9 +127,11 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 About Us
-              </button>
-              <button
-                onClick={() => {
+              </Link>
+              <Link
+                href="#testimonials"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#testimonials')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -132,9 +140,11 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 Testimonials
-              </button>
-              <button
-                onClick={() => {
+              </Link>
+              <Link
+                href="#faq"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#faq')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -143,9 +153,11 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 FAQ
-              </button>
-              <button
-                onClick={() => {
+              </Link>
+              <Link
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.querySelector('#contact')
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -154,7 +166,7 @@ export function Footer() {
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 Contact
-              </button>
+              </Link>
             </nav>
           </div>
 
@@ -187,11 +199,11 @@ export function Footer() {
                   aria-label="Yelp"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.686 1.459z"/>
-                    <path d="M14.205 16.052l2.905 4.308c.564.83-.216 1.906-1.176 1.63l-4.995-1.433a1.073 1.073 0 0 1-.686-1.459 9.194 9.194 0 0 1 2.364-3.252 1.072 1.072 0 0 1 1.596.206z"/>
-                    <path d="M8.293 15.257l-4.307 2.905c-.83.564-1.906-.216-1.63-1.176l1.433-4.995a1.073 1.073 0 0 1 1.459-.686 9.194 9.194 0 0 1 3.252 2.364 1.072 1.072 0 0 1-.206 1.596z"/>
-                    <path d="M9.076 11.016l-4.995-1.433c-.96-.276-1.176-1.63-.346-2.035a9.194 9.194 0 0 1 3.252-2.364 1.073 1.073 0 0 1 1.459.686l1.433 4.995c.276.96-.8 1.74-1.63 1.176z"/>
-                    <path d="M10.634 2.107v5.268c0 1.003-1.327 1.403-1.947.587L5.089 3.22c-.476-.628-.14-1.543.618-1.683a9.194 9.194 0 0 1 3.98.008c.52.104.947.55.947 1.082z"/>
+                    <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.686 1.459z" />
+                    <path d="M14.205 16.052l2.905 4.308c.564.83-.216 1.906-1.176 1.63l-4.995-1.433a1.073 1.073 0 0 1-.686-1.459 9.194 9.194 0 0 1 2.364-3.252 1.072 1.072 0 0 1 1.596.206z" />
+                    <path d="M8.293 15.257l-4.307 2.905c-.83.564-1.906-.216-1.63-1.176l1.433-4.995a1.073 1.073 0 0 1 1.459-.686 9.194 9.194 0 0 1 3.252 2.364 1.072 1.072 0 0 1-.206 1.596z" />
+                    <path d="M9.076 11.016l-4.995-1.433c-.96-.276-1.176-1.63-.346-2.035a9.194 9.194 0 0 1 3.252-2.364 1.073 1.073 0 0 1 1.459.686l1.433 4.995c.276.96-.8 1.74-1.63 1.176z" />
+                    <path d="M10.634 2.107v5.268c0 1.003-1.327 1.403-1.947.587L5.089 3.22c-.476-.628-.14-1.543.618-1.683a9.194 9.194 0 0 1 3.98.008c.52.104.947.55.947 1.082z" />
                   </svg>
                 </a>
               </div>

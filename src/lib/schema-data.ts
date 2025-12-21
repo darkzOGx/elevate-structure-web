@@ -81,6 +81,8 @@ export const organizationSchema = {
 }
 
 // Website Schema
+// Note: SearchAction removed as site doesn't have search functionality
+// If search is added later, uncomment the potentialAction block
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -90,15 +92,16 @@ export const websiteSchema = {
   "description": "Professional structural engineering services throughout California",
   "publisher": {
     "@id": `${COMPANY_INFO.website}/#organization`
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": `${COMPANY_INFO.website}/blog?q={search_term_string}`
-    },
-    "query-input": "required name=search_term_string"
   }
+  // Uncomment if search functionality is added:
+  // "potentialAction": {
+  //   "@type": "SearchAction",
+  //   "target": {
+  //     "@type": "EntryPoint",
+  //     "urlTemplate": `${COMPANY_INFO.website}/search?q={search_term_string}`
+  //   },
+  //   "query-input": "required name=search_term_string"
+  // }
 }
 
 // FAQ Schema

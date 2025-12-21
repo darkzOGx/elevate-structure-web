@@ -14,6 +14,7 @@ import { FadeInSection } from '@/components/FadeInSection'
 import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
+import { generateSpeakableSchema } from '@/lib/seo'
 import { getAuthorById, getDefaultAuthor, generatePersonSchema } from '@/lib/authors-data'
 import { formatBlogDate } from '@/lib/date-utils'
 
@@ -102,6 +103,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     { name: post.title, url: `${COMPANY_INFO.website}/blog/${slug}` }
   ])
 
+  // Speakable Schema for Voice Search (AIO)
+  // Target the title and the excerpt/summary as the speakable parts
+  const speakableSchema = generateSpeakableSchema({
+    url: `${COMPANY_INFO.website}/blog/${slug}`,
+    cssSelectors: ['h1', '.text-lg.text-muted-foreground'] // Targeting title and excerpt
+  })
+
   return (
     <>
       <script
@@ -118,176 +126,180 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
 
       <div className="min-h-screen bg-background relative">
         <Header />
 
-      <main>
-        {/* Article Header */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 pt-16 pb-8 lg:pt-24 lg:pb-12">
-          <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-            <FadeInSection>
-              {/* Back to Blog */}
-              <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Blog
-              </Link>
-
-              {/* Category Badge */}
-              <Badge className="mb-4">
-                {post.category}
-              </Badge>
-
-              {/* Title */}
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-                {post.title}
-              </h1>
-
-              {/* Meta Information */}
-              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-2">
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span>
-                    {formatBlogDate(post.date, {
-                      month: 'long',
-                      day: 'numeric',
-                      year: 'numeric',
-                    })}
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  <span>{post.readTime}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>By {post.author}</span>
-                </div>
-              </div>
-            </FadeInSection>
-          </div>
-        </section>
-
-        {/* Article Content */}
-        <section className="pt-8 pb-16">
-          <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-            <article className="max-w-none">
-              {post.content ? (
-                <RichBlogContent content={post.content} />
-              ) : (
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p className="text-lg">{post.excerpt}</p>
-                  <p className="text-lg">
-                    This article provides comprehensive insights into {post.title.toLowerCase()}.
-                    Our licensed Professional Engineers have compiled expert knowledge to help you
-                    understand this important topic.
-                  </p>
-                </div>
-              )}
-            </article>
-
-            {/* Article CTA */}
-            <FadeInSection delay={200}>
-              <Card className="mt-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-background">
-                <CardContent className="p-8 text-center">
-                  <h3 className="text-2xl font-bold mb-4">
-                    Need Professional Engineering Services?
-                  </h3>
-                  <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                    Our licensed Professional Engineers are ready to help with your project.
-                    Get a free consultation to discuss your structural engineering needs.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <ScrollToContactButton />
-                    <a href={`tel:${COMPANY_INFO.phone}`}>
-                      <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
-                        <Phone className="mr-2 h-4 w-4" />
-                        {COMPANY_INFO.phone}
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            </FadeInSection>
-          </div>
-        </section>
-
-        {/* Related Posts */}
-        {recentPosts.length > 0 && (
-          <section className="py-16 bg-muted/30">
-            <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+        <main>
+          {/* Article Header */}
+          <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 pt-16 pb-8 lg:pt-24 lg:pb-12">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
               <FadeInSection>
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-                    Related Articles
-                  </h2>
-                  <p className="text-lg text-muted-foreground">
-                    Continue exploring our engineering insights
-                  </p>
-                </div>
-              </FadeInSection>
+                {/* Back to Blog */}
+                <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8">
+                  <ArrowLeft className="h-4 w-4" />
+                  Back to Blog
+                </Link>
 
-              <div className="grid gap-6 md:grid-cols-3">
-                {recentPosts.map((relatedPost, index) => (
-                  <FadeInSection key={relatedPost.id} delay={index * 100}>
-                    <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
-                      <CardContent className="p-6">
-                        <Badge className="mb-3 text-xs">
-                          {relatedPost.category}
-                        </Badge>
-                        <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3" />
-                            <span>
-                              {formatBlogDate(relatedPost.date, {
-                                month: 'short',
-                                day: 'numeric',
-                              })}
-                            </span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="h-3 w-3" />
-                            <span>{relatedPost.readTime}</span>
-                          </div>
-                        </div>
-                        <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                          {relatedPost.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                          {relatedPost.excerpt}
-                        </p>
-                        <Link href={`/blog/${relatedPost.id}`}>
-                          <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
-                            Read Article
-                            <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
-                          </Button>
-                        </Link>
-                      </CardContent>
-                    </Card>
-                  </FadeInSection>
-                ))}
-              </div>
+                {/* Category Badge */}
+                <Badge className="mb-4">
+                  {post.category}
+                </Badge>
 
-              {/* View All Posts */}
-              <FadeInSection delay={400}>
-                <div className="text-center mt-12">
-                  <Link href="/blog">
-                    <Button variant="outline" size="lg">
-                      View All Articles
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                {/* Title */}
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+                  {post.title}
+                </h1>
+
+                {/* Meta Information */}
+                <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-2">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    <span>
+                      {formatBlogDate(post.date, {
+                        month: 'long',
+                        day: 'numeric',
+                        year: 'numeric',
+                      })}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>{post.readTime}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span>By {post.author}</span>
+                  </div>
                 </div>
               </FadeInSection>
             </div>
           </section>
-        )}
 
-        {/* Contact Form Section */}
-        <ContactForm />
-      </main>
+          {/* Article Content */}
+          <section className="pt-8 pb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+              <article className="max-w-none">
+                {post.content ? (
+                  <RichBlogContent content={post.content} />
+                ) : (
+                  <div className="space-y-6 text-muted-foreground leading-relaxed">
+                    <p className="text-lg">{post.excerpt}</p>
+                    <p className="text-lg">
+                      This article provides comprehensive insights into {post.title.toLowerCase()}.
+                      Our licensed Professional Engineers have compiled expert knowledge to help you
+                      understand this important topic.
+                    </p>
+                  </div>
+                )}
+              </article>
 
-      <Footer />
-    </div>
-  </>
+              {/* Article CTA */}
+              <FadeInSection delay={200}>
+                <Card className="mt-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-background">
+                  <CardContent className="p-8 text-center">
+                    <h3 className="text-2xl font-bold mb-4">
+                      Need Professional Engineering Services?
+                    </h3>
+                    <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                      Our licensed Professional Engineers are ready to help with your project.
+                      Get a free consultation to discuss your structural engineering needs.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <ScrollToContactButton />
+                      <a href={`tel:${COMPANY_INFO.phone}`}>
+                        <Button variant="outline" size="lg" className="text-base px-8 py-6 h-auto">
+                          <Phone className="mr-2 h-4 w-4" />
+                          {COMPANY_INFO.phone}
+                        </Button>
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
+            </div>
+          </section>
+
+          {/* Related Posts */}
+          {recentPosts.length > 0 && (
+            <section className="py-16 bg-muted/30">
+              <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+                <FadeInSection>
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                      Related Articles
+                    </h2>
+                    <p className="text-lg text-muted-foreground">
+                      Continue exploring our engineering insights
+                    </p>
+                  </div>
+                </FadeInSection>
+
+                <div className="grid gap-6 md:grid-cols-3">
+                  {recentPosts.map((relatedPost, index) => (
+                    <FadeInSection key={relatedPost.id} delay={index * 100}>
+                      <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
+                        <CardContent className="p-6">
+                          <Badge className="mb-3 text-xs">
+                            {relatedPost.category}
+                          </Badge>
+                          <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                            <div className="flex items-center gap-1">
+                              <Calendar className="h-3 w-3" />
+                              <span>
+                                {formatBlogDate(relatedPost.date, {
+                                  month: 'short',
+                                  day: 'numeric',
+                                })}
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Clock className="h-3 w-3" />
+                              <span>{relatedPost.readTime}</span>
+                            </div>
+                          </div>
+                          <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            {relatedPost.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                            {relatedPost.excerpt}
+                          </p>
+                          <Link href={`/blog/${relatedPost.id}`}>
+                            <Button variant="ghost" size="sm" className="group/btn w-full justify-between">
+                              Read Article
+                              <ArrowRight className="h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
+                            </Button>
+                          </Link>
+                        </CardContent>
+                      </Card>
+                    </FadeInSection>
+                  ))}
+                </div>
+
+                {/* View All Posts */}
+                <FadeInSection delay={400}>
+                  <div className="text-center mt-12">
+                    <Link href="/blog">
+                      <Button variant="outline" size="lg">
+                        View All Articles
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </div>
+                </FadeInSection>
+              </div>
+            </section>
+          )}
+
+          {/* Contact Form Section */}
+          <ContactForm />
+        </main>
+
+        <Footer />
+      </div>
+    </>
   )
 }

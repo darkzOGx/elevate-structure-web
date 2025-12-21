@@ -162,6 +162,11 @@
     @apply bg-card/50 backdrop-blur-md border border-border/50 shadow-xl;
   }
 
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+  }
+
   .text-gradient {
     /* Updated to match Hero Gradient EXACTLY: Tan/Olive Radial + Deep Shadow */
     background: radial-gradient(ellipse at top, #e6d2b5 20%, #556b2f 60%, #3b4a2a 100%);
