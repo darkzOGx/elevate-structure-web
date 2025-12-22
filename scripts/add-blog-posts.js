@@ -17,7 +17,8 @@ function extractCity(title) {
 
 // Function to parse markdown file
 function parseMarkdownFile(filePath) {
-  const content = fs.readFileSync(filePath, 'utf-8');
+  // Read content and normalize line endings (Windows CRLF -> Unix LF)
+  const content = fs.readFileSync(filePath, 'utf-8').replace(/\r\n/g, '\n');
 
   // Extract JSON frontmatter
   const frontmatterMatch = content.match(/^{[\s\S]*?}\n\n---\n\n/);
