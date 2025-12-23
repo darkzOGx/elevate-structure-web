@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 20, 2025
+## Last Updated: December 22, 2025
 
 ---
 
@@ -525,8 +525,33 @@
 | Balcony Structural Engineer Near Me | Mission Viejo | ✅ Published | Dec 20, 2025 | Cycle 4 |
 | Fireplace Removal Engineer Near Me | Costa Mesa | ✅ Published | Dec 20, 2025 | Cycle 4 |
 | Wall Removal Engineer Near Me | Fullerton | ✅ Published | Dec 20, 2025 | Cycle 4 |
+| Custom Estate Structural Engineering | Atherton | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Post-Fire Structural Assessment | Malibu | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Subterranean Garage Engineering | Beverly Hills | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Oceanfront Deck Structural Engineering | Newport Beach | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Tech Campus Structural Engineering | Palo Alto | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Hillside Estate Engineering | Los Altos Hills | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Multi-Family Seismic Retrofit | Santa Monica | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Fire-Resistant Structural Design | Montecito | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Beach Home Foundation Engineering | Manhattan Beach | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Canyon Home Structural Engineering | Pacific Palisades | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Coastal Bluff Stabilization | La Jolla | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Bluff-Top Home Engineering | Del Mar | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Mandatory Retrofit Engineering | West Hollywood | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Historic Structural Upgrade | Pasadena | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Luxury Addition Engineering | Brentwood | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Commercial Tenant Improvement Engineering | San Diego | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Industrial Warehouse Engineering | Irvine | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Entertainment Venue Structural Engineering | Anaheim | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Coastal Home Remodel Engineering | Huntington Beach | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Luxury Home Engineering | Calabasas | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Structural Engineer Near Me | Carlsbad | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Residential Structural Engineer Near Me | Temecula | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Foundation Engineer Near Me | Oceanside | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Seismic Retrofit Engineer Near Me | Corona | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| ADU Structural Engineer Near Me | Murrieta | ✅ Published | Dec 22, 2025 | Cycle 4 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025 Batch 1: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me). Dec 20, 2025 Batch 2: 25 posts (12 Foundation Engineering + 8 Residential + 5 Near Me).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025 Batch 1: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me). Dec 20, 2025 Batch 2: 25 posts (12 Foundation Engineering + 8 Residential + 5 Near Me). Dec 22, 2025: 25 posts (8 Platinum + 7 Gold + 5 Growth tier cities + 5 Near Me) - High-Conversion Targeting Framework applied.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
