@@ -66,17 +66,7 @@ export function ProjectCard({ project }: { project: ProjectProps }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
 
         {/* Floating Action Button */}
-        {project.videoUrl && (
-          <button
-            onClick={(e) => {
-              e.preventDefault()
-              setShowVideo(!showVideo)
-            }}
-            className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all z-20"
-          >
-            <Play className="w-4 h-4 fill-current" />
-          </button>
-        )}
+
 
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end z-10">
           <Badge variant="secondary" className="bg-black/50 text-white backdrop-blur-sm border-none">
