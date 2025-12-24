@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 22, 2025
+## Last Updated: December 24, 2025
 
 ---
 
@@ -23,14 +23,15 @@
 - ✅ Complete SoCal footprint (OC + LA + SD + Riverside + San Bernardino)
 
 ### Tracking:
-- **Current Cycle**: Cycle 4 (Started Dec 13, 2025)
+- **Current Cycle**: Cycle 5 (Started Dec 24, 2025)
 - **Cycle 1**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 2**: COMPLETED ✅ (All 103 cities used)
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
-- **Total Cities**: 115+ (added Platinum/Gold tier cities: La Jolla, Calabasas, Pacific Palisades, Bel Air, Atherton, Menlo Park, Studio City, Sunnyvale, West Hollywood, Los Altos Hills, Santa Monica)
-- **Cycle 4 Cities Used**: 105+/115+
-- **Cycle 4 Status**: COMPLETING - Extended roster with Platinum/Gold cities
-- **Dec 20, 2025**: 25 posts (12 Foundation Hub 6 + 8 Residential + 5 Near Me)
+- **Cycle 4**: COMPLETED ✅ (All 115+ cities used - Dec 22, 2025)
+- **Total Cities**: 115+ (includes Platinum/Gold tier cities)
+- **Cycle 5 Cities Used**: 25/115+
+- **Cycle 5 Status**: STARTED - Dec 24, 2025 with 25 Commercial & Industrial posts
+- **Dec 24, 2025**: 25 posts (20 Commercial & Industrial Hub 5 + 5 Near Me)
 
 ---
 
@@ -550,8 +551,33 @@
 | Foundation Engineer Near Me | Oceanside | ✅ Published | Dec 22, 2025 | Cycle 4 |
 | Seismic Retrofit Engineer Near Me | Corona | ✅ Published | Dec 22, 2025 | Cycle 4 |
 | ADU Structural Engineer Near Me | Murrieta | ✅ Published | Dec 22, 2025 | Cycle 4 |
+| Commercial Structural Rehabilitation | Beverly Hills | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Multi-Level Parking Structure Engineering | Atherton | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Corporate Office Campus Engineering | Palo Alto | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Coastal Commercial Retrofit Engineering | Malibu | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Harbor Commercial Development Engineering | Newport Beach | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Tech Office Building Engineering | Los Altos Hills | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Commercial Building Seismic Upgrade | Santa Monica | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Boutique Hotel Structural Engineering | Laguna Beach | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Beach Commercial Renovation Engineering | Manhattan Beach | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Commercial Property Retrofit Engineering | West Hollywood | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Hillside Commercial Development Engineering | Pacific Palisades | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Oceanside Commercial Engineering | La Jolla | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Coastal Commercial Renovation Engineering | Del Mar | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Historic Commercial Preservation Engineering | Pasadena | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Luxury Commercial Renovation Engineering | Brentwood | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Port Industrial Engineering | Long Beach | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Biotech Facility Engineering | San Diego | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Commercial Office Complex Engineering | Irvine | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Media Facility Structural Engineering | Burbank | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Commercial Building Assessment | Glendale | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Tilt-Up Warehouse Engineer Near Me | Rancho Cucamonga | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Steel Frame Building Engineer Near Me | Ontario | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Commercial Seismic Engineer Near Me | Fontana | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| Industrial Building Engineer Near Me | Riverside | ✅ Published | Dec 24, 2025 | Cycle 5 |
+| CMU Commercial Engineer Near Me | Corona | ✅ Published | Dec 24, 2025 | Cycle 5 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 began Dec 13, 2025. Dec 19, 2025: 25 posts (20 Commercial & Industrial + 5 Near Me) - Hub 5 packed with 20+ posts. Dec 20, 2025 Batch 1: 25 posts (12 Foundation Engineering for Hub 6 + 8 Residential/Specialized + 5 Near Me). Dec 20, 2025 Batch 2: 25 posts (12 Foundation Engineering + 8 Residential + 5 Near Me). Dec 22, 2025: 25 posts (8 Platinum + 7 Gold + 5 Growth tier cities + 5 Near Me) - High-Conversion Targeting Framework applied.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 began Dec 24, 2025. Dec 24, 2025: 25 posts (20 Commercial & Industrial for Hub 5 + 5 Near Me) - High-Conversion Targeting Framework applied with Platinum/Gold/Growth tier distribution.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
