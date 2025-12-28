@@ -1695,10 +1695,107 @@ Verify each post has:
 - [ ] Breadcrumb Schema - Home > Blog > Category > Post
 - [ ] FAQ Schema - 5+ questions extracted from H2 headers with direct answers
 - [ ] Review Schema - 2-3 testimonials with 5-star ratings and dates
+- [ ] **Speakable Schema** - Voice search optimization for key content
 - [ ] All schemas combined in single `@graph` array
 - [ ] All `@id` references properly linked between schemas
 - [ ] Schemas validated at https://validator.schema.org/
 - [ ] Rich results tested at https://search.google.com/test/rich-results
+
+### Speakable Schema (Voice Search Optimization)
+
+Include speakable schema for Google Assistant, Alexa, and Siri optimization:
+
+```json
+{
+  "@type": "SpeakableSpecification",
+  "cssSelector": [".answer-capsule", "h1", ".quick-answer", ".faq-answer"]
+}
+```
+
+Add to your Article schema within the @graph array.
+
+**Voice-Optimized Content Rules**:
+- Question-format H2 headings (matches spoken queries)
+- 40-60 word answers (optimal for voice reading)
+- Conversational tone (sounds natural when read aloud)
+- First-person pronouns in FAQs for relatability
+
+---
+
+## Answer Capsules (CRITICAL for 2025)
+
+Every blog post MUST include an Answer Capsule at the top for AI Overview extraction:
+
+```html
+<aside class="answer-capsule" data-speakable="true">
+  <strong>Quick Answer:</strong> {40-60 words, direct answer to H1 query,
+  include 2-3 specific numbers/data points, conversational tone for voice}
+</aside>
+```
+
+**Answer Capsule Requirements**:
+- Exactly 40-60 words (voice assistant reading length)
+- Directly answer the H1 question in first sentence
+- Include 2-3 specific numbers or data points
+- Use conversational language (sounds natural when read aloud)
+- Mark with `data-speakable="true"` for Google Assistant/Alexa
+
+**Example**:
+> "A structural engineer in Beverly Hills typically costs $3,000-$15,000 for residential projects. For hillside homes, expect $5,000-$25,000 due to complex soils engineering. AAA Engineering Design offers free initial consultations with 48-hour turnaround on standard assessments."
+
+---
+
+## PAA/PASF Keyword Integration
+
+Enhance every blog post with People Also Ask (PAA) and People Also Search For (PASF) keywords:
+
+**PAA Questions** (Use in FAQ section):
+- "How much does a structural engineer cost in [city]?"
+- "Do I need a structural engineer for [project type]?"
+- "What does a structural engineer do for [project]?"
+- "How long does structural engineering take?"
+- "Is a structural engineer required by [city] building code?"
+
+**PASF Keywords** (Weave naturally into content):
+- "[city] structural engineer reviews"
+- "affordable structural engineer near me"
+- "residential structural engineer [city]"
+- "best structural engineer [county]"
+- "[project type] engineer [city]"
+
+**Keyword Research Process**:
+1. Search primary keyword on Google
+2. Extract PAA questions from search results
+3. Extract "Related searches" / PASF at bottom
+4. Include 5-8 PAA questions in FAQ section
+5. Weave 5-10 PASF keywords throughout content
+
+---
+
+## Bing-Specific SEO Requirements
+
+**Bing Algorithm Priorities** (Different from Google):
+
+1. **Exact-match keywords** - Bing weights exact keyword matches more heavily than Google
+2. **Meta keywords tag** - Bing still reads and values the meta keywords tag (Google ignores it)
+3. **Social signals** - Include shareable elements and social proof
+4. **Multimedia richness** - Bing heavily rewards pages with images, videos, charts
+5. **Clear topic focus** - One primary topic per page, no tangents
+6. **Domain age signals** - Reference established presence, founding date, track record
+7. **IndexNow integration** - Submit new URLs for instant Bing indexing
+
+**Required Bing Meta Tags**:
+```html
+<meta name="keywords" content="structural engineer [city], [service] [city], [keyword] near me">
+<meta name="msvalidate.01" content="{Bing Webmaster Tools verification}">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large">
+```
+
+**Bing-Optimized URL Structure**:
+- Use exact-match keywords in slug
+- Prefer hyphens over underscores
+- Keep URLs under 75 characters
+- Example: `/blog/structural-engineer-beverly-hills-residential`
 
 **⚠️ MANDATORY SLUG VERIFICATION:**
 Before proceeding, visually confirm EVERY blog post ID follows this pattern:
