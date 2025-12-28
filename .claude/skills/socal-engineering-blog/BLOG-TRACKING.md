@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: December 26, 2025
+## Last Updated: December 27, 2025
 
 ---
 
@@ -29,10 +29,11 @@
 - **Cycle 3**: COMPLETED ✅ (All 105 cities used - Dec 13, 2025)
 - **Cycle 4**: COMPLETED ✅ (All 115+ cities used - Dec 22, 2025)
 - **Total Cities**: 115+ (includes Platinum/Gold tier cities)
-- **Cycle 5 Cities Used**: 50/115+
-- **Cycle 5 Status**: IN PROGRESS - Dec 24-26, 2025 with 50 posts
+- **Cycle 5 Cities Used**: 75/115+
+- **Cycle 5 Status**: IN PROGRESS - Dec 24-27, 2025 with 75 posts
 - **Dec 24, 2025**: 25 posts (20 Commercial & Industrial Hub 5 + 5 Near Me)
 - **Dec 26, 2025**: 25 posts (10 Foundation Engineering Hub 6 + 10 Commercial & Industrial Hub 5 + 5 Near Me)
+- **Dec 27, 2025**: 25 posts (10 Commercial & Industrial Hub 5 + 10 Foundation Engineering Hub 6 + 5 Near Me)
 
 ---
 
@@ -602,8 +603,33 @@
 | Foundation Engineer Near Me | Dana Point | ✅ Published | Dec 26, 2025 | Cycle 5 |
 | ADU Structural Engineer Near Me | San Clemente | ✅ Published | Dec 26, 2025 | Cycle 5 |
 | Seismic Retrofit Engineer Near Me | Garden Grove | ✅ Published | Dec 26, 2025 | Cycle 5 |
+| Commercial Building Structural Design | Menlo Park | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Office Building Structural Engineering | Carlsbad | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Warehouse Structural Engineering | Moreno Valley | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Retail Center Structural Engineering | Temecula | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Industrial Facility Structural Engineering | Murrieta | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Commercial Tenant Improvement Engineering | Chino Hills | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Manufacturing Plant Structural Engineering | Escondido | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Distribution Center Structural Engineering | Vista | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Commercial Building Renovation Engineering | San Marcos | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Parking Structure Engineering | Chula Vista | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Repair Engineering | Oceanside | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Residential Foundation Design | Encinitas | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Hillside Foundation Engineering | Solana Beach | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Settlement Analysis | Poway | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Inspection Services | La Mesa | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Expansive Soil Foundation Engineering | Downey | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Deep Foundation Design | Whittier | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Engineering for ADUs | Stanton | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Underpinning Services | Brea | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Seismic Foundation Retrofit | Placentia | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Commercial Structural Engineer Near Me | Buena Park | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| MEP Engineer Near Me | Cypress | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Civil Engineer Near Me | La Palma | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Home Addition Structural Engineer Near Me | Los Alamitos | ✅ Published | Dec 27, 2025 | Cycle 5 |
+| Foundation Repair Engineer Near Me | Laguna Woods | ✅ Published | Dec 27, 2025 | Cycle 5 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 began Dec 24, 2025. Dec 24, 2025: 25 posts (20 Commercial & Industrial for Hub 5 + 5 Near Me). Dec 26, 2025: 25 posts (10 Foundation Engineering Hub 6 + 10 Commercial & Industrial Hub 5 + 5 Near Me) - High-Conversion Targeting Framework applied with Platinum/Gold/Growth tier distribution.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 began Dec 24, 2025. Dec 24, 2025: 25 posts (20 Commercial & Industrial for Hub 5 + 5 Near Me). Dec 26, 2025: 25 posts (10 Foundation Engineering Hub 6 + 10 Commercial & Industrial Hub 5 + 5 Near Me). Dec 27, 2025: 25 posts (10 Commercial & Industrial Hub 5 + 10 Foundation Engineering Hub 6 + 5 Near Me) - High-Conversion Targeting Framework applied with Platinum/Gold/Growth tier distribution.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
