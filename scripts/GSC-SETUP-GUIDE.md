@@ -1,4 +1,39 @@
-# Google Search Console Keyword Extractor - Setup Guide
+# Google Search Console API - Complete Setup Guide
+
+This guide covers setting up Google Search Console API for:
+1. **URL Inspection & Sitemap Submission** (post-deployment indexing)
+2. **Keyword Extraction** (discovering high-performing keywords)
+
+---
+
+## Part A: URL Inspection & Sitemap Submission (New!)
+
+After deploying new blog posts, the system can automatically:
+- Submit your sitemap to Google for crawling
+- Inspect new URLs for indexing status
+- Check mobile usability and rich results
+
+### Quick Setup for URL Inspection
+
+1. Complete Steps 1-2 below (Google Cloud Project + Service Account)
+2. Ensure the service account has **Full** permission in GSC
+3. Run: `npm run gsc-inspect` to test
+
+### New Commands Available
+
+```bash
+# Full deployment with GSC integration
+npm run deploy:blogs
+
+# Just GSC operations
+npm run gsc-inspect              # Inspect URLs + submit sitemap
+npm run gsc-sitemap              # Submit sitemap only
+npm run gsc-extract              # Extract keywords from GSC
+```
+
+---
+
+## Part B: Keyword Extraction (Original)
 
 This guide walks you through setting up the automated GSC keyword extraction system that discovers high-performing keywords and "People Also Search For" queries.
 
