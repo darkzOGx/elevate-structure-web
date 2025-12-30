@@ -8,11 +8,11 @@
     "start": "next start",
     "lint": "eslint",
     "indexnow": "node scripts/submit-indexnow.js",
-    "indexnow:recent": "INDEXNOW_RECENT_DAYS=7 node scripts/submit-indexnow.js",
-    "deploy": "npm run build && npm run indexnow",
+    "indexnow:new": "node scripts/submit-new-blogs-to-indexnow.js",
     "gsc-extract": "node scripts/gsc-keyword-extractor.js",
-    "gsc-weekly": "GSC_DAYS_BACK=7 node scripts/gsc-keyword-extractor.js",
-    "gsc-monthly": "GSC_DAYS_BACK=30 MAX_QUERIES=100 node scripts/gsc-keyword-extractor.js"
+    "gsc-inspect": "node scripts/gsc-url-inspector.js",
+    "gsc-sitemap": "node scripts/gsc-url-inspector.js --sitemap-only",
+    "deploy:blogs": "node scripts/deploy-blogs.js"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
