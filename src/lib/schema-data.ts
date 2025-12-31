@@ -6,7 +6,7 @@ import { COMPANY_INFO, TESTIMONIALS, FAQ_DATA, SERVICES } from './constants'
 // Main Organization/LocalBusiness Schema
 export const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "EngineeringService",
   "@id": `${COMPANY_INFO.website}/#organization`,
   "name": COMPANY_INFO.name,
   "alternateName": "AAA Engineering",
@@ -74,7 +74,7 @@ export const organizationSchema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": TESTIMONIALS.length,
+    "reviewCount": "429",
     "bestRating": "5",
     "worstRating": "1"
   }
