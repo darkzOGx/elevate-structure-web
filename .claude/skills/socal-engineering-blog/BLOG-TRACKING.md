@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: January 1, 2026 (Batch 2)
+## Last Updated: January 3, 2026
 
 ---
 
@@ -676,8 +676,21 @@
 | 24 Hour Structural Engineer Near Me | Santa Ana | ✅ Published | Jan 1, 2026 | Cycle 6 |
 | Foundation Crack Engineer Near Me | Huntington Beach | ✅ Published | Jan 1, 2026 | Cycle 6 |
 | Earthquake Damage Engineer Near Me | Los Angeles | ✅ Published | Jan 1, 2026 | Cycle 6 |
+| Commercial Building Seismic Assessment | Malibu | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Commercial Structural Renovation | Beverly Hills | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Retail Center Structural Engineering | Laguna Beach | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Medical Office Building Engineering | Carlsbad | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Foundation Engineering for Seismic Zones | West Hollywood | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Hillside Foundation Engineering | Brentwood | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Foundation Design for Home Additions | Torrance | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Residential Foundation Design | Glendale | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Pool House Engineer Near Me | Burbank | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Room Addition Engineer Near Me | Oceanside | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Second Story Addition Engineer Near Me | Escondido | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Basement Conversion Engineer Near Me | Chula Vista | ✅ Published | Jan 3, 2026 | Cycle 6 |
+| Retaining Wall Engineer Near Me | Temecula | ✅ Published | Jan 3, 2026 | Cycle 6 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me Batch 5: Emergency/Urgent keywords).
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts. **Jan 3, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Total Cycle 6**: 28 posts.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
