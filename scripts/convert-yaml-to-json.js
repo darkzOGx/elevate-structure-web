@@ -1,79 +1,67 @@
 const fs = require('fs');
 const path = require('path');
 
-const dir = process.argv[2] || 'blog-posts-nov-19-2025';
-const dirPath = path.join(__dirname, '..', dir);
+const dir = process.argv[2] || 'blog-posts-jan-9-2026';
+const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
 
-if (!fs.existsSync(dirPath)) {
-  console.error('Directory not found:', dirPath);
-  process.exit(1);
-}
-
-const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.md'));
+console.log('Converting ' + files.length + ' files in ' + dir);
 
 files.forEach(file => {
-  const filePath = path.join(dirPath, file);
-  let content = fs.readFileSync(filePath, 'utf-8');
+  const filePath = path.join(dir, file);
+  let content = fs.readFileSync(filePath, 'utf-8').replace(/\r\n/g, '\n');
 
   // Check if already JSON format
   if (content.startsWith('{')) {
-    console.log('Already JSON:', file);
+    console.log(file + ' - Already JSON format');
     return;
   }
 
-  // Extract YAML frontmatter
-  const yamlMatch = content.match(/^---\n([\s\S]*?)\n---\n\n/);
+  // Parse YAML frontmatter
+  const yamlMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
   if (!yamlMatch) {
-    console.log('No YAML found in', file);
+    console.log(file + ' - No YAML frontmatter found');
     return;
   }
 
   const yamlContent = yamlMatch[1];
-  const mainContent = content.replace(/^---\n[\s\S]*?\n---\n\n/, '');
+  const restContent = content.replace(/^---\n[\s\S]*?\n---\n/, '');
 
-  // Parse YAML to JSON
-  const json = {};
+  // Parse YAML to object
+  const obj = {};
   const lines = yamlContent.split('\n');
-
   for (const line of lines) {
-    // Skip empty lines and nested schema properties
-    if (!line.trim() || line.startsWith('  ')) continue;
-
     const colonIndex = line.indexOf(':');
-    if (colonIndex === -1) continue;
+    if (colonIndex > 0) {
+      const key = line.substring(0, colonIndex).trim();
+      let value = line.substring(colonIndex + 1).trim();
 
-    const key = line.substring(0, colonIndex).trim();
-    let value = line.substring(colonIndex + 1).trim();
-
-    if (key === 'schema') {
-      // Handle schema as nested object
-      json.schema = {
-        articleType: "TechnicalArticle",
-        professionalService: true,
-        localBusiness: true
-      };
-    } else if (value.startsWith('[')) {
-      // Array
-      try {
-        json[key] = JSON.parse(value);
-      } catch (e) {
-        json[key] = value;
+      // Remove surrounding quotes if present
+      if ((value.startsWith('"') && value.endsWith('"')) ||
+          (value.startsWith("'") && value.endsWith("'"))) {
+        value = value.slice(1, -1);
       }
-    } else if (value.startsWith('"') && value.endsWith('"')) {
-      json[key] = value.slice(1, -1);
-    } else if (value === 'true') {
-      json[key] = true;
-    } else if (value === 'false') {
-      json[key] = false;
-    } else {
-      json[key] = value;
+
+      // Handle arrays (keywords)
+      if (value.startsWith('[') && value.endsWith(']')) {
+        try {
+          obj[key] = JSON.parse(value);
+        } catch(e) {
+          obj[key] = value;
+        }
+      } else {
+        obj[key] = value;
+      }
     }
   }
 
-  // Write JSON format
-  const newContent = JSON.stringify(json, null, 2) + '\n\n---\n\n' + mainContent;
-  fs.writeFileSync(filePath, newContent);
-  console.log('Converted:', file);
+  // Create JSON frontmatter
+  const jsonFrontmatter = JSON.stringify(obj, null, 2);
+
+  // Rebuild file with JSON frontmatter
+  const newContent = jsonFrontmatter + '\n\n---\n\n' + restContent.trim() + '\n';
+
+  fs.writeFileSync(filePath, newContent, 'utf-8');
+  console.log(file + ' - Converted to JSON format');
 });
 
-console.log('\nDone! Converted', files.length, 'files');
+console.log('Done!');
