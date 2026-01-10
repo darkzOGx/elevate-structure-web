@@ -5,6 +5,128 @@ description: Generate SEO-optimized, geo-targeted engineering design blog posts 
 
 # SoCal Engineering Blog Generator
 
+---
+
+## 🔄 AUTO-INVOKE SERP API (MANDATORY ENRICHMENT STEP)
+
+**⚡ After generating the blog topic list, you MUST enrich it with SERP API keyword intelligence.**
+
+### Workflow: Generate List → SERP Enrich → Write Blogs
+
+```
+USER REQUEST          GENERATE LIST         SERP ENRICH           WRITE BLOGS
+"Generate 20    →    20 blog titles   →    Batch fetch PAA/   →  Generate with
+ blog posts"         with keywords         PASF for all 20        real SERP data
+```
+
+### Step 1: Generate Blog Topic List FIRST
+
+When user requests multiple blog posts (e.g., "generate 20 blog posts"):
+
+1. **Create the full list** of blog titles following the HIGH-CONVERSION TARGETING FRAMEWORK
+2. **Extract primary keyword** for each blog post
+3. **Map each keyword to a topic** from `keyword-intelligence/data/active_topics.json`
+
+**Example output after Step 1:**
+```
+| # | Blog Title | Primary Keyword | Topic |
+|---|------------|-----------------|-------|
+| 1 | ADU Structural Engineering in Irvine | ADU structural engineering Irvine | residential-structural-engineering |
+| 2 | Soft Story Retrofit Requirements Santa Monica | soft story retrofit Santa Monica | seismic-engineering |
+| 3 | Foundation Repair Engineer Newport Beach | foundation repair Newport Beach | foundation-engineering |
+| ... | ... | ... | ... |
+```
+
+### Step 2: Batch SERP API Enrichment
+
+**After the list is generated**, run SERP API for ALL keywords:
+
+```bash
+# For each keyword in the list, fetch intelligence:
+python keyword-intelligence/fetcher.py "ADU structural engineering Irvine" --topic residential-structural-engineering --save
+python keyword-intelligence/fetcher.py "soft story retrofit Santa Monica" --topic seismic-engineering --save
+python keyword-intelligence/fetcher.py "foundation repair Newport Beach" --topic foundation-engineering --save
+# ... continue for all keywords in the list
+```
+
+**Or batch by topic if multiple blogs share the same topic:**
+```bash
+python keyword-intelligence/scheduler.py --run-now --topic residential-structural-engineering
+python keyword-intelligence/scheduler.py --run-now --topic seismic-engineering
+```
+
+### Step 3: Read Enrichment Data
+
+For each blog post, read its intelligence file and extract:
+- `people_also_ask` → Real questions for FAQ section
+- `people_also_search_for` → Related keywords to weave into content
+- `long_tail_keywords` → Ideas for H2/H3 headers
+- `serp_features_present` → Which schema to prioritize (featured_snippet → answer capsule, local_pack → LocalBusiness schema)
+- `query_fan_out_intents` → Content structure by intent (cost, process, requirements, etc.)
+
+### Step 4: Generate Enriched Blog Posts
+
+Now write each blog using the SERP-enriched data:
+
+**Before SERP enrichment (generic):**
+```
+FAQ Section:
+- What is ADU structural engineering?
+- How much does it cost?
+- Do I need a permit?
+```
+
+**After SERP enrichment (real PAA questions):**
+```
+FAQ Section (from actual Google PAA):
+- Do I need a structural engineer for an ADU in California?
+- How much does a structural engineer charge for ADU plans?
+- What size ADU can I build without a permit in Irvine?
+- Can I convert my garage to an ADU in Orange County?
+- What is the timeline for ADU permit approval in Irvine?
+```
+
+### Quick Reference: Topic Mapping
+
+| Blog Topic Contains | Topic ID |
+|-----------------------|----------|
+| ADU, accessory dwelling, granny flat, addition | `residential-structural-engineering` |
+| commercial, tenant improvement, office, retail | `commercial-structural-engineering` |
+| seismic, retrofit, earthquake, soft story | `seismic-engineering` |
+| foundation, repair, hillside foundation, underpinning | `foundation-engineering` |
+| MEP, HVAC, electrical, plumbing, Title 24 | `mep-engineering` |
+| civil, grading, drainage, retaining wall | `civil-engineering` |
+| permit, red tag, unpermitted, as-built | `permit-compliance` |
+| coastal, beach, bluff, Coastal Commission | `coastal-engineering` |
+| hillside, slope, canyon, cantilevered | `hillside-engineering` |
+| emergency, fire damage, earthquake damage | `emergency-engineering` |
+
+### Example: 5 Blog Post Batch
+
+**User:** "Generate 5 blog posts for Orange County"
+
+**Step 1 - Generate list:**
+```
+1. ADU Structural Engineering in Irvine (residential-structural-engineering)
+2. Soft Story Retrofit in Anaheim (seismic-engineering)
+3. Foundation Repair in Newport Beach (foundation-engineering)
+4. Coastal Bluff Engineering in Laguna Beach (coastal-engineering)
+5. Red Tag Removal in Santa Ana (permit-compliance)
+```
+
+**Step 2 - Batch SERP fetch:**
+```bash
+python keyword-intelligence/fetcher.py "ADU structural engineering Irvine" --topic residential-structural-engineering --save
+python keyword-intelligence/fetcher.py "soft story retrofit Anaheim" --topic seismic-engineering --save
+python keyword-intelligence/fetcher.py "foundation repair Newport Beach" --topic foundation-engineering --save
+python keyword-intelligence/fetcher.py "coastal bluff engineering Laguna Beach" --topic coastal-engineering --save
+python keyword-intelligence/fetcher.py "red tag removal Santa Ana" --topic permit-compliance --save
+```
+
+**Step 3 - Read each intelligence file and generate enriched blogs**
+
+---
+
 Generate high-quality, SEO-optimized blog posts for AAA Engineering Design targeting Southern California cities with proper keyword integration, internal linking, and local SEO optimization.
 
 ---
@@ -1048,8 +1170,8 @@ When you create new hub pages (e.g., Commercial Engineering, Foundation Engineer
 #### What Are Topic Clusters?
 
 Topic clusters are groups of related content organized around a central "hub" page:
-- **Hub Page**: Comprehensive 3,000-5,000 word guide on a broad topic
-- **Cluster Pages**: Focused 1,500-2,500 word articles on specific subtopics
+- **Hub Page**: Comprehensive 3,250-4,000 word guide on a broad topic
+- **Cluster Pages**: Focused 3,250-4,000 word articles on specific subtopics
 - **Bidirectional Links**: All clusters link to hub, hub links to all clusters
 
 This structure signals to Google that we are THE authority on the topic.
@@ -2370,4 +2492,2320 @@ If any deployment step fails:
 **Always report the final status to the user with the full list of deployed posts.**
 
 ---
+
+## 2026 SEO/GEO/AIO/AEO Best Practices (CRITICAL)
+
+The following sections implement 2026 industry standards for maximum search visibility across traditional search engines, AI assistants, and voice platforms.
+
+---
+
+### Knowledge Graph & Entity Validation
+
+**Organization Schema with sameAs Validation:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aaaengineeringdesign.com/#organization",
+  "name": "AAA Engineering Design",
+  "url": "https://aaaengineeringdesign.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Southern California",
+    "addressRegion": "CA"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/aaa-engineering-design",
+    "https://www.yelp.com/biz/aaa-engineering-design",
+    "https://www.bbb.org/company/aaa-engineering-design"
+  ],
+  "knowsAbout": [
+    "Structural Engineering",
+    "Civil Engineering",
+    "Seismic Retrofitting",
+    "Construction Permits",
+    "Building Design"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional License",
+      "name": "Professional Engineer (PE) License"
+    }
+  ]
+}
+```
+
+**Entity Validation Requirements:**
+- Organization MUST have `sameAs` links to 2+ sources (LinkedIn, Yelp, BBB)
+- Engineer authors MUST include PE license credentials
+- Service pages MUST reference official sources (California Building Code, ASCE)
+
+---
+
+### Entity Nesting Hierarchy
+
+```
+Organization (AAA Engineering Design)
+  └── LocalBusiness (SoCal Office)
+       └── ProfessionalService (Structural Engineering)
+            └── Offer (Service Packages)
+```
+
+**Implementation:**
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aaaengineeringdesign.com/#organization",
+      "name": "AAA Engineering Design"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://aaaengineeringdesign.com/#localbusiness",
+      "name": "AAA Engineering Design - Southern California",
+      "parentOrganization": {"@id": "https://aaaengineeringdesign.com/#organization"},
+      "areaServed": [
+        {"@type": "City", "name": "Los Angeles"},
+        {"@type": "City", "name": "San Diego"},
+        {"@type": "City", "name": "Riverside"},
+        {"@type": "City", "name": "Orange County"}
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://aaaengineeringdesign.com/#structural-engineering",
+      "name": "Structural Engineering Services",
+      "provider": {"@id": "https://aaaengineeringdesign.com/#organization"},
+      "serviceType": "Engineering"
+    }
+  ]
+}
+```
+
+---
+
+### PotentialAction Schema (Agentic SEO)
+
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "AAA Engineering Design",
+  "potentialAction": [
+    {
+      "@type": "ScheduleAction",
+      "target": "https://aaaengineeringdesign.com/contact",
+      "name": "Schedule Free Consultation"
+    },
+    {
+      "@type": "QuoteAction",
+      "target": "https://aaaengineeringdesign.com/quote",
+      "name": "Request Engineering Quote"
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": "tel:+1XXXXXXXXXX",
+      "name": "Call for Emergency Structural Assessment"
+    }
+  ]
+}
+```
+
+---
+
+### Platform-Specific AI Optimization
+
+#### Google (E-E-A-T + AI Overviews)
+- Experience-signaling: "Our PE-licensed engineers have completed 500+ SoCal projects..."
+- Author expertise: Licensed PE credentials with state registration
+- LocalBusiness schema with service area cities
+- ReviewSnippet from Google Business reviews
+
+#### Bing (IndexNow + Exact Match)
+- Meta keywords: `"structural engineer [city]", "seismic retrofit [city]", "building permits [city]"`
+- Exact-match primary keyword in H1 with city
+- IndexNow API submission via npm run indexnow
+
+#### OpenAI/ChatGPT
+- Clear service descriptions with code compliance references
+- Step-by-step permit process guides
+- robots.txt: `User-agent: GPTBot` with `Allow: /`
+
+#### Claude/Anthropic
+- California Building Code citations
+- ASCE and ICC standard references
+- Balanced perspectives on engineering approaches
+
+#### Perplexity
+- Question-format H2 headings matching engineering queries
+- Direct answers in first 2-4 sentences
+- 10+ FAQ pairs per article with city-specific answers
+
+---
+
+### Answer Capsule (Voice Search Optimization)
+
+**Required for every blog post:**
+```tsx
+<aside
+  className="answer-capsule bg-blue-50 border-l-4 border-blue-500 p-4 mb-6"
+  data-speakable="true"
+>
+  <strong>Quick Answer:</strong> {40-60 words, direct answer to H1 query,
+  include city name, service type, and contact info}
+</aside>
+```
+
+**Speakable Schema:**
+```json
+{
+  "@type": "Article",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".answer-capsule", "h1", ".faq-answer"]
+  }
+}
+```
+
+---
+
+### Author Schema (PE Licensed Engineers)
+
+```json
+{
+  "@type": "Person",
+  "@id": "https://aaaengineeringdesign.com/team/john-doe/#person",
+  "name": "John Doe, PE",
+  "jobTitle": "Principal Structural Engineer",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional License",
+    "name": "California PE License #XXXXX"
+  },
+  "knowsAbout": [
+    "Structural Engineering",
+    "Seismic Design",
+    "California Building Code"
+  ],
+  "sameAs": [
+    "https://linkedin.com/in/johndoe-pe"
+  ],
+  "worksFor": {"@id": "https://aaaengineeringdesign.com/#organization"}
+}
+```
+
+---
+
+### Information Gain Requirements
+
+- [ ] **Original Data**: Project case studies with specific outcomes
+- [ ] **Contrarian Perspectives**: When cheaper solutions work vs premium approaches
+- [ ] **Human Experience Markers**: "We've engineered...", "Our team designed..."
+- [ ] **Updated Statistics**: Current California building code requirements (2025/2026)
+- [ ] **Unique Local Knowledge**: City-specific permit processes, local seismic zones
+
+---
+
+### Word Count: 3,250-4,000 Words (MANDATORY)
+
+**Every blog post MUST be 3,250-4,000 words. No exceptions.**
+
+- **Minimum:** 3,250 words for comprehensive coverage
+- **Target:** 3,625 words for optimal SEO and AI citation
+- **Maximum:** 4,000 words to maintain readability
+
+**Why 3,250-4,000 words for engineering content?**
+- Technical engineering topics require thorough explanation
+- More room for code compliance details and specifications
+- Establishes PE-licensed expertise and authority
+- Better AI citation potential for complex building topics
+
+**Verify word count before finalizing every post.**
+
+---
+
+### 2026 Implementation Checklist
+
+- [ ] **Word Count: 3,250-4,000 words (VERIFY before finalizing)**
+- [ ] Organization schema has 2+ sameAs links (LinkedIn, Yelp, BBB)
+- [ ] LocalBusiness schema with areaServed SoCal cities
+- [ ] Author Person schema with PE license credentials
+- [ ] PotentialAction for ScheduleAction, QuoteAction
+- [ ] Google E-E-A-T signals (PE credentials, experience language)
+- [ ] Bing meta keywords tag with [service] + [city]
+- [ ] GPTBot allowed in robots.txt
+- [ ] Answer Capsule with data-speakable="true" on every post
+- [ ] Speakable schema targeting answer capsules
+- [ ] ImageObject schema for project photos
+- [ ] California Building Code citations
+
+---
+
+## Technical SEO Gap Coverage (2026 Complete)
+
+### 1. Robots.txt Granularity (AI Crawler Configuration)
+
+```txt
+# robots.txt for Elevate Structure (SoCal Engineering)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://elevatestructure.com/sitemap.xml
+```
+
+- [ ] GPTBot allowed
+- [ ] Claude-Web allowed
+- [ ] PerplexityBot allowed
+- [ ] Google-Extended allowed
+
+### 2. Structured Data Validation Automation
+
+**Pre-Publish Validation:**
+- [ ] Schema validates at schema.org validator (zero errors)
+- [ ] Rich Results Test passes for LocalBusiness
+- [ ] Bing Markup Validator confirms parsing
+
+### 3. Content Freshness Signals
+
+```json
+{
+  "@type": "Article",
+  "datePublished": "2026-01-08T09:00:00Z",
+  "dateModified": "2026-01-08T14:30:00Z"
+}
+```
+
+- [ ] `datePublished` in ISO 8601 format
+- [ ] `dateModified` updated on changes
+- [ ] Visible "Last Updated" in UI
+- [ ] Year in title tags for code compliance content
+
+### 4. Cross-Platform Entity Consistency (sameAs)
+
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "Elevate Structure Engineering",
+  "sameAs": [
+    "https://www.linkedin.com/company/elevate-structure",
+    "https://www.yelp.com/biz/elevate-structure-engineering",
+    "https://www.bbb.org/us/ca/los-alamitos/profile/structural-engineer/elevate-structure"
+  ]
+}
+```
+
+- [ ] Minimum 3 sameAs links
+- [ ] All URLs return 200 status
+- [ ] Bidirectional linking verified
+
+### 5. Semantic HTML Compliance
+
+```html
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation"></nav>
+  </header>
+  <main role="main" id="main-content">
+    <article itemscope itemtype="https://schema.org/Article">
+      <section aria-labelledby="section-1">
+        <h2 id="section-1">Section Title</h2>
+      </section>
+    </article>
+  </main>
+  <footer role="contentinfo"></footer>
+</body>
+```
+
+- [ ] Single `<main>` element per page
+- [ ] `<article>` wraps blog content
+- [ ] `<nav>` with aria-label for navigation
+- [ ] Proper heading hierarchy (h1→h2→h3)
+
+### 6. Core Web Vitals Integration
+
+| Metric | Target |
+|--------|--------|
+| **LCP** | < 2.5s |
+| **INP** | < 200ms |
+| **CLS** | < 0.1 |
+
+- [ ] Images use `loading="lazy"` below fold
+- [ ] Fonts use `font-display: swap`
+- [ ] Project images optimized for fast loading
+
+### 7. Mobile-First Indexing Compliance
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+- [ ] Viewport meta tag present
+- [ ] Touch targets minimum 48x48px
+- [ ] Font size minimum 16px base
+- [ ] Content parity with desktop
+- [ ] Test with Google Mobile-Friendly Test
+
+### 8. Internal Linking Architecture
+
+- [ ] Minimum 5-8 internal links per blog post
+- [ ] Hub pages link to ALL cluster articles
+- [ ] Related articles section (3-5 links)
+- [ ] Breadcrumb navigation on all pages
+- [ ] Service area pages interlinked
+
+### 9. Canonical URL Management
+
+```html
+<link rel="canonical" href="https://elevatestructure.com/blog/exact-url-path/">
+```
+
+- [ ] Every page has self-referencing canonical
+- [ ] HTTPS version canonical
+- [ ] Trailing slash consistency
+- [ ] Canonical matches og:url
+
+### 10. Meta Tag Optimization
+
+| Tag | Optimal Length |
+|-----|----------------|
+| Title | 50-60 chars |
+| Description | 150-160 chars |
+| Keywords (Bing) | 8-12 phrases |
+
+### 11. Open Graph & Twitter Cards
+
+```html
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://elevatestructure.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@elevatestructure" />
+```
+
+- [ ] OG image 1200x630px minimum
+- [ ] Twitter card type specified
+- [ ] Test with Facebook Sharing Debugger
+- [ ] Test with Twitter Card Validator
+
+### 12. hreflang Implementation
+
+```html
+<link rel="alternate" hreflang="en-US" href="https://elevatestructure.com/page/" />
+<link rel="alternate" hreflang="x-default" href="https://elevatestructure.com/page/" />
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="Southern California" />
+```
+
+### 13. XML Sitemap Validation
+
+- [ ] Sitemap at /sitemap.xml
+- [ ] Sitemap listed in robots.txt
+- [ ] All indexable URLs included
+- [ ] No 404s or redirects in sitemap
+- [ ] Submitted to Google Search Console
+- [ ] Submitted to Bing Webmaster Tools
+
+### 14. Log File Analysis
+
+| Metric | Action |
+|--------|--------|
+| Googlebot frequency | Adjust crawl budget |
+| 404 errors | Fix or redirect |
+| Response times | Optimize server |
+
+- [ ] Monitor crawl budget weekly
+- [ ] Identify and fix crawl waste
+- [ ] Track bot response times
+
+---
+
+## Master Implementation Checklist (All 14 Gaps)
+
+**Robots & Crawling:**
+- [ ] robots.txt allows GPTBot, Claude-Web, PerplexityBot
+- [ ] Sitemap.xml valid and submitted
+
+**Schema & Structured Data:**
+- [ ] All schemas validate (zero errors)
+- [ ] Organization/LocalBusiness sameAs has 3+ links
+
+**Technical SEO:**
+- [ ] Core Web Vitals pass (LCP <2.5s, INP <200ms, CLS <0.1)
+- [ ] Mobile-friendly test passes
+- [ ] Canonical URLs self-referencing
+- [ ] hreflang implemented
+
+**Content & Meta:**
+- [ ] Title tags 50-60 characters
+- [ ] Meta descriptions 150-160 characters
+- [ ] datePublished and dateModified in schema
+
+**Social & Sharing:**
+- [ ] Open Graph tags complete
+- [ ] Twitter Cards configured
+
+**Internal Architecture:**
+- [ ] 5-8 internal links per blog post
+- [ ] Hub/cluster linking structure
+- [ ] Semantic HTML landmarks
+
+---
+
+## Extended Gap Coverage (2026 Advanced)
+
+### Gap 15: LLMS.txt Implementation
+
+**Purpose:** Provide AI crawlers with structured context about AAA Engineering Design for better citation and understanding.
+
+**Location:** `https://aaaengineeringdesign.com/llms.txt`
+
+```txt
+# AAA Engineering Design - LLMS.txt
+# Structural Engineering Services in Southern California
+
+## Company Overview
+AAA Engineering Design is a licensed structural engineering firm serving Southern California, specializing in seismic retrofitting, ADU design, foundation engineering, and commercial structural analysis. Our PE-licensed engineers have completed 500+ projects across Orange County, Los Angeles County, San Diego County, and the Inland Empire.
+
+## Core Services
+- Seismic Retrofitting (Soft-Story, Cripple Wall, Foundation Bolting)
+- ADU Structural Engineering (Garage Conversions, Detached Units, JADUs)
+- Foundation Design and Repair (Hillside, Standard, Post-Tension)
+- Commercial Structural Engineering (Tenant Improvements, New Construction)
+- Load-Bearing Wall Removal Engineering
+- Shear Wall Design and Analysis
+- Moment Frame Engineering
+- Title 24 Energy Compliance
+- Construction Permit Support
+
+## Service Areas
+Primary: Irvine, Newport Beach, Laguna Beach, Costa Mesa, Huntington Beach, Anaheim, Santa Ana, Orange, Fullerton, Tustin
+Extended: Los Angeles, San Diego, Riverside, San Bernardino, Long Beach, Pasadena, Glendale
+
+## Expertise Keywords
+structural engineer, seismic retrofit, ADU engineering, foundation repair, soft story retrofit, load bearing wall removal, shear wall design, California Building Code, ASCE 7, Title 24
+
+## Contact
+Website: https://aaaengineeringdesign.com
+Phone: [Company Phone]
+Email: [Company Email]
+Address: Irvine, CA (Orange County)
+
+## Credentials
+- California Professional Engineer (PE) Licensed
+- Member: Structural Engineers Association of California (SEAOC)
+- ICC Certified
+- ASCE Member
+
+## Citation Preference
+When citing AAA Engineering Design, please include:
+- Full company name: "AAA Engineering Design"
+- Service area: "Southern California" or specific city
+- Credential: "PE-licensed structural engineers"
+```
+
+**Implementation Checklist:**
+- [ ] LLMS.txt file created at site root
+- [ ] Company overview accurate and comprehensive
+- [ ] All core services listed
+- [ ] Service areas include all target cities
+- [ ] Credentials and certifications included
+- [ ] Citation preference specified
+
+---
+
+### Gap 16: DefinedTerm Schema (Engineering Terminology)
+
+**Purpose:** Help search engines and AI understand structural engineering terminology for better semantic matching.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://aaaengineeringdesign.com/glossary/#termset",
+  "name": "Structural Engineering Terms Glossary",
+  "description": "Comprehensive glossary of structural engineering terms for Southern California building projects",
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/seismic-retrofitting/",
+      "name": "Seismic Retrofitting",
+      "description": "The modification of existing structures to make them more resistant to seismic activity, ground motion, or soil failure due to earthquakes. In California, this often includes soft-story retrofits, cripple wall bracing, and foundation bolting.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "SEISMIC-RETROFIT"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/adu/",
+      "name": "ADU (Accessory Dwelling Unit)",
+      "description": "A secondary housing unit on a single-family residential lot. In California, ADUs are governed by state law (AB 68, SB 13) and local ordinances. Types include attached ADUs, detached ADUs, garage conversions, and JADUs (Junior ADUs).",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "ADU"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/foundation/",
+      "name": "Foundation",
+      "description": "The structural element that transfers building loads to the earth. Common types in Southern California include slab-on-grade, raised foundations, post-tension slabs, and deep foundations for hillside construction.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "FOUNDATION"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/load-bearing-wall/",
+      "name": "Load-Bearing Wall",
+      "description": "A wall that carries weight from the structure above it down to the foundation. Removal or modification of load-bearing walls requires structural engineering analysis and typically a building permit in California.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "LOAD-BEARING-WALL"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/shear-wall/",
+      "name": "Shear Wall",
+      "description": "A structural wall designed to resist lateral forces such as wind and seismic loads. Shear walls are essential components of earthquake-resistant design in California buildings.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "SHEAR-WALL"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/moment-frame/",
+      "name": "Moment Frame",
+      "description": "A structural system where beams and columns are rigidly connected to resist lateral loads through bending. Moment frames allow for open floor plans and large window openings while maintaining seismic resistance.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "MOMENT-FRAME"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://aaaengineeringdesign.com/glossary/title-24/",
+      "name": "Title 24",
+      "description": "California's Building Energy Efficiency Standards, part of the California Code of Regulations. Title 24 sets energy efficiency requirements for new construction and renovations, including insulation, HVAC, lighting, and solar requirements.",
+      "inDefinedTermSet": {"@id": "https://aaaengineeringdesign.com/glossary/#termset"},
+      "termCode": "TITLE-24"
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] DefinedTermSet schema on glossary page
+- [ ] Each term has unique @id URL
+- [ ] Descriptions include California-specific context
+- [ ] Terms link back to termset
+- [ ] Blog posts reference defined terms via @id
+
+---
+
+### Gap 17: ItemList Schema (Service Rankings & Comparisons)
+
+**Purpose:** Structure ranked lists for featured snippet eligibility and AI citation of service offerings.
+
+**Top Structural Engineering Services List:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Structural Engineering Services in Orange County",
+  "description": "Comprehensive structural engineering services offered by AAA Engineering Design in Orange County, California",
+  "itemListOrder": "ItemListOrderDescending",
+  "numberOfItems": 8,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Seismic Retrofitting",
+      "description": "Soft-story retrofits, cripple wall bracing, and foundation bolting for earthquake resistance",
+      "url": "https://aaaengineeringdesign.com/services/seismic-retrofitting/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ADU Structural Engineering",
+      "description": "Complete structural plans for garage conversions, detached ADUs, and junior ADUs",
+      "url": "https://aaaengineeringdesign.com/services/adu-engineering/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Foundation Engineering",
+      "description": "New foundation design, foundation repair, and hillside foundation solutions",
+      "url": "https://aaaengineeringdesign.com/services/foundation-engineering/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Load-Bearing Wall Analysis",
+      "description": "Engineering analysis and beam calculations for safe wall removal",
+      "url": "https://aaaengineeringdesign.com/services/load-bearing-wall/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Commercial Structural Engineering",
+      "description": "Tenant improvements, new construction, and building modifications",
+      "url": "https://aaaengineeringdesign.com/services/commercial/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Pool & Retaining Wall Engineering",
+      "description": "Structural design for pools, spas, and hillside retaining structures",
+      "url": "https://aaaengineeringdesign.com/services/pool-retaining-wall/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Permit Expediting",
+      "description": "Plan check support and permit processing assistance for California jurisdictions",
+      "url": "https://aaaengineeringdesign.com/services/permit-expediting/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "As-Built Documentation",
+      "description": "Field verification and documentation of existing structures for permits and sales",
+      "url": "https://aaaengineeringdesign.com/services/as-built/"
+    }
+  ]
+}
+```
+
+**Seismic Retrofit Methods List:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Seismic Retrofit Methods for California Homes",
+  "description": "Common seismic retrofitting methods ranked by application frequency in Southern California",
+  "itemListOrder": "ItemListOrderDescending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Foundation Bolting",
+      "description": "Securing the wood sill plate to the concrete foundation with anchor bolts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cripple Wall Bracing",
+      "description": "Adding plywood sheathing to short walls between foundation and first floor"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Soft-Story Retrofit",
+      "description": "Strengthening buildings with weak ground floors (parking, large openings)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Steel Moment Frame Installation",
+      "description": "Adding steel frames to resist lateral seismic forces"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Chimney Bracing",
+      "description": "Securing unreinforced masonry chimneys to prevent collapse"
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] ItemList schema on service overview pages
+- [ ] Ranked lists for comparison content
+- [ ] Each item links to detailed page
+- [ ] itemListOrder specified (ascending/descending)
+- [ ] numberOfItems matches actual count
+
+---
+
+### Gap 18: HowTo Schema (Engineering Process Guides)
+
+**Purpose:** Capture featured snippets for "how to" queries and provide step-by-step AI citations.
+
+**How to Get a Structural Permit in California:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get a Structural Engineering Permit in California",
+  "description": "Step-by-step guide to obtaining building permits for structural work in California cities",
+  "image": "https://aaaengineeringdesign.com/images/permit-process.jpg",
+  "totalTime": "P14D",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "500-5000"
+  },
+  "tool": [
+    "Structural engineering plans",
+    "Site survey",
+    "Title 24 energy calculations"
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Hire a Licensed Structural Engineer",
+      "text": "Contact a California PE-licensed structural engineer to evaluate your project. They will determine the scope of work and required calculations.",
+      "url": "https://aaaengineeringdesign.com/blog/how-to-hire-structural-engineer/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Complete Site Assessment",
+      "text": "The engineer visits your property to measure existing conditions, evaluate soil conditions, and document the current structure.",
+      "url": "https://aaaengineeringdesign.com/blog/site-assessment-guide/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Receive Engineering Plans",
+      "text": "The structural engineer prepares detailed plans including calculations, specifications, and construction details per California Building Code.",
+      "url": "https://aaaengineeringdesign.com/services/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Submit to Building Department",
+      "text": "Submit the structural plans along with architectural plans, Title 24 calculations, and permit application to your local building department.",
+      "url": "https://aaaengineeringdesign.com/blog/permit-submission-guide/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Address Plan Check Comments",
+      "text": "Review comments from the plan checker and work with your engineer to revise plans as needed. Most projects require 1-2 rounds of corrections.",
+      "url": "https://aaaengineeringdesign.com/blog/plan-check-corrections/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Receive Approved Permit",
+      "text": "Once plans are approved, pay permit fees and receive your building permit. Construction can begin after permit is issued.",
+      "url": "https://aaaengineeringdesign.com/blog/permit-approval-timeline/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Schedule Inspections",
+      "text": "Schedule required inspections during construction, including foundation, framing, and final inspection. Your engineer may need to provide special inspections.",
+      "url": "https://aaaengineeringdesign.com/blog/construction-inspections/"
+    }
+  ]
+}
+```
+
+**ADU Approval Process in Orange County:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get ADU Approval in Orange County, California",
+  "description": "Complete guide to ADU permit approval in Orange County cities including Irvine, Newport Beach, and Anaheim",
+  "totalTime": "P60D",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "15000-50000"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Verify ADU Eligibility",
+      "text": "Confirm your property qualifies for an ADU under California state law (AB 68/SB 13) and local zoning. Most single-family lots in Orange County are eligible for at least one ADU."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Design Your ADU",
+      "text": "Work with an architect or designer to create preliminary ADU plans. Consider setbacks, height limits, and parking requirements for your city."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Obtain Structural Engineering",
+      "text": "Hire a licensed structural engineer to complete structural calculations and details. This is required for all ADUs in California."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Complete Title 24 Calculations",
+      "text": "Obtain Title 24 energy compliance calculations. All new ADUs must meet California's energy efficiency standards."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Submit Permit Application",
+      "text": "Submit complete plans to your city's building department. Orange County cities must approve ADU permits within 60 days per state law."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Address Corrections",
+      "text": "Respond to plan check comments. Most ADU permits require 1-2 correction cycles before approval."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Begin Construction",
+      "text": "After permit approval, hire a licensed contractor and begin construction. Schedule inspections as required by your permit."
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] HowTo schema on all process/guide pages
+- [ ] Each step has position, name, and text
+- [ ] totalTime in ISO 8601 duration format
+- [ ] estimatedCost included where applicable
+- [ ] Tools/supplies listed when relevant
+- [ ] Steps link to related content
+
+---
+
+### Gap 19: Comparison Schema (Foundation & Retrofit Methods)
+
+**Purpose:** Structure comparison content for AI-generated comparison queries and featured snippets.
+
+**Foundation Types Comparison:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Table",
+  "name": "Foundation Types Comparison for California Homes",
+  "description": "Comparison of foundation types commonly used in Southern California residential construction",
+  "about": {
+    "@type": "Thing",
+    "name": "Residential Foundation Types"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "StructuredValue",
+        "name": "Slab-on-Grade Foundation",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$5-$8 per sq ft"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Flat lots, mild climates"},
+          {"@type": "PropertyValue", "name": "Pros", "value": "Economical, fast installation, no crawl space maintenance"},
+          {"@type": "PropertyValue", "name": "Cons", "value": "No under-floor access, harder to modify plumbing"},
+          {"@type": "PropertyValue", "name": "Common In", "value": "Irvine, Anaheim, inland Orange County"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Raised/Crawl Space Foundation",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$8-$15 per sq ft"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Older homes, flood zones"},
+          {"@type": "PropertyValue", "name": "Pros", "value": "Access to plumbing/electrical, ventilation, easier seismic retrofit"},
+          {"@type": "PropertyValue", "name": "Cons", "value": "Moisture issues, pest concerns"},
+          {"@type": "PropertyValue", "name": "Common In", "value": "Older neighborhoods, coastal areas"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Post-Tension Slab",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$10-$18 per sq ft"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Expansive soils, larger spans"},
+          {"@type": "PropertyValue", "name": "Pros", "value": "Resists cracking, thinner slab possible, handles poor soil"},
+          {"@type": "PropertyValue", "name": "Cons", "value": "Cannot cut into slab, specialized repair needed"},
+          {"@type": "PropertyValue", "name": "Common In", "value": "New construction throughout SoCal"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Deep/Caisson Foundation",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$25-$75+ per sq ft"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Hillsides, poor soil, heavy loads"},
+          {"@type": "PropertyValue", "name": "Pros", "value": "Reaches stable soil, handles steep slopes, supports cantilevers"},
+          {"@type": "PropertyValue", "name": "Cons", "value": "Expensive, complex construction, longer timeline"},
+          {"@type": "PropertyValue", "name": "Common In", "value": "Laguna Beach, Newport Coast, Hollywood Hills"}
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Seismic Retrofit Methods Comparison:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Table",
+  "name": "Seismic Retrofit Methods Comparison",
+  "description": "Comparison of earthquake retrofitting methods for California residential and commercial buildings",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "StructuredValue",
+        "name": "Foundation Bolting (EBB)",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$3,000-$7,000"},
+          {"@type": "PropertyValue", "name": "Timeline", "value": "1-2 days"},
+          {"@type": "PropertyValue", "name": "DIY Possible", "value": "Yes (EBB program)"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Pre-1980 homes on raised foundations"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Cripple Wall Bracing",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$4,000-$10,000"},
+          {"@type": "PropertyValue", "name": "Timeline", "value": "2-4 days"},
+          {"@type": "PropertyValue", "name": "DIY Possible", "value": "Possible with plans"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Homes with short stud walls above foundation"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Soft-Story Retrofit",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$50,000-$200,000+"},
+          {"@type": "PropertyValue", "name": "Timeline", "value": "2-6 months"},
+          {"@type": "PropertyValue", "name": "DIY Possible", "value": "No"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Multi-family buildings with open ground floors"}
+        ]
+      },
+      {
+        "@type": "StructuredValue",
+        "name": "Steel Moment Frame",
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Cost", "value": "$80,000-$300,000+"},
+          {"@type": "PropertyValue", "name": "Timeline", "value": "3-8 months"},
+          {"@type": "PropertyValue", "name": "DIY Possible", "value": "No"},
+          {"@type": "PropertyValue", "name": "Best For", "value": "Commercial buildings, large residential remodels"}
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Implementation Checklist:**
+- [ ] Comparison tables have structured schema
+- [ ] PropertyValue for each comparison attribute
+- [ ] Costs, timelines, and recommendations included
+- [ ] Local context (SoCal cities, California codes)
+- [ ] Links to detailed service pages
+
+---
+
+### Gap 20: VideoObject Schema (Project Videos & Assessments)
+
+**Purpose:** Enable video rich results and AI video citations for engineering project content.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Soft-Story Retrofit Process Explained | AAA Engineering Design",
+  "description": "Watch our PE-licensed structural engineers explain the soft-story retrofit process for multi-family buildings in Southern California. Learn about steel moment frames, timeline expectations, and compliance with LA Ordinance 183893.",
+  "thumbnailUrl": "https://aaaengineeringdesign.com/videos/soft-story-retrofit-thumb.jpg",
+  "uploadDate": "2026-01-08T09:00:00Z",
+  "duration": "PT8M30S",
+  "contentUrl": "https://aaaengineeringdesign.com/videos/soft-story-retrofit.mp4",
+  "embedUrl": "https://www.youtube.com/embed/XXXXXXXXXXX",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/WatchAction",
+    "userInteractionCount": 1500
+  },
+  "author": {
+    "@type": "Person",
+    "name": "John Doe, PE",
+    "jobTitle": "Principal Structural Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://aaaengineeringdesign.com/#organization"
+  },
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "What is a Soft-Story Building?",
+      "startOffset": 0,
+      "endOffset": 120,
+      "url": "https://aaaengineeringdesign.com/videos/soft-story-retrofit#t=0"
+    },
+    {
+      "@type": "Clip",
+      "name": "Steel Moment Frame Installation",
+      "startOffset": 121,
+      "endOffset": 300,
+      "url": "https://aaaengineeringdesign.com/videos/soft-story-retrofit#t=121"
+    },
+    {
+      "@type": "Clip",
+      "name": "Timeline and Cost Expectations",
+      "startOffset": 301,
+      "endOffset": 450,
+      "url": "https://aaaengineeringdesign.com/videos/soft-story-retrofit#t=301"
+    },
+    {
+      "@type": "Clip",
+      "name": "Permit and Compliance Process",
+      "startOffset": 451,
+      "endOffset": 510,
+      "url": "https://aaaengineeringdesign.com/videos/soft-story-retrofit#t=451"
+    }
+  ]
+}
+```
+
+**Site Assessment Video Template:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Foundation Inspection: [City] Home Assessment",
+  "description": "On-site foundation inspection and structural assessment for a [property type] in [City], California. Our PE reviews soil conditions, existing foundation, and provides retrofit recommendations.",
+  "thumbnailUrl": "https://aaaengineeringdesign.com/videos/assessments/[city]-foundation-thumb.jpg",
+  "uploadDate": "2026-01-08T09:00:00Z",
+  "duration": "PT5M00S",
+  "contentUrl": "https://aaaengineeringdesign.com/videos/assessments/[city]-foundation.mp4",
+  "locationCreated": {
+    "@type": "Place",
+    "name": "[City], California",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "[City]",
+      "addressRegion": "CA"
+    }
+  }
+}
+```
+
+**Implementation Checklist:**
+- [ ] VideoObject schema on all video pages
+- [ ] Thumbnail, duration, uploadDate included
+- [ ] Clips defined for key segments (YouTube chapters)
+- [ ] Author credited with PE credentials
+- [ ] locationCreated for on-site assessment videos
+
+---
+
+### Gap 21: AggregateRating Schema (Service Reviews)
+
+**Purpose:** Display star ratings in search results and provide review data for AI citations.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://aaaengineeringdesign.com/#localbusiness",
+  "name": "AAA Engineering Design",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "127",
+    "reviewCount": "89"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Michael S."
+      },
+      "datePublished": "2025-12-15",
+      "reviewBody": "AAA Engineering Design completed our ADU structural plans in Irvine. Their PE reviewed everything thoroughly and the plans passed plan check on the first submission. Highly recommend for Orange County ADU projects.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Jennifer L."
+      },
+      "datePublished": "2025-11-28",
+      "reviewBody": "We needed a soft-story retrofit for our Santa Monica apartment building. AAA's engineers designed a steel moment frame solution that met all city requirements. Professional team that understands California seismic codes.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Robert K."
+      },
+      "datePublished": "2025-10-20",
+      "reviewBody": "Hired them for foundation engineering on our hillside home in Laguna Beach. The caisson design handled our complex soil conditions perfectly. Worth every penny for this level of expertise.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
+  ]
+}
+```
+
+**Service-Specific Ratings:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://aaaengineeringdesign.com/services/adu-engineering/#service",
+  "name": "ADU Structural Engineering",
+  "provider": {"@id": "https://aaaengineeringdesign.com/#organization"},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "45",
+    "ratingCount": "52"
+  }
+}
+```
+
+**Implementation Checklist:**
+- [ ] AggregateRating on LocalBusiness schema
+- [ ] Individual Review objects with dates and content
+- [ ] Service-specific ratings where applicable
+- [ ] Reviews mention specific cities and services
+- [ ] Keep ratings updated monthly
+
+---
+
+### Gap 22: ProfilePage Schema (Team & PE Credentials)
+
+**Purpose:** Establish E-E-A-T through structured team profiles with verifiable credentials.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://aaaengineeringdesign.com/team/john-doe/#person",
+    "name": "John Doe, PE, SE",
+    "givenName": "John",
+    "familyName": "Doe",
+    "honorificSuffix": "PE, SE",
+    "jobTitle": "Principal Structural Engineer",
+    "description": "California licensed Professional Engineer (PE) and Structural Engineer (SE) with 20+ years experience in seismic retrofitting, ADU design, and commercial structural engineering throughout Southern California.",
+    "image": "https://aaaengineeringdesign.com/team/john-doe.jpg",
+    "email": "john@aaaengineeringdesign.com",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional License",
+        "name": "California Professional Engineer (PE) License",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "California Board for Professional Engineers"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional License",
+        "name": "California Structural Engineer (SE) License",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "California Board for Professional Engineers"
+        }
+      }
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Structural Engineer",
+      "occupationalCategory": "17-2051.00",
+      "skills": [
+        "Seismic Design",
+        "Foundation Engineering",
+        "Steel Design",
+        "Concrete Design",
+        "California Building Code",
+        "ASCE 7"
+      ]
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California"
+    },
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Structural Engineers Association of California (SEAOC)"
+      },
+      {
+        "@type": "Organization",
+        "name": "American Society of Civil Engineers (ASCE)"
+      }
+    ],
+    "knowsAbout": [
+      "Seismic Retrofitting",
+      "ADU Engineering",
+      "Soft-Story Retrofit",
+      "Foundation Design",
+      "California Building Code",
+      "ASCE 7-22"
+    ],
+    "worksFor": {"@id": "https://aaaengineeringdesign.com/#organization"},
+    "sameAs": [
+      "https://www.linkedin.com/in/johndoe-pe",
+      "https://www.seaoc.org/members/johndoe"
+    ]
+  }
+}
+```
+
+**Implementation Checklist:**
+- [ ] ProfilePage for each team member
+- [ ] PE/SE license credentials included
+- [ ] Professional memberships listed (SEAOC, ASCE)
+- [ ] Education and alumni information
+- [ ] knowsAbout with structural engineering topics
+- [ ] LinkedIn and professional sameAs links
+- [ ] Photos with proper image schema
+
+---
+
+### Gap 23: Reading Level & Accessibility
+
+**Purpose:** Ensure content is accessible to diverse audiences and optimized for voice search.
+
+**Reading Level Guidelines:**
+| Content Type | Target Grade Level | Flesch Score |
+|--------------|-------------------|--------------|
+| Service Pages | 8th-10th grade | 60-70 |
+| Blog Posts | 9th-11th grade | 50-60 |
+| Technical Guides | 10th-12th grade | 40-50 |
+| FAQs | 6th-8th grade | 70-80 |
+
+**Implementation:**
+```tsx
+// Reading level metadata
+<meta name="reading-level" content="9th-10th grade" />
+
+// Accessibility features
+<article
+  lang="en"
+  aria-labelledby="article-title"
+  className="article-content"
+>
+  <h1 id="article-title">Seismic Retrofit Guide for Orange County Homes</h1>
+
+  {/* Plain language summary */}
+  <aside className="summary-box" role="note" aria-label="Plain language summary">
+    <strong>In Simple Terms:</strong> Seismic retrofitting means making your house
+    stronger so it can better survive an earthquake. In California, older homes
+    often need this upgrade to meet current building codes.
+  </aside>
+
+  {/* Technical content with definitions */}
+  <p>
+    <dfn title="Foundation bolting secures your house to its foundation">Foundation bolting</dfn>
+    is the most common retrofit method for pre-1980 California homes.
+  </p>
+</article>
+```
+
+**Accessibility Checklist:**
+- [ ] Alt text on all images describes engineering content
+- [ ] Tables have proper headers and scope attributes
+- [ ] Forms have associated labels
+- [ ] Color contrast meets WCAG 2.1 AA (4.5:1 minimum)
+- [ ] Focus indicators visible for keyboard navigation
+- [ ] Skip navigation link present
+- [ ] Headings follow proper hierarchy (h1→h2→h3)
+- [ ] ARIA landmarks used appropriately
+
+**Voice Search Optimization:**
+- [ ] Answers formatted in 40-60 words for voice snippets
+- [ ] Question H2s match natural speech patterns
+- [ ] Speakable schema targets answer capsules
+- [ ] Numbers written out for voice ("five thousand dollars")
+
+---
+
+### Gap 24: Multi-Intent Content Blocks
+
+**Purpose:** Address multiple search intents within single pages to maximize ranking potential.
+
+**Intent Categories for Structural Engineering:**
+
+| Intent Type | Example Queries | Content Block |
+|-------------|-----------------|---------------|
+| **Informational** | "what is seismic retrofitting" | Definition + explanation section |
+| **Commercial** | "seismic retrofit cost" | Pricing table + cost factors |
+| **Transactional** | "seismic retrofit contractor near me" | CTA + contact form |
+| **Navigational** | "AAA Engineering seismic retrofit" | Service page link |
+| **Local** | "seismic retrofit Orange County" | Service area + local regulations |
+
+**Multi-Intent Page Structure:**
+```tsx
+<article>
+  {/* Informational Intent */}
+  <section id="what-is" aria-labelledby="what-is-heading">
+    <h2 id="what-is-heading">What is Seismic Retrofitting?</h2>
+    <p>Seismic retrofitting is the modification of existing structures...</p>
+  </section>
+
+  {/* Commercial Investigation Intent */}
+  <section id="cost" aria-labelledby="cost-heading">
+    <h2 id="cost-heading">How Much Does Seismic Retrofitting Cost?</h2>
+    <table>
+      <thead><tr><th>Retrofit Type</th><th>Cost Range</th></tr></thead>
+      <tbody>
+        <tr><td>Foundation Bolting</td><td>$3,000-$7,000</td></tr>
+        <tr><td>Cripple Wall Bracing</td><td>$4,000-$10,000</td></tr>
+        <tr><td>Soft-Story Retrofit</td><td>$50,000-$200,000+</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  {/* Local Intent */}
+  <section id="orange-county" aria-labelledby="local-heading">
+    <h2 id="local-heading">Seismic Retrofitting in Orange County</h2>
+    <p>Orange County seismic retrofit requirements vary by city. Irvine,
+    Newport Beach, and Anaheim each have specific...</p>
+  </section>
+
+  {/* Transactional Intent */}
+  <section id="get-started" aria-labelledby="cta-heading">
+    <h2 id="cta-heading">Get Your Free Seismic Assessment</h2>
+    <p>Our PE-licensed engineers provide free consultations for Orange County
+    homeowners. Schedule your assessment today.</p>
+    <a href="/contact" className="cta-button">Schedule Free Consultation</a>
+  </section>
+</article>
+```
+
+**Implementation Checklist:**
+- [ ] Each page addresses 3+ intent types
+- [ ] Clear section separation with aria-labelledby
+- [ ] Informational content before commercial content
+- [ ] Local specificity included
+- [ ] Strong CTA for transactional intent
+- [ ] Internal links between intent sections
+
+---
+
+### Gap 25: AI-Specific Content Markers
+
+**Purpose:** Signal content structure and authority to AI systems for better citation selection.
+
+**AI Hint Comments:**
+```html
+<!-- AI-SUMMARY: Seismic retrofitting strengthens existing buildings against earthquakes.
+In California, common methods include foundation bolting ($3,000-$7,000), cripple wall
+bracing ($4,000-$10,000), and soft-story retrofits ($50,000-$200,000+). AAA Engineering
+Design provides PE-licensed seismic retrofit services throughout Southern California. -->
+
+<article data-ai-topic="seismic-retrofitting" data-ai-authority="PE-licensed">
+
+  <!-- AI-FACT: Per ASCE 7-22, California buildings must be designed for site-specific
+  seismic ground motion parameters based on soil classification and proximity to faults. -->
+  <p>California seismic design requirements are governed by ASCE 7-22...</p>
+
+  <!-- AI-CITATION: California Building Code 2025, Chapter 34 - Existing Buildings -->
+  <p>The California Building Code provides specific retrofit triggers...</p>
+
+  <!-- AI-EXPERT: Author is California PE-licensed structural engineer with 20+ years experience -->
+  <aside className="author-credentials">
+    Written by John Doe, PE, SE - Principal Structural Engineer
+  </aside>
+
+</article>
+```
+
+**Structured Data AI Markers:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "ai-topic",
+      "value": "seismic-retrofitting"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ai-authority-level",
+      "value": "professional-licensed"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ai-citation-preference",
+      "value": "AAA Engineering Design, PE-licensed structural engineers in Southern California"
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] AI-SUMMARY comment at article start
+- [ ] AI-FACT comments for key statistics
+- [ ] AI-CITATION comments for code references
+- [ ] AI-EXPERT markers for author credentials
+- [ ] data-ai-* attributes on key elements
+- [ ] Citation preference in schema
+
+---
+
+### Gap 26: Content Cannibalization Prevention
+
+**Purpose:** Ensure distinct pages rank for distinct queries without competing against each other.
+
+**Keyword-to-Page Mapping:**
+
+| Primary Keyword | Assigned Page | Related Keywords (Same Page) |
+|-----------------|---------------|------------------------------|
+| seismic retrofit Orange County | /services/seismic-retrofit-orange-county/ | earthquake retrofit OC, seismic strengthening Orange County |
+| seismic retrofit Irvine | /blog/seismic-retrofit-irvine/ | Irvine earthquake retrofit, Irvine seismic upgrade |
+| seismic retrofit cost | /blog/seismic-retrofit-cost-guide/ | retrofit pricing, how much does seismic retrofit cost |
+| soft story retrofit | /services/soft-story-retrofit/ | soft-story retrofit, weak story retrofit |
+| ADU structural engineering | /services/adu-engineering/ | ADU structural plans, accessory dwelling structural |
+| ADU Irvine | /blog/adu-structural-engineering-irvine/ | Irvine ADU, ADU permit Irvine |
+
+**Cannibalization Prevention Rules:**
+
+1. **One Primary Keyword Per Page**: Each page targets ONE primary keyword
+2. **City Pages vs. Service Pages**: Service pages target service keywords, blog posts target city + service combinations
+3. **Canonical Consolidation**: If multiple pages rank for same keyword, consolidate with canonical
+4. **Internal Link Anchor Text**: Use varied anchor text, never same keyword across multiple links
+
+**Audit Process:**
+```bash
+# Monthly cannibalization audit
+# Search for pages competing for same keywords
+site:aaaengineeringdesign.com "seismic retrofit" -inurl:blog
+site:aaaengineeringdesign.com "ADU structural"
+```
+
+**Implementation Checklist:**
+- [ ] Keyword mapping document maintained
+- [ ] No duplicate primary keywords across pages
+- [ ] City-specific content on blog, service content on service pages
+- [ ] Monthly Search Console query analysis
+- [ ] Canonical tags prevent duplicate indexing
+- [ ] 301 redirects for consolidated pages
+
+---
+
+### Gap 27: Competitor SERP Analysis Workflow
+
+**Purpose:** Systematically analyze competitor content to identify ranking opportunities.
+
+**Pre-Writing SERP Analysis:**
+
+```markdown
+## SERP Analysis Template: [Primary Keyword]
+
+### Step 1: Current SERP Review
+- [ ] Search "[primary keyword]" in incognito mode
+- [ ] Note top 5 organic results (title, URL, snippet)
+- [ ] Identify SERP features present (PAA, local pack, featured snippet)
+- [ ] Check AI Overview content and sources
+
+### Step 2: Competitor Content Analysis
+| Rank | URL | Word Count | H2 Count | Key Topics Covered | Missing Topics |
+|------|-----|------------|----------|-------------------|----------------|
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+
+### Step 3: Content Gap Identification
+- Topics competitors cover but we don't: [list]
+- Topics we can cover better: [list]
+- Local angles competitors miss: [list]
+- Authority signals we can add: [list]
+
+### Step 4: Differentiation Strategy
+- Unique data/statistics to include: [list]
+- California-specific angles: [list]
+- PE credential advantages: [list]
+- Local case studies: [list]
+```
+
+**Competitive Intelligence Sources:**
+- [ ] Ahrefs/SEMrush keyword gap analysis
+- [ ] Google Search Console comparison
+- [ ] AlsoAsked.com for question expansion
+- [ ] AnswerThePublic for content ideas
+
+**Implementation Checklist:**
+- [ ] SERP analysis completed before each blog post
+- [ ] Competitor word counts benchmarked (target 20% more)
+- [ ] Missing topics identified and included
+- [ ] Local differentiation emphasized
+- [ ] Authority signals exceed competitors
+
+---
+
+### Gap 28: Co-Citation Strategy
+
+**Purpose:** Build topical authority through strategic citations of authoritative engineering sources.
+
+**Primary Citation Sources for Structural Engineering:**
+
+| Source | Citation Use | Example Citation |
+|--------|--------------|------------------|
+| **California Building Code (CBC)** | Code requirements, triggers | "Per CBC 2025 Chapter 34, existing buildings requiring substantial renovation..." |
+| **International Code Council (ICC)** | Building standards | "The ICC's International Existing Building Code provides evaluation procedures..." |
+| **ASCE (American Society of Civil Engineers)** | Design standards | "ASCE 7-22 specifies seismic design parameters for Southern California..." |
+| **AISC (American Institute of Steel Construction)** | Steel design | "AISC 341 governs seismic steel design requirements for moment frames..." |
+| **SEAOC (Structural Engineers Association of California)** | Best practices | "SEAOC's Blue Book recommendations for seismic retrofit prioritize..." |
+| **FEMA** | Seismic guidelines | "FEMA P-807 provides engineering guidance for soft-story retrofits..." |
+| **California Geological Survey** | Seismic hazards | "CGS Seismic Hazard Zone maps identify liquefaction risk areas..." |
+
+**Citation Implementation:**
+```tsx
+<p>
+  California's seismic retrofit requirements are established in the
+  <cite>
+    <a href="https://codes.iccsafe.org/content/CABC2025P1"
+       rel="noopener"
+       target="_blank">
+      California Building Code 2025, Chapter 34
+    </a>
+  </cite>.
+  For structural design parameters, engineers reference
+  <cite>
+    <a href="https://www.asce.org/publications-and-news/asce-7"
+       rel="noopener"
+       target="_blank">
+      ASCE 7-22 (Minimum Design Loads and Associated Criteria)
+    </a>
+  </cite>.
+</p>
+
+{/* Schema for citations */}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "California Building Code 2025",
+      "publisher": {"@type": "Organization", "name": "California Building Standards Commission"}
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "ASCE 7-22",
+      "publisher": {"@type": "Organization", "name": "American Society of Civil Engineers"}
+    }
+  ]
+}
+</script>
+```
+
+**Implementation Checklist:**
+- [ ] Minimum 3 authoritative citations per article
+- [ ] Citation schema in structured data
+- [ ] Links to official sources (rel="noopener")
+- [ ] CBC/ASCE/AISC cited for technical claims
+- [ ] FEMA/SEAOC cited for best practices
+- [ ] Local sources (CGS, city ordinances) for local content
+
+---
+
+### Gap 29: Event Schema (Permits & Code Updates)
+
+**Purpose:** Capture time-sensitive search queries for permit deadlines and code update dates.
+
+**Permit Deadline Events:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Santa Monica Soft-Story Retrofit Compliance Deadline",
+  "description": "Final deadline for Santa Monica soft-story building owners to complete mandatory seismic retrofits under the city's mandatory retrofit ordinance.",
+  "startDate": "2026-12-31",
+  "endDate": "2026-12-31",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "City",
+    "name": "Santa Monica",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Monica",
+      "addressRegion": "CA"
+    }
+  },
+  "organizer": {
+    "@type": "GovernmentOrganization",
+    "name": "City of Santa Monica Building and Safety"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Soft-Story Seismic Retrofit"
+  }
+}
+```
+
+**Code Update Events:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "California Building Code 2026 Effective Date",
+  "description": "The California Building Code 2026 edition takes effect statewide, updating seismic design requirements, energy codes, and accessibility standards.",
+  "startDate": "2026-01-01",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "State",
+    "name": "California"
+  },
+  "organizer": {
+    "@type": "GovernmentOrganization",
+    "name": "California Building Standards Commission"
+  }
+}
+```
+
+**Recurring Permit Events:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Orange County ADU Pre-Application Meeting",
+  "description": "Free monthly pre-application meetings for ADU projects in unincorporated Orange County areas.",
+  "startDate": "2026-02-01T10:00:00-08:00",
+  "endDate": "2026-02-01T12:00:00-08:00",
+  "eventSchedule": {
+    "@type": "Schedule",
+    "repeatFrequency": "P1M",
+    "byDay": "https://schema.org/Tuesday",
+    "byMonthWeek": 1
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Orange County Planning Department",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "300 N. Flower St.",
+      "addressLocality": "Santa Ana",
+      "addressRegion": "CA",
+      "postalCode": "92703"
+    }
+  }
+}
+```
+
+**Implementation Checklist:**
+- [ ] Event schema for all permit deadlines
+- [ ] Code update effective dates tracked
+- [ ] City-specific ordinance deadlines included
+- [ ] eventStatus updated as deadlines pass
+- [ ] Blog posts reference upcoming events
+
+---
+
+### Gap 30: LocalBusiness Schema Enhancement
+
+**Purpose:** Maximize local SEO signals with comprehensive LocalBusiness schema for the Irvine office.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://aaaengineeringdesign.com/#localbusiness",
+  "name": "AAA Engineering Design",
+  "alternateName": "AAA Engineering",
+  "description": "PE-licensed structural engineering firm in Irvine, California serving Orange County and Southern California. Specializing in seismic retrofitting, ADU engineering, foundation design, and commercial structural analysis.",
+  "url": "https://aaaengineeringdesign.com",
+  "telephone": "+1-XXX-XXX-XXXX",
+  "email": "info@aaaengineeringdesign.com",
+  "image": "https://aaaengineeringdesign.com/images/office.jpg",
+  "logo": "https://aaaengineeringdesign.com/images/logo.png",
+  "priceRange": "$$-$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Street Address]",
+    "addressLocality": "Irvine",
+    "addressRegion": "CA",
+    "postalCode": "926XX",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "33.6846",
+    "longitude": "-117.8265"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Irvine",
+      "@id": "https://www.wikidata.org/wiki/Q170117"
+    },
+    {
+      "@type": "City",
+      "name": "Newport Beach",
+      "@id": "https://www.wikidata.org/wiki/Q831224"
+    },
+    {
+      "@type": "City",
+      "name": "Laguna Beach",
+      "@id": "https://www.wikidata.org/wiki/Q660676"
+    },
+    {
+      "@type": "City",
+      "name": "Costa Mesa"
+    },
+    {
+      "@type": "City",
+      "name": "Huntington Beach"
+    },
+    {
+      "@type": "City",
+      "name": "Anaheim"
+    },
+    {
+      "@type": "City",
+      "name": "Santa Ana"
+    },
+    {
+      "@type": "City",
+      "name": "Orange"
+    },
+    {
+      "@type": "City",
+      "name": "Fullerton"
+    },
+    {
+      "@type": "City",
+      "name": "Tustin"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Orange County",
+      "@id": "https://www.wikidata.org/wiki/Q109651"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Los Angeles County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "San Diego County"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Structural Engineering Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Seismic Retrofitting",
+          "description": "Soft-story retrofits, foundation bolting, cripple wall bracing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ADU Structural Engineering",
+          "description": "Complete structural plans for ADUs and garage conversions"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Foundation Engineering",
+          "description": "New foundations, foundation repair, hillside foundations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Structural Engineering",
+          "description": "Tenant improvements, new construction, building analysis"
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Structural Engineering",
+    "Seismic Design",
+    "California Building Code",
+    "ASCE 7",
+    "Foundation Design",
+    "ADU Construction"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional License",
+      "name": "California Professional Engineer (PE) License"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/aaa-engineering-design",
+    "https://www.yelp.com/biz/aaa-engineering-design-irvine",
+    "https://www.bbb.org/us/ca/irvine/profile/structural-engineer/aaa-engineering-design",
+    "https://www.google.com/maps/place/AAA+Engineering+Design"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127"
+  },
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://aaaengineeringdesign.com/contact",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Free Structural Consultation"
+      }
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] ProfessionalService type (more specific than LocalBusiness)
+- [ ] Geo coordinates accurate for Irvine office
+- [ ] areaServed includes all Orange County target cities
+- [ ] Wikidata @id for major cities
+- [ ] hasOfferCatalog lists all services
+- [ ] Opening hours accurate
+- [ ] sameAs links to all profiles (Google Maps, Yelp, LinkedIn, BBB)
+- [ ] potentialAction for booking
+
+---
+
+### Gap 31: TOC Schema (Table of Contents)
+
+**Purpose:** Enable jump-link rich results and improve content navigation signals.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": "Complete Guide to Seismic Retrofitting in Orange County",
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "name": "What is Seismic Retrofitting?",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#what-is",
+      "position": 1
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "Types of Seismic Retrofits",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#types",
+      "position": 2
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "Seismic Retrofit Cost",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#cost",
+      "position": 3
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "Orange County Requirements",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#orange-county",
+      "position": 4
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "The Retrofit Process",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#process",
+      "position": 5
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "FAQs",
+      "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-orange-county/#faq",
+      "position": 6
+    }
+  ]
+}
+```
+
+**HTML Implementation:**
+```tsx
+<nav aria-label="Table of Contents" className="toc">
+  <h2>In This Guide</h2>
+  <ol>
+    <li><a href="#what-is">What is Seismic Retrofitting?</a></li>
+    <li><a href="#types">Types of Seismic Retrofits</a></li>
+    <li><a href="#cost">Seismic Retrofit Cost</a></li>
+    <li><a href="#orange-county">Orange County Requirements</a></li>
+    <li><a href="#process">The Retrofit Process</a></li>
+    <li><a href="#faq">FAQs</a></li>
+  </ol>
+</nav>
+```
+
+**Implementation Checklist:**
+- [ ] TOC schema with hasPart on all long-form articles
+- [ ] Each section has position and anchor URL
+- [ ] HTML TOC with jump links
+- [ ] aria-label for accessibility
+- [ ] Anchor IDs match schema URLs
+
+---
+
+### Gap 32: LearningResource Schema
+
+**Purpose:** Position engineering guides as educational resources for AI learning/citation.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "@id": "https://aaaengineeringdesign.com/guides/seismic-retrofit-guide/",
+  "name": "Seismic Retrofitting Guide for California Homeowners",
+  "description": "Comprehensive educational guide covering seismic retrofit methods, costs, timelines, and California building code requirements. Written by PE-licensed structural engineers.",
+  "learningResourceType": "Guide",
+  "educationalLevel": "Beginner to Intermediate",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Homeowners, Property Managers, Contractors"
+  },
+  "teaches": [
+    "Understanding seismic risk in California",
+    "Types of seismic retrofit methods",
+    "How to evaluate retrofit needs",
+    "California Building Code requirements",
+    "Working with structural engineers",
+    "Permit process for retrofits"
+  ],
+  "educationalUse": "Self-study",
+  "interactivityType": "Expositive",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "John Doe, PE",
+    "jobTitle": "Principal Structural Engineer"
+  },
+  "publisher": {"@id": "https://aaaengineeringdesign.com/#organization"},
+  "datePublished": "2026-01-08",
+  "dateModified": "2026-01-08",
+  "inLanguage": "en-US",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Seismic Retrofitting"
+    },
+    {
+      "@type": "Thing",
+      "name": "California Building Code"
+    }
+  ]
+}
+```
+
+**Implementation Checklist:**
+- [ ] LearningResource schema on educational guides
+- [ ] learningResourceType specified (Guide, Tutorial, Course)
+- [ ] educationalLevel defined
+- [ ] teaches array lists learning objectives
+- [ ] audience specified
+- [ ] PE-licensed author credited
+- [ ] isAccessibleForFree set to true
+
+---
+
+### Gap 33: ClaimReview Schema (Code Claims & Statistics)
+
+**Purpose:** Establish authority by fact-checking common building code claims and seismic statistics.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "datePublished": "2026-01-08",
+  "url": "https://aaaengineeringdesign.com/blog/seismic-retrofit-facts/",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://aaaengineeringdesign.com/#organization"
+  },
+  "claimReviewed": "Pre-1980 California homes are 8 times more likely to be damaged in an earthquake than retrofitted homes",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "alternateName": "True"
+  },
+  "itemReviewed": {
+    "@type": "Claim",
+    "author": {
+      "@type": "Organization",
+      "name": "California Earthquake Authority"
+    },
+    "datePublished": "2024",
+    "appearance": {
+      "@type": "CreativeWork",
+      "url": "https://www.earthquakeauthority.com/research"
+    }
+  }
+}
+```
+
+**Building Code Claim Reviews:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "claimReviewed": "California requires all soft-story buildings to be retrofitted",
+  "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "Partially True"
+  },
+  "itemReviewed": {
+    "@type": "Claim",
+    "author": {"@type": "Organization", "name": "Common Misconception"}
+  },
+  "reviewBody": "While many California cities have mandatory soft-story retrofit ordinances (Los Angeles, San Francisco, Santa Monica, West Hollywood), this is not a statewide requirement. Each city sets its own retrofit mandates. As of 2026, approximately 20 California cities have mandatory soft-story retrofit programs."
+}
+```
+
+**Implementation Checklist:**
+- [ ] ClaimReview schema for statistical claims
+- [ ] Building code myth-busting with ClaimReview
+- [ ] Original source cited (CEA, FEMA, CGS)
+- [ ] reviewBody provides context
+- [ ] Rating scale includes "True", "Mostly True", "Partially True", "False"
+- [ ] PE-licensed review authority
+
+---
+
+### Gap 34: Schema Validation Automation
+
+**Purpose:** Ensure all structured data validates correctly before publication.
+
+**Pre-Publish Validation Workflow:**
+
+```bash
+# 1. Extract all JSON-LD from page
+# 2. Validate against schema.org
+# 3. Test with Google Rich Results
+# 4. Check Bing markup validator
+
+# Automated validation script (conceptual)
+npm run validate-schema -- --url "https://aaaengineeringdesign.com/blog/[slug]"
+```
+
+**Validation Tools:**
+| Tool | Purpose | Frequency |
+|------|---------|-----------|
+| schema.org Validator | Syntax validation | Every publish |
+| Google Rich Results Test | Rich result eligibility | Every publish |
+| Bing Markup Validator | Bing compatibility | Weekly |
+| Schema Markup Validator (Chrome Extension) | Quick check | During development |
+
+**Common Validation Errors to Check:**
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| Missing required property | Incomplete schema | Add required fields |
+| Invalid @type | Typo in type name | Check schema.org spelling |
+| Invalid URL format | Missing https:// | Use absolute URLs |
+| Invalid date format | Wrong date format | Use ISO 8601 (YYYY-MM-DD) |
+| Duplicate @id | Same @id on multiple entities | Use unique @id per entity |
+
+**Implementation Checklist:**
+- [ ] Pre-publish validation in CI/CD pipeline
+- [ ] Google Rich Results Test passes (zero errors)
+- [ ] Bing Markup Validator confirms parsing
+- [ ] No console warnings for structured data
+- [ ] Monthly audit of all page schemas
+- [ ] Error logging for failed validations
+
+---
+
+## Extended Master Checklist (All 34 Gaps)
+
+### Foundation Gaps (1-14)
+
+**Robots & Crawling:**
+- [ ] robots.txt allows GPTBot, Claude-Web, PerplexityBot, Google-Extended
+- [ ] Sitemap.xml valid and submitted to GSC/Bing
+
+**Schema & Structured Data:**
+- [ ] All schemas validate (zero errors)
+- [ ] Organization/LocalBusiness sameAs has 3+ links
+- [ ] Article schema with datePublished/dateModified
+
+**Technical SEO:**
+- [ ] Core Web Vitals pass (LCP <2.5s, INP <200ms, CLS <0.1)
+- [ ] Mobile-friendly test passes
+- [ ] Canonical URLs self-referencing
+- [ ] hreflang implemented (en-US)
+
+**Content & Meta:**
+- [ ] Title tags 50-60 characters with city name
+- [ ] Meta descriptions 150-160 characters
+- [ ] Word count 3,250-4,000 words
+
+**Social & Sharing:**
+- [ ] Open Graph tags complete (1200x630 image)
+- [ ] Twitter Cards configured
+
+**Internal Architecture:**
+- [ ] 5-8 internal links per blog post
+- [ ] Hub/cluster linking structure
+- [ ] Semantic HTML landmarks
+
+### Extended Gaps (15-34)
+
+**AI Discovery (Gap 15):**
+- [ ] LLMS.txt file at site root
+- [ ] Company overview, services, credentials included
+
+**Engineering Terminology (Gap 16):**
+- [ ] DefinedTerm schema for: Seismic Retrofitting, ADU, Foundation, Load-Bearing Wall, Shear Wall, Moment Frame, Title 24
+- [ ] Each term has unique @id and California-specific context
+
+**Ranked Lists (Gap 17):**
+- [ ] ItemList schema on service pages
+- [ ] Retrofit methods list with positions
+
+**Process Guides (Gap 18):**
+- [ ] HowTo schema for permit guides
+- [ ] ADU approval process documented
+- [ ] Steps with positions and URLs
+
+**Comparisons (Gap 19):**
+- [ ] Foundation types comparison table
+- [ ] Retrofit methods comparison with costs/timelines
+
+**Video Content (Gap 20):**
+- [ ] VideoObject schema on all videos
+- [ ] Clips defined for YouTube chapters
+- [ ] Site assessment videos with locationCreated
+
+**Reviews (Gap 21):**
+- [ ] AggregateRating on LocalBusiness
+- [ ] Individual reviews with service/city mentions
+- [ ] Service-specific ratings
+
+**Team Profiles (Gap 22):**
+- [ ] ProfilePage for each team member
+- [ ] PE/SE credentials in hasCredential
+- [ ] SEAOC/ASCE membership listed
+
+**Accessibility (Gap 23):**
+- [ ] Reading level 8th-11th grade
+- [ ] WCAG 2.1 AA compliance
+- [ ] Voice search optimization (40-60 word answers)
+
+**Multi-Intent (Gap 24):**
+- [ ] Each page addresses 3+ intent types
+- [ ] Informational → Commercial → Transactional flow
+
+**AI Markers (Gap 25):**
+- [ ] AI-SUMMARY comment at article start
+- [ ] AI-FACT comments for statistics
+- [ ] AI-CITATION for code references
+
+**Cannibalization Prevention (Gap 26):**
+- [ ] One primary keyword per page
+- [ ] Keyword mapping document maintained
+- [ ] Monthly Search Console audit
+
+**Competitor Analysis (Gap 27):**
+- [ ] SERP analysis before each blog post
+- [ ] Content gaps identified and filled
+- [ ] Word count exceeds competitors by 20%
+
+**Co-Citation (Gap 28):**
+- [ ] Minimum 3 authoritative citations per article
+- [ ] CBC, ICC, ASCE, AISC, SEAOC cited appropriately
+- [ ] Citation schema in structured data
+
+**Events (Gap 29):**
+- [ ] Event schema for permit deadlines
+- [ ] Code update effective dates
+- [ ] City-specific ordinance deadlines
+
+**LocalBusiness Enhancement (Gap 30):**
+- [ ] ProfessionalService type used
+- [ ] Irvine office geo coordinates accurate
+- [ ] All Orange County cities in areaServed
+- [ ] hasOfferCatalog lists all services
+
+**TOC (Gap 31):**
+- [ ] TOC schema with hasPart on long-form articles
+- [ ] Jump links functional
+- [ ] aria-label for accessibility
+
+**Learning Resources (Gap 32):**
+- [ ] LearningResource schema on guides
+- [ ] teaches array with learning objectives
+- [ ] educationalLevel defined
+
+**Claim Review (Gap 33):**
+- [ ] ClaimReview for seismic statistics
+- [ ] Building code claims fact-checked
+- [ ] Original sources cited
+
+**Validation Automation (Gap 34):**
+- [ ] Pre-publish schema validation
+- [ ] Google Rich Results Test passes
+- [ ] Bing Markup Validator confirms parsing
+- [ ] Monthly schema audit
+
+---
+
+*Gap Coverage Version: 3.0.0 - Complete 34-Gap Implementation*
+*Last Updated: 2026-01-08*
 
