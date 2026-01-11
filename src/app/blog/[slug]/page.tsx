@@ -13,7 +13,7 @@ import { COMPANY_INFO } from '@/lib/constants'
 import { FadeInSection } from '@/components/FadeInSection'
 import { RichBlogContent } from '@/components/RichBlogContent'
 import { getPostById, getRecentPosts, getAllPosts } from '@/lib/blog-data'
-import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-data'
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQPageSchema } from '@/lib/schema-data'
 import { generateSpeakableSchema } from '@/lib/seo'
 import { getAuthorById, getDefaultAuthor, generatePersonSchema } from '@/lib/authors-data'
 import { formatBlogDate } from '@/lib/date-utils'
@@ -47,6 +47,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: `${post.title} | AAA Engineering Design Blog`,
     description: post.excerpt,
     keywords: `${post.category}, structural engineering, ${post.title}`,
+    // Add noindex for posts marked as noIndex to prevent Google from indexing low-value city variants
+    robots: post.noIndex ? { index: false, follow: true } : { index: true, follow: true },
     alternates: {
       canonical: canonicalUrl,
     },
@@ -110,6 +112,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     cssSelectors: ['h1', '.text-lg.text-muted-foreground'] // Targeting title and excerpt
   })
 
+  // FAQ Schema for Rich Results
+  const faqSchema = post.faq ? generateFAQPageSchema(post.faq) : null
+
   return (
     <>
       <script
@@ -130,6 +135,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <div className="min-h-screen bg-background relative">
         <Header />
@@ -159,13 +170,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-2">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4" />
-                    <span>
-                      {formatBlogDate(post.date, {
-                        month: 'long',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </span>
+                    <div className="flex flex-col">
+                      <span>
+                        Published: {formatBlogDate(post.date, {
+                          month: 'long',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </span>
+                      {post.lastUpdated && (
+                        <span className="text-xs text-muted-foreground/80">
+                          Updated: {formatBlogDate(post.lastUpdated, {
+                            month: 'long',
+                            day: 'numeric',
+                            year: 'numeric',
+                          })}
+                        </span>
+                      )}
+                    </div>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4" />
@@ -174,6 +196,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <div className="flex items-center gap-2">
                     <span>By {post.author}</span>
                   </div>
+                  {post.reviewedBy && (
+                    <div className="flex items-center gap-2 bg-green-50/50 px-2 py-1 rounded-full border border-green-100">
+                      <span className="text-green-700 font-medium text-xs">Reviewed by {post.reviewedBy}</span>
+                    </div>
+                  )}
                 </div>
               </FadeInSection>
             </div>

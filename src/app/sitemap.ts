@@ -19,10 +19,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/fire`,
@@ -82,13 +94,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Blog post pages
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.id}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: post.featured ? 0.8 : 0.7,
-  }))
+  // Blog post pages - exclude noIndex posts and apply priority levels
+  const blogPages: MetadataRoute.Sitemap = blogPosts
+    .filter((post) => !post.noIndex) // Exclude noindexed posts from sitemap
+    .map((post) => {
+      // Determine priority based on content type and index priority
+      let priority = 0.6 // default for city variants
+      if (post.contentType === 'hub') {
+        priority = 0.9 // Hub pages get highest priority
+      } else if (post.featured) {
+        priority = 0.8
+      } else if (post.indexPriority === 'high') {
+        priority = 0.8
+      } else if (post.indexPriority === 'medium') {
+        priority = 0.7
+      } else if (post.indexPriority === 'low') {
+        priority = 0.5
+      }
+
+      return {
+        url: `${baseUrl}/blog/${post.id}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'monthly' as const,
+        priority,
+      }
+    })
 
   return [...staticPages, ...projectPages, ...locationPages, ...servicePages, ...blogPages]
 }
