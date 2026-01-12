@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: January 11, 2026
+## Last Updated: January 12, 2026
 
 ---
 
@@ -767,8 +767,21 @@
 | Second Story Addition Structural Engineer Near Me | Santa Ana | ✅ Published | Jan 11, 2026 | Cycle 6 |
 | Basement Conversion Structural Engineer Near Me | Beverly Hills | ✅ Published | Jan 11, 2026 | Cycle 6 |
 | Retaining Wall Structural Engineer Near Me | Malibu | ✅ Published | Jan 11, 2026 | Cycle 6 |
+| Retail Center Structural Engineering | Manhattan Beach | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Office Building Structural Engineering | Woodland Hills | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Commercial Building Seismic Retrofit | Glendale | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Industrial Warehouse Structural Engineering | Pomona | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Hillside Foundation Engineering | Pacific Palisades | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Coastal Bluff Foundation Design | La Jolla | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Deep Foundation Engineering | Calabasas | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Expansive Soil Foundation Solutions | Anaheim Hills | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Residential Structural Engineer Near Me | Newport Beach | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Structural Engineer Near Me | Irvine | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Foundation Engineer Near Me | Pasadena | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| ADU Structural Engineer Near Me | Long Beach | ✅ Published | Jan 12, 2026 | Cycle 6 |
+| Seismic Retrofit Engineer Near Me | Santa Monica | ✅ Published | Jan 12, 2026 | Cycle 6 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts. **Jan 3, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 4, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 5, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 6, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 7, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 4). **Jan 8, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 5). **Jan 11, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Total Cycle 6**: 106 posts.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts. **Jan 3, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 4, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 5, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 6, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 7, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 4). **Jan 8, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 5). **Jan 11, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 12, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Total Cycle 6**: 119 posts.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
