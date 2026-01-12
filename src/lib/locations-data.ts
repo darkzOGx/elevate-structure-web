@@ -1120,6 +1120,343 @@ export const LOCATIONS: Location[] = [
       text: 'We used AAA Engineering Design for our home addition in Lake Forest. They were professional, responsive, and delivered quality structural plans. Both city and HOA approvals went smoothly. We would definitely use them again.',
       project: 'Home Addition - Baker Ranch, Lake Forest'
     }
+  },
+  {
+    id: 'long-beach-structural-engineering',
+    city: 'Long Beach',
+    county: 'Los Angeles County',
+    state: 'California',
+    title: 'Structural Engineering Services in Long Beach, California',
+    metaDescription: 'Licensed structural engineers serving Long Beach, CA. Expert structural design, ADU engineering, seismic retrofitting, historic building engineering. PE-stamped plans. Call (949) 981-4448.',
+    heroTitle: 'Licensed Structural Engineers Serving Long Beach, California',
+    heroDescription: 'AAA Engineering Design provides comprehensive structural engineering services throughout Long Beach. From historic homes in Belmont Shore to modern developments downtown, our licensed Professional Engineers deliver PE-stamped plans that meet Long Beach building standards.',
+    whyChoosePoints: [
+      'Extensive experience with Long Beach Building Department requirements',
+      'Completed 100+ structural engineering projects in Long Beach',
+      'Specialized expertise in historic building structural work',
+      'Expert knowledge of Long Beach seismic and soil conditions',
+      'Soft-story retrofit experience for multi-family buildings',
+      'Fast turnaround times for Long Beach projects'
+    ],
+    localExpertise: {
+      buildingDepartment: 'Strong working relationship with Long Beach Development Services. We understand their plan review process, documentation requirements, and work efficiently with plan reviewers.',
+      projectsCompleted: '100+ projects in Long Beach including historic home renovations, ADUs, soft-story retrofits, commercial buildings, and new residential construction.',
+      soilKnowledge: 'Expert understanding of Long Beach soil conditions including areas with liquefaction potential, high water tables near the coast, and varying soil types across the city.',
+      codeExpertise: 'Comprehensive knowledge of California Building Code as applied in Long Beach, including soft-story retrofit requirements and historic preservation guidelines.'
+    },
+    buildingDepartmentInfo: {
+      address: '411 W. Ocean Blvd, Long Beach, CA 90802',
+      phone: '(562) 570-6651',
+      website: 'https://www.longbeach.gov/lbds/building/',
+      permitTimeline: '4-6 weeks for plan review',
+      onlinePortal: true
+    },
+    neighborhoods: [
+      'Belmont Shore',
+      'Naples',
+      'Belmont Heights',
+      'Downtown Long Beach',
+      'Bixby Knolls',
+      'California Heights',
+      'Los Cerritos',
+      'Alamitos Heights',
+      'Bluff Park',
+      'East Long Beach',
+      'Signal Hill',
+      'Belmont Park'
+    ],
+    soilConditions: 'Long Beach has varied soil conditions requiring careful foundation design. Coastal areas and Signal Hill have unique geological considerations. Areas near the harbor may have high water tables and liquefaction potential. We review geotechnical reports and design appropriate foundation systems for each site, whether conventional spread footings, post-tension slabs, or deep foundations.',
+    commonProjects: [
+      'Historic home structural renovations',
+      'Soft-story apartment building retrofits',
+      'Accessory Dwelling Units (ADUs)',
+      'Single-family home additions and remodels',
+      'Commercial tenant improvements',
+      'Downtown high-rise structural assessments',
+      'Foundation engineering for coastal properties',
+      'Seismic retrofitting for older buildings',
+      'Load-bearing wall removals',
+      'Second-story additions',
+      'Garage conversions to living space',
+      'Multi-family residential engineering'
+    ],
+    faqs: [
+      {
+        question: 'Does Long Beach have a mandatory soft-story retrofit program?',
+        answer: 'Yes, Long Beach has a mandatory soft-story retrofit ordinance for multi-family buildings with weak first stories (typically parking below living space). Property owners must comply within specified deadlines. We specialize in soft-story retrofit design and can assess your building and design cost-effective retrofit solutions that meet city requirements.'
+      },
+      {
+        question: 'Can you work on historic homes in Long Beach?',
+        answer: 'Yes, we have extensive experience with Long Beach historic homes, particularly in areas like Belmont Heights, Bluff Park, and California Heights. We balance preservation requirements with modern safety standards, working within historic building code alternatives while ensuring structural integrity.'
+      },
+      {
+        question: 'How much does structural engineering cost in Long Beach?',
+        answer: 'Long Beach structural engineering typically ranges from $2,500-$5,000 for residential additions, $3,000-$6,000 for ADUs, $5,000-$15,000 for soft-story retrofits, and $6,000-$15,000+ for commercial projects. Historic buildings may cost more due to additional investigation requirements. We provide free consultations and detailed quotes.'
+      },
+      {
+        question: 'How long does Long Beach permit review take?',
+        answer: 'Long Beach Development Services typically reviews structural plans in 4-6 weeks for standard projects. Complex projects or those involving historic properties may take longer. Our familiarity with Long Beach reviewers helps ensure efficient approvals with minimal corrections.'
+      },
+      {
+        question: 'Do you handle ADU projects in Long Beach?',
+        answer: 'Yes, ADUs are one of our specialties. Long Beach has streamlined ADU permitting, and we design detached ADUs, garage conversions, and attached ADUs throughout the city. We understand local requirements and provide permit-ready structural plans.'
+      },
+      {
+        question: 'Can you help with downtown Long Beach commercial projects?',
+        answer: 'Yes, we work on commercial projects throughout Long Beach including downtown high-rises, retail spaces, restaurants, and tenant improvements. We have experience with urban construction requirements and coordinate effectively with all project stakeholders.'
+      },
+      {
+        question: 'What about coastal properties in Long Beach?',
+        answer: 'Coastal properties require special consideration for high water tables, potential liquefaction, and salt-air corrosion. We design appropriate foundation systems and specify corrosion-resistant materials for coastal environments. We have extensive experience with Belmont Shore and Naples properties.'
+      },
+      {
+        question: 'Do older Long Beach homes need seismic retrofitting?',
+        answer: 'Many Long Beach homes built before 1980 benefit from seismic retrofitting including foundation bolting and cripple wall bracing. Historic homes often have unique structural systems requiring specialized retrofit approaches. We assess homes and design appropriate upgrades that enhance safety while respecting historic character.'
+      }
+    ],
+    nearbyAreas: [
+      'Lakewood',
+      'Signal Hill',
+      'Seal Beach',
+      'Los Alamitos',
+      'Cerritos',
+      'Carson',
+      'Huntington Beach',
+      'Bellflower',
+      'Paramount',
+      'Downey'
+    ],
+    testimonial: {
+      name: 'Patricia & Robert M.',
+      text: 'AAA Engineering Design handled our soft-story retrofit for our apartment building in Long Beach. They designed a cost-effective solution that met all city requirements. The permit process went smoothly and construction was straightforward. Highly professional service.',
+      project: 'Soft-Story Retrofit - Belmont Shore, Long Beach'
+    }
+  },
+  {
+    id: 'los-angeles-structural-engineering',
+    city: 'Los Angeles',
+    county: 'Los Angeles County',
+    state: 'California',
+    title: 'Structural Engineering Services in Los Angeles, California',
+    metaDescription: 'Expert structural engineers serving Los Angeles, CA. Residential & commercial structural design, soft-story retrofits, hillside engineering, ADUs. Licensed PE. Call (949) 981-4448.',
+    heroTitle: 'Licensed Structural Engineers Serving Los Angeles, California',
+    heroDescription: 'AAA Engineering Design provides professional structural engineering services throughout Los Angeles. From hillside homes in the Hollywood Hills to commercial buildings downtown, our licensed Professional Engineers deliver comprehensive structural designs meeting LA building standards.',
+    whyChoosePoints: [
+      'Extensive experience with LA Department of Building & Safety (LADBS)',
+      'Completed 200+ structural projects throughout Los Angeles',
+      'Soft-story retrofit expertise for LA mandatory compliance',
+      'Hillside and challenging site engineering specialization',
+      'Expert knowledge of LA seismic requirements',
+      'Multi-family and commercial building experience'
+    ],
+    localExpertise: {
+      buildingDepartment: 'Deep experience with Los Angeles Department of Building & Safety (LADBS). We understand their rigorous plan review process, express plan check procedures, and correction response protocols.',
+      projectsCompleted: '200+ projects in Los Angeles including soft-story retrofits, hillside homes, ADUs, commercial buildings, and residential additions across all LA neighborhoods.',
+      soilKnowledge: 'Expertise in LA\'s diverse geological conditions including hillside stability, liquefaction zones, fault proximity, and varying soil types across the vast city.',
+      codeExpertise: 'Expert knowledge of California Building Code plus LA local amendments including mandatory soft-story ordinance, hillside grading requirements, and enhanced seismic provisions.'
+    },
+    buildingDepartmentInfo: {
+      address: '201 N. Figueroa St, Los Angeles, CA 90012',
+      phone: '(213) 482-6800',
+      website: 'https://www.ladbs.org/',
+      permitTimeline: '4-8 weeks for plan review (Express Plan Check available)',
+      onlinePortal: true
+    },
+    neighborhoods: [
+      'Hollywood',
+      'Hollywood Hills',
+      'Silver Lake',
+      'Los Feliz',
+      'Echo Park',
+      'Downtown LA',
+      'West LA',
+      'Mid-City',
+      'Koreatown',
+      'Highland Park',
+      'Eagle Rock',
+      'Atwater Village',
+      'Venice',
+      'Mar Vista'
+    ],
+    soilConditions: 'Los Angeles has extremely varied soil and geological conditions. Hillside areas require slope stability analysis and specialized foundations. Flatland areas may have liquefaction zones or expansive soils. Proximity to fault lines requires careful seismic design. We work with geotechnical engineers and design appropriate foundation systems for each unique LA site.',
+    commonProjects: [
+      'Soft-story apartment building retrofits (mandatory compliance)',
+      'Hillside home structural engineering',
+      'Accessory Dwelling Units (ADUs)',
+      'Single-family home additions and remodels',
+      'Commercial building structural design',
+      'Multi-family residential buildings',
+      'Tenant improvements and renovations',
+      'Load-bearing wall removals',
+      'Foundation design for challenging sites',
+      'Seismic retrofitting',
+      'Second-story additions',
+      'Garage conversions'
+    ],
+    faqs: [
+      {
+        question: 'What is LA\'s mandatory soft-story retrofit requirement?',
+        answer: 'Los Angeles has a mandatory soft-story retrofit ordinance requiring wood-frame buildings with soft, weak, or open front walls (typically parking or retail below apartments) to be seismically retrofitted. Property owners receive notification letters with compliance deadlines. We specialize in soft-story retrofit design and help property owners comply efficiently and cost-effectively.'
+      },
+      {
+        question: 'How much does structural engineering cost in Los Angeles?',
+        answer: 'Los Angeles structural engineering typically ranges from $3,000-$6,000 for residential additions, $4,000-$8,000 for ADUs, $8,000-$25,000 for soft-story retrofits (depending on building size), and $8,000-$20,000+ for hillside homes. Commercial projects vary widely. We provide free consultations and detailed quotes.'
+      },
+      {
+        question: 'How long does LADBS permit review take?',
+        answer: 'Standard LADBS plan review takes 4-8 weeks. Express Plan Check is available for expedited review (typically 2-3 weeks). Our familiarity with LADBS requirements and reviewers helps minimize corrections and speed approvals. We design to LADBS standards from the start.'
+      },
+      {
+        question: 'Do you specialize in LA hillside homes?',
+        answer: 'Yes, hillside engineering is one of our specialties. LA hillside properties require slope stability analysis, specialized foundations (often caissons or grade beams), extensive retaining walls, and compliance with LA hillside ordinances. We have extensive experience with Hollywood Hills, Silver Lake, and other hillside communities.'
+      },
+      {
+        question: 'Can you help with ADU projects in Los Angeles?',
+        answer: 'Absolutely. LA has embraced ADU development, and we design ADUs throughout the city. We handle standard ADUs, garage conversions, and challenging hillside ADUs. We understand LA ADU requirements and provide permit-ready structural plans that navigate LADBS efficiently.'
+      },
+      {
+        question: 'What about earthquake retrofitting for older LA buildings?',
+        answer: 'Many older LA buildings benefit from seismic retrofitting. Beyond mandatory soft-story compliance, we assess and design retrofits for unreinforced masonry buildings, older wood-frame structures, and buildings with inadequate lateral systems. Retrofitting protects your investment and may reduce earthquake insurance premiums.'
+      },
+      {
+        question: 'Do you work on commercial projects in LA?',
+        answer: 'Yes, we handle commercial structural engineering throughout LA including office buildings, retail spaces, restaurants, mixed-use developments, and tenant improvements. We have experience with all construction types and occupancy classifications, and coordinate effectively with LA\'s commercial permit processes.'
+      },
+      {
+        question: 'Can you work with my architect and contractor in LA?',
+        answer: 'Absolutely. We regularly collaborate with LA architects, contractors, and other design professionals. Good coordination is essential for successful LA projects given the complexity of LADBS requirements. We communicate clearly and attend coordination meetings as needed.'
+      }
+    ],
+    nearbyAreas: [
+      'Glendale',
+      'Burbank',
+      'Pasadena',
+      'Santa Monica',
+      'Culver City',
+      'West Hollywood',
+      'Beverly Hills',
+      'Inglewood',
+      'Torrance',
+      'Long Beach'
+    ],
+    testimonial: {
+      name: 'David & Michelle K.',
+      text: 'AAA Engineering Design handled our soft-story retrofit for our 12-unit apartment building in Koreatown. They designed an efficient retrofit that met LADBS requirements and minimized tenant disruption. The permit process went smoothly thanks to their expertise with LA building codes.',
+      project: 'Soft-Story Retrofit - Koreatown, Los Angeles'
+    }
+  },
+  {
+    id: 'san-diego-structural-engineering',
+    city: 'San Diego',
+    county: 'San Diego County',
+    state: 'California',
+    title: 'Structural Engineering Services in San Diego, California',
+    metaDescription: 'Licensed structural engineers serving San Diego, CA. Expert structural design, ADU engineering, coastal construction, seismic retrofitting. PE-stamped plans. Call (949) 981-4448.',
+    heroTitle: 'Licensed Structural Engineers Serving San Diego, California',
+    heroDescription: 'AAA Engineering Design provides comprehensive structural engineering services throughout San Diego County. From coastal properties in La Jolla to inland developments, our licensed Professional Engineers deliver PE-stamped structural designs meeting San Diego building standards.',
+    whyChoosePoints: [
+      'Extensive experience with San Diego Development Services Department',
+      'Completed 150+ structural projects throughout San Diego County',
+      'Coastal construction and marine environment expertise',
+      'Expert knowledge of San Diego soil and seismic conditions',
+      'ADU and residential addition specialization',
+      'Fast turnaround times for San Diego projects'
+    ],
+    localExpertise: {
+      buildingDepartment: 'Established relationship with San Diego Development Services Department. We understand their plan review process, electronic submittal requirements, and approval procedures.',
+      projectsCompleted: '150+ projects in San Diego including coastal homes, residential additions, ADUs, commercial buildings, and seismic retrofits across all San Diego neighborhoods.',
+      soilKnowledge: 'Expertise in San Diego\'s varied soil conditions including coastal areas, hillside properties, and inland valleys. We design appropriate foundations for each site\'s unique conditions.',
+      codeExpertise: 'Comprehensive knowledge of California Building Code as applied in San Diego, including California Coastal Commission requirements for properties in the coastal zone.'
+    },
+    buildingDepartmentInfo: {
+      address: '1222 First Avenue, San Diego, CA 92101',
+      phone: '(619) 446-5000',
+      website: 'https://www.sandiego.gov/development-services',
+      permitTimeline: '4-6 weeks for plan review',
+      onlinePortal: true
+    },
+    neighborhoods: [
+      'La Jolla',
+      'Pacific Beach',
+      'Mission Beach',
+      'Ocean Beach',
+      'Point Loma',
+      'Downtown San Diego',
+      'Hillcrest',
+      'North Park',
+      'South Park',
+      'Kensington',
+      'Del Mar',
+      'Encinitas',
+      'Carlsbad',
+      'Rancho Santa Fe'
+    ],
+    soilConditions: 'San Diego County has diverse soil conditions. Coastal areas may have sandy soils, high water tables, and marine environment considerations. Hillside areas require slope stability analysis. Inland valleys generally have stable soils but may have expansive clay in some locations. We review geotechnical reports and design appropriate foundation systems.',
+    commonProjects: [
+      'Coastal home structural engineering',
+      'Accessory Dwelling Units (ADUs)',
+      'Single-family home additions and remodels',
+      'Second-story additions',
+      'Commercial tenant improvements',
+      'Seismic retrofitting',
+      'Load-bearing wall removals',
+      'Foundation design for varied soil conditions',
+      'Hillside home engineering',
+      'Deck and outdoor living structures',
+      'Garage conversions',
+      'Multi-family residential buildings'
+    ],
+    faqs: [
+      {
+        question: 'What special requirements apply to San Diego coastal construction?',
+        answer: 'Coastal properties in San Diego may require California Coastal Commission approval in addition to city permits. Structural requirements include corrosion-resistant materials for salt-air environments, consideration for high water tables, and often elevated foundations in flood zones. We specialize in coastal construction requirements.'
+      },
+      {
+        question: 'How much does structural engineering cost in San Diego?',
+        answer: 'San Diego structural engineering typically ranges from $2,500-$5,000 for residential additions, $3,000-$6,000 for ADUs, $5,000-$10,000 for second-story additions, and $5,000-$15,000+ for commercial or coastal projects. Coastal and hillside properties may cost more due to additional requirements. We provide free consultations and detailed quotes.'
+      },
+      {
+        question: 'How long does San Diego permit review take?',
+        answer: 'San Diego Development Services typically reviews structural plans in 4-6 weeks for standard projects. Projects in the coastal zone requiring CCC review add additional time. Our familiarity with San Diego standards helps ensure efficient approvals with minimal corrections.'
+      },
+      {
+        question: 'Can you help with ADU projects in San Diego?',
+        answer: 'Yes, ADUs are one of our specialties in San Diego. The city has streamlined ADU permitting, and we design detached ADUs, garage conversions, and attached ADUs throughout the county. We provide permit-ready structural plans that meet San Diego requirements.'
+      },
+      {
+        question: 'Do you work in North County San Diego?',
+        answer: 'Absolutely. We serve all of San Diego County including Del Mar, Encinitas, Carlsbad, Oceanside, Escondido, Rancho Santa Fe, and all North County communities. Each jurisdiction has slightly different requirements, and we have experience with building departments throughout the county.'
+      },
+      {
+        question: 'What about hillside properties in San Diego?',
+        answer: 'San Diego has many hillside properties requiring specialized engineering including slope stability analysis, deeper foundations, retaining walls, and grading considerations. We have extensive experience with hillside construction in areas like La Jolla, Point Loma, and North County hillside communities.'
+      },
+      {
+        question: 'Do older San Diego homes need seismic retrofitting?',
+        answer: 'Homes built before 1980 may benefit from seismic retrofitting including foundation bolting and cripple wall bracing. San Diego is in seismic zone D, making proper lateral force resistance important. We assess homes and design appropriate retrofits that enhance earthquake safety.'
+      },
+      {
+        question: 'Can you work with my architect and contractor?',
+        answer: 'Yes, we regularly collaborate with San Diego architects and contractors. Good coordination between design team members results in better projects. We communicate clearly with all team members and can attend coordination meetings as needed throughout the project.'
+      }
+    ],
+    nearbyAreas: [
+      'Chula Vista',
+      'National City',
+      'Coronado',
+      'El Cajon',
+      'La Mesa',
+      'Santee',
+      'Poway',
+      'Escondido',
+      'Oceanside',
+      'Temecula'
+    ],
+    testimonial: {
+      name: 'James & Sandra L.',
+      text: 'We hired AAA Engineering Design for our coastal home remodel in La Jolla. They understood all the coastal requirements, designed beautiful structural solutions, and the city and Coastal Commission approvals went smoothly. Exceptional engineering quality.',
+      project: 'Coastal Home Remodel - La Jolla, San Diego'
+    }
   }
 ]
 

@@ -378,7 +378,7 @@ export default function HubPage() {
             <div>
               <h3 className="font-bold text-lg mb-2">How often are guides updated?</h3>
               <p className="text-muted-foreground">
-                Guides are reviewed and updated regularly to reflect current California Building Code requirements, Title 24 updates, and evolving industry best practices. Last major update: November 2025.
+                Guides are reviewed and updated regularly to reflect current California Building Code requirements, Title 24 updates, and evolving industry best practices. Last major update: January 2026.
               </p>
             </div>
           </div>

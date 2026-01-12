@@ -29,12 +29,6 @@ export const metadata: Metadata = {
     telephone: true,
     address: true,
   },
-  other: {
-    'X-Content-Type-Options': 'nosniff',
-    'X-Frame-Options': 'DENY',
-    'X-XSS-Protection': '1; mode=block',
-    'Referrer-Policy': 'strict-origin-when-cross-origin',
-  },
   openGraph: {
     siteName: 'AAA Engineering Design',
     type: 'website',

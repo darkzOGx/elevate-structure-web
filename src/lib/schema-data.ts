@@ -307,6 +307,59 @@ export function generateArticleSchema(config: {
   }
 }
 
+// Person Schema for Aws Salahaldin (Principal Engineer)
+export function generatePersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aws Salahaldin",
+    "jobTitle": "Principal Structural Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": COMPANY_INFO.name,
+      "url": COMPANY_INFO.website
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional Engineer License",
+      "name": "California PE License",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "California Board for Professional Engineers"
+      }
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "American Society of Civil Engineers"
+    },
+    "knowsAbout": [
+      "Structural Engineering",
+      "Seismic Design",
+      "ADU Engineering",
+      "Foundation Design",
+      "Load-Bearing Wall Removal",
+      "Commercial Structural Design",
+      "Residential Structural Engineering"
+    ]
+  }
+}
+
+// Speakable Schema for Voice Search Optimization
+export function generateSpeakableSchema(config: {
+  url: string;
+  cssSelector?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": config.cssSelector || [".hero-description", ".faq-answer", "h1"]
+    },
+    "url": config.url
+  }
+}
+
 // Combined Schema for Homepage
 export const homepageSchema = {
   "@context": "https://schema.org",

@@ -4806,6 +4806,377 @@ npm run validate-schema -- --url "https://aaaengineeringdesign.com/blog/[slug]"
 
 ---
 
+## 🔄 POST-GENERATION: 2025 Blog Refresh Workflow (MANDATORY)
+
+**After completing blog generation, ALWAYS execute this refresh workflow to keep existing 2025 content fresh and SEO-optimized.**
+
+### Purpose
+- Refresh older 2025 blog posts with new FAQ content
+- Update publication dates to signal freshness to search engines
+- Improve topical authority by expanding existing structural engineering content
+
+### Workflow Steps
+
+#### Step 1: Find 2025 Blog Posts
+```bash
+# Find all blog posts created in 2025
+find src/app/blog -name "page.tsx" -newer "2025-01-01" ! -newer "2025-12-31" -type f
+# OR check datePublished in schema for 2025 dates
+grep -r "datePublished.*2025" src/app/blog/*/page.tsx
+```
+
+#### Step 2: Select 10 Random Posts
+```bash
+# Randomly select 10 posts from the 2025 list
+find src/app/blog -name "page.tsx" -type f | shuf -n 10
+```
+
+**Selection Criteria:**
+- Prefer posts older than 60 days since last update
+- Prioritize posts with declining traffic (check GSC data)
+- Avoid posts updated within the last 30 days
+- Balance across market tiers (Platinum, Gold, Growth)
+- Mix different engineering services (ADU, seismic, foundation, etc.)
+
+#### Step 3: Add 3 New FAQs to Each Post
+
+For each of the 10 selected posts:
+
+1. **Read the existing post** and identify the primary keyword and target city
+2. **Fetch fresh PAA questions** using SERP API:
+   ```bash
+   python keyword-intelligence/fetcher.py "[primary-keyword] [city]" --paa-only --save
+   ```
+3. **Select 3 NEW questions** not already in the FAQ section
+4. **Generate answers** following these requirements:
+   - 40-80 words per answer
+   - Include the primary keyword and Southern California city naturally
+   - Reference specific building codes (CBC, local ordinances) when relevant
+   - Add data-speakable attribute for voice search
+   - Use schema.org FAQPage format
+
+**FAQ Addition Template:**
+```tsx
+// Add to existing FAQPage schema
+{
+  "@type": "Question",
+  "name": "[New PAA question about structural engineering in SoCal]",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "[40-80 word answer with primary keyword, city, and engineering specifics]"
+  }
+}
+```
+
+#### Step 4: Update Post Dates to Current Date
+
+For each updated post:
+
+1. **Update dateModified** in Article schema:
+   ```tsx
+   "dateModified": "YYYY-MM-DD" // Use current date
+   ```
+
+2. **Update visible date** in the blog post UI:
+   ```tsx
+   date: "YYYY-MM-DD" // Use current date in blogData
+   ```
+
+3. **Keep datePublished unchanged** (preserve original publication date)
+
+### Refresh Summary Output
+
+After completing the refresh, output a summary:
+
+```
+📅 2025 Blog Refresh Complete - SoCal Engineering
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Posts Refreshed: 10
+New FAQs Added: 30 (3 per post)
+Date Updated To: [Current Date]
+
+Updated Posts:
+1. /blog/[city]-[service-slug] - Added FAQs: [Q1], [Q2], [Q3]
+2. /blog/[city]-[service-slug] - Added FAQs: [Q1], [Q2], [Q3]
+... (continue for all 10)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Automation Option
+
+Add to CI/CD or cron for automatic weekly refresh:
+```bash
+# Weekly refresh script (runs every Monday)
+0 3 * * 1 /path/to/scripts/refresh-2025-blogs.sh
+```
+
+---
+
 *Gap Coverage Version: 3.0.0 - Complete 34-Gap Implementation*
-*Last Updated: 2026-01-08*
+*Last Updated: 2026-01-10*
+
+
+---
+
+# 2026 SEARCH OPTIMIZATION COMPLIANCE
+
+**Added:** January 2026
+**Framework:** Search Optimization 2026: Signals & Criteria
+**Priority:** CRITICAL - Implement for all new content
+
+---
+
+## P0: AGENTIC COMMERCE OPTIMIZATION
+
+### Why This Matters
+In 2026, AI agents autonomously book consultations and request quotes. Engineering firms not optimized for agent discovery lose leads to competitors.
+
+### Action Schema (MANDATORY)
+
+Add to ALL service pages:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AAA Engineering Design - Structural Engineering",
+  "serviceType": "Structural Engineering",
+  "areaServed": ["Orange County", "Los Angeles", "San Diego"],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://aaaengineeringdesign.com/consultation?service={service_type}&city={city}",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform"]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Engineering Consultation"
+      }
+    }
+  ],
+  "priceRange": "$500-$15,000"
+}
+```
+
+### Agent-Ready Information Block
+
+Include in every service page:
+
+```markdown
+### Service Availability (For AI Agents)
+
+| Attribute | Value |
+|-----------|-------|
+| Service Type | Structural Engineering |
+| Availability | Mon-Fri 8AM-6PM PST |
+| Response Time | Same-day consultation available |
+| Quote Turnaround | 48 hours |
+| Service Area | Southern California (150+ cities) |
+| Licensing | California PE Licensed |
+```
+
+### Organization Schema with Agent Statistics
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AAA Engineering Design",
+  "agentInteractionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/ReserveAction",
+    "userInteractionCount": "[consultation bookings]"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "license",
+    "name": "California Professional Engineer (PE)"
+  }
+}
+```
+
+---
+
+## P0: SHARE OF MODEL (SOM) MEASUREMENT
+
+### Weekly LLM Audit Protocol
+
+**Track brand visibility for local engineering queries:**
+
+1. **Define Category Queries** (50-100):
+   - "Best structural engineer in [City]"
+   - "ADU structural engineering Orange County"
+   - "Soft story retrofit engineer Los Angeles"
+   - "Foundation repair engineer near me"
+   - "Who is the best structural engineer in Beverly Hills"
+
+2. **Test Across Platforms:**
+   - ChatGPT, Claude, Perplexity, Gemini, Bing Copilot
+
+3. **Track Metrics:**
+
+| Metric | Target |
+|--------|--------|
+| **SOM %** (Brand mentions / queries) | >20% for service area |
+| **Local Citation Rate** | >40% |
+| **Sentiment** | >90% positive |
+
+### Sentiment Monitoring
+
+- Positive: "experienced", "licensed", "reliable", "responsive", "professional"
+- Negative: "expensive", "slow", "unresponsive"
+
+---
+
+## P0: MULTIMODAL RAG OPTIMIZATION
+
+### Project Photo Schema
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "contentUrl": "https://aaaengineeringdesign.com/projects/[image].jpg",
+  "caption": "Soft story retrofit completed for 1960s apartment building in Santa Monica, featuring steel moment frames and foundation upgrades by AAA Engineering Design PE team",
+  "representativeOfPage": true,
+  "about": {
+    "@type": "Service",
+    "name": "Soft Story Retrofit",
+    "areaServed": "Santa Monica"
+  }
+}
+```
+
+### Video Schema (If Project Videos)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "ADU Structural Engineering Process Explained",
+  "hasPart": [
+    {"@type": "Clip", "name": "Site Assessment", "startOffset": 0, "endOffset": 90},
+    {"@type": "Clip", "name": "Foundation Design", "startOffset": 90, "endOffset": 180},
+    {"@type": "Clip", "name": "Permit Process", "startOffset": 180, "endOffset": 270}
+  ]
+}
+```
+
+---
+
+## P1: ENTITY GRAPH & HEDGE DENSITY
+
+### Co-Occurrence Clusters
+
+```
+PRIMARY: AAA Engineering Design
+
+CLUSTER 1 (Service): 
+AAA Engineering Design + "structural engineer" + "California PE" + "stamped plans"
+
+CLUSTER 2 (Geographic):
+AAA Engineering Design + "Orange County" + "Los Angeles" + "San Diego" + "[City Name]"
+
+CLUSTER 3 (Specialty):
+AAA Engineering Design + "ADU engineering" + "soft story retrofit" + "foundation repair"
+
+CLUSTER 4 (Comparison):
+AAA Engineering Design + "vs" + "[Competitor]" + "residential specialist"
+```
+
+### FORBIDDEN Hedge Words (ENGINEERING-SPECIFIC)
+
+**NEVER use - reduces trust and AI citation:**
+
+| Forbidden | Replace With |
+|-----------|--------------|
+| "might need an engineer" | "you need an engineer" |
+| "could require permits" | "requires permits" |
+| "possibly load-bearing" | "is load-bearing" / "requires assessment" |
+| "some codes require" | "California Building Code requires" |
+| "may take X weeks" | "takes X weeks" |
+
+**Pre-Publish Audit:** Search for: might, could, possibly, perhaps, seems, may, "some say"
+
+### Confident Language for Engineering
+
+❌ WRONG: "This type of wall might be load-bearing and could possibly require engineering analysis."
+
+✅ CORRECT: "This is a load-bearing wall. California Building Code requires PE-stamped plans for modification. AAA Engineering provides analysis within 48 hours."
+
+---
+
+## P1: INFORMATION GAIN REQUIREMENTS
+
+### Unique Value for Engineering Content
+
+Each post MUST include 3+:
+- [ ] Project data: "In our last 50 ADU projects, 78% required..."
+- [ ] Code specifics: "Per CBC Section 1613.1..."
+- [ ] Cost data: "Average cost in [City]: $X,XXX-$X,XXX"
+- [ ] Timeline data: "Typical permit approval: X weeks in [City]"
+- [ ] Local expertise: "The [City] building department requires..."
+
+---
+
+## P2: ENHANCED AEO / VOICE
+
+### Speakable Schema
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".quick-answer", ".service-summary", ".faq-answer", ".cost-range"]
+  }
+}
+```
+
+### Voice Answers (≤29 words)
+
+Example: "A structural engineer in Newport Beach costs five hundred to three thousand dollars for residential assessments. AAA Engineering Design offers same-day consultations with 48-hour quotes."
+
+---
+
+## P2: COMPLETE PE AUTHOR SCHEMA
+
+```json
+{
+  "@type": "Person",
+  "name": "[PE Name]",
+  "jobTitle": "Licensed Professional Engineer",
+  "sameAs": ["https://linkedin.com/in/[profile]"],
+  "knowsAbout": ["Structural Engineering", "Seismic Retrofit", "Foundation Design", "California Building Code"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "license",
+    "name": "California Professional Engineer (PE)",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "California Board for Professional Engineers"
+    }
+  }
+}
+```
+
+---
+
+## 2026 SCHEMA CHECKLIST
+
+| Schema | Required |
+|--------|----------|
+| `Article` | ✅ |
+| `ProfessionalService` | ✅ |
+| `LocalBusiness` | ✅ |
+| `FAQPage` | ✅ |
+| `HowTo` | ✅ |
+| `Speakable` | ✅ |
+| `Person` (PE credentials) | ✅ |
+| `ReserveAction` | ✅ |
+| `ImageObject` (projects) | ✅ |
+| `VideoObject` + `Clip` | If video |
 

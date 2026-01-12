@@ -731,6 +731,326 @@ export const SERVICES_DATA: Service[] = [
       headline: 'Ready to Build Your ADU?',
       description: 'Get a free consultation for your ADU project. Our ADU-specialized structural engineers will help you navigate the process and provide cost-effective structural design for your accessory dwelling unit.'
     }
+  },
+  {
+    id: 'load-bearing-wall-removal',
+    title: 'Load-Bearing Wall Removal Engineering Services',
+    shortTitle: 'Wall Removal Engineering',
+    metaDescription: 'Professional load-bearing wall removal engineering throughout California. Licensed PE-stamped plans, beam sizing, structural calculations. Open floor plan experts. Call (949) 981-4448.',
+    heroTitle: 'Load-Bearing Wall Removal Engineering',
+    heroDescription: 'Transform your space with professional load-bearing wall removal engineering. Our licensed structural engineers design safe, code-compliant solutions that create the open floor plans you want while maintaining structural integrity.',
+    icon: '🧱',
+    overview: 'Load-bearing wall removal is one of the most popular home improvement projects, creating open floor plans that modernize living spaces. However, load-bearing walls support the weight of your home - floors, roofs, and walls above. Removing them without proper engineering can cause serious structural damage or collapse. Our licensed Professional Engineers analyze your home\'s structure, design appropriate support systems (typically beams and posts), and provide PE-stamped plans required for building permits.',
+    keyBenefits: [
+      'Licensed PE-stamped plans accepted by all California jurisdictions',
+      'Proper beam and post sizing for safe load transfer',
+      'Cost-effective solutions - avoid over-engineering',
+      'Fast turnaround (typically 1-2 weeks)',
+      'Experience with all California building codes',
+      'Hidden beam options for clean aesthetics',
+      'Construction support and contractor coordination'
+    ],
+    whatWeProvide: [
+      {
+        title: 'Structural Assessment',
+        description: 'Thorough evaluation of your home\'s structural system to determine if a wall is load-bearing and identify all loads that need to be supported.'
+      },
+      {
+        title: 'Beam Design & Sizing',
+        description: 'Engineering design of the beam system to replace the removed wall, including material selection (steel, LVL, glulam) and proper sizing for all loads.'
+      },
+      {
+        title: 'Post & Foundation Design',
+        description: 'Design of support posts and any required foundation improvements to safely transfer loads to the ground.'
+      },
+      {
+        title: 'PE-Stamped Construction Plans',
+        description: 'Complete structural drawings showing the removal, new beam, posts, connections, and all details required for permit approval and construction.'
+      },
+      {
+        title: 'Structural Calculations',
+        description: 'Engineering calculations documenting load analysis, beam design, post design, and connection design for building department review.'
+      },
+      {
+        title: 'Construction Support',
+        description: 'Availability during construction for shoring guidance, inspection support, and any questions that arise during the wall removal process.'
+      }
+    ],
+    processSteps: [
+      {
+        step: 1,
+        title: 'Initial Assessment',
+        description: 'Review your project goals, examine existing conditions, and determine if the wall is load-bearing. Provide preliminary guidance on feasibility and approach.'
+      },
+      {
+        step: 2,
+        title: 'Site Visit & Measurement',
+        description: 'Visit your home to measure the wall, examine attic/crawl space to trace load paths, and gather information needed for structural analysis.'
+      },
+      {
+        step: 3,
+        title: 'Structural Analysis',
+        description: 'Calculate all loads supported by the wall including roof, ceiling, floor, and any walls above. Determine total load the new beam must carry.'
+      },
+      {
+        step: 4,
+        title: 'Beam Design',
+        description: 'Design the replacement beam system selecting appropriate materials and sizing for your specific loads and span requirements.'
+      },
+      {
+        step: 5,
+        title: 'Drawing Production',
+        description: 'Create detailed construction drawings showing removal procedure, new beam installation, post locations, connections, and specifications.'
+      },
+      {
+        step: 6,
+        title: 'Plan Review & Stamping',
+        description: 'Quality control review of all work, preparation of calculations, and PE stamping of plans for permit submittal.'
+      },
+      {
+        step: 7,
+        title: 'Permit Support',
+        description: 'Respond to building department plan check corrections and provide any additional documentation needed for approval.'
+      },
+      {
+        step: 8,
+        title: 'Construction Support',
+        description: 'Available during construction for shoring guidance, questions, and inspection coordination to ensure successful installation.'
+      }
+    ],
+    commonApplications: [
+      'Kitchen/dining room wall removal for open concept',
+      'Kitchen/living room wall removal',
+      'Creating great rooms from multiple smaller rooms',
+      'Opening up between family room and kitchen',
+      'Removing walls between bedrooms',
+      'Commercial space reconfiguration',
+      'Retail and office open floor plans',
+      'Removing partial walls and bulkheads',
+      'Creating wider doorway openings',
+      'Pass-through window openings',
+      'Island bar openings in walls',
+      'Converting closed kitchens to open kitchens'
+    ],
+    costRange: {
+      description: 'Load-bearing wall removal engineering costs depend on the complexity of your home\'s structure and the wall to be removed.',
+      typical: '$1,500 - $4,000 for typical single-wall residential projects',
+      factors: [
+        'Wall length and loads supported',
+        'Number of stories above the wall',
+        'Existing foundation conditions',
+        'Number of posts required',
+        'Steel vs. wood beam design',
+        'Hidden beam requirements',
+        'Complexity of load path',
+        'Need for foundation modifications',
+        'Multiple walls being removed',
+        'Site visit requirements'
+      ]
+    },
+    timeline: {
+      design: '1-2 weeks for typical projects',
+      permitting: '2-4 weeks depending on jurisdiction',
+      total: '3-6 weeks from start to permit'
+    },
+    faqs: [
+      {
+        question: 'How do I know if a wall is load-bearing?',
+        answer: 'Load-bearing walls typically run perpendicular to floor/ceiling joists, are located near the center of the house, or support walls above. However, this isn\'t always obvious without professional evaluation. Exterior walls are almost always load-bearing. Interior walls may or may not be load-bearing depending on the home\'s structural design. Our engineers can definitively determine if your wall is load-bearing.'
+      },
+      {
+        question: 'Do I need a permit to remove a load-bearing wall?',
+        answer: 'Yes, load-bearing wall removal always requires a building permit in California. The building department requires PE-stamped structural plans showing the wall removal and replacement beam system. Removing a load-bearing wall without a permit is dangerous and can cause serious structural problems. It also creates issues when selling your home.'
+      },
+      {
+        question: 'How much does load-bearing wall removal cost?',
+        answer: 'Structural engineering for wall removal typically costs $1,500-$4,000 depending on complexity. Construction costs are separate and typically range from $3,000-$15,000+ depending on wall length, beam material, number of posts, and finish work required. Longer spans and multiple story homes cost more. We provide accurate engineering quotes after reviewing your project.'
+      },
+      {
+        question: 'Can any wall be removed?',
+        answer: 'Most load-bearing walls can be removed with proper engineering, but some situations are more complex. Very long spans may require multiple beams or very large beams. Walls supporting multiple floors cost more to address. Some walls have plumbing, electrical, or HVAC that must be rerouted. We assess feasibility and provide honest guidance on your specific situation.'
+      },
+      {
+        question: 'What type of beam will I need?',
+        answer: 'Beam type depends on span, loads, and aesthetics. Common options include steel beams (strongest for long spans, can be hidden), LVL/Laminated Veneer Lumber (good for moderate spans, wood appearance), Glulam beams (attractive exposed wood option), and built-up dimensional lumber (for shorter spans). We recommend the most appropriate and cost-effective option for your project.'
+      },
+      {
+        question: 'Can the beam be hidden in the ceiling?',
+        answer: 'Yes, in most cases we can design a "flush beam" that fits within the ceiling framing depth, creating a smooth ceiling with no visible beam. This requires careful design to fit within the available space while providing adequate strength. Steel beams work well for hidden applications due to their compact size. Flush beams may cost more due to the engineering complexity.'
+      },
+      {
+        question: 'What happens during construction?',
+        answer: 'The contractor first installs temporary shoring (support posts) to carry the load while the wall is removed. Then the wall is removed, the new beam and posts are installed, and connections are made. Finally, the temporary shoring is removed. Proper shoring is critical - we provide shoring requirements in our plans and can advise during construction.'
+      },
+      {
+        question: 'Do I need a structural engineer or can my contractor handle this?',
+        answer: 'California requires a licensed Professional Engineer (PE) or Architect to design load-bearing wall removal projects. Contractors cannot legally design structural modifications. PE-stamped plans are required for building permits. Using a structural engineer also protects you by ensuring proper design and provides documentation for future home sales.'
+      }
+    ],
+    cta: {
+      headline: 'Ready to Open Up Your Space?',
+      description: 'Contact us for a free consultation about your load-bearing wall removal project. We\'ll assess your situation, explain the process, and provide a clear quote for professional structural engineering.'
+    }
+  },
+  {
+    id: 'foundation-engineering',
+    title: 'Foundation Engineering & Design Services',
+    shortTitle: 'Foundation Engineering',
+    metaDescription: 'Expert foundation engineering throughout California. Foundation design, repair, inspection, underpinning, and settlement solutions. Licensed PE. Call (949) 981-4448.',
+    heroTitle: 'Foundation Engineering & Design Services',
+    heroDescription: 'Professional foundation engineering for new construction, repairs, and assessments. Our licensed structural engineers design safe, cost-effective foundation systems tailored to your site conditions and building requirements.',
+    icon: '🏠',
+    overview: 'Foundation engineering is critical to building safety - the foundation transfers all building loads to the ground and must be properly designed for site-specific soil conditions, seismic forces, and building loads. We provide foundation design for new construction, assessment and repair design for existing foundations, and specialized solutions for challenging sites. Our engineers work with geotechnical reports to design foundations that perform properly throughout the building\'s life.',
+    keyBenefits: [
+      'Foundation designs optimized for site soil conditions',
+      'Cost-effective solutions - proper design saves construction costs',
+      'New construction and repair/retrofit expertise',
+      'Experience with challenging sites (hillsides, poor soils)',
+      'PE-stamped plans for permit approval',
+      'Coordination with geotechnical engineers',
+      'Construction support for proper implementation'
+    ],
+    whatWeProvide: [
+      {
+        title: 'New Foundation Design',
+        description: 'Complete foundation engineering for new construction including design based on geotechnical recommendations, building loads, and code requirements.'
+      },
+      {
+        title: 'Foundation Assessment',
+        description: 'Evaluation of existing foundations to identify problems, determine causes, and recommend appropriate repair or strengthening approaches.'
+      },
+      {
+        title: 'Repair & Retrofit Design',
+        description: 'Engineering design for foundation repairs including underpinning, crack repair, settlement correction, and seismic upgrades.'
+      },
+      {
+        title: 'Foundation Type Selection',
+        description: 'Analysis and recommendation of appropriate foundation type (spread footings, continuous footings, post-tension slab, pier/grade beam, etc.) for your site.'
+      },
+      {
+        title: 'PE-Stamped Plans',
+        description: 'Detailed foundation plans showing all dimensions, reinforcement, specifications, and construction requirements for permit and construction.'
+      },
+      {
+        title: 'Construction Support',
+        description: 'Pre-pour inspection, contractor coordination, and support during foundation construction to ensure proper implementation.'
+      }
+    ],
+    processSteps: [
+      {
+        step: 1,
+        title: 'Initial Consultation',
+        description: 'Discuss project requirements, review site information, and determine if a geotechnical investigation is needed (or review existing report).'
+      },
+      {
+        step: 2,
+        title: 'Site Assessment',
+        description: 'For existing foundations: inspect current conditions, document problems, and assess causes. For new construction: review geotechnical data and site constraints.'
+      },
+      {
+        step: 3,
+        title: 'Geotechnical Coordination',
+        description: 'Review geotechnical report recommendations for bearing capacity, lateral resistance, expansive soils, liquefaction, and other site-specific concerns.'
+      },
+      {
+        step: 4,
+        title: 'Foundation Design',
+        description: 'Engineering design of foundation system including sizing, reinforcement, and all details per code requirements and geotechnical recommendations.'
+      },
+      {
+        step: 5,
+        title: 'Drawing Production',
+        description: 'Create detailed foundation plans showing all elements needed for permit approval and construction.'
+      },
+      {
+        step: 6,
+        title: 'PE Stamping & Delivery',
+        description: 'Quality review, preparation of calculations, PE stamping, and delivery of permit-ready documents.'
+      },
+      {
+        step: 7,
+        title: 'Permit Support',
+        description: 'Response to building department plan check corrections and coordination for approval.'
+      },
+      {
+        step: 8,
+        title: 'Construction Phase',
+        description: 'Pre-pour inspection of reinforcement placement, contractor questions, and construction support as needed.'
+      }
+    ],
+    commonApplications: [
+      'New home foundation design',
+      'ADU and addition foundations',
+      'Foundation repair and underpinning',
+      'Settlement correction',
+      'Foundation crack assessment',
+      'Hillside foundation design',
+      'Expansive soil foundations',
+      'Post-tension slab design',
+      'Pier and grade beam systems',
+      'Seismic foundation upgrades',
+      'Commercial building foundations',
+      'Retaining wall foundations'
+    ],
+    costRange: {
+      description: 'Foundation engineering costs vary based on project type, complexity, and site conditions.',
+      typical: '$2,500 - $8,000 for residential; $5,000 - $25,000+ for commercial or complex sites',
+      factors: [
+        'Project type (new construction vs. repair)',
+        'Building size and loads',
+        'Soil conditions and complexity',
+        'Foundation type required',
+        'Hillside vs. flatland site',
+        'Geotechnical report requirements',
+        'Number of stories',
+        'Need for specialized systems',
+        'Permit jurisdiction requirements',
+        'Construction phase services'
+      ]
+    },
+    timeline: {
+      design: '2-3 weeks for typical residential; 4-8 weeks for complex projects',
+      permitting: '2-6 weeks depending on jurisdiction',
+      total: '4-14 weeks from start to permit'
+    },
+    faqs: [
+      {
+        question: 'Do I need a geotechnical report for foundation design?',
+        answer: 'Most jurisdictions require geotechnical reports for new construction, and they\'re essential for proper foundation design. The geotechnical report provides soil bearing capacity, recommendations for foundation type, and identifies issues like expansive soils, liquefaction potential, or high water table. We can recommend geotechnical engineers if you need one.'
+      },
+      {
+        question: 'What causes foundation problems?',
+        answer: 'Common causes include: expansive soils that swell and shrink with moisture changes, poor drainage allowing water to undermine foundations, inadequate original design, soil settlement or consolidation, root intrusion from trees, and earthquake damage. Proper identification of the cause is essential for effective repair design.'
+      },
+      {
+        question: 'How much does foundation engineering cost?',
+        answer: 'Foundation engineering for new residential construction typically costs $2,500-$6,000. Foundation assessment and repair design ranges from $2,000-$8,000 depending on complexity. Hillside foundations or challenging sites may cost $5,000-$15,000+. Commercial projects vary widely based on size and complexity. We provide detailed quotes after understanding your project.'
+      },
+      {
+        question: 'What are the signs of foundation problems?',
+        answer: 'Warning signs include: cracks in walls, floors, or exterior; doors and windows that stick or don\'t close properly; uneven or sloping floors; gaps between walls and ceiling/floor; cracks in the foundation itself; and separation of exterior brick or siding. If you notice these signs, a foundation assessment is recommended.'
+      },
+      {
+        question: 'What foundation types do you design?',
+        answer: 'We design all foundation types including: spread footings (most common residential), continuous footings, post-tension slabs (for expansive soils), conventional reinforced slabs, pier and grade beam systems (for hillsides or poor soils), drilled shaft/caisson foundations (for deep bearing), and mat foundations (for heavy loads or poor soils).'
+      },
+      {
+        question: 'Can a damaged foundation be repaired?',
+        answer: 'Yes, most foundation problems can be repaired. Common repair methods include: underpinning with piers to stabilize settling foundations, carbon fiber reinforcement for cracked walls, epoxy injection for crack repair, and excavation with waterproofing for water intrusion. The appropriate repair depends on the problem and cause.'
+      },
+      {
+        question: 'How long does foundation work take?',
+        answer: 'Engineering design takes 2-3 weeks for typical projects. Construction time varies: new residential foundations typically take 1-2 weeks to form and pour, while foundation repair projects range from a few days to several weeks depending on complexity. Post-tension slabs require additional curing time before stressing.'
+      },
+      {
+        question: 'Do you provide construction inspection?',
+        answer: 'Yes, we offer pre-pour inspection of foundation reinforcement to verify proper installation before concrete is placed. This is especially important for complex foundations or critical projects. We can also provide periodic inspection during foundation repair work. These services can be included in scope or added as needed.'
+      }
+    ],
+    cta: {
+      headline: 'Need Foundation Engineering Services?',
+      description: 'Contact us for a consultation about your foundation project - whether new construction, assessment, or repair. Our licensed structural engineers will evaluate your situation and provide expert guidance and design services.'
+    }
   }
 ]
 

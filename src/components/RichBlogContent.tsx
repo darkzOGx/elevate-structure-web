@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { CheckCircle2, AlertCircle, Lightbulb, TrendingUp } from 'lucide-react'
+import { TimelineVisual } from '@/components/masterpiece/TimelineVisual'
 
 interface RichBlogContentProps {
   content: string
@@ -17,11 +18,21 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
     const sections = content.split('\n\n')
 
     return sections.map((section, index) => {
+      // MASTERPIECE COMPONENT INJECTION
+      if (section.trim() === '{{TimelineVisual}}') {
+        return (
+          <div key={index} className="my-12">
+            <TimelineVisual />
+          </div>
+        )
+      }
+
       // Main headings (##)
       if (section.startsWith('## ')) {
         const title = section.replace('## ', '').trim()
+        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
         return (
-          <div key={index} className="my-12 first:mt-0">
+          <div key={index} className="my-12 first:mt-0" id={slug}>
             <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary/10 via-primary/5 to-transparent p-8 mb-6 border-l-4 border-primary">
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
               <h2 className="text-3xl font-bold text-foreground relative z-10">
@@ -50,10 +61,11 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
         if (section.includes('\n-')) {
           const lines = section.split('\n')
           const heading = lines[0].replace('### ', '').trim()
+          const slug = heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')
           const items = lines.slice(1).filter(line => line.trim().startsWith('-'))
 
           return (
-            <div key={index} className="my-8">
+            <div key={index} className="my-8" id={slug}>
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-1 w-12 bg-gradient-to-r from-primary to-primary/50 rounded-full" />
                 <h3 className="text-2xl font-semibold text-foreground">
@@ -81,8 +93,9 @@ export function RichBlogContent({ content }: RichBlogContentProps) {
 
         // Just a heading without bullet points
         const title = section.replace('### ', '').trim()
+        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
         return (
-          <div key={index} className="my-8">
+          <div key={index} className="my-8" id={slug}>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-1 w-12 bg-gradient-to-r from-primary to-primary/50 rounded-full" />
               <h3 className="text-2xl font-semibold text-foreground">
