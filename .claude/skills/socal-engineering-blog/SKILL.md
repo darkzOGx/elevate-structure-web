@@ -5180,3 +5180,68 @@ Example: "A structural engineer in Newport Beach costs five hundred to three tho
 | `ImageObject` (projects) | ✅ |
 | `VideoObject` + `Clip` | If video |
 
+---
+
+## 🚀 POST-GENERATION: GIT COMMIT & DEPLOY (MANDATORY)
+
+**After completing blog generation, ALWAYS execute this git workflow to deploy changes to production.**
+
+### Workflow Steps
+
+#### Step 1: Stage All New/Modified Blog Files
+```bash
+git add src/app/blog/
+git add public/images/blog/
+```
+
+#### Step 2: Create Descriptive Commit
+```bash
+git commit -m "blog: Add [blog-title] - [primary-keyword]
+
+- New blog post: [slug]
+- Target keyword: [primary-keyword]
+- Target location: [SoCal city]
+- Schema: Article + FAQPage + LocalBusiness + [other schemas]
+
+🤖 Generated with Claude Code blog-generator skill"
+```
+
+#### Step 3: Push to Production
+```bash
+git push origin main
+```
+
+### Commit Message Format
+
+Use this format for all blog commits:
+```
+blog: Add [short-title] - [keyword]
+
+- New blog post: [full-slug]
+- Target keyword: [primary-keyword]
+- Target location: [city]
+- [Additional details]
+
+🤖 Generated with Claude Code blog-generator skill
+```
+
+### Multiple Posts Commit
+When generating multiple posts in a single session:
+```bash
+git add src/app/blog/
+git commit -m "blog: Add [N] new posts - [topic-summary]
+
+Posts added:
+- [slug-1]: [keyword-1] ([city-1])
+- [slug-2]: [keyword-2] ([city-2])
+- [slug-N]: [keyword-N] ([city-N])
+
+🤖 Generated with Claude Code blog-generator skill"
+git push origin main
+```
+
+### ⚠️ IMPORTANT
+- **ALWAYS** commit and push after generating blog posts
+- **NEVER** leave uncommitted blog files in the working directory
+- If build fails after push, fix errors and push again immediately
+
