@@ -4,6 +4,18 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
+# Block non-content resources from indexing
+Disallow: /feed.xml
+Disallow: /favicon.ico
+Disallow: /*.ico$
+Disallow: /*.xml$
+
+# Allow sitemap.xml specifically
+Allow: /sitemap.xml
+
+# Block legacy duplicate-city URL patterns (city-city format)
+Disallow: /blog/*-*-*-*-*-*-*-*
+
 # Host
 Host: https://aaaengineeringdesign.com
 
