@@ -50,6 +50,12 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Search page doesn't exist - redirect to blog
+      {
+        source: '/search',
+        destination: '/blog',
+        permanent: true,
+      },
       // Trailing slash redirects (ensure no trailing slashes)
       // Static pages
       {
@@ -1059,6 +1065,11 @@ const nextConfig: NextConfig = {
       {
         source: '/blog/commercial-structural-engineer-near-me-in-rancho-mirage-rancho-mirage',
         destination: '/blog/commercial-structural-engineer-near-me-in-rancho-mirage',
+        permanent: true,
+      },
+      {
+        source: '/blog/restaurant-building-structural-engineering-in-wildomar-wildomar',
+        destination: '/blog/restaurant-building-structural-engineering-in-wildomar',
         permanent: true,
       },
       {
