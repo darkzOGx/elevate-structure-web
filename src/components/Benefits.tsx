@@ -174,17 +174,16 @@ export function Benefits() {
         </div>
 
         {/* Credentials Section */}
-        <div className="grid gap-8 md:grid-cols-2 items-center mb-16">
-          <div className="space-y-6 text-center md:text-left">
-            <h3 className="text-2xl font-bold">
-              Licensed & Certified Professionals
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              All our engineers are licensed Professional Engineers (PE) in California
-              with extensive experience in structural and civil engineering. We maintain
-              current licenses, continuing education, and professional certifications
-              to ensure we meet all industry standards.
-            </p>
+        <div className="grid gap-8 md:grid-cols-2 items-start mb-16">
+          <div className="space-y-6 text-center md:text-left h-full flex flex-col justify-between">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold">
+                Licensed & Certified Professionals
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our California-licensed Professional Engineers bring extensive structural and civil engineering experience, maintaining current certifications and continuing education to meet all industry standards.
+              </p>
+            </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -205,15 +204,15 @@ export function Benefits() {
             </div>
           </div>
 
-          <div className="space-y-6 text-center md:text-left">
-            <h3 className="text-2xl font-bold">
-              Our Commitment to Excellence
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              We stand behind every project with our comprehensive satisfaction guarantee.
-              If you&apos;re not completely satisfied with our work, we&apos;ll make it right
-              or provide a full refund. Your success is our success.
-            </p>
+          <div className="space-y-6 text-center md:text-left h-full flex flex-col justify-between">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold">
+                Our Commitment to Excellence
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We stand behind every project with a comprehensive satisfaction guarantee—if you're not completely satisfied, we'll make it right or provide a full refund.
+              </p>
+            </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -236,25 +235,49 @@ export function Benefits() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center space-y-6">
-          <div className="space-y-2">
-            <h3 className="text-2xl font-bold">
-              Experience the {COMPANY_INFO.name} Difference
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Join hundreds of satisfied clients who have trusted us with their
-              engineering design needs. Get started with a free consultation today.
-            </p>
+        <div className="relative rounded-3xl overflow-hidden bg-slate-900 shadow-2xl mt-16 max-w-5xl mx-auto">
+          {/* Background Effects */}
+          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+          <div className="absolute -top-32 -right-32 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+          
+          <div className="relative z-10 p-12 text-center space-y-8">
+            <div className="space-y-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Experience the {COMPANY_INFO.name} Difference
+              </h3>
+              <p className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                Join hundreds of satisfied clients who have trusted us with their
+                engineering design needs. Get started with a free consultation today.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button 
+                size="lg" 
+                onClick={scrollToContact} 
+                className="h-14 px-8 text-base bg-white text-slate-900 hover:bg-slate-100 rounded-full shadow-lg shadow-white/10 hover:shadow-white/20 transition-all duration-300 font-bold"
+              >
+                Get Your Free Audit
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-400 pt-4 border-t border-white/10">
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                Free consultation
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                No obligation
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                24-hour response guarantee
+              </span>
+            </div>
           </div>
-
-          <Button size="lg" onClick={scrollToContact} className="px-8">
-            Get Free Consultation Today
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-
-          <p className="text-sm text-muted-foreground">
-            Free consultation • No obligation • 24-hour response guarantee
-          </p>
         </div>
       </div>
     </section>

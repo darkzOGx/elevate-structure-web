@@ -1,0 +1,204 @@
+{
+  "site": "aaaengineeringdesign.com",
+  "niche": "structural-engineering",
+  "last_updated": "2025-01-01",
+  "topics": [
+    {
+      "topic": "residential-structural-engineering",
+      "enabled": true,
+      "priority": "high",
+      "description": "Residential structural engineering services",
+      "keywords": [
+        "residential structural engineer",
+        "home structural engineer",
+        "ADU structural engineering",
+        "home addition structural plans",
+        "residential foundation design",
+        "load bearing wall removal engineer",
+        "second story addition engineer",
+        "structural engineer for remodel"
+      ]
+    },
+    {
+      "topic": "commercial-structural-engineering",
+      "enabled": true,
+      "priority": "high",
+      "description": "Commercial building structural engineering",
+      "keywords": [
+        "commercial structural engineer",
+        "tenant improvement engineer",
+        "office building structural design",
+        "retail building engineer",
+        "warehouse structural engineering",
+        "commercial foundation design",
+        "tilt-up construction engineer"
+      ]
+    },
+    {
+      "topic": "seismic-engineering",
+      "enabled": true,
+      "priority": "high",
+      "description": "Seismic retrofit and earthquake engineering",
+      "keywords": [
+        "seismic retrofit engineer",
+        "soft story retrofit",
+        "earthquake retrofitting",
+        "seismic upgrade california",
+        "unreinforced masonry retrofit",
+        "foundation bolting",
+        "cripple wall bracing"
+      ]
+    },
+    {
+      "topic": "foundation-engineering",
+      "enabled": true,
+      "priority": "high",
+      "description": "Foundation design and repair engineering",
+      "keywords": [
+        "foundation engineer",
+        "foundation repair engineer",
+        "foundation design california",
+        "deep foundation design",
+        "expansive soil foundation",
+        "hillside foundation engineer",
+        "underpinning engineer"
+      ]
+    },
+    {
+      "topic": "mep-engineering",
+      "enabled": true,
+      "priority": "medium",
+      "description": "Mechanical, Electrical, Plumbing engineering",
+      "keywords": [
+        "MEP engineer",
+        "mechanical engineer residential",
+        "electrical engineer for remodel",
+        "plumbing engineer california",
+        "HVAC design engineer",
+        "Title 24 compliance engineer"
+      ]
+    },
+    {
+      "topic": "civil-engineering",
+      "enabled": true,
+      "priority": "medium",
+      "description": "Civil site engineering services",
+      "keywords": [
+        "civil engineer california",
+        "site civil engineering",
+        "grading plan engineer",
+        "drainage design engineer",
+        "retaining wall engineer",
+        "erosion control engineer"
+      ]
+    },
+    {
+      "topic": "permit-compliance",
+      "enabled": true,
+      "priority": "high",
+      "description": "Building permits and code compliance",
+      "keywords": [
+        "engineer for building permit",
+        "unpermitted work engineer",
+        "red tag removal engineer",
+        "as-built drawings engineer",
+        "permit violation engineer",
+        "building code compliance engineer"
+      ]
+    },
+    {
+      "topic": "coastal-engineering",
+      "enabled": true,
+      "priority": "medium",
+      "description": "Coastal and waterfront engineering",
+      "keywords": [
+        "coastal engineering california",
+        "oceanfront structural engineer",
+        "coastal bluff stabilization",
+        "beach property engineer",
+        "flood zone engineer",
+        "coastal commission engineer"
+      ]
+    },
+    {
+      "topic": "hillside-engineering",
+      "enabled": true,
+      "priority": "medium",
+      "description": "Hillside and slope construction",
+      "keywords": [
+        "hillside structural engineer",
+        "slope stability engineer",
+        "hillside foundation design",
+        "canyon property engineer",
+        "retaining wall hillside",
+        "cantilevered foundation"
+      ]
+    },
+    {
+      "topic": "emergency-engineering",
+      "enabled": true,
+      "priority": "high",
+      "description": "Emergency structural assessments",
+      "keywords": [
+        "emergency structural engineer",
+        "fire damage structural assessment",
+        "earthquake damage inspection",
+        "foundation emergency",
+        "structural damage assessment",
+        "post-disaster engineering"
+      ]
+    }
+  ],
+  "metadata": {
+    "total_topics": 10,
+    "total_keywords": 70,
+    "update_frequency": "weekly",
+    "stale_threshold_days": 14,
+    "notes": [
+      "Keywords are prioritized based on business value and search volume",
+      "Coastal and hillside topics target premium markets (Malibu, Laguna, etc.)",
+      "Emergency topics target high-intent, high-conversion searches",
+      "Permit compliance topics capture distressed clients with immediate needs"
+    ]
+  },
+  "geographic_focus": {
+    "primary_counties": [
+      "Orange County",
+      "Los Angeles County",
+      "San Diego County"
+    ],
+    "high_value_cities": [
+      "Newport Beach",
+      "Laguna Beach",
+      "Malibu",
+      "Manhattan Beach",
+      "Beverly Hills",
+      "Palo Alto",
+      "Atherton"
+    ],
+    "volume_cities": [
+      "Irvine",
+      "Anaheim",
+      "Los Angeles",
+      "San Diego",
+      "Long Beach"
+    ]
+  },
+  "content_strategy": {
+    "pillar_posts": [
+      "Complete Structural Engineering Guide",
+      "California Building Code Compliance Guide",
+      "Seismic Retrofit Complete Guide",
+      "Foundation Engineering Handbook"
+    ],
+    "cluster_posts_per_topic": 25,
+    "min_word_count": 1500,
+    "target_word_count": 2500,
+    "required_schema": [
+      "Article",
+      "FAQPage",
+      "LocalBusiness",
+      "BreadcrumbList"
+    ]
+  }
+}

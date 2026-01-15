@@ -1,0 +1,188 @@
+# Keyword Intelligence Configuration - 2025 SEO/GEO/AEO Optimization
+# For elevate-structure-web blog generation system
+
+# SerpAPI Configuration
+serpapi:
+  # Get your API key from https://serpapi.com/
+  # Set via environment variable: export SERPAPI_KEY="your_key_here"
+  # Or uncomment and set directly (not recommended for production):
+  # api_key: "your_serpapi_key_here"
+  api_key: ${SERPAPI_KEY}
+
+  # Rate limiting (requests per minute)
+  rate_limit: 30
+
+  # Default search location
+  default_location: "United States"
+
+# Scheduler Configuration
+scheduler:
+  # Day of week to run updates (Monday, Tuesday, etc.)
+  day: "Monday"
+
+  # Time to run (24-hour format)
+  time: "03:00"
+
+  # How many days before keyword intelligence is considered stale
+  stale_threshold_days: 14
+
+  # Enable automatic updates
+  auto_update_enabled: true
+
+# Blog Generation Settings
+blog:
+  # Output formats to generate per blog post
+  output_formats:
+    html: true              # {slug}.html - Optimized blog HTML
+    schema: true            # {slug}.schema.json - Standalone JSON-LD
+    keywords: true          # {slug}.keywords.json - Keyword intelligence snapshot
+    llms_txt: true          # {slug}.llms.txt - LLM-friendly plain text version
+    indexnow: true          # indexnow-payload.json - IndexNow notification
+
+  # 2025 Content Structure Requirements
+  content_structure:
+    answer_capsule:
+      enabled: true
+      min_words: 40
+      max_words: 60
+      placement: "after_h1"
+
+    question_headers:
+      enabled: true
+      format: "question"     # Convert all H2/H3 to question format
+
+    semantic_html:
+      enabled: true
+      tags: ["article", "section", "aside", "header", "footer"]
+
+    eeat_signals:
+      enabled: true
+      include_credentials: true
+      first_person: true     # Use "In our testing", "We found"
+      min_mentions: 3        # Minimum E-E-A-T signals per post
+
+  # Schema Requirements (2025)
+  schema_required:
+    - "Article"            # Article schema with about & mentions
+    - "FAQPage"            # FAQ schema for PAA optimization
+    - "LocalBusiness"      # For geo-targeted posts
+    - "BreadcrumbList"     # Site navigation
+    - "Organization"       # Company identity
+
+  schema_optional:
+    - "HowTo"              # For process posts
+    - "Product"            # For service pages
+    - "Review"             # For testimonials
+
+  # Speakable Content (Voice Search Optimization)
+  speakable:
+    enabled: true
+    targets: ["answer_capsule", "h1", "faq_answers"]
+
+  # Author Person Schema
+  author_schema:
+    enabled: true
+    default_author: "AAA Engineering Team"
+    # Add sameAs links for author profiles
+    same_as:
+      - "https://www.linkedin.com/company/aaa-engineering-design"
+
+# Site-Specific Settings (Engineering Niche)
+niche:
+  name: "structural-engineering"
+
+  # Primary service areas
+  service_areas:
+    - "Orange County, CA"
+    - "Los Angeles County, CA"
+    - "San Diego County, CA"
+    - "Riverside County, CA"
+    - "San Bernardino County, CA"
+
+  # Target property types
+  property_types:
+    - "residential"
+    - "commercial"
+    - "industrial"
+    - "mixed-use"
+
+  # Common modifiers for keyword generation
+  keyword_modifiers:
+    - "near me"
+    - "cost"
+    - "requirements"
+    - "services"
+    - "guide"
+    - "california"
+    - "licensed"
+    - "professional engineer"
+
+# IndexNow Configuration
+indexnow:
+  # IndexNow API key (auto-generated if not set)
+  api_key: ${INDEXNOW_KEY}
+
+  # Search engines to notify
+  endpoints:
+    - "https://www.bing.com/indexnow"
+    - "https://yandex.com/indexnow"
+    - "https://api.naver.com/indexnow"
+    - "https://search.seznam.cz/indexnow"
+
+  # Auto-submit after blog generation
+  auto_submit: true
+
+# Cache Settings
+cache:
+  # Enable caching for SERP data
+  enabled: true
+
+  # Cache duration (days)
+  duration_days: 7
+
+  # Cache directory (relative to keyword-intelligence/)
+  directory: "data/cache"
+
+# Logging
+logging:
+  level: "INFO"           # DEBUG, INFO, WARNING, ERROR
+
+  # Log file location
+  file: "keyword-intelligence/logs/scheduler.log"
+
+  # Log format
+  format: "[%(asctime)s] %(levelname)s: %(message)s"
+
+  # Rotate logs
+  rotation:
+    enabled: true
+    max_bytes: 10485760   # 10MB
+    backup_count: 5
+
+# Notifications (Optional)
+notifications:
+  # Email notifications on scheduler completion
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    from_email: "your-email@example.com"
+    to_email: "recipient@example.com"
+    # Password via environment variable
+    password: ${EMAIL_PASSWORD}
+
+  # Slack notifications
+  slack:
+    enabled: false
+    webhook_url: ${SLACK_WEBHOOK_URL}
+
+# Development Settings
+development:
+  # Use fallback data when API key not available
+  fallback_mode: true
+
+  # Limit number of keywords processed (for testing)
+  max_keywords_per_run: null  # null = no limit
+
+  # Skip cache (always fetch fresh data)
+  skip_cache: false

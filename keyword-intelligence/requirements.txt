@@ -1,0 +1,11 @@
+# Keyword Intelligence Module - Python Dependencies
+# 2025 SEO/GEO/AEO Optimization
+
+# Core dependencies
+requests>=2.31.0          # HTTP requests for SerpAPI
+pyyaml>=6.0.1             # Configuration file parsing
+schedule>=1.2.0           # Task scheduling
+
+# Optional dependencies
+# python-dotenv>=1.0.0    # Environment variable management
+# sentry-sdk>=1.40.0      # Error tracking (production)

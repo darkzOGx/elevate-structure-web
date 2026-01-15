@@ -1,48 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from '@/components/ui/button'
+import { Star, Quote } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
-import { PremiumCard } from '@/components/ui/PremiumCard'
 import { Section } from '@/components/ui/Section'
 import { TESTIMONIALS } from '@/lib/constants'
 
 export function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [direction, setDirection] = useState(0)
-
-  const nextTestimonial = () => {
-    setDirection(1)
-    setCurrentIndex((prev) => (prev + 1) % TESTIMONIALS.length)
-  }
-
-  const prevTestimonial = () => {
-    setDirection(-1)
-    setCurrentIndex((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)
-  }
-
-  const currentTestimonial = TESTIMONIALS[currentIndex]
-
-  const variants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0
-    })
-  }
-
   return (
     <Section id="testimonials" className="bg-muted/10">
       <div className="text-center space-y-4 mb-16">
@@ -65,62 +30,74 @@ export function Testimonials() {
         </motion.div>
       </div>
 
-      <div className="max-w-5xl mx-auto relative">
-        <div className="relative h-[500px] md:h-[400px] overflow-hidden">
-          <AnimatePresence initial={false} custom={direction}>
+      <div className="max-w-[1400px] mx-auto relative px-4 mb-24">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {TESTIMONIALS.map((testimonial, index) => (
             <motion.div
-              key={currentIndex}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 }
-              }}
-              className="absolute w-full"
+              key={testimonial.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="h-full"
             >
-              <PremiumCard className="mx-auto max-w-4xl bg-background/80 backdrop-blur-xl border-primary/10">
-                <div className="grid md:grid-cols-[1fr,2fr] gap-8 items-center">
-                  <div className="flex flex-col items-center text-center md:border-r md:border-border/50 md:pr-8">
-                    <div className="relative w-24 h-24 mb-4">
-                      <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse" />
+              <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-slate-900/50 shadow-xl border border-slate-100 dark:border-slate-800 backdrop-blur-sm p-6 h-full flex flex-col">
+                <div className="absolute top-0 right-0 p-4 opacity-10">
+                  <Quote className="h-12 w-12 text-[#C5D6B6] rotate-12 fill-[#C5D6B6]" />
+                </div>
+
+                <div className="flex flex-col h-full">
+                  {/* User Profile */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="relative w-14 h-14 rounded-full overflow-hidden ring-2 ring-slate-50 dark:ring-slate-800 shadow-md flex-shrink-0">
                       <Image
-                        src={currentTestimonial.image}
-                        alt={`${currentTestimonial.name} testimonial`}
+                        src={testimonial.image}
+                        alt={`${testimonial.name} testimonial`}
                         fill
-                        className="rounded-full object-cover border-2 border-background relative z-10"
+                        className="object-cover"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement
-                          target.src = `https://ui-avatars.com/api/?name=${currentTestimonial.name}&background=random&size=96`
+                          target.src = `https://ui-avatars.com/api/?name=${testimonial.name}&background=random&size=96`
                         }}
                       />
                     </div>
-                    <h4 className="font-bold text-lg">{currentTestimonial.name}</h4>
-                    <p className="text-muted-foreground text-sm mb-2">{currentTestimonial.company}</p>
-                    <div className="flex gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`h-4 w-4 ${i < currentTestimonial.rating
-                              ? 'fill-yellow-400 text-yellow-400'
-                              : 'text-muted'
-                            }`}
-                        />
-                      ))}
+                    <div>
+                      <h4 className="font-bold text-base text-slate-900 dark:text-white leading-tight">{testimonial.name}</h4>
+                      <p className="text-xs font-medium text-primary mt-0.5">{testimonial.company}</p>
+                      {testimonial.location && (
+                        <div className="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wide mt-1">
+                          <span className="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+                          {testimonial.location}
+                        </div>
+                      )}
                     </div>
                   </div>
 
-                  <div className="relative">
-                    <Quote className="absolute -top-4 -left-4 h-8 w-8 text-primary/20 rotate-180" />
-                    <blockquote className="text-xl md:text-2xl leading-relaxed font-medium italic text-foreground/90 relative z-10">
-                      &quot;{currentTestimonial.text}&quot;
-                    </blockquote>
-                    <Quote className="absolute -bottom-4 -right-4 h-8 w-8 text-primary/20" />
+                  {/* Rating */}
+                  <div className="flex gap-0.5 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`h-3.5 w-3.5 ${i < testimonial.rating
+                          ? 'fill-amber-400 text-amber-400'
+                          : 'text-slate-200 dark:text-slate-700'
+                          }`}
+                      />
+                    ))}
+                  </div>
 
-                    <div className="mt-6 text-sm text-muted-foreground text-right">
-                      Project completed: {new Date(currentTestimonial.date).toLocaleDateString('en-US', {
+                  {/* Content */}
+                  <blockquote className="text-base text-slate-700 dark:text-slate-200 flex-grow leading-relaxed">
+                    &quot;{testimonial.text}&quot;
+                  </blockquote>
+
+                  {/* Date */}
+                  <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">
+                      Project completed
+                    </div>
+                    <div className="text-[10px] font-semibold text-slate-900 dark:text-white">
+                      {new Date(testimonial.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric'
@@ -128,43 +105,9 @@ export function Testimonials() {
                     </div>
                   </div>
                 </div>
-              </PremiumCard>
+              </div>
             </motion.div>
-          </AnimatePresence>
-        </div>
-
-        <div className="flex justify-center items-center gap-6 mt-8">
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={prevTestimonial}
-            className="rounded-full w-12 h-12 border-primary/20 hover:bg-primary/10 hover:text-primary transition-colors"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-
-          <div className="flex gap-2">
-            {TESTIMONIALS.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  setDirection(index > currentIndex ? 1 : -1)
-                  setCurrentIndex(index)
-                }}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-primary w-8' : 'bg-primary/20 hover:bg-primary/40'
-                  }`}
-              />
-            ))}
-          </div>
-
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={nextTestimonial}
-            className="rounded-full w-12 h-12 border-primary/20 hover:bg-primary/10 hover:text-primary transition-colors"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </Button>
+          ))}
         </div>
       </div>
 
@@ -173,23 +116,25 @@ export function Testimonials() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
-        className="mt-20 grid gap-8 md:grid-cols-4 text-center max-w-6xl mx-auto"
+        className="mt-20 max-w-6xl mx-auto px-4"
       >
-        <div className="space-y-2 p-4 rounded-2xl bg-background/50 backdrop-blur-sm border border-border/50">
-          <div className="text-4xl font-bold text-primary">4.9/5</div>
-          <div className="text-sm text-muted-foreground font-medium">Average Rating</div>
-        </div>
-        <div className="space-y-2 p-4 rounded-2xl bg-background/50 backdrop-blur-sm border border-border/50">
-          <div className="text-4xl font-bold text-primary">500+</div>
-          <div className="text-sm text-muted-foreground font-medium">Happy Clients</div>
-        </div>
-        <div className="space-y-2 p-4 rounded-2xl bg-background/50 backdrop-blur-sm border border-border/50">
-          <div className="text-4xl font-bold text-primary">98%</div>
-          <div className="text-sm text-muted-foreground font-medium">Satisfaction Rate</div>
-        </div>
-        <div className="space-y-2 p-4 rounded-2xl bg-background/50 backdrop-blur-sm border border-border/50">
-          <div className="text-4xl font-bold text-primary">15+</div>
-          <div className="text-sm text-muted-foreground font-medium">Years Experience</div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+          <div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 shadow-lg text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+            <div className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-1">4.9/5</div>
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Average Rating</div>
+          </div>
+          <div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 shadow-lg text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+            <div className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-1">500+</div>
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Happy Clients</div>
+          </div>
+          <div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 shadow-lg text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+            <div className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-1">98%</div>
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Satisfaction Rate</div>
+          </div>
+          <div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 shadow-lg text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+            <div className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-1">15+</div>
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Years Experience</div>
+          </div>
         </div>
       </motion.div>
     </Section>

@@ -16,7 +16,7 @@ interface BlogFilterClientProps {
   posts: BlogPost[]
 }
 
-const POSTS_PER_PAGE = 10
+const POSTS_PER_PAGE = 8
 
 function getCategoryColor(category: string): string {
   return BLOG_COLOR_MAP[category] || '#0ea5e9'
@@ -116,14 +116,14 @@ export default function BlogFilterClient({
       )}
 
       {/* Filtered Posts Grid */}
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {paginatedPosts.length > 0 ? (
           paginatedPosts.map((post, index) => {
             const categoryColor = getCategoryColor(post.category)
             return (
               <FadeInSection key={post.id} delay={index * 100}>
-                <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group">
-                  <CardHeader className="pb-4">
+                <Card className="h-full border hover:border-primary/50 transition-all hover:shadow-md group flex flex-col overflow-hidden">
+                  <CardHeader className="pb-4 flex-grow">
                     <div className="flex items-center gap-2 mb-2">
                       <Badge className="w-fit text-xs" style={{ backgroundColor: categoryColor }}>
                         {post.category}
@@ -144,7 +144,7 @@ export default function BlogFilterClient({
                         <span>{post.readTime}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-[0.8rem] leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                    <CardTitle className="text-[0.8rem] leading-tight group-hover:text-primary transition-colors line-clamp-3 min-h-[3rem]">
                       {post.title}
                     </CardTitle>
                     <CardDescription className="text-sm line-clamp-2">

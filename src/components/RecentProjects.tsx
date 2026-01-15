@@ -140,31 +140,36 @@ export function RecentProjects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
-        className="text-center mt-16 space-y-6"
+        className="mt-24 max-w-4xl mx-auto"
       >
-        <div className="space-y-2">
-          <h3 className="text-2xl font-bold">
-            Ready to Start Your Next Project?
-          </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            From concept to completion, we deliver structural engineering solutions
-            that exceed expectations. Let&apos;s discuss your project requirements.
-          </p>
-        </div>
+        <div className="relative rounded-3xl overflow-hidden bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-10 md:p-14 text-center">
+          <div className="space-y-8 relative z-10">
+            <div className="space-y-4">
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+                Ready to Start Your Next Project?
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                From concept to completion, we deliver structural engineering solutions
+                that exceed expectations. Let&apos;s discuss your project requirements.
+              </p>
+            </div>
 
-        <Button
-          size="lg"
-          onClick={() => {
-            const element = document.querySelector('#contact')
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth' })
-            }
-          }}
-          className="px-8 shadow-lg shadow-primary/20 h-14 rounded-full text-base"
-        >
-          Start Your Project
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => {
+                const element = document.querySelector('#contact')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
+              className="px-10 h-14 rounded-full text-lg font-medium border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-primary/20 bg-transparent"
+            >
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
       </motion.div>
     </Section>
   )

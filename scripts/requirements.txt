@@ -1,0 +1,4 @@
+# Scripts Dependencies
+# For blog output generation
+
+html2text>=2020.1.16      # HTML to Markdown conversion for LLMs.txt

@@ -130,21 +130,30 @@ export function FeaturedArticlesCarousel({ posts }: FeaturedArticlesCarouselProp
         })}
       </div>
 
-      {/* Page Indicator Dots */}
+      {/* Pagination Numbers */}
       {totalPages > 1 && (
-        <div className="flex justify-center gap-2 mt-8">
-          {Array.from({ length: totalPages }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === currentIndex
-                  ? 'w-8 bg-primary'
-                  : 'w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
-              }`}
-              aria-label={`Go to page ${index + 1}`}
-            />
-          ))}
+        <div className="flex justify-center items-center gap-4 mt-8">
+          <button
+            onClick={handlePrevious}
+            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={currentIndex === 0}
+            aria-label="Previous page"
+          >
+            <ChevronLeft className="h-5 w-5 text-slate-600 dark:text-slate-400" />
+          </button>
+          
+          <span className="text-sm font-medium text-slate-600 dark:text-slate-400">
+            Page {currentIndex + 1} of {totalPages}
+          </span>
+
+          <button
+            onClick={handleNext}
+            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={currentIndex === totalPages - 1}
+            aria-label="Next page"
+          >
+            <ChevronRight className="h-5 w-5 text-slate-600 dark:text-slate-400" />
+          </button>
         </div>
       )}
     </div>

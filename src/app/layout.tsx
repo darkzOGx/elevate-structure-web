@@ -5,6 +5,7 @@ import { Preloader } from "@/components/ui/Preloader";
 import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { FloatingCTA } from "@/components/ui/FloatingCTA";
+import { ExitIntentModal } from "@/components/ExitIntentModal";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -77,6 +78,7 @@ export default function RootLayout({
         <ScrollProgress />
         {children}
         <FloatingCTA />
+        <ExitIntentModal />
       </body>
     </html>
   );

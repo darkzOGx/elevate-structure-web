@@ -52,68 +52,62 @@ export function FAQ() {
         </div>
 
         {/* Additional Help Section */}
-        <div className="text-center mt-16 space-y-6">
-          <div className="bg-muted/30 rounded-xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
-              Still Have Questions?
-            </h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              Can&apos;t find the answer you&apos;re looking for? Our team of licensed
-              Professional Engineers is here to help. Contact us for a free
-              consultation and get all your questions answered.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => {
-                  const element = document.querySelector('#contact')
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' })
-                  }
-                }}
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              >
-                Get Free Consultation
-              </button>
-              <a
-                href={`tel:${COMPANY_INFO.phone}`}
-                className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              >
-                Call Us Now
-              </a>
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div className="grid gap-4 md:grid-cols-3 max-w-3xl mx-auto text-center">
-            <div className="space-y-2">
-              <h4 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
-                Phone
-              </h4>
-              <a
-                href="tel:+19499814448"
-                className="text-lg font-medium hover:text-primary transition-colors"
-              >
-                (949) 981-4448
-              </a>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
-                Email
-              </h4>
-              <a
-                href="mailto:aws@aaaengineeringdesign.com"
-                className="text-lg font-medium hover:text-primary transition-colors"
-              >
-                aws@aaaengineeringdesign.com
-              </a>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
-                Response Time
-              </h4>
-              <p className="text-lg font-medium text-primary">
-                Within 24 Hours
+        <div className="mt-24 max-w-4xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden bg-slate-900 shadow-2xl">
+            {/* Background Effects */}
+            <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+            
+            <div className="relative z-10 p-12 text-center">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                Still Have Questions?
+              </h3>
+              <p className="text-slate-300 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+                Can&apos;t find the answer you&apos;re looking for? Our team of licensed
+                Professional Engineers is here to help. Contact us for a free
+                consultation and get all your questions answered.
               </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button
+                  onClick={() => {
+                    const element = document.querySelector('#contact')
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
+                  className="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 rounded-xl font-bold text-lg shadow-lg shadow-white/10 hover:shadow-white/20 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  Get Free Consultation
+                </button>
+                <a
+                  href={`tel:${COMPANY_INFO.phone}`}
+                  className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-xl font-bold text-lg backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300"
+                >
+                  Call {COMPANY_INFO.phone}
+                </a>
+              </div>
+
+              {/* Quick Contact Specs */}
+              <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex flex-col items-center">
+                  <span className="text-white/80 font-bold text-xl mb-1">Direct Line</span>
+                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-white font-medium hover:text-green-400 transition-colors">
+                    {COMPANY_INFO.phone}
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-white/80 font-bold text-xl mb-1">Email Us</span>
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-white font-medium hover:text-green-400 transition-colors">
+                    {COMPANY_INFO.email}
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-white/80 font-bold text-xl mb-1">Response Time</span>
+                  <span className="text-white font-medium">Within 24 Hours</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

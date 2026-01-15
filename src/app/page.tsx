@@ -9,6 +9,7 @@ import { RecentProjects } from '@/components/RecentProjects'
 import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 import { Footer } from '@/components/Footer'
+import { TrustBadges } from '@/components/TrustBadges'
 import { homepageSchema } from '@/lib/schema-data'
 
 export const metadata: Metadata = {
@@ -37,17 +38,18 @@ export default function Home() {
       />
       <div className="min-h-screen bg-background relative">
         <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Process />
-        <Benefits />
-        <Testimonials />
-        <RecentProjects />
-        <FAQ />
-        <ContactForm />
-      </main>
-      <Footer />
+        <TrustBadges />
+        <main>
+          <Hero />
+          <Services />
+          <Process />
+          <Benefits />
+          <Testimonials />
+          <RecentProjects />
+          <FAQ />
+          <ContactForm />
+        </main>
+        <Footer />
       </div>
     </>
   );

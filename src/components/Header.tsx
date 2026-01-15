@@ -64,7 +64,7 @@ export function Header() {
       <header
         className={cn(
           "sticky top-0 z-40 w-full transition-all duration-300 border-b border-transparent",
-          isScrolled ? "bg-[#fbf7f0]/80 backdrop-blur-xl border-black/5 shadow-sm py-2" : "bg-[#fbf7f0] py-4"
+          isScrolled ? "bg-[#C5D6B6]/90 backdrop-blur-xl border-black/5 shadow-sm py-2" : "bg-transparent py-4"
         )}
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6 max-w-7xl">
@@ -79,7 +79,7 @@ export function Header() {
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-80 border-r border-border/50 bg-[#fbf7f0] backdrop-blur-xl">
+              <SheetContent side="left" className="w-80 border-r border-border/50 bg-[#C5D6B6] backdrop-blur-xl">
                 <div className="flex flex-col space-y-8 mt-8">
                   {/* Mobile Navigation Links */}
                   <nav className="flex flex-col space-y-2">

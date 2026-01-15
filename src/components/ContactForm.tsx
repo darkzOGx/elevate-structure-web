@@ -151,7 +151,10 @@ export function ContactForm() {
             Get Started
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-            Ready to Start Your <span className="text-gradient">Project?</span>
+            Ready to Start Your <span className="relative inline-block px-4 py-2 transform -rotate-1">
+              <span className="absolute inset-0 bg-[#C5D6B6] rounded-2xl transform rotate-1"></span>
+              <span className="relative text-slate-900 z-10">Project?</span>
+            </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Get a free consultation and detailed quote for your engineering project.
@@ -170,20 +173,26 @@ export function ContactForm() {
           className="space-y-8"
         >
           <div className="space-y-4">
-            <PremiumCard className="p-0 overflow-hidden">
-              <div className="p-6 space-y-6">
-                <h3 className="text-xl font-bold mb-4">Contact Information</h3>
+            <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-slate-950 shadow-xl border border-slate-200 dark:border-slate-800 p-0">
+              {/* Decorative top bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-primary/60" />
+              
+              <div className="p-8 space-y-8">
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-3">
+                  <span className="w-1 h-8 bg-primary rounded-full"></span>
+                  Contact Information
+                </h3>
 
                 {/* Phone */}
-                <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    <Phone className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                <div className="flex items-start gap-5 group">
+                  <div className="w-14 h-14 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:border-primary/30 group-hover:shadow-lg group-hover:shadow-primary/5 transition-all duration-300">
+                    <Phone className="h-6 w-6 text-primary transition-transform group-hover:scale-110 duration-300" />
                   </div>
-                  <div>
-                    <p className="font-medium text-sm text-muted-foreground mb-1">Phone</p>
+                  <div className="pt-1">
+                    <p className="font-semibold text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Phone</p>
                     <a
                       href={`tel:${COMPANY_INFO.phone}`}
-                      className="text-lg font-semibold hover:text-primary transition-colors"
+                      className="text-xl font-bold text-slate-900 dark:text-white hover:text-primary transition-colors"
                     >
                       {COMPANY_INFO.phone}
                     </a>
@@ -191,15 +200,15 @@ export function ContactForm() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    <Mail className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                <div className="flex items-start gap-5 group">
+                  <div className="w-14 h-14 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:border-primary/30 group-hover:shadow-lg group-hover:shadow-primary/5 transition-all duration-300">
+                    <Mail className="h-6 w-6 text-primary transition-transform group-hover:scale-110 duration-300" />
                   </div>
-                  <div>
-                    <p className="font-medium text-sm text-muted-foreground mb-1">Email</p>
+                  <div className="pt-1">
+                    <p className="font-semibold text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Email</p>
                     <a
                       href={`mailto:${COMPANY_INFO.email}`}
-                      className="text-lg font-semibold hover:text-primary transition-colors break-all"
+                      className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary transition-colors break-all leading-tight"
                     >
                       {COMPANY_INFO.email}
                     </a>
@@ -207,13 +216,13 @@ export function ContactForm() {
                 </div>
 
                 {/* Office */}
-                <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    <MapPin className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                <div className="flex items-start gap-5 group">
+                  <div className="w-14 h-14 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:border-primary/30 group-hover:shadow-lg group-hover:shadow-primary/5 transition-all duration-300">
+                    <MapPin className="h-6 w-6 text-primary transition-transform group-hover:scale-110 duration-300" />
                   </div>
-                  <div>
-                    <p className="font-medium text-sm text-muted-foreground mb-1">Office</p>
-                    <p className="font-medium leading-relaxed">
+                  <div className="pt-1">
+                    <p className="font-semibold text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Office</p>
+                    <p className="font-medium text-slate-700 dark:text-slate-300 leading-relaxed text-base">
                       {COMPANY_INFO.address.streetAddress}<br />
                       {COMPANY_INFO.address.addressLocality}, {COMPANY_INFO.address.addressRegion} {COMPANY_INFO.address.postalCode}
                     </p>
@@ -221,50 +230,62 @@ export function ContactForm() {
                 </div>
 
                 {/* Business Hours */}
-                <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    <Clock className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                <div className="flex items-start gap-5 group">
+                  <div className="w-14 h-14 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:border-primary/30 group-hover:shadow-lg group-hover:shadow-primary/5 transition-all duration-300">
+                    <Clock className="h-6 w-6 text-primary transition-transform group-hover:scale-110 duration-300" />
                   </div>
-                  <div>
-                    <p className="font-medium text-sm text-muted-foreground mb-1">Business Hours</p>
-                    <div className="font-medium space-y-1">
+                  <div className="pt-1">
+                    <p className="font-semibold text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Business Hours</p>
+                    <div className="font-medium text-slate-700 dark:text-slate-300 space-y-1.5 text-base">
                       {COMPANY_INFO.businessHours.map((hours, index) => (
-                        <p key={index}>{hours}</p>
+                        <p key={index} className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+                          {hours}
+                        </p>
                       ))}
                     </div>
                   </div>
                 </div>
               </div>
-            </PremiumCard>
+            </div>
           </div>
 
           {/* Trust Indicators */}
-          <div className="bg-primary/5 rounded-2xl p-8 space-y-4 border border-primary/10">
-            <h4 className="font-bold text-lg">Why Choose Us?</h4>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="h-4 w-4 text-green-500" />
+          <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-slate-950 shadow-xl border border-slate-200 dark:border-slate-800 p-0">
+            {/* Decorative top bar */}
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-primary/60" />
+            
+            <div className="p-8 space-y-6">
+              <h4 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                <span className="w-1 h-8 bg-primary rounded-full"></span>
+                Why Choose Us?
+              </h4>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center flex-shrink-0 border border-green-500/20 group-hover:bg-green-500/20 transition-all duration-300">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-base font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Free consultation & quote</span>
                 </div>
-                <span className="text-sm font-medium">Free consultation & quote</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center flex-shrink-0 border border-green-500/20 group-hover:bg-green-500/20 transition-all duration-300">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-base font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">24-hour response guarantee</span>
                 </div>
-                <span className="text-sm font-medium">24-hour response guarantee</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center flex-shrink-0 border border-green-500/20 group-hover:bg-green-500/20 transition-all duration-300">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-base font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Licensed Professional Engineers</span>
                 </div>
-                <span className="text-sm font-medium">Licensed Professional Engineers</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center flex-shrink-0 border border-green-500/20 group-hover:bg-green-500/20 transition-all duration-300">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-base font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">100% satisfaction guarantee</span>
                 </div>
-                <span className="text-sm font-medium">100% satisfaction guarantee</span>
               </div>
             </div>
           </div>
@@ -278,227 +299,256 @@ export function ContactForm() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="lg:col-span-2"
         >
-          <PremiumCard>
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-2">Get Your Free Consultation</h3>
-              <p className="text-muted-foreground">
-                Fill out the form below and we&apos;ll get back to you within 24 hours
-                with a detailed consultation and project quote.
-              </p>
-            </div>
-
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                {/* Personal Information */}
-                <div className="grid gap-6 md:grid-cols-2">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Full Name *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Smith" {...field} className="bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email Address *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="john@example.com" type="email" {...field} className="bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2">
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone Number *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="(949) 981-4448" type="tel" {...field} className="bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="company"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Company (Optional)</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Company Name" {...field} className="bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-
-                {/* Project Information */}
-                <div className="grid gap-6 md:grid-cols-3">
-                  <FormField
-                    control={form.control}
-                    name="service"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Service Needed *</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                          <FormControl>
-                            <SelectTrigger className="bg-background/50">
-                              <SelectValue placeholder="Select service" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            {SERVICE_OPTIONS.map((service) => (
-                              <SelectItem key={service} value={service}>
-                                {service}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="budget"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Budget Range *</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                          <FormControl>
-                            <SelectTrigger className="bg-background/50">
-                              <SelectValue placeholder="Select budget" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            {BUDGET_RANGES.map((budget) => (
-                              <SelectItem key={budget} value={budget}>
-                                {budget}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="timeline"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Project Timeline *</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                          <FormControl>
-                            <SelectTrigger className="bg-background/50">
-                              <SelectValue placeholder="Select timeline" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            {PROJECT_TIMELINES.map((timeline) => (
-                              <SelectItem key={timeline} value={timeline}>
-                                {timeline}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-
-                <FormField
-                  control={form.control}
-                  name="projectDescription"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Project Description *</FormLabel>
-                      <FormControl>
-                        <Textarea
-                          placeholder="Please describe your project in detail. Include any specific requirements, goals, or challenges you're facing..."
-                          className="min-h-[120px] bg-background/50 resize-none"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                {/* Consent */}
-                <FormField
-                  control={form.control}
-                  name="consent"
-                  render={({ field }) => (
-                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 bg-background/50">
-                      <FormControl>
-                        <Checkbox
-                          checked={field.value}
-                          onCheckedChange={field.onChange}
-                        />
-                      </FormControl>
-                      <div className="space-y-1 leading-none">
-                        <FormLabel>
-                          I agree to the{' '}
-                          <a href="/privacy" className="text-primary hover:underline font-semibold">
-                            privacy policy
-                          </a>{' '}
-                          and consent to being contacted about my project. *
-                        </FormLabel>
-                        <FormMessage />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-
-                {/* Submit Button */}
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full text-lg h-12 shadow-lg shadow-primary/20"
-                  disabled={formspreeState.submitting}
-                >
-                  {formspreeState.submitting ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      Get Free Consultation
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </>
-                  )}
-                </Button>
-
-                <p className="text-xs text-muted-foreground text-center">
-                  We respect your privacy and never share your information.
-                  You&apos;ll receive a response within 24 hours.
+          <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-slate-950 shadow-2xl border border-slate-200 dark:border-slate-800">
+            {/* Decorative top bar */}
+            <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-primary/60" />
+            
+            <div className="p-8 md:p-10">
+              <div className="mb-10">
+                <h3 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">Get Your Free Consultation</h3>
+                <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Complete the form and receive your consultation within 24 hours.
                 </p>
-              </form>
-            </Form>
-          </PremiumCard>
+              </div>
+
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                  {/* Personal Information */}
+                  <div className="space-y-6">
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 border-b border-slate-200 dark:border-slate-800 pb-2">Personal Details</h4>
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <FormField
+                        control={form.control}
+                        name="name"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Full Name *</FormLabel>
+                            <FormControl>
+                              <Input 
+                                placeholder="John Smith" 
+                                {...field} 
+                                className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300" 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Email Address *</FormLabel>
+                            <FormControl>
+                              <Input 
+                                placeholder="john@example.com" 
+                                type="email" 
+                                {...field} 
+                                className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300" 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Phone Number *</FormLabel>
+                            <FormControl>
+                              <Input 
+                                placeholder="(949) 981-4448" 
+                                type="tel" 
+                                {...field} 
+                                className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300" 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="company"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Company (Optional)</FormLabel>
+                            <FormControl>
+                              <Input 
+                                placeholder="Company Name" 
+                                {...field} 
+                                className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300" 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Project Information */}
+                  <div className="space-y-6">
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 border-b border-slate-200 dark:border-slate-800 pb-2">Project Details</h4>
+                    <div className="grid gap-6 md:grid-cols-3">
+                      <FormField
+                        control={form.control}
+                        name="service"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Service Needed *</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300">
+                                  <SelectValue placeholder="Select service" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                {SERVICE_OPTIONS.map((service) => (
+                                  <SelectItem key={service} value={service}>
+                                    {service}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="budget"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Budget Range *</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300">
+                                  <SelectValue placeholder="Select budget" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                {BUDGET_RANGES.map((budget) => (
+                                  <SelectItem key={budget} value={budget}>
+                                    {budget}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="timeline"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-slate-700 dark:text-slate-300">Project Timeline *</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300">
+                                  <SelectValue placeholder="Select timeline" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                {PROJECT_TIMELINES.map((timeline) => (
+                                  <SelectItem key={timeline} value={timeline}>
+                                    {timeline}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
+                    <FormField
+                      control={form.control}
+                      name="projectDescription"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-slate-700 dark:text-slate-300">Project Description *</FormLabel>
+                          <FormControl>
+                            <Textarea
+                              placeholder="Please describe your project in detail. Include any specific requirements, goals, or challenges you're facing..."
+                              className="min-h-[150px] bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-primary/20 transition-all duration-300 resize-none p-4"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  {/* Consent */}
+                  <FormField
+                    control={form.control}
+                    name="consent"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/50 dark:bg-slate-900/50">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            className="mt-1"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-relaxed">
+                          <FormLabel className="text-base font-normal text-slate-600 dark:text-slate-400">
+                            I agree to the{' '}
+                            <a href="/privacy" className="text-primary hover:underline font-semibold">
+                              privacy policy
+                            </a>{' '}
+                            and consent to being contacted about my project. *
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* Submit Button */}
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full text-lg h-14 rounded-xl shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
+                    disabled={formspreeState.submitting}
+                  >
+                    {formspreeState.submitting ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-3" />
+                        Sending Request...
+                      </>
+                    ) : (
+                      <>
+                        Get Free Consultation
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </>
+                    )}
+                  </Button>
+
+                  <p className="text-sm text-slate-500 dark:text-slate-400 text-center flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    We respect your privacy and never share your information.
+                  </p>
+                </form>
+              </Form>
+            </div>
+          </div>
         </motion.div>
       </div>
     </Section>

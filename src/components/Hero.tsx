@@ -2,7 +2,6 @@
 
 import { ArrowRight, CheckCircle, Star, Shield, Award } from 'lucide-react'
 import { MagneticButton } from '@/components/ui/MagneticButton'
-import { Badge } from '@/components/ui/badge'
 import { AnimatedCounter } from '@/components/AnimatedCounter'
 import { EngineeringAnimatedBackground } from '@/components/ui/EngineeringAnimatedBackground'
 
@@ -22,24 +21,14 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-[90vh] flex flex-col justify-start items-center overflow-hidden pt-10 md:pt-16">
       <EngineeringAnimatedBackground />
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
         <div
           className="flex flex-col justify-center items-center space-y-8 text-center max-w-5xl mx-auto"
         >
-          {/* Trust Badges */}
-          <div className="flex flex-wrap gap-3 justify-center">
-            <Badge variant="outline" className="bg-background/50 backdrop-blur-sm border-primary/20 px-4 py-1.5 text-sm">
-              <Star className="h-3.5 w-3.5 fill-primary text-primary mr-2" />
-              Licensed Professional Engineers
-            </Badge>
-            <Badge variant="outline" className="bg-background/50 backdrop-blur-sm border-primary/20 px-4 py-1.5 text-sm">
-              <Shield className="h-3.5 w-3.5 text-primary mr-2" />
-              15+ Years Experience
-            </Badge>
-          </div>
+
 
           {/* Main Headline */}
           <div className="space-y-6">
@@ -52,24 +41,53 @@ export function Hero() {
                   <span className="relative text-slate-900 z-10">Design</span>
                 </span>
               </span>
-              <span className="block text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mt-6 tracking-widest uppercase">
+              <span className="block text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-300 mt-8 tracking-wider uppercase">
                 Services in Orange County and Greater California
               </span>
+              <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-6 leading-relaxed font-light">
+                Expert structural engineering from licensed PEs. Precision, safety, and full code compliance—guaranteed.
+              </p>
             </h1>
-            <p className="text-2xl text-slate-700 dark:text-slate-300 font-semibold max-w-3xl mx-auto leading-relaxed pt-6">
-              Transform your vision into reality with expert structural engineering
-              solutions. Licensed PEs delivering precision, safety, and
-              <span className="text-black dark:text-white font-bold"> 100% code compliance</span>.
-            </p>
+            {/* Social Proof Stats Replaced Description */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 w-full">
+              <div className="text-center p-3 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+                <div className="flex justify-center mb-1">
+                  <Award className="h-5 w-5 text-amber-500" />
+                </div>
+                <div className="text-xl font-bold text-foreground">500+</div>
+                <div className="text-xs text-muted-foreground font-medium">Projects Completed</div>
+              </div>
+              <div className="text-center p-3 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+                <div className="flex justify-center mb-1">
+                  <Shield className="h-5 w-5 text-emerald-500" />
+                </div>
+                <div className="text-xl font-bold text-foreground">15+</div>
+                <div className="text-xs text-muted-foreground font-medium">Years Experience</div>
+              </div>
+              <div className="text-center p-3 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+                <div className="flex justify-center mb-1">
+                  <Star className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                </div>
+                <div className="text-xl font-bold text-foreground">5.0</div>
+                <div className="text-xs text-muted-foreground font-medium">Client Rating</div>
+              </div>
+              <div className="text-center p-3 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+                <div className="flex justify-center mb-1">
+                  <CheckCircle className="h-5 w-5 text-blue-500" />
+                </div>
+                <div className="text-xl font-bold text-foreground">100%</div>
+                <div className="text-xs text-muted-foreground font-medium">Code Compliance</div>
+              </div>
+            </div>
           </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto pt-8">
             <MagneticButton
               onClick={scrollToContact}
-              className="group h-14 px-8 rounded-full text-base font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300"
+              className="group h-14 px-8 rounded-full text-base font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 bg-[#1a1a1a] text-white hover:bg-black/90"
             >
-              Get Free Consultation
+              Start Your Project
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </MagneticButton>
             <MagneticButton
@@ -79,51 +97,6 @@ export function Hero() {
             >
               View Our Services
             </MagneticButton>
-          </div>
-
-          {/* Social Proof with Animated Counters */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 w-full max-w-4xl border-t border-border/50 mt-8">
-            <div className="text-center p-4 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
-              <div className="flex justify-center mb-2 text-primary">
-                <Award className="h-6 w-6" />
-              </div>
-              <AnimatedCounter
-                end={500}
-                suffix="+"
-                className="text-3xl font-bold text-foreground"
-              />
-              <div className="text-sm text-muted-foreground mt-1 font-medium">Projects Completed</div>
-            </div>
-            <div className="text-center p-4 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
-              <div className="flex justify-center mb-2 text-primary">
-                <Shield className="h-6 w-6" />
-              </div>
-              <AnimatedCounter
-                end={15}
-                suffix="+"
-                className="text-3xl font-bold text-foreground"
-              />
-              <div className="text-sm text-muted-foreground mt-1 font-medium">Years Experience</div>
-            </div>
-            <div className="text-center p-4 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
-              <div className="flex justify-center mb-2 text-primary">
-                <Star className="h-6 w-6" />
-              </div>
-              <div className="flex items-center justify-center gap-1">
-                <AnimatedCounter
-                  end={5.0}
-                  className="text-3xl font-bold text-foreground"
-                />
-              </div>
-              <div className="text-sm text-muted-foreground mt-1 font-medium">Client Rating</div>
-            </div>
-            <div className="text-center p-4 rounded-2xl bg-background/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
-              <div className="flex justify-center mb-2 text-primary">
-                <CheckCircle className="h-6 w-6" />
-              </div>
-              <div className="text-3xl font-bold text-foreground">100%</div>
-              <div className="text-sm text-muted-foreground mt-1 font-medium">Code Compliance</div>
-            </div>
           </div>
         </div>
       </div>
