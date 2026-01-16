@@ -5182,6 +5182,143 @@ Example: "A structural engineer in Newport Beach costs five hundred to three tho
 
 ---
 
+## BING SEARCH OPTIMIZATION - ADDITIVE LAYER (2026)
+
+**Added:** January 2026
+**Purpose:** Additional Bing-specific optimizations that work ALONGSIDE existing Google/AI optimizations—not replacing them.
+
+---
+
+### 1. Exact-Match Keyword Emphasis (Bing Additive)
+
+**Bing prefers literal keyword matching.** Add exact-match variants alongside semantic content:
+
+| Element | + Bing Additive |
+|---------|-----------------|
+| First Paragraph | Exact primary keyword in first 50 words verbatim |
+| H2s | Include 2+ H2s with exact-match keywords |
+| Meta Keywords | Add `<meta name="keywords">` tag (Bing reads it) |
+
+**Meta Keywords Tag (Bing Still Uses This):**
+```html
+<meta name="keywords" content="structural engineering Orange County, ADU structural engineer Irvine, soft story retrofit Los Angeles, foundation repair Newport Beach, seismic retrofit California">
+```
+
+---
+
+### 2. Desktop-First Content Validation (Bing Indexing)
+
+**Bing uses desktop-first indexing.** Ensure all content renders fully on desktop:
+
+- [ ] No "Show More" JavaScript toggles hiding content
+- [ ] Tables render fully without horizontal scroll
+- [ ] Images sized for desktop viewing (min 800px width)
+- [ ] Answer Capsule visible above fold on 1920x1080 viewport
+
+```html
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large">
+```
+
+---
+
+### 3. Social Meta Tags Enhancement (Bing Social Signals)
+
+**Bing weights social signals for ranking.** Add these meta tags:
+
+```html
+<meta property="og:site_name" content="AAA Engineering Design">
+<meta property="article:author" content="https://facebook.com/aaaengineering">
+<meta property="article:publisher" content="https://facebook.com/aaaengineering">
+<meta name="author" content="AAA Engineering Design">
+<meta name="twitter:creator" content="@aaaengineering">
+<meta name="twitter:site" content="@aaaengineering">
+```
+
+---
+
+### 4. Direct Bing Webmaster API Submission
+
+**Submit directly to Bing alongside IndexNow:**
+
+```bash
+# Submit to Bing Webmaster API (faster than IndexNow for Bing)
+curl -X POST "https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey=${BING_WEBMASTER_API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{"siteUrl":"https://aaaengineeringdesign.com","url":"${NEW_URL}"}'
+```
+
+---
+
+### 5. Clean Sitemap Validation (Bing 1% Dirt Rule)
+
+**Bing allows only 1% "dirt" in sitemaps:**
+- [ ] No redirecting URLs (301/302)
+- [ ] No 404 errors
+- [ ] All URLs return 200 OK
+- [ ] lastmod dates are accurate
+
+---
+
+### 6. ChatGPT Citation Optimization
+
+**Bing powers ChatGPT's web search.** First 150 characters MUST be fact-dense:
+
+❌ BAD: "Welcome to our guide about structural engineering services..."
+
+✅ GOOD: "Structural engineering in Orange County costs $2,500-$15,000 for residential projects. AAA Engineering Design completes 200+ projects annually with 98% permit approval rates across Southern California."
+
+---
+
+### 7. Bing-Preferred Schema Properties
+
+**Add to existing Article schema:**
+
+```json
+{
+  "mainEntity": {
+    "@type": "WebPage",
+    "significantLink": [
+      "https://bpelsg.ca.gov/",
+      "https://www.dgs.ca.gov/BSC",
+      "https://www.ladbs.org/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "AAA Engineering Design"
+  },
+  "copyrightYear": "2026",
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US"
+}
+```
+
+---
+
+### 8. User Engagement Signals Optimization
+
+**Bing tracks dwell time, CTR, bounce rate:**
+
+- [ ] First sentence contains specific data/claim
+- [ ] 5+ internal links to related content
+- [ ] Related posts section at article end
+- [ ] FAQ section with minimum 6 questions
+- [ ] Meta description includes call-to-action
+
+---
+
+### BING ADDITIVE MASTER CHECKLIST
+
+- [ ] `<meta name="keywords">` tag with 8-12 exact-match phrases
+- [ ] Social meta tags (og:site_name, article:author)
+- [ ] Bing Webmaster API submission alongside IndexNow
+- [ ] Sitemap validated (<1% error rate)
+- [ ] First 150 characters fact-dense
+- [ ] copyrightHolder and copyrightYear in schema
+- [ ] significantLink to BPELSG, DSA, LADBS sources
+
+---
+
 ## 🚀 POST-GENERATION: GIT COMMIT & DEPLOY (MANDATORY)
 
 **After completing blog generation, ALWAYS execute this git workflow to deploy changes to production.**
