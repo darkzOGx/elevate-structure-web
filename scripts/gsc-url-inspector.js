@@ -37,7 +37,7 @@ const CONFIG = {
 
   // Rate limiting
   requestDelayMs: 1000, // 1 second between requests to stay within quota
-  maxUrlsPerBatch: 50, // Process up to 50 URLs per run
+  maxUrlsPerBatch: 200, // Process up to 200 URLs per run
 
   // Output
   outputPath: path.join(__dirname, '..', 'gsc-inspection-results.json'),
@@ -197,9 +197,12 @@ async function submitSitemap(webmasters) {
   try {
     log('\n📤 Submitting sitemap to Google Search Console...', 'blue');
 
+    // Verify which property we have access to
+    const siteUrlToUse = CONFIG.propertyUrl; // Use the domain property (sc-domain:...)
+
     // First, check if sitemap already exists
     const listResponse = await webmasters.sitemaps.list({
-      siteUrl: CONFIG.siteUrl,
+      siteUrl: siteUrlToUse,
     });
 
     const existingSitemaps = listResponse.data.sitemap || [];
@@ -211,7 +214,7 @@ async function submitSitemap(webmasters) {
 
     // Submit (or resubmit) the sitemap
     await webmasters.sitemaps.submit({
-      siteUrl: CONFIG.siteUrl,
+      siteUrl: siteUrlToUse,
       feedpath: CONFIG.sitemapUrl,
     });
 
@@ -220,7 +223,7 @@ async function submitSitemap(webmasters) {
 
     // Get sitemap status
     const statusResponse = await webmasters.sitemaps.get({
-      siteUrl: CONFIG.siteUrl,
+      siteUrl: siteUrlToUse,
       feedpath: CONFIG.sitemapUrl,
     });
 
@@ -339,7 +342,7 @@ async function main() {
           if (result.success) {
             const statusIcon = result.verdict === 'PASS' ? '✅' : '⚠️';
             log(`   ${statusIcon} ${result.verdict} | Coverage: ${result.coverageState}`,
-                result.verdict === 'PASS' ? 'green' : 'yellow');
+              result.verdict === 'PASS' ? 'green' : 'yellow');
           } else {
             log(`   ❌ Error: ${result.error}`, 'red');
           }
@@ -380,6 +383,18 @@ async function main() {
     console.log('');
 
   } catch (error) {
+    if (error.message.includes('sufficient permission') || error.code === 403) {
+      log(`\n❌ PERMISSION ERROR: The Service Account does not have access to this property.`, 'red');
+      log(`\n👉 ACTION REQUIRED:`, 'yellow');
+      log(`   1. Go to Google Search Console (https://search.google.com/search-console)`, 'cyan');
+      log(`   2. Select property: ${CONFIG.propertyUrl.replace('sc-domain:', '')}`, 'cyan');
+      log(`   3. Go to Settings > Users and permissions`, 'cyan');
+      log(`   4. Click "Add User"`, 'cyan');
+      log(`   5. Paste this email: gsc-access@laderalabs.iam.gserviceaccount.com`, 'bright');
+      log(`   6. Set permission to "Owner" or "Full"`, 'cyan');
+      process.exit(1);
+    }
+
     log(`\n❌ Error: ${error.message}`, 'red');
 
     if (error.message.includes('credentials')) {

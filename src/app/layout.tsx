@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aaaengineeringdesign.com'),
+  alternates: {
+    canonical: './',
+  },
   title: 'Structural Engineer Orange County CA | Licensed PE | AAA Engineering Design',
   description: 'Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans.',
   icons: {

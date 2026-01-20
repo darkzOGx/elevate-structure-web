@@ -1,53 +1,53 @@
-import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
-
-const CANONICAL_HOST = 'aaaengineeringdesign.com'
+import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone()
-  const hostname = request.nextUrl.hostname.toLowerCase()
-  const pathname = request.nextUrl.pathname
-  let redirectNeeded = false
+  const { pathname, search } = url
+  const hostname = request.headers.get('host') || ''
 
-  // Force https://aaaengineeringdesign.com (no www) in production
-  const isLocalEnv =
-    hostname === 'localhost' ||
-    hostname === '127.0.0.1' ||
-    hostname.endsWith('.local')
-
-  if (!isLocalEnv && hostname !== CANONICAL_HOST) {
-    if (hostname.startsWith('www.')) {
-      url.hostname = CANONICAL_HOST
-      url.protocol = 'https'
-      redirectNeeded = true
-    }
+  // 1. Enforce HTTPS (except localhost)
+  if (process.env.NODE_ENV === 'production' && request.headers.get('x-forwarded-proto') !== 'https') {
+    url.protocol = 'https'
+    return NextResponse.redirect(url)
   }
 
-  // Remove trailing slashes to match canonical URLs
-  if (pathname.length > 1 && pathname.endsWith('/')) {
-    url.pathname = pathname.replace(/\/+$/, '')
-    redirectNeeded = true
+  // 2. Enforce non-www (aaaengineeringdesign.com)
+  if (hostname.startsWith('www.')) {
+    url.hostname = hostname.replace('www.', '')
+    return NextResponse.redirect(url)
   }
 
-  if (redirectNeeded) {
-    return NextResponse.redirect(url, 308)
+  // 3. Remove trailing slash (except for home /)
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    url.pathname = pathname.slice(0, -1)
+    return NextResponse.redirect(url)
+  }
+
+  // 4. Handle specific double-city slugs (based on user report)
+  // Pattern: /[city-name]-[city-name] -> /[city-name]
+  // This is a heuristic cleanup for the reported 404s
+  const doubleCityPattern = /-([a-z-]+)-\1$/
+  if (doubleCityPattern.test(pathname)) {
+    // Example: /blog/septic-design-engineers-in-westminster-westminster
+    // Becomes: /blog/septic-design-engineers-in-westminster
+    const newPath = pathname.replace(doubleCityPattern, '-$1')
+    url.pathname = newPath
+    return NextResponse.redirect(url)
   }
 
   return NextResponse.next()
 }
 
-// Apply only to page routes (skip assets, API, and SEO files)
 export const config = {
   matcher: [
     /*
-     * Match all request paths except:
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
      * - _next/static (static files)
      * - _next/image (image optimization files)
-     * - _vercel (Vercel internals)
-     * - api (API routes)
-     * - static files (images, fonts, etc.)
-     * - robots.txt, sitemap.xml (SEO files - CRITICAL for Google indexing)
+     * - favicon.ico (favicon file)
      */
-    '/((?!_next|_vercel|api|static|robots\\.txt|sitemap.*\\.xml|.*\\..*).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
 }

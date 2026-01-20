@@ -13,8 +13,19 @@ export const organizationSchema = {
   "url": COMPANY_INFO.website,
   "telephone": COMPANY_INFO.phone,
   "email": COMPANY_INFO.email,
-  "logo": `${COMPANY_INFO.website}/AAA-Logo.png`,
   "image": `${COMPANY_INFO.website}/AAA-Logo.png`,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${COMPANY_INFO.website}/AAA-Logo.png`,
+    "width": "512",
+    "height": "512"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${COMPANY_INFO.website}/AAA-Logo.png`,
+    "width": "512",
+    "height": "512"
+  },
   "description": "Leading provider of structural engineering services in California. Licensed Professional Engineers with 20+ years experience in residential and commercial structural design, seismic retrofitting, ADU engineering, and foundation design.",
   "address": {
     "@type": "PostalAddress",
@@ -73,10 +84,10 @@ export const organizationSchema = {
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "429",
-    "bestRating": "5",
-    "worstRating": "1"
+    "ratingValue": 5.0,
+    "reviewCount": 429,
+    "bestRating": 5,
+    "worstRating": 1
   }
 }
 

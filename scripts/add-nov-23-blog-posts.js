@@ -135,7 +135,8 @@ function addBlogPosts() {
 
         const city = extractCity(parsed.title);
         const baseSlug = titleToSlug(parsed.title.split(':')[0]);
-        const slug = city ? `${baseSlug}-${titleToSlug(city)}` : baseSlug;
+        const citySlug = city ? titleToSlug(city) : '';
+        const slug = (city && !baseSlug.endsWith(citySlug)) ? `${baseSlug}-${citySlug}` : baseSlug;
 
         // Feature the first 3 posts
         const isFeatured = i < 3;
