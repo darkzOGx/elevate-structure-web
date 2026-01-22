@@ -12,7 +12,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/', '/search'],
+        // Important for Bing/Google: don't block Next.js assets or crawlers may not be able to render the page.
+        disallow: ['/api/'],
       },
     ],
     sitemap: 'https://aaaengineeringdesign.com/sitemap.xml',

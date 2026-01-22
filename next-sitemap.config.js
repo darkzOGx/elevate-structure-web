@@ -4,13 +4,22 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   trailingSlash: false, // Consistent URL format without trailing slashes
-  exclude: ['/server-sitemap.xml', '/sitemap.xml'], // Exclude the sitemap itself
+  // Keep the sitemap clean: exclude non-HTML resources and legacy/redirect-only URLs
+  // (Redirected URLs in sitemaps can reduce trust/crawl efficiency in Bing.)
+  exclude: [
+    '/server-sitemap.xml',
+    '/sitemap.xml', // Exclude the sitemap itself
+    '/robots.txt',
+    '/feed.xml',
+    '/services/adu-engineering', // legacy URL: 301 -> /services/adu-design-engineering
+  ],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        // Important for Bing/Google: don't block Next.js assets or crawlers may not be able to render the page.
+        disallow: ['/api/'],
       },
     ],
     additionalSitemaps: [

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "indexnow": "node scripts/submit-indexnow.js",
+    "indexnow:recent": "set INDEXNOW_RECENT_DAYS=7 && node scripts/submit-indexnow.js",
     "indexnow:new": "node scripts/submit-new-blogs-to-indexnow.js",
     "gsc-extract": "node scripts/gsc-keyword-extractor.js",
     "gsc-inspect": "node scripts/gsc-url-inspector.js",

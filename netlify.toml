@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  # Build sitemap + submit IndexNow on production deploys (guarded in script)
+  command = "npm run build && node scripts/indexnow-netlify.js"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -15,7 +16,6 @@
   [headers.values]
     Content-Type = "text/plain"
     Cache-Control = "public, max-age=3600"
-    X-Robots-Tag = "none"
 
 [[headers]]
   for = "/sitemap.xml"

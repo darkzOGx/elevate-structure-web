@@ -212,6 +212,13 @@ function printReport(apiKey, keyLocation, urls, results) {
 
 async function main() {
   try {
+    // Optional: allow filtering to "recent" URLs via env var
+    // (Useful for CI / Netlify if you want to reduce submission volume.)
+    const recentDaysEnv = process.env.INDEXNOW_RECENT_DAYS;
+    if (recentDaysEnv && !Number.isNaN(Number(recentDaysEnv))) {
+      CONFIG.recentDays = Number(recentDaysEnv);
+    }
+
     log('\n🔍 Starting IndexNow submission process...', 'bright');
     console.log('');
 

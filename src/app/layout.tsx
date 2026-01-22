@@ -8,6 +8,14 @@ import { FloatingCTA } from "@/components/ui/FloatingCTA";
 import { ExitIntentModal } from "@/components/ExitIntentModal";
 import "./globals.css";
 
+const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const BING_MSVALIDATE = process.env.NEXT_PUBLIC_BING_MSVALIDATE;
+
+const OTHER_VERIFICATION_META: Record<string, string> = {
+  ...(GOOGLE_SITE_VERIFICATION ? { 'google-site-verification': GOOGLE_SITE_VERIFICATION } : {}),
+  ...(BING_MSVALIDATE ? { 'msvalidate.01': BING_MSVALIDATE } : {}),
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -54,6 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: ['https://aaaengineeringdesign.com/og-image.jpg'],
   },
+  ...(Object.keys(OTHER_VERIFICATION_META).length ? { other: OTHER_VERIFICATION_META } : {}),
 }
 
 export default function RootLayout({
@@ -71,6 +80,9 @@ export default function RootLayout({
         {/* Performance hints */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
+
+        {/* Syndication */}
+        <link rel="alternate" type="application/rss+xml" title="AAA Engineering Design Blog RSS" href="/feed.xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans selection:bg-primary/20 selection:text-primary`}

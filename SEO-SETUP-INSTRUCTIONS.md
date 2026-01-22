@@ -23,17 +23,11 @@
    - Copy ONLY the content value (e.g., `abc123xyz...`)
 
 4. **Add to Your Site**
-   - Open `src/app/layout.tsx`
-   - Find this section (around line 67):
-   ```tsx
-   {/* Uncomment and replace when you have actual codes:
-   <meta name="google-site-verification" content="YOUR_GOOGLE_CODE_HERE" />
-   <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE" />
-   */}
-   ```
-   - Replace with:
-   ```tsx
-   <meta name="google-site-verification" content="YOUR_ACTUAL_CODE" />
+   - This repo is set up to add verification meta tags via environment variables.
+   - Set this in your deployment environment (or `.env.local`, **do not commit**):
+
+   ```bash
+   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=abc123xyz...
    ```
 
 5. **Deploy and Verify**
@@ -63,11 +57,20 @@
    - Copy the content value from the meta tag
 
 4. **Add to Your Site**
-   - Add alongside the Google verification:
-   ```tsx
-   <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" />
-   <meta name="msvalidate.01" content="YOUR_BING_CODE" />
+   - Set this in your deployment environment (or `.env.local`, **do not commit**):
+
+   ```bash
+   NEXT_PUBLIC_BING_MSVALIDATE=YOUR_BING_CODE
    ```
+
+### Optional: Bing `BingSiteAuth.xml` verification file
+
+This codebase also supports the file-based verification method at `/BingSiteAuth.xml`.
+Set:
+
+```bash
+BING_SITE_AUTH=YOUR_BING_FILE_CODE
+```
 
 ---
 
