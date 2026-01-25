@@ -1,0 +1,197 @@
+{
+  "redirectsNeeded": [
+    {
+      "url": "https://aaaengineeringdesign.com/BingSiteAuth.xml",
+      "priority": "high",
+      "reason": "404 with potential history"
+    }
+  ],
+  "sitemapCleanup": [
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/structural-engineer-cost-orange-county-2025/",
+      "target": "https://aaaengineeringdesign.com/blog/structural-engineer-cost-orange-county-2025/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/when-to-hire-residential-structural-engineer-santa-ana/",
+      "target": "https://aaaengineeringdesign.com/blog/when-to-hire-residential-structural-engineer-santa-ana/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/services/adu-engineering/",
+      "target": "https://aaaengineeringdesign.com/services/adu-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/adu-structural-requirements/",
+      "target": "https://aaaengineeringdesign.com/blog/adu-structural-requirements/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/best-structural-engineering-firms-los-angeles/",
+      "target": "https://aaaengineeringdesign.com/blog/best-structural-engineering-firms-los-angeles/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/building-code-compliance-2024/",
+      "target": "https://aaaengineeringdesign.com/blog/building-code-compliance-2024/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/commercial-building-engineering-california/",
+      "target": "https://aaaengineeringdesign.com/blog/commercial-building-engineering-california/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/commercial-building-engineering-design-california-anaheim/",
+      "target": "https://aaaengineeringdesign.com/blog/commercial-building-engineering-design-california-anaheim/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/engineering-design-services-guide/",
+      "target": "https://aaaengineeringdesign.com/blog/engineering-design-services-guide/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/how-to-choose-engineering-design-firm-socal/",
+      "target": "https://aaaengineeringdesign.com/blog/how-to-choose-engineering-design-firm-socal/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/how-to-hire-structural-engineer-huntington-beach/",
+      "target": "https://aaaengineeringdesign.com/blog/how-to-hire-structural-engineer-huntington-beach/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/residential-structural-engineer-near-me-newport-beach/",
+      "target": "https://aaaengineeringdesign.com/blog/residential-structural-engineer-near-me-newport-beach/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/residential-structural-engineer-near-me/",
+      "target": "https://aaaengineeringdesign.com/blog/residential-structural-engineer-near-me/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/role-design-engineer-san-diego/",
+      "target": "https://aaaengineeringdesign.com/blog/role-design-engineer-san-diego/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/septic-design-engineers-san-clemente/",
+      "target": "https://aaaengineeringdesign.com/blog/septic-design-engineers-san-clemente/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/sustainable-design-engineering-orange-county/",
+      "target": "https://aaaengineeringdesign.com/blog/sustainable-design-engineering-orange-county/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/sustainable-engineering-design-services-irvine/",
+      "target": "https://aaaengineeringdesign.com/blog/sustainable-engineering-design-services-irvine/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/types-engineering-design-services-garden-grove/",
+      "target": "https://aaaengineeringdesign.com/blog/types-engineering-design-services-garden-grove/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/ultimate-guide-structural-engineering-design-california/",
+      "target": "https://aaaengineeringdesign.com/blog/ultimate-guide-structural-engineering-design-california/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/blog/understanding-seismic-retrofitting/",
+      "target": "https://aaaengineeringdesign.com/blog/understanding-seismic-retrofitting/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/anaheim-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/anaheim-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/anaheim/",
+      "target": "https://aaaengineeringdesign.com/locations/anaheim/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/costa-mesa-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/costa-mesa-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/fullerton-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/fullerton-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/fullerton/",
+      "target": "https://aaaengineeringdesign.com/locations/fullerton/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/huntington-beach/",
+      "target": "https://aaaengineeringdesign.com/locations/huntington-beach/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/irvine-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/irvine-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/irvine/",
+      "target": "https://aaaengineeringdesign.com/locations/irvine/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/laguna-beach-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/laguna-beach-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/lake-forest/",
+      "target": "https://aaaengineeringdesign.com/locations/lake-forest/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/mission-viejo/",
+      "target": "https://aaaengineeringdesign.com/locations/mission-viejo/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/newport-beach-structural-engineering/",
+      "target": "https://aaaengineeringdesign.com/locations/newport-beach-structural-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/locations/santa-ana/",
+      "target": "https://aaaengineeringdesign.com/locations/santa-ana/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/services/adu-design-engineering/",
+      "target": "https://aaaengineeringdesign.com/services/adu-design-engineering/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/services/commercial/",
+      "target": "https://aaaengineeringdesign.com/services/commercial/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/services/residential/",
+      "target": "https://aaaengineeringdesign.com/services/residential/",
+      "issue": "Sitemap entry redirects"
+    },
+    {
+      "url": "https://www.aaaengineeringdesign.com/services/seismic-retrofitting/",
+      "target": "https://aaaengineeringdesign.com/services/seismic-retrofitting/",
+      "issue": "Sitemap entry redirects"
+    }
+  ],
+  "loops": []
+}
