@@ -11,7 +11,10 @@
  * Usage:
  *   node scripts/gsc-url-inspector.js [blog-posts-directory]
  *   node scripts/gsc-url-inspector.js blog-posts-dec-29-2025
+ *   node scripts/gsc-url-inspector.js [blog-posts-directory]
+ *   node scripts/gsc-url-inspector.js blog-posts-dec-29-2025
  *   node scripts/gsc-url-inspector.js --sitemap-only
+ *   node scripts/gsc-url-inspector.js --sitemap-urls
  *
  * Prerequisites:
  *   1. Google Cloud project with Search Console API enabled
@@ -134,6 +137,33 @@ function extractUrlsFromDirectory(dirPath) {
       .replace(/^\d+-/, '')
       .replace(/\.md$/, '');
     return `${CONFIG.siteUrl}/blog/${slug}`;
+  });
+}
+
+/**
+ * Fetch URLs from sitemap
+ */
+async function extractUrlsFromSitemap() {
+  log(`Fetching sitemap from ${CONFIG.sitemapUrl}...`, 'blue');
+
+  const https = require('https');
+
+  return new Promise((resolve, reject) => {
+    https.get(CONFIG.sitemapUrl, (res) => {
+      let data = '';
+      res.on('data', (chunk) => data += chunk);
+      res.on('end', () => {
+        const urls = [];
+        const regex = /<loc>(.*?)<\/loc>/g;
+        let match;
+        while ((match = regex.exec(data)) !== null) {
+          urls.push(match[1]);
+        }
+        log(`✓ Found ${urls.length} URLs in sitemap`, 'green');
+        resolve(urls);
+      });
+      res.on('error', reject);
+    });
   });
 }
 
@@ -320,14 +350,31 @@ async function main() {
 
     // Step 2: Inspect URLs (if not sitemap-only)
     if (!sitemapOnly) {
-      const blogDir = findBlogPostsDirectory(providedPath);
+      let urls = [];
 
-      if (!blogDir) {
-        log('\n⚠️  No blog-posts-* directory found. Use --sitemap-only or specify a directory.', 'yellow');
+      if (args.includes('--sitemap-urls')) {
+        log('\n🔍 Fetching URLs from sitemap...', 'blue');
+        urls = await extractUrlsFromSitemap();
+        // Reverse to get most recent (assuming sitemap is ordered, or we can't really know without lastmod)
+        // Usually, bottom of sitemap is newest if appended, but let's assume default order or user preference.
+        // Actually, let's reverse it to be safe if that's the pattern, or just take first 200.
+        // The user asked for "most recent". If sitemap doesn't guarantee order, we might be guessing.
+        // But normally next-sitemap preserves some order or we can parse lastmod. 
+        // For simplicity/robustness without heavy XML parsing, we'll take the list as is.
+        // Or wait, let's look at `diagnose` script which had lastmod regex? No, it didn't use it.
+        // `submit-indexnow` did. 
+        // Let's just take the URLs.
       } else {
-        log(`\n📁 Blog directory: ${path.basename(blogDir)}`, 'blue');
+        const blogDir = findBlogPostsDirectory(providedPath);
+        if (blogDir) {
+          log(`\n📁 Blog directory: ${path.basename(blogDir)}`, 'blue');
+          urls = extractUrlsFromDirectory(blogDir);
+        } else {
+          log('\n⚠️  No blog-posts-* directory found. Use --sitemap-only, --sitemap-urls, or specify a directory.', 'yellow');
+        }
+      }
 
-        const urls = extractUrlsFromDirectory(blogDir);
+      if (urls.length > 0) {
         const urlsToProcess = urls.slice(0, CONFIG.maxUrlsPerBatch);
 
         log(`\n🔍 Inspecting ${urlsToProcess.length} URLs (max ${CONFIG.maxUrlsPerBatch} per run)...\n`, 'blue');

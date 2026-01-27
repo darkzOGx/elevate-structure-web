@@ -233,8 +233,8 @@ export function Footer() {
                 <Link href="/terms" className="hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="/sitemap.xml" className="hover:text-primary transition-colors">
-                  Sitemap
+                <Link href="/sitemap" className="hover:text-primary transition-colors">
+                  Site Index
                 </Link>
               </div>
             </div>
