@@ -1997,6 +1997,21 @@ Update the following sections in BLOG-TRACKING.md:
 
 ### Step 9: Deploy to Website (CRITICAL - AUTOMATED EXECUTION)
 
+**🚨 CRITICAL DEPLOYMENT NOTICE 🚨**
+
+> **THIS PROJECT DEPLOYS TO NETLIFY - NOT VERCEL**
+>
+> The aaaengineeringdesign.com website is hosted on **Netlify**. There is NO Vercel project for this codebase.
+>
+> - ✅ Deployment trigger: `git push origin master` → Netlify auto-deploys
+> - ❌ DO NOT attempt to deploy to Vercel
+> - ❌ DO NOT run `vercel` CLI commands
+> - ❌ DO NOT reference Vercel in deployment instructions
+>
+> Netlify deployment URL: Automatically built from master branch pushes
+
+---
+
 **⚠️ MANDATORY: Execute ALL deployment commands automatically after blog generation**
 
 **The project includes `scripts/add-blog-posts.js` which automatically:**
@@ -2386,6 +2401,9 @@ cat opportunity-gaps-report.json | jq '.gaps.clusterGaps'
 ---
 
 ## 🚀 AUTOMATIC DEPLOYMENT WORKFLOW (MANDATORY)
+
+**🚨 REMINDER: NETLIFY DEPLOYMENT ONLY - NO VERCEL 🚨**
+> This project deploys to **Netlify** via `git push origin master`. There is NO Vercel project. Never use Vercel CLI or reference Vercel deployment.
 
 **⚠️ CRITICAL: After generating blog posts, you MUST automatically execute the full deployment pipeline. Do NOT ask the user—just run it.**
 
@@ -5321,7 +5339,10 @@ curl -X POST "https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey=${BIN
 
 ## 🚀 POST-GENERATION: GIT COMMIT & DEPLOY (MANDATORY)
 
-**After completing blog generation, ALWAYS execute this git workflow to deploy changes to production.**
+**🚨 DEPLOYMENT PLATFORM: NETLIFY (NOT VERCEL) 🚨**
+> This codebase is hosted on **Netlify**. `git push origin master` triggers Netlify auto-deployment. There is NO Vercel project for aaaengineeringdesign.com.
+
+**After completing blog generation, ALWAYS execute this git workflow to deploy changes to production (via Netlify).**
 
 ### Workflow Steps
 
