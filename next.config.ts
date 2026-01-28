@@ -1,6 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Reduce memory usage during static generation (1222+ pages)
+  experimental: {
+    // Disable worker threads to reduce memory footprint
+    workerThreads: false,
+    // Process pages in smaller batches
+    cpus: 1,
+  },
+
   // Optimize images for Core Web Vitals (LCP)
   images: {
     unoptimized: false, // Enable Next.js image optimization
