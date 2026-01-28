@@ -8,7 +8,8 @@
 [build.environment]
   NETLIFY_USE_YARN = "false"
   NETLIFY_NEXT_PLUGIN_SKIP = "false"
-  NODE_OPTIONS = "--max_old_space_size=4096"
+  # Increased memory for 1200+ static pages (Netlify build machines have 8GB)
+  NODE_OPTIONS = "--max_old_space_size=7168"
 
 # Ensure robots.txt and sitemap.xml are accessible (critical for SEO)
 [[headers]]
