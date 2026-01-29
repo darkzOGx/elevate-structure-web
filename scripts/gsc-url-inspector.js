@@ -39,8 +39,8 @@ const CONFIG = {
   sitemapUrl: 'https://aaaengineeringdesign.com/sitemap.xml',
 
   // Rate limiting
-  requestDelayMs: 1000, // 1 second between requests to stay within quota
-  maxUrlsPerBatch: 200, // Process up to 200 URLs per run
+  requestDelayMs: 200, // 200ms between requests (approx 5/sec, well within 600/min limit)
+  maxUrlsPerBatch: 50, // Process up to 50 URLs per run
 
   // Output
   outputPath: path.join(__dirname, '..', 'gsc-inspection-results.json'),

@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { GENERATED_REDIRECTS } from "./src/lib/generated-redirects";
 
 const nextConfig: NextConfig = {
   // Reduce memory usage during static generation (1222+ pages)
@@ -46,6 +47,7 @@ const nextConfig: NextConfig = {
   // Redirect optimization
   async redirects() {
     return [
+      ...GENERATED_REDIRECTS,
       // Old website redirects
       {
         source: '/index.html',
