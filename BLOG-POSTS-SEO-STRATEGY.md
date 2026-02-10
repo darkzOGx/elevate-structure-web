@@ -148,12 +148,13 @@
 
 ---
 
-## Blog Post 2: Ultimate Guide to Structural Engineering Design
+## Blog Post 2: ✅ COMPLETED
 **Title:** The Ultimate Guide to Structural Engineering Design in California
 **URL:** /blog/ultimate-guide-structural-engineering-design-california
-**Target Date:** 2025-01-16
-**Target Word Count:** 7,500+ words
-**Target Read Time:** 16 min
+**Status:** Live (added to blog-data.ts)
+**Word Count:** 7,500+ words
+**Read Time:** 16 min
+**Date:** 2025-01-16
 
 **Primary Keywords:**
 - the ultimate guide to structural engineering design (main - 15,000 vol)
@@ -321,12 +322,13 @@
 
 ---
 
-## Blog Post 3: Sustainable Design Engineering
+## Blog Post 3: ✅ COMPLETED
 **Title:** Sustainable Design Engineering in Orange County: Green Building Practices for 2025
 **URL:** /blog/sustainable-design-engineering-orange-county
-**Target Date:** 2025-01-17
-**Target Word Count:** 6,500+ words
-**Target Read Time:** 14 min
+**Status:** Live (added to blog-data.ts)
+**Word Count:** 6,500+ words
+**Read Time:** 14 min
+**Date:** 2025-01-17
 
 **Primary Keywords:**
 - sustainable design engineering (18,000 vol - main)
@@ -494,12 +496,13 @@
 
 ---
 
-## Blog Post 4: How to Choose an Engineering Design Firm
+## Blog Post 4: ✅ COMPLETED
 **Title:** How to Choose an Engineering Design Firm in Southern California: Complete 2025 Guide
 **URL:** /blog/how-to-choose-engineering-design-firm-socal
-**Target Date:** 2025-01-18
-**Target Word Count:** 5,500+ words
-**Target Read Time:** 12 min
+**Status:** Live (added to blog-data.ts)
+**Word Count:** 5,500+ words
+**Read Time:** 12 min
+**Date:** 2025-01-18
 
 **Primary Keywords:**
 - how to choose an engineering design firm (10,000 vol - main)
@@ -776,12 +779,13 @@
 
 ---
 
-## Blog Post 5: Cluster Article - Structural Engineer Cost Guide
+## Blog Post 5: ✅ COMPLETED
 **Title:** Structural Engineer Cost in Orange County: 2025 Complete Pricing Guide
 **URL:** /blog/structural-engineer-cost-orange-county-2025
-**Target Date:** 2025-01-19
-**Target Word Count:** 4,500+ words
-**Target Read Time:** 10 min
+**Status:** Live (added to blog-data.ts)
+**Word Count:** 4,500+ words
+**Read Time:** 10 min
+**Date:** 2025-01-19
 
 **Primary Keywords:**
 - structural engineer cost (4,000 vol - main)
@@ -1043,12 +1047,12 @@
 
 ## Total Blog Post Statistics
 
-**5 Comprehensive Blog Posts:**
+**5 Comprehensive Pillar Posts: ✅ ALL COMPLETED**
 1. ✅ Engineering Design Principles - 9,000 words (LIVE)
-2. Ultimate Guide to Structural Engineering - 7,500 words (to add)
-3. Sustainable Design Engineering - 6,500 words (to add)
-4. How to Choose Engineering Firm - 5,500 words (to add)
-5. Structural Engineer Cost Guide - 4,500 words (to add)
+2. ✅ Ultimate Guide to Structural Engineering - 7,500 words (LIVE)
+3. ✅ Sustainable Design Engineering - 6,500 words (LIVE)
+4. ✅ How to Choose Engineering Firm - 5,500 words (LIVE)
+5. ✅ Structural Engineer Cost Guide - 4,500 words (LIVE)
 
 **Total Word Count:** 33,000+ words of comprehensive SEO content
 
@@ -1060,8 +1064,143 @@
 
 **Services Featured:** All 3 service pages linked from each post
 
-**Publishing Timeline:** 5 posts over 5 days (or spread over 3-4 weeks for sustained momentum)
+---
+
+## 📊 GSC-DRIVEN CLUSTER STRATEGY (January 2026)
+
+**Data Source:** Google Search Console 30-day analysis (500 queries)
+**Top Performer:** "structural engineer long beach" - Position 1.0, 18.2% CTR, 4 clicks
+
+### 🏆 PROTECT & EXPAND: Long Beach Cluster
+
+Our #1 ranking keyword presents an opportunity to build supporting content:
+
+| Action | Keywords to Target | Expected Impact |
+|--------|-------------------|-----------------|
+| Create 3-5 Long Beach cluster posts | "structural engineer Long Beach", "foundation engineer Long Beach", "ADU engineer Long Beach" | Reinforce #1 position, capture related searches |
+| Update meta descriptions | Position 1-3 keywords with 0% CTR | Improve CTR from 2.5% to 5%+ |
+| Add FAQ schema | Pages ranking for these queries | Featured snippet capture |
+
+### 🎯 QUICK WIN CLUSTER #1: Crawl Space Repair (Position 17-25)
+
+**Combined GSC Impressions:** 130+/month | **Expected Impact:** +50-100 clicks/month
+
+| Keyword | Position | City | Action |
+|---------|----------|------|--------|
+| crawl space repair long beach | 17.4 | Long Beach | Create comprehensive post |
+| crawl space repair contractor long beach | 18.1 | Long Beach | Consolidate into above |
+| crawl space repair company long beach | 18.8 | Long Beach | Consolidate into above |
+| crawl space repair contractor | 20.4 | Generic | Create hub page |
+| crawl space repair near me | 24.5 | Near Me | Create geo-targeted hub |
+
+**Content Strategy:**
+1. **Long Beach Hub Post:** "Crawl Space Structural Engineering in Long Beach: Complete 2026 Guide" (3,500+ words)
+2. **Near Me Hub:** "Crawl Space Repair Near Me in Southern California" (3,000+ words)
+3. **Supporting Posts:** Expand to Anaheim, Huntington Beach, Costa Mesa
+
+### 🎯 QUICK WIN CLUSTER #2: Raised Foundation Repair (Position 15-28)
+
+**Combined GSC Impressions:** 107/month | **Expected Impact:** +30-60 clicks/month
+
+| Keyword | Position | City | Action |
+|---------|----------|------|--------|
+| raised foundation repair anaheim | 15.7 | Anaheim | 🎯 IMMEDIATE - Create post |
+| raised foundation repair fountain valley | 22.0 | Fountain Valley | Create post |
+| raised foundation repair corona del mar | 28.5 | Corona del Mar | Create post |
+| raised foundation repair seal beach | 49.3 | Seal Beach | Queue for later |
+
+**Content Strategy:**
+1. Create individual city-specific posts (3,250+ words each)
+2. Link all to existing Foundation Engineering hub
+3. Include cost data, timelines, local building department info
+
+### 🔥 HIGH VOLUME CLUSTER #3: Foundation Repair (Position 35-50)
+
+**Combined GSC Impressions:** 180+/month | **Expected Impact:** +80-150 clicks/month
+
+| Keyword | Position | Impressions | City |
+|---------|----------|-------------|------|
+| foundation repair oceanside | 35.5 | 38 | Oceanside |
+| foundation repair long beach | 38.0 | 27 | Long Beach |
+| foundation repair anaheim | 38.5 | 24 | Anaheim |
+| foundation repair fountain valley | 40.3 | 20 | Fountain Valley |
+| foundation repair huntington beach | 43.7 | 19 | Huntington Beach |
+| foundation repair tustin | 47.9 | 16 | Tustin |
+| foundation repair la mesa | 48.3 | 11 | La Mesa |
+
+**Content Strategy:**
+1. Create 8 city-specific foundation repair posts
+2. Create "Foundation Repair Engineering in Southern California" hub page
+3. Target urgent/distressed homeowner keywords (high conversion)
 
 ---
 
-**This comprehensive blog strategy positions AAA Engineering Design as the definitive authority on structural engineering in Southern California, with massive SEO/GEO/AIO optimization for long-term organic dominance!** 🚀
+## 📈 GSC-DRIVEN CONTENT PRIORITIES
+
+### Priority Matrix (Execute in Order)
+
+| Priority | Cluster | Posts Needed | Timeline | ROI Potential |
+|----------|---------|--------------|----------|---------------|
+| 1 | Crawl Space (Position 17-25) | 5 posts | Week 1-2 | HIGH - Quick Win |
+| 2 | Raised Foundation (Position 15-28) | 5 posts | Week 3-4 | HIGH - Quick Win |
+| 3 | Foundation Repair (Position 35-50) | 8 posts | Week 5-8 | MEDIUM - Volume |
+| 4 | Long Beach Cluster (Position 1-3) | 3-5 posts | Ongoing | HIGH - Protect |
+
+### Pillar Post Enrichment (CTR Optimization)
+
+| Post | Current CTR | Target CTR | Actions |
+|------|-------------|------------|---------|
+| Structural Engineering Services Guide | 2.5% | 5%+ | Update meta description, add current year, add schema |
+| Engineering Design Principles | TBD | 5%+ | Add FAQs from GSC "People Also Ask" data |
+| All Pillar Posts | - | - | Add internal links to new cluster content |
+
+---
+
+## 🔄 EXECUTION WORKFLOW
+
+### Weekly GSC Data Refresh
+
+```bash
+cd elevate-structure-web
+GSC_PROPERTY_URL="sc-domain:aaaengineeringdesign.com" MIN_IMPRESSIONS=5 MAX_QUERIES=500 node scripts/gsc-keyword-extractor.js
+```
+
+### After Each Content Batch
+
+1. ✅ Generate blog posts targeting GSC Quick Win keywords
+2. ✅ Update `references/gsc-priority-keywords.md` with status
+3. ✅ Submit new URLs via IndexNow
+4. ✅ Monitor position changes in GSC after 2-4 weeks
+
+---
+
+## Expected SEO Results (Updated January 2026)
+
+### Current Performance (Baseline)
+
+- **Top Keyword:** "structural engineer long beach" - Position 1.0
+- **Quick Win Keywords:** 10 keywords in position 11-30
+- **High Volume Opportunities:** 9 keywords in position 30-60
+- **Total GSC Queries:** 500 tracked keywords
+
+### Month 1 (February 2026):
+- Quick Win clusters published (10 posts)
+- 5-10 keywords move from position 15-30 → position 5-15
+- CTR improvement on top performers via meta updates
+- +30-50 clicks/month expected
+
+### Month 2-3 (March-April 2026):
+- Foundation Repair cluster complete (8 posts)
+- 10-15 keywords ranking position 1-10
+- Featured snippets for FAQ content
+- +100-200 clicks/month expected
+
+### Month 4-6 (May-July 2026):
+- All GSC-driven clusters complete
+- Dominant local authority for foundation/crawl space keywords
+- +200-400 clicks/month from new content
+- Estimated 3-5x ROI on content investment
+
+---
+
+**This GSC-driven strategy transitions from broad pillar content to targeted cluster content based on REAL search demand data, maximizing ROI on content creation!** 📊🚀

@@ -16,7 +16,7 @@ const { google } = require('googleapis');
 // Configuration
 const CONFIG = {
   // GSC API Configuration
-  GSC_PROPERTY_URL: process.env.GSC_PROPERTY_URL || 'https://aaaengineeringdesign.com',
+  GSC_PROPERTY_URL: process.env.GSC_PROPERTY_URL || 'sc-domain:aaaengineeringdesign.com',
   GSC_CREDENTIALS_PATH: process.env.GSC_CREDENTIALS_PATH || './gsc-credentials.json',
 
   // Search Configuration

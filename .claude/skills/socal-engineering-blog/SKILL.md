@@ -1,6 +1,6 @@
 ---
 name: socal-engineering-blog
-description: Generate SEO-optimized, geo-targeted engineering design blog posts for aaaengineeringdesign.com focused on Southern California cities. Use when user requests blog posts about structural engineering, civil engineering, MEP design, or engineering services with California/city-specific optimization. Includes comprehensive keyword strategy, interlinking rules, local SEO optimization, and AI Overview (AIO) optimization.
+description: Generate SEO-optimized, geo-targeted engineering design blog posts for aaaengineeringdesign.com focused on Southern California cities. Use when user requests blog posts about structural engineering, residential engineering, foundation engineering, or commercial structural services with California/city-specific optimization. Includes comprehensive keyword strategy, interlinking rules, local SEO optimization, and AI Overview (AIO) optimization.
 ---
 
 # SoCal Engineering Blog Generator
@@ -91,14 +91,18 @@ FAQ Section (from actual Google PAA):
 | Blog Topic Contains | Topic ID |
 |-----------------------|----------|
 | ADU, accessory dwelling, granny flat, addition | `residential-structural-engineering` |
+| new residential, custom home, one story addition, two story addition | `residential-structural-engineering` |
+| apartment units, multi-family | `residential-structural-engineering` |
 | commercial, tenant improvement, office, retail | `commercial-structural-engineering` |
+| warehouse, parking structure | `commercial-structural-engineering` |
 | seismic, retrofit, earthquake, soft story | `seismic-engineering` |
 | foundation, repair, hillside foundation, underpinning | `foundation-engineering` |
-| MEP, HVAC, electrical, plumbing, Title 24 | `mep-engineering` |
-| civil, grading, drainage, retaining wall | `civil-engineering` |
-| permit, red tag, unpermitted, as-built | `permit-compliance` |
-| coastal, beach, bluff, Coastal Commission | `coastal-engineering` |
+| crawl space, raised foundation, retaining wall | `foundation-engineering` |
+| structural inspection, foundation inspection | `foundation-engineering` |
+| permit, red tag, unpermitted, as-built, permit engineering | `permit-compliance` |
 | hillside, slope, canyon, cantilevered | `hillside-engineering` |
+| deck, balcony, structural analysis | `structural-engineering` |
+| garage conversion | `residential-structural-engineering` |
 | emergency, fire damage, earthquake damage | `emergency-engineering` |
 
 ### Example: 5 Blog Post Batch
@@ -240,11 +244,17 @@ Target architects, contractors, and developers:
 | **plan check support engineer** | Architects with permit issues | Quick turnaround |
 
 ### ⚠️ Keywords to AVOID
-These capture wrong intent (general engineering, not structural):
+These capture wrong intent or are outside our service focus:
 - ❌ "engineering design" (without "structural" qualifier)
 - ❌ "design engineer" (captures product designers)
 - ❌ "engineering consultant" (too broad)
 - ❌ "CAD engineering" (drafting, not PE services)
+- ❌ "MEP engineer" / "mechanical engineer" / "electrical engineer" / "plumbing engineer" (not our service)
+- ❌ "civil engineer" / "site grading" / "drainage engineer" (not our service)
+- ❌ "stormwater engineer" / "septic engineer" / "environmental engineer" (not our service)
+- ❌ "coastal engineer" / "bluff stabilization" (not our service)
+- ❌ "insurance coordination" / "expedited permitting" (not our service)
+- ❌ "ADA compliance" (not our service)
 
 ---
 
@@ -329,10 +339,14 @@ For each location page, MUST include:
 
 | Topic Category | Keywords to Target | Content Type |
 |---------------|-------------------|--------------|
-| Hillside Engineering | hillside structural engineer, slope construction, retaining wall design | Technical expertise |
+| New Residential Engineering | new residential structural engineer, custom home structural plans | New construction |
+| ADU Engineering | ADU structural engineering, garage conversion, detached ADU, JADU | California hot market |
+| One Story Addition Engineering | one story addition structural engineer, single story addition plans | Popular renovation |
+| Two Story Addition Engineering | two story addition structural engineer, second story addition plans | Popular renovation |
+| Apartment Units Engineering | apartment building structural engineer, multi-family structural design | Multi-family |
 | Open Floor Plans | load bearing wall removal, open concept conversion, structural modification | Popular renovation |
+| Hillside Engineering | hillside structural engineer, slope construction, retaining wall design | Technical expertise |
 | Luxury Custom Homes | custom home structural engineer, architect collaboration, estate engineering | High-value |
-| ADU Design | ADU structural engineering, garage conversion, detached ADU | California hot market |
 
 **CTA Focus**: "Free design consultation - bring your plans"
 
@@ -348,6 +362,95 @@ For each location page, MUST include:
 - Regional geological considerations
 
 **CTA Focus**: "Serving [City] for 20+ years - local expertise matters"
+
+---
+
+## 🎯 KEYWORD-TARGETED SPECIALTY SERVICES
+
+**These are the primary service keywords to target in blog content. Every blog batch should draw from these services.**
+
+### Inspection & Foundation Services
+
+| # | Service | Search Volume / Notes | Content Strategy |
+|---|---------|----------------------|------------------|
+| 1 | **Structural Inspection** | 3,600 monthly searches | City-specific inspection guides |
+| 2 | **Foundation Inspection** | 4,200 monthly searches | Pair with foundation repair content |
+| 3 | **Foundation Repair** | Top GSC keyword cluster | City-specific targeting (Oceanside, Long Beach, Anaheim, etc.) |
+| 4 | **Crawl Space Repair** | Quick-win keyword cluster | Long Beach primary, expand to other cities |
+| 5 | **Raised Foundation Repair** | Geo-targeted (Anaheim, Fountain Valley, etc.) | Quick wins at position 15-28 |
+| 6 | **Retaining Wall Engineering** | Foundation sub-service | Pair with hillside content |
+
+### Permit & Compliance Services
+
+| # | Service | Search Volume / Notes | Content Strategy |
+|---|---------|----------------------|------------------|
+| 7 | **Permit Engineering** | Building permit structural engineer | Pair with red tag and compliance content |
+
+### Residential Construction Services
+
+| # | Service | Search Volume / Notes | Content Strategy |
+|---|---------|----------------------|------------------|
+| 8 | **Garage Conversion Engineering** | Near-me keyword target | ADU-adjacent, California hot market |
+| 9 | **Deck & Balcony Structural Analysis** | Near-me keyword target | Safety/inspection angle |
+| 10 | **New Residential Engineering** | New construction market | Custom homes, tract homes |
+| 11 | **ADU Engineering** | High-volume California market | Garage conversions, detached ADUs, JADUs |
+| 12 | **One Story Addition Engineering** | Popular renovation keyword | Pair with permit content |
+| 13 | **Two Story Addition Engineering** | Popular renovation keyword | Pair with permit content |
+| 14 | **Apartment Units Engineering** | Multi-family market | New construction and renovation |
+
+### Commercial Sub-Services
+
+| # | Service | Search Volume / Notes | Content Strategy |
+|---|---------|----------------------|------------------|
+| 15 | **Warehouse Engineering** | Content gap identified | Commercial cluster content |
+| 16 | **Parking Structure Engineering** | Commercial sub-service | Commercial cluster content |
+
+### ⛔ Services NOT to Target (Removed)
+
+Do NOT generate blog content for these topics:
+- ❌ MEP Engineering (Mechanical, Electrical, Plumbing)
+- ❌ Civil Engineering (site grading, drainage, utilities)
+- ❌ Stormwater Design (BMPs, hydromodification)
+- ❌ Septic System Engineering
+- ❌ Environmental Systems (water management, conservation)
+- ❌ Coastal Engineering (coastal foundations, bluff stabilization)
+- ❌ Insurance Coordination
+- ❌ Expedited Permitting
+- ❌ ADA Compliance
+
+---
+
+## 📊 TWO-TRACK CONTENT STRATEGY
+
+### Track 1: GSC-Driven Optimization (Existing Footprint)
+- **Source**: Google Search Console performance data (queries, pages, impressions, clicks, CTR, position)
+- **Goal**: Maximize ROI from content that already has search visibility
+- **Actions**:
+  - **CTR gaps**: Pages ranking positions 1-5 with CTR < 3% → rewrite titles/meta descriptions
+  - **Striking distance**: Pages at positions 8-20 → strengthen content, add internal links
+  - **Winner replication**: Top-performing pages → create similar content for adjacent cities/keywords
+  - **Cannibalization fix**: Multiple pages competing for same query → consolidate or differentiate
+
+### Track 2: Seed & Saturate (New Services with Zero Data)
+- **Source**: The 16 keyword-targeted specialty services listed above
+- **Goal**: Build search presence for services with no existing content
+- **Rule: SERVICE PAGE FIRST**:
+  1. Before creating blog clusters for any service, verify a `/services/[service-id]` page exists
+  2. If the service page does NOT exist, do not create blog content for that service yet
+  3. Blog posts link UP to their parent service page (commercial-intent hub)
+  4. Service pages are the conversion-intent anchor; blogs are informational satellites
+
+### Dynamic Allocation
+- Default split: 60% Track 1 / 40% Track 2
+- If GSC data reveals many striking-distance opportunities: shift to 80% Track 1 / 20% Track 2
+- If GSC data shows few optimization opportunities: shift to 30% Track 1 / 70% Track 2
+- Track 2 content should target services where the service page already exists
+
+### Removed-Service Blocklist Filter
+When processing GSC data or selecting keywords, automatically exclude queries containing:
+`mep engineer`, `civil engineer`, `stormwater`, `septic`, `coastal bluff`, `coastal foundation`, `coastal engineer`, `ada compliance`, `insurance coordination`, `expedited permit`, `drainage engineer`, `grading plan`
+
+These represent services no longer offered. Any impressions/clicks from these queries should be ignored in performance analysis and not used to generate new content.
 
 ---
 
@@ -628,7 +731,7 @@ This rule applies to:
 
 Use this skill when the user requests:
 - Blog posts for aaaengineeringdesign.com
-- Engineering-related content (structural, civil, MEP, residential, commercial)
+- Engineering-related content (structural, residential, foundation, commercial)
 - Geo-targeted content for California cities (especially Orange County, LA, San Diego)
 - 5 daily blog posts targeting different SoCal cities
 - Content with keyword optimization and interlinking strategy
@@ -676,7 +779,7 @@ When user requests N blog posts, **ALWAYS generate N + 5 total posts:**
 **"Near Me" posts target high-intent local searches:**
 - Format: `[keyword] near me in [city]`
 - Example: "Residential Structural Engineer Near Me in Newport Beach"
-- Rotates through topics: residential engineer, structural engineer, foundation engineer, ADU engineer, seismic retrofit engineer, MEP engineer, civil engineer, etc.
+- Rotates through topics: residential engineer, structural engineer, foundation engineer, ADU engineer, seismic retrofit engineer, foundation repair engineer, garage conversion engineer, permit engineer, etc.
 
 ### 🚀 SMART MODE: Data-Driven Auto-Generation (DEFAULT)
 
@@ -1105,7 +1208,7 @@ Since **Hub 5 (Commercial & Industrial)** has **0 posts** (lowest of all hubs), 
 
 **Next priority after Hub 5 reaches 25 posts:**
 - **Hub 6 (Foundation Engineering)** - 0 posts (foundation types, repair methods, expansive soils, etc.)
-- **Hub 3 (Specialized Services)** - 17 posts (MEP, stormwater, septic, grading topics)
+- **Hub 3 (Specialized Services)** - 17 posts (inspection, permit engineering, deck/balcony, garage conversion topics)
 
 **Important: This Rule Applies to Future Hubs Too!**
 
@@ -1192,13 +1295,13 @@ Refer to `.claude/skills/socal-engineering-blog/CLUSTER-MAPPING.md` for the comp
    - ID: `engineering-design-services-guide`
    - Target keyword: "engineering design services"
    - Current clusters: 32 posts ✅ WELL-PACKED
-   - Topics: Design types, costs, professional services, sustainable design
+   - Topics: Structural design, custom house design, commercial building design, professional services
 
 3. **Specialized Engineering Services Guide** ✅ LIVE
    - ID: `specialized-engineering-services-guide`
    - Target keyword: "specialized engineering services california"
    - Current clusters: 17 posts ❌ UNDERPACKED (PRIORITY - needs 8+ more)
-   - Topics: MEP, stormwater, septic, grading, civil site engineering
+   - Topics: Structural inspection, foundation inspection, permit engineering, deck & balcony analysis, garage conversion, retaining wall engineering
 
 4. **Residential Structural Engineering Guide** ✅ LIVE
    - ID: `residential-structural-engineering-guide`
@@ -1236,7 +1339,7 @@ Refer to `.claude/skills/socal-engineering-blog/CLUSTER-MAPPING.md` for the comp
 |----------------------------|---------------|---------|
 | "structural engineer", "seismic", "foundation", "ADU", "home addition" | Structural Engineering | `structural-engineering-services-guide` |
 | "engineering design", "design services", "sustainable design", "custom design" | Engineering Design | `engineering-design-services-guide` (planned) |
-| "MEP", "mechanical engineering", "stormwater", "septic", "grading" | Specialized Services | `specialized-engineering-services-guide` (planned) |
+| "structural inspection", "foundation inspection", "permit engineering", "deck", "balcony", "garage conversion", "retaining wall" | Specialized Services | `specialized-engineering-services-guide` (planned) |
 | "Title 24", "building code", "license", "compliance" | Building Compliance | `building-codes-compliance-guide` (planned) |
 | "commercial building", "tenant improvement", "commercial engineering" | Commercial Services | `commercial-engineering-services-guide` (planned) |
 
@@ -2539,8 +2642,10 @@ The following sections implement 2026 industry standards for maximum search visi
   ],
   "knowsAbout": [
     "Structural Engineering",
-    "Civil Engineering",
+    "Residential Structural Engineering",
+    "Foundation Engineering",
     "Seismic Retrofitting",
+    "ADU Engineering",
     "Construction Permits",
     "Building Design"
   ],
@@ -3012,19 +3117,29 @@ AAA Engineering Design is a licensed structural engineering firm serving Souther
 - Seismic Retrofitting (Soft-Story, Cripple Wall, Foundation Bolting)
 - ADU Structural Engineering (Garage Conversions, Detached Units, JADUs)
 - Foundation Design and Repair (Hillside, Standard, Post-Tension)
+- Foundation & Structural Inspection
+- Crawl Space & Raised Foundation Repair
+- New Residential Engineering (Custom Homes, Tract Homes)
+- One Story & Two Story Addition Engineering
+- Apartment Units Engineering (Multi-Family Structural Design)
 - Commercial Structural Engineering (Tenant Improvements, New Construction)
+- Warehouse & Parking Structure Engineering
 - Load-Bearing Wall Removal Engineering
+- Deck & Balcony Structural Analysis
+- Retaining Wall Engineering
+- Hillside Engineering (Hillside Foundations, Slope Stability)
+- Permit Engineering (Building Permit Support, Red Tag Resolution)
+- 24-Hour Emergency Response (Same-Day Emergency Assessment)
 - Shear Wall Design and Analysis
 - Moment Frame Engineering
 - Title 24 Energy Compliance
-- Construction Permit Support
 
 ## Service Areas
 Primary: Irvine, Newport Beach, Laguna Beach, Costa Mesa, Huntington Beach, Anaheim, Santa Ana, Orange, Fullerton, Tustin
 Extended: Los Angeles, San Diego, Riverside, San Bernardino, Long Beach, Pasadena, Glendale
 
 ## Expertise Keywords
-structural engineer, seismic retrofit, ADU engineering, foundation repair, soft story retrofit, load bearing wall removal, shear wall design, California Building Code, ASCE 7, Title 24
+structural engineer, seismic retrofit, ADU engineering, foundation repair, foundation inspection, structural inspection, crawl space repair, raised foundation repair, soft story retrofit, load bearing wall removal, new residential engineering, one story addition, two story addition, apartment units engineering, garage conversion, deck balcony structural analysis, warehouse engineering, parking structure engineering, retaining wall engineering, hillside engineering, permit engineering, shear wall design, California Building Code, ASCE 7, Title 24
 
 ## Contact
 Website: https://aaaengineeringdesign.com
@@ -5402,4 +5517,45 @@ git push origin main
 - **ALWAYS** commit and push after generating blog posts
 - **NEVER** leave uncommitted blog files in the working directory
 - If build fails after push, fix errors and push again immediately
+
+---
+
+## MANDATORY: Post-Generation SEO Submission (REQUIRED)
+
+**After git commit and push, you MUST execute these SEO submission steps:**
+
+### Step 1: Submit URLs to IndexNow
+
+```bash
+# Navigate to root Projects folder and run IndexNow submission
+cd C:/Users/bigbi/Projects
+python seo_submit.py indexnow --site aaaengineeringdesign.com
+```
+
+### Step 2: Submit Sitemap to GSC + Bing
+
+```bash
+# Submit sitemap to Google Search Console and Bing
+cd C:/Users/bigbi/Projects
+python seo_submit.py sitemap --site aaaengineeringdesign.com
+```
+
+### Step 3: Submit Recent URLs for GSC Indexing
+
+```bash
+# Submit most recent 200 URLs for indexing on Google Search Console
+cd C:/Users/bigbi/Projects
+python gsc_index_urls.py --site aaaengineeringdesign.com --limit 200
+```
+
+### Final Submission Checklist
+
+- [ ] All blog files committed to git
+- [ ] Changes pushed to origin/main
+- [ ] IndexNow submission completed
+- [ ] Sitemap submitted to GSC + Bing
+- [ ] Recent 200 URLs submitted for GSC indexing
+- [ ] Build/deployment successful (Vercel/Netlify auto-deploys from main)
+
+### ⚠️ CRITICAL: The skill is NOT complete until ALL SEO submission steps are executed successfully.
 

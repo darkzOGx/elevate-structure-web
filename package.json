@@ -7,13 +7,23 @@
     "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
     "indexnow": "node scripts/submit-indexnow.js",
     "indexnow:recent": "set INDEXNOW_RECENT_DAYS=7 && node scripts/submit-indexnow.js",
     "indexnow:new": "node scripts/submit-new-blogs-to-indexnow.js",
     "gsc-extract": "node scripts/gsc-keyword-extractor.js",
     "gsc-inspect": "node scripts/gsc-url-inspector.js",
     "gsc-sitemap": "node scripts/gsc-url-inspector.js --sitemap-only",
-    "deploy:blogs": "node scripts/deploy-blogs.js"
+    "deploy:blogs": "node scripts/deploy-blogs.js",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{ts,tsx}": [
+      "bash -c 'tsc --noEmit'"
+    ]
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
@@ -47,6 +57,8 @@
     "zod": "^4.1.11"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
     "@eslint/eslintrc": "^3",
     "@netlify/plugin-nextjs": "^5.15.3",
     "@tailwindcss/postcss": "^4",

@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { GENERATED_REDIRECTS } from "./src/lib/generated-redirects";
+import { SERVICE_REMOVAL_REDIRECTS } from "./src/lib/service-removal-redirects";
 
 const nextConfig: NextConfig = {
   // Reduce memory usage during static generation (1222+ pages)
@@ -48,6 +49,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...GENERATED_REDIRECTS,
+      ...SERVICE_REMOVAL_REDIRECTS,
       // Old website redirects
       {
         source: '/index.html',
@@ -183,13 +185,13 @@ const nextConfig: NextConfig = {
       },
       // Old service URL redirects
       {
-        source: '/services/adu-engineering',
-        destination: '/services/adu-design-engineering',
+        source: '/services/adu-design-engineering',
+        destination: '/services/adu-engineering',
         permanent: true,
       },
       {
-        source: '/services/adu-engineering/',
-        destination: '/services/adu-design-engineering',
+        source: '/services/adu-design-engineering/',
+        destination: '/services/adu-engineering',
         permanent: true,
       },
       // Location page redirects (old short URLs → new SEO-friendly URLs)

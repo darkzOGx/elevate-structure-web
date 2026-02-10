@@ -44,89 +44,77 @@ Use these keywords in rotation for the 5 automatic "near me" posts:
    - Lead Gen Score: 85
    - Format: "Commercial Structural Engineer Near Me in [City]"
 
-7. **mep engineer near me**
-   - Building systems engineering
-   - Monthly searches: ~1,600
-   - Lead Gen Score: 75
-   - Format: "MEP Engineer Near Me in [City]"
-
-8. **civil engineer near me**
-   - Site development, infrastructure
-   - Monthly searches: ~5,800
-   - Lead Gen Score: 78
-   - Format: "Civil Engineer Near Me in [City]"
-
-9. **home addition structural engineer near me**
+7. **home addition structural engineer near me**
    - Remodeling projects
    - Monthly searches: ~900
    - Lead Gen Score: 88
    - Format: "Home Addition Structural Engineer Near Me in [City]"
 
-10. **foundation repair engineer near me**
-    - Immediate need
-    - Monthly searches: ~2,400
-    - Lead Gen Score: 92 (URGENT NEED)
-    - Format: "Foundation Repair Engineer Near Me in [City]"
+8. **foundation repair engineer near me**
+   - Immediate need
+   - Monthly searches: ~2,400
+   - Lead Gen Score: 92 (URGENT NEED)
+   - Format: "Foundation Repair Engineer Near Me in [City]"
 
-### Tier 2 - High Commercial Intent Keywords (NEW)
+### Tier 2 - High Commercial Intent Keywords
 
-11. **licensed structural engineer near me**
-    - Trust signal + local intent
-    - Monthly searches: ~2,100
-    - Lead Gen Score: 90
-    - Format: "Licensed Structural Engineer Near Me in [City]"
+9. **licensed structural engineer near me**
+   - Trust signal + local intent
+   - Monthly searches: ~2,100
+   - Lead Gen Score: 90
+   - Format: "Licensed Structural Engineer Near Me in [City]"
 
-12. **structural engineering quote near me**
+10. **structural engineering quote near me**
     - Bottom-of-funnel, ready to buy
     - Monthly searches: ~1,200
     - Lead Gen Score: 95 (HIGHEST INTENT)
     - Format: "Structural Engineering Quote Near Me in [City]"
 
-13. **structural inspection near me**
+11. **structural inspection near me**
     - Entry point service, leads to engineering work
     - Monthly searches: ~3,600
     - Lead Gen Score: 82
     - Format: "Structural Inspection Near Me in [City]"
 
-14. **foundation inspection near me**
+12. **foundation inspection near me**
     - Problem-aware, needs assessment
     - Monthly searches: ~4,200
     - Lead Gen Score: 85
     - Format: "Foundation Inspection Near Me in [City]"
 
-15. **affordable structural engineer near me**
+13. **affordable structural engineer near me**
     - Price-conscious but ready to hire
     - Monthly searches: ~1,400
     - Lead Gen Score: 88
     - Format: "Affordable Structural Engineer Near Me in [City]"
 
-### Tier 3 - Service-Specific High Intent (NEW)
+### Tier 3 - Service-Specific High Intent
 
-16. **garage conversion engineer near me**
+14. **garage conversion engineer near me**
     - ADU-adjacent, hot market
     - Monthly searches: ~800
     - Lead Gen Score: 90
     - Format: "Garage Conversion Engineer Near Me in [City]"
 
-17. **load bearing wall engineer near me**
+15. **load bearing wall engineer near me**
     - Specific need, urgent project
     - Monthly searches: ~1,100
     - Lead Gen Score: 92
     - Format: "Load Bearing Wall Engineer Near Me in [City]"
 
-18. **deck structural engineer near me**
+16. **deck structural engineer near me**
     - Outdoor living trend
     - Monthly searches: ~600
     - Lead Gen Score: 85
     - Format: "Deck Structural Engineer Near Me in [City]"
 
-19. **permit engineer near me**
+17. **permit engineer near me**
     - Project stage - has plans, needs PE stamp
     - Monthly searches: ~1,100
     - Lead Gen Score: 93
     - Format: "Permit Engineer Near Me in [City]"
 
-20. **building permit structural engineer near me**
+18. **building permit structural engineer near me**
     - Very specific need
     - Monthly searches: ~600
     - Lead Gen Score: 94
@@ -195,6 +183,39 @@ Use these keywords in rotation for the 5 automatic "near me" posts:
     - Monthly searches: ~1,800
     - Lead Gen Score: 85
     - Format: "Retaining Wall Engineer Near Me in [City]"
+
+### Tier 6 - GSC-Validated High Performers (NEW - January 2026)
+
+31. **crawl space repair near me**
+    - GSC Position: 24.5 (QUICK WIN - close to page 1!)
+    - GSC Impressions: 27/month
+    - Lead Gen Score: 94 (URGENT NEED)
+    - Format: "Crawl Space Repair Near Me in [City]"
+    - Note: Strong demand in Long Beach area
+
+32. **crawl space repair contractor near me**
+    - GSC Position: 18-20 range
+    - GSC Impressions: 15+/month
+    - Lead Gen Score: 92
+    - Format: "Crawl Space Repair Contractor Near Me in [City]"
+    - Note: Capture contractor-seeking traffic, convert to engineer
+
+33. **raised foundation repair near me**
+    - GSC Position: 15-28 range (multiple cities)
+    - GSC Impressions: 107 combined/month
+    - Lead Gen Score: 93 (URGENT NEED)
+    - Format: "Raised Foundation Repair Near Me in [City]"
+    - Target Cities: Corona del Mar, Anaheim, Fountain Valley, Seal Beach
+
+34. **foundation crack repair near me**
+    - Related to GSC foundation repair cluster
+    - Lead Gen Score: 91
+    - Format: "Foundation Crack Repair Near Me in [City]"
+
+35. **structural engineer for foundation near me**
+    - Combines two high-intent signals
+    - Lead Gen Score: 90
+    - Format: "Structural Engineer for Foundation Near Me in [City]"
 
 ## Rotation Rules
 

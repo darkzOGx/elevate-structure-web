@@ -202,6 +202,114 @@ When selecting keywords for a batch:
 
 ---
 
+## 🔧 ARCHETYPE 4: FOUNDATION REPAIR (Score 85-95)
+
+**GSC-Validated:** January 2026 | **Combined Impressions:** 180+/month
+
+**Target Cities:** Oceanside, Long Beach, Anaheim, Fountain Valley, Huntington Beach, Tustin, Laguna Beach, La Mesa, Corona del Mar, Seal Beach, Buena Park
+
+**Buyer Psychology:** Homeowners with existing foundation problems. HIGH urgency, distressed situation. Willing to pay premium for fast resolution. Often comparing structural engineers vs foundation repair contractors.
+
+### Primary Keywords (GSC Data)
+
+| Keyword | GSC Impressions | GSC Position | Score | Priority |
+|---------|-----------------|--------------|-------|----------|
+| foundation repair oceanside | 38 | 35.5 | 95 | 🎯 CRITICAL |
+| foundation repair long beach | 27 | 38.0 | 94 | 🎯 CRITICAL |
+| foundation repair anaheim | 24 | 38.5 | 93 | 🎯 CRITICAL |
+| foundation repair fountain valley | 20 | 40.3 | 90 | 🎯 |
+| foundation repair huntington beach | 19 | 43.7 | 89 | HIGH |
+| foundation repair tustin | 16 | 47.9 | 87 | HIGH |
+| foundation repair laguna beach | 14 | 88.6 | 85 | HIGH |
+| foundation repair la mesa | 11 | 48.3 | 85 | MEDIUM |
+
+### Raised Foundation Repair Keywords (GSC Quick Wins)
+
+| Keyword | GSC Impressions | GSC Position | Score | Priority |
+|---------|-----------------|--------------|-------|----------|
+| raised foundation repair corona del mar | 28 | 28.5 | 95 | 🎯 CRITICAL |
+| raised foundation repair anaheim | 22 | **15.7** | 96 | 🎯 QUICK WIN |
+| raised foundation repair fountain valley | 22 | **22.0** | 95 | 🎯 QUICK WIN |
+| raised foundation repair seal beach | 24 | 49.3 | 90 | HIGH |
+| raised foundation repair buena park | 11 | 59.5 | 85 | MEDIUM |
+
+### Content Themes for Foundation Repair Archetype:
+- "Foundation Repair Engineering in [City]: When to Hire a Structural Engineer"
+- "Raised Foundation Repair in [City]: Complete 2026 Guide"
+- "Foundation Crack Assessment: [City] Structural Engineer Guide"
+- "Foundation Settlement in [City]: Structural Engineering Solutions"
+- "Do I Need a Structural Engineer for Foundation Repair in [City]?"
+
+---
+
+## 🔧 ARCHETYPE 5: CRAWL SPACE REPAIR (Score 88-96)
+
+**GSC-Validated:** January 2026 | **Combined Impressions:** 130+/month
+
+**Target Cities:** Long Beach (PRIMARY), + expand to Anaheim, Huntington Beach, Costa Mesa, Santa Ana
+
+**Buyer Psychology:** Homeowners with crawl space issues (moisture, structural, pest damage). Often confused about whether they need a contractor or engineer. Educational content converts well.
+
+### Primary Keywords (GSC Data)
+
+| Keyword | GSC Impressions | GSC Position | Score | Priority |
+|---------|-----------------|--------------|-------|----------|
+| crawl space repair | 35 | 39.5 | 92 | 🎯 CRITICAL |
+| crawl space repair near me | 27 | **24.5** | 96 | 🎯 QUICK WIN |
+| crawl space repair long beach | 15 | **17.4** | 95 | 🎯 QUICK WIN |
+| crawl space repair contractor long beach | 15 | **18.1** | 94 | 🎯 QUICK WIN |
+| crawl space repair company long beach | 16 | **18.8** | 94 | 🎯 QUICK WIN |
+| crawl space repair contractor | 15 | 20.4 | 90 | HIGH |
+| crawl space repair company | 12 | 29.1 | 88 | HIGH |
+
+### Content Themes for Crawl Space Archetype:
+- "Crawl Space Structural Problems in [City]: When to Call an Engineer"
+- "Crawl Space Repair in Long Beach: Contractor vs Structural Engineer"
+- "Crawl Space Foundation Issues: [City] Engineering Guide"
+- "Raised Foundation Crawl Space Repair in [City]"
+- "Crawl Space Structural Inspection in [City]: What to Expect"
+
+---
+
+## 📊 GSC-DRIVEN PRIORITY MATRIX
+
+**Updated:** January 2026
+
+### 🎯 QUICK WINS (Position 11-25, High Impressions)
+Generate these FIRST - closest to page 1:
+
+| Keyword | Position | Action |
+|---------|----------|--------|
+| raised foundation repair anaheim | 15.7 | Create targeted post |
+| crawl space repair long beach | 17.4 | Create targeted post |
+| crawl space repair contractor long beach | 18.1 | Consolidate with above |
+| crawl space repair company long beach | 18.8 | Consolidate with above |
+| crawl space repair contractor | 20.4 | Create generic + city posts |
+| raised foundation repair fountain valley | 22.0 | Create targeted post |
+| crawl space repair near me | 24.5 | Create hub page |
+
+### 🔥 HIGH VOLUME OPPORTUNITIES (Position 30-50, 20+ Impressions)
+Generate after Quick Wins:
+
+| Keyword | Position | Impressions |
+|---------|----------|-------------|
+| foundation repair oceanside | 35.5 | 38 |
+| foundation repair long beach | 38.0 | 27 |
+| foundation repair anaheim | 38.5 | 24 |
+| crawl space repair | 39.5 | 35 |
+| foundation repair fountain valley | 40.3 | 20 |
+
+### ⚡ PROTECT & EXPAND (Position 1-10)
+These are working - create supporting content:
+
+| Keyword | Position | Strategy |
+|---------|----------|----------|
+| structural engineer long beach | 1.0 | Create cluster content around Long Beach |
+| structural engineer | 2.5 | Improve CTR with better meta descriptions |
+| engineering contractors near me | 1.0 | Create city-specific variations |
+
+---
+
 ## 📋 KEYWORD STATUS TRACKING
 
 ### Legend:
@@ -210,5 +318,6 @@ When selecting keywords for a batch:
 - MEDIUM = Standard priority
 - ✅ = Published
 - ⏳ = In queue
+- **QUICK WIN** = Position 11-25, prioritize for fastest ROI
 
 Update this section as keywords are published to track coverage.
