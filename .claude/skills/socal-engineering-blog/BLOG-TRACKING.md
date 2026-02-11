@@ -1,6 +1,6 @@
 # Blog Post Tracking - Keywords & Cities Used
 
-## Last Updated: January 30, 2026
+## Last Updated: February 11, 2026
 
 ---
 
@@ -839,8 +839,23 @@
 | Deck Structural Engineer Near Me | Coronado | ✅ Published | Jan 30, 2026 | Cycle 6 |
 | Permit Engineer Near Me | San Clemente | ✅ Published | Jan 30, 2026 | Cycle 6 |
 | Building Permit Structural Engineer Near Me | Hermosa Beach | ✅ Published | Jan 30, 2026 | Cycle 6 |
+| Commercial Building Structural Engineering | El Cajon | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Office Space Structural Engineering | Redondo Beach | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Warehouse Structural Design | Hemet | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Commercial Renovation Engineering | Solana Beach | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Industrial Building Structural Engineering | Eastvale | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Foundation Repair Engineering | Carlsbad | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Residential Foundation Design | Chula Vista | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Hillside Foundation Engineering | Poway | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Expansive Soil Foundation Engineering | Temecula | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Foundation Assessment Engineering | Escondido | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Emergency Structural Engineer Near Me | Del Mar | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Same Day Structural Engineer Near Me | Laguna Beach | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| 24 Hour Structural Engineer Near Me | Manhattan Beach | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Foundation Crack Engineer Near Me | Oceanside | ✅ Published | Feb 11, 2026 | Cycle 6 |
+| Earthquake Damage Engineer Near Me | Glendale | ✅ Published | Feb 11, 2026 | Cycle 6 |
 
-**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts. **Jan 3, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 4, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 5, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 6, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 7, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 4). **Jan 8, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 5). **Jan 11, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 12, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 23, 2026**: Added 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me). **Jan 28, 2026**: Added 14 posts (5 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 29, 2026**: Added 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 30, 2026**: Added 15 posts (10 Commercial & Industrial Hub 5 + 5 Near Me Batch 4). **Total Cycle 6**: 178 posts.
+**NOTE**: Cycle 1 COMPLETED with Nov 20, 2025 batch. Cycle 2 COMPLETED. Cycle 3 COMPLETED Dec 13, 2025. Cycle 4 COMPLETED Dec 22, 2025. Cycle 5 COMPLETED Jan 1, 2026 (120 posts). **Cycle 6 STARTED Jan 1, 2026** with 15 posts. **Jan 3, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 4, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 5, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 6, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 7, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 4). **Jan 8, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 5). **Jan 11, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 6). **Jan 12, 2026**: Added 13 posts (4 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 1). **Jan 23, 2026**: Added 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me). **Jan 28, 2026**: Added 14 posts (5 Commercial & Industrial Hub 5 + 4 Foundation Engineering Hub 6 + 5 Near Me Batch 2). **Jan 29, 2026**: Added 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me Batch 3). **Jan 30, 2026**: Added 15 posts (10 Commercial & Industrial Hub 5 + 5 Near Me Batch 4). **Feb 11, 2026**: Added 15 posts (5 Commercial & Industrial Hub 5 + 5 Foundation Engineering Hub 6 + 5 Near Me Batch 5). **Total Cycle 6**: 193 posts.
 
 ### Regional Posts (No Specific City in Title)
 - Understanding Seismic Retrofitting for California Homes
