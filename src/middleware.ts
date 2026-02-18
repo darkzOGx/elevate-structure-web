@@ -9,19 +9,19 @@ export function middleware(request: NextRequest) {
   // 1. Enforce HTTPS (except localhost)
   if (process.env.NODE_ENV === 'production' && request.headers.get('x-forwarded-proto') !== 'https') {
     url.protocol = 'https'
-    return NextResponse.redirect(url)
+    return NextResponse.redirect(url, 308)
   }
 
   // 2. Enforce non-www (aaaengineeringdesign.com)
   if (hostname.startsWith('www.')) {
     url.hostname = hostname.replace('www.', '')
-    return NextResponse.redirect(url)
+    return NextResponse.redirect(url, 308)
   }
 
   // 3. Remove trailing slash (except for home /)
   if (pathname !== '/' && pathname.endsWith('/')) {
     url.pathname = pathname.slice(0, -1)
-    return NextResponse.redirect(url)
+    return NextResponse.redirect(url, 308)
   }
 
   // 4. Handle specific double-city slugs (based on user report)
@@ -33,7 +33,7 @@ export function middleware(request: NextRequest) {
     // Becomes: /blog/septic-design-engineers-in-westminster
     const newPath = pathname.replace(doubleCityPattern, '-$1')
     url.pathname = newPath
-    return NextResponse.redirect(url)
+    return NextResponse.redirect(url, 308)
   }
 
   return NextResponse.next()
