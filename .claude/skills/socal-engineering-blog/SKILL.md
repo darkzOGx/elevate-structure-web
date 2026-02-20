@@ -135,6 +135,245 @@ Generate high-quality, SEO-optimized blog posts for AAA Engineering Design targe
 
 ---
 
+## 🔀 MODE SELECTION
+
+**DEFAULT: Enrichment Mode (20 refresh + 5 new) runs automatically unless user specifies otherwise.**
+
+If user just says "generate blogs" or "run the skill" → use **Enrichment Mode** with default mix of **20 refreshes + 5 new posts = 25 total**.
+
+Only ask about mode if the user explicitly requests a different workflow:
+
+```
+Available Modes (if user asks):
+
+1. Enrichment Mode (DEFAULT) — 20 refresh + 5 new posts per run
+   Analyze GSC data, triage into ENRICH/CREATE/CONSOLIDATE,
+   refresh existing posts first, then create new content
+
+2. Standard Generation — New posts only (no refreshes)
+   (SERP enrich → High-Conversion Targeting → Scaled production)
+
+3. Consolidation Audit — Detect cannibalization clusters where 2+ pages compete for
+   the same queries, pick winners, recommend merges/redirects (no content generated)
+
+4. CTR Rescue — Focus exclusively on high-impression/zero-CTR pages, rewrite
+   titles/meta/content to maximize click-through (refresh only, no new pages)
+```
+
+- If **Enrichment (DEFAULT)** → skip to the **Enrichment Mode Pipeline** section. Default: 20 refresh + 5 new.
+- If **Standard** → continue to the MANDATORY FRAMEWORK and Smart Mode below (existing flow, zero changes).
+- If **Consolidation Audit** → run GSC analysis, detect cannibalization clusters, present report.
+- If **CTR Rescue** → run GSC analysis for refresh-only queue (all refresh, 0 new).
+
+---
+
+## 🧪 ENRICHMENT MODE PIPELINE
+
+**This section only runs when the user selects "Enrichment Mode" in the Mode Selection prompt above.**
+
+### ⛔ REMOVED SERVICES FILTER (MANDATORY — ALL MODES)
+
+**Before scoring, triaging, or refreshing ANY blog post, ALWAYS exclude posts for removed services.**
+
+Posts for the following removed service categories must NEVER be refreshed, enriched, or created:
+
+| Removed Service | Keyword Patterns to Exclude |
+|-----------------|----------------------------|
+| **MEP Engineering** | mep, mechanical engineering, electrical engineering, plumbing engineering |
+| **Civil Engineering** | civil engineer, civil-site, site development |
+| **Stormwater** | stormwater, storm water, drainage plan |
+| **Grading & Drainage** | grading-and-drainage, site drainage |
+| **Septic** | septic design, septic system |
+| **Coastal Engineering** | coastal bluff, coastal foundation, coastal home, coastal commission |
+| **ADA Compliance** | ada compliance, ada engineering |
+| **Insurance Coordination** | insurance coordination |
+| **Expedited Permitting** | expedited permitting |
+
+**Filter logic (apply at every stage):**
+1. Skip any blog post with `noIndex: true` in `blog-data.ts`
+2. Skip any GSC query matching removed service keyword patterns above
+3. Skip any candidate whose target slug contains a removed service keyword
+4. If a CREATE candidate targets a removed service → **discard it entirely**
+5. If an ENRICH candidate matches a removed service post → **skip, do not refresh**
+
+**Active services only (23 services):** structural-engineering, seismic-retrofitting, residential, commercial, adu-engineering, load-bearing-wall-removal, foundation-engineering, foundation-repair, foundation-inspection, structural-inspection, crawl-space-repair, raised-foundation-repair, one-story-addition-engineering, two-story-addition-engineering, new-residential-engineering, apartment-units-engineering, garage-conversion-engineering, permit-engineering, deck-balcony-structural-analysis, warehouse-engineering, parking-structure-engineering, retaining-wall-engineering, hillside-engineering
+
+---
+
+### Step 1: Pull GSC Performance Data
+
+Execute the GSC performance report to get current query/page data:
+
+```bash
+node scripts/gsc-performance-report.js
+```
+
+This generates `gsc-performance-report.json` with:
+- All queries with impressions, clicks, CTR, position
+- Page-level performance data
+- Keyword opportunities ranked by potential
+
+### Step 2: Identify Refresh vs New Candidates
+
+**Scoring formula for all candidates (new + refresh):**
+
+```
+final_score = (seo_opportunity_score × 0.50) + (ctr_rescue_score × 0.30) + (strategic_fit_score × 0.20)
+```
+
+| Factor | Formula | Purpose |
+|--------|---------|---------|
+| `seo_opportunity_score` | `impressions × (1 - ctr) × position_weight` | Raw search opportunity from GSC |
+| `ctr_rescue_score` | `impressions × multiplier × (1 - ctr)` | Prioritizes high-impression/zero-CTR pages |
+| `strategic_fit_score` | `archetype_match + service_priority + geo_tier` | Business impact and market fit |
+
+**CTR rescue multiplier:**
+- 2.0x if impressions ≥100 AND ctr=0 (urgent rescue)
+- 1.5x if ctr <0.5% (high priority rescue)
+- 1.0x otherwise (standard)
+
+**Position weight lookup:**
+- Position 1-3: 0.5 (already ranking well, low marginal gain)
+- Position 4-10: 1.5 (page 1 with CTR upside — highest value)
+- Position 11-20: 1.2 (page 2, within striking distance)
+- Position 21+: 0.8 (too far to move with content alone)
+
+### Step 3: Triage Opportunities
+
+For each opportunity from GSC data, classify into one of three actions:
+
+| Action | Trigger | What Happens |
+|--------|---------|--------------|
+| **ENRICH** (refresh) | Query already covered by an existing blog post (slug match, title overlap, or Jaccard similarity ≥0.5 on keywords) | Rewrite title/meta/content of existing post in `blog-data.ts` |
+| **CREATE** (new) | Genuine gap — no existing post competes for this query cluster | Create new blog post entry in `blog-data.ts` |
+| **CONSOLIDATE** | 2+ existing posts compete for the same cluster with all CTRs <1% | Merge loser posts into winner, set losers to `noIndex: true` |
+
+**Cannibalization detection (auto-convert to refresh):**
+- Check A: Exact slug match against existing blog posts
+- Check B: GSC shows multiple pages ranking for same query
+- Check C: Jaccard token similarity ≥0.5 between candidate keyword and existing post keywords
+- If cannibalization detected → convert to ENRICH (refresh existing post, don't create new)
+
+Present triage results to the user:
+```
+📊 Enrichment Triage — AAA Engineering Design
+─────────────────────────────────────────
+ENRICH (refresh existing): X posts
+CREATE (new content):      Y posts
+CONSOLIDATE:               Z clusters
+
+| # | Action      | Query/Cluster                    | Target Post                  | Score |
+|---|-------------|----------------------------------|------------------------------|-------|
+| 1 | ENRICH      | foundation repair Newport Beach  | /blog/foundation-repair-...  | 85    |
+| 2 | CREATE      | hillside engineering Malibu      | (new)                        | 72    |
+| 3 | CONSOLIDATE | seismic retrofit Santa Monica    | /blog/winner → 2 losers      | --    |
+```
+
+Ask user to confirm the triage (default: accept all).
+
+### Production Mix Constraints (Default: 25 Posts Per Run)
+
+**Default split (enforced): 20 refresh + 5 new = 25 total posts per run.**
+
+- Target `20 refresh / 5 new` per run (80% refresh / 20% new).
+- If refresh candidates are insufficient, backfill with new content (never block production).
+- User can override with specific numbers (e.g., "generate 10 blog posts" = 8 refresh + 2 new).
+
+**Refresh Slots (20 posts):**
+
+| Slots | Category | Selection Rule |
+|-------|----------|----------------|
+| 1-5 | **CTR Rescue (Refresh)** | Top 5 high-impression/zero-CTR pages (ctr_rescue_score driven) |
+| 6-10 | **Service Authority (Refresh)** | Top 5 scored existing posts needing content expansion |
+| 11-15 | **FAQ Enrichment (Refresh)** | Top 5 posts lacking FAQs or with outdated FAQ content |
+| 16-18 | **Hub Strengthening (Refresh)** | Top 3 hub/pillar pages needing content refresh |
+| 19-20 | **Freshness Signal (Refresh)** | 2 oldest posts (>90 days since lastUpdated) with active-service keywords |
+
+**New Content Slots (5 posts):**
+
+| Slots | Category | Selection Rule |
+|-------|----------|----------------|
+| 21-22 | **Geo Expansion (New)** | Top 2 scored new city/service combinations |
+| 23-24 | **Near-Me Coverage (New)** | Top 2 "near me" keyword gaps |
+| 25 | **Exploration Wildcard (New)** | Highest-scoring remaining candidate (must pass cannibalization gate) |
+
+**Scaling rule:** When user requests a specific number (e.g., "10 posts"), maintain 80/20 ratio:
+- 10 posts = 8 refresh + 2 new
+- 15 posts = 12 refresh + 3 new
+- 25 posts = 20 refresh + 5 new (default)
+- 30 posts = 24 refresh + 6 new
+
+### Step 4: Execute Enrichments (Refreshes First)
+
+For each ENRICH candidate:
+1. **Read the existing blog post** from `src/lib/blog-data.ts` by matching the slug/id
+2. **Rewrite title** using CTR formula: `[Service Type] + [City] + [Number/Benefit] + [Year]`
+3. **Rewrite excerpt/meta** using: `[Problem]. [Solution with number]. [Social proof]. [CTA].`
+4. **Add/verify Quick Answer** (≤29 words for voice search / AIO snippet)
+5. **Expand/refresh content body:**
+   - Add new sections matching top GSC queries (PAA coverage, code references, checklists)
+   - Update statistics and code references to current year
+   - Add 2-4 internal links to service pages in first 400 words
+6. **Add/update FAQ section** with 3-5 fresh PAA questions from SERP API:
+   ```bash
+   python keyword-intelligence/fetcher.py "[primary-keyword] [city]" --paa-only --save
+   ```
+7. **Update dates:**
+   - `lastUpdated`: set to current date
+   - Keep original `date` (datePublished) unchanged
+8. **Validate schema:** Article + FAQPage + Speakable markup in content
+
+### Step 5: Execute New Page Creation
+
+For each CREATE candidate (only genuine gaps, after cannibalization gate):
+1. SERP keyword enrichment:
+   ```bash
+   python keyword-intelligence/fetcher.py "[query]" --topic "[Topic]" --save
+   ```
+2. Generate content using the HIGH-CONVERSION TARGETING FRAMEWORK and 2026 SEO template
+3. Follow all existing Smart Mode generation steps (schema, interlinking, trust signals)
+4. Add new entry to `src/lib/blog-data.ts`
+
+### Step 6: Execute Consolidations
+
+For each CONSOLIDATE cluster:
+1. **Identify winner** — post with highest impressions × position_weight
+2. **Merge unique content** from loser posts into winner
+3. **Set losers to `noIndex: true`** in `blog-data.ts`
+4. **Add redirect** in `next.config.ts` from loser slugs to winner slug
+5. **Update internal links** across all blog posts pointing to losers → point to winner
+
+### Step 7: Summary Report
+
+After all actions are executed, print:
+
+```
+📊 Enrichment Mode Summary — AAA Engineering Design
+─────────────────────────────────────────────
+Refreshed (ENRICH): X posts
+Created (NEW):      Y posts
+Consolidated:       Z clusters (W posts merged)
+Skipped:            V (with reasons)
+
+| # | Action | Title                                 | Slug                          | Target Query              | Impressions | CTR   |
+|---|--------|---------------------------------------|-------------------------------|---------------------------|-------------|-------|
+| 1 | ENRICH | [Updated Title]                       | foundation-repair-newport...  | foundation repair NB      | 1,234       | 0.8%  |
+| 2 | CREATE | [New Title]                           | hillside-engineering-malibu   | hillside eng Malibu       | 890         | 0.0%  |
+| 3 | MERGE  | [Winner Title]                        | seismic-retrofit-sm ← losers  | seismic retrofit SM       | 2,100       | 0.2%  |
+
+Combined Impression Potential: XX,XXX
+Estimated Click Uplift: X,XXX/month (at target CTR)
+Action Breakdown: XX% refresh / XX% new
+```
+
+### After Enrichment Mode
+
+Once all actions are executed, continue with the standard post-generation workflow:
+- Git commit & deploy (see POST-GENERATION section)
+- SEO submission via `python seo_submit.py`
+
+---
+
 ## 🚨 MANDATORY FRAMEWORK - NO EXCEPTIONS 🚨
 
 **⛔ STOP! Before generating ANY blog post, you MUST follow the HIGH-CONVERSION TARGETING FRAMEWORK below.**
@@ -4939,109 +5178,149 @@ npm run validate-schema -- --url "https://aaaengineeringdesign.com/blog/[slug]"
 
 ---
 
-## 🔄 POST-GENERATION: 2025 Blog Refresh Workflow (MANDATORY)
+## 🔄 POST-GENERATION: Blog Refresh Workflow (MANDATORY)
 
-**After completing blog generation, ALWAYS execute this refresh workflow to keep existing 2025 content fresh and SEO-optimized.**
+**After completing blog generation, ALWAYS execute this refresh workflow to keep existing content fresh and SEO-optimized.**
 
 ### Purpose
-- Refresh older 2025 blog posts with new FAQ content
-- Update publication dates to signal freshness to search engines
+- Refresh older blog posts with updated content, FAQs, and freshness signals
+- Rescue high-impression/low-CTR posts with title/meta rewrites
+- Detect and resolve cannibalization between competing posts
 - Improve topical authority by expanding existing structural engineering content
 
-### Workflow Steps
+### Refresh Mode Selection
 
-#### Step 1: Find 2025 Blog Posts
-```bash
-# Find all blog posts created in 2025
-find src/app/blog -name "page.tsx" -newer "2025-01-01" ! -newer "2025-12-31" -type f
-# OR check datePublished in schema for 2025 dates
-grep -r "datePublished.*2025" src/app/blog/*/page.tsx
+Choose refresh intensity based on current needs:
+
+```
+Refresh Mode:
+
+A) Quick Refresh (DEFAULT) — Add 3 FAQs + update dates on 10 posts
+   Best for: Weekly maintenance, freshness signals
+
+B) CTR Rescue — Rewrite titles/meta/content on high-impression/zero-CTR posts
+   Best for: Fixing underperforming posts that Google shows but users don't click
+
+C) Full Enrichment — Complete ENRICH/CREATE/CONSOLIDATE triage cycle
+   Best for: Monthly deep optimization (uses Enrichment Mode Pipeline above)
 ```
 
-#### Step 2: Select 10 Random Posts
+### Quick Refresh Workflow (Mode A)
+
+#### Step 1: Identify Refresh Candidates from GSC Data
+
 ```bash
-# Randomly select 10 posts from the 2025 list
-find src/app/blog -name "page.tsx" -type f | shuf -n 10
+# Pull latest GSC data to find posts needing refresh
+node scripts/gsc-performance-report.js
 ```
 
-**Selection Criteria:**
-- Prefer posts older than 60 days since last update
-- Prioritize posts with declining traffic (check GSC data)
-- Avoid posts updated within the last 30 days
-- Balance across market tiers (Platinum, Gold, Growth)
-- Mix different engineering services (ADU, seismic, foundation, etc.)
+**Selection criteria (prioritized):**
+0. **FILTER FIRST:** Exclude all posts with `noIndex: true` and all removed service posts (see REMOVED SERVICES FILTER above)
+1. Posts with declining CTR (compare 28-day vs 90-day CTR)
+2. Posts older than 60 days since last update (`lastUpdated` field)
+3. Posts with high impressions but CTR below site average
+4. Balance across market tiers (Platinum 40%, Gold 35%, Growth 25%)
+5. Mix across active service categories only (ADU, seismic, foundation, commercial, etc.)
+6. Avoid posts updated within the last 30 days
 
-#### Step 3: Add 3 New FAQs to Each Post
+Select **10 posts** matching these criteria.
+
+#### Step 2: Enrich Each Post (3 Actions Per Post)
 
 For each of the 10 selected posts:
 
-1. **Read the existing post** and identify the primary keyword and target city
-2. **Fetch fresh PAA questions** using SERP API:
+**Action 1: Add 3 New FAQs**
+1. Read the existing post from `src/lib/blog-data.ts` and identify primary keyword + target city
+2. Fetch fresh PAA questions:
    ```bash
    python keyword-intelligence/fetcher.py "[primary-keyword] [city]" --paa-only --save
    ```
-3. **Select 3 NEW questions** not already in the FAQ section
-4. **Generate answers** following these requirements:
-   - 40-80 words per answer
-   - Include the primary keyword and Southern California city naturally
-   - Reference specific building codes (CBC, local ordinances) when relevant
-   - Add data-speakable attribute for voice search
-   - Use schema.org FAQPage format
+3. Select 3 NEW questions not already in the FAQ section
+4. Generate answers (40-80 words each, include primary keyword + city, reference CBC/local codes)
 
-**FAQ Addition Template:**
-```tsx
-// Add to existing FAQPage schema
-{
-  "@type": "Question",
-  "name": "[New PAA question about structural engineering in SoCal]",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "[40-80 word answer with primary keyword, city, and engineering specifics]"
-  }
-}
-```
+**Action 2: Refresh Title & Meta (if CTR < site average)**
+- Rewrite title using CTR formula: `[Service Type] in [City]: [Number/Benefit] [Year]`
+- Rewrite excerpt using: `[Problem]. [Solution with number]. [Social proof]. [CTA].`
+- Verify Quick Answer capsule exists (≤29 words for AIO/voice)
 
-#### Step 4: Update Post Dates to Current Date
+**Action 3: Update Dates**
+- Set `lastUpdated` to current date
+- Keep original `date` (datePublished) unchanged
+- Update any year references in content to current year
 
-For each updated post:
-
-1. **Update dateModified** in Article schema:
-   ```tsx
-   "dateModified": "YYYY-MM-DD" // Use current date
-   ```
-
-2. **Update visible date** in the blog post UI:
-   ```tsx
-   date: "YYYY-MM-DD" // Use current date in blogData
-   ```
-
-3. **Keep datePublished unchanged** (preserve original publication date)
-
-### Refresh Summary Output
-
-After completing the refresh, output a summary:
+#### Step 3: Refresh Summary Output
 
 ```
-📅 2025 Blog Refresh Complete - SoCal Engineering
+📊 Blog Refresh Complete — AAA Engineering Design
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Posts Refreshed: 10
 New FAQs Added: 30 (3 per post)
+Titles Rewritten: X (CTR rescue)
 Date Updated To: [Current Date]
 
-Updated Posts:
-1. /blog/[city]-[service-slug] - Added FAQs: [Q1], [Q2], [Q3]
-2. /blog/[city]-[service-slug] - Added FAQs: [Q1], [Q2], [Q3]
-... (continue for all 10)
+| # | Post Slug                          | Actions Taken            | Impressions | Old CTR | Est. New CTR |
+|---|-------------------------------------|--------------------------|-------------|---------|--------------|
+| 1 | foundation-repair-newport-beach    | FAQ+Title+Date           | 1,234       | 0.3%    | 2.5%         |
+| 2 | adu-structural-engineer-irvine     | FAQ+Date                 | 890         | 1.2%    | 1.8%         |
+| ... | ...                              | ...                      | ...         | ...     | ...          |
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-### Automation Option
+### CTR Rescue Workflow (Mode B)
 
-Add to CI/CD or cron for automatic weekly refresh:
-```bash
-# Weekly refresh script (runs every Monday)
-0 3 * * 1 /path/to/scripts/refresh-2025-blogs.sh
+Focus exclusively on posts Google shows but users don't click.
+
+#### Step 1: Identify CTR Rescue Candidates
+
+**FILTER FIRST:** Exclude all posts with `noIndex: true` and all removed service posts (see REMOVED SERVICES FILTER above).
+
+From remaining active-service posts in GSC data, find posts matching:
+- Impressions ≥ P80 (top 20% by impressions)
+- CTR ≤ P20 (bottom 20% by click-through rate)
+- Position 4-20 (on page 1-2, within striking distance)
+
+Score each: `rescue_score = impressions × (1 - ctr) × position_weight × multiplier`
+
+**Multiplier:**
+- 2.0x if impressions ≥100 AND ctr=0 (urgent — Google shows it, nobody clicks)
+- 1.5x if ctr <0.5% (high priority)
+- 1.0x otherwise
+
+Select top 10 by rescue_score.
+
+#### Step 2: Rewrite for CTR
+
+For each rescue candidate:
+1. **Rewrite title** — `[Action Verb] + [Service] in [City]: [Number/Benefit] [Year]`
+   - Include a number (cost, timeline, code reference)
+   - Include the year for freshness
+   - Max 60 characters for full SERP display
+2. **Rewrite meta/excerpt** — `[Problem]. [Solution with number]. [Social proof]. [CTA].`
+   - Max 155 characters
+   - Include a differentiator (licensed PE, same-day consultation, etc.)
+3. **Add/update Quick Answer** — ≤29 words answering the primary query directly
+4. **Add/update Key Takeaways** — 3-5 bullets at top of content
+5. **Refresh FAQ section** — Add 2-3 new PAA questions from SERP API
+6. **Update `lastUpdated`** to current date
+
+#### Step 3: CTR Rescue Summary
+
 ```
+📊 CTR Rescue Complete — AAA Engineering Design
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Posts Rescued: 10
+Combined Impressions: XX,XXX/month
+Estimated Click Uplift: X,XXX clicks/month (at 2% target CTR)
+
+| # | Post Slug                          | Old Title → New Title           | Impressions | Old CTR | Target CTR |
+|---|-------------------------------------|----------------------------------|-------------|---------|------------|
+| 1 | foundation-repair-newport-beach    | Old... → New...                 | 1,234       | 0.0%    | 2.0%       |
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Full Enrichment (Mode C)
+
+Run the **Enrichment Mode Pipeline** section above (Mode Selection → Enrichment Mode). This is the most comprehensive option and includes ENRICH/CREATE/CONSOLIDATE triage.
 
 ---
 

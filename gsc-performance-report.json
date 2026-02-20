@@ -1,0 +1,3150 @@
+{
+  "generated": "2026-02-20T06:51:17.992Z",
+  "dateRange": {
+    "startDate": "2025-11-19",
+    "endDate": "2026-02-17"
+  },
+  "summary": {
+    "totalQueries": 1281,
+    "removedServiceQueriesExcluded": 108,
+    "totalPages": 1152,
+    "totalClicks": 22,
+    "totalImpressions": 8465
+  },
+  "allocation": {
+    "track1Pct": 80,
+    "track2Pct": 20,
+    "rationale": "127 Track 1 opportunities found - heavy optimization mode"
+  },
+  "buckets": {
+    "ctrGaps": {
+      "count": 41,
+      "items": [
+        {
+          "query": "engineering contractors near me",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 35,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "consulting engineer near me",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 29,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineers in my area",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 24,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineers number",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 15,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineers around me",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 11,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "licensed engineers near me",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 10,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural consulting engineers",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 10,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural engineer omaha",
+          "position": 1,
+          "ctr": "0%",
+          "impressions": 10,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural engineering design",
+          "position": 1.3,
+          "ctr": "0%",
+          "impressions": 61,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "contact engineers",
+          "position": 1.5,
+          "ctr": "0%",
+          "impressions": 16,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "private engineers",
+          "position": 1.5,
+          "ctr": "0%",
+          "impressions": 25,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineer contractors",
+          "position": 1.6,
+          "ctr": "0%",
+          "impressions": 26,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural engineering and design",
+          "position": 1.6,
+          "ctr": "0%",
+          "impressions": 13,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "contractors engineer",
+          "position": 1.7,
+          "ctr": "0%",
+          "impressions": 31,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "egineers",
+          "position": 1.7,
+          "ctr": "0%",
+          "impressions": 14,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural engineering & design",
+          "position": 1.7,
+          "ctr": "0%",
+          "impressions": 53,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineer location",
+          "position": 1.8,
+          "ctr": "0%",
+          "impressions": 17,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "office engineers",
+          "position": 1.9,
+          "ctr": "0%",
+          "impressions": 15,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineeres",
+          "position": 2,
+          "ctr": "0%",
+          "impressions": 39,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "enginners",
+          "position": 2,
+          "ctr": "0%",
+          "impressions": 55,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "remedial engineer",
+          "position": 2,
+          "ctr": "0%",
+          "impressions": 13,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engenniers",
+          "position": 2,
+          "ctr": "0%",
+          "impressions": 21,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engineers engineers",
+          "position": 2.1,
+          "ctr": "0%",
+          "impressions": 24,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "structural design experts",
+          "position": 2.1,
+          "ctr": "0%",
+          "impressions": 32,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        },
+        {
+          "query": "engenners",
+          "position": 2.2,
+          "ctr": "0%",
+          "impressions": 22,
+          "clicks": 0,
+          "action": "Rewrite title/meta description - ranking well but low CTR"
+        }
+      ]
+    },
+    "strikingDistance": {
+      "count": 83,
+      "items": [
+        {
+          "query": "structural engineer los angeles",
+          "position": 8.1,
+          "ctr": "0%",
+          "impressions": 16,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "who can deliver phased tenant improvements for fast-growing tech companies in san diego",
+          "position": 8.3,
+          "ctr": "0%",
+          "impressions": 8,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "pe license lookup california",
+          "position": 8.6,
+          "ctr": "0%",
+          "impressions": 85,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "structural engineer license lookup california",
+          "position": 8.6,
+          "ctr": "0%",
+          "impressions": 7,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "bpelsg license lookup",
+          "position": 8.6,
+          "ctr": "0%",
+          "impressions": 70,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "structure engineering design",
+          "position": 8.7,
+          "ctr": "0%",
+          "impressions": 6,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "commercial electrical code compliance in rancho cucamonga",
+          "position": 8.9,
+          "ctr": "0%",
+          "impressions": 15,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "engineer firms near me",
+          "position": 8.9,
+          "ctr": "0%",
+          "impressions": 17,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "bpelsg lookup",
+          "position": 9.1,
+          "ctr": "0%",
+          "impressions": 20,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "custom design engineering near me",
+          "position": 9.2,
+          "ctr": "0%",
+          "impressions": 6,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "foundation inspection near me",
+          "position": 9.2,
+          "ctr": "0%",
+          "impressions": 9,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "ca pe lookup",
+          "position": 9.2,
+          "ctr": "0%",
+          "impressions": 13,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "structural engineer rooftop garden",
+          "position": 9.3,
+          "ctr": "0%",
+          "impressions": 7,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "california structural engineer license lookup",
+          "position": 9.3,
+          "ctr": "0%",
+          "impressions": 32,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "ca pe license lookup",
+          "position": 9.5,
+          "ctr": "0%",
+          "impressions": 113,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "ca engineering license lookup",
+          "position": 9.5,
+          "ctr": "0%",
+          "impressions": 10,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "ca board of engineers license lookup",
+          "position": 9.7,
+          "ctr": "0%",
+          "impressions": 7,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "aaa design",
+          "position": 9.7,
+          "ctr": "0%",
+          "impressions": 22,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "pe lookup california",
+          "position": 9.8,
+          "ctr": "0%",
+          "impressions": 55,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "residential structural support services pasadena",
+          "position": 9.9,
+          "ctr": "0%",
+          "impressions": 15,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "engineer services near me",
+          "position": 10,
+          "ctr": "0%",
+          "impressions": 8,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "california engineering license lookup",
+          "position": 10.1,
+          "ctr": "0%",
+          "impressions": 13,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "engineer lookup california",
+          "position": 10.2,
+          "ctr": "0%",
+          "impressions": 6,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "ca professional engineer license lookup",
+          "position": 10.2,
+          "ctr": "0%",
+          "impressions": 16,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        },
+        {
+          "query": "civil design work",
+          "position": 10.3,
+          "ctr": "0%",
+          "impressions": 20,
+          "clicks": 0,
+          "action": "Strengthen content + add internal links to push into top 5"
+        }
+      ]
+    },
+    "winners": {
+      "count": 3,
+      "items": [
+        {
+          "query": "structural engineer long beach",
+          "position": 1.5,
+          "ctr": "7.7%",
+          "impressions": 65,
+          "clicks": 5,
+          "action": "Winner - replicate content pattern for adjacent cities/keywords"
+        },
+        {
+          "query": "aws salahaldin",
+          "position": 5.4,
+          "ctr": "22.2%",
+          "impressions": 18,
+          "clicks": 4,
+          "action": "Winner - replicate content pattern for adjacent cities/keywords"
+        },
+        {
+          "query": "structural engineer",
+          "position": 2.3,
+          "ctr": "3.4%",
+          "impressions": 119,
+          "clicks": 4,
+          "action": "Winner - replicate content pattern for adjacent cities/keywords"
+        }
+      ]
+    },
+    "cannibalization": {
+      "count": 127,
+      "items": [
+        {
+          "query": "site:https://aaaengineeringdesign.com/",
+          "pageCount": 111,
+          "pages": [
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-ontario",
+              "clicks": 0,
+              "impressions": 7,
+              "position": 49
+            },
+            {
+              "url": "/blog/pool-deck-foundation-engineering-in-indio",
+              "clicks": 0,
+              "impressions": 7,
+              "position": 50
+            },
+            {
+              "url": "/blog/civil-engineer-structural-design-capability",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 32.2
+            },
+            {
+              "url": "/blog/civil-engineering-design-southern-california",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 21.2
+            },
+            {
+              "url": "/blog/commercial-building-structural-design-in-brea",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 72.8
+            },
+            {
+              "url": "/blog/commercial-foundation-assessment-in-manhattan-beach",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 51.2
+            },
+            {
+              "url": "/blog/distribution-center-structural-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 71.8
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-engineering-in-downey",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 70.8
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-moreno-valley",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 69.8
+            },
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 1
+            },
+            {
+              "url": "/blog/adu-structural-engineering-in-perris",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 17.8
+            },
+            {
+              "url": "/blog/affordable-structural-engineer-near-me-in-la-habra",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 9.4
+            },
+            {
+              "url": "/blog/auto-service-facility-structural-engineering-in-redlands",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 97.2
+            },
+            {
+              "url": "/blog/building-code-compliance-2024",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 10.4
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-oceanside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 82
+            },
+            {
+              "url": "/blog/civil-engineer-structural-design-capability-lake-forest",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 96.2
+            },
+            {
+              "url": "/blog/coastal-bluff-stabilization-in-la-jolla",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 37.6
+            },
+            {
+              "url": "/blog/commercial-building-codes-in-eastvale",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 35.6
+            },
+            {
+              "url": "/blog/commercial-building-renovation-engineering-in-whittier",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 81
+            },
+            {
+              "url": "/blog/commercial-building-seismic-retrofit-in-glendale",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 65.8
+            },
+            {
+              "url": "/blog/commercial-distribution-center-structural-engineering-in-upland",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 4.8
+            },
+            {
+              "url": "/blog/commercial-foundation-engineering-in-orange",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 24.4
+            },
+            {
+              "url": "/blog/commercial-mezzanine-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 15.8
+            },
+            {
+              "url": "/blog/commercial-mezzanine-structural-engineering-in-perris",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 57.2
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-fallbrook",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 80
+            },
+            {
+              "url": "/blog/commercial-warehouse-engineering-in-rialto",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 22.4
+            },
+            {
+              "url": "/blog/deck-structural-engineer-near-me-in-yorba-linda",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 8.4
+            },
+            {
+              "url": "/blog/deep-foundation-design-in-whittier",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 11.8
+            },
+            {
+              "url": "/blog/deep-foundation-engineering-in-calabasas",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 16.8
+            },
+            {
+              "url": "/blog/distribution-center-structural-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 83
+            },
+            {
+              "url": "/blog/foundation-crack-repair-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 44.2
+            },
+            {
+              "url": "/blog/foundation-design-engineering-in-spring-valley",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 55.8
+            },
+            {
+              "url": "/blog/foundation-engineering-for-hillside-homes-in-ramona",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 94.2
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-sunnyvale",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 14.8
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-alpine",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 31.4
+            },
+            {
+              "url": "/blog/foundation-seismic-retrofit-in-upland",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 28.4
+            },
+            {
+              "url": "/blog/foundation-settlement-repair-in-fullerton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 18.8
+            },
+            {
+              "url": "/blog/foundation-settlement-solutions-in-anaheim",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 30.4
+            },
+            {
+              "url": "/blog/foundation-underpinning-services-in-laguna-niguel",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 85
+            },
+            {
+              "url": "/blog/grade-beam-foundation-design-in-claremont",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 86
+            },
+            {
+              "url": "/blog/grading-and-drainage-plans-in-stanton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 74.4
+            },
+            {
+              "url": "/blog/hillside-foundation-design-in-rancho-palos-verdes",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 5.8
+            },
+            {
+              "url": "/blog/hillside-foundation-engineering-in-laguna-niguel",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 79
+            },
+            {
+              "url": "/blog/hotel-structural-engineering-in-palm-desert",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 88.2
+            },
+            {
+              "url": "/blog/industrial-building-structural-engineering-in-san-bernardino",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 95.2
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-murrieta",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 89.2
+            },
+            {
+              "url": "/blog/industrial-flex-space-engineering-in-hemet",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 84
+            },
+            {
+              "url": "/blog/industrial-manufacturing-structural-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 52.4
+            },
+            {
+              "url": "/blog/industrial-warehouse-engineering-in-irvine",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 33.6
+            },
+            {
+              "url": "/blog/industrial-warehouse-structural-engineering-in-ontario",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 77
+            },
+            {
+              "url": "/blog/manufacturing-plant-structural-engineering-in-escondido",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 43.2
+            },
+            {
+              "url": "/blog/marina-commercial-engineering-in-dana-point",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 78
+            },
+            {
+              "url": "/blog/mat-foundation-engineering-in-la-jolla",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 75.4
+            },
+            {
+              "url": "/blog/mudsill-foundation-repair-in-oceanside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 36.6
+            },
+            {
+              "url": "/blog/multi-story-commercial-engineering-in-downey",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 66.8
+            },
+            {
+              "url": "/blog/office-complex-structural-assessment-in-torrance",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 47.2
+            },
+            {
+              "url": "/blog/parking-structure-engineering-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 53.4
+            },
+            {
+              "url": "/blog/parking-structure-engineering-in-fullerton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 12.8
+            },
+            {
+              "url": "/blog/permit-engineer-near-me-in-laguna-niguel",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 3.8
+            },
+            {
+              "url": "/blog/pier-foundation-engineering-in-malibu",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 27.4
+            },
+            {
+              "url": "/blog/pool-foundation-engineering-in-temecula",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 26.4
+            },
+            {
+              "url": "/blog/residential-foundation-inspection-in-coronado",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 13.8
+            },
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 63.8
+            },
+            {
+              "url": "/blog/resort-commercial-engineering-in-carlsbad",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 23.4
+            },
+            {
+              "url": "/blog/restaurant-building-structural-engineering-in-encinitas",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 46.2
+            },
+            {
+              "url": "/blog/retail-building-structural-assessment-in-brentwood",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 38.6
+            },
+            {
+              "url": "/blog/retail-center-renovation-engineering-in-whittier",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 67.8
+            },
+            {
+              "url": "/blog/retail-structural-engineering-in-menifee",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 20.2
+            },
+            {
+              "url": "/blog/septic-design-engineers-san-clemente",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 25.4
+            },
+            {
+              "url": "/blog/steel-building-structural-engineering-in-pomona",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 64.8
+            },
+            {
+              "url": "/blog/structural-engineer-cost-orange-county-2025",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 87
+            },
+            {
+              "url": "/blog/sunroom-structural-design-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 45.2
+            },
+            {
+              "url": "/blog/tilt-up-construction-engineering-in-cypress",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 54.4
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-lakeside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 34.6
+            },
+            {
+              "url": "/fire",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 2
+            },
+            {
+              "url": "https://www.aaaengineeringdesign.com/locations/newport-beach-structural-engineering/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 29.4
+            },
+            {
+              "url": "/blog/caisson-foundation-engineering-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 62.5
+            },
+            {
+              "url": "/blog/commercial-building-addition-engineering-in-huntington-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 90
+            },
+            {
+              "url": "/blog/commercial-concrete-building-engineering-in-rancho-cucamonga",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 94
+            },
+            {
+              "url": "/blog/commercial-seismic-retrofit-in-garden-grove",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 42.8
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-chino-hills",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 97.5
+            },
+            {
+              "url": "/blog/data-center-structural-engineering-in-garden-grove",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 93
+            },
+            {
+              "url": "/blog/deep-foundation-design-in-san-marcos",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 63.5
+            },
+            {
+              "url": "/blog/dormer-addition-structural-engineering-in-whittier",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 40.8
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-design-in-san-jacinto",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 92
+            },
+            {
+              "url": "/blog/foundation-inspection-near-me-in-fountain-valley",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 6.8
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-redlands",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 3
+            },
+            {
+              "url": "/blog/healthcare-facility-structural-engineering-in-downey",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 59.5
+            },
+            {
+              "url": "/blog/home-addition-structural-design-in-glendale",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 61.5
+            },
+            {
+              "url": "/blog/industrial-facility-structural-assessment-in-ramona",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 58.5
+            },
+            {
+              "url": "/blog/industrial-warehouse-engineering-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 60.5
+            },
+            {
+              "url": "/blog/luxury-estate-foundation-engineering-in-bel-air",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 7.8
+            },
+            {
+              "url": "/blog/mep-engineering-design-in-la-palma",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 41.8
+            },
+            {
+              "url": "/blog/residential-foundation-engineering-in-simi-valley",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 57.5
+            },
+            {
+              "url": "/blog/restaurant-building-structural-design-in-fullerton",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 68.3
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-for-home-additions",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 91
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-engineering-in-orange",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 39.7
+            },
+            {
+              "url": "/blog/foundation-engineer-near-me-in-torrance",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 77
+            },
+            {
+              "url": "/blog/mep-engineer-near-me-in-carlsbad",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 38.7
+            },
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 100
+            },
+            {
+              "url": "/blog/commercial-foundation-engineering-in-signal-hill",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 55.5
+            },
+            {
+              "url": "/blog/corporate-campus-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 98
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-stanton",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 96
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 97
+            },
+            {
+              "url": "/blog/retail-center-structural-engineering-in-hermosa-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 99
+            },
+            {
+              "url": "/blog/seismic-foundation-retrofit-in-hemet",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 21
+            },
+            {
+              "url": "/locations/lake-forest-structural-engineering/",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 12
+            },
+            {
+              "url": "/blog/commercial-building-codes-in-los-angeles",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 58
+            },
+            {
+              "url": "/blog/foundation-engineer-near-me-in-tustin",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 89
+            },
+            {
+              "url": "/blog/office-building-structural-analysis-in-downey",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 51
+            },
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 59
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "site:http://aaaengineeringdesign.com",
+          "pageCount": 87,
+          "pages": [
+            {
+              "url": "/blog/commercial-foundation-assessment-in-manhattan-beach",
+              "clicks": 0,
+              "impressions": 8,
+              "position": 30.4
+            },
+            {
+              "url": "/blog/california-structural-engineer-license-lookup",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 20.7
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-anaheim",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 32.5
+            },
+            {
+              "url": "/blog/industrial-manufacturing-structural-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 31.5
+            },
+            {
+              "url": "/blog/retail-building-structural-assessment-in-brentwood",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 21.7
+            },
+            {
+              "url": "/blog/seismic-retrofit-engineer-near-me-in-san-jose",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 69.2
+            },
+            {
+              "url": "/blog/when-to-hire-residential-structural-engineer-santa-ana",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 73.2
+            },
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 1
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-downey",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 49.6
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-rancho-palos-verdes",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 78.2
+            },
+            {
+              "url": "/blog/basement-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 23
+            },
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 56.6
+            },
+            {
+              "url": "/blog/building-code-compliance-2024",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 9
+            },
+            {
+              "url": "/blog/caisson-foundation-engineering-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 37.4
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-fullerton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 42.4
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-oceanside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 45.4
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-san-diego",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 67.8
+            },
+            {
+              "url": "/blog/civil-engineer-structural-design-capability",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 17.4
+            },
+            {
+              "url": "/blog/coastal-bluff-foundation-design-in-la-jolla",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 6.2
+            },
+            {
+              "url": "/blog/commercial-building-ada-compliance-engineering-in-pasadena",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 60.4
+            },
+            {
+              "url": "/blog/commercial-building-assessment-in-manhattan-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 29
+            },
+            {
+              "url": "/blog/commercial-building-code-compliance-engineering-in-glendale",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 66.8
+            },
+            {
+              "url": "/blog/commercial-building-renovation-engineering-in-whittier",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 43.4
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-irvine",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 57.6
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-torrance",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 65.8
+            },
+            {
+              "url": "/blog/commercial-structural-engineering-in-atherton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 12.8
+            },
+            {
+              "url": "/blog/corporate-campus-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 54.6
+            },
+            {
+              "url": "/blog/deep-foundation-design-in-san-marcos",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 38.4
+            },
+            {
+              "url": "/blog/deep-foundation-engineering-in-calabasas",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 3
+            },
+            {
+              "url": "/blog/estate-foundation-engineering-in-rancho-santa-fe",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 48.6
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-engineering-in-orange",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 25.4
+            },
+            {
+              "url": "/blog/foundation-crack-repair-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 27
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-garden-grove",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 76.2
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-hermosa-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 39.4
+            },
+            {
+              "url": "/blog/healthcare-facility-structural-engineering-in-downey",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 35.4
+            },
+            {
+              "url": "/blog/hillside-foundation-engineering-in-bel-air",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 44.4
+            },
+            {
+              "url": "/blog/hillside-foundation-engineering-in-laguna-niguel",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 41.4
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-fullerton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 77.2
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-torrance",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 70
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-clemente",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 63.8
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 53.6
+            },
+            {
+              "url": "/blog/industrial-warehouse-engineering-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 36.4
+            },
+            {
+              "url": "/blog/load-bearing-wall-engineer-near-me-in-fullerton",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 75.2
+            },
+            {
+              "url": "/blog/mep-engineer-near-me-in-carlsbad",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 24
+            },
+            {
+              "url": "/blog/mep-engineer-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 64.8
+            },
+            {
+              "url": "/blog/mixed-use-development-structural-engineering-in-manhattan-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 72.6
+            },
+            {
+              "url": "/blog/oceanfront-structural-engineering-in-coronado",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 18.4
+            },
+            {
+              "url": "/blog/office-complex-structural-assessment-in-torrance",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 28
+            },
+            {
+              "url": "/blog/pier-foundation-engineering-in-malibu",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 14.4
+            },
+            {
+              "url": "/blog/post-tension-foundation-engineering-in-pasadena",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 34.4
+            },
+            {
+              "url": "/blog/retail-center-structural-engineering-in-hermosa-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 55.6
+            },
+            {
+              "url": "/blog/retail-center-structural-engineering-in-manhattan-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 4.6
+            },
+            {
+              "url": "/blog/seismic-retrofit-engineer-near-me-in-santa-monica",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 8
+            },
+            {
+              "url": "/blog/septic-design-engineers-for-residential-systems-in-upland",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 71
+            },
+            {
+              "url": "/blog/septic-design-engineers-san-clemente",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 12.6
+            },
+            {
+              "url": "/blog/structural-engineer-cost-orange-county-2025",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 46.4
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-for-home-additions",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 47.6
+            },
+            {
+              "url": "/blog/tenant-improvement-engineering-in-arcadia",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 16.4
+            },
+            {
+              "url": "/fire",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 2
+            },
+            {
+              "url": "https://www.aaaengineeringdesign.com/blog/ultimate-guide-structural-engineering-design-california/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 59.4
+            },
+            {
+              "url": "https://www.aaaengineeringdesign.com/locations/newport-beach-structural-engineering/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 15.4
+            },
+            {
+              "url": "/blog/civil-engineer-structural-design-capability-lake-forest",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 51.5
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-newport-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 63.5
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-engineering-in-thousand-oaks",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 50.5
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-stanton",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 53.3
+            },
+            {
+              "url": "/blog/foundation-underpinning-engineering-in-burbank",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 19.5
+            },
+            {
+              "url": "/blog/mep-engineer-near-me-in-santa-ana",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 61.5
+            },
+            {
+              "url": "/blog/parking-structure-engineering-in-fullerton",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 9.8
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-newport-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 7.5
+            },
+            {
+              "url": "/blog/strip-mall-structural-engineering-in-garden-grove",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 62.5
+            },
+            {
+              "url": "/blog/subterranean-garage-engineering-in-atherton",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 11.5
+            },
+            {
+              "url": "/blog/basement-conversion-engineer-near-me-in-pacific-palisades",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 74
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-solutions-in-anaheim-hills",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 5.7
+            },
+            {
+              "url": "/blog/flex-space-structural-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 40
+            },
+            {
+              "url": "/blog/hillside-underpinning-engineering-in-pacific-palisades",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 25.3
+            },
+            {
+              "url": "/blog/industrial-building-structural-engineering-in-san-bernardino",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 4
+            },
+            {
+              "url": "/blog/multi-story-commercial-building-engineering-in-glendale",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 52.3
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-dana-point",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 71.5
+            },
+            {
+              "url": "/blog/civil-engineering-design-southern-california",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 11
+            },
+            {
+              "url": "/blog/event-venue-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 59
+            },
+            {
+              "url": "/blog/foundation-engineering-in-santa-monica",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 20
+            },
+            {
+              "url": "/blog/foundation-underpinning-services-in-pasadena",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 12
+            },
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 41
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-pomona",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 34
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 60
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 26
+            },
+            {
+              "url": "/blog/hotel-structural-engineering-in-palm-desert",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 47
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "aaa engineering design",
+          "pageCount": 60,
+          "pages": [
+            {
+              "url": "/",
+              "clicks": 22,
+              "impressions": 86,
+              "position": 2
+            },
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 14,
+              "impressions": 82,
+              "position": 8.4
+            },
+            {
+              "url": "/about",
+              "clicks": 0,
+              "impressions": 14,
+              "position": 4.7
+            },
+            {
+              "url": "/locations/fullerton-structural-engineering",
+              "clicks": 0,
+              "impressions": 7,
+              "position": 9.3
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-pacific-palisades",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 4
+            },
+            {
+              "url": "/locations/irvine-structural-engineering",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 2
+            },
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 4.6
+            },
+            {
+              "url": "/locations/long-beach-structural-engineering",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 1.2
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-irvine",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 6.8
+            },
+            {
+              "url": "/blog/same-day-structural-engineer-near-me-in-anaheim",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 8.5
+            },
+            {
+              "url": "/services/commercial",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 8.5
+            },
+            {
+              "url": "/blog/affordable-structural-engineer-near-me-in-la-habra",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 10
+            },
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 41.7
+            },
+            {
+              "url": "/blog/civil-engineering-design-southern-california",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 31.7
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-torrance",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 7.7
+            },
+            {
+              "url": "/blog/corporate-campus-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 1
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 10.7
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-fullerton",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 9.7
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-santa-ana-santa-ana",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 8
+            },
+            {
+              "url": "/blog/steel-building-structural-engineering-in-pomona",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 29
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-for-basement-additions",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 17
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-for-home-additions",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 11
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-redlands",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 9.7
+            },
+            {
+              "url": "/locations/costa-mesa",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 7
+            },
+            {
+              "url": "/blog/affordable-structural-engineer-near-me-in-tustin",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 10.5
+            },
+            {
+              "url": "/blog/basement-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 1
+            },
+            {
+              "url": "/blog/civil-engineer-near-me-in-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 1
+            },
+            {
+              "url": "/blog/home-structural-engineer-near-me-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 15.5
+            },
+            {
+              "url": "/blog/same-day-structural-engineer-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 10
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-garden-grove",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 9.5
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-pomona",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 6
+            },
+            {
+              "url": "/services/new-residential-engineering",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 1
+            },
+            {
+              "url": "/blog/adu-structural-engineer-san-jose",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/building-permit-structural-engineer-near-me-in-torrance",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-placentia",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 7
+            },
+            {
+              "url": "/blog/commercial-structural-engineer-near-me-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 9
+            },
+            {
+              "url": "/blog/commercial-structural-engineering-in-atherton",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/commercial-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/custom-home-structural-engineering-in-beverly-hills",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 12
+            },
+            {
+              "url": "/blog/emergency-structural-engineer-near-me-in-la-quinta-la-quinta",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/emergency-structural-engineer-near-me-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            },
+            {
+              "url": "/blog/emergency-structural-engineer-near-me-in-santa-monica",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-corona",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-murrieta",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 82
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-villa-park",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/industrial-facility-renovation-engineering-in-lake-elsinore",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 2
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-clemente",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            },
+            {
+              "url": "/blog/licensed-structural-engineer-near-me-in-san-clemente",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 10
+            },
+            {
+              "url": "/blog/multi-family-building-structural-engineering-in-fontana",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-vista-vista",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 9
+            },
+            {
+              "url": "/blog/same-day-structural-engineer-near-me-in-rancho-mirage-rancho-mirage",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 10
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-la-mesa",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 12
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-redondo-beach",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-temecula",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 10
+            },
+            {
+              "url": "/blog/tech-office-building-structural-engineering-in-los-altos-hills",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 8
+            },
+            {
+              "url": "/blog/what-is-engineering-design-in-torrance-torrance",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 6
+            },
+            {
+              "url": "/hub",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 7
+            },
+            {
+              "url": "/locations/lake-forest-structural-engineering/",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            },
+            {
+              "url": "/locations/los-angeles-structural-engineering",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 9
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "pe licensed mezzanine engineering services",
+          "pageCount": 12,
+          "pages": [
+            {
+              "url": "/blog/commercial-mezzanine-structural-engineering-in-perris",
+              "clicks": 0,
+              "impressions": 15,
+              "position": 3.4
+            },
+            {
+              "url": "/blog/commercial-mezzanine-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 14,
+              "position": 21.6
+            },
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 7,
+              "position": 12.9
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-murrieta-murrieta",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 13.5
+            },
+            {
+              "url": "/blog/manufacturing-plant-structural-engineering-in-bonita-bonita",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 31
+            },
+            {
+              "url": "/blog/commercial-kitchen-structural-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 18.5
+            },
+            {
+              "url": "/blog/industrial-building-engineer-near-me-in-rialto",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 56.5
+            },
+            {
+              "url": "/blog/warehouse-structural-engineer-near-me-in-upland",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 28.5
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineer-in-pasadena",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 40
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-rancho-cucamonga-rancho-cucamonga",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 28
+            },
+            {
+              "url": "/blog/office-building-engineer-near-me-in-mission-viejo",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 14
+            },
+            {
+              "url": "/blog/office-space-tenant-improvement-engineering-in-buena-park-buena-park",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 28
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "aaa structural engineering",
+          "pageCount": 10,
+          "pages": [
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 17,
+              "position": 6.6
+            },
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 3
+            },
+            {
+              "url": "/locations/san-diego-structural-engineering",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 1.3
+            },
+            {
+              "url": "/blog/24-hour-structural-engineer-near-me-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 10
+            },
+            {
+              "url": "/blog/home-elevator-structural-engineering-in-santa-ana",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 10
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 7
+            },
+            {
+              "url": "/blog/manufacturing-plant-structural-engineering-in-bonita-bonita",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-vista-vista",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            },
+            {
+              "url": "/locations/fullerton-structural-engineering",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            },
+            {
+              "url": "/services/commercial",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 1
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "adu engineering",
+          "pageCount": 7,
+          "pages": [
+            {
+              "url": "/blog/adu-structural-engineering-in-riverside-riverside",
+              "clicks": 0,
+              "impressions": 10,
+              "position": 83.8
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-san-diego-san-diego",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 49.6
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-dana-point",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 73.5
+            },
+            {
+              "url": "/blog/adu-engineer-near-me-in-chula-vista",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 95
+            },
+            {
+              "url": "/blog/adu-structural-engineering-in-irvine",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 90.3
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-tustin",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 102.5
+            },
+            {
+              "url": "/blog/adu-structural-engineer-near-me-in-san-diego",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 90
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "foundation repair laguna beach",
+          "pageCount": 7,
+          "pages": [
+            {
+              "url": "/blog/foundation-underpinning-services-in-laguna-niguel",
+              "clicks": 0,
+              "impressions": 9,
+              "position": 82.1
+            },
+            {
+              "url": "/blog/foundation-engineer-near-me-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 91.7
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 56.8
+            },
+            {
+              "url": "/blog/crawl-space-structural-repair-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 49.5
+            },
+            {
+              "url": "/blog/foundation-engineer-near-me-in-laguna-beach-laguna-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 50.5
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-hills",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 40.5
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-malibu",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 89
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "engineering for warehouse building",
+          "pageCount": 6,
+          "pages": [
+            {
+              "url": "/blog/industrial-warehouse-design-engineering-in-cypress-cypress",
+              "clicks": 0,
+              "impressions": 33,
+              "position": 38.2
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-lakeside",
+              "clicks": 0,
+              "impressions": 25,
+              "position": 88.4
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 12,
+              "position": 90.5
+            },
+            {
+              "url": "/blog/industrial-warehouse-structural-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 11,
+              "position": 60.8
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-long-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 94.5
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-el-monte",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 89
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineering recruiters in santa ana",
+          "pageCount": 6,
+          "pages": [
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 31,
+              "position": 37.2
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-santa-ana-santa-ana",
+              "clicks": 0,
+              "impressions": 26,
+              "position": 9.7
+            },
+            {
+              "url": "/blog/when-to-hire-residential-structural-engineer-santa-ana",
+              "clicks": 0,
+              "impressions": 25,
+              "position": 30.5
+            },
+            {
+              "url": "/blog/retail-center-structural-engineering-in-santa-ana",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 45.3
+            },
+            {
+              "url": "/locations/santa-ana-structural-engineering",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 27.3
+            },
+            {
+              "url": "/blog/24-hour-structural-engineer-near-me-in-santa-ana",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 52.5
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineering recruiters in costa mesa",
+          "pageCount": 6,
+          "pages": [
+            {
+              "url": "/blog/structural-engineer-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 30,
+              "position": 54.1
+            },
+            {
+              "url": "/blog/same-day-structural-engineer-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 16,
+              "position": 19.1
+            },
+            {
+              "url": "/blog/structural-engineering-quote-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 16,
+              "position": 22.9
+            },
+            {
+              "url": "/locations/costa-mesa",
+              "clicks": 0,
+              "impressions": 11,
+              "position": 6
+            },
+            {
+              "url": "/locations/costa-mesa-structural-engineering",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 26.7
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-costa-mesa",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 17
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "foundation assessment orange county",
+          "pageCount": 6,
+          "pages": [
+            {
+              "url": "/blog/foundation-inspection-near-me-in-orange",
+              "clicks": 0,
+              "impressions": 25,
+              "position": 14.9
+            },
+            {
+              "url": "/blog/foundation-assessment-guide-for-buena-park-homeowners",
+              "clicks": 0,
+              "impressions": 18,
+              "position": 8.4
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-hills",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 83.7
+            },
+            {
+              "url": "/blog/foundation-assessment-guide-in-moreno-valley-moreno-valley",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 33
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 65.5
+            },
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 55
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "architectural and engineering services in los alamitos",
+          "pageCount": 6,
+          "pages": [
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 0,
+              "impressions": 10,
+              "position": 1.4
+            },
+            {
+              "url": "/blog/mep-engineer-near-me-in-los-alamitos",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 14.7
+            },
+            {
+              "url": "/blog/home-addition-structural-engineer-near-me-in-los-alamitos",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 13
+            },
+            {
+              "url": "/blog/commercial-tenant-improvement-engineering-in-los-alamitos",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 25
+            },
+            {
+              "url": "/blog/residential-structural-engineering-services-in-newport-beach",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 40.5
+            },
+            {
+              "url": "/blog/adu-structural-engineering-in-los-alamitos-los-alamitos",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 11
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "foundation repair oceanside",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/mudsill-foundation-repair-in-oceanside",
+              "clicks": 0,
+              "impressions": 24,
+              "position": 28.3
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-oceanside",
+              "clicks": 0,
+              "impressions": 16,
+              "position": 58.8
+            },
+            {
+              "url": "/blog/foundation-assessment-services-in-oceanside",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 93
+            },
+            {
+              "url": "/blog/foundation-assessment-services-in-oceanside-oceanside",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 61.3
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-oceanside",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 15
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineer near me",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 1,
+              "impressions": 22,
+              "position": 2.9
+            },
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 10,
+              "position": 15.2
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-carlsbad",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 9.2
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-newport-beach",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 4
+            },
+            {
+              "url": "/blog/structural-engineer-near-me-in-carlsbad",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 9
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "foundation inspection orange county",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/foundation-inspection-near-me-in-orange",
+              "clicks": 0,
+              "impressions": 21,
+              "position": 34
+            },
+            {
+              "url": "/blog/foundation-inspection-engineering-in-moreno-valley",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 74
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-hills",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 46.5
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 47
+            },
+            {
+              "url": "/blog/foundation-inspection-engineering-in-newport-beach",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 59
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineering of industrial facilities",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-san-diego",
+              "clicks": 0,
+              "impressions": 20,
+              "position": 54.4
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-murrieta",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 55.7
+            },
+            {
+              "url": "/blog/industrial-facility-structural-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 71
+            },
+            {
+              "url": "/blog/warehouse-structural-engineering-in-vista",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 97.5
+            },
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 41
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural repairs coachella valley",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/24-hour-structural-engineer-near-me-in-coachella-coachella",
+              "clicks": 0,
+              "impressions": 12,
+              "position": 58.8
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me-in-palm-desert",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 72
+            },
+            {
+              "url": "/blog/slab-foundation-repair-engineering-in-palm-springs",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 51
+            },
+            {
+              "url": "/blog/24-hour-structural-engineer-near-me-in-coachella",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 44
+            },
+            {
+              "url": "/blog/emergency-structural-engineer-near-me-in-la-quinta-la-quinta",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 26
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "soft story solutions santa monica",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/soft-story-retrofit-deadline-in-santa-monica",
+              "clicks": 0,
+              "impressions": 9,
+              "position": 30.6
+            },
+            {
+              "url": "/blog/soft-story-retrofit-engineering-in-santa-monica",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 44.3
+            },
+            {
+              "url": "/blog/foundation-engineering-in-santa-monica",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 30
+            },
+            {
+              "url": "/blog/multi-family-seismic-retrofit-in-santa-monica",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 41
+            },
+            {
+              "url": "/blog/soft-story-retrofit-engineer-santa-monica",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 38
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "raised foundation repair laguna beach",
+          "pageCount": 5,
+          "pages": [
+            {
+              "url": "/blog/raised-foundation-repair-in-newport-beach",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 26
+            },
+            {
+              "url": "/blog/foundation-repair-engineering-in-riverside",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 56.5
+            },
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 49
+            },
+            {
+              "url": "/blog/crawl-space-structural-repair-in-laguna-beach",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 23
+            },
+            {
+              "url": "/blog/foundation-inspection-services-in-laguna-hills",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 28
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "soft story retrofit santa monica",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "/blog/soft-story-retrofit-deadline-in-santa-monica",
+              "clicks": 0,
+              "impressions": 88,
+              "position": 35.4
+            },
+            {
+              "url": "/blog/multi-family-seismic-retrofit-in-santa-monica",
+              "clicks": 0,
+              "impressions": 76,
+              "position": 63.7
+            },
+            {
+              "url": "/blog/soft-story-retrofit-engineering-in-santa-monica",
+              "clicks": 0,
+              "impressions": 26,
+              "position": 47.6
+            },
+            {
+              "url": "/blog/soft-story-retrofit-engineer-santa-monica",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 33.5
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineer orange county",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 69,
+              "position": 53.8
+            },
+            {
+              "url": "/blog/structural-engineer-cost-orange-county-2025",
+              "clicks": 0,
+              "impressions": 36,
+              "position": 51.4
+            },
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 31,
+              "position": 75.1
+            },
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 0,
+              "impressions": 5,
+              "position": 16
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "aaa engineering",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "http://aaaengineeringdesign.com/",
+              "clicks": 1,
+              "impressions": 52,
+              "position": 2.8
+            },
+            {
+              "url": "/",
+              "clicks": 1,
+              "impressions": 40,
+              "position": 11.8
+            },
+            {
+              "url": "/contact",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 17.3
+            },
+            {
+              "url": "/blog/steel-building-structural-engineering-in-ontario",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 11
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "foundation repair anaheim",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 42,
+              "position": 39.2
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 31
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim-anaheim",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 37.5
+            },
+            {
+              "url": "/blog/expansive-soil-foundation-solutions-in-anaheim-hills",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 93
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "structural engineer orange county ca",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "/blog/best-structural-engineering-firms-in-orange-ca",
+              "clicks": 0,
+              "impressions": 32,
+              "position": 68.7
+            },
+            {
+              "url": "/",
+              "clicks": 0,
+              "impressions": 27,
+              "position": 57.3
+            },
+            {
+              "url": "/blog/structural-engineer-cost-orange-county-2025",
+              "clicks": 0,
+              "impressions": 15,
+              "position": 69.8
+            },
+            {
+              "url": "/blog/residential-structural-engineer-near-me",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 88
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        },
+        {
+          "query": "raised foundation repair anaheim",
+          "pageCount": 4,
+          "pages": [
+            {
+              "url": "/blog/residential-foundation-repair-engineering-in-anaheim",
+              "clicks": 0,
+              "impressions": 31,
+              "position": 12.2
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim-anaheim",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 23.3
+            },
+            {
+              "url": "/blog/foundation-settlement-solutions-in-anaheim",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 47.3
+            },
+            {
+              "url": "/blog/foundation-repair-engineer-near-me-in-anaheim",
+              "clicks": 0,
+              "impressions": 1,
+              "position": 44
+            }
+          ],
+          "action": "Consolidate or differentiate - multiple pages competing for same query"
+        }
+      ]
+    }
+  },
+  "topPages": [
+    {
+      "page": "http://aaaengineeringdesign.com/",
+      "clicks": 79,
+      "impressions": 4007,
+      "ctr": "2%",
+      "position": 5.8
+    },
+    {
+      "page": "/",
+      "clicks": 58,
+      "impressions": 1540,
+      "ctr": "3.8%",
+      "position": 25.3
+    },
+    {
+      "page": "https://www.aaaengineeringdesign.com/blog/structural-engineer-cost-orange-county-2025/",
+      "clicks": 8,
+      "impressions": 1561,
+      "ctr": "0.5%",
+      "position": 6.1
+    },
+    {
+      "page": "/about",
+      "clicks": 7,
+      "impressions": 53,
+      "ctr": "13.2%",
+      "position": 8.2
+    },
+    {
+      "page": "/locations/san-diego-structural-engineering",
+      "clicks": 4,
+      "impressions": 20,
+      "ctr": "20%",
+      "position": 4.1
+    },
+    {
+      "page": "/blog/best-structural-engineering-firms-los-angeles/",
+      "clicks": 3,
+      "impressions": 141,
+      "ctr": "2.1%",
+      "position": 13.9
+    },
+    {
+      "page": "/blog/california-structural-engineer-license-lookup",
+      "clicks": 3,
+      "impressions": 1826,
+      "ctr": "0.2%",
+      "position": 11
+    },
+    {
+      "page": "/blog/car-wash-structural-engineering-in-yucaipa-yucaipa",
+      "clicks": 2,
+      "impressions": 113,
+      "ctr": "1.8%",
+      "position": 10
+    },
+    {
+      "page": "/blog/civil-site-development-engineering-in-lake-elsinore",
+      "clicks": 2,
+      "impressions": 20,
+      "ctr": "10%",
+      "position": 18.5
+    },
+    {
+      "page": "/blog/coastal-bluff-foundation-design-in-la-jolla",
+      "clicks": 2,
+      "impressions": 88,
+      "ctr": "2.3%",
+      "position": 4.5
+    },
+    {
+      "page": "/blog/coastal-bluff-stabilization-in-malibu",
+      "clicks": 2,
+      "impressions": 41,
+      "ctr": "4.9%",
+      "position": 8.5
+    },
+    {
+      "page": "/blog/grading-and-drainage-plans-in-hermosa-beach-hermosa-beach",
+      "clicks": 2,
+      "impressions": 62,
+      "ctr": "3.2%",
+      "position": 7.9
+    },
+    {
+      "page": "/blog/grading-and-drainage-plans-in-poway-poway",
+      "clicks": 2,
+      "impressions": 98,
+      "ctr": "2%",
+      "position": 8
+    },
+    {
+      "page": "/blog/grading-plan-engineering-in-rancho-san-diego",
+      "clicks": 2,
+      "impressions": 159,
+      "ctr": "1.3%",
+      "position": 3.7
+    },
+    {
+      "page": "/blog/mechanical-engineering-design-southern-california",
+      "clicks": 2,
+      "impressions": 62,
+      "ctr": "3.2%",
+      "position": 10.2
+    },
+    {
+      "page": "/blog/mep-engineering-design-in-placentia-placentia",
+      "clicks": 2,
+      "impressions": 66,
+      "ctr": "3%",
+      "position": 30.7
+    },
+    {
+      "page": "/blog/soft-story-retrofit-deadline-in-santa-monica",
+      "clicks": 2,
+      "impressions": 336,
+      "ctr": "0.6%",
+      "position": 16.1
+    },
+    {
+      "page": "/blog/stormwater-design-engineer-in-hermosa-beach-hermosa-beach",
+      "clicks": 2,
+      "impressions": 8,
+      "ctr": "25%",
+      "position": 10.5
+    },
+    {
+      "page": "/blog/structural-engineer-cost-orange-county-2025",
+      "clicks": 2,
+      "impressions": 669,
+      "ctr": "0.3%",
+      "position": 26.2
+    },
+    {
+      "page": "/blog/24-hour-structural-engineer-near-me-in-redondo-beach",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": "33.3%",
+      "position": 6.3
+    },
+    {
+      "page": "/blog/adu-structural-engineer-near-me-in-long-beach",
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": "12.5%",
+      "position": 9.8
+    },
+    {
+      "page": "/blog/adu-structural-engineer-near-me-in-san-diego-san-diego",
+      "clicks": 1,
+      "impressions": 79,
+      "ctr": "1.3%",
+      "position": 16.4
+    },
+    {
+      "page": "/blog/adu-structural-requirements/",
+      "clicks": 1,
+      "impressions": 70,
+      "ctr": "1.4%",
+      "position": 15.2
+    },
+    {
+      "page": "/blog/basement-structural-engineering-in-manhattan-beach",
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": "12.5%",
+      "position": 17.1
+    },
+    {
+      "page": "/blog/beach-basement-engineering-in-manhattan-beach",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": "33.3%",
+      "position": 5.7
+    },
+    {
+      "page": "/blog/brewery-winery-structural-engineering-in-lakeside-lakeside",
+      "clicks": 1,
+      "impressions": 87,
+      "ctr": "1.1%",
+      "position": 5.5
+    },
+    {
+      "page": "/blog/building-code-compliance-2024/",
+      "clicks": 1,
+      "impressions": 62,
+      "ctr": "1.6%",
+      "position": 9.5
+    },
+    {
+      "page": "/blog/civil-engineer-near-me-in-oceanside",
+      "clicks": 1,
+      "impressions": 52,
+      "ctr": "1.9%",
+      "position": 43
+    },
+    {
+      "page": "/blog/civil-engineering-design-southern-california",
+      "clicks": 1,
+      "impressions": 109,
+      "ctr": "0.9%",
+      "position": 12.2
+    },
+    {
+      "page": "/blog/cmu-building-structural-engineering-in-rancho-cucamonga",
+      "clicks": 1,
+      "impressions": 28,
+      "ctr": "3.6%",
+      "position": 20.6
+    }
+  ]
+}
