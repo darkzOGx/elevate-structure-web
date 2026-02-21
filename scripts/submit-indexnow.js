@@ -2,27 +2,28 @@
 
 /**
  * IndexNow URL Submission Script
- * Automatically submits URLs from sitemap.xml to IndexNow API
+ * Dynamically builds URLs from blog-data.ts and service/location pages
  * for instant search engine indexing (Bing, Yandex, etc.)
  */
 
 const fs = require('fs');
 const path = require('path');
-const crypto = require('crypto');
 
 // Configuration
 const CONFIG = {
   host: 'aaaengineeringdesign.com',
-  sitemapPath: path.join(__dirname, '../public/sitemap.xml'),
-  envPath: path.join(__dirname, '../.env.local'),
+  siteUrl: 'https://aaaengineeringdesign.com',
+  blogDataPath: path.join(__dirname, '../src/lib/blog-data.ts'),
+  // Use standardized key — do NOT generate random keys
+  apiKey: process.env.INDEXNOW_API_KEY || 'b53cf03137214ff0bb2e1ab0d3ebdb5c',
   publicDir: path.join(__dirname, '../public'),
   // Use Yandex endpoint (works without prior verification, syncs to all IndexNow partners)
   indexNowEndpoint: 'https://yandex.com/indexnow',
-  batchSize: 1000, // Submit in batches of 1000 URLs
-  recentDays: null, // Set to number to only submit URLs modified in last N days
+  batchSize: 1000,
+  recentDays: null,
 };
 
-// ANSI color codes for terminal output
+// ANSI color codes
 const colors = {
   reset: '\x1b[0m',
   bright: '\x1b[1m',
@@ -37,75 +38,71 @@ function log(message, color = 'reset') {
   console.log(`${colors[color]}${message}${colors.reset}`);
 }
 
-function generateApiKey() {
-  return crypto.randomBytes(32).toString('hex');
-}
+/**
+ * Build URL list dynamically from blog-data.ts and known routes.
+ * No dependency on public/sitemap.xml.
+ */
+function buildUrlList() {
+  const urls = [];
 
-function getOrCreateApiKey() {
-  let apiKey = process.env.INDEXNOW_API_KEY;
+  // Static pages
+  const staticPages = [
+    '', '/blog', '/services', '/about', '/contact', '/locations',
+  ];
+  for (const page of staticPages) {
+    urls.push(`${CONFIG.siteUrl}${page}`);
+  }
 
-  if (!apiKey) {
-    // Try to load from .env.local
-    if (fs.existsSync(CONFIG.envPath)) {
-      const envContent = fs.readFileSync(CONFIG.envPath, 'utf8');
-      const match = envContent.match(/INDEXNOW_API_KEY=(.+)/);
-      if (match) {
-        apiKey = match[1].trim();
+  // Blog post URLs from blog-data.ts
+  if (fs.existsSync(CONFIG.blogDataPath)) {
+    const blogData = fs.readFileSync(CONFIG.blogDataPath, 'utf8');
+    const idMatches = blogData.match(/id:\s*'([^']+)'/g) || [];
+    for (const match of idMatches) {
+      const id = match.replace(/id:\s*'/, '').replace(/'$/, '');
+      // Skip hub/guide pages that aren't blog posts, and noIndex posts
+      if (id) {
+        urls.push(`${CONFIG.siteUrl}/blog/${id}`);
       }
     }
+    log(`✓ Found ${idMatches.length} blog posts in blog-data.ts`, 'green');
+  } else {
+    log('⚠️  blog-data.ts not found, submitting static pages only', 'yellow');
   }
 
-  if (!apiKey) {
-    log('📝 Generating new IndexNow API key...', 'yellow');
-    apiKey = generateApiKey();
-
-    // Save to .env.local
-    const envLine = `\nINDEXNOW_API_KEY=${apiKey}\n`;
-    fs.appendFileSync(CONFIG.envPath, envLine, 'utf8');
-    log(`✓ API key saved to ${path.basename(CONFIG.envPath)}`, 'green');
+  // Service pages
+  const servicesDataPath = path.join(__dirname, '../src/lib/services-data.ts');
+  if (fs.existsSync(servicesDataPath)) {
+    const servicesData = fs.readFileSync(servicesDataPath, 'utf8');
+    const serviceIds = servicesData.match(/id:\s*'([^']+)'/g) || [];
+    for (const match of serviceIds) {
+      const id = match.replace(/id:\s*'/, '').replace(/'$/, '');
+      if (id) urls.push(`${CONFIG.siteUrl}/services/${id}`);
+    }
+    log(`✓ Found ${serviceIds.length} service pages`, 'green');
   }
 
-  return apiKey;
+  // Location pages
+  const locationsDataPath = path.join(__dirname, '../src/lib/locations-data.ts');
+  if (fs.existsSync(locationsDataPath)) {
+    const locationsData = fs.readFileSync(locationsDataPath, 'utf8');
+    const locationIds = locationsData.match(/id:\s*'([^']+)'/g) || [];
+    for (const match of locationIds) {
+      const id = match.replace(/id:\s*'/, '').replace(/'$/, '');
+      if (id) urls.push(`${CONFIG.siteUrl}/locations/${id}`);
+    }
+    log(`✓ Found ${locationIds.length} location pages`, 'green');
+  }
+
+  return urls;
 }
 
-function createKeyVerificationFile(apiKey) {
+function ensureKeyVerificationFile(apiKey) {
   const keyFilePath = path.join(CONFIG.publicDir, `${apiKey}.txt`);
-
   if (!fs.existsSync(keyFilePath)) {
     fs.writeFileSync(keyFilePath, apiKey, 'utf8');
     log(`✓ Created verification file: ${apiKey}.txt`, 'green');
   }
-
   return `https://${CONFIG.host}/${apiKey}.txt`;
-}
-
-function parseSitemap() {
-  if (!fs.existsSync(CONFIG.sitemapPath)) {
-    throw new Error(`Sitemap not found at ${CONFIG.sitemapPath}`);
-  }
-
-  const sitemapContent = fs.readFileSync(CONFIG.sitemapPath, 'utf8');
-  const urlMatches = [...sitemapContent.matchAll(/<loc>(.*?)<\/loc>/g)];
-  const urls = urlMatches.map(match => match[1].trim());
-
-  if (CONFIG.recentDays) {
-    const lastmodMatches = [...sitemapContent.matchAll(/<lastmod>(.*?)<\/lastmod>/g)];
-    const cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - CONFIG.recentDays);
-
-    const recentUrls = urls.filter((url, index) => {
-      if (lastmodMatches[index]) {
-        const lastmod = new Date(lastmodMatches[index][1]);
-        return lastmod >= cutoffDate;
-      }
-      return true; // Include URLs without lastmod
-    });
-
-    log(`📅 Filtered to ${recentUrls.length} URLs modified in last ${CONFIG.recentDays} days`, 'cyan');
-    return recentUrls;
-  }
-
-  return urls;
 }
 
 async function submitToIndexNow(apiKey, keyLocation, urls) {
@@ -119,9 +116,7 @@ async function submitToIndexNow(apiKey, keyLocation, urls) {
   try {
     const response = await fetch(CONFIG.indexNowEndpoint, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-      },
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify(payload),
     });
 
@@ -129,15 +124,9 @@ async function submitToIndexNow(apiKey, keyLocation, urls) {
       ok: response.ok,
       status: response.status,
       statusText: response.statusText,
-      data: response.ok ? await response.text().catch(() => null) : null,
     };
   } catch (error) {
-    return {
-      ok: false,
-      status: 0,
-      statusText: error.message,
-      data: null,
-    };
+    return { ok: false, status: 0, statusText: error.message };
   }
 }
 
@@ -163,7 +152,6 @@ async function submitInBatches(apiKey, keyLocation, urls) {
       log(`   ✗ Failed: ${result.status} ${result.statusText}`, 'red');
     }
 
-    // Rate limiting: wait 1 second between batches
     if (i < batches.length - 1) {
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
@@ -172,91 +160,56 @@ async function submitInBatches(apiKey, keyLocation, urls) {
   return results;
 }
 
-function printReport(apiKey, keyLocation, urls, results) {
+async function main() {
+  const recentDaysEnv = process.env.INDEXNOW_RECENT_DAYS;
+  if (recentDaysEnv && !Number.isNaN(Number(recentDaysEnv))) {
+    CONFIG.recentDays = Number(recentDaysEnv);
+  }
+
+  log('\n🔍 Starting IndexNow submission process...', 'bright');
+  console.log('');
+
+  // Step 1: Use standardized API key (never generate random ones)
+  log('Step 1/4: Using standardized API key...', 'blue');
+  const apiKey = CONFIG.apiKey;
+  log(`✓ Key: ${apiKey.substring(0, 8)}...`, 'green');
+
+  // Step 2: Ensure verification file exists
+  log('Step 2/4: Verifying key file...', 'blue');
+  const keyLocation = ensureKeyVerificationFile(apiKey);
+
+  // Step 3: Build URL list dynamically
+  log('Step 3/4: Building URL list from source files...', 'blue');
+  const urls = buildUrlList();
+  log(`✓ Total: ${urls.length} URLs to submit`, 'green');
+
+  if (urls.length === 0) {
+    log('⚠️  No URLs found. Exiting.', 'yellow');
+    return;
+  }
+
+  // Step 4: Submit
+  log('Step 4/4: Submitting to IndexNow API...', 'blue');
+  const results = await submitInBatches(apiKey, keyLocation, urls);
+
+  // Report
   console.log('\n' + '═'.repeat(60));
   log('🚀 IndexNow Submission Report', 'bright');
-  console.log('═'.repeat(60) + '\n');
-
-  log(`✓ API Key: ${apiKey.substring(0, 8)}...${apiKey.substring(apiKey.length - 8)}`, 'green');
-  log(`✓ Verification: ${keyLocation}`, 'green');
-  log(`✓ URLs Collected: ${urls.length} from sitemap.xml`, 'green');
-  console.log('');
-
+  console.log('═'.repeat(60));
   const successful = results.filter(r => r.ok).length;
-  const failed = results.length - successful;
-
-  if (successful > 0) {
-    log(`✓ Successful submissions: ${successful}/${results.length}`, 'green');
-  }
-  if (failed > 0) {
-    log(`✗ Failed submissions: ${failed}/${results.length}`, 'red');
-  }
-
-  console.log('');
-  log('📊 Submission Details:', 'blue');
-  log(`   Host: ${CONFIG.host}`, 'cyan');
-  log(`   Timestamp: ${new Date().toISOString()}`, 'cyan');
-  log(`   Search Engines: Bing, Yandex, Naver, Seznam.cz`, 'cyan');
-
-  console.log('');
-  if (successful > 0) {
-    log('✓ Your URLs are now being processed for indexing!', 'green');
-    console.log('');
-    log('💡 Tip: Check Bing Webmaster Tools in 24-48 hours to verify indexing.', 'yellow');
-  } else {
-    log('⚠️  All submissions failed. Please check your API key and try again.', 'red');
-  }
-
-  console.log('\n' + '═'.repeat(60) + '\n');
-}
-
-async function main() {
-  try {
-    // Optional: allow filtering to "recent" URLs via env var
-    // (Useful for CI / Netlify if you want to reduce submission volume.)
-    const recentDaysEnv = process.env.INDEXNOW_RECENT_DAYS;
-    if (recentDaysEnv && !Number.isNaN(Number(recentDaysEnv))) {
-      CONFIG.recentDays = Number(recentDaysEnv);
-    }
-
-    log('\n🔍 Starting IndexNow submission process...', 'bright');
-    console.log('');
-
-    // Step 1: Get or create API key
-    log('Step 1/4: Managing API key...', 'blue');
-    const apiKey = getOrCreateApiKey();
-
-    // Step 2: Create verification file
-    log('Step 2/4: Creating verification file...', 'blue');
-    const keyLocation = createKeyVerificationFile(apiKey);
-
-    // Step 3: Parse sitemap
-    log('Step 3/4: Parsing sitemap...', 'blue');
-    const urls = parseSitemap();
-    log(`✓ Found ${urls.length} URLs in sitemap`, 'green');
-
-    if (urls.length === 0) {
-      log('⚠️  No URLs found in sitemap. Exiting.', 'yellow');
-      return;
-    }
-
-    // Step 4: Submit to IndexNow
-    log('Step 4/4: Submitting to IndexNow API...', 'blue');
-    const results = await submitInBatches(apiKey, keyLocation, urls);
-
-    // Print final report
-    printReport(apiKey, keyLocation, urls, results);
-
-  } catch (error) {
-    log(`\n✗ Error: ${error.message}`, 'red');
-    console.error(error);
-    process.exit(1);
-  }
+  log(`✓ URLs submitted: ${urls.length}`, 'green');
+  log(`✓ Batches: ${successful}/${results.length} successful`, successful > 0 ? 'green' : 'red');
+  log(`✓ Search engines: Bing, Yandex, Naver, Seznam.cz`, 'cyan');
+  log(`✓ Timestamp: ${new Date().toISOString()}`, 'cyan');
+  console.log('═'.repeat(60) + '\n');
 }
 
 // Run if called directly
 if (require.main === module) {
-  main();
+  main().catch(err => {
+    log(`\n✗ Error: ${err.message}`, 'red');
+    process.exit(1);
+  });
 }
 
-module.exports = { main, submitToIndexNow, parseSitemap };
+module.exports = { main, submitToIndexNow, buildUrlList };

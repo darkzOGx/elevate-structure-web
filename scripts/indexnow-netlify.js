@@ -2,9 +2,9 @@
 /**
  * Netlify production-only IndexNow hook.
  *
- * Why:
- * - Netlify runs the same build command for deploy-previews/branch deploys.
- * - We only want to ping IndexNow for the production site.
+ * IMPORTANT: This script MUST NOT crash the build.
+ * IndexNow submission is best-effort — a failure here should never
+ * prevent a production deploy from going live.
  */
 
 const { main } = require('./submit-indexnow.js')
@@ -22,8 +22,13 @@ if (context !== 'production') {
 
 console.log('[IndexNow] Netlify production deploy detected — submitting URLs...')
 
-main().catch((err) => {
-  console.error('[IndexNow] Submission failed:', err?.message || err)
-  process.exit(1)
-})
-
+main()
+  .then(() => {
+    console.log('[IndexNow] Submission complete.')
+  })
+  .catch((err) => {
+    // Log the error but DO NOT exit with code 1 — never block a deploy
+    console.error('[IndexNow] Submission failed (non-fatal):', err?.message || err)
+    console.log('[IndexNow] Continuing deploy despite IndexNow failure.')
+    process.exit(0)
+  })
