@@ -14,6 +14,10 @@ const BING_MSVALIDATE = process.env.NEXT_PUBLIC_BING_MSVALIDATE;
 const OTHER_VERIFICATION_META: Record<string, string> = {
   ...(GOOGLE_SITE_VERIFICATION ? { 'google-site-verification': GOOGLE_SITE_VERIFICATION } : {}),
   ...(BING_MSVALIDATE ? { 'msvalidate.01': BING_MSVALIDATE } : {}),
+  // Bing crawler directives - allow full indexing with rich snippets
+  'bingbot': 'index, follow, max-snippet:-1, max-image-preview:large',
+  // Author meta (Bing weights social signals)
+  'author': 'AAA Engineering Design',
 };
 
 const geistSans = Geist({
@@ -33,6 +37,7 @@ export const metadata: Metadata = {
   },
   title: 'Structural Engineer Orange County CA | Licensed PE | AAA Engineering Design',
   description: 'Licensed structural engineering services in Orange County & Southern California. Expert structural design, ADU engineering, seismic retrofitting. PE-stamped plans.',
+  keywords: 'structural engineer Orange County, structural engineering California, ADU structural engineer, seismic retrofit engineer, foundation engineer, PE licensed engineer, residential structural engineer near me, commercial structural engineer, load bearing wall removal, structural inspection',
   icons: {
     icon: '/AAA-Logo.png',
     apple: '/AAA-Logo.png',

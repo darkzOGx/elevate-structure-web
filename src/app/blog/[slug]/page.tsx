@@ -48,7 +48,16 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: `${post.title} | AAA Engineering Design Blog`,
     description: post.excerpt,
-    keywords: `${post.category}, structural engineering, ${post.title}`,
+    keywords: [
+      post.primaryKeyword,
+      ...(post.secondaryKeywords || []),
+      post.category,
+      'structural engineering',
+      post.geoTarget ? `structural engineer ${post.geoTarget}` : null,
+      post.geoTarget ? `${post.category} ${post.geoTarget}` : null,
+      'California PE licensed engineer',
+      'AAA Engineering Design',
+    ].filter(Boolean).join(', '),
     // Add noindex for posts marked as noIndex to prevent Google from indexing low-value city variants
     robots: post.noIndex ? { index: false, follow: true } : { index: true, follow: true },
     alternates: {

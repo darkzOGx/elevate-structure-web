@@ -1,7 +1,7 @@
 // IndexNow integration for instant search engine indexing
 // Documentation: https://www.indexnow.org/documentation
 
-const INDEXNOW_KEY = 'b53cf03137214ff0bb2e1ab0d3ebdb5c'
+const INDEXNOW_KEY = process.env.INDEXNOW_API_KEY || 'b53cf03137214ff0bb2e1ab0d3ebdb5c'
 const SITE_URL = 'https://aaaengineeringdesign.com'
 
 /**
